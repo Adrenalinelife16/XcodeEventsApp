@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SDWebImageCombinedOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SDWebImageCombinedOperation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+            
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageCombinedOperation/setCancelled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, getter=isCancelled) BOOL cancelled</Declaration>
+			
+			
+			<Anchor>//api/name/cancelled</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageCombinedOperation/isCancelled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, getter=isCancelled) BOOL cancelled</Declaration>
+			
+			
+			<Anchor>//api/name/cancelled</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageCombinedOperation/cancelled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, getter=isCancelled) BOOL cancelled</Declaration>
+			
+			
+			<Anchor>//api/name/cancelled</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageCombinedOperation/setCancelBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( ) cancelBlock</Declaration>
+			
+			
+			<Anchor>//api/name/cancelBlock</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageCombinedOperation/cancelBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( ) cancelBlock</Declaration>
+			
+			
+			<Anchor>//api/name/cancelBlock</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageCombinedOperation/cancelBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( ) cancelBlock</Declaration>
+			
+			
+			<Anchor>//api/name/cancelBlock</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageCombinedOperation/setCacheOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSOperation *cacheOperation</Declaration>
+			
+			
+			<Anchor>//api/name/cacheOperation</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageCombinedOperation/cacheOperation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSOperation *cacheOperation</Declaration>
+			
+			
+			<Anchor>//api/name/cacheOperation</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageCombinedOperation/cacheOperation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSOperation *cacheOperation</Declaration>
+			
+			
+			<Anchor>//api/name/cacheOperation</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageCombinedOperation/cancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.m</DeclaredIn>
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DSKeyboardActivityView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DSKeyboardActivityView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DSKeyboardActivityView/newActivityView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.h</DeclaredIn>
+			
+			<Declaration>+ (DSKeyboardActivityView *)newActivityView</Declaration>
+			
+			
+			<Anchor>//api/name/newActivityView</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DSKeyboardActivityView/newActivityViewWithLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.h</DeclaredIn>
+			
+			<Declaration>+ (DSKeyboardActivityView *)newActivityViewWithLabel:(NSString *)labelText</Declaration>
+			
+			
+			<Anchor>//api/name/newActivityViewWithLabel:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSKeyboardActivityView/viewForView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)viewForView:(UIView *)view</Declaration>
+			
+			
+			<Anchor>//api/name/viewForView:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSKeyboardActivityView/animateShow</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (void)animateShow</Declaration>
+			
+			
+			<Anchor>//api/name/animateShow</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSKeyboardActivityView/animateRemove</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (void)animateRemove</Declaration>
+			
+			
+			<Anchor>//api/name/animateRemove</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSKeyboardActivityView/setupBackground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (void)setupBackground</Declaration>
+			
+			
+			<Anchor>//api/name/setupBackground</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSKeyboardActivityView/borderView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)borderView</Declaration>
+			
+			
+			<Anchor>//api/name/borderView</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

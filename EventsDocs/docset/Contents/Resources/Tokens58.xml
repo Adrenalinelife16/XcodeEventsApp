@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/VRGCalendarView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/VRGCalendarView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="58"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;VRGCalendarViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;VRGCalendarViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VRGCalendarView/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;VRGCalendarViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/setCurrentMonth:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *currentMonth</Declaration>
+			
+			
+			<Anchor>//api/name/currentMonth</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/currentMonth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *currentMonth</Declaration>
+			
+			
+			<Anchor>//api/name/currentMonth</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VRGCalendarView/currentMonth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *currentMonth</Declaration>
+			
+			
+			<Anchor>//api/name/currentMonth</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/setLabelCurrentMonth:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UILabel *labelCurrentMonth</Declaration>
+			
+			
+			<Anchor>//api/name/labelCurrentMonth</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/labelCurrentMonth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UILabel *labelCurrentMonth</Declaration>
+			
+			
+			<Anchor>//api/name/labelCurrentMonth</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VRGCalendarView/labelCurrentMonth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UILabel *labelCurrentMonth</Declaration>
+			
+			
+			<Anchor>//api/name/labelCurrentMonth</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/setAnimationView_A:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIImageView *animationView_A</Declaration>
+			
+			
+			<Anchor>//api/name/animationView_A</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/animationView_A</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIImageView *animationView_A</Declaration>
+			
+			
+			<Anchor>//api/name/animationView_A</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VRGCalendarView/animationView_A</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIImageView *animationView_A</Declaration>
+			
+			
+			<Anchor>//api/name/animationView_A</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/setAnimationView_B:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIImageView *animationView_B</Declaration>
+			
+			
+			<Anchor>//api/name/animationView_B</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/animationView_B</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIImageView *animationView_B</Declaration>
+			
+			
+			<Anchor>//api/name/animationView_B</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VRGCalendarView/animationView_B</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIImageView *animationView_B</Declaration>
+			
+			
+			<Anchor>//api/name/animationView_B</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/setMarkedDates:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSArray *markedDates</Declaration>
+			
+			
+			<Anchor>//api/name/markedDates</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/markedDates</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSArray *markedDates</Declaration>
+			
+			
+			<Anchor>//api/name/markedDates</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VRGCalendarView/markedDates</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSArray *markedDates</Declaration>
+			
+			
+			<Anchor>//api/name/markedDates</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/setMarkedColors:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSArray *markedColors</Declaration>
+			
+			
+			<Anchor>//api/name/markedColors</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/markedColors</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSArray *markedColors</Declaration>
+			
+			
+			<Anchor>//api/name/markedColors</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VRGCalendarView/markedColors</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSArray *markedColors</Declaration>
+			
+			
+			<Anchor>//api/name/markedColors</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/setCalendarHeight:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=calendarHeight) float calendarHeight</Declaration>
+			
+			
+			<Anchor>//api/name/calendarHeight</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/calendarHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=calendarHeight) float calendarHeight</Declaration>
+			
+			
+			<Anchor>//api/name/calendarHeight</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VRGCalendarView/calendarHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=calendarHeight) float calendarHeight</Declaration>
+			
+			
+			<Anchor>//api/name/calendarHeight</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/setSelectedDate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain, getter=selectedDate) NSDate *selectedDate</Declaration>
+			
+			
+			<Anchor>//api/name/selectedDate</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/selectedDate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain, getter=selectedDate) NSDate *selectedDate</Declaration>
+			
+			
+			<Anchor>//api/name/selectedDate</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VRGCalendarView/selectedDate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain, getter=selectedDate) NSDate *selectedDate</Declaration>
+			
+			
+			<Anchor>//api/name/selectedDate</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/selectDate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (void)selectDate:(int)date</Declaration>
+			
+			
+			<Anchor>//api/name/selectDate:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/reset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/markDates:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (void)markDates:(NSArray *)dates</Declaration>
+			
+			
+			<Anchor>//api/name/markDates:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/markDates:withColors:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (void)markDates:(NSArray *)dates withColors:(NSArray *)colors</Declaration>
+			
+			
+			<Anchor>//api/name/markDates:withColors:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/showNextMonth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (void)showNextMonth</Declaration>
+			
+			
+			<Anchor>//api/name/showNextMonth</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/showPreviousMonth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (void)showPreviousMonth</Declaration>
+			
+			
+			<Anchor>//api/name/showPreviousMonth</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/numRows</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (int)numRows</Declaration>
+			
+			
+			<Anchor>//api/name/numRows</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/updateSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (void)updateSize</Declaration>
+			
+			
+			<Anchor>//api/name/updateSize</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/drawCurrentState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)drawCurrentState</Declaration>
+			
+			
+			<Anchor>//api/name/drawCurrentState</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/touchesBegan:withEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.m</DeclaredIn>
+			
+			<Declaration>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			
+			
+			<Anchor>//api/name/touchesBegan:withEvent:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/drawRect:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.m</DeclaredIn>
+			
+			<Declaration>- (void)drawRect:(CGRect)rect</Declaration>
+			
+			
+			<Anchor>//api/name/drawRect:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VRGCalendarView/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

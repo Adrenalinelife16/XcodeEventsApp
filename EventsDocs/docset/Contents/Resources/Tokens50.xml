@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SDWebImageDownloaderOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SDWebImageDownloaderOperation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="50"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic, readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic, readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic, readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, readonly) SDWebImageDownloaderOptions options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/options</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, readonly) SDWebImageDownloaderOptions options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/options</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, readonly) SDWebImageDownloaderOptions options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/initWithRequest:options:progress:completed:cancelled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithRequest:(NSURLRequest *)request options:(SDWebImageDownloaderOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageDownloaderCompletedBlock)completedBlock cancelled:(void ( ^ ) ( ))cancelBlock</Declaration>
+			
+			
+			<Anchor>//api/name/initWithRequest:options:progress:completed:cancelled:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/start</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/cancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/cancelInternalAndStop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)cancelInternalAndStop</Declaration>
+			
+			
+			<Anchor>//api/name/cancelInternalAndStop</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/cancelInternal</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)cancelInternal</Declaration>
+			
+			
+			<Anchor>//api/name/cancelInternal</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/done</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)done</Declaration>
+			
+			
+			<Anchor>//api/name/done</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/reset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setFinished:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)setFinished:(BOOL)finished</Declaration>
+			
+			
+			<Anchor>//api/name/setFinished:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setExecuting:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)setExecuting:(BOOL)executing</Declaration>
+			
+			
+			<Anchor>//api/name/setExecuting:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/isConcurrent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isConcurrent</Declaration>
+			
+			
+			<Anchor>//api/name/isConcurrent</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/connection:didReceiveResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didReceiveResponse:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/connection:didReceiveData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didReceiveData:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SDWebImageDownloaderOperation/orientationFromPropertyValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>+ (UIImageOrientation)orientationFromPropertyValue:(NSInteger)value</Declaration>
+			
+			
+			<Anchor>//api/name/orientationFromPropertyValue:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/scaledImageForKey:image:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)scaledImageForKey:(NSString *)key image:(UIImage *)image</Declaration>
+			
+			
+			<Anchor>//api/name/scaledImageForKey:image:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/connectionDidFinishLoading:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)connectionDidFinishLoading:(NSURLConnection *)aConnection</Declaration>
+			
+			
+			<Anchor>//api/name/connectionDidFinishLoading:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/connection:didFailWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didFailWithError:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/connection:willCacheResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (NSCachedURLResponse *)connection:(NSURLConnection *)connection willCacheResponse:(NSCachedURLResponse *)cachedResponse</Declaration>
+			
+			
+			<Anchor>//api/name/connection:willCacheResponse:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/shouldContinueWhenAppEntersBackground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldContinueWhenAppEntersBackground</Declaration>
+			
+			
+			<Anchor>//api/name/shouldContinueWhenAppEntersBackground</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/connection:canAuthenticateAgainstProtectionSpace:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace</Declaration>
+			
+			
+			<Anchor>//api/name/connection:canAuthenticateAgainstProtectionSpace:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/connection:didReceiveAuthenticationChallenge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didReceiveAuthenticationChallenge:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setProgressBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) SDWebImageDownloaderProgressBlock progressBlock</Declaration>
+			
+			
+			<Anchor>//api/name/progressBlock</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/progressBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) SDWebImageDownloaderProgressBlock progressBlock</Declaration>
+			
+			
+			<Anchor>//api/name/progressBlock</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/progressBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) SDWebImageDownloaderProgressBlock progressBlock</Declaration>
+			
+			
+			<Anchor>//api/name/progressBlock</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setCompletedBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) SDWebImageDownloaderCompletedBlock completedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/completedBlock</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/completedBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) SDWebImageDownloaderCompletedBlock completedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/completedBlock</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/completedBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) SDWebImageDownloaderCompletedBlock completedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/completedBlock</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setCancelBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( ) cancelBlock</Declaration>
+			
+			
+			<Anchor>//api/name/cancelBlock</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/cancelBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( ) cancelBlock</Declaration>
+			
+			
+			<Anchor>//api/name/cancelBlock</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/cancelBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( ) cancelBlock</Declaration>
+			
+			
+			<Anchor>//api/name/cancelBlock</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setExecuting:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, getter=isExecuting) BOOL executing</Declaration>
+			
+			
+			<Anchor>//api/name/executing</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/isExecuting</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, getter=isExecuting) BOOL executing</Declaration>
+			
+			
+			<Anchor>//api/name/executing</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/executing</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, getter=isExecuting) BOOL executing</Declaration>
+			
+			
+			<Anchor>//api/name/executing</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setFinished:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, getter=isFinished) BOOL finished</Declaration>
+			
+			
+			<Anchor>//api/name/finished</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/isFinished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, getter=isFinished) BOOL finished</Declaration>
+			
+			
+			<Anchor>//api/name/finished</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/finished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic, getter=isFinished) BOOL finished</Declaration>
+			
+			
+			<Anchor>//api/name/finished</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setExpectedSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSInteger expectedSize</Declaration>
+			
+			
+			<Anchor>//api/name/expectedSize</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/expectedSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSInteger expectedSize</Declaration>
+			
+			
+			<Anchor>//api/name/expectedSize</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/expectedSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSInteger expectedSize</Declaration>
+			
+			
+			<Anchor>//api/name/expectedSize</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setImageData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableData *imageData</Declaration>
+			
+			
+			<Anchor>//api/name/imageData</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/imageData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableData *imageData</Declaration>
+			
+			
+			<Anchor>//api/name/imageData</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/imageData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableData *imageData</Declaration>
+			
+			
+			<Anchor>//api/name/imageData</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setConnection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSURLConnection *connection</Declaration>
+			
+			
+			<Anchor>//api/name/connection</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/connection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSURLConnection *connection</Declaration>
+			
+			
+			<Anchor>//api/name/connection</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/connection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSURLConnection *connection</Declaration>
+			
+			
+			<Anchor>//api/name/connection</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setThread:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (strong, atomic) NSThread *thread</Declaration>
+			
+			
+			<Anchor>//api/name/thread</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/thread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (strong, atomic) NSThread *thread</Declaration>
+			
+			
+			<Anchor>//api/name/thread</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/thread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (strong, atomic) NSThread *thread</Declaration>
+			
+			
+			<Anchor>//api/name/thread</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/setBackgroundTaskId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) UIBackgroundTaskIdentifier backgroundTaskId</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTaskId</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImageDownloaderOperation/backgroundTaskId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) UIBackgroundTaskIdentifier backgroundTaskId</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTaskId</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImageDownloaderOperation/backgroundTaskId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloaderOperation.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) UIBackgroundTaskIdentifier backgroundTaskId</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTaskId</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MyEventTickets.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MyEventTickets</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyEventTickets.h</DeclaredIn>
+            
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

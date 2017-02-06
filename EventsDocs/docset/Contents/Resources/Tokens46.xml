@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SBJsonWriter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonWriter</TokenIdentifier>
+			<Abstract type="html">The JSON writer class.
+
+Objective-C types are mapped to JSON types in the following way:
+
+@li NSNull -&gt; Null
+@li NSString -&gt; String
+@li NSArray -&gt; Array
+@li NSDictionary -&gt; Object
+@li NSNumber (-initWithBool:) -&gt; Boolean
+@li NSNumber -&gt; Number
+
+In JSON the keys of an object must be strings. NSDictionary keys need
+not be, but attempting to convert an NSDictionary with non-string keys
+into JSON will throw an exception.
+
+NSNumber instances created with the +initWithBool: method are
+converted into the JSON boolean &quot;true&quot; and &quot;false&quot; values, and vice
+versa. Any other NSNumber instances are converted to a JSON number the
+way you would expect.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/stringWithFragment:</TokenIdentifier>
+			<Abstract type="html">This exists in order to provide fragment support in older APIs in one more version.
+It should be removed in the next major version. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; This exists in order to provide fragment support in older APIs in one more version.
+It should be removed in the next major version.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)stringWithFragment:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/stringWithFragment:</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/stringWithObject:</TokenIdentifier>
+			<Abstract type="html">Return JSON representation (or fragment) for the given object.
+
+Returns a string containing JSON representation of the passed in value, or nil on error.
+If nil is returned and @p error is not NULL, @p *error can be interrogated to find the cause of the error.</Abstract>
+			<DeclaredIn>SBJsonWriter.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)stringWithObject:(id)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">any instance that can be represented as a JSON fragment</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/stringWithObject:</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/indent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonWriter.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)indent</Declaration>
+			
+			
+			<Anchor>//api/name/indent</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/appendValue:into:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonWriter.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)appendValue:(id)fragment into:(NSMutableString *)json</Declaration>
+			
+			
+			<Anchor>//api/name/appendValue:into:</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/appendArray:into:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonWriter.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)appendArray:(NSArray *)fragment into:(NSMutableString *)json</Declaration>
+			
+			
+			<Anchor>//api/name/appendArray:into:</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/appendDictionary:into:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonWriter.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)appendDictionary:(NSDictionary *)fragment into:(NSMutableString *)json</Declaration>
+			
+			
+			<Anchor>//api/name/appendDictionary:into:</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/appendString:into:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonWriter.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)appendString:(NSString *)fragment into:(NSMutableString *)json</Declaration>
+			
+			
+			<Anchor>//api/name/appendString:into:</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

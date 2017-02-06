@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EventList.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EventList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventID</Declaration>
+			
+			
+			<Anchor>//api/name/eventID</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventID</Declaration>
+			
+			
+			<Anchor>//api/name/eventID</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventID</Declaration>
+			
+			
+			<Anchor>//api/name/eventID</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventAllDay:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventAllDay</Declaration>
+			
+			
+			<Anchor>//api/name/eventAllDay</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventAllDay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventAllDay</Declaration>
+			
+			
+			<Anchor>//api/name/eventAllDay</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventAllDay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventAllDay</Declaration>
+			
+			
+			<Anchor>//api/name/eventAllDay</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventLocationLatitude:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventLocationLatitude</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationLatitude</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventLocationLatitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventLocationLatitude</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationLatitude</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventLocationLatitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventLocationLatitude</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationLatitude</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventLocationLongitude:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventLocationLongitude</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationLongitude</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventLocationLongitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventLocationLongitude</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationLongitude</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventLocationLongitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventLocationLongitude</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationLongitude</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventName</Declaration>
+			
+			
+			<Anchor>//api/name/eventName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventName</Declaration>
+			
+			
+			<Anchor>//api/name/eventName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventName</Declaration>
+			
+			
+			<Anchor>//api/name/eventName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventImageURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventImageURL</Declaration>
+			
+			
+			<Anchor>//api/name/eventImageURL</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventImageURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventImageURL</Declaration>
+			
+			
+			<Anchor>//api/name/eventImageURL</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventImageURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventImageURL</Declaration>
+			
+			
+			<Anchor>//api/name/eventImageURL</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventOwner:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventOwner</Declaration>
+			
+			
+			<Anchor>//api/name/eventOwner</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventOwner</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventOwner</Declaration>
+			
+			
+			<Anchor>//api/name/eventOwner</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventOwner</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventOwner</Declaration>
+			
+			
+			<Anchor>//api/name/eventOwner</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventDescription:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventDescription</Declaration>
+			
+			
+			<Anchor>//api/name/eventDescription</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventDescription</Declaration>
+			
+			
+			<Anchor>//api/name/eventDescription</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventDescription</Declaration>
+			
+			
+			<Anchor>//api/name/eventDescription</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventStartDateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventStartDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/eventStartDateTime</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventStartDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventStartDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/eventStartDateTime</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventStartDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventStartDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/eventStartDateTime</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventEndDateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventEndDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/eventEndDateTime</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventEndDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventEndDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/eventEndDateTime</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventEndDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventEndDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/eventEndDateTime</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventLocationName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationName</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventLocationName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationName</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventLocationName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationName</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventLocationAddress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationAddress</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationAddress</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventLocationAddress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationAddress</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationAddress</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventLocationAddress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationAddress</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationAddress</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventLocationState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationState</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationState</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventLocationState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationState</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationState</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventLocationState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationState</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationState</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventLocationTown:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationTown</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationTown</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventLocationTown</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationTown</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationTown</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventLocationTown</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationTown</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationTown</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventLocationCountry:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationCountry</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationCountry</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventLocationCountry</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationCountry</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationCountry</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventLocationCountry</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventLocationCountry</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationCountry</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketName</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketName</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketName</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketDescription:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketDescription</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketDescription</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketDescription</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketDescription</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketDescription</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketDescription</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketPrice:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketPrice</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketPrice</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketPrice</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketPrice</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketPrice</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketPrice</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketPrice</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketPrice</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketStart:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketStart</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketStart</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketStart</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketStart</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketStart</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketStart</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketStart</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketStart</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketEnd:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketEnd</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketEnd</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketEnd</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketEnd</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketEnd</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketEnd</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketEnd</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketEnd</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketMembers:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketMembers</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketMembers</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketMembers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketMembers</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketMembers</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketMembers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketMembers</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketMembers</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketGuests:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketGuests</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketGuests</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketGuests</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketGuests</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketGuests</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketGuests</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketGuests</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketGuests</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketRequired:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketRequired</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketRequired</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketRequired</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketRequired</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketRequired</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketRequired</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *eventTicketRequired</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketRequired</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketAvailSpaces:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventTicketAvailSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketAvailSpaces</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketAvailSpaces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventTicketAvailSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketAvailSpaces</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketAvailSpaces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventTicketAvailSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketAvailSpaces</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketBookedSpaces:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventTicketBookedSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketBookedSpaces</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketBookedSpaces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventTicketBookedSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketBookedSpaces</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketBookedSpaces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventTicketBookedSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketBookedSpaces</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/setEventTicketTotalSpaces:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventTicketTotalSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketTotalSpaces</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventList/eventTicketTotalSpaces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventTicketTotalSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketTotalSpaces</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EventList/eventTicketTotalSpaces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventList.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *eventTicketTotalSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/eventTicketTotalSpaces</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

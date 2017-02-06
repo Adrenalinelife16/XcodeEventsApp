@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DSBezelActivityView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DSBezelActivityView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DSBezelActivityView/removeViewAnimated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.h</DeclaredIn>
+			
+			<Declaration>+ (void)removeViewAnimated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/removeViewAnimated:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSBezelActivityView/viewForView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)viewForView:(UIView *)view</Declaration>
+			
+			
+			<Anchor>//api/name/viewForView:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSBezelActivityView/enclosingFrame</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (CGRect)enclosingFrame</Declaration>
+			
+			
+			<Anchor>//api/name/enclosingFrame</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSBezelActivityView/setupBackground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (void)setupBackground</Declaration>
+			
+			
+			<Anchor>//api/name/setupBackground</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSBezelActivityView/borderView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)borderView</Declaration>
+			
+			
+			<Anchor>//api/name/borderView</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSBezelActivityView/activityIndicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (UIActivityIndicatorView *)activityIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/activityIndicator</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSBezelActivityView/activityLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (UILabel *)activityLabel</Declaration>
+			
+			
+			<Anchor>//api/name/activityLabel</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSBezelActivityView/layoutSubviews</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (void)layoutSubviews</Declaration>
+			
+			
+			<Anchor>//api/name/layoutSubviews</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSBezelActivityView/animateShow</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (void)animateShow</Declaration>
+			
+			
+			<Anchor>//api/name/animateShow</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSBezelActivityView/animateRemove</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (void)animateRemove</Declaration>
+			
+			
+			<Anchor>//api/name/animateRemove</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DSBezelActivityView/removeAnimationDidStop:finished:context:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.m</DeclaredIn>
+			
+			<Declaration>- (void)removeAnimationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context</Declaration>
+			
+			
+			<Anchor>//api/name/removeAnimationDidStop:finished:context:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

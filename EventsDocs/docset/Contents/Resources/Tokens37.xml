@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MyProgramViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MyProgramViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/setTblMainTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *tblMainTable</Declaration>
+			
+			
+			<Anchor>//api/name/tblMainTable</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/tblMainTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *tblMainTable</Declaration>
+			
+			
+			<Anchor>//api/name/tblMainTable</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramViewController/tblMainTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *tblMainTable</Declaration>
+			
+			
+			<Anchor>//api/name/tblMainTable</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/setArrDetails:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *arrDetails</Declaration>
+			
+			
+			<Anchor>//api/name/arrDetails</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/arrDetails</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *arrDetails</Declaration>
+			
+			
+			<Anchor>//api/name/arrDetails</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramViewController/arrDetails</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *arrDetails</Declaration>
+			
+			
+			<Anchor>//api/name/arrDetails</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/setBtnNotifiction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnNotifiction</Declaration>
+			
+			
+			<Anchor>//api/name/btnNotifiction</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/btnNotifiction</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnNotifiction</Declaration>
+			
+			
+			<Anchor>//api/name/btnNotifiction</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramViewController/btnNotifiction</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnNotifiction</Declaration>
+			
+			
+			<Anchor>//api/name/btnNotifiction</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/setImgSegmentBar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgSegmentBar</Declaration>
+			
+			
+			<Anchor>//api/name/imgSegmentBar</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/imgSegmentBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgSegmentBar</Declaration>
+			
+			
+			<Anchor>//api/name/imgSegmentBar</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramViewController/imgSegmentBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgSegmentBar</Declaration>
+			
+			
+			<Anchor>//api/name/imgSegmentBar</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/setBtnMyTickets:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnMyTickets</Declaration>
+			
+			
+			<Anchor>//api/name/btnMyTickets</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/btnMyTickets</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnMyTickets</Declaration>
+			
+			
+			<Anchor>//api/name/btnMyTickets</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramViewController/btnMyTickets</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnMyTickets</Declaration>
+			
+			
+			<Anchor>//api/name/btnMyTickets</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/setBtnMyFavourites:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnMyFavourites</Declaration>
+			
+			
+			<Anchor>//api/name/btnMyFavourites</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/btnMyFavourites</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnMyFavourites</Declaration>
+			
+			
+			<Anchor>//api/name/btnMyFavourites</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramViewController/btnMyFavourites</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnMyFavourites</Declaration>
+			
+			
+			<Anchor>//api/name/btnMyFavourites</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/setBtnMyCalender:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnMyCalender</Declaration>
+			
+			
+			<Anchor>//api/name/btnMyCalender</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/btnMyCalender</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnMyCalender</Declaration>
+			
+			
+			<Anchor>//api/name/btnMyCalender</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramViewController/btnMyCalender</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnMyCalender</Declaration>
+			
+			
+			<Anchor>//api/name/btnMyCalender</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/setScrollViewMain:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewMain</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/scrollViewMain</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewMain</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramViewController/scrollViewMain</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewMain</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/clickedMyTickets:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedMyTickets:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedMyTickets:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/clickedMyFavourites:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedMyFavourites:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedMyFavourites:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/clickedMyCalender:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedMyCalender:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedMyCalender:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/numberOfSectionsInTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfSectionsInTableView:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/tableView:numberOfRowsInSection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:numberOfRowsInSection:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/tableView:cellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:cellForRowAtIndexPath:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/tableView:heightForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:heightForRowAtIndexPath:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/prepareForSegue:sender:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/prepareForSegue:sender:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/checkLogin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)checkLogin</Declaration>
+			
+			
+			<Anchor>//api/name/checkLogin</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/showLoginScreen</TokenIdentifier>
+			<Abstract type="html">Show login view controller with animation</Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)showLoginScreen</Declaration>
+			
+			
+			<Anchor>//api/name/showLoginScreen</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/dismissLoginView</TokenIdentifier>
+			<Abstract type="html">remove login view controller with animation</Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)dismissLoginView</Declaration>
+			
+			
+			<Anchor>//api/name/dismissLoginView</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/createCalendarView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)createCalendarView</Declaration>
+			
+			
+			<Anchor>//api/name/createCalendarView</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/calendarView:switchedToMonth:targetHeight:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)calendarView:(VRGCalendarView *)calendarView switchedToMonth:(int)month targetHeight:(float)targetHeight animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/calendarView:switchedToMonth:targetHeight:animated:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/calendarView:dateSelected:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date</Declaration>
+			
+			
+			<Anchor>//api/name/calendarView:dateSelected:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/getCalendarData:</TokenIdentifier>
+			<Abstract type="html">get events by selected month from server</Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)getCalendarData:(NSString *)strMonth</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>strMonth</Name>
+					<Abstract type="html">month for events</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getCalendarData:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/compareEventDateAndSelectedDate</TokenIdentifier>
+			<Abstract type="html">Compare selected date with event date, if match than show event for selected date</Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)compareEventDateAndSelectedDate</Declaration>
+			
+			
+			<Anchor>//api/name/compareEventDateAndSelectedDate</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/getFavouriteProgramList</TokenIdentifier>
+			<Abstract type="html">Fetch Favourites program list from local</Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)getFavouriteProgramList</Declaration>
+			
+			
+			<Anchor>//api/name/getFavouriteProgramList</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramViewController/getMyTickets</TokenIdentifier>
+			<Abstract type="html">Fetch Tickets List From Server.</Abstract>
+			<DeclaredIn>MyProgramViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)getMyTickets</Declaration>
+			
+			
+			<Anchor>//api/name/getMyTickets</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

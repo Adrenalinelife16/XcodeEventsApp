@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FavouriteEvents.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FavouriteEvents</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_all_day:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_all_day</Declaration>
+			
+			
+			<Anchor>//api/name/event_all_day</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_all_day</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_all_day</Declaration>
+			
+			
+			<Anchor>//api/name/event_all_day</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_all_day</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_all_day</Declaration>
+			
+			
+			<Anchor>//api/name/event_all_day</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_content:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_content</Declaration>
+			
+			
+			<Anchor>//api/name/event_content</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_content</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_content</Declaration>
+			
+			
+			<Anchor>//api/name/event_content</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_content</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_content</Declaration>
+			
+			
+			<Anchor>//api/name/event_content</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_end_dateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_end_dateTime</Declaration>
+			
+			
+			<Anchor>//api/name/event_end_dateTime</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_end_dateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_end_dateTime</Declaration>
+			
+			
+			<Anchor>//api/name/event_end_dateTime</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_end_dateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_end_dateTime</Declaration>
+			
+			
+			<Anchor>//api/name/event_end_dateTime</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_id:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_id</Declaration>
+			
+			
+			<Anchor>//api/name/event_id</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_id</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_id</Declaration>
+			
+			
+			<Anchor>//api/name/event_id</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_id</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_id</Declaration>
+			
+			
+			<Anchor>//api/name/event_id</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_image_url:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_image_url</Declaration>
+			
+			
+			<Anchor>//api/name/event_image_url</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_image_url</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_image_url</Declaration>
+			
+			
+			<Anchor>//api/name/event_image_url</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_image_url</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_image_url</Declaration>
+			
+			
+			<Anchor>//api/name/event_image_url</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_name:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_name</Declaration>
+			
+			
+			<Anchor>//api/name/event_name</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_name</Declaration>
+			
+			
+			<Anchor>//api/name/event_name</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_name</Declaration>
+			
+			
+			<Anchor>//api/name/event_name</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_owner:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_owner</Declaration>
+			
+			
+			<Anchor>//api/name/event_owner</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_owner</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_owner</Declaration>
+			
+			
+			<Anchor>//api/name/event_owner</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_owner</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_owner</Declaration>
+			
+			
+			<Anchor>//api/name/event_owner</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_start_dateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_start_dateTime</Declaration>
+			
+			
+			<Anchor>//api/name/event_start_dateTime</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_start_dateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_start_dateTime</Declaration>
+			
+			
+			<Anchor>//api/name/event_start_dateTime</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_start_dateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_start_dateTime</Declaration>
+			
+			
+			<Anchor>//api/name/event_start_dateTime</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_loc_address:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_address</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_address</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_loc_address</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_address</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_address</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_loc_address</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_address</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_address</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_loc_country:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_country</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_country</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_loc_country</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_country</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_country</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_loc_country</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_country</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_country</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_loc_latitude:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_loc_latitude</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_latitude</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_loc_latitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_loc_latitude</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_latitude</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_loc_latitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_loc_latitude</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_latitude</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_loc_longitude:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_loc_longitude</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_longitude</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_loc_longitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_loc_longitude</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_longitude</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_loc_longitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *event_loc_longitude</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_longitude</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_loc_name:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_name</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_name</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_loc_name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_name</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_name</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_loc_name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_name</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_name</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_loc_owner:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_owner</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_owner</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_loc_owner</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_owner</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_owner</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_loc_owner</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_owner</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_owner</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_loc_postcode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_postcode</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_postcode</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_loc_postcode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_postcode</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_postcode</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_loc_postcode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_postcode</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_postcode</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_loc_region:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_region</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_region</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_loc_region</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_region</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_region</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_loc_region</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_region</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_region</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_loc_state:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_state</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_state</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_loc_state</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_state</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_state</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_loc_state</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_state</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_state</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/setEvent_loc_town:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_town</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_town</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FavouriteEvents/event_loc_town</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_town</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_town</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FavouriteEvents/event_loc_town</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FavouriteEvents.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *event_loc_town</Declaration>
+			
+			
+			<Anchor>//api/name/event_loc_town</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Feeds.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Feeds</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setTweetDateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/tweetDateTime</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/tweetDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/tweetDateTime</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/tweetDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/tweetDateTime</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setTweetText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetText</Declaration>
+			
+			
+			<Anchor>//api/name/tweetText</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/tweetText</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetText</Declaration>
+			
+			
+			<Anchor>//api/name/tweetText</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/tweetText</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetText</Declaration>
+			
+			
+			<Anchor>//api/name/tweetText</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setTweetURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetURL</Declaration>
+			
+			
+			<Anchor>//api/name/tweetURL</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/tweetURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetURL</Declaration>
+			
+			
+			<Anchor>//api/name/tweetURL</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/tweetURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetURL</Declaration>
+			
+			
+			<Anchor>//api/name/tweetURL</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setTweetUserName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserName</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserName</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/tweetUserName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserName</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserName</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/tweetUserName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserName</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserName</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setTweetUserScreenName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserScreenName</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/tweetUserScreenName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserScreenName</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/tweetUserScreenName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserScreenName</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setTweetUserURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserURL</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserURL</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/tweetUserURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserURL</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserURL</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/tweetUserURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserURL</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserURL</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setTweetUserDescription:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserDescription</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserDescription</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/tweetUserDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserDescription</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserDescription</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/tweetUserDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserDescription</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserDescription</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setTweetUserLocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserLocation</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserLocation</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/tweetUserLocation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserLocation</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserLocation</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/tweetUserLocation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserLocation</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserLocation</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setTweetUserProfileImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserProfileImage</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserProfileImage</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/tweetUserProfileImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserProfileImage</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserProfileImage</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/tweetUserProfileImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *tweetUserProfileImage</Declaration>
+			
+			
+			<Anchor>//api/name/tweetUserProfileImage</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setFacebookMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookMessage</Declaration>
+			
+			
+			<Anchor>//api/name/facebookMessage</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/facebookMessage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookMessage</Declaration>
+			
+			
+			<Anchor>//api/name/facebookMessage</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/facebookMessage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookMessage</Declaration>
+			
+			
+			<Anchor>//api/name/facebookMessage</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setFacebookDateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/facebookDateTime</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/facebookDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/facebookDateTime</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/facebookDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/facebookDateTime</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setFacebookPicture:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookPicture</Declaration>
+			
+			
+			<Anchor>//api/name/facebookPicture</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/facebookPicture</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookPicture</Declaration>
+			
+			
+			<Anchor>//api/name/facebookPicture</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/facebookPicture</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookPicture</Declaration>
+			
+			
+			<Anchor>//api/name/facebookPicture</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setFacebookLink:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookLink</Declaration>
+			
+			
+			<Anchor>//api/name/facebookLink</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/facebookLink</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookLink</Declaration>
+			
+			
+			<Anchor>//api/name/facebookLink</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/facebookLink</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *facebookLink</Declaration>
+			
+			
+			<Anchor>//api/name/facebookLink</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setInstagramThumbnail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramThumbnail</Declaration>
+			
+			
+			<Anchor>//api/name/instagramThumbnail</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/instagramThumbnail</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramThumbnail</Declaration>
+			
+			
+			<Anchor>//api/name/instagramThumbnail</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/instagramThumbnail</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramThumbnail</Declaration>
+			
+			
+			<Anchor>//api/name/instagramThumbnail</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setInstagramTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramTitle</Declaration>
+			
+			
+			<Anchor>//api/name/instagramTitle</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/instagramTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramTitle</Declaration>
+			
+			
+			<Anchor>//api/name/instagramTitle</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/instagramTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramTitle</Declaration>
+			
+			
+			<Anchor>//api/name/instagramTitle</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setInstagramDescription:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramDescription</Declaration>
+			
+			
+			<Anchor>//api/name/instagramDescription</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/instagramDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramDescription</Declaration>
+			
+			
+			<Anchor>//api/name/instagramDescription</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/instagramDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramDescription</Declaration>
+			
+			
+			<Anchor>//api/name/instagramDescription</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setInstagramDateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/instagramDateTime</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/instagramDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/instagramDateTime</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/instagramDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/instagramDateTime</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/setInstagramLink:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramLink</Declaration>
+			
+			
+			<Anchor>//api/name/instagramLink</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Feeds/instagramLink</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramLink</Declaration>
+			
+			
+			<Anchor>//api/name/instagramLink</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Feeds/instagramLink</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Feeds.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *instagramLink</Declaration>
+			
+			
+			<Anchor>//api/name/instagramLink</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

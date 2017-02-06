@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/VRGCalendarViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/VRGCalendarViewDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="92"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/VRGCalendarViewDelegate/calendarView:switchedToMonth:targetHeight:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (void)calendarView:(VRGCalendarView *)calendarView switchedToMonth:(int)month targetHeight:(float)targetHeight animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/calendarView:switchedToMonth:targetHeight:animated:</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/VRGCalendarViewDelegate/calendarView:dateSelected:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VRGCalendarView.h</DeclaredIn>
+			
+			<Declaration>- (void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date</Declaration>
+			
+			
+			<Anchor>//api/name/calendarView:dateSelected:</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

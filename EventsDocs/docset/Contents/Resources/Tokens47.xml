@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SDImageCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SDImageCache</TokenIdentifier>
+			<Abstract type="html">SDImageCache maintains a memory cache and an optional disk cache. Disk cache write operations are performed
+asynchronous so it doesn’t add unnecessary latency to the UI.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+            
+			
+			<NodeRef refid="47"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/setMaxMemoryCost:</TokenIdentifier>
+			<Abstract type="html">The maximum &quot;total cost&quot; of the in-memory image cache. The cost function is the number of pixels held in memory.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger maxMemoryCost</Declaration>
+			
+			
+			<Anchor>//api/name/maxMemoryCost</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/maxMemoryCost</TokenIdentifier>
+			<Abstract type="html">The maximum &quot;total cost&quot; of the in-memory image cache. The cost function is the number of pixels held in memory.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger maxMemoryCost</Declaration>
+			
+			
+			<Anchor>//api/name/maxMemoryCost</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDImageCache/maxMemoryCost</TokenIdentifier>
+			<Abstract type="html">The maximum &quot;total cost&quot; of the in-memory image cache. The cost function is the number of pixels held in memory.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger maxMemoryCost</Declaration>
+			
+			
+			<Anchor>//api/name/maxMemoryCost</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/setMaxCacheAge:</TokenIdentifier>
+			<Abstract type="html">The maximum length of time to keep an image in the cache, in seconds</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSInteger maxCacheAge</Declaration>
+			
+			
+			<Anchor>//api/name/maxCacheAge</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/maxCacheAge</TokenIdentifier>
+			<Abstract type="html">The maximum length of time to keep an image in the cache, in seconds</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSInteger maxCacheAge</Declaration>
+			
+			
+			<Anchor>//api/name/maxCacheAge</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDImageCache/maxCacheAge</TokenIdentifier>
+			<Abstract type="html">The maximum length of time to keep an image in the cache, in seconds</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSInteger maxCacheAge</Declaration>
+			
+			
+			<Anchor>//api/name/maxCacheAge</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/setMaxCacheSize:</TokenIdentifier>
+			<Abstract type="html">The maximum size of the cache, in bytes.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger maxCacheSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxCacheSize</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/maxCacheSize</TokenIdentifier>
+			<Abstract type="html">The maximum size of the cache, in bytes.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger maxCacheSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxCacheSize</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDImageCache/maxCacheSize</TokenIdentifier>
+			<Abstract type="html">The maximum size of the cache, in bytes.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger maxCacheSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxCacheSize</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SDImageCache/sharedImageCache</TokenIdentifier>
+			<Abstract type="html">Returns global shared cache instance</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>+ (SDImageCache *)sharedImageCache</Declaration>
+			
+			<ReturnValue><Abstract type="html">SDImageCache global instance</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedImageCache</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/initWithNamespace:</TokenIdentifier>
+			<Abstract type="html">Init a new cache store with a specific namespace</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithNamespace:(NSString *)ns</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ns</Name>
+					<Abstract type="html">The namespace to use for this cache store</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithNamespace:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/addReadOnlyCachePath:</TokenIdentifier>
+			<Abstract type="html">Add a read-only cache path to search for images pre-cached by SDImageCache
+Useful if you want to bundle pre-loaded images with your app</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)addReadOnlyCachePath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to use for this read-only cache path</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addReadOnlyCachePath:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/storeImage:forKey:</TokenIdentifier>
+			<Abstract type="html">Store an image into memory and disk cache at the given key.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)storeImage:(UIImage *)image forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">The image to store</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The unique image cache key, usually it&apos;s image absolute URL</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storeImage:forKey:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/storeImage:forKey:toDisk:</TokenIdentifier>
+			<Abstract type="html">Store an image into memory and optionally disk cache at the given key.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)storeImage:(UIImage *)image forKey:(NSString *)key toDisk:(BOOL)toDisk</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">The image to store</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The unique image cache key, usually it&apos;s image absolute URL</Abstract>
+				</Parameter><Parameter>
+					<Name>toDisk</Name>
+					<Abstract type="html">Store the image to disk cache if YES</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storeImage:forKey:toDisk:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/storeImage:recalculateFromImage:imageData:forKey:toDisk:</TokenIdentifier>
+			<Abstract type="html">Store an image into memory and optionally disk cache at the given key.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)storeImage:(UIImage *)image recalculateFromImage:(BOOL)recalculate imageData:(NSData *)imageData forKey:(NSString *)key toDisk:(BOOL)toDisk</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">The image to store</Abstract>
+				</Parameter><Parameter>
+					<Name>recalculate</Name>
+					<Abstract type="html">BOOL indicates if imageData can be used or a new data should be constructed from the UIImage</Abstract>
+				</Parameter><Parameter>
+					<Name>imageData</Name>
+					<Abstract type="html">The image data as returned by the server, this representation will be used for disk storage
+instead of converting the given image object into a storable/compressed image format in order
+to save quality and CPU</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The unique image cache key, usually it&apos;s image absolute URL</Abstract>
+				</Parameter><Parameter>
+					<Name>toDisk</Name>
+					<Abstract type="html">Store the image to disk cache if YES</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storeImage:recalculateFromImage:imageData:forKey:toDisk:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/queryDiskCacheForKey:done:</TokenIdentifier>
+			<Abstract type="html">Query the disk cache asynchronously.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (NSOperation *)queryDiskCacheForKey:(NSString *)key done:(SDWebImageQueryCompletedBlock)doneBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The unique key used to store the wanted image</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryDiskCacheForKey:done:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/imageFromMemoryCacheForKey:</TokenIdentifier>
+			<Abstract type="html">Query the memory cache synchronously.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)imageFromMemoryCacheForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The unique key used to store the wanted image</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/imageFromMemoryCacheForKey:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/imageFromDiskCacheForKey:</TokenIdentifier>
+			<Abstract type="html">Query the disk cache synchronously after checking the memory cache.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)imageFromDiskCacheForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The unique key used to store the wanted image</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/imageFromDiskCacheForKey:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/removeImageForKey:</TokenIdentifier>
+			<Abstract type="html">Remove the image from memory and disk cache synchronously</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)removeImageForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The unique image cache key</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeImageForKey:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/removeImageForKey:fromDisk:</TokenIdentifier>
+			<Abstract type="html">Remove the image from memory and optionaly disk cache synchronously</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)removeImageForKey:(NSString *)key fromDisk:(BOOL)fromDisk</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The unique image cache key</Abstract>
+				</Parameter><Parameter>
+					<Name>fromDisk</Name>
+					<Abstract type="html">Also remove cache entry from disk if YES</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeImageForKey:fromDisk:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/clearMemory</TokenIdentifier>
+			<Abstract type="html">Clear all memory cached images</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)clearMemory</Declaration>
+			
+			
+			<Anchor>//api/name/clearMemory</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/clearDisk</TokenIdentifier>
+			<Abstract type="html">Clear all disk cached images</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)clearDisk</Declaration>
+			
+			
+			<Anchor>//api/name/clearDisk</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/clearDiskOnCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)clearDiskOnCompletion:(void ( ^ ) ( ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/clearDiskOnCompletion:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/cleanDisk</TokenIdentifier>
+			<Abstract type="html">Remove all expired cached image from disk</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)cleanDisk</Declaration>
+			
+			
+			<Anchor>//api/name/cleanDisk</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/getSize</TokenIdentifier>
+			<Abstract type="html">Get the size used by the disk cache</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)getSize</Declaration>
+			
+			
+			<Anchor>//api/name/getSize</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/getDiskCount</TokenIdentifier>
+			<Abstract type="html">Get the number of images in the disk cache</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (int)getDiskCount</Declaration>
+			
+			
+			<Anchor>//api/name/getDiskCount</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/calculateSizeWithCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronously calculate the disk cache&apos;s size.</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (void)calculateSizeWithCompletionBlock:(void ( ^ ) ( NSUInteger fileCount , NSUInteger totalSize ))completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/calculateSizeWithCompletionBlock:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/diskImageExistsWithKey:</TokenIdentifier>
+			<Abstract type="html">Check if image exists in cache already</Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)diskImageExistsWithKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/diskImageExistsWithKey:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/cachePathForKey:inPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)cachePathForKey:(NSString *)key inPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/cachePathForKey:inPath:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/defaultCachePathForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)defaultCachePathForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/defaultCachePathForKey:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/cachedFileNameForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)cachedFileNameForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/cachedFileNameForKey:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/diskImageDataBySearchingAllPathsForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>- (NSData *)diskImageDataBySearchingAllPathsForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/diskImageDataBySearchingAllPathsForKey:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/diskImageForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)diskImageForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/diskImageForKey:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/scaledImageForKey:image:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)scaledImageForKey:(NSString *)key image:(UIImage *)image</Declaration>
+			
+			
+			<Anchor>//api/name/scaledImageForKey:image:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/backgroundCleanDisk</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>- (void)backgroundCleanDisk</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundCleanDisk</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/setMemCache:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSCache *memCache</Declaration>
+			
+			
+			<Anchor>//api/name/memCache</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/memCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSCache *memCache</Declaration>
+			
+			
+			<Anchor>//api/name/memCache</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDImageCache/memCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSCache *memCache</Declaration>
+			
+			
+			<Anchor>//api/name/memCache</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/setDiskCachePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *diskCachePath</Declaration>
+			
+			
+			<Anchor>//api/name/diskCachePath</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/diskCachePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *diskCachePath</Declaration>
+			
+			
+			<Anchor>//api/name/diskCachePath</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDImageCache/diskCachePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *diskCachePath</Declaration>
+			
+			
+			<Anchor>//api/name/diskCachePath</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/setCustomPaths:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *customPaths</Declaration>
+			
+			
+			<Anchor>//api/name/customPaths</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/customPaths</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *customPaths</Declaration>
+			
+			
+			<Anchor>//api/name/customPaths</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDImageCache/customPaths</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *customPaths</Declaration>
+			
+			
+			<Anchor>//api/name/customPaths</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/setIoQueue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (SDDispatchQueueSetterSementics, nonatomic) dispatch_queue_t ioQueue</Declaration>
+			
+			
+			<Anchor>//api/name/ioQueue</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/ioQueue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (SDDispatchQueueSetterSementics, nonatomic) dispatch_queue_t ioQueue</Declaration>
+			
+			
+			<Anchor>//api/name/ioQueue</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDImageCache/ioQueue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.m</DeclaredIn>
+			
+			<Declaration>@property (SDDispatchQueueSetterSementics, nonatomic) dispatch_queue_t ioQueue</Declaration>
+			
+			
+			<Anchor>//api/name/ioQueue</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

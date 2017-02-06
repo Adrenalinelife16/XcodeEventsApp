@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MMdbsupport.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MMdbsupport</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MMdbsupport.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MMdbsupport/MMinitializeDb</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MMdbsupport.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)MMinitializeDb</Declaration>
+			
+			
+			<Anchor>//api/name/MMinitializeDb</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MMdbsupport/MMOpenDataBase</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MMdbsupport.h</DeclaredIn>
+			
+			<Declaration>+ (void)MMOpenDataBase</Declaration>
+			
+			
+			<Anchor>//api/name/MMOpenDataBase</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MMdbsupport/MMCloseDataBase</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MMdbsupport.h</DeclaredIn>
+			
+			<Declaration>+ (void)MMCloseDataBase</Declaration>
+			
+			
+			<Anchor>//api/name/MMCloseDataBase</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MMdbsupport/MMExecuteSqlQuery:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MMdbsupport.h</DeclaredIn>
+			
+			<Declaration>+ (void)MMExecuteSqlQuery:(NSString *)MMQueryStatement</Declaration>
+			
+			
+			<Anchor>//api/name/MMExecuteSqlQuery:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MMdbsupport/MMfetchFavEvents:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MMdbsupport.h</DeclaredIn>
+			
+			<Declaration>+ (NSMutableArray *)MMfetchFavEvents:(NSString *)query</Declaration>
+			
+			
+			<Anchor>//api/name/MMfetchFavEvents:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

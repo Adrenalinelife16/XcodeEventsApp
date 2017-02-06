@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CustomPickerView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CustomPickerView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;CustomPickerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;CustomPickerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CustomPickerView/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;CustomPickerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/initWithFrame:delegate:tag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame delegate:(id)pickerDelegate tag:(int)tag</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:delegate:tag:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/customPickerAddDataSource:component:defaultValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+			
+			<Declaration>- (void)customPickerAddDataSource:(NSMutableArray *)dataArray component:(int)comp defaultValue:(int)ind</Declaration>
+			
+			
+			<Anchor>//api/name/customPickerAddDataSource:component:defaultValue:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/showCustomPickerInView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+			
+			<Declaration>- (void)showCustomPickerInView:(UIView *)view</Declaration>
+			
+			
+			<Anchor>//api/name/showCustomPickerInView:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/hideCustomPickerView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+			
+			<Declaration>- (void)hideCustomPickerView</Declaration>
+			
+			
+			<Anchor>//api/name/hideCustomPickerView</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/removeDataSourceForComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+			
+			<Declaration>- (void)removeDataSourceForComponent:(int)component</Declaration>
+			
+			
+			<Anchor>//api/name/removeDataSourceForComponent:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/initWithDataSource</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.m</DeclaredIn>
+			
+			<Declaration>- (void)initWithDataSource</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDataSource</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/doneBtnTap</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.m</DeclaredIn>
+			
+			<Declaration>- (void)doneBtnTap</Declaration>
+			
+			
+			<Anchor>//api/name/doneBtnTap</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/cancelBtnTap</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.m</DeclaredIn>
+			
+			<Declaration>- (void)cancelBtnTap</Declaration>
+			
+			
+			<Anchor>//api/name/cancelBtnTap</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/pickerView:numberOfRowsInComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component</Declaration>
+			
+			
+			<Anchor>//api/name/pickerView:numberOfRowsInComponent:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/numberOfComponentsInPickerView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfComponentsInPickerView:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/pickerView:titleForRow:forComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component</Declaration>
+			
+			
+			<Anchor>//api/name/pickerView:titleForRow:forComponent:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/pickerView:widthForComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component</Declaration>
+			
+			
+			<Anchor>//api/name/pickerView:widthForComponent:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomPickerView/pickerView:didSelectRow:inComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.m</DeclaredIn>
+			
+			<Declaration>- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component</Declaration>
+			
+			
+			<Anchor>//api/name/pickerView:didSelectRow:inComponent:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

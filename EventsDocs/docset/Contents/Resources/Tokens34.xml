@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MyAnnotation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MyAnnotation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyAnnotation/setCoordinate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D coordinate</Declaration>
+			
+			
+			<Anchor>//api/name/coordinate</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyAnnotation/coordinate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D coordinate</Declaration>
+			
+			
+			<Anchor>//api/name/coordinate</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyAnnotation/coordinate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D coordinate</Declaration>
+			
+			
+			<Anchor>//api/name/coordinate</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyAnnotation/setTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyAnnotation/title</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyAnnotation/title</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyAnnotation/setSubtitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyAnnotation/subtitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyAnnotation/subtitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyAnnotation/setNTag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) int nTag</Declaration>
+			
+			
+			<Anchor>//api/name/nTag</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyAnnotation/nTag</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) int nTag</Declaration>
+			
+			
+			<Anchor>//api/name/nTag</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyAnnotation/nTag</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) int nTag</Declaration>
+			
+			
+			<Anchor>//api/name/nTag</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyAnnotation/initWithLocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyAnnotation.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithLocation:(CLLocationCoordinate2D)coord</Declaration>
+			
+			
+			<Anchor>//api/name/initWithLocation:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

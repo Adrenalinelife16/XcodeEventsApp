@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIView+convenience.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIView(convenience)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+            
+			
+			<NodeRef refid="80"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/setFrameOrigin:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGPoint frameOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/frameOrigin</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/frameOrigin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGPoint frameOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/frameOrigin</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIView/frameOrigin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGPoint frameOrigin</Declaration>
+			
+			
+			<Anchor>//api/name/frameOrigin</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/setFrameSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGSize frameSize</Declaration>
+			
+			
+			<Anchor>//api/name/frameSize</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/frameSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGSize frameSize</Declaration>
+			
+			
+			<Anchor>//api/name/frameSize</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIView/frameSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGSize frameSize</Declaration>
+			
+			
+			<Anchor>//api/name/frameSize</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/setFrameX:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameX</Declaration>
+			
+			
+			<Anchor>//api/name/frameX</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/frameX</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameX</Declaration>
+			
+			
+			<Anchor>//api/name/frameX</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIView/frameX</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameX</Declaration>
+			
+			
+			<Anchor>//api/name/frameX</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/setFrameY:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameY</Declaration>
+			
+			
+			<Anchor>//api/name/frameY</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/frameY</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameY</Declaration>
+			
+			
+			<Anchor>//api/name/frameY</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIView/frameY</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameY</Declaration>
+			
+			
+			<Anchor>//api/name/frameY</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/setFrameRight:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameRight</Declaration>
+			
+			
+			<Anchor>//api/name/frameRight</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/frameRight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameRight</Declaration>
+			
+			
+			<Anchor>//api/name/frameRight</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIView/frameRight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameRight</Declaration>
+			
+			
+			<Anchor>//api/name/frameRight</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/setFrameBottom:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameBottom</Declaration>
+			
+			
+			<Anchor>//api/name/frameBottom</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/frameBottom</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameBottom</Declaration>
+			
+			
+			<Anchor>//api/name/frameBottom</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIView/frameBottom</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameBottom</Declaration>
+			
+			
+			<Anchor>//api/name/frameBottom</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/setFrameWidth:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameWidth</Declaration>
+			
+			
+			<Anchor>//api/name/frameWidth</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/frameWidth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameWidth</Declaration>
+			
+			
+			<Anchor>//api/name/frameWidth</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIView/frameWidth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameWidth</Declaration>
+			
+			
+			<Anchor>//api/name/frameWidth</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/setFrameHeight:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameHeight</Declaration>
+			
+			
+			<Anchor>//api/name/frameHeight</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/frameHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameHeight</Declaration>
+			
+			
+			<Anchor>//api/name/frameHeight</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIView/frameHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat frameHeight</Declaration>
+			
+			
+			<Anchor>//api/name/frameHeight</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/containsSubView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)containsSubView:(UIView *)subView</Declaration>
+			
+			
+			<Anchor>//api/name/containsSubView:</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/containsSubViewOfClassType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+convenience.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)containsSubViewOfClassType:(Class)class</Declaration>
+			
+			
+			<Anchor>//api/name/containsSubViewOfClassType:</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

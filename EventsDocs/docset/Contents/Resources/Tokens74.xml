@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIColor+UIColor_Undocumented_Expanded.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIColor(UIColor_Undocumented_Expanded)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor+expanded.h</DeclaredIn>
+            
+			
+			<NodeRef refid="74"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIColor/fetchStyleString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor+expanded.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)fetchStyleString</Declaration>
+			
+			
+			<Anchor>//api/name/fetchStyleString</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIColor/rgbColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor+expanded.h</DeclaredIn>
+			
+			<Declaration>- (UIColor *)rgbColor</Declaration>
+			
+			
+			<Anchor>//api/name/rgbColor</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

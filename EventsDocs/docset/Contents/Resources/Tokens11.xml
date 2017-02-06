@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AboutCustomCell2.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AboutCustomCell2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell2.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell2/setLblDateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell2.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/lblDateTime</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell2/lblDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell2.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/lblDateTime</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutCustomCell2/lblDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell2.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/lblDateTime</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell2/initWithStyle:reuseIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell2.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStyle:reuseIdentifier:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell2/setSelected:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell2.m</DeclaredIn>
+			
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/setSelected:animated:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

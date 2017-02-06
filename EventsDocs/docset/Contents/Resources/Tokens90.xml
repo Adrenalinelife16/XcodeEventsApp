@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SDWebImagePrefetcherDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SDWebImagePrefetcherDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+            
+			
+			<NodeRef refid="90"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SDWebImagePrefetcherDelegate/imagePrefetcher:didPrefetchURL:finishedCount:totalCount:</TokenIdentifier>
+			<Abstract type="html">Called when an image was prefetched.</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>- (void)imagePrefetcher:(SDWebImagePrefetcher *)imagePrefetcher didPrefetchURL:(NSURL *)imageURL finishedCount:(NSUInteger)finishedCount totalCount:(NSUInteger)totalCount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imagePrefetcher</Name>
+					<Abstract type="html">The current image prefetcher</Abstract>
+				</Parameter><Parameter>
+					<Name>imageURL</Name>
+					<Abstract type="html">The image url that was prefetched</Abstract>
+				</Parameter><Parameter>
+					<Name>finishedCount</Name>
+					<Abstract type="html">The total number of images that were prefetched</Abstract>
+				</Parameter><Parameter>
+					<Name>totalCount</Name>
+					<Abstract type="html">The total number of images that need to be prefetched</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/imagePrefetcher:didPrefetchURL:finishedCount:totalCount:</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SDWebImagePrefetcherDelegate/imagePrefetcher:didFinishWithTotalCount:skippedCount:</TokenIdentifier>
+			<Abstract type="html">Called when all images are prefetched.</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>- (void)imagePrefetcher:(SDWebImagePrefetcher *)imagePrefetcher didFinishWithTotalCount:(NSUInteger)totalCount skippedCount:(NSUInteger)skippedCount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imagePrefetcher</Name>
+					<Abstract type="html">The current image prefetcher</Abstract>
+				</Parameter><Parameter>
+					<Name>totalCount</Name>
+					<Abstract type="html">The total number of images that need to be prefetched</Abstract>
+				</Parameter><Parameter>
+					<Name>skippedCount</Name>
+					<Abstract type="html">The total number of images that were skipped</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/imagePrefetcher:didFinishWithTotalCount:skippedCount:</Anchor>
+            <NodeRef refid="90"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="FavouriteEvents" representedClassName="FavouriteEvents" syncable="YES">
+        <attribute name="event_all_day" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="event_content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_end_dateTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="event_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_loc_address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_loc_country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_loc_latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="event_loc_longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="event_loc_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_loc_owner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_loc_postcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_loc_region" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_loc_state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_loc_town" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_owner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_start_dateTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FavouriteEvents" positionX="-63" positionY="-18" width="128" height="315"/>
+    </elements>
+</model>

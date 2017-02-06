@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CustomDatePicker.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CustomDatePicker</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomDatePicker/initWithFrame:delegate:tag:mode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame delegate:(id)pickerDelegate tag:(int)tag mode:(UIDatePickerMode)mode</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:delegate:tag:mode:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomDatePicker/showCustomPickerInView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>- (void)showCustomPickerInView:(UIView *)view</Declaration>
+			
+			
+			<Anchor>//api/name/showCustomPickerInView:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomDatePicker/hideCustomPickerView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>- (void)hideCustomPickerView</Declaration>
+			
+			
+			<Anchor>//api/name/hideCustomPickerView</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomDatePicker/setTag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomDatePicker/tag</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CustomDatePicker/tag</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomDatePicker/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;CustomDatePickerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomDatePicker/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;CustomDatePickerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CustomDatePicker/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;CustomDatePickerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomDatePicker/addToolbar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.m</DeclaredIn>
+			
+			<Declaration>- (void)addToolbar</Declaration>
+			
+			
+			<Anchor>//api/name/addToolbar</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomDatePicker/doneBtnTap</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.m</DeclaredIn>
+			
+			<Declaration>- (void)doneBtnTap</Declaration>
+			
+			
+			<Anchor>//api/name/doneBtnTap</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CustomDatePicker/cancelBtnTap</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.m</DeclaredIn>
+			
+			<Declaration>- (void)cancelBtnTap</Declaration>
+			
+			
+			<Anchor>//api/name/cancelBtnTap</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/SDImageCacheType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SDImageCacheType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDImageCache.h</DeclaredIn>
+            
+			
+			<NodeRef refid="95"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDImageCacheTypeNone</TokenIdentifier>
+            <Abstract type="html">The image wasn&apos;t available the SDWebImage caches, but was downloaded from the web.
+     </Abstract>
+            <Declaration>SDImageCacheTypeNone</Declaration>
+            
+            <DeclaredIn>SDImageCache.h</DeclaredIn>
+            
+            <NodeRef refid="95"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDImageCacheTypeDisk</TokenIdentifier>
+            <Abstract type="html">The image was obtained from the disk cache.
+     </Abstract>
+            <Declaration>SDImageCacheTypeDisk</Declaration>
+            
+            <DeclaredIn>SDImageCache.h</DeclaredIn>
+            
+            <NodeRef refid="95"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDImageCacheTypeMemory</TokenIdentifier>
+            <Abstract type="html">The image was obtained from the memory cache.
+     </Abstract>
+            <Declaration>SDImageCacheTypeMemory</Declaration>
+            
+            <DeclaredIn>SDImageCache.h</DeclaredIn>
+            
+            <NodeRef refid="95"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

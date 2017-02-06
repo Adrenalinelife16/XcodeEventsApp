@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSDate+Convenience.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDate(Convenience)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+            
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/offsetMonth:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>- (NSDate *)offsetMonth:(int)numMonths</Declaration>
+			
+			
+			<Anchor>//api/name/offsetMonth:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/offsetDay:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>- (NSDate *)offsetDay:(int)numDays</Declaration>
+			
+			
+			<Anchor>//api/name/offsetDay:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/offsetHours:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>- (NSDate *)offsetHours:(int)hours</Declaration>
+			
+			
+			<Anchor>//api/name/offsetHours:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/numDaysInMonth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>- (int)numDaysInMonth</Declaration>
+			
+			
+			<Anchor>//api/name/numDaysInMonth</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/firstWeekDayInMonth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>- (int)firstWeekDayInMonth</Declaration>
+			
+			
+			<Anchor>//api/name/firstWeekDayInMonth</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/year</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>- (int)year</Declaration>
+			
+			
+			<Anchor>//api/name/year</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/month</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>- (int)month</Declaration>
+			
+			
+			<Anchor>//api/name/month</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/day</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>- (int)day</Declaration>
+			
+			
+			<Anchor>//api/name/day</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/dateStartOfDay:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>+ (NSDate *)dateStartOfDay:(NSDate *)date</Declaration>
+			
+			
+			<Anchor>//api/name/dateStartOfDay:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/dateStartOfWeek</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>+ (NSDate *)dateStartOfWeek</Declaration>
+			
+			
+			<Anchor>//api/name/dateStartOfWeek</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDate/dateEndOfWeek</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSDate+convenience.h</DeclaredIn>
+			
+			<Declaration>+ (NSDate *)dateEndOfWeek</Declaration>
+			
+			
+			<Anchor>//api/name/dateEndOfWeek</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CustomPickerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CustomPickerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="85"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CustomPickerDelegate/customPickerValuePicked:tag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+			
+			<Declaration>- (void)customPickerValuePicked:(NSMutableDictionary *)values tag:(int)tag</Declaration>
+			
+			
+			<Anchor>//api/name/customPickerValuePicked:tag:</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CustomPickerDelegate/customPickerDidCancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomPickerView.h</DeclaredIn>
+			
+			<Declaration>- (void)customPickerDidCancel</Declaration>
+			
+			
+			<Anchor>//api/name/customPickerDidCancel</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

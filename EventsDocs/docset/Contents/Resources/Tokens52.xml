@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SDWebImagePrefetcher.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SDWebImagePrefetcher</TokenIdentifier>
+			<Abstract type="html">Prefetch some URLs in the cache for future use. Images are downloaded in low priority.</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+            
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setMaxConcurrentDownloads:</TokenIdentifier>
+			<Abstract type="html">Maximum number of URLs to prefetch at the same time. Defaults to 3.</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger maxConcurrentDownloads</Declaration>
+			
+			
+			<Anchor>//api/name/maxConcurrentDownloads</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/maxConcurrentDownloads</TokenIdentifier>
+			<Abstract type="html">Maximum number of URLs to prefetch at the same time. Defaults to 3.</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger maxConcurrentDownloads</Declaration>
+			
+			
+			<Anchor>//api/name/maxConcurrentDownloads</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/maxConcurrentDownloads</TokenIdentifier>
+			<Abstract type="html">Maximum number of URLs to prefetch at the same time. Defaults to 3.</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger maxConcurrentDownloads</Declaration>
+			
+			
+			<Anchor>//api/name/maxConcurrentDownloads</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setOptions:</TokenIdentifier>
+			<Abstract type="html">SDWebImageOptions for prefetcher. Defaults to SDWebImageLowPriority.</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SDWebImageOptions options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/options</TokenIdentifier>
+			<Abstract type="html">SDWebImageOptions for prefetcher. Defaults to SDWebImageLowPriority.</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SDWebImageOptions options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/options</TokenIdentifier>
+			<Abstract type="html">SDWebImageOptions for prefetcher. Defaults to SDWebImageLowPriority.</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SDWebImageOptions options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) id&lt;SDWebImagePrefetcherDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) id&lt;SDWebImagePrefetcherDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) id&lt;SDWebImagePrefetcherDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SDWebImagePrefetcher/sharedImagePrefetcher</TokenIdentifier>
+			<Abstract type="html">Return the global image prefetcher instance.</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>+ (SDWebImagePrefetcher *)sharedImagePrefetcher</Declaration>
+			
+			
+			<Anchor>//api/name/sharedImagePrefetcher</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/prefetchURLs:</TokenIdentifier>
+			<Abstract type="html">Assign list of URLs to let SDWebImagePrefetcher to queue the prefetching,
+currently one image is downloaded at a time,
+and skips images for failed downloads and proceed to the next image in the list</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>- (void)prefetchURLs:(NSArray *)urls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urls</Name>
+					<Abstract type="html">list of URLs to prefetch</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/prefetchURLs:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/prefetchURLs:progress:completed:</TokenIdentifier>
+			<Abstract type="html">Assign list of URLs to let SDWebImagePrefetcher to queue the prefetching,
+currently one image is downloaded at a time,
+and skips images for failed downloads and proceed to the next image in the list</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>- (void)prefetchURLs:(NSArray *)urls progress:(void ( ^ ) ( NSUInteger , NSUInteger ))progressBlock completed:(void ( ^ ) ( NSUInteger , NSUInteger ))completionBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urls</Name>
+					<Abstract type="html">list of URLs to prefetch</Abstract>
+				</Parameter><Parameter>
+					<Name>progressBlock</Name>
+					<Abstract type="html">block to be called when progress updates</Abstract>
+				</Parameter><Parameter>
+					<Name>completionBlock</Name>
+					<Abstract type="html">block to be called when prefetching is completed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/prefetchURLs:progress:completed:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/cancelPrefetching</TokenIdentifier>
+			<Abstract type="html">Remove and cancel queued list</Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelPrefetching</Declaration>
+			
+			
+			<Anchor>//api/name/cancelPrefetching</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/startPrefetchingAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>- (void)startPrefetchingAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/startPrefetchingAtIndex:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/reportStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>- (void)reportStatus</Declaration>
+			
+			
+			<Anchor>//api/name/reportStatus</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SDWebImageManager *manager</Declaration>
+			
+			
+			<Anchor>//api/name/manager</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/manager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SDWebImageManager *manager</Declaration>
+			
+			
+			<Anchor>//api/name/manager</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/manager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SDWebImageManager *manager</Declaration>
+			
+			
+			<Anchor>//api/name/manager</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setPrefetchURLs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *prefetchURLs</Declaration>
+			
+			
+			<Anchor>//api/name/prefetchURLs</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/prefetchURLs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *prefetchURLs</Declaration>
+			
+			
+			<Anchor>//api/name/prefetchURLs</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/prefetchURLs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *prefetchURLs</Declaration>
+			
+			
+			<Anchor>//api/name/prefetchURLs</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setRequestedCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger requestedCount</Declaration>
+			
+			
+			<Anchor>//api/name/requestedCount</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/requestedCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger requestedCount</Declaration>
+			
+			
+			<Anchor>//api/name/requestedCount</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/requestedCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger requestedCount</Declaration>
+			
+			
+			<Anchor>//api/name/requestedCount</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setSkippedCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger skippedCount</Declaration>
+			
+			
+			<Anchor>//api/name/skippedCount</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/skippedCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger skippedCount</Declaration>
+			
+			
+			<Anchor>//api/name/skippedCount</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/skippedCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger skippedCount</Declaration>
+			
+			
+			<Anchor>//api/name/skippedCount</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setFinishedCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger finishedCount</Declaration>
+			
+			
+			<Anchor>//api/name/finishedCount</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/finishedCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger finishedCount</Declaration>
+			
+			
+			<Anchor>//api/name/finishedCount</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/finishedCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSUInteger finishedCount</Declaration>
+			
+			
+			<Anchor>//api/name/finishedCount</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setStartedTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSTimeInterval startedTime</Declaration>
+			
+			
+			<Anchor>//api/name/startedTime</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/startedTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSTimeInterval startedTime</Declaration>
+			
+			
+			<Anchor>//api/name/startedTime</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/startedTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) NSTimeInterval startedTime</Declaration>
+			
+			
+			<Anchor>//api/name/startedTime</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setCompletionBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( NSUInteger , NSUInteger ) completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/completionBlock</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/completionBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( NSUInteger , NSUInteger ) completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/completionBlock</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/completionBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( NSUInteger , NSUInteger ) completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/completionBlock</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/setProgressBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( NSUInteger , NSUInteger ) progressBlock</Declaration>
+			
+			
+			<Anchor>//api/name/progressBlock</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SDWebImagePrefetcher/progressBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( NSUInteger , NSUInteger ) progressBlock</Declaration>
+			
+			
+			<Anchor>//api/name/progressBlock</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SDWebImagePrefetcher/progressBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImagePrefetcher.m</DeclaredIn>
+			
+			<Declaration>@property (copy, nonatomic) void ( ^ ) ( NSUInteger , NSUInteger ) progressBlock</Declaration>
+			
+			
+			<Anchor>//api/name/progressBlock</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

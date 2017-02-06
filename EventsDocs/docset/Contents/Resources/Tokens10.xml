@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AboutCustomCell1.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AboutCustomCell1</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell1/setLblEventName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblEventName</Declaration>
+			
+			
+			<Anchor>//api/name/lblEventName</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell1/lblEventName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblEventName</Declaration>
+			
+			
+			<Anchor>//api/name/lblEventName</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutCustomCell1/lblEventName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblEventName</Declaration>
+			
+			
+			<Anchor>//api/name/lblEventName</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell1/setLblEventAddress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblEventAddress</Declaration>
+			
+			
+			<Anchor>//api/name/lblEventAddress</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell1/lblEventAddress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblEventAddress</Declaration>
+			
+			
+			<Anchor>//api/name/lblEventAddress</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutCustomCell1/lblEventAddress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblEventAddress</Declaration>
+			
+			
+			<Anchor>//api/name/lblEventAddress</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell1/setLblEventDistance:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblEventDistance</Declaration>
+			
+			
+			<Anchor>//api/name/lblEventDistance</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell1/lblEventDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblEventDistance</Declaration>
+			
+			
+			<Anchor>//api/name/lblEventDistance</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutCustomCell1/lblEventDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblEventDistance</Declaration>
+			
+			
+			<Anchor>//api/name/lblEventDistance</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell1/clickedDirection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedDirection:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedDirection:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell1/initWithStyle:reuseIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStyle:reuseIdentifier:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutCustomCell1/setSelected:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutCustomCell1.m</DeclaredIn>
+			
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/setSelected:animated:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

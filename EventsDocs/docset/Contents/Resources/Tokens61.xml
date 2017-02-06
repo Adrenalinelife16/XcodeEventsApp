@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+ImageContentType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(ImageContentType)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+ImageContentType.h</DeclaredIn>
+            
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/contentTypeForImageData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+ImageContentType.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)contentTypeForImageData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/contentTypeForImageData:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

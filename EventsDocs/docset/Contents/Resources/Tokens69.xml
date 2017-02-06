@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIApplication+KeyboardView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIApplication(KeyboardView)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="69"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIApplication/keyboardView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DSActivityView.h</DeclaredIn>
+			
+			<Declaration>- (UIView *)keyboardView</Declaration>
+			
+			
+			<Anchor>//api/name/keyboardView</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

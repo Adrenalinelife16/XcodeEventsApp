@@ -1,0 +1,16 @@
+/* Localized versions of Info.plist keys */
+<dict>
+<key>CFBundleURLTypes</key>
+<array>
+<dict>
+<key>CFBundleURLSchemes</key>
+<array>
+<string>fb1005768949528101</string>
+</array>
+</dict>
+</array>
+<key>FacebookAppID</key>
+<string>1005768949528101</string>
+<key>FacebookDisplayName</key>
+<string>Adrenaline Life</string>
+</dict>

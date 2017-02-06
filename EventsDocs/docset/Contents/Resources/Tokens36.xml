@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MyProgramCustomCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MyProgramCustomCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="36"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramCustomCell/setLblProgramName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblProgramName</Declaration>
+			
+			
+			<Anchor>//api/name/lblProgramName</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramCustomCell/lblProgramName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblProgramName</Declaration>
+			
+			
+			<Anchor>//api/name/lblProgramName</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramCustomCell/lblProgramName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblProgramName</Declaration>
+			
+			
+			<Anchor>//api/name/lblProgramName</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramCustomCell/setLblDateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/lblDateTime</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramCustomCell/lblDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/lblDateTime</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramCustomCell/lblDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/lblDateTime</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramCustomCell/setLblStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblStatus</Declaration>
+			
+			
+			<Anchor>//api/name/lblStatus</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramCustomCell/lblStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblStatus</Declaration>
+			
+			
+			<Anchor>//api/name/lblStatus</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MyProgramCustomCell/lblStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblStatus</Declaration>
+			
+			
+			<Anchor>//api/name/lblStatus</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramCustomCell/initWithStyle:reuseIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStyle:reuseIdentifier:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MyProgramCustomCell/setSelected:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MyProgramCustomCell.m</DeclaredIn>
+			
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/setSelected:animated:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIColor+UIColor_Undocumented.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIColor(UIColor_Undocumented)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor+expanded.m</DeclaredIn>
+            
+			
+			<NodeRef refid="73"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIColor/styleString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor+expanded.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)styleString</Declaration>
+			
+			
+			<Anchor>//api/name/styleString</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

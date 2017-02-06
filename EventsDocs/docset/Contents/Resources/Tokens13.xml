@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AboutViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AboutViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/setScrollViewMain:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewMain</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/scrollViewMain</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewMain</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutViewController/scrollViewMain</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewMain</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/setEventLocationMapView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet MKMapView *eventLocationMapView</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationMapView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/eventLocationMapView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet MKMapView *eventLocationMapView</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationMapView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutViewController/eventLocationMapView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet MKMapView *eventLocationMapView</Declaration>
+			
+			
+			<Anchor>//api/name/eventLocationMapView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/setEventObj:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) EventList *eventObj</Declaration>
+			
+			
+			<Anchor>//api/name/eventObj</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/eventObj</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) EventList *eventObj</Declaration>
+			
+			
+			<Anchor>//api/name/eventObj</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutViewController/eventObj</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) EventList *eventObj</Declaration>
+			
+			
+			<Anchor>//api/name/eventObj</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/setTblView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *tblView</Declaration>
+			
+			
+			<Anchor>//api/name/tblView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/tblView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *tblView</Declaration>
+			
+			
+			<Anchor>//api/name/tblView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutViewController/tblView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *tblView</Declaration>
+			
+			
+			<Anchor>//api/name/tblView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/setEventRegisterView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIView *eventRegisterView</Declaration>
+			
+			
+			<Anchor>//api/name/eventRegisterView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/eventRegisterView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIView *eventRegisterView</Declaration>
+			
+			
+			<Anchor>//api/name/eventRegisterView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutViewController/eventRegisterView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIView *eventRegisterView</Declaration>
+			
+			
+			<Anchor>//api/name/eventRegisterView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/setTxtFieldBookingSpaces:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtFieldBookingSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/txtFieldBookingSpaces</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/txtFieldBookingSpaces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtFieldBookingSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/txtFieldBookingSpaces</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutViewController/txtFieldBookingSpaces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtFieldBookingSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/txtFieldBookingSpaces</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/setLblComment:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *, *lblComment</Declaration>
+			
+			
+			<Anchor>//api/name/lblComment</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/lblComment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *, *lblComment</Declaration>
+			
+			
+			<Anchor>//api/name/lblComment</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutViewController/lblComment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *, *lblComment</Declaration>
+			
+			
+			<Anchor>//api/name/lblComment</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/setTxtViewComment:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextView *txtViewComment</Declaration>
+			
+			
+			<Anchor>//api/name/txtViewComment</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/txtViewComment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextView *txtViewComment</Declaration>
+			
+			
+			<Anchor>//api/name/txtViewComment</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutViewController/txtViewComment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextView *txtViewComment</Declaration>
+			
+			
+			<Anchor>//api/name/txtViewComment</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/setArrayTotalSpaces:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *arrayTotalSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/arrayTotalSpaces</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/arrayTotalSpaces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *arrayTotalSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/arrayTotalSpaces</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AboutViewController/arrayTotalSpaces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *arrayTotalSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/arrayTotalSpaces</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/btnSubmitPressed:</TokenIdentifier>
+			<Abstract type="html">By Tap on submit button user can book ticket for event</Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)btnSubmitPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/btnSubmitPressed:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/btnCancelPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)btnCancelPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/btnCancelPressed:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/btnEventRegistrationPressed:</TokenIdentifier>
+			<Abstract type="html">add event to local to add in favourites list
+         </Abstract>
+			<DeclaredIn>AboutViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)btnEventRegistrationPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/btnEventRegistrationPressed:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/viewWillAppear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewWillAppear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewWillAppear:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">get location using locationmanager singleton class
+     </Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/initializeNavigationBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)initializeNavigationBar</Declaration>
+			
+			
+			<Anchor>//api/name/initializeNavigationBar</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/clickedShare:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedShare:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedShare:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/tsMiniWebBrowserDidDismiss</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)tsMiniWebBrowserDidDismiss</Declaration>
+			
+			
+			<Anchor>//api/name/tsMiniWebBrowserDidDismiss</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/alertView:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract type="html">This will check, if ticket payment is successful then it return to previous page otherwise it will stay on this page.
+     </Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			
+			
+			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/checkLogin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)checkLogin</Declaration>
+			
+			
+			<Anchor>//api/name/checkLogin</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/showLoginScreen</TokenIdentifier>
+			<Abstract type="html">Show login view controller with animation</Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)showLoginScreen</Declaration>
+			
+			
+			<Anchor>//api/name/showLoginScreen</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/dismissLoginView</TokenIdentifier>
+			<Abstract type="html">remove login view controller</Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)dismissLoginView</Declaration>
+			
+			
+			<Anchor>//api/name/dismissLoginView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/numberOfSectionsInTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfSectionsInTableView:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/tableView:numberOfRowsInSection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:numberOfRowsInSection:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/tableView:cellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:cellForRowAtIndexPath:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/tableView:heightForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:heightForRowAtIndexPath:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/prepareForSegue:sender:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/prepareForSegue:sender:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/addLocationPinOnMap</TokenIdentifier>
+			<Abstract type="html">Show event location on map</Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addLocationPinOnMap</Declaration>
+			
+			
+			<Anchor>//api/name/addLocationPinOnMap</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/mapView:viewForAnnotation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id&lt;MKAnnotation&gt;)annotation</Declaration>
+			
+			
+			<Anchor>//api/name/mapView:viewForAnnotation:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/showCustomPicker</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)showCustomPicker</Declaration>
+			
+			
+			<Anchor>//api/name/showCustomPicker</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/customPickerValuePicked:tag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)customPickerValuePicked:(NSMutableDictionary *)values tag:(int)tag</Declaration>
+			
+			
+			<Anchor>//api/name/customPickerValuePicked:tag:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/customPickerDidCancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)customPickerDidCancel</Declaration>
+			
+			
+			<Anchor>//api/name/customPickerDidCancel</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/textFieldDidBeginEditing:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)textFieldDidBeginEditing:(UITextField *)textField</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldDidBeginEditing:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/textFieldShouldReturn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textFieldShouldReturn:(UITextField *)textField</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldShouldReturn:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/textViewShouldEndEditing:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textViewShouldEndEditing:(UITextView *)textView</Declaration>
+			
+			
+			<Anchor>//api/name/textViewShouldEndEditing:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/textViewDidEndEditing:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)textViewDidEndEditing:(UITextView *)textView</Declaration>
+			
+			
+			<Anchor>//api/name/textViewDidEndEditing:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/textView:shouldChangeTextInRange:replacementText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text</Declaration>
+			
+			
+			<Anchor>//api/name/textView:shouldChangeTextInRange:replacementText:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AboutViewController/isValid</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AboutViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MapViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MapViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MapViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MapViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MapViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MapViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MapViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MapViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MapViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MapViewController/initializeNavigationBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MapViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)initializeNavigationBar</Declaration>
+			
+			
+			<Anchor>//api/name/initializeNavigationBar</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MapViewController/clickedShare:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MapViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedShare:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedShare:</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MapViewController/clickedSendTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MapViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedSendTo:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedSendTo:</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

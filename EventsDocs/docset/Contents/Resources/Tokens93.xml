@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/loginViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/loginViewDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="93"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/loginViewDelegate/dismissLoginView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)dismissLoginView</Declaration>
+			
+			
+			<Anchor>//api/name/dismissLoginView</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

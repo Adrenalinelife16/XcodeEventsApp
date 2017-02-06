@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ASIInputStream.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ASIInputStream</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIInputStream/inputStreamWithFileAtPath:request:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.h</DeclaredIn>
+			
+			<Declaration>+ (id)inputStreamWithFileAtPath:(NSString *)path request:(ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/inputStreamWithFileAtPath:request:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIInputStream/inputStreamWithData:request:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.h</DeclaredIn>
+			
+			<Declaration>+ (id)inputStreamWithData:(NSData *)data request:(ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/inputStreamWithData:request:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/setStream:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.h</DeclaredIn>
+			
+			<Declaration>@property (retain, nonatomic) NSInputStream *stream</Declaration>
+			
+			
+			<Anchor>//api/name/stream</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/stream</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.h</DeclaredIn>
+			
+			<Declaration>@property (retain, nonatomic) NSInputStream *stream</Declaration>
+			
+			
+			<Anchor>//api/name/stream</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIInputStream/stream</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.h</DeclaredIn>
+			
+			<Declaration>@property (retain, nonatomic) NSInputStream *stream</Declaration>
+			
+			
+			<Anchor>//api/name/stream</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/setRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) ASIHTTPRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) ASIHTTPRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIInputStream/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) ASIHTTPRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIInputStream/initialize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>+ (void)initialize</Declaration>
+			
+			
+			<Anchor>//api/name/initialize</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/read:maxLength:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)read:(uint8_t *)buffer maxLength:(NSUInteger)len</Declaration>
+			
+			
+			<Anchor>//api/name/read:maxLength:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/open</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (void)open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/close</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (id)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (void)setDelegate:(id)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/setDelegate:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/scheduleInRunLoop:forMode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (void)scheduleInRunLoop:(NSRunLoop *)aRunLoop forMode:(NSString *)mode</Declaration>
+			
+			
+			<Anchor>//api/name/scheduleInRunLoop:forMode:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/removeFromRunLoop:forMode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (void)removeFromRunLoop:(NSRunLoop *)aRunLoop forMode:(NSString *)mode</Declaration>
+			
+			
+			<Anchor>//api/name/removeFromRunLoop:forMode:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/propertyForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (id)propertyForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/propertyForKey:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/setProperty:forKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)setProperty:(id)property forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setProperty:forKey:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/streamStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (NSStreamStatus)streamStatus</Declaration>
+			
+			
+			<Anchor>//api/name/streamStatus</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/streamError</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (NSError *)streamError</Declaration>
+			
+			
+			<Anchor>//api/name/streamError</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/methodSignatureForSelector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector</Declaration>
+			
+			
+			<Anchor>//api/name/methodSignatureForSelector:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIInputStream/forwardInvocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIInputStream.m</DeclaredIn>
+			
+			<Declaration>- (void)forwardInvocation:(NSInvocation *)anInvocation</Declaration>
+			
+			
+			<Anchor>//api/name/forwardInvocation:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CustomDatePickerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CustomDatePickerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+            
+			
+			<NodeRef refid="84"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CustomDatePickerDelegate/customDatePickerDatePicked:tag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>- (void)customDatePickerDatePicked:(NSDate *)dateSelected tag:(int)tag</Declaration>
+			
+			
+			<Anchor>//api/name/customDatePickerDatePicked:tag:</Anchor>
+            <NodeRef refid="84"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CustomDatePickerDelegate/customDatePickerDidCancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CustomDatePicker.h</DeclaredIn>
+			
+			<Declaration>- (void)customDatePickerDidCancel</Declaration>
+			
+			
+			<Anchor>//api/name/customDatePickerDidCancel</Anchor>
+            <NodeRef refid="84"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ThirdFeedCustomCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ThirdFeedCustomCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="56"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/setImages:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *images</Declaration>
+			
+			
+			<Anchor>//api/name/images</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/images</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *images</Declaration>
+			
+			
+			<Anchor>//api/name/images</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ThirdFeedCustomCell/images</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *images</Declaration>
+			
+			
+			<Anchor>//api/name/images</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/setImgMainImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgMainImage</Declaration>
+			
+			
+			<Anchor>//api/name/imgMainImage</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/imgMainImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgMainImage</Declaration>
+			
+			
+			<Anchor>//api/name/imgMainImage</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ThirdFeedCustomCell/imgMainImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgMainImage</Declaration>
+			
+			
+			<Anchor>//api/name/imgMainImage</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/setLblUserName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblUserName</Declaration>
+			
+			
+			<Anchor>//api/name/lblUserName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/lblUserName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblUserName</Declaration>
+			
+			
+			<Anchor>//api/name/lblUserName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ThirdFeedCustomCell/lblUserName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblUserName</Declaration>
+			
+			
+			<Anchor>//api/name/lblUserName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/setBtnUserId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnUserId</Declaration>
+			
+			
+			<Anchor>//api/name/btnUserId</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/btnUserId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnUserId</Declaration>
+			
+			
+			<Anchor>//api/name/btnUserId</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ThirdFeedCustomCell/btnUserId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnUserId</Declaration>
+			
+			
+			<Anchor>//api/name/btnUserId</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/setLblTweet:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblTweet</Declaration>
+			
+			
+			<Anchor>//api/name/lblTweet</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/lblTweet</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblTweet</Declaration>
+			
+			
+			<Anchor>//api/name/lblTweet</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ThirdFeedCustomCell/lblTweet</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblTweet</Declaration>
+			
+			
+			<Anchor>//api/name/lblTweet</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/setLblViewComment:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblViewComment</Declaration>
+			
+			
+			<Anchor>//api/name/lblViewComment</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/lblViewComment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblViewComment</Declaration>
+			
+			
+			<Anchor>//api/name/lblViewComment</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ThirdFeedCustomCell/lblViewComment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblViewComment</Declaration>
+			
+			
+			<Anchor>//api/name/lblViewComment</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/clickedUserId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedUserId:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedUserId:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/setClickedViewComments:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *clickedViewComments</Declaration>
+			
+			
+			<Anchor>//api/name/clickedViewComments</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/clickedViewComments</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *clickedViewComments</Declaration>
+			
+			
+			<Anchor>//api/name/clickedViewComments</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ThirdFeedCustomCell/clickedViewComments</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *clickedViewComments</Declaration>
+			
+			
+			<Anchor>//api/name/clickedViewComments</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/initWithStyle:reuseIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStyle:reuseIdentifier:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ThirdFeedCustomCell/setSelected:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ThirdFeedCustomCell.m</DeclaredIn>
+			
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/setSelected:animated:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

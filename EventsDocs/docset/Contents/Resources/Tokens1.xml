@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ASIAuthenticationDialog.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ASIAuthenticationDialog</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIAuthenticationDialog/presentAuthenticationDialogForRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>+ (void)presentAuthenticationDialogForRequest:(ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/presentAuthenticationDialogForRequest:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIAuthenticationDialog/dismiss</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>+ (void)dismiss</Declaration>
+			
+			
+			<Anchor>//api/name/dismiss</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/setRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (retain) ASIHTTPRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (retain) ASIHTTPRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIAuthenticationDialog/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (retain) ASIHTTPRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/setType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (assign) ASIAuthenticationType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/type</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (assign) ASIAuthenticationType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIAuthenticationDialog/type</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (assign) ASIAuthenticationType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/setDidEnableRotationNotifications:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL didEnableRotationNotifications</Declaration>
+			
+			
+			<Anchor>//api/name/didEnableRotationNotifications</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/didEnableRotationNotifications</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL didEnableRotationNotifications</Declaration>
+			
+			
+			<Anchor>//api/name/didEnableRotationNotifications</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIAuthenticationDialog/didEnableRotationNotifications</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL didEnableRotationNotifications</Declaration>
+			
+			
+			<Anchor>//api/name/didEnableRotationNotifications</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/setPresentingController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (retain, nonatomic) UIViewController *presentingController</Declaration>
+			
+			
+			<Anchor>//api/name/presentingController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/presentingController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (retain, nonatomic) UIViewController *presentingController</Declaration>
+			
+			
+			<Anchor>//api/name/presentingController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIAuthenticationDialog/presentingController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.h</DeclaredIn>
+			
+			<Declaration>@property (retain, nonatomic) UIViewController *presentingController</Declaration>
+			
+			
+			<Anchor>//api/name/presentingController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIAuthenticationDialog/initialize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>+ (void)initialize</Declaration>
+			
+			
+			<Anchor>//api/name/initialize</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/keyboardWillShow:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (void)keyboardWillShow:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/keyboardWillShow:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/orientationChanged:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (void)orientationChanged:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/orientationChanged:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/textFieldInRow:section:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (UITextField *)textFieldInRow:(NSUInteger)row section:(NSUInteger)section</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldInRow:section:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/usernameField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (UITextField *)usernameField</Declaration>
+			
+			
+			<Anchor>//api/name/usernameField</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/passwordField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (UITextField *)passwordField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordField</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/domainField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (UITextField *)domainField</Declaration>
+			
+			
+			<Anchor>//api/name/domainField</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/viewDidDisappear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidDisappear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidDisappear:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/showTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (void)showTitle</Declaration>
+			
+			
+			<Anchor>//api/name/showTitle</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/show</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (void)show</Declaration>
+			
+			
+			<Anchor>//api/name/show</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/cancelAuthenticationFromDialog:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (void)cancelAuthenticationFromDialog:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/cancelAuthenticationFromDialog:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/requestsRequiringTheseCredentials</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (NSArray *)requestsRequiringTheseCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/requestsRequiringTheseCredentials</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/presentNextDialog</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (void)presentNextDialog</Declaration>
+			
+			
+			<Anchor>//api/name/presentNextDialog</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/loginWithCredentialsFromDialog:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (void)loginWithCredentialsFromDialog:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/loginWithCredentialsFromDialog:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/numberOfSectionsInTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)numberOfSectionsInTableView:(UITableView *)aTableView</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfSectionsInTableView:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/tableView:heightForFooterInSection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)aTableView heightForFooterInSection:(NSInteger)section</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:heightForFooterInSection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/tableView:heightForHeaderInSection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)aTableView heightForHeaderInSection:(NSInteger)section</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:heightForHeaderInSection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/tableView:titleForHeaderInSection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:titleForHeaderInSection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/tableView:cellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:cellForRowAtIndexPath:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/tableView:numberOfRowsInSection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:numberOfRowsInSection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/tableView:titleForFooterInSection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)tableView:(UITableView *)aTableView titleForFooterInSection:(NSInteger)section</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:titleForFooterInSection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/setTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>@property (retain) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIAuthenticationDialog/tableView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>@property (retain) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIAuthenticationDialog/tableView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIAuthenticationDialog.m</DeclaredIn>
+			
+			<Declaration>@property (retain) UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

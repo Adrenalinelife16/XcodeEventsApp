@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RegistrationViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RegistrationViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="42"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) id&lt;registrationViewDelegate&gt; __unsafe_unretained delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) id&lt;registrationViewDelegate&gt; __unsafe_unretained delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegistrationViewController/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) id&lt;registrationViewDelegate&gt; __unsafe_unretained delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/setScrlView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIScrollView *scrlView</Declaration>
+			
+			
+			<Anchor>//api/name/scrlView</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/scrlView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIScrollView *scrlView</Declaration>
+			
+			
+			<Anchor>//api/name/scrlView</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegistrationViewController/scrlView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIScrollView *scrlView</Declaration>
+			
+			
+			<Anchor>//api/name/scrlView</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/setTxtName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtName</Declaration>
+			
+			
+			<Anchor>//api/name/txtName</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/txtName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtName</Declaration>
+			
+			
+			<Anchor>//api/name/txtName</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegistrationViewController/txtName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtName</Declaration>
+			
+			
+			<Anchor>//api/name/txtName</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/setTxtEmail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtEmail</Declaration>
+			
+			
+			<Anchor>//api/name/txtEmail</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/txtEmail</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtEmail</Declaration>
+			
+			
+			<Anchor>//api/name/txtEmail</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegistrationViewController/txtEmail</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtEmail</Declaration>
+			
+			
+			<Anchor>//api/name/txtEmail</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/setTxtPassword:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtPassword</Declaration>
+			
+			
+			<Anchor>//api/name/txtPassword</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/txtPassword</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtPassword</Declaration>
+			
+			
+			<Anchor>//api/name/txtPassword</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegistrationViewController/txtPassword</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtPassword</Declaration>
+			
+			
+			<Anchor>//api/name/txtPassword</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/setCountryArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *countryArray</Declaration>
+			
+			
+			<Anchor>//api/name/countryArray</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/countryArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *countryArray</Declaration>
+			
+			
+			<Anchor>//api/name/countryArray</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegistrationViewController/countryArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *countryArray</Declaration>
+			
+			
+			<Anchor>//api/name/countryArray</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/setCountryCode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *, *countryCode</Declaration>
+			
+			
+			<Anchor>//api/name/countryCode</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/countryCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *, *countryCode</Declaration>
+			
+			
+			<Anchor>//api/name/countryCode</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegistrationViewController/countryCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *, *countryCode</Declaration>
+			
+			
+			<Anchor>//api/name/countryCode</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/btnRegisterPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)btnRegisterPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/btnRegisterPressed:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/InitializeNavigationBarItem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)InitializeNavigationBarItem</Declaration>
+			
+			
+			<Anchor>//api/name/InitializeNavigationBarItem</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/btnCancelPressed</TokenIdentifier>
+			<Abstract type="html">call delegate method through cancel button when user press cancel button instead of register</Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)btnCancelPressed</Declaration>
+			
+			
+			<Anchor>//api/name/btnCancelPressed</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/addDoneButtonOnNumericKeyboard</TokenIdentifier>
+			<Abstract type="html">To add numeric keyboard and done toolbar on keyboad</Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addDoneButtonOnNumericKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/addDoneButtonOnNumericKeyboard</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/doneWithNumberPad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)doneWithNumberPad</Declaration>
+			
+			
+			<Anchor>//api/name/doneWithNumberPad</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/textFieldShouldBeginEditing:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldShouldBeginEditing:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/textFieldDidBeginEditing:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)textFieldDidBeginEditing:(UITextField *)textField</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldDidBeginEditing:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/textFieldShouldReturn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textFieldShouldReturn:(UITextField *)textField</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldShouldReturn:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/IsValid</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)IsValid</Declaration>
+			
+			
+			<Anchor>//api/name/IsValid</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/hideKeyboards</TokenIdentifier>
+			<Abstract type="html">Hide Text Fields keyboards</Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)hideKeyboards</Declaration>
+			
+			
+			<Anchor>//api/name/hideKeyboards</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/validateEmail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)validateEmail:(NSString *)candidate</Declaration>
+			
+			
+			<Anchor>//api/name/validateEmail:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/IsPhoneNumberValid:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)IsPhoneNumberValid:(NSString *)phoneNumber</Declaration>
+			
+			
+			<Anchor>//api/name/IsPhoneNumberValid:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegistrationViewController/alertView:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			
+			
+			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

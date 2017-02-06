@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/registrationViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/registrationViewDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="94"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/registrationViewDelegate/dismissRegistrationView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegistrationViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)dismissRegistrationView</Declaration>
+			
+			
+			<Anchor>//api/name/dismissRegistrationView</Anchor>
+            <NodeRef refid="94"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

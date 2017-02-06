@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SecondFeedCustomCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SecondFeedCustomCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/setImage2:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *Image2</Declaration>
+			
+			
+			<Anchor>//api/name/Image2</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/Image2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *Image2</Declaration>
+			
+			
+			<Anchor>//api/name/Image2</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SecondFeedCustomCell/Image2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *Image2</Declaration>
+			
+			
+			<Anchor>//api/name/Image2</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/setBtnOne:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnOne</Declaration>
+			
+			
+			<Anchor>//api/name/btnOne</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/btnOne</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnOne</Declaration>
+			
+			
+			<Anchor>//api/name/btnOne</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SecondFeedCustomCell/btnOne</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnOne</Declaration>
+			
+			
+			<Anchor>//api/name/btnOne</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/setBtnTwo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnTwo</Declaration>
+			
+			
+			<Anchor>//api/name/btnTwo</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/btnTwo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnTwo</Declaration>
+			
+			
+			<Anchor>//api/name/btnTwo</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SecondFeedCustomCell/btnTwo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnTwo</Declaration>
+			
+			
+			<Anchor>//api/name/btnTwo</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/setBtnThree:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnThree</Declaration>
+			
+			
+			<Anchor>//api/name/btnThree</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/btnThree</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnThree</Declaration>
+			
+			
+			<Anchor>//api/name/btnThree</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SecondFeedCustomCell/btnThree</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *btnThree</Declaration>
+			
+			
+			<Anchor>//api/name/btnThree</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/clickedBtnOne:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedBtnOne:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedBtnOne:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/clickedBtnTwo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedBtnTwo:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedBtnTwo:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/clickedBtnThree:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedBtnThree:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedBtnThree:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/initWithStyle:reuseIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStyle:reuseIdentifier:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SecondFeedCustomCell/setSelected:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SecondFeedCustomCell.m</DeclaredIn>
+			
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/setSelected:animated:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ASIDownloadCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ASIDownloadCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIDownloadCache/sharedCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedCache</Declaration>
+			
+			
+			<Anchor>//api/name/sharedCache</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIDownloadCache/serverAllowsResponseCachingForRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)serverAllowsResponseCachingForRequest:(ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/serverAllowsResponseCachingForRequest:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIDownloadCache/fileExtensionsToHandleAsHTML</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)fileExtensionsToHandleAsHTML</Declaration>
+			
+			
+			<Anchor>//api/name/fileExtensionsToHandleAsHTML</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/setDefaultCachePolicy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) ASICachePolicy defaultCachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/defaultCachePolicy</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/defaultCachePolicy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) ASICachePolicy defaultCachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/defaultCachePolicy</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIDownloadCache/defaultCachePolicy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign, nonatomic) ASICachePolicy defaultCachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/defaultCachePolicy</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/setStoragePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (retain, nonatomic) NSString *storagePath</Declaration>
+			
+			
+			<Anchor>//api/name/storagePath</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/storagePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (retain, nonatomic) NSString *storagePath</Declaration>
+			
+			
+			<Anchor>//api/name/storagePath</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIDownloadCache/storagePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (retain, nonatomic) NSString *storagePath</Declaration>
+			
+			
+			<Anchor>//api/name/storagePath</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/setAccessLock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (retain) NSRecursiveLock *accessLock</Declaration>
+			
+			
+			<Anchor>//api/name/accessLock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/accessLock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (retain) NSRecursiveLock *accessLock</Declaration>
+			
+			
+			<Anchor>//api/name/accessLock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIDownloadCache/accessLock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (retain) NSRecursiveLock *accessLock</Declaration>
+			
+			
+			<Anchor>//api/name/accessLock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/setShouldRespectCacheControlHeaders:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL shouldRespectCacheControlHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRespectCacheControlHeaders</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/shouldRespectCacheControlHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL shouldRespectCacheControlHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRespectCacheControlHeaders</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASIDownloadCache/shouldRespectCacheControlHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL shouldRespectCacheControlHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRespectCacheControlHeaders</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIDownloadCache/initialize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>+ (void)initialize</Declaration>
+			
+			
+			<Anchor>//api/name/initialize</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/updateExpiryForRequest:maxAge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (void)updateExpiryForRequest:(ASIHTTPRequest *)request maxAge:(NSTimeInterval)maxAge</Declaration>
+			
+			
+			<Anchor>//api/name/updateExpiryForRequest:maxAge:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/expiryDateForRequest:maxAge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (NSDate *)expiryDateForRequest:(ASIHTTPRequest *)request maxAge:(NSTimeInterval)maxAge</Declaration>
+			
+			
+			<Anchor>//api/name/expiryDateForRequest:maxAge:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/storeResponseForRequest:maxAge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (void)storeResponseForRequest:(ASIHTTPRequest *)request maxAge:(NSTimeInterval)maxAge</Declaration>
+			
+			
+			<Anchor>//api/name/storeResponseForRequest:maxAge:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/cachedResponseHeadersForURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)cachedResponseHeadersForURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/cachedResponseHeadersForURL:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/cachedResponseDataForURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (NSData *)cachedResponseDataForURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/cachedResponseDataForURL:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/pathToCachedResponseDataForURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)pathToCachedResponseDataForURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/pathToCachedResponseDataForURL:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/pathToCachedResponseHeadersForURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)pathToCachedResponseHeadersForURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/pathToCachedResponseHeadersForURL:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/pathToFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)pathToFile:(NSString *)file</Declaration>
+			
+			
+			<Anchor>//api/name/pathToFile:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/pathToStoreCachedResponseDataForRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)pathToStoreCachedResponseDataForRequest:(ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/pathToStoreCachedResponseDataForRequest:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/pathToStoreCachedResponseHeadersForRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)pathToStoreCachedResponseHeadersForRequest:(ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/pathToStoreCachedResponseHeadersForRequest:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/removeCachedDataForURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (void)removeCachedDataForURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/removeCachedDataForURL:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/removeCachedDataForRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (void)removeCachedDataForRequest:(ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/removeCachedDataForRequest:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/isCachedDataCurrentForRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isCachedDataCurrentForRequest:(ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/isCachedDataCurrentForRequest:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/clearCachedResponsesForStoragePolicy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (void)clearCachedResponsesForStoragePolicy:(ASICacheStoragePolicy)storagePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/clearCachedResponsesForStoragePolicy:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASIDownloadCache/keyForURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>+ (NSString *)keyForURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/keyForURL:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASIDownloadCache/canUseCachedDataForRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASIDownloadCache.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)canUseCachedDataForRequest:(ASIHTTPRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/canUseCachedDataForRequest:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIImage+MultiFormat.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIImage(MultiFormat)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIImage+MultiFormat.h</DeclaredIn>
+            
+			
+			<NodeRef refid="77"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImage/sd_imageWithData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIImage+MultiFormat.h</DeclaredIn>
+			
+			<Declaration>+ (UIImage *)sd_imageWithData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/sd_imageWithData:</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

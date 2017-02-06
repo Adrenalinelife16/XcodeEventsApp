@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/LoginViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/LoginViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id&lt;loginViewDelegate&gt; __unsafe_unretained delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id&lt;loginViewDelegate&gt; __unsafe_unretained delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/LoginViewController/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id&lt;loginViewDelegate&gt; __unsafe_unretained delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/setTxtEmail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtEmail</Declaration>
+			
+			
+			<Anchor>//api/name/txtEmail</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/txtEmail</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtEmail</Declaration>
+			
+			
+			<Anchor>//api/name/txtEmail</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/LoginViewController/txtEmail</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtEmail</Declaration>
+			
+			
+			<Anchor>//api/name/txtEmail</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/setTxtPassword:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtPassword</Declaration>
+			
+			
+			<Anchor>//api/name/txtPassword</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/txtPassword</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtPassword</Declaration>
+			
+			
+			<Anchor>//api/name/txtPassword</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/LoginViewController/txtPassword</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITextField *txtPassword</Declaration>
+			
+			
+			<Anchor>//api/name/txtPassword</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/btnLoginPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)btnLoginPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/btnLoginPressed:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/btnRegistrationPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)btnRegistrationPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/btnRegistrationPressed:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/InitializeNavigationBatItem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)InitializeNavigationBatItem</Declaration>
+			
+			
+			<Anchor>//api/name/InitializeNavigationBatItem</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/btnCancelPressed</TokenIdentifier>
+			<Abstract type="html">call delegate method through cancel button when user press cancel button instead of login</Abstract>
+			<DeclaredIn>LoginViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)btnCancelPressed</Declaration>
+			
+			
+			<Anchor>//api/name/btnCancelPressed</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/dismissRegistrationView</TokenIdentifier>
+			<Abstract type="html">Remove Registration View and back to login view</Abstract>
+			<DeclaredIn>LoginViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)dismissRegistrationView</Declaration>
+			
+			
+			<Anchor>//api/name/dismissRegistrationView</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/isValid</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/textFieldShouldReturn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textFieldShouldReturn:(UITextField *)textField</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldShouldReturn:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/validateEmail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)validateEmail:(NSString *)candidate</Declaration>
+			
+			
+			<Anchor>//api/name/validateEmail:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginViewController/alertView:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			
+			
+			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

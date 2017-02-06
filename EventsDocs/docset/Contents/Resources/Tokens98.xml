@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/SDWebImageOptions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SDWebImageOptions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="98"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageRetryFailed</TokenIdentifier>
+            <Abstract type="html">By default, when a URL fail to be downloaded, the URL is blacklisted so the library won&apos;t keep trying.
+This flag disable this blacklisting.
+     </Abstract>
+            <Declaration>SDWebImageRetryFailed</Declaration>
+            
+            <DeclaredIn>SDWebImageManager.h</DeclaredIn>
+            
+            <NodeRef refid="98"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageLowPriority</TokenIdentifier>
+            <Abstract type="html">By default, image downloads are started during UI interactions, this flags disable this feature,
+leading to delayed download on UIScrollView deceleration for instance.
+     </Abstract>
+            <Declaration>SDWebImageLowPriority</Declaration>
+            
+            <DeclaredIn>SDWebImageManager.h</DeclaredIn>
+            
+            <NodeRef refid="98"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageCacheMemoryOnly</TokenIdentifier>
+            <Abstract type="html">This flag disables on-disk caching
+     </Abstract>
+            <Declaration>SDWebImageCacheMemoryOnly</Declaration>
+            
+            <DeclaredIn>SDWebImageManager.h</DeclaredIn>
+            
+            <NodeRef refid="98"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageProgressiveDownload</TokenIdentifier>
+            <Abstract type="html">This flag enables progressive download, the image is displayed progressively during download as a browser would do.
+By default, the image is only displayed once completely downloaded.
+     </Abstract>
+            <Declaration>SDWebImageProgressiveDownload</Declaration>
+            
+            <DeclaredIn>SDWebImageManager.h</DeclaredIn>
+            
+            <NodeRef refid="98"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageRefreshCached</TokenIdentifier>
+            <Abstract type="html">Even if the image is cached, respect the HTTP response cache control, and refresh the image from remote location if needed.
+The disk caching will be handled by NSURLCache instead of SDWebImage leading to slight performance degradation.
+This option helps deal with images changing behind the same request URL, e.g. Facebook graph api profile pics.
+If a cached image is refreshed, the completion block is called once with the cached image and again with the final image.</Abstract>
+            <Declaration>SDWebImageRefreshCached</Declaration>
+            
+            <DeclaredIn>SDWebImageManager.h</DeclaredIn>
+            
+            <NodeRef refid="98"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageContinueInBackground</TokenIdentifier>
+            <Abstract type="html">In iOS 4+, continue the download of the image if the app goes to background. This is achieved by asking the system for
+extra time in background to let the request finish. If the background task expires the operation will be cancelled.
+     </Abstract>
+            <Declaration>SDWebImageContinueInBackground</Declaration>
+            
+            <DeclaredIn>SDWebImageManager.h</DeclaredIn>
+            
+            <NodeRef refid="98"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageHandleCookies</TokenIdentifier>
+            <Abstract type="html">Handles cookies stored in NSHTTPCookieStore by setting
+NSMutableURLRequest.HTTPShouldHandleCookies = YES;
+     </Abstract>
+            <Declaration>SDWebImageHandleCookies</Declaration>
+            
+            <DeclaredIn>SDWebImageManager.h</DeclaredIn>
+            
+            <NodeRef refid="98"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageAllowInvalidSSLCertificates</TokenIdentifier>
+            <Abstract type="html">Enable to allow untrusted SSL ceriticates.
+Useful for testing purposes. Use with caution in production.
+     </Abstract>
+            <Declaration>SDWebImageAllowInvalidSSLCertificates</Declaration>
+            
+            <DeclaredIn>SDWebImageManager.h</DeclaredIn>
+            
+            <NodeRef refid="98"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

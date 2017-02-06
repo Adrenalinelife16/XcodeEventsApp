@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SBJsonBase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonBase</TokenIdentifier>
+			<Abstract type="html">Common base class for parsing &amp;amp; writing.
+
+This class contains the common error-handling code and option between the parser/writer.</Abstract>
+			<DeclaredIn>SBJsonBase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonBase/setMaxDepth:</TokenIdentifier>
+			<Abstract type="html">The maximum recursing depth.
+
+Defaults to 512. If the input is nested deeper than this the input will be deemed to be
+malicious and the parser returns nil, signalling an error. (&quot;Nested too deep&quot;.) You can
+turn off this security feature by setting the maxDepth value to 0.</Abstract>
+			<DeclaredIn>SBJsonBase.h</DeclaredIn>
+			
+			<Declaration>@property NSUInteger maxDepth</Declaration>
+			
+			
+			<Anchor>//api/name/maxDepth</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonBase/maxDepth</TokenIdentifier>
+			<Abstract type="html">The maximum recursing depth.
+
+Defaults to 512. If the input is nested deeper than this the input will be deemed to be
+malicious and the parser returns nil, signalling an error. (&quot;Nested too deep&quot;.) You can
+turn off this security feature by setting the maxDepth value to 0.</Abstract>
+			<DeclaredIn>SBJsonBase.h</DeclaredIn>
+			
+			<Declaration>@property NSUInteger maxDepth</Declaration>
+			
+			
+			<Anchor>//api/name/maxDepth</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonBase/maxDepth</TokenIdentifier>
+			<Abstract type="html">The maximum recursing depth.
+
+Defaults to 512. If the input is nested deeper than this the input will be deemed to be
+malicious and the parser returns nil, signalling an error. (&quot;Nested too deep&quot;.) You can
+turn off this security feature by setting the maxDepth value to 0.</Abstract>
+			<DeclaredIn>SBJsonBase.h</DeclaredIn>
+			
+			<Declaration>@property NSUInteger maxDepth</Declaration>
+			
+			
+			<Anchor>//api/name/maxDepth</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonBase/setErrorTrace:</TokenIdentifier>
+			<Abstract type="html">Return an error trace, or nil if there was no errors.
+
+Note that this method returns the trace of the last method that failed.
+You need to check the return value of the call you&apos;re making to figure out
+if the call actually failed, before you know call this method.</Abstract>
+			<DeclaredIn>SBJsonBase.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSArray *errorTrace</Declaration>
+			
+			
+			<Anchor>//api/name/errorTrace</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonBase/errorTrace</TokenIdentifier>
+			<Abstract type="html">Return an error trace, or nil if there was no errors.
+
+Note that this method returns the trace of the last method that failed.
+You need to check the return value of the call you&apos;re making to figure out
+if the call actually failed, before you know call this method.</Abstract>
+			<DeclaredIn>SBJsonBase.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSArray *errorTrace</Declaration>
+			
+			
+			<Anchor>//api/name/errorTrace</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonBase/errorTrace</TokenIdentifier>
+			<Abstract type="html">Return an error trace, or nil if there was no errors.
+
+Note that this method returns the trace of the last method that failed.
+You need to check the return value of the call you&apos;re making to figure out
+if the call actually failed, before you know call this method.</Abstract>
+			<DeclaredIn>SBJsonBase.h</DeclaredIn>
+			
+			<Declaration>@property (copy, readonly) NSArray *errorTrace</Declaration>
+			
+			
+			<Anchor>//api/name/errorTrace</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonBase/addErrorWithCode:description:</TokenIdentifier>
+			<Abstract type="html">@internal for use in subclasses to add errors to the stack trace</Abstract>
+			<DeclaredIn>SBJsonBase.h</DeclaredIn>
+			
+			<Declaration>- (void)addErrorWithCode:(NSUInteger)code description:(NSString *)str</Declaration>
+			
+			
+			<Anchor>//api/name/addErrorWithCode:description:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonBase/clearErrorTrace</TokenIdentifier>
+			<Abstract type="html">@internal for use in subclasess to clear the error before a new parsing attempt</Abstract>
+			<DeclaredIn>SBJsonBase.h</DeclaredIn>
+			
+			<Declaration>- (void)clearErrorTrace</Declaration>
+			
+			
+			<Anchor>//api/name/clearErrorTrace</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonBase/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonBase.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

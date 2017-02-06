@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIImage+WebP.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIImage(WebP)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIImage+WebP.h</DeclaredIn>
+            
+			
+			<NodeRef refid="78"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImage/sd_imageWithWebPData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIImage+WebP.h</DeclaredIn>
+			
+			<Declaration>+ (UIImage *)sd_imageWithWebPData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/sd_imageWithWebPData:</Anchor>
+            <NodeRef refid="78"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

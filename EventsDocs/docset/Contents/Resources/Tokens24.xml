@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FeedCustomCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FeedCustomCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/setImgMainImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgMainImage</Declaration>
+			
+			
+			<Anchor>//api/name/imgMainImage</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/imgMainImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgMainImage</Declaration>
+			
+			
+			<Anchor>//api/name/imgMainImage</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FeedCustomCell/imgMainImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgMainImage</Declaration>
+			
+			
+			<Anchor>//api/name/imgMainImage</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/setLblUserName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblUserName</Declaration>
+			
+			
+			<Anchor>//api/name/lblUserName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/lblUserName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblUserName</Declaration>
+			
+			
+			<Anchor>//api/name/lblUserName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FeedCustomCell/lblUserName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblUserName</Declaration>
+			
+			
+			<Anchor>//api/name/lblUserName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/setLblTweet:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblTweet</Declaration>
+			
+			
+			<Anchor>//api/name/lblTweet</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/lblTweet</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblTweet</Declaration>
+			
+			
+			<Anchor>//api/name/lblTweet</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FeedCustomCell/lblTweet</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblTweet</Declaration>
+			
+			
+			<Anchor>//api/name/lblTweet</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/setLblDateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/lblDateTime</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/lblDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/lblDateTime</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FeedCustomCell/lblDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UILabel *lblDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/lblDateTime</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/setImgVWIcon:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgVWIcon</Declaration>
+			
+			
+			<Anchor>//api/name/imgVWIcon</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/imgVWIcon</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgVWIcon</Declaration>
+			
+			
+			<Anchor>//api/name/imgVWIcon</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FeedCustomCell/imgVWIcon</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIImageView *imgVWIcon</Declaration>
+			
+			
+			<Anchor>//api/name/imgVWIcon</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/clickedUserId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedUserId:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedUserId:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/clickedViewComments:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)clickedViewComments:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/clickedViewComments:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/initWithStyle:reuseIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStyle:reuseIdentifier:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FeedCustomCell/setSelected:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FeedCustomCell.m</DeclaredIn>
+			
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/setSelected:animated:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

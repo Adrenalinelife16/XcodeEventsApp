@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/LocationManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/LocationManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LocationManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LocationManager/setLocationManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LocationManager/locationManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/LocationManager/locationManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/LocationManager/sharedInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LocationManager.h</DeclaredIn>
+			
+			<Declaration>+ (LocationManager *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LocationManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LocationManager.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LocationManager/locationManager:didUpdateLocations:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LocationManager.m</DeclaredIn>
+			
+			<Declaration>- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager:didUpdateLocations:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

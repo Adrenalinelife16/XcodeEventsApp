@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  Events
+
+  Created by Jimmy on 17/09/14.
+  Copyright (c) 2014 Teknowledge Software. All rights reserved.
+*/
+
+"APP_NAME" = "EventApp";
+
+/**
+ *  application service url
+ */
+"APPLICATION_URL"           =   "http://www.adrenalinelife.org";
+//   "http://adrenalinelife.org/"
+
+//web service methods
+"GETEVENTS_METHOD"          =   "/events/api/getEvents";
+"GETUSERTICKETS_METHOD"     =   "/api/getUserTickets";
+"BOOKTICKET_METHOD"         =   "/api/getUserTickets/bookTicket";
+"CHECKBOOK_METHOD"          =   "/api/getUserTickets/checkBook";
+"GETEVENTSBYMONTH_METHOD"   =   "/api/getEventsByMonth";
+"GETFEEDS_METHOD"           =   "/webservices/tweet-fb.php";
+"LOGIN_METHOD"              =   "/api/Login";
+"REGISTER_METHOD"           =   "/api/Register";
+
+
+//About View contents
+"CONTENT_ABOUTVIEW"         =   "Today, people expect things to find them, not the other way around. This applies to sports and recreation, active people want to be active but they usually struggle on finding a place to go do what they love. Adrenaline will solve this struggle, allowing people to find what they love to do.\n\nWe are a private organization who founded Adrenaline Life in 2016. We are located in Birmingham, AL.\n\nContact us anytime:\nAdrenalineLife16@gmail.com\n\nRequest a Feature:\nwww.AdrenalineLife.org/request\n";

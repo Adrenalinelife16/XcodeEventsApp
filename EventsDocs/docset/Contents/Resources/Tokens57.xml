@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Utility.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Utility</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+            
+			
+			<NodeRef refid="57"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Utility/setRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) ASIFormDataRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Utility/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) ASIFormDataRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Utility/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) ASIFormDataRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/sharedInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (Utility *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/alertNotice:withMSG:cancleButtonTitle:otherButtonTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (void)alertNotice:(NSString *)title withMSG:(NSString *)msg cancleButtonTitle:(NSString *)cancleTitle otherButtonTitle:(NSString *)otherTitle</Declaration>
+			
+			
+			<Anchor>//api/name/alertNotice:withMSG:cancleButtonTitle:otherButtonTitle:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/IsNetConnected</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)IsNetConnected</Declaration>
+			
+			
+			<Anchor>//api/name/IsNetConnected</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/GetDataForMethod:parameters:key:withCompletion:WithFailure:</TokenIdentifier>
+			<Abstract type="html">Create an alert if connection doesn&apos;t work</Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (void)GetDataForMethod:(NSString *)strMethodName parameters:(NSDictionary *)dicOfParameters key:(NSString *)strKey withCompletion:(void ( ^ ) ( id data ))completion WithFailure:(void ( ^ ) ( NSString *error ))failure</Declaration>
+			
+			
+			<Anchor>//api/name/GetDataForMethod:parameters:key:withCompletion:WithFailure:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/setNSUserDefaultValueForString:strKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (void)setNSUserDefaultValueForString:(NSString *)strValue strKey:(NSString *)strKey</Declaration>
+			
+			
+			<Anchor>//api/name/setNSUserDefaultValueForString:strKey:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/getNSUserDefaultValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)getNSUserDefaultValue:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/getNSUserDefaultValue:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/TrimString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)TrimString:(NSString *)value</Declaration>
+			
+			
+			<Anchor>//api/name/TrimString:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/afterDelay:withCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (void)afterDelay:(double)delayInSeconds withCompletion:(void ( ^ ) ( void ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/afterDelay:withCompletion:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/getFormatedDateString:dateFormatString:dateFormatterString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)getFormatedDateString:(NSString *)dateString dateFormatString:(NSString *)strDateFormatterCurrent dateFormatterString:(NSString *)strDateFormatterNew</Declaration>
+			
+			
+			<Anchor>//api/name/getFormatedDateString:dateFormatString:dateFormatterString:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/compareDates:date:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)compareDates:(NSString *)strDate date:(NSDate *)anotherDate</Declaration>
+			
+			
+			<Anchor>//api/name/compareDates:date:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Utility/getTextSize:textWidth:fontSize:lineBreakMode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Utility.h</DeclaredIn>
+			
+			<Declaration>+ (CGSize)getTextSize:(NSString *)strText textWidth:(int)textwidth fontSize:(CGFloat)fontsize lineBreakMode:(NSLineBreakMode *)breakMode</Declaration>
+			
+			
+			<Anchor>//api/name/getTextSize:textWidth:fontSize:lineBreakMode:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

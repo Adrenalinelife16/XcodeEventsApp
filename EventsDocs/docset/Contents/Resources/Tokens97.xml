@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/SDWebImageDownloaderOptions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SDWebImageDownloaderOptions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SDWebImageDownloader.h</DeclaredIn>
+            
+			
+			<NodeRef refid="97"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageDownloaderLowPriority</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SDWebImageDownloaderLowPriority</Declaration>
+            
+            <DeclaredIn>SDWebImageDownloader.h</DeclaredIn>
+            
+            <NodeRef refid="97"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageDownloaderProgressiveDownload</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SDWebImageDownloaderProgressiveDownload</Declaration>
+            
+            <DeclaredIn>SDWebImageDownloader.h</DeclaredIn>
+            
+            <NodeRef refid="97"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageDownloaderUseNSURLCache</TokenIdentifier>
+            <Abstract type="html">By default, request prevent the of NSURLCache. With this flag, NSURLCache
+is used with default policies.
+     </Abstract>
+            <Declaration>SDWebImageDownloaderUseNSURLCache</Declaration>
+            
+            <DeclaredIn>SDWebImageDownloader.h</DeclaredIn>
+            
+            <NodeRef refid="97"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageDownloaderIgnoreCachedResponse</TokenIdentifier>
+            <Abstract type="html">Call completion block with nil image/imageData if the image was read from NSURLCache
+(to be combined with SDWebImageDownloaderUseNSURLCache).
+     </Abstract>
+            <Declaration>SDWebImageDownloaderIgnoreCachedResponse</Declaration>
+            
+            <DeclaredIn>SDWebImageDownloader.h</DeclaredIn>
+            
+            <NodeRef refid="97"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageDownloaderContinueInBackground</TokenIdentifier>
+            <Abstract type="html">In iOS 4+, continue the download of the image if the app goes to background. This is achieved by asking the system for
+extra time in background to let the request finish. If the background task expires the operation will be cancelled.
+     </Abstract>
+            <Declaration>SDWebImageDownloaderContinueInBackground</Declaration>
+            
+            <DeclaredIn>SDWebImageDownloader.h</DeclaredIn>
+            
+            <NodeRef refid="97"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageDownloaderHandleCookies</TokenIdentifier>
+            <Abstract type="html">Handles cookies stored in NSHTTPCookieStore by setting
+NSMutableURLRequest.HTTPShouldHandleCookies = YES;
+     </Abstract>
+            <Declaration>SDWebImageDownloaderHandleCookies</Declaration>
+            
+            <DeclaredIn>SDWebImageDownloader.h</DeclaredIn>
+            
+            <NodeRef refid="97"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SDWebImageDownloaderAllowInvalidSSLCertificates</TokenIdentifier>
+            <Abstract type="html">Enable to allow untrusted SSL ceriticates.
+Useful for testing purposes. Use with caution in production.
+     </Abstract>
+            <Declaration>SDWebImageDownloaderAllowInvalidSSLCertificates</Declaration>
+            
+            <DeclaredIn>SDWebImageDownloader.h</DeclaredIn>
+            
+            <NodeRef refid="97"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

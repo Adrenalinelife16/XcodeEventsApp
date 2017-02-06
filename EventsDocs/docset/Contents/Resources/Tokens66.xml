@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+GTMNSStringHTMLAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(GTMNSStringHTMLAdditions)</TokenIdentifier>
+			<Abstract type="html">Utilities for NSStrings containing HTML</Abstract>
+			<DeclaredIn>GTMNSString+HTML.h</DeclaredIn>
+            
+			
+			<NodeRef refid="66"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/gtm_stringByEscapingForHTML</TokenIdentifier>
+			<Abstract type="html">For obvious reasons this call is only safe once.</Abstract>
+			<DeclaredIn>GTMNSString+HTML.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)gtm_stringByEscapingForHTML</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_stringByEscapingForHTML</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/gtm_stringByEscapingForAsciiHTML</TokenIdentifier>
+			<Abstract type="html">For obvious reasons this call is only safe once.</Abstract>
+			<DeclaredIn>GTMNSString+HTML.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)gtm_stringByEscapingForAsciiHTML</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_stringByEscapingForAsciiHTML</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/gtm_stringByUnescapingFromHTML</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSString+HTML.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)gtm_stringByUnescapingFromHTML</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_stringByUnescapingFromHTML</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/gtm_stringByEscapingHTMLUsingTable:ofSize:escapingUnicode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMNSString+HTML.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)gtm_stringByEscapingHTMLUsingTable:(HTMLEscapeMap *)table ofSize:(NSUInteger)size escapingUnicode:(BOOL)escapeUnicode</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_stringByEscapingHTMLUsingTable:ofSize:escapingUnicode:</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
