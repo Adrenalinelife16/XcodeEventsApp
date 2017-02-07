@@ -24,6 +24,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+// add logout method under the else statement
+
+#pragma mark - Check login for MyFavorite and MyTickets
+
+-(BOOL)checkLogin
+{
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
+        return YES;
+    }
+    else
+        
+        // Create logout method here
+        
+        // will have to link to confirm logout button
+        
+        return NO;
+}
+
+
+
 /*
 #pragma mark - Navigation
 

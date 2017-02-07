@@ -61,6 +61,8 @@
 		7122DC1718BDFB7B00DC9925 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1618BDFB7B00DC9925 /* MapKit.framework */; };
 		7122DC1918BDFB8100DC9925 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1818BDFB8100DC9925 /* CoreLocation.framework */; };
 		7225BD151E492DA600A35D30 /* LogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7225BD141E492DA600A35D30 /* LogoutViewController.m */; };
+		7225BD1B1E4A1B0000A35D30 /* MoreDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7225BD1A1E4A1B0000A35D30 /* MoreDetailsTableViewController.m */; };
+		7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */; };
 		7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */; };
 		7293CFB01E0D9C5500E310C0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAC1E0D9C5500E310C0 /* Bolts.framework */; };
 		7293CFB11E0D9C5500E310C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */; };
@@ -75,7 +77,6 @@
 		7920A7B11921F1B0001808B6 /* TSMiniWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7920A7B01921F1B0001808B6 /* TSMiniWebBrowser.m */; };
 		7920A7B819220B39001808B6 /* instagram_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7920A7B619220B39001808B6 /* instagram_logo.png */; };
 		7920A7B919220B39001808B6 /* instagram_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7920A7B719220B39001808B6 /* instagram_logo@2x.png */; };
-		7920A7BC19220C5B001808B6 /* MoreDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7920A7BB19220C5B001808B6 /* MoreDetailsViewController.m */; };
 		79348D0A18F99D56006E56A5 /* login-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 79348D0818F99D56006E56A5 /* login-btn.png */; };
 		79348D0B18F99D56006E56A5 /* login-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79348D0918F99D56006E56A5 /* login-btn@2x.png */; };
 		793508D3192132400001CC34 /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 793508D1192132400001CC34 /* Events.xcdatamodeld */; };
@@ -160,7 +161,6 @@
 		BB303DA418B863E300B6EBC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB303DA218B863E300B6EBC9 /* InfoPlist.strings */; };
 		BB303DA618B863E300B6EBC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303DA518B863E300B6EBC9 /* main.m */; };
 		BB303DAA18B863E300B6EBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303DA918B863E300B6EBC9 /* AppDelegate.m */; };
-		BB303DAD18B863E300B6EBC9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB303DAB18B863E300B6EBC9 /* Main_iPhone.storyboard */; };
 		BB303DB018B863E300B6EBC9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB303DAE18B863E300B6EBC9 /* Main_iPad.storyboard */; };
 		BB303DB318B863E300B6EBC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303DB218B863E300B6EBC9 /* ViewController.m */; };
 		BB303DB518B863E300B6EBC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB303DB418B863E300B6EBC9 /* Images.xcassets */; };
@@ -312,6 +312,9 @@
 		7122DC1818BDFB8100DC9925 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7225BD131E492DA600A35D30 /* LogoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutViewController.h; sourceTree = "<group>"; };
 		7225BD141E492DA600A35D30 /* LogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoutViewController.m; sourceTree = "<group>"; };
+		7225BD191E4A1B0000A35D30 /* MoreDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreDetailsTableViewController.h; sourceTree = "<group>"; };
+		7225BD1A1E4A1B0000A35D30 /* MoreDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreDetailsTableViewController.m; sourceTree = "<group>"; };
+		7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		725535CA1E1416260070D5B5 /* Events.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Events.entitlements; sourceTree = "<group>"; };
 		7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adrenaline Full Logo Transparent.png"; sourceTree = "<group>"; };
 		7293CFAC1E0D9C5500E310C0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -334,8 +337,6 @@
 		7920A7B01921F1B0001808B6 /* TSMiniWebBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMiniWebBrowser.m; sourceTree = "<group>"; };
 		7920A7B619220B39001808B6 /* instagram_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram_logo.png; sourceTree = "<group>"; };
 		7920A7B719220B39001808B6 /* instagram_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram_logo@2x.png"; sourceTree = "<group>"; };
-		7920A7BA19220C5B001808B6 /* MoreDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreDetailsViewController.h; sourceTree = "<group>"; };
-		7920A7BB19220C5B001808B6 /* MoreDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreDetailsViewController.m; sourceTree = "<group>"; };
 		79348D0818F99D56006E56A5 /* login-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-btn.png"; sourceTree = "<group>"; };
 		79348D0918F99D56006E56A5 /* login-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-btn@2x.png"; sourceTree = "<group>"; };
 		793508D2192132400001CC34 /* Events.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
@@ -472,7 +473,6 @@
 		BB303DA718B863E300B6EBC9 /* Events-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Events-Prefix.pch"; sourceTree = "<group>"; };
 		BB303DA818B863E300B6EBC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB303DA918B863E300B6EBC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BB303DAC18B863E300B6EBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		BB303DAF18B863E300B6EBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		BB303DB118B863E300B6EBC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB303DB218B863E300B6EBC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -636,8 +636,8 @@
 			children = (
 				7112223F18BCD7E700E77A4A /* MoreViewController.h */,
 				7112224018BCD7E800E77A4A /* MoreViewController.m */,
-				7920A7BA19220C5B001808B6 /* MoreDetailsViewController.h */,
-				7920A7BB19220C5B001808B6 /* MoreDetailsViewController.m */,
+				7225BD191E4A1B0000A35D30 /* MoreDetailsTableViewController.h */,
+				7225BD1A1E4A1B0000A35D30 /* MoreDetailsTableViewController.m */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -999,7 +999,7 @@
 				BB303E2D18B87FB400B6EBC9 /* TabBarController */,
 				BB303DA818B863E300B6EBC9 /* AppDelegate.h */,
 				BB303DA918B863E300B6EBC9 /* AppDelegate.m */,
-				BB303DAB18B863E300B6EBC9 /* Main_iPhone.storyboard */,
+				7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */,
 				BB303DAE18B863E300B6EBC9 /* Main_iPad.storyboard */,
 				BB303DB118B863E300B6EBC9 /* ViewController.h */,
 				BB303DB218B863E300B6EBC9 /* ViewController.m */,
@@ -1311,6 +1311,7 @@
 				7972E976195355B100F25E4D /* icon-feed-facebook@2x.png in Resources */,
 				7920A7B819220B39001808B6 /* instagram_logo.png in Resources */,
 				BB303E0018B86B3400B6EBC9 /* Livello1@2x.png in Resources */,
+				7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */,
 				79736F09191EAD13005BA69B /* fb_logo@2x.png in Resources */,
 				7122DB4618BB7D8600C044E8 /* Segmented_middle@2x.png in Resources */,
 				BB62B11F18B8B529000DBDBC /* Action3@2x.png in Resources */,
@@ -1366,7 +1367,6 @@
 				BB303E2118B879AA00B6EBC9 /* image2.png in Resources */,
 				79736F08191EAD13005BA69B /* fb_logo.png in Resources */,
 				79E815651953481800E58344 /* Icon120.png in Resources */,
-				BB303DAD18B863E300B6EBC9 /* Main_iPhone.storyboard in Resources */,
 				7112221918BCC14B00E77A4A /* arrow@2x.png in Resources */,
 				7972E97B195355B100F25E4D /* white-cell.png in Resources */,
 				BB303E2A18B879AA00B6EBC9 /* strip@2x.png in Resources */,
@@ -1444,7 +1444,6 @@
 				BB303DB318B863E300B6EBC9 /* ViewController.m in Sources */,
 				BB303E4018B88D4C00B6EBC9 /* FeedViewController.m in Sources */,
 				7982242018F7098C009FA42E /* LoginViewController.m in Sources */,
-				7920A7BC19220C5B001808B6 /* MoreDetailsViewController.m in Sources */,
 				7112223A18BCD08700E77A4A /* MapViewController.m in Sources */,
 				798D9E2318F15F2000A69513 /* UIImage+WebP.m in Sources */,
 				798D9E0F18F15F1400A69513 /* SDWebImageManager.m in Sources */,
@@ -1493,6 +1492,7 @@
 				79691CB418EFFFF700ABD52D /* Utility.m in Sources */,
 				7920A7B11921F1B0001808B6 /* TSMiniWebBrowser.m in Sources */,
 				7112222E18BCC69300E77A4A /* AboutCustomCell2.m in Sources */,
+				7225BD1B1E4A1B0000A35D30 /* MoreDetailsTableViewController.m in Sources */,
 				79691CD318F0086100ABD52D /* Reachability.m in Sources */,
 				79691CAD18EFFF1F00ABD52D /* SBJsonParser.m in Sources */,
 				79691D0418F00C8700ABD52D /* ASIDataCompressor.m in Sources */,
@@ -1542,14 +1542,6 @@
 				BB303DA318B863E300B6EBC9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		BB303DAB18B863E300B6EBC9 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB303DAC18B863E300B6EBC9 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		BB303DAE18B863E300B6EBC9 /* Main_iPad.storyboard */ = {

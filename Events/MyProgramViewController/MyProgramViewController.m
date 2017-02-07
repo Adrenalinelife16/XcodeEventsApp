@@ -312,7 +312,7 @@
 
 // add logout method under the else statement 
 
-#pragma mark - Check login for MyFavourite and MyTickets
+#pragma mark - Check login for MyFavorite and MyTickets
 -(BOOL)checkLogin
 {
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
