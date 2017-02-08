@@ -227,6 +227,7 @@
 		BB62B12B18B8C07C000DBDBC /* MyProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB62B12A18B8C07C000DBDBC /* MyProgramViewController.m */; };
 		BB857F4518B8928700B366D8 /* secondpic.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4318B8928700B366D8 /* secondpic.png */; };
 		BB857F4618B8928700B366D8 /* secondpic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4418B8928700B366D8 /* secondpic@2x.png */; };
+		E2AB03211E4AA95300EAA5BF /* iosCheckList in Resources */ = {isa = PBXBuildFile; fileRef = E2AB03201E4AA95300EAA5BF /* iosCheckList */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -545,6 +546,7 @@
 		BB62B12A18B8C07C000DBDBC /* MyProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProgramViewController.m; sourceTree = "<group>"; };
 		BB857F4318B8928700B366D8 /* secondpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondpic.png; sourceTree = "<group>"; };
 		BB857F4418B8928700B366D8 /* secondpic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondpic@2x.png"; sourceTree = "<group>"; };
+		E2AB03201E4AA95300EAA5BF /* iosCheckList */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iosCheckList; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -690,6 +692,7 @@
 			isa = PBXGroup;
 			children = (
 				7225BD1F1E4AA78200A35D30 /* File */,
+				E2AB03201E4AA95300EAA5BF /* iosCheckList */,
 			);
 			name = Notes;
 			sourceTree = "<group>";
@@ -1405,6 +1408,7 @@
 				BB303DF318B86B3400B6EBC9 /* Aboutred.png in Resources */,
 				7112221818BCC14B00E77A4A /* arrow.png in Resources */,
 				7972E97A195355B100F25E4D /* icon-feed-twitter@2x.png in Resources */,
+				E2AB03211E4AA95300EAA5BF /* iosCheckList in Resources */,
 				BB303E2C18B879AA00B6EBC9 /* Twitter@2x.png in Resources */,
 				7122DB1C18BB459C00C044E8 /* feedviewCell3@2x.png in Resources */,
 				7112220318BCA62300E77A4A /* sendto.png in Resources */,
