@@ -6,7 +6,7 @@ Night of 2/7/17
 
 
 - Events Feed List
-1. Redesign the EventsFeed Layout
++1. Redesign the EventsFeed Layout - CKR
 2. Add new ViewController for Website Links
 3. Search Function needs to work
 4.
@@ -43,9 +43,9 @@ Night of 2/7/17
 
 
 - Menu Tab Bar
-1. Programs = "Events"
-2. Feed = "Social"
-3. My Programs = "My Events"
++1. Programs = "Events" - CKR
++2. Feed = "Social" - CKR
++3. My Programs = "My Events" - CKR
 
 
 
