@@ -997,7 +997,6 @@
 		BB303D9F18B863E300B6EBC9 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				E2AB03221E4ADFAC00EAA5BF /* Create Event */,
 				7225BD1E1E4AA76C00A35D30 /* Notes */,
 				725535CA1E1416260070D5B5 /* Events.entitlements */,
 				793508D0192132240001CC34 /* core data stack */,
@@ -1006,6 +1005,7 @@
 				79691C7D18EFFEDC00ABD52D /* Common Classes */,
 				7920A7AE1921F184001808B6 /* TSMiniWebBrowser */,
 				7982241A18F70949009FA42E /* Registration */,
+				E2AB03221E4ADFAC00EAA5BF /* Create Event */,
 				7982241918F70946009FA42E /* Login */,
 				7225BD121E48B78F00A35D30 /* Logout */,
 				7112223E18BCD7E700E77A4A /* More */,
