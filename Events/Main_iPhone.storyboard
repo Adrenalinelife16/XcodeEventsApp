@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="p0g-Ji-e7I">
             <objects>
-                <viewController storyboardIdentifier="loginView" id="ofP-CN-yoG" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofP-CN-yoG" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VxO-xc-TFe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +112,7 @@
         <!--Events-->
         <scene sceneID="Zm0-gr-3hJ">
             <objects>
-                <tableViewController id="XMy-k7-mqo" customClass="ProgramViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ProgamViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XMy-k7-mqo" customClass="ProgramViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="162" sectionHeaderHeight="22" sectionFooterHeight="22" id="6eF-vP-BpW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1125,6 +1125,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eyy-qf-1T9">
+                            <rect key="frame" x="0.0" y="110" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <segue destination="ofP-CN-yoG" kind="push" id="LYc-1j-nwM"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MoreCell" id="rfb-6m-XYc">
                                 <rect key="frame" x="0.0" y="56" width="375" height="44"/>
@@ -1455,6 +1465,6 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="gkd-uM-QVZ"/>
+        <segue reference="G5x-3c-mw0"/>
     </inferredMetricsTieBreakers>
 </document>

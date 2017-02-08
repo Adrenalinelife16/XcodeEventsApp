@@ -6,6 +6,7 @@
 //
 
 #import "LoginViewController.h"
+#import "ProgramViewController.h"
 
 @interface LoginViewController ()
 
@@ -132,6 +133,7 @@
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Login Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [av setTag:99];
                     [av show];
+           //         [self.modalViewController(viewController, animated: true, completion: nil)]
                 }
                 
             }
