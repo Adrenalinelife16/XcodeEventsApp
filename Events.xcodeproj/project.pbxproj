@@ -63,6 +63,7 @@
 		7225BD151E492DA600A35D30 /* LogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7225BD141E492DA600A35D30 /* LogoutViewController.m */; };
 		7225BD1B1E4A1B0000A35D30 /* MoreDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7225BD1A1E4A1B0000A35D30 /* MoreDetailsTableViewController.m */; };
 		7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */; };
+		7225BD201E4AA78200A35D30 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1F1E4AA78200A35D30 /* File */; };
 		7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */; };
 		7293CFB01E0D9C5500E310C0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAC1E0D9C5500E310C0 /* Bolts.framework */; };
 		7293CFB11E0D9C5500E310C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */; };
@@ -315,6 +316,7 @@
 		7225BD191E4A1B0000A35D30 /* MoreDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreDetailsTableViewController.h; sourceTree = "<group>"; };
 		7225BD1A1E4A1B0000A35D30 /* MoreDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreDetailsTableViewController.m; sourceTree = "<group>"; };
 		7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		7225BD1F1E4AA78200A35D30 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		725535CA1E1416260070D5B5 /* Events.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Events.entitlements; sourceTree = "<group>"; };
 		7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adrenaline Full Logo Transparent.png"; sourceTree = "<group>"; };
 		7293CFAC1E0D9C5500E310C0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -684,6 +686,14 @@
 			name = Logout;
 			sourceTree = "<group>";
 		};
+		7225BD1E1E4AA76C00A35D30 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				7225BD1F1E4AA78200A35D30 /* File */,
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
 		791E3DE418F3208D00220BDE /* HTML string convertion */ = {
 			isa = PBXGroup;
 			children = (
@@ -981,6 +991,7 @@
 		BB303D9F18B863E300B6EBC9 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				7225BD1E1E4AA76C00A35D30 /* Notes */,
 				725535CA1E1416260070D5B5 /* Events.entitlements */,
 				793508D0192132240001CC34 /* core data stack */,
 				79BD13B91908399100424DBA /* About new */,
@@ -1323,6 +1334,7 @@
 				BB303E2018B879AA00B6EBC9 /* image1@2x.png in Resources */,
 				7122DB2918BB4BDB00C044E8 /* feedviewCell6.png in Resources */,
 				7972E97C195355B100F25E4D /* white-cell@2x.png in Resources */,
+				7225BD201E4AA78200A35D30 /* File in Resources */,
 				BB303E0418B86B3400B6EBC9 /* Livello3@2x.png in Resources */,
 				711221EC18BC94F900E77A4A /* RedDot@2x.png in Resources */,
 				BB303E0918B86B3400B6EBC9 /* Program.png in Resources */,
