@@ -1,5 +1,5 @@
 
-#define COMMON_COLOR_RED [UIColor colorWithRed:102.0/255.0 green:144.0/255.0 blue:255.0/255.0 alpha:1.0]
+#define COMMON_COLOR_RED [UIColor colorWithRed:237.0/255.0 green:28.0/255.0 blue:36.0/255.0 alpha:1.0]
 #define COMMON_COLOR_GRAY [UIColor colorWithRed:237.0/255.0 green:237.0/255.0 blue:243.0/255.0 alpha:1.0]
 #define COMMON_COLOR_DATE [UIColor colorWithRed:135.0/255.0 green:135.0/255.0 blue:135.0/255.0 alpha:1.0]
 
