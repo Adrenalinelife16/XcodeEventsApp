@@ -691,7 +691,7 @@
 		7225BD1E1E4AA76C00A35D30 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				7225BD1F1E4AA78200A35D30 /* File */,
+				7225BD1F1E4AA78200A35D30 /* Notes */,
 				E2AB03201E4AA95300EAA5BF /* iosCheckList */,
 			);
 			name = Notes;
@@ -1678,7 +1678,7 @@
 				GCC_PREFIX_HEADER = "Events/Events-Prefix.pch";
 				INFOPLIST_FILE = "Events/Events-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apps.EventApp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.AdrenalineLife.Adrenaline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1701,7 +1701,7 @@
 				GCC_PREFIX_HEADER = "Events/Events-Prefix.pch";
 				INFOPLIST_FILE = "Events/Events-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apps.EventApp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.AdrenalineLife.Adrenaline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
