@@ -74,6 +74,7 @@
     {
         cell.textLabel.text = [settings objectAtIndex:indexPath.row];
     }
+    
     return cell;
 }
 

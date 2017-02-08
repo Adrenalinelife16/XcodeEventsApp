@@ -8,6 +8,7 @@
 
 #import "MoreViewController.h"
 #import "MoreDetailsTableViewController.h"
+#import "LoginViewController.h"
 
 @interface MoreViewController ()
 
@@ -57,6 +58,7 @@
     return [mainTableData count];
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"MoreCell";
@@ -64,9 +66,15 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
     }
     
+    
+    // Show array of object
+    
     cell.textLabel.text = [mainTableData objectAtIndex:indexPath.row];
+    
+
     
     return cell;
 }
@@ -81,12 +89,17 @@
         MoreDetailsTableViewController *destViewController = segue.destinationViewController;
         destViewController.moreDetails = [mainTableData objectAtIndex:indexPath.row];
         destViewController.title = destViewController.moreDetails;
-        
-    }
+       
 }
-
-
-
+    
+    else ([segue.identifier isEqualToString:@"loginRegister"]);{
+            NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
+            LoginViewController *loginViewControl = [segue destinationViewController];
+            loginViewControl  =   [mainTableData objectAtIndex:selectedRowIndex.row];
+        
+        }
+    
+}
 
 
 @end
