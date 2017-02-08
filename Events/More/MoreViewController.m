@@ -62,41 +62,42 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-    
+
     static NSString *CellIdentifier = @"MoreCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-        // Show array of object
-    
+
+
     cell.textLabel.text = [mainTableData objectAtIndex:indexPath.row];
-    
+
     return cell;
+
 }
 
 #pragma mark - Navigation
 
-// In a story board-based application, you will often want to do a little preparation before navigation
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"arrayDetail"]) {
+    if ([[segue identifier] isEqualToString:@"loginRegister"])
+    {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        MoreDetailsTableViewController *destViewController = segue.destinationViewController;
-        destViewController.moreDetails = [mainTableData objectAtIndex:indexPath.row];
-        destViewController.title = destViewController.moreDetails;
-       
-}
-    
-    else ([segue.identifier isEqualToString:@"loginRegister"]);{
-            NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
-            LoginViewController *loginViewControl = [segue destinationViewController];
-            loginViewControl  =   [mainTableData objectAtIndex:selectedRowIndex.row];
-        
-        }
-    
+        NSArray *object = mainTableData[indexPath.row];
+        [segue destinationViewController];
+    }
 }
 
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([segue.identifier isEqualToString:@"arrayDetail"]) {
+//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//        MoreDetailsTableViewController *destViewController = segue.destinationViewController;
+//        destViewController.moreDetails = [mainTableData objectAtIndex:indexPath.row];
+//        destViewController.title = destViewController.moreDetails;
+//    
+//    }
+//    
+//}
 @end
