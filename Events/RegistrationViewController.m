@@ -244,7 +244,8 @@
     {
             [self CreateUser];
             [DSBezelActivityView newActivityViewForView:[UIApplication sharedApplication].keyWindow withLabel:@"Processing..."];
- 
+            [self performSegueWithIdentifier:(@"toProgram") sender:(self)];
+            // Perform segue code here to main events feed
     }
 }
 

@@ -79,6 +79,7 @@
                         <outlet property="txtEmail" destination="wC5-W8-nMQ" id="sKH-rv-5s2"/>
                         <outlet property="txtPassword" destination="O35-QF-AZ1" id="kgt-VS-q1J"/>
                         <outlet property="txtUsername" destination="wC5-W8-nMQ" id="fVY-Nc-P14"/>
+                        <segue destination="XMy-k7-mqo" kind="push" identifier="toProgram" id="QyU-Yt-3Ts"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTQ-ri-y7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -109,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="-2912" y="-1347"/>
         </scene>
-        <!--Events-->
+        <!--ProgramViewController-->
         <scene sceneID="Zm0-gr-3hJ">
             <objects>
-                <tableViewController storyboardIdentifier="ProgamViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XMy-k7-mqo" customClass="ProgramViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ProgamViewController" title="ProgramViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XMy-k7-mqo" userLabel="ProgramViewController" customClass="ProgramViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="162" sectionHeaderHeight="22" sectionFooterHeight="22" id="6eF-vP-BpW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -500,7 +501,7 @@
         <!--My Program-->
         <scene sceneID="Tew-Kl-6Ov">
             <objects>
-                <viewController id="3YM-N3-Ofp" customClass="MyProgramViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="eventsFeed" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3YM-N3-Ofp" customClass="MyProgramViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vGo-FD-HDE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -565,7 +566,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image.png" id="H42-0p-hBO">
-                                                            <rect key="frame" x="-4" y="3" width="352" height="138"/>
+                                                            <rect key="frame" x="-4" y="2" width="352" height="139"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </imageView>
@@ -1132,12 +1133,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eyy-qf-1T9">
-                            <rect key="frame" x="0.0" y="110" width="375" height="44"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fWB-Ny-jbo">
+                            <rect key="frame" x="0.0" y="109.5" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Login">
-                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <segue destination="ofP-CN-yoG" kind="push" id="0Ze-OO-j0x"/>
+                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MoreCell" id="rfb-6m-XYc">
@@ -1161,9 +1163,6 @@
                     <tabBarItem key="tabBarItem" title="More" image="Listred.png" id="Jz4-Is-M6B"/>
                     <navigationItem key="navigationItem" title="More" id="ntU-5v-DPG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="ofP-CN-yoG" kind="push" identifier="loginRegister" id="9ZI-0F-k16"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpL-EI-hBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1377,17 +1376,18 @@
                         <outlet property="txtLastName" destination="R1G-NY-JLD" id="Pgu-lM-ttg"/>
                         <outlet property="txtPassword" destination="gAN-qu-wg9" id="vez-OY-ciV"/>
                         <outlet property="txtUsername" destination="D26-xv-UXo" id="XeG-nG-oZ2"/>
+                        <segue destination="XMy-k7-mqo" kind="push" identifier="toProgram" id="GuZ-nc-8YU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZI7-nT-gxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="265.5" y="1404.5"/>
         </scene>
-        <!--Events Feed-->
+        <!--Events-->
         <scene sceneID="ceR-vN-lrW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mml-vq-zwo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events Feed" image="Program.png" id="TWS-hq-3Im"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="Program.png" id="TWS-hq-3Im"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vdo-nW-dZc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1475,6 +1475,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="G5x-3c-mw0"/>
+        <segue reference="gkd-uM-QVZ"/>
+        <segue reference="GuZ-nc-8YU"/>
     </inferredMetricsTieBreakers>
 </document>

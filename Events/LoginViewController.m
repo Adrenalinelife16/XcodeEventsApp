@@ -133,8 +133,11 @@
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Login Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [av setTag:99];
                     [av show];
-           //         [self.modalViewController(viewController, animated: true, completion: nil)]
-                }
+                    // Perform Segue Here to Main Program View
+                    [self performSegueWithIdentifier:(@"toProgram") sender:(self)];
+                
+                    
+                    }
                 
             }
             

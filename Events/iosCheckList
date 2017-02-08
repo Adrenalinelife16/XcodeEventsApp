@@ -6,7 +6,7 @@ Night of 2/7/17
 
 
 - Events Feed List
-+1. Redesign the EventsFeed Layout - CKR
++1. Redesign the EventsFeed Layout                      - CKR
 2. Add new ViewController for Website Links
 3. Search Function needs to work
 4.
@@ -38,9 +38,11 @@ Night of 2/7/17
 
 
 - More Page
-1. What pages do we actually need?
+What pages do we actually need?
 2. Add info to every page here.
 
+1. Login Accepted Segue to Main Events Feed
+2. Registration Accepted Segue to Main Events Feed
 
 - Menu Tab Bar
 +1. Programs = "Events" - CKR
