@@ -2,5 +2,54 @@
 
 Night of 2/7/17
 
+
+--Enetire App--
+1. Change all colors!
+
+
+- Events Feed List
 1. Redesign the EventsFeed Layout
-2. Redesign the MyPrograms Favorite Layout
+2. Add new ViewController for Website Links
+3. Search Function needs to work
+4.
+
+
+- Events Social Feed List
+1. Sort Function needs to be fixed
+2. Update Social Media Pictures
+
+
+- New View Controller for Website Links
+- Side Drawer comes out
+1. Create Events Page
+2. My Events
+3.
+
+
+- MyPrograms
+    Calendar
+        1. Format Bottom List View Section
+    My Favorites
+        1. Scroll Function needs to be fixed
+        2. Layout needs to look like Events Feed
+
+- About Page
+1. Image Updated
+2. Contact us anytime, new email address
+3. Change word for request new "Category" not feature"
+
+
+- More Page
+1. What pages do we actually need?
+2. Add info to every page here.
+
+
+- Menu Tab Bar
+1. Programs = "Events"
+2. Feed = "Social"
+3. My Programs = "My Events"
+
+
+
+
+
