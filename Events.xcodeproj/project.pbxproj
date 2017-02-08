@@ -228,6 +228,7 @@
 		BB857F4518B8928700B366D8 /* secondpic.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4318B8928700B366D8 /* secondpic.png */; };
 		BB857F4618B8928700B366D8 /* secondpic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4418B8928700B366D8 /* secondpic@2x.png */; };
 		E2AB03211E4AA95300EAA5BF /* iosCheckList in Resources */ = {isa = PBXBuildFile; fileRef = E2AB03201E4AA95300EAA5BF /* iosCheckList */; };
+		E2AB03251E4ADFEA00EAA5BF /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB03241E4ADFEA00EAA5BF /* CreateEventViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -547,6 +548,8 @@
 		BB857F4318B8928700B366D8 /* secondpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondpic.png; sourceTree = "<group>"; };
 		BB857F4418B8928700B366D8 /* secondpic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondpic@2x.png"; sourceTree = "<group>"; };
 		E2AB03201E4AA95300EAA5BF /* iosCheckList */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iosCheckList; sourceTree = "<group>"; };
+		E2AB03231E4ADFEA00EAA5BF /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
+		E2AB03241E4ADFEA00EAA5BF /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -994,6 +997,7 @@
 		BB303D9F18B863E300B6EBC9 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				E2AB03221E4ADFAC00EAA5BF /* Create Event */,
 				7225BD1E1E4AA76C00A35D30 /* Notes */,
 				725535CA1E1416260070D5B5 /* Events.entitlements */,
 				793508D0192132240001CC34 /* core data stack */,
@@ -1205,6 +1209,15 @@
 				BB62B12A18B8C07C000DBDBC /* MyProgramViewController.m */,
 			);
 			path = MyProgramViewController;
+			sourceTree = "<group>";
+		};
+		E2AB03221E4ADFAC00EAA5BF /* Create Event */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB03231E4ADFEA00EAA5BF /* CreateEventViewController.h */,
+				E2AB03241E4ADFEA00EAA5BF /* CreateEventViewController.m */,
+			);
+			name = "Create Event";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1517,6 +1530,7 @@
 				799499EE190985A6008AC6BD /* AbouViewControllers.m in Sources */,
 				798D9E1018F15F1400A69513 /* SDWebImageDecoder.m in Sources */,
 				79A36D871959DC7700C05F43 /* ProgramDescriptionViewController.m in Sources */,
+				E2AB03251E4ADFEA00EAA5BF /* CreateEventViewController.m in Sources */,
 				711221DF18BC62DD00E77A4A /* UIView+convenience.m in Sources */,
 				79691D1118F0175600ABD52D /* EventList.m in Sources */,
 				798D9E2618F15F2000A69513 /* UIImageView+WebCache.m in Sources */,

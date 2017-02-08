@@ -12,6 +12,7 @@
 #import "MyEventTickets.h"
 #import "AboutViewController.h"
 #import "UIImageView+WebCache.h"
+#import "CreateEventViewController.h"
 
 @interface ProgramViewController (){
     
@@ -36,9 +37,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
-    
     
     
 }
@@ -195,18 +193,22 @@
     return cell;
 }
 
+
+
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"AboutView"]) {
+        
+        NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
+        AboutViewController *aboutVwController = [segue destinationViewController];
+        EventList *obj  =   [arrayEventList objectAtIndex:selectedRowIndex.row];
+        aboutVwController.eventObj  =   obj;
+    }
     
-    NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
-    AboutViewController *aboutVwController = [segue destinationViewController];
-    EventList *obj  =   [arrayEventList objectAtIndex:selectedRowIndex.row];
-    
-    aboutVwController.eventObj  =   obj;
 }
 
 @end

@@ -117,17 +117,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="cfo-hl-Wcd">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="162" id="jUX-MS-syf" customClass="ProgramCustomCell">
-                                <rect key="frame" x="0.0" y="66" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="22" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" misplaced="YES" id="Jyd-f3-EuW">
@@ -182,20 +177,20 @@
                                     <outlet property="lblDateTime" destination="fYY-oT-H9o" id="P7b-qf-0Nh"/>
                                     <outlet property="lblEventDesc" destination="qgt-yW-c9q" id="tj9-XD-mdy"/>
                                     <outlet property="lblEventName" destination="J5G-nQ-AXo" id="J0i-HC-w2Y"/>
-                                    <segue destination="GJ5-Ez-Ag6" kind="push" id="G5x-3c-mw0"/>
+                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="AboutView" id="G5x-3c-mw0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="XMy-k7-mqo" id="RMK-jA-gTX"/>
-                            <outlet property="delegate" destination="XMy-k7-mqo" id="VWd-Zq-WFk"/>
+                            <outlet property="dataSource" destination="XMy-k7-mqo" id="Kc2-rQ-9Ks"/>
+                            <outlet property="delegate" destination="XMy-k7-mqo" id="HAh-FW-vbD"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Events" id="UiF-4Q-GbU">
                         <barButtonItem key="rightBarButtonItem" image="Action.png" id="3ec-V9-YvN">
                             <connections>
-                                <segue destination="7lT-pd-jQv" kind="push" id="aJf-BW-cor"/>
+                                <segue destination="Nqn-cv-cJq" kind="push" identifier="CreateEvent" id="nTu-mc-LRZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -213,6 +208,28 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-1614.5" y="-2159.5"/>
+        </scene>
+        <!--Create Event View Controller-->
+        <scene sceneID="6vi-zx-NAx">
+            <objects>
+                <viewController id="Nqn-cv-cJq" customClass="CreateEventViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="foA-C6-dQe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ayk-NJ-NZQ">
+                                <rect key="frame" x="128" y="293" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Event"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UFI-eg-opn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MlP-9R-uaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1088.5" y="-2158.5"/>
         </scene>
         <!--Event Feed-->
         <scene sceneID="NyL-Lg-yae">
@@ -1025,28 +1042,6 @@
             </objects>
             <point key="canvasLocation" x="777" y="-1441"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="BuQ-HO-dl0">
-            <objects>
-                <viewController id="7lT-pd-jQv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Iar-iw-gN3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="616-AQ-ylV">
-                                <rect key="frame" x="122" y="307" width="131" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create Event"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="V2C-nM-EyW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vMn-IZ-9TY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1035" y="-2332"/>
-        </scene>
         <!--Maps-->
         <scene sceneID="WdJ-TP-gcR">
             <objects>
@@ -1135,13 +1130,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eyy-qf-1T9">
-                            <rect key="frame" x="0.0" y="110" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="109.5" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Login">
                                 <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
-                                <segue destination="ofP-CN-yoG" kind="push" id="LYc-1j-nwM"/>
+                                <segue destination="ofP-CN-yoG" kind="push" identifier="loginView" id="LYc-1j-nwM"/>
                             </connections>
                         </button>
                         <prototypes>
@@ -1149,7 +1144,7 @@
                                 <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
