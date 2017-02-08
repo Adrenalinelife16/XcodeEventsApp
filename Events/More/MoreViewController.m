@@ -32,8 +32,8 @@
 {
     [super viewDidLoad];
     
-    mainTableData = [NSArray arrayWithObjects:@"Help Center", @"Privacy", @"Terms & Conditions", @"Policy", @"Settings", @"Login/Register", nil];
-    secondTableData = [NSArray arrayWithObjects:@"Help Center", @"Privacy", @"Terms & Conditions", @"Policy", @"Settings", nil];
+    mainTableData = [NSArray arrayWithObjects:@"Help Center", @"Terms & Conditions", @"Settings", @"Login/Register", nil];
+    secondTableData = [NSArray arrayWithObjects:@"Help Center", @"Terms & Conditions", @"Settings", nil];
 
 }
 
