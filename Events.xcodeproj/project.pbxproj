@@ -691,7 +691,7 @@
 		7225BD1E1E4AA76C00A35D30 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				7225BD1F1E4AA78200A35D30 /* File */,
+				7225BD1F1E4AA78200A35D30 /* Notes */,
 				E2AB03201E4AA95300EAA5BF /* iosCheckList */,
 			);
 			name = Notes;
