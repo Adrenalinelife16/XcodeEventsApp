@@ -156,8 +156,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    
+
     // Return the number of rows in the section.
-     return [arrayEventList count];
+   return [arrayEventList count];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -180,7 +182,7 @@
     cell.lblEventDesc.text  =   [obj.eventDescription stringByConvertingHTMLToPlainText];
     cell.lblEventDesc.text  =   [Utility TrimString:cell.lblEventDesc.text];
     
-    if ([obj.eventImageURL length]>0) {
+    if ([obj.eventImageURL length]) {
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
         [cell.imgEventImage setContentMode:UIViewContentModeScaleAspectFit];
         [cell.imgEventImage setClipsToBounds:YES];
