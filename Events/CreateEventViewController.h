@@ -11,5 +11,6 @@
 @interface CreateEventViewController : UIViewController
 
 -(IBAction)btnCreateEvent:(id)sender;
+-(IBAction)btnDiscoverCategories:(id)sender;
 
 @end

@@ -32,6 +32,13 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.adrenalinelife.org/create-event/"]];
     
 }
+
+-(IBAction)btnDiscoverCategories:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.adrenalinelife.org/browse-by-category/"]];
+    
+}
+
 /*
 #pragma mark - Navigation
 
