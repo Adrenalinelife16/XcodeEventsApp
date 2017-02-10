@@ -227,6 +227,17 @@
 		BB62B12B18B8C07C000DBDBC /* MyProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB62B12A18B8C07C000DBDBC /* MyProgramViewController.m */; };
 		BB857F4518B8928700B366D8 /* secondpic.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4318B8928700B366D8 /* secondpic.png */; };
 		BB857F4618B8928700B366D8 /* secondpic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4418B8928700B366D8 /* secondpic@2x.png */; };
+		E2252E861E4D16D900B0CD69 /* Adrenaline Logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E831E4D16D900B0CD69 /* Adrenaline Logo2.png */; };
+		E2252E871E4D16D900B0CD69 /* createEvent-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E841E4D16D900B0CD69 /* createEvent-btn.png */; };
+		E2252E881E4D16D900B0CD69 /* createEvent-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E851E4D16D900B0CD69 /* createEvent-btn@2x.png */; };
+		E2252E8B1E4D899200B0CD69 /* discover-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E891E4D899200B0CD69 /* discover-btn@2x.png */; };
+		E2252E8C1E4D899200B0CD69 /* discover-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8A1E4D899200B0CD69 /* discover-btn.png */; };
+		E2252E8E1E4DB57500B0CD69 /* FeaturePage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8D1E4DB57500B0CD69 /* FeaturePage.png */; };
+		E2252E901E4DB80300B0CD69 /* BetaPage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8F1E4DB80300B0CD69 /* BetaPage.png */; };
+		E2A54D421E4DC03B00091538 /* BetaPageBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */; };
+		E2A54D431E4DC03B00091538 /* CreateEventBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D401E4DC03B00091538 /* CreateEventBtn.png */; };
+		E2A54D441E4DC03B00091538 /* DiscoverBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D411E4DC03B00091538 /* DiscoverBtn.png */; };
+		E2A54D461E4DC3F700091538 /* AboutPage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D451E4DC3F700091538 /* AboutPage.png */; };
 		E2AB03211E4AA95300EAA5BF /* CheckList in Resources */ = {isa = PBXBuildFile; fileRef = E2AB03201E4AA95300EAA5BF /* CheckList */; };
 		E2AB03251E4ADFEA00EAA5BF /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB03241E4ADFEA00EAA5BF /* CreateEventViewController.m */; };
 /* End PBXBuildFile section */
@@ -547,6 +558,17 @@
 		BB62B12A18B8C07C000DBDBC /* MyProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProgramViewController.m; sourceTree = "<group>"; };
 		BB857F4318B8928700B366D8 /* secondpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondpic.png; sourceTree = "<group>"; };
 		BB857F4418B8928700B366D8 /* secondpic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondpic@2x.png"; sourceTree = "<group>"; };
+		E2252E831E4D16D900B0CD69 /* Adrenaline Logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adrenaline Logo2.png"; sourceTree = "<group>"; };
+		E2252E841E4D16D900B0CD69 /* createEvent-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createEvent-btn.png"; sourceTree = "<group>"; };
+		E2252E851E4D16D900B0CD69 /* createEvent-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createEvent-btn@2x.png"; sourceTree = "<group>"; };
+		E2252E891E4D899200B0CD69 /* discover-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover-btn@2x.png"; sourceTree = "<group>"; };
+		E2252E8A1E4D899200B0CD69 /* discover-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover-btn.png"; sourceTree = "<group>"; };
+		E2252E8D1E4DB57500B0CD69 /* FeaturePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FeaturePage.png; sourceTree = "<group>"; };
+		E2252E8F1E4DB80300B0CD69 /* BetaPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPage.png; sourceTree = "<group>"; };
+		E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPageBG.png; sourceTree = "<group>"; };
+		E2A54D401E4DC03B00091538 /* CreateEventBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreateEventBtn.png; sourceTree = "<group>"; };
+		E2A54D411E4DC03B00091538 /* DiscoverBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoverBtn.png; sourceTree = "<group>"; };
+		E2A54D451E4DC3F700091538 /* AboutPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AboutPage.png; sourceTree = "<group>"; };
 		E2AB03201E4AA95300EAA5BF /* CheckList */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CheckList; sourceTree = "<group>"; };
 		E2AB03231E4ADFEA00EAA5BF /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
 		E2AB03241E4ADFEA00EAA5BF /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
@@ -1060,6 +1082,17 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E2A54D451E4DC3F700091538 /* AboutPage.png */,
+				E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */,
+				E2A54D401E4DC03B00091538 /* CreateEventBtn.png */,
+				E2A54D411E4DC03B00091538 /* DiscoverBtn.png */,
+				E2252E8F1E4DB80300B0CD69 /* BetaPage.png */,
+				E2252E8D1E4DB57500B0CD69 /* FeaturePage.png */,
+				E2252E891E4D899200B0CD69 /* discover-btn@2x.png */,
+				E2252E8A1E4D899200B0CD69 /* discover-btn.png */,
+				E2252E831E4D16D900B0CD69 /* Adrenaline Logo2.png */,
+				E2252E841E4D16D900B0CD69 /* createEvent-btn.png */,
+				E2252E851E4D16D900B0CD69 /* createEvent-btn@2x.png */,
 				7972E964195355A300F25E4D /* New */,
 				793AACAE193CF5C800B604EE /* App-Icon */,
 				7920A7B619220B39001808B6 /* instagram_logo.png */,
@@ -1334,6 +1367,7 @@
 				BB62B12218B8B529000DBDBC /* Segmented.png in Resources */,
 				BB62B11E18B8B529000DBDBC /* Action3.png in Resources */,
 				7112223218BCCBB300E77A4A /* MapTempImage.png in Resources */,
+				E2252E901E4DB80300B0CD69 /* BetaPage.png in Resources */,
 				711221EB18BC94F900E77A4A /* RedDot.png in Resources */,
 				7972E976195355B100F25E4D /* icon-feed-facebook@2x.png in Resources */,
 				7920A7B819220B39001808B6 /* instagram_logo.png in Resources */,
@@ -1352,6 +1386,7 @@
 				7972E97C195355B100F25E4D /* white-cell@2x.png in Resources */,
 				7225BD201E4AA78200A35D30 /* Notes in Resources */,
 				BB303E0418B86B3400B6EBC9 /* Livello3@2x.png in Resources */,
+				E2252E881E4D16D900B0CD69 /* createEvent-btn@2x.png in Resources */,
 				711221EC18BC94F900E77A4A /* RedDot@2x.png in Resources */,
 				BB303E0918B86B3400B6EBC9 /* Program.png in Resources */,
 				BB303E2718B879AA00B6EBC9 /* Reload.png in Resources */,
@@ -1380,8 +1415,10 @@
 				7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */,
 				7972E978195355B100F25E4D /* icon-feed-instagram@2x.png in Resources */,
 				BB303E0318B86B3400B6EBC9 /* Livello3.png in Resources */,
+				E2252E8C1E4D899200B0CD69 /* discover-btn.png in Resources */,
 				7972E971195355B100F25E4D /* date-cell-gray.png in Resources */,
 				79504C3F191F7CE000EF3103 /* no_image.png in Resources */,
+				E2252E8E1E4DB57500B0CD69 /* FeaturePage.png in Resources */,
 				7982242B18F72A57009FA42E /* register-btn.png in Resources */,
 				7955F91E18F8626A00870734 /* country code.xml in Resources */,
 				BB303DB518B863E300B6EBC9 /* Images.xcassets in Resources */,
@@ -1397,8 +1434,10 @@
 				79E815651953481800E58344 /* Icon120.png in Resources */,
 				7112221918BCC14B00E77A4A /* arrow@2x.png in Resources */,
 				7972E97B195355B100F25E4D /* white-cell.png in Resources */,
+				E2A54D431E4DC03B00091538 /* CreateEventBtn.png in Resources */,
 				BB303E2A18B879AA00B6EBC9 /* strip@2x.png in Resources */,
 				BB303DF618B86B3400B6EBC9 /* Action@2x.png in Resources */,
+				E2252E861E4D16D900B0CD69 /* Adrenaline Logo2.png in Resources */,
 				7122DB2018BB459C00C044E8 /* feedviewCell1@2x.png in Resources */,
 				7112221418BCB83500E77A4A /* Direction.png in Resources */,
 				BB303DFF18B86B3400B6EBC9 /* Livello1.png in Resources */,
@@ -1409,6 +1448,7 @@
 				7112220518BCA62300E77A4A /* share.png in Resources */,
 				BB303DF518B86B3400B6EBC9 /* Action.png in Resources */,
 				7972E977195355B100F25E4D /* icon-feed-instagram.png in Resources */,
+				E2A54D421E4DC03B00091538 /* BetaPageBG.png in Resources */,
 				7920A7B919220B39001808B6 /* instagram_logo@2x.png in Resources */,
 				7122DB4718BB7D8600C044E8 /* Segmented_middle.png in Resources */,
 				7122DB2818BB4BDB00C044E8 /* feedviewCell6@2x.png in Resources */,
@@ -1417,6 +1457,7 @@
 				7122DB4918BB7D8600C044E8 /* Segmented_left.png in Resources */,
 				711221EF18BC9DFB00E77A4A /* placeIcon.png in Resources */,
 				BB303E0518B86B3400B6EBC9 /* MyProgram.png in Resources */,
+				E2252E8B1E4D899200B0CD69 /* discover-btn@2x.png in Resources */,
 				79A5E24719C9064E009D4018 /* Localizable.strings in Resources */,
 				BB303DF318B86B3400B6EBC9 /* Aboutred.png in Resources */,
 				7112221818BCC14B00E77A4A /* arrow.png in Resources */,
@@ -1426,10 +1467,13 @@
 				7122DB1C18BB459C00C044E8 /* feedviewCell3@2x.png in Resources */,
 				7112220318BCA62300E77A4A /* sendto.png in Resources */,
 				7122DB2D18BB4BDB00C044E8 /* feedviewCell4.png in Resources */,
+				E2252E871E4D16D900B0CD69 /* createEvent-btn.png in Resources */,
 				BB303E0118B86B3400B6EBC9 /* Livello2.png in Resources */,
+				E2A54D441E4DC03B00091538 /* DiscoverBtn.png in Resources */,
 				7972E979195355B100F25E4D /* icon-feed-twitter.png in Resources */,
 				79348D0B18F99D56006E56A5 /* login-btn@2x.png in Resources */,
 				BB62B12318B8B529000DBDBC /* Segmented@2x.png in Resources */,
+				E2A54D461E4DC3F700091538 /* AboutPage.png in Resources */,
 				7982242C18F72A57009FA42E /* register-btn@2x.png in Resources */,
 				7122DB2118BB459C00C044E8 /* feedviewCell1.png in Resources */,
 				7122DB1D18BB459C00C044E8 /* feedviewCell3.png in Resources */,
