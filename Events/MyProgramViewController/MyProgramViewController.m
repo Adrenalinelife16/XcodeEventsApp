@@ -23,7 +23,7 @@
 @interface MyProgramViewController () 
 {
     NSMutableArray *arrMyProgram;//for my tickets
-    NSMutableArray *arrayFavouriteProgram;//for my favourites
+    NSMutableArray *arrayFavouriteProgram;//for my favorites
     NSMutableArray *arrMyCalEvents;//for event calendar eventlist
     NSMutableArray *arrayResponseCalEvents;//for event calendar eventlist response from server
     
@@ -175,9 +175,18 @@
 
             cell.lblDateTime.text = [Utility getFormatedDateString:[dictOfCalEvents objectForKey:@"event_start_date"] dateFormatString:@"yyyy-MM-dd" dateFormatterString:@"dd MMMM"];
             cell.lblEventName.text=[dictOfCalEvents valueForKey:@"event_name"];
+
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
             [cell.imgPlaceIcon setImage:[UIImage imageNamed:@"placeIcon@2x.png"]];
-            [cell.imgStatusIcon setImage:[UIImage imageNamed:@"RedDot@2x.png"]];
+            
+        if ([[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"] length]>0) {
+                [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]]] placeholderImage:nil];
+            }
+            
+            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            
+            
         }
         return cell;
     }
