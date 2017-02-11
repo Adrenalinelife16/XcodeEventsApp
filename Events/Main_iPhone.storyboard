@@ -227,24 +227,18 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="602"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="DiscoverBtn.png" id="Ocg-7R-lDN">
-                                        <rect key="frame" x="82" y="322" width="157" height="103"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="DiscoverBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dBd-qA-Eb3" userLabel="DiscoverButton">
-                                        <rect key="frame" x="83" y="330" width="155" height="87"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="DiscoverBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dBd-qA-Eb3" userLabel="DiscoverButton">
+                                        <rect key="frame" x="54" y="303" width="208" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="DiscoverBtn.png"/>
                                         <connections>
                                             <action selector="btnDiscoverCategories:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="MgV-Pq-lpb"/>
                                         </connections>
                                     </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="CreateEventBtn.png" id="dtf-M9-Rvo">
-                                        <rect key="frame" x="80" y="211" width="157" height="103"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rIT-gf-HMQ" userLabel="CreateEventsButton">
-                                        <rect key="frame" x="80" y="219" width="157" height="84"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rIT-gf-HMQ" userLabel="CreateEventsButton">
+                                        <rect key="frame" x="54" y="146" width="206" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CreateEventBtn.png"/>
                                         <connections>
                                             <action selector="btnCreateEvent:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="vs1-Ey-6Yd"/>
                                         </connections>
@@ -1289,16 +1283,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="AboutPage.png" id="oxx-xi-j4A">
-                                <rect key="frame" x="0.0" y="65" width="324" height="554"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="BetaPageBG.png" id="M6Q-mb-EeV">
+                                <rect key="frame" x="0.0" y="65" width="320" height="566"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="wM5-w8-U0t">
-                                <rect key="frame" x="57" y="110" width="210" height="509"/>
+                                <rect key="frame" x="22" y="88" width="255" height="529"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="Adrenaline Logo2.png" id="kFx-Q5-MaK">
+                                        <rect key="frame" x="25" y="-13" width="204" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" id="LDh-yR-RSn">
-                                        <rect key="frame" x="0.0" y="8" width="210" height="501"/>
+                                        <rect key="frame" x="0.0" y="93" width="255" height="436"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
@@ -1476,10 +1474,10 @@
     </scenes>
     <resources>
         <image name="About.png" width="23" height="14"/>
-        <image name="AboutPage.png" width="320" height="456"/>
         <image name="Action.png" width="20" height="20"/>
         <image name="Action3.png" width="23" height="20"/>
         <image name="Adrenaline Full Logo Transparent.png" width="367" height="306"/>
+        <image name="Adrenaline Logo2.png" width="367" height="306"/>
         <image name="BetaPageBG.png" width="320" height="456"/>
         <image name="CreateEventBtn.png" width="249" height="143"/>
         <image name="Direction.png" width="17" height="21"/>
