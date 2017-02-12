@@ -240,6 +240,8 @@
 		E2A54D461E4DC3F700091538 /* AboutPage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D451E4DC3F700091538 /* AboutPage.png */; };
 		E2AB03211E4AA95300EAA5BF /* CheckList in Resources */ = {isa = PBXBuildFile; fileRef = E2AB03201E4AA95300EAA5BF /* CheckList */; };
 		E2AB03251E4ADFEA00EAA5BF /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB03241E4ADFEA00EAA5BF /* CreateEventViewController.m */; };
+		E2E57C921E50CB14007C9646 /* NEBackGroundPages2.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */; };
+		E2E57C941E50CF08007C9646 /* NEPrototypeCellLayout.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -572,6 +574,8 @@
 		E2AB03201E4AA95300EAA5BF /* CheckList */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CheckList; sourceTree = "<group>"; };
 		E2AB03231E4ADFEA00EAA5BF /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
 		E2AB03241E4ADFEA00EAA5BF /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
+		E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NEBackGroundPages2.png; sourceTree = "<group>"; };
+		E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NEPrototypeCellLayout.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1082,6 +1086,8 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */,
+				E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */,
 				E2A54D451E4DC3F700091538 /* AboutPage.png */,
 				E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */,
 				E2A54D401E4DC03B00091538 /* CreateEventBtn.png */,
@@ -1402,6 +1408,7 @@
 				711221F018BC9DFB00E77A4A /* placeIcon@2x.png in Resources */,
 				BB303E0818B86B3400B6EBC9 /* MyProgramred@2x.png in Resources */,
 				7122DB2A18BB4BDB00C044E8 /* feedviewCell5@2x.png in Resources */,
+				E2E57C941E50CF08007C9646 /* NEPrototypeCellLayout.png in Resources */,
 				BB303E0718B86B3400B6EBC9 /* MyProgramred.png in Resources */,
 				7972E975195355B100F25E4D /* icon-feed-facebook.png in Resources */,
 				BB303DFC18B86B3400B6EBC9 /* List@2x.png in Resources */,
@@ -1431,6 +1438,7 @@
 				7982242818F7299A009FA42E /* input@2x.png in Resources */,
 				BB303E2118B879AA00B6EBC9 /* image2.png in Resources */,
 				79736F08191EAD13005BA69B /* fb_logo.png in Resources */,
+				E2E57C921E50CB14007C9646 /* NEBackGroundPages2.png in Resources */,
 				79E815651953481800E58344 /* Icon120.png in Resources */,
 				7112221918BCC14B00E77A4A /* arrow@2x.png in Resources */,
 				7972E97B195355B100F25E4D /* white-cell.png in Resources */,
