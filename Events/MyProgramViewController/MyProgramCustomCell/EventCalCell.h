@@ -12,8 +12,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblDateTime;
 @property (strong, nonatomic) IBOutlet UILabel *lblEventPlace;
 @property (strong, nonatomic) IBOutlet UILabel *lblEventName;
-@property (strong, nonatomic) IBOutlet UILabel *imgEventCell;
-@property (strong, nonatomic) IBOutlet UIImageView *imgPlaceIcon;
 @property (strong, nonatomic) IBOutlet UIImageView *imgIcon;
 @property (nonatomic, retain) IBOutlet UIButton *btnRow;
 

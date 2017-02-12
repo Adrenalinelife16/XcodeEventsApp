@@ -177,7 +177,6 @@
             cell.lblEventName.text=[dictOfCalEvents valueForKey:@"event_name"];
 
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
-            [cell.imgPlaceIcon setImage:[UIImage imageNamed:@"placeIcon@2x.png"]];
             
         if ([[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"] length]>0) {
                 [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]]] placeholderImage:nil];
