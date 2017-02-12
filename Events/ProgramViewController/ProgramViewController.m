@@ -2,8 +2,8 @@
 //  ProgramViewController.m
 //  Events
 //
-//  Created by Shabbir Hasan Zaheb on 22/02/14.
-//  Copyright (c) 2014 Teknowledge Software. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import "ProgramViewController.h"
@@ -96,66 +96,7 @@
                     
                 }
             }
-            /*
-             
-             - CKR - Feb 11, 2017 -
-             Trying to get current date, compare current date to NSArray date and then Remove any array before current date.
-             
-             NSDate *today = [NSDate date];
-             NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-             [dateFormat setDateFormat:@"dd/MM/yyyy"];
-             NSString *dateString = [dateFormat stringFromDate:today];
-             NSLog(@"date: %@", dateString);
-             
-             NSDateFormatter *dateFormater = [[NSDateFormatter alloc] init];
-             [dateFormater setDateFormat:@"yyyy-MM-DD HH:mm:ss"];
-             NSDate *currentDate = [dateFormater dateFromString:currentDateString];
-             
-             NSComparisonResult result;
-             
-             result = [today compare:newDate]; // comparing two dates
-             
-             if(result==NSOrderedAscending)
-             NSLog(@"today is less");
-             else if(result==NSOrderedDescending)
-             NSLog(@"newDate is less");
-             else
-             NSLog(@"Both dates are same");
-             
-             ORIGINAL CODE HERE ----
-             NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
-             NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
-             
-             //NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"event_start_date" ascending:YES];
-             //NSArray *sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
-             //NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:sortDescriptors];
-             
             
-            NSDate *today = [NSDate date];
-            NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-            [dateFormat setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-            NSString *dateString = [dateFormat stringFromDate:today];
-            NSComparisonResult result;
-            
-             
-             
-            NSMutableArray *sortedArrayEventList2  =   [[NSMutableArray alloc] init];
-            for (NSDictionary *dictOfEvent in response) {
-                
-                NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
-                [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-                NSDate *selectedEventDate   =   [dateFormatter dateFromString:[NSString stringWithFormat:@"%@",[dictOfEvent objectForKey:@"event_start_date"]]];
-                
-                if ([eventDate compare:selectedEventDate] == NSOrderedDescending) {
-                    [sortedArrayEventList2 addObject:dictOfEvent];
-                    
-                }
-            }
-            
-            NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
-            NSArray *sortedArrayEventList3 = [sortedArrayEventList2 sortedArrayUsingDescriptors:@[descriptor]];
-            
-            */
             NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
             NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
             

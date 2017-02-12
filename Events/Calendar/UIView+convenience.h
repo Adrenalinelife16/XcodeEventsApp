@@ -1,8 +1,8 @@
 //
 //  UIView+convenience.h
 //
-//  Created by Tjeerd in 't Veen on 12/1/11.
-//  Copyright (c) 2011 Vurig Media. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

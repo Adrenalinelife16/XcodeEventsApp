@@ -26,4 +26,8 @@
 
 
 //About View contents
-"CONTENT_ABOUTVIEW"         =   "Today, people expect things to find them, not the other way around. This applies to sports and recreation, active people want to be active but they usually struggle on finding a place to go do what they love. Adrenaline will solve this struggle, allowing people to find what they love to do.\n\nWe are a private organization who founded Adrenaline Life in 2016. We are located in Birmingham, AL.\n\nContact us anytime:\nSupport@adrenalinelife.org\n\nRequest a Category:\nwww.AdrenalineLife.org/request\n";
+"CONTENT_ABOUTVIEW"         =   "    Today, people expect things to find them, not the other way around. This applies to sports and recreation, active people want to be active but they usually struggle on finding a place to go do what they love. Adrenaline will solve this struggle, allowing people to find what they love to do.\n\nWe are a private organization who founded Adrenaline Life in 2016. We are located in Birmingham, AL.\n\nContact us anytime:\nSupport@adrenalinelife.org\n\nRequest a Category:\nwww.AdrenalineLife.org/request\n";
+
+//BETA PAGE Contents
+
+"CONTENT_BETAPAGE"         =   "    Welcome to our Beta Page, come back here to look for the latest features getting ready to be implemented into our app's!";

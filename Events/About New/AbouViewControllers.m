@@ -1,8 +1,8 @@
 //
 //  AbouViewControllers.m
 //  Events
-//
-//  Copyright (c) 2014 Teknowledge Software. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import "AbouViewControllers.h"

@@ -2,8 +2,8 @@
 //  CustomPickerView.h
 //  iShapeMyShape
 //
-//  Created by Rajkumar on 3/12/13.
-//  Copyright (c) 2013 DotSquares. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
