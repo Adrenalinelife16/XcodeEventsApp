@@ -247,6 +247,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="DiscoverBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dBd-qA-Eb3" userLabel="DiscoverButton">
                                         <rect key="frame" x="80" y="215" width="155" height="87"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="DiscoverBtn.png"/>
                                         <connections>
                                             <action selector="btnDiscoverCategories:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="MgV-Pq-lpb"/>
                                         </connections>
@@ -258,6 +259,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rIT-gf-HMQ" userLabel="CreateEventsButton">
                                         <rect key="frame" x="80" y="96" width="157" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CreateEventBtn.png"/>
                                         <connections>
                                             <action selector="btnCreateEvent:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="vs1-Ey-6Yd"/>
                                         </connections>
@@ -1481,10 +1483,10 @@
     </scenes>
     <resources>
         <image name="About.png" width="23" height="14"/>
-        <image name="AboutPage.png" width="320" height="456"/>
         <image name="Action.png" width="20" height="20"/>
         <image name="Action3.png" width="23" height="20"/>
         <image name="Adrenaline Full Logo Transparent.png" width="367" height="306"/>
+        <image name="Adrenaline Logo2.png" width="367" height="306"/>
         <image name="BetaPageBG.png" width="320" height="456"/>
         <image name="CreateEventBtn.png" width="249" height="143"/>
         <image name="Direction.png" width="17" height="21"/>
