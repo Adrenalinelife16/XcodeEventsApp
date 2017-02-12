@@ -385,8 +385,9 @@
         
         // Description for event name
         
-        NSString *redText = @"Description::::: \n\n";
-        NSString *strDescriptionText = [self.eventObj.eventDescription stringByConvertingHTMLToPlainText];
+        NSString *redText = @"";
+        NSString *strDescriptionText = @"";
+        // Old Code = [self.eventObj.eventDescription stringByConvertingHTMLToPlainText]
         NSString *strDesc = [NSString stringWithFormat:@"%@%@",redText,strDescriptionText];
         
         UILabel *lblDescription = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 300, descriptionTextHeight+20)];
