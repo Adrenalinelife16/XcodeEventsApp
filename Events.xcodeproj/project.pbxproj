@@ -227,7 +227,7 @@
 		BB62B12B18B8C07C000DBDBC /* MyProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB62B12A18B8C07C000DBDBC /* MyProgramViewController.m */; };
 		BB857F4518B8928700B366D8 /* secondpic.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4318B8928700B366D8 /* secondpic.png */; };
 		BB857F4618B8928700B366D8 /* secondpic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4418B8928700B366D8 /* secondpic@2x.png */; };
-		E2252E861E4D16D900B0CD69 /* Adrenaline Logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E831E4D16D900B0CD69 /* Adrenaline Logo2.png */; };
+		E2252E861E4D16D900B0CD69 /* AdrenalineLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E831E4D16D900B0CD69 /* AdrenalineLogo2.png */; };
 		E2252E871E4D16D900B0CD69 /* createEvent-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E841E4D16D900B0CD69 /* createEvent-btn.png */; };
 		E2252E881E4D16D900B0CD69 /* createEvent-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E851E4D16D900B0CD69 /* createEvent-btn@2x.png */; };
 		E2252E8B1E4D899200B0CD69 /* discover-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E891E4D899200B0CD69 /* discover-btn@2x.png */; };
@@ -558,7 +558,7 @@
 		BB62B12A18B8C07C000DBDBC /* MyProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProgramViewController.m; sourceTree = "<group>"; };
 		BB857F4318B8928700B366D8 /* secondpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondpic.png; sourceTree = "<group>"; };
 		BB857F4418B8928700B366D8 /* secondpic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondpic@2x.png"; sourceTree = "<group>"; };
-		E2252E831E4D16D900B0CD69 /* Adrenaline Logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adrenaline Logo2.png"; sourceTree = "<group>"; };
+		E2252E831E4D16D900B0CD69 /* AdrenalineLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdrenalineLogo2.png; sourceTree = "<group>"; };
 		E2252E841E4D16D900B0CD69 /* createEvent-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createEvent-btn.png"; sourceTree = "<group>"; };
 		E2252E851E4D16D900B0CD69 /* createEvent-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createEvent-btn@2x.png"; sourceTree = "<group>"; };
 		E2252E891E4D899200B0CD69 /* discover-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover-btn@2x.png"; sourceTree = "<group>"; };
@@ -1090,7 +1090,7 @@
 				E2252E8D1E4DB57500B0CD69 /* FeaturePage.png */,
 				E2252E891E4D899200B0CD69 /* discover-btn@2x.png */,
 				E2252E8A1E4D899200B0CD69 /* discover-btn.png */,
-				E2252E831E4D16D900B0CD69 /* Adrenaline Logo2.png */,
+				E2252E831E4D16D900B0CD69 /* AdrenalineLogo2.png */,
 				E2252E841E4D16D900B0CD69 /* createEvent-btn.png */,
 				E2252E851E4D16D900B0CD69 /* createEvent-btn@2x.png */,
 				7972E964195355A300F25E4D /* New */,
@@ -1437,7 +1437,7 @@
 				E2A54D431E4DC03B00091538 /* CreateEventBtn.png in Resources */,
 				BB303E2A18B879AA00B6EBC9 /* strip@2x.png in Resources */,
 				BB303DF618B86B3400B6EBC9 /* Action@2x.png in Resources */,
-				E2252E861E4D16D900B0CD69 /* Adrenaline Logo2.png in Resources */,
+				E2252E861E4D16D900B0CD69 /* AdrenalineLogo2.png in Resources */,
 				7122DB2018BB459C00C044E8 /* feedviewCell1@2x.png in Resources */,
 				7112221418BCB83500E77A4A /* Direction.png in Resources */,
 				BB303DFF18B86B3400B6EBC9 /* Livello1.png in Resources */,
