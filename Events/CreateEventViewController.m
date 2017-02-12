@@ -2,8 +2,8 @@
 //  CreateEventViewController.m
 //  Events
 //
-//  Created by Lamar Artare on 2/7/17.
-//  Copyright © 2017 Teknowledge Software. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import "CreateEventViewController.h"
@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    BetaPageText.text = NSLocalizedString(@"CONTENT_BETAPAGE", @"CONTENT_BETAPAGE");
+
     
 }
 

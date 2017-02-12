@@ -2,8 +2,8 @@
 //  TSMiniWebBrowser.h
 //  TSMiniWebBrowserDemo
 //
-//  Created by Toni Sala Echaurren on 18/01/12.
-//  Copyright 2012 Toni Sala. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

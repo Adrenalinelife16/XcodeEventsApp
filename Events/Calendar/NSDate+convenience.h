@@ -1,8 +1,8 @@
 //
 //  NSDate+convenience.h
 //
-//  Created by in 't Veen Tjeerd on 4/23/12.
-//  Copyright (c) 2012 Vurig Media. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

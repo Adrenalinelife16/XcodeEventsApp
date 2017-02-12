@@ -2,6 +2,10 @@
 //  Utility.h
 //
 //  Description:  General methods which is used by whole app
+//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
+//
+
 
 #import <Foundation/Foundation.h>
 #import "Reachability.h"

@@ -226,20 +226,27 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="602"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="DiscoverBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dBd-qA-Eb3" userLabel="DiscoverButton">
-                                        <rect key="frame" x="54" y="303" width="208" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="DiscoverBtn.png"/>
-                                        <connections>
-                                            <action selector="btnDiscoverCategories:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="MgV-Pq-lpb"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rIT-gf-HMQ" userLabel="CreateEventsButton">
-                                        <rect key="frame" x="54" y="146" width="206" height="120"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rIT-gf-HMQ" userLabel="CreateEventsButton">
+                                        <rect key="frame" x="27" y="161" width="125" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="CreateEventBtn.png"/>
                                         <connections>
                                             <action selector="btnCreateEvent:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="vs1-Ey-6Yd"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" id="mcz-GR-p1h" userLabel="BetaPageText">
+                                        <rect key="frame" x="17" y="25" width="287" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="DiscoverBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dBd-qA-Eb3" userLabel="DiscoverButton">
+                                        <rect key="frame" x="168" y="161" width="125" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="DiscoverBtn.png"/>
+                                        <connections>
+                                            <action selector="btnDiscoverCategories:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="MgV-Pq-lpb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -249,6 +256,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="UFI-eg-opn"/>
+                    <connections>
+                        <outlet property="BetaPageText" destination="mcz-GR-p1h" id="irL-qT-TQk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlP-9R-uaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1292,7 +1302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fef-xs-pG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1699.5" y="-514.5"/>
+            <point key="canvasLocation" x="-1655" y="-58"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="NId-DM-5Mk">

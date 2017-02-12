@@ -2,8 +2,8 @@
 //  MoreDetailsTableViewController.h
 //  Events
 //
-//  Created by Michael Cather on 2/7/17.
-//  Copyright © 2017 Teknowledge Software. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -2,8 +2,8 @@
 //  CustomDatePicker.h
 //  iShapeMyShape
 //
-//  Created by Rajkumar on 9/01/14.
-//  Copyright (c) 2014 DotSquares. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
