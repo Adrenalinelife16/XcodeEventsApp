@@ -482,6 +482,7 @@
     [DSBezelActivityView removeViewAnimated:YES];
     
     arrayFavouriteProgram = arrayFavEvents;
+    
     if (!([arrayFavouriteProgram count]>0)) {
         [Utility alertNotice:APPNAME withMSG:@"No favorite programs found!" cancleButtonTitle:@"OK" otherButtonTitle:nil];
     }
