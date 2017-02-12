@@ -11,4 +11,21 @@ I deleted the comments from the moredetailscontroller - CKR
 Working with DidSelectRowAtIndex  for MoreViewController path and added the color code to Calendar - MC
 
 
+-- Compare method used in the app already
 
+-(void)compareEventDateAndSelectedDate
+{
+arrMyCalEvents  =   [[NSMutableArray alloc] init];
+for (NSDictionary *dictOfEvent in arrayResponseCalEvents) {
+
+NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
+[dateFormatter setDateFormat:@"yyyy-MM-dd"];
+NSDate *selectedEventDate   =   [dateFormatter dateFromString:[NSString stringWithFormat:@"%@",[dictOfEvent objectForKey:@"event_start_date"]]];
+
+if ([eventDate compare:selectedEventDate] == NSOrderedSame) {
+[arrMyCalEvents addObject:dictOfEvent];
+}
+}
+
+[self.tblMainTable reloadData];
+}
