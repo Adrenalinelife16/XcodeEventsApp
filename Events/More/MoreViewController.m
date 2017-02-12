@@ -9,6 +9,7 @@
 #import "MoreViewController.h"
 #import "MoreDetailsTableViewController.h"
 #import "LoginViewController.h"
+#import "MoreCustomCell.h"
 
 @interface MoreViewController ()
 
@@ -63,16 +64,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-
     static NSString *CellIdentifier = @"MoreCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    MoreCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    if(!cell)
+    {
+        cell = [[MoreCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-     cell.textLabel.text = [moreArray objectAtIndex:indexPath.row];
+ //    cell.moreArrayName.text = [moreArray objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"loginRegister" sender:self];
     
     
     return cell;
@@ -85,7 +85,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    /*
+    
     if ([segue.identifier isEqualToString:@"loginRegister"]) {
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
@@ -93,7 +93,7 @@
         destViewController.getDetails = [moreArray objectAtIndex:indexPath.row];
         
     }
-    */
+    
 }
 
 

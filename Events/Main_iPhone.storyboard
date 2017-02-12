@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTQ-ri-y7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-664" y="1478"/>
+            <point key="canvasLocation" x="-664" y="2051"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XhB-8n-zSN">
@@ -263,12 +263,16 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" id="fk0-bd-V2T" userLabel="BetaPageText">
-                                        <rect key="frame" x="18" y="23" width="282" height="165"/>
+                                        <rect key="frame" x="17" y="288" width="282" height="165"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="no_image.png" id="I41-z7-vLP">
+                                        <rect key="frame" x="29" y="24" width="249" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
@@ -1143,7 +1147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24n-Kx-TyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="449" y="-537"/>
+            <point key="canvasLocation" x="180" y="-34"/>
         </scene>
         <!--More-->
         <scene sceneID="TcK-gX-dIz">
@@ -1158,8 +1162,17 @@
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="537-Dh-2dJ">
+                                            <rect key="frame" x="8" y="11" width="137" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -1175,11 +1188,12 @@
                     <connections>
                         <segue destination="gsf-eN-oYH" kind="push" identifier="arrayDetail" id="PdC-u8-4KD"/>
                         <segue destination="ofP-CN-yoG" kind="push" identifier="loginRegister" id="ymL-KN-Yv3"/>
+                        <segue destination="VXa-xe-yrs" kind="push" identifier="termDetail" id="XAy-od-Eh6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpL-EI-hBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-663" y="572"/>
+            <point key="canvasLocation" x="-665" y="839"/>
         </scene>
         <!--More Details Table View Controller-->
         <scene sceneID="qce-le-PfN">
@@ -1248,7 +1262,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5C-T0-NG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="67.5" y="571.5"/>
+            <point key="canvasLocation" x="180" y="839"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hur-S2-Haq">
@@ -1277,7 +1291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGx-i1-IOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="572"/>
+            <point key="canvasLocation" x="681" y="839"/>
         </scene>
         <!--About-->
         <scene sceneID="FmA-aa-wp5">
@@ -1429,7 +1443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZI7-nT-gxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="1478"/>
+            <point key="canvasLocation" x="4" y="2051"/>
         </scene>
         <!--Events-->
         <scene sceneID="ceR-vN-lrW">
@@ -1525,7 +1539,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="QyU-Yt-3Ts"/>
-        <segue reference="G5x-3c-mw0"/>
+        <segue reference="gkd-uM-QVZ"/>
+        <segue reference="GuZ-nc-8YU"/>
     </inferredMetricsTieBreakers>
 </document>
