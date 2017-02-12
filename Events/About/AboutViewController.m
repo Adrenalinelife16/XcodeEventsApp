@@ -383,7 +383,9 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
-        NSString *redText = @"Description \n\n";
+        // Description for event name
+        
+        NSString *redText = @"Description::::: \n\n";
         NSString *strDescriptionText = [self.eventObj.eventDescription stringByConvertingHTMLToPlainText];
         NSString *strDesc = [NSString stringWithFormat:@"%@%@",redText,strDescriptionText];
         

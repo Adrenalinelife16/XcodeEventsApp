@@ -177,6 +177,8 @@
             cell.lblEventName.text=[dictOfCalEvents valueForKey:@"event_name"];
 
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
+        
+            // Call image for the cell
             
         if ([[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"] length]>0) {
                 [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]]] placeholderImage:nil];
@@ -184,7 +186,9 @@
             
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
             
+            // end image call
             
         }
         return cell;

@@ -123,14 +123,6 @@
          
             
             
-            // Practice code to sort social feed.... Not working
-            
-      //      NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"created_at" ascending:NO];
-      //      NSArray *descriptors = [NSArray arrayWithObject:descriptor];
-      //      NSArray *reverseOrder;
-       //     reverseOrder = [arrayTempFeeds sortedArrayUsingDescriptors:descriptors];
-            
-            
             arrayOfFeeds    =   [[NSMutableArray alloc] init];
             for (NSDictionary *dictOfFeeds in arrayTempFeeds) {
                 Feeds *feedsObj     =   [[Feeds alloc] init];
