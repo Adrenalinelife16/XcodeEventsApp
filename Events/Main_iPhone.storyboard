@@ -189,7 +189,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Events" id="UiF-4Q-GbU">
-                        <barButtonItem key="rightBarButtonItem" image="Action.png" id="3ec-V9-YvN">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="3ec-V9-YvN">
                             <connections>
                                 <segue destination="Nqn-cv-cJq" kind="push" identifier="CreateEvent" id="nTu-mc-LRZ"/>
                             </connections>
@@ -458,18 +458,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Event Feed" id="YXY-SU-3Ga">
-                        <barButtonItem key="leftBarButtonItem" id="o7Z-TE-6RW">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6On-IA-D3m">
-                                <rect key="frame" x="16" y="12" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="Reload.png">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnRefreshPressed:" destination="SC5-68-ZK9" eventType="touchUpInside" id="Xh2-3v-rhM"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Zmo-iS-DVK">
+                            <connections>
+                                <action selector="btnRefreshPressed:" destination="SC5-68-ZK9" id="03I-5b-mA5"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="8rF-M1-hpD">
                             <button key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wOk-9v-gFQ">
@@ -784,6 +776,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" id="v1K-go-m35">
+                                <rect key="frame" x="0.0" y="410" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vbr-DQ-Vvi">
+                                        <rect key="frame" x="98" y="0.0" width="125" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Register Now" backgroundImage="registerBtn.png">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnEventRegistrationPressed:" destination="GJ5-Ez-Ag6" eventType="touchUpInside" id="tPV-qO-gPJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2152743935585022" green="0.21515873074531555" blue="0.21865054965019226" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <view hidden="YES" contentMode="scaleToFill" id="rIE-Xz-h9i">
                                 <rect key="frame" x="0.0" y="65" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -855,30 +864,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <view contentMode="scaleToFill" id="v1K-go-m35">
-                                <rect key="frame" x="0.0" y="410" width="320" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f3v-gC-8SR">
-                                        <rect key="frame" x="25" y="20" width="120" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vbr-DQ-Vvi">
-                                        <rect key="frame" x="170" y="10" width="125" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Register Now" backgroundImage="registerBtn.png">
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="btnEventRegistrationPressed:" destination="GJ5-Ez-Ag6" eventType="touchUpInside" id="tPV-qO-gPJ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.2152743935585022" green="0.21515873074531555" blue="0.21865054965019226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7vo-Zb-OAf">
                                 <rect key="frame" x="0.0" y="256" width="320" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -974,21 +959,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DuD-aF-MjY">
-                                                    <rect key="frame" x="9" y="2" width="110" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" id="QnD-QC-m2E">
                                                     <rect key="frame" x="288" y="15" width="11" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gQG-fV-d9E">
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gQG-fV-d9E">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal">
+                                                        <color key="titleColor" red="0.25447769355223593" green="0.46703374769498707" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
@@ -1000,11 +979,11 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1yt-eV-46v">
-                                                    <rect key="frame" x="-1" y="-5" width="300" height="54"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EmG-Co-7Qj">
+                                                    <rect key="frame" x="8" y="12" width="137" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.56470588239999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1012,7 +991,6 @@
                                         <connections>
                                             <outlet property="btnDescription" destination="gQG-fV-d9E" id="wWQ-m0-2eK"/>
                                             <outlet property="imgVWCellSeperator" destination="C4V-cH-IlL" id="Fwl-JJ-OUo"/>
-                                            <outlet property="lblDescriptionText" destination="1yt-eV-46v" id="b6J-A3-bpD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1473,7 +1451,6 @@
     </scenes>
     <resources>
         <image name="About.png" width="23" height="14"/>
-        <image name="Action.png" width="20" height="20"/>
         <image name="Action3.png" width="23" height="20"/>
         <image name="Adrenaline Full Logo Transparent.png" width="367" height="306"/>
         <image name="AdrenalineLogo2.png" width="367" height="306"/>
@@ -1486,7 +1463,6 @@
         <image name="MyProgram.png" width="21" height="21"/>
         <image name="Next.png" width="20" height="20"/>
         <image name="Program.png" width="22" height="22"/>
-        <image name="Reload.png" width="20" height="20"/>
         <image name="Rettangolo.png" width="320" height="42"/>
         <image name="Segmented.png" width="300" height="29"/>
         <image name="Twitter.png" width="26" height="22"/>
@@ -1509,7 +1485,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="gkd-uM-QVZ"/>
         <segue reference="GuZ-nc-8YU"/>
-        <segue reference="G5x-3c-mw0"/>
     </inferredMetricsTieBreakers>
 </document>
