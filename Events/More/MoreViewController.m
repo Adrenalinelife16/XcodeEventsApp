@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     
-    moreArray = [[NSMutableArray alloc] initWithObjects:@"Help Center", @"Terms & Conditions", @"Settings", @"Login", nil];
+    moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", @"Settings", @"Login", nil];
    // [moreArray removeObjectAtIndex:3];
 }
 
