@@ -185,22 +185,22 @@
     NSString *message   =   @"";
     
     if (!([self.txtFirstName.text length]>0)) {
-        message     =   @"Please enter First Name";
+        message     =   @"Please enter first name!";
     }
     else if (!([self.txtLastName.text length]>0)) {
-        message     =   @"Please enter Last Name";
+        message     =   @"Please enter last name!";
     }
     else if (!([self.txtUsername.text length]>0)) {
-        message     =   @"Please enter Username";
+        message     =   @"Please enter username!";
     }
     else if (!([self.txtEmail.text length]>0)) {
-        message     =   @"Please enter Email";
+        message     =   @"Please enter email!";
     }
     else if (!([self.txtPassword.text length]>0)) {
-        message     =   @"Please enter Password";
+        message     =   @"Please enter password!";
     }
     else if (![self validateEmail:txtEmail.text]){
-        message     =   @"Please enter valid Email";
+        message     =   @"Please enter valid email!";
     }
     else
     {

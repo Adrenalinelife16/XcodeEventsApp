@@ -68,16 +68,15 @@
    
     
     cell.textLabel.text = [moreArray objectAtIndex:indexPath.row];
+//    [self checkLogin];
     return cell;
     
 }
 
 
-// Needed to call new method "Did select row"
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+   
     switch (indexPath.row) {
         case 0:
             [self performSegueWithIdentifier:@"helpCenter" sender:self];
@@ -95,12 +94,15 @@
             [self performSegueWithIdentifier:@"loginRegister" sender:self];
             break;
             
-            
+        
         default: break;
+            
     }
     
     
 }
+
+
 
 
 #pragma mark - Navigation

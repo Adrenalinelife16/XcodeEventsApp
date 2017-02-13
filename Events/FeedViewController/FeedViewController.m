@@ -118,6 +118,9 @@
                 [arrayTempFeeds addObject:dictOfInstagramFeeds];
             }
             
+            
+            
+            
             NSSortDescriptor *descriptorForFeeds  =   [[NSSortDescriptor alloc] initWithKey:@"created_at" ascending:NO];
             [arrayTempFeeds sortUsingDescriptors:[NSArray arrayWithObjects:descriptorForFeeds,nil]];
          

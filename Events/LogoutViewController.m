@@ -7,6 +7,7 @@
 //
 
 #import "LogoutViewController.h"
+#import "ProgramViewController.h"
 
 @interface LogoutViewController ()
 
@@ -25,6 +26,17 @@
 }
 
 
+
+-(IBAction)btnLogoutPressed:(id)sender
+{
+ 
+    
+    [self checkLogin];
+    
+
+}
+
+
 // add logout method under the else statement
 
 #pragma mark - Check login for MyFavorite and MyTickets
@@ -40,6 +52,8 @@
         // Create logout method here
         
         // will have to link to confirm logout button
+        
+        [self performSegueWithIdentifier:@"logoutMain" sender:self];
         
         return NO;
 }
