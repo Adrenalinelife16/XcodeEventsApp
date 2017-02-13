@@ -7,19 +7,14 @@
 //
 
 #import "MoreViewController.h"
-#import "MoreDetailsTableViewController.h"
 #import "LoginViewController.h"
-#import "MoreCustomCell.h"
 
 @interface MoreViewController ()
 
 @end
 
 @implementation MoreViewController
-{
-    NSMutableArray *moreArray;
-    
-}
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -63,24 +58,41 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+       static NSString *simpleTableIdentifier = @"MoreCell";
     
-    static NSString *CellIdentifier = @"MoreCell";
-    MoreCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    if(!cell)
-    {
-        cell = [[MoreCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
+   
     
- //    cell.moreArrayName.text = [moreArray objectAtIndex:indexPath.row];
-    [self performSegueWithIdentifier:@"loginRegister" sender:self];
-    
-    
+    cell.textLabel.text = [moreArray objectAtIndex:indexPath.row];
     return cell;
-  
+    
 }
 
+
+// Needed to call new method "Did select row"
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    // Need to add an if else state to call the segue when pushed.
+    // If you run app now and click on any row they will all run haha
+    
+    [self performSegueWithIdentifier:@"loginRegister" sender:self];
+    [self performSegueWithIdentifier:@"pushSettings" sender:self];
+    [self performSegueWithIdentifier:@"helpCenter" sender:self];
+    [self performSegueWithIdentifier:@"termsCondition" sender:self];
+
+
+    
+}
+
+
 #pragma mark - Navigation
-// In a story board-based application, you will often want to do a little preparation before navigation
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
@@ -93,8 +105,9 @@
         destViewController.getDetails = [moreArray objectAtIndex:indexPath.row];
         
     }
+
     
 }
 
-
+*/
 @end

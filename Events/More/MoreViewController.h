@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MoreViewController : UITableViewController
+{
+NSMutableArray *moreArray;
+}
 
 
 @end
