@@ -78,15 +78,27 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    // Need to add an if else state to call the segue when pushed.
-    // If you run app now and click on any row they will all run haha
+    switch (indexPath.row) {
+        case 0:
+            [self performSegueWithIdentifier:@"helpCenter" sender:self];
+        break;
+            
+        case 1:
+            [self performSegueWithIdentifier:@"termsCondition" sender:self];
+            break;
+            
+        case 2:
+            [self performSegueWithIdentifier:@"pushSettings" sender:self];
+            break;
+            
+        case 3:
+            [self performSegueWithIdentifier:@"loginRegister" sender:self];
+            break;
+            
+            
+        default: break;
+    }
     
-    [self performSegueWithIdentifier:@"loginRegister" sender:self];
-    [self performSegueWithIdentifier:@"pushSettings" sender:self];
-    [self performSegueWithIdentifier:@"helpCenter" sender:self];
-    [self performSegueWithIdentifier:@"termsCondition" sender:self];
-
-
     
 }
 
