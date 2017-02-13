@@ -233,6 +233,7 @@
 		E2252E8C1E4D899200B0CD69 /* discover-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8A1E4D899200B0CD69 /* discover-btn.png */; };
 		E2252E8E1E4DB57500B0CD69 /* FeaturePage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8D1E4DB57500B0CD69 /* FeaturePage.png */; };
 		E2252E901E4DB80300B0CD69 /* BetaPage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8F1E4DB80300B0CD69 /* BetaPage.png */; };
+		E26B1E621E519BFF002A0F9C /* BetaPageImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E26B1E611E519BFF002A0F9C /* BetaPageImage.png */; };
 		E2A54D421E4DC03B00091538 /* BetaPageBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */; };
 		E2A54D431E4DC03B00091538 /* CreateEventBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D401E4DC03B00091538 /* CreateEventBtn.png */; };
 		E2A54D441E4DC03B00091538 /* DiscoverBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D411E4DC03B00091538 /* DiscoverBtn.png */; };
@@ -564,6 +565,7 @@
 		E2252E8A1E4D899200B0CD69 /* discover-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover-btn.png"; sourceTree = "<group>"; };
 		E2252E8D1E4DB57500B0CD69 /* FeaturePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FeaturePage.png; sourceTree = "<group>"; };
 		E2252E8F1E4DB80300B0CD69 /* BetaPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPage.png; sourceTree = "<group>"; };
+		E26B1E611E519BFF002A0F9C /* BetaPageImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPageImage.png; sourceTree = "<group>"; };
 		E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPageBG.png; sourceTree = "<group>"; };
 		E2A54D401E4DC03B00091538 /* CreateEventBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreateEventBtn.png; sourceTree = "<group>"; };
 		E2A54D411E4DC03B00091538 /* DiscoverBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoverBtn.png; sourceTree = "<group>"; };
@@ -1081,6 +1083,7 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E26B1E611E519BFF002A0F9C /* BetaPageImage.png */,
 				E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */,
 				E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */,
 				E2A54D451E4DC3F700091538 /* AboutPage.png */,
@@ -1360,6 +1363,7 @@
 				BB303E2218B879AA00B6EBC9 /* image2@2x.png in Resources */,
 				7972E973195355B100F25E4D /* event-feed-mask.png in Resources */,
 				7972E972195355B100F25E4D /* date-cell-gray@2x.png in Resources */,
+				E26B1E621E519BFF002A0F9C /* BetaPageImage.png in Resources */,
 				BB303DF218B86B3400B6EBC9 /* About@2x.png in Resources */,
 				79504C40191F7CE000EF3103 /* no_image@2x.png in Resources */,
 				BB303E2318B879AA00B6EBC9 /* nearby.png in Resources */,
