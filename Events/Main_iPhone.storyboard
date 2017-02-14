@@ -120,14 +120,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" autoresizesSubviews="NO" contentMode="redraw" placeholder="Search Event Name" id="HZr-fa-VCF">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search Event Name" id="7Q0-yv-Ap8">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
-                            <scopeButtonTitles>
-                                <string>Title</string>
-                                <string>Title</string>
-                            </scopeButtonTitles>
+                            <connections>
+                                <outlet property="delegate" destination="XMy-k7-mqo" id="Kns-Iq-wqX"/>
+                            </connections>
                         </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="162" id="jUX-MS-syf" customClass="ProgramCustomCell">
@@ -215,23 +214,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="searchDisplayController" destination="tYm-1Y-61Q" id="E9e-hz-PlE"/>
+                        <outlet property="searchDisplayController" destination="1yN-6u-BRv" id="HOo-BO-i0s"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afA-Kn-raX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="hoH-a0-k9U">
+                <searchDisplayController id="1yN-6u-BRv">
                     <connections>
-                        <outlet property="searchContentsController" destination="XMy-k7-mqo" id="8aJ-nV-dmt"/>
-                        <outlet property="searchResultsDataSource" destination="XMy-k7-mqo" id="H6Y-wg-BWH"/>
-                        <outlet property="searchResultsDelegate" destination="XMy-k7-mqo" id="m9z-4N-llf"/>
-                    </connections>
-                </searchDisplayController>
-                <searchDisplayController id="tYm-1Y-61Q">
-                    <connections>
-                        <outlet property="delegate" destination="XMy-k7-mqo" id="0hc-j4-TC4"/>
-                        <outlet property="searchContentsController" destination="XMy-k7-mqo" id="9sP-P2-5UV"/>
-                        <outlet property="searchResultsDataSource" destination="XMy-k7-mqo" id="uBj-gc-8RY"/>
-                        <outlet property="searchResultsDelegate" destination="XMy-k7-mqo" id="msh-2A-Eh9"/>
+                        <outlet property="delegate" destination="XMy-k7-mqo" id="cFg-8G-NIH"/>
+                        <outlet property="searchBar" destination="7Q0-yv-Ap8" id="6gx-HV-rU3"/>
+                        <outlet property="searchContentsController" destination="XMy-k7-mqo" id="rh5-AN-dpB"/>
+                        <outlet property="searchResultsDataSource" destination="XMy-k7-mqo" id="RkJ-9N-jBh"/>
+                        <outlet property="searchResultsDelegate" destination="XMy-k7-mqo" id="loi-N6-Pp4"/>
                     </connections>
                 </searchDisplayController>
             </objects>

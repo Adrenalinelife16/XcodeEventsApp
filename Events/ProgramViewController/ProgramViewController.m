@@ -19,6 +19,7 @@
     NSMutableArray *arrayEventList;
     NSMutableArray *sortedArrayEventList;
     NSDate *eventDate;
+    NSArray *searchResults;
     
 }
 
@@ -34,6 +35,26 @@
     }
     return self;
 }
+
+
+#pragma mark - Search the array
+
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
+{
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@", searchText];
+    searchResults = [arrayEventList filteredArrayUsingPredicate:resultPredicate];
+}
+
+-(BOOL)searchDisplayController:(UISearchController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString
+                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
+                                      objectAtIndex:[self.searchDisplayController.searchBar
+                                                     selectedScopeButtonIndex]]];
+    
+    return YES;
+}
+
 
 #pragma mark - View Life Cycle
 - (void)viewDidLoad
@@ -164,10 +185,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
+    {
+        if (tableView == self.searchDisplayController.searchResultsTableView) {
+            return [searchResults count];
+            
+        } else {
+            return [arrayEventList count];
+        }
+    }
+  
 
-    // Return the number of rows in the section.
-   return [arrayEventList count];
+ //  return [arrayEventList count];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -183,7 +211,20 @@
     {
         cell = [[ProgramCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    EventList *obj = [arrayEventList objectAtIndex:indexPath.row];
+    
+    // added search method
+    
+    EventList *obj = nil;
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        obj = [searchResults objectAtIndex:indexPath.row];
+    } else {
+        obj = [arrayEventList objectAtIndex:indexPath.row];
+    }
+    
+    
+    
+    
+ //   EventList *obj = [arrayEventList objectAtIndex:indexPath.row];
 
     cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
     cell.lblEventName.text  =   obj.eventName;
