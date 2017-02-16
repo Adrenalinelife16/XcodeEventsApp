@@ -241,6 +241,8 @@
 		E2A54D461E4DC3F700091538 /* AboutPage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D451E4DC3F700091538 /* AboutPage.png */; };
 		E2AB03211E4AA95300EAA5BF /* CheckList in Resources */ = {isa = PBXBuildFile; fileRef = E2AB03201E4AA95300EAA5BF /* CheckList */; };
 		E2AB03251E4ADFEA00EAA5BF /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB03241E4ADFEA00EAA5BF /* CreateEventViewController.m */; };
+		E2D8A7E71E544B3D007050F8 /* ConfirmLogoutbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2D8A7E51E544B3D007050F8 /* ConfirmLogoutbtn@2x.png */; };
+		E2D8A7E81E544B3D007050F8 /* ConfirmLogoutbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2D8A7E61E544B3D007050F8 /* ConfirmLogoutbtn.png */; };
 		E2E57C921E50CB14007C9646 /* NEBackGroundPages2.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */; };
 		E2E57C941E50CF08007C9646 /* NEPrototypeCellLayout.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */; };
 /* End PBXBuildFile section */
@@ -576,6 +578,8 @@
 		E2AB03201E4AA95300EAA5BF /* CheckList */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CheckList; sourceTree = "<group>"; };
 		E2AB03231E4ADFEA00EAA5BF /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
 		E2AB03241E4ADFEA00EAA5BF /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
+		E2D8A7E51E544B3D007050F8 /* ConfirmLogoutbtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ConfirmLogoutbtn@2x.png"; sourceTree = "<group>"; };
+		E2D8A7E61E544B3D007050F8 /* ConfirmLogoutbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConfirmLogoutbtn.png; sourceTree = "<group>"; };
 		E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NEBackGroundPages2.png; sourceTree = "<group>"; };
 		E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NEPrototypeCellLayout.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1096,6 +1100,8 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E2D8A7E51E544B3D007050F8 /* ConfirmLogoutbtn@2x.png */,
+				E2D8A7E61E544B3D007050F8 /* ConfirmLogoutbtn.png */,
 				E26B1E611E519BFF002A0F9C /* BetaPageImage.png */,
 				E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */,
 				E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */,
@@ -1357,6 +1363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB62B12018B8B529000DBDBC /* Next.png in Resources */,
+				E2D8A7E81E544B3D007050F8 /* ConfirmLogoutbtn.png in Resources */,
 				711221E918BC94F900E77A4A /* GreenDot.png in Resources */,
 				7112220618BCA62300E77A4A /* share@2x.png in Resources */,
 				BB303E2518B879AA00B6EBC9 /* pic.png in Resources */,
@@ -1394,6 +1401,7 @@
 				79736F09191EAD13005BA69B /* fb_logo@2x.png in Resources */,
 				7122DB4618BB7D8600C044E8 /* Segmented_middle@2x.png in Resources */,
 				BB62B11F18B8B529000DBDBC /* Action3@2x.png in Resources */,
+				E2D8A7E71E544B3D007050F8 /* ConfirmLogoutbtn@2x.png in Resources */,
 				79383A631906135A00A1DBBC /* share2@2x.png in Resources */,
 				BB303E2918B879AA00B6EBC9 /* strip.png in Resources */,
 				BB303E0D18B86B3400B6EBC9 /* Rettangolo.png in Resources */,
