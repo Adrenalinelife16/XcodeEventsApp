@@ -19,9 +19,12 @@
     NSMutableArray *    arrayOfFeeds;
 }
 
+- (IBAction)Refresh:(UIRefreshControl *)sender;
+
 @end
 
 @implementation FeedViewController
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -56,17 +59,24 @@
     
 }
 
+
+- (IBAction)Refresh:(UIRefreshControl *)sender
+{
+        // Reload the data.
+        [self getFeedsFromServer];
+        
+        // Reload the table data with the new data
+        [self.tableView reloadData];
+        
+        // Restore the view to normal
+        [sender endRefreshing];
+    }
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Refresh feeds list
--(IBAction)btnRefreshPressed:(id)sender
-{
-    [DSBezelActivityView newActivityViewForView:self.view.window];
-    [self getFeedsFromServer];
 }
 
 /**
@@ -230,6 +240,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
+
 
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation

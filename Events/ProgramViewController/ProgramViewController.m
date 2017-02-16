@@ -14,18 +14,23 @@
 #import "UIImageView+WebCache.h"
 #import "CreateEventViewController.h"
 
-@interface ProgramViewController (){
+
+@interface ProgramViewController () <UISearchBarDelegate>
+{
     
     NSMutableArray *arrayEventList;
     NSMutableArray *sortedArrayEventList;
     NSDate *eventDate;
-    NSArray *searchResults;
     
 }
+
+
+@property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
 
 @end
 
 @implementation ProgramViewController
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -34,25 +39,6 @@
         // Custom initialization
     }
     return self;
-}
-
-
-#pragma mark - Search the array
-
-- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
-{
-    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@", searchText];
-    searchResults = [arrayEventList filteredArrayUsingPredicate:resultPredicate];
-}
-
--(BOOL)searchDisplayController:(UISearchController *)controller shouldReloadTableForSearchString:(NSString *)searchString
-{
-    [self filterContentForSearchText:searchString
-                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
-                                      objectAtIndex:[self.searchDisplayController.searchBar
-                                                     selectedScopeButtonIndex]]];
-    
-    return YES;
 }
 
 
@@ -65,7 +51,6 @@
     NSDate *currentDate =   [NSDate date];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
-    
     
 }
 
@@ -85,17 +70,26 @@
     
 }
 
+- (IBAction)Refresh:(UIRefreshControl *)sender
+{
+    // Reload the data.
+    [self getEventListFromServer];
+    
+    // Reload the table data with the new data
+    [self.tableView reloadData];
+    
+    // Restore the view to normal
+    [sender endRefreshing];
+}
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/**
- *  getEventListFromServer
- *
- *  @return This method will get events data from server and store all data in EventList modal class.
- */
 
 #pragma mark - Get All Event's from server
 -(void)getEventListFromServer
@@ -185,46 +179,27 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    {
-        if (tableView == self.searchDisplayController.searchResultsTableView) {
-            return [searchResults count];
-            
-        } else {
-            return [arrayEventList count];
-        }
-    }
-  
-
- //  return [arrayEventList count];
+    
+   return [arrayEventList count];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 162;  // WAS 162
+    return 162;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"ProgramCustomCell";
-    ProgramCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    ProgramCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+                               
     if(!cell)
     {
         cell = [[ProgramCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    // added search method
     
-    EventList *obj = nil;
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
-        obj = [searchResults objectAtIndex:indexPath.row];
-    } else {
-        obj = [arrayEventList objectAtIndex:indexPath.row];
-    }
-    
-    
-    
-    
- //   EventList *obj = [arrayEventList objectAtIndex:indexPath.row];
+    EventList *obj = [arrayEventList objectAtIndex:indexPath.row];
 
     cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
     cell.lblEventName.text  =   obj.eventName;
@@ -233,7 +208,7 @@
     
     if ([obj.eventImageURL length]) {
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
-        [cell.imgEventImage setContentMode:UIViewContentModeScaleAspectFit];
+        [cell.imgEventImage setContentMode:UIViewContentModeScaleAspectFill];
         [cell.imgEventImage setClipsToBounds:YES];
     }
     

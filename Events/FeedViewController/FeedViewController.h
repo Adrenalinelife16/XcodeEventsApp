@@ -9,6 +9,5 @@
 
 @interface FeedViewController : UITableViewController
 
--(IBAction)btnRefreshPressed:(id)sender;
 
 @end

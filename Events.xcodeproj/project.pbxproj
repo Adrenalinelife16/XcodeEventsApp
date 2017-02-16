@@ -68,6 +68,7 @@
 		7293CFB11E0D9C5500E310C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */; };
 		7293CFB21E0D9C5500E310C0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAE1E0D9C5500E310C0 /* FBSDKLoginKit.framework */; };
 		7293CFB31E0D9C5500E310C0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAF1E0D9C5500E310C0 /* FBSDKShareKit.framework */; };
+		72C6E3561E563D1000B25C5F /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
 		7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916556719044E6900F4D9D3 /* MyEventTickets.m */; };
@@ -336,6 +337,8 @@
 		7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7293CFAE1E0D9C5500E310C0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		7293CFAF1E0D9C5500E310C0 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		72C6E3541E563D1000B25C5F /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
+		72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
 		790AE0B318F9862500FBE2F2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
@@ -723,6 +726,15 @@
 			name = Notes;
 			sourceTree = "<group>";
 		};
+		72C6E34A1E552FFE00B25C5F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				72C6E3541E563D1000B25C5F /* SearchResultsTableViewController.h */,
+				72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
 		791E3DE418F3208D00220BDE /* HTML string convertion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1034,6 +1046,7 @@
 				7112223E18BCD7E700E77A4A /* More */,
 				7112220A18BCAEFF00E77A4A /* About */,
 				711221D118BC62DD00E77A4A /* Calendar */,
+				72C6E34A1E552FFE00B25C5F /* Search */,
 				BB62B12818B8C04A000DBDBC /* MyProgramViewController */,
 				BB303E3D18B88D3600B6EBC9 /* FeedViewController */,
 				BB303E3118B8801C00B6EBC9 /* ProgramViewController */,
@@ -1591,6 +1604,7 @@
 				7112222F18BCC69300E77A4A /* AboutCustomCell3.m in Sources */,
 				798D9E2218F15F2000A69513 /* UIImage+GIF.m in Sources */,
 				7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */,
+				72C6E3561E563D1000B25C5F /* SearchResultsTableViewController.m in Sources */,
 				798D9E0418F15EF800A69513 /* SDWebImageDownloader.m in Sources */,
 				BB303DA618B863E300B6EBC9 /* main.m in Sources */,
 				7955F92118F863BD00870734 /* XMLReader.m in Sources */,

@@ -20,7 +20,7 @@
 
 #import "AboutViewController.h"
 
-@interface MyProgramViewController () 
+@interface MyProgramViewController ()
 {
     NSMutableArray *arrMyProgram;//for my tickets
     NSMutableArray *arrayFavouriteProgram;//for my favorites
@@ -64,7 +64,9 @@
     [self.tblMainTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 
     [self clickedMyCalender:nil];
-}
+    
+   }
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -33,6 +33,11 @@
     
     [self checkLogin];
     
+    
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [av setTag:99];
+    [av show];
+    
 
 }
 
@@ -51,7 +56,6 @@
         
         // Create logout method here
         
-        // will have to link to confirm logout button
         
         [self performSegueWithIdentifier:@"logoutMain" sender:self];
         
