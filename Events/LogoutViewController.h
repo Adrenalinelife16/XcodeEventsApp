@@ -11,7 +11,4 @@
 @interface LogoutViewController : UIViewController
 
 
--(IBAction)btnLogoutPressed:(id)sender;
-
-
 @end

@@ -136,6 +136,7 @@
                     [av show];
                     // Perform Segue Here to Main Program View
                     [self performSegueWithIdentifier:(@"toProgram") sender:(self)];
+                    NSLog(@"User ID logged in %@", dictOfParameters);
                 
                     
                     }

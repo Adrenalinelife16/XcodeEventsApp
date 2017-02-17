@@ -24,6 +24,9 @@
     
 }
 
+- (IBAction)Search:(UIBarButtonItem *)sender;
+
+
 
 @property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
 
@@ -51,6 +54,7 @@
     NSDate *currentDate =   [NSDate date];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
+    [self checkLogin];
     
 }
 
@@ -80,6 +84,30 @@
     
     // Restore the view to normal
     [sender endRefreshing];
+}
+
+#pragma mark - Check login
+-(void)checkLogin
+{
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
+        
+        NSLog(@"User ID is %@", strUserID);
+}
+
+
+- (IBAction)Search:(UIBarButtonItem *)sender {
+    
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    self.searchController.searchResultsUpdater = self;
+    self.searchController.dimsBackgroundDuringPresentation = NO;
+    self.searchController.searchBar.delegate = self;
+    
+    self.tableView.tableHeaderView = self.searchController.searchBar;
+    
+    self.definesPresentationContext = YES;
+    
+    
 }
 
 

@@ -40,6 +40,8 @@
 {
     [super viewDidLoad];
     
+    [self checkLogin];
+    
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7"))
     {
         if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
@@ -55,6 +57,7 @@
     [Utility afterDelay:0.01 withCompletion:^{
         [DSBezelActivityView newActivityViewForView:self.view.window];
         [self getFeedsFromServer];
+        
     }];
     
 }
@@ -77,6 +80,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - Check login
+-(void)checkLogin
+{
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
+        
+        NSLog(@"User ID is %@", strUserID);
 }
 
 /**
