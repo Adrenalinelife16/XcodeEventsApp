@@ -55,10 +55,6 @@
     else
         
         // Create logout method here
-        
-        
-        [self performSegueWithIdentifier:@"logoutMain" sender:self];
-        
         return NO;
 }
 

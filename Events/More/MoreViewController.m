@@ -30,7 +30,7 @@
     [super viewDidLoad];
     
     moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", @"Settings", @"Login", nil];
-   // [moreArray removeObjectAtIndex:3];
+  //  [moreArray removeObjectAtIndex:3];
 }
 
 - (void)didReceiveMemoryWarning
