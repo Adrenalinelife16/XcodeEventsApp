@@ -197,6 +197,9 @@
                     <navigationItem key="navigationItem" title="Events" id="UiF-4Q-GbU">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="search" id="Hoa-xt-dcm">
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="Search:" destination="XMy-k7-mqo" id="oJB-qs-333"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="3ec-V9-YvN">
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>

@@ -8,6 +8,9 @@
 
 #import "LogoutViewController.h"
 #import "ProgramViewController.h"
+#import "LoginViewController.h"
+#import "RegistrationViewController.h"
+#import "Utility.h"
 
 @interface LogoutViewController ()
 
@@ -29,37 +32,37 @@
 
 -(IBAction)btnLogoutPressed:(id)sender
 {
- 
+     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     
-    [self checkLogin];
-    
-    
-    UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [av setTag:99];
-    [av show];
-    
-
-}
-
-
-// add logout method under the else statement
-
-#pragma mark - Check login for MyFavorite and MyTickets
-
--(BOOL)checkLogin
-{
-    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
-    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
-        return YES;
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])  {
+        NSLog(@"User ID is %@", strUserID);
+        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:KUSERID];
     }
     else
-        
-        // Create logout method here
-        return NO;
+        return;
 }
 
+        
+        
+        
+        /*
+        NSLog(@"User ID is set to %@", strUserID);
+        ;
+    {
+        
+        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:KUSERID];
+  //     [[NSUserDefaults standardUserDefaults] removeObjectForKey:strUserID];
+        
+        
+        //show login or register screen
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [av setTag:99];
+            [av show];
+        NSLog(@"The User ID should be null = %@",strUserID);
+    }
 
-
+}
+*/
 /*
 #pragma mark - Navigation
 

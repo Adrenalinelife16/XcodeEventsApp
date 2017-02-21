@@ -29,8 +29,8 @@
 {
     [super viewDidLoad];
     
-    moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", @"Settings", @"Login", nil];
-  //  [moreArray removeObjectAtIndex:3];
+    moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", @"Settings", nil];
+    [self checkLogin];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,6 +38,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Check login for MyFavorite and MyTickets
+-(void)checkLogin
+{
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])  {
+        NSLog(@"User ID is %@", strUserID);
+      //  [moreArray removeObjectAtIndex:3];
+
+    }
+    else
+        [moreArray addObject:@"Login"];
+}
+
+        /*
+        NSLog(@"User ID is %@", strUserID);
+        
+        // remove Login from view controller
+      
+        [moreArray removeObjectAtIndex:3];
+    
+*/
 
 
 
