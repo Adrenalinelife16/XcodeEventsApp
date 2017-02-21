@@ -57,6 +57,7 @@
     [Utility afterDelay:0.01 withCompletion:^{
         [DSBezelActivityView newActivityViewForView:self.view.window];
         [self getFeedsFromServer];
+        [self checkLogin];
         
     }];
     
@@ -90,6 +91,13 @@
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
         
         NSLog(@"User ID is %@", strUserID);
+    
+    else
+    {
+        NSLog(@"User is logged out!");
+    }
+    
+    
 }
 
 /**

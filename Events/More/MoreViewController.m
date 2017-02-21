@@ -9,7 +9,11 @@
 #import "MoreViewController.h"
 #import "LoginViewController.h"
 
+
+
 @interface MoreViewController ()
+
+
 
 @end
 
@@ -33,6 +37,14 @@
     [self checkLogin];
 }
 
+-(void)viewWillAppear
+{
+    [super viewWillAppear:YES];
+    [self checkLogin];
+    
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -45,22 +57,15 @@
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])  {
         NSLog(@"User ID is %@", strUserID);
-      //  [moreArray removeObjectAtIndex:3];
+        [moreArray addObject:@"Logout"];
+        
 
     }
     else
+    {
         [moreArray addObject:@"Login"];
+    }
 }
-
-        /*
-        NSLog(@"User ID is %@", strUserID);
-        
-        // remove Login from view controller
-      
-        [moreArray removeObjectAtIndex:3];
-    
-*/
-
 
 
 #pragma mark - Table view data source
@@ -84,13 +89,15 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
+
+    
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
    
     
     cell.textLabel.text = [moreArray objectAtIndex:indexPath.row];
-//    [self checkLogin];
+    [self checkLogin];
     return cell;
     
 }
@@ -98,29 +105,21 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   
-    switch (indexPath.row) {
-        case 0:
-            [self performSegueWithIdentifier:@"helpCenter" sender:self];
-        break;
-            
-        case 1:
-            [self performSegueWithIdentifier:@"termsCondition" sender:self];
-            break;
-            
-        case 2:
-            [self performSegueWithIdentifier:@"pushSettings" sender:self];
-            break;
-            
-        case 3:
-            [self performSegueWithIdentifier:@"loginRegister" sender:self];
-            break;
-            
-        
-        default: break;
-            
-    }
     
+    
+    if (!(indexPath.section == 0)) {
+        [self performSegueWithIdentifier:@"logoutPush" sender:self];
+    }
+    else if (!(indexPath.section == 1)) {
+        [self performSegueWithIdentifier:@"logoutPush" sender:self];
+    }
+    else if (!(indexPath.section == 2)) {
+        [self performSegueWithIdentifier:@"logoutPush" sender:self];
+    }
+    else if (!(indexPath.section == 3)) {
+        [self performSegueWithIdentifier:@"logoutPush" sender:self];
+    }
+
     
 }
 

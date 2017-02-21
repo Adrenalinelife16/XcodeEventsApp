@@ -62,6 +62,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
+    [self checkLogin];
     
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -93,6 +94,13 @@
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
         
         NSLog(@"User ID is %@", strUserID);
+    
+    else
+    {
+        NSLog(@"User is logged out!");
+    }
+
+    
 }
 
 

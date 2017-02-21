@@ -245,7 +245,7 @@
     {
             [self CreateUser];
             [DSBezelActivityView newActivityViewForView:[UIApplication sharedApplication].keyWindow withLabel:@"Processing..."];
-            [self performSegueWithIdentifier:(@"toProgram") sender:(self)];
+            [self.tabBarController setSelectedIndex:0];
             // Perform segue code here to main events feed
     }
 }
