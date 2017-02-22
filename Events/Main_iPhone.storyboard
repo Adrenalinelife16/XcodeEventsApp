@@ -66,7 +66,7 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1D8-Gt-16Y" kind="push" identifier="registrationView" id="6bg-ML-VRK"/>
+                                    <segue destination="1D8-Gt-16Y" kind="push" id="y6k-3i-JjZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,7 +81,6 @@
                         <outlet property="txtEmail" destination="wC5-W8-nMQ" id="sKH-rv-5s2"/>
                         <outlet property="txtPassword" destination="O35-QF-AZ1" id="kgt-VS-q1J"/>
                         <outlet property="txtUsername" destination="wC5-W8-nMQ" id="fVY-Nc-P14"/>
-                        <segue destination="XMy-k7-mqo" kind="push" identifier="toProgram" id="QyU-Yt-3Ts"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTQ-ri-y7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1255,6 +1254,7 @@
                         <segue destination="VXa-xe-yrs" kind="push" identifier="helpCenter" id="XAy-od-Eh6"/>
                         <segue destination="FGl-F9-htp" kind="push" identifier="pushSettings" id="gGn-OH-gI7"/>
                         <segue destination="Esk-Y6-vmr" kind="push" identifier="termsCondition" id="c3b-7q-UHr"/>
+                        <segue destination="oXB-5q-Vnp" kind="push" identifier="logoutPush" id="9dV-Lg-3ef"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpL-EI-hBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1272,15 +1272,15 @@
                         <sections>
                             <tableViewSection id="VhM-O8-6YU">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="NmC-VY-eFi">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NmC-VY-eFi">
                                         <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NmC-VY-eFi" id="6AA-cR-tpb">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="55Z-pA-sCO">
-                                                    <rect key="frame" x="8" y="11" width="116" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Push Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="55Z-pA-sCO">
+                                                    <rect key="frame" x="8" y="11" width="237" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1288,9 +1288,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="oXB-5q-Vnp" kind="push" id="X19-Oa-sr0"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1487,7 +1484,6 @@
                         <outlet property="txtLastName" destination="R1G-NY-JLD" id="Pgu-lM-ttg"/>
                         <outlet property="txtPassword" destination="gAN-qu-wg9" id="vez-OY-ciV"/>
                         <outlet property="txtUsername" destination="D26-xv-UXo" id="XeG-nG-oZ2"/>
-                        <segue destination="XMy-k7-mqo" kind="push" identifier="toProgram" id="GuZ-nc-8YU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZI7-nT-gxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1588,7 +1584,6 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="GuZ-nc-8YU"/>
         <segue reference="G5x-3c-mw0"/>
     </inferredMetricsTieBreakers>
 </document>

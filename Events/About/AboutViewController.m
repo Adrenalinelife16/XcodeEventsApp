@@ -110,7 +110,7 @@
     
     if (btn.selected) {
         /**
-         *  delete event from local to remove from favourites list
+         *  delete event from local to remove from favorites list
          */
         btn.selected=NO;
         [MMdbsupport MMExecuteSqlQuery:[NSString stringWithFormat:@"delete from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]];
@@ -295,7 +295,7 @@
     }
 }
 
-#pragma mark - Check login for MyFavourite and MyTickets
+#pragma mark - Check login for MyFavorite and MyTickets
 -(BOOL)checkLogin
 {
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];

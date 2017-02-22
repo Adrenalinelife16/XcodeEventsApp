@@ -35,6 +35,14 @@
  //   [self InitializeNavigationBatItem];
 }
 
+- (void)viewDidDisappear:(BOOL)animated;
+{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -135,7 +143,8 @@
                     [av setTag:99];
                     [av show];
                     // Perform Segue Here to Main Program View
-                    [self performSegueWithIdentifier:(@"toProgram") sender:(self)];
+                
+                    [self.tabBarController setSelectedIndex:0];
                     NSLog(@"User ID logged in %@", dictOfParameters);
                 
                     

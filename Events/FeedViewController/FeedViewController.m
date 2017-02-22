@@ -41,6 +41,7 @@
     [super viewDidLoad];
     
     [self checkLogin];
+
     
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7"))
     {
@@ -57,6 +58,7 @@
     [Utility afterDelay:0.01 withCompletion:^{
         [DSBezelActivityView newActivityViewForView:self.view.window];
         [self getFeedsFromServer];
+        [self checkLogin];
         
     }];
     
@@ -90,6 +92,13 @@
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
         
         NSLog(@"User ID is %@", strUserID);
+    
+    else
+    {
+        NSLog(@"User is logged out!");
+    }
+    
+    
 }
 
 /**
@@ -135,13 +144,10 @@
                 [dictOfInstagramFeeds removeObjectForKey:@"created_time"];
                 NSString *strDateTime = [Utility getFormatedDateString:[NSString stringWithFormat:@"%@",date] dateFormatString:@"yyyy-MM-dd HH:mm:ss ZZ" dateFormatterString:@"E, MMM d yyyy hh:mm a"];
                 [dictOfInstagramFeeds setObject:strDateTime forKey:@"created_at"];
-                
-                
+                                
                 
                 [arrayTempFeeds addObject:dictOfInstagramFeeds];
             }
-            
-            
             
             
             NSSortDescriptor *descriptorForFeeds  =   [[NSSortDescriptor alloc] initWithKey:@"created_at" ascending:NO];

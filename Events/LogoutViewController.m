@@ -12,6 +12,7 @@
 #import "RegistrationViewController.h"
 #import "Utility.h"
 
+
 @interface LogoutViewController ()
 
 @end
@@ -28,42 +29,52 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidDisappear:(BOOL)animated;
+{
+   
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
 
 
 -(IBAction)btnLogoutPressed:(id)sender
+
 {
-     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     
-    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])  {
-        NSLog(@"User ID is %@", strUserID);
-        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:KUSERID];
-    }
-    else
-        return;
-}
-
+        [self resetDefaults];
+    
+        NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
         
-        
-        
-        /*
-        NSLog(@"User ID is set to %@", strUserID);
-        ;
-    {
-        
-        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:KUSERID];
-  //     [[NSUserDefaults standardUserDefaults] removeObjectForKey:strUserID];
-        
-        
-        //show login or register screen
+        NSLog(@"User ID after logout is %@", strUserID);
         UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [av setTag:99];
-            [av show];
-        NSLog(@"The User ID should be null = %@",strUserID);
-    }
-
+        [av show];
+        [self dismissModalStack];
+        [self.tabBarController setSelectedIndex:0];
+    
+    
 }
-*/
-/*
+
+- (void)resetDefaults {
+    NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+    NSDictionary * dict = [defs dictionaryRepresentation];
+    for (id key in dict) {
+        [defs removeObjectForKey:key];
+    }
+    [defs synchronize];
+}
+
+-(void)dismissModalStack {
+    UIViewController *vc = self.presentingViewController;
+    while (vc.presentingViewController) {
+        vc = vc.presentingViewController;
+    }
+    [vc dismissViewControllerAnimated:YES completion:NULL];
+}
+
+
+
+  //     [[NSUserDefaults standardUserDefaults] removeObjectForKey:strUserID];
+ /*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
