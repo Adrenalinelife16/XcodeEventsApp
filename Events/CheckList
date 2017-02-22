@@ -2,54 +2,12 @@ Night of 2/7/17
 
 
 --Enetire App--
-+1. Change all colors!                              - CKR
 
 
-- Events Feed List
-+1. Redesign the EventsFeed Layout                  - CKR
-2. Add new ViewController for Website Links
-3. Search Function needs to work
-4.
 
 
-- Events Social Feed List
-1. Sort Function needs to be fixed
-2. Update Social Media Pictures
 
 
-- New View Controller for Website Links
-- Side Drawer comes out
-- "Beta Launch New Coming Features"
-1. Create Events Page
-2. My Events
-3. Categories
-
-
-- MyPrograms
-    Calendar
-        1. Format Bottom List View Section
-    My Favorites
-        1. Scroll Function needs to be fixed
-        2. Layout needs to look like Events Feed
-
-- About Page
-1. Image Updated
-2. Contact us anytime, new email address - MC
-3. Change word for request new "Category" not feature" - MC
-4. Update the picture in about view
-
-
-- More Page
-What pages do we actually need?
-2. Add info to every page here.
-
-+1. Login Accepted Segue to Main Events Feed            - CKR
-+2. Registration Accepted Segue to Main Events Feed     - CKR
-
-- Menu Tab Bar
-+1. Programs = "Events"         - CKR
-+2. Feed = "Social"             - CKR
-+3. My Programs = "My Events"   - CKR
 
 
 
