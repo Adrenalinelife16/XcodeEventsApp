@@ -236,6 +236,7 @@
 		E2252E8E1E4DB57500B0CD69 /* FeaturePage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8D1E4DB57500B0CD69 /* FeaturePage.png */; };
 		E2252E901E4DB80300B0CD69 /* BetaPage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8F1E4DB80300B0CD69 /* BetaPage.png */; };
 		E26B1E621E519BFF002A0F9C /* BetaPageImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E26B1E611E519BFF002A0F9C /* BetaPageImage.png */; };
+		E274A6671E5D4BE500E0FF6D /* BackGroundPages3.png in Resources */ = {isa = PBXBuildFile; fileRef = E274A6661E5D4BE500E0FF6D /* BackGroundPages3.png */; };
 		E2A54D421E4DC03B00091538 /* BetaPageBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */; };
 		E2A54D431E4DC03B00091538 /* CreateEventBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D401E4DC03B00091538 /* CreateEventBtn.png */; };
 		E2A54D441E4DC03B00091538 /* DiscoverBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D411E4DC03B00091538 /* DiscoverBtn.png */; };
@@ -574,6 +575,7 @@
 		E2252E8D1E4DB57500B0CD69 /* FeaturePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FeaturePage.png; sourceTree = "<group>"; };
 		E2252E8F1E4DB80300B0CD69 /* BetaPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPage.png; sourceTree = "<group>"; };
 		E26B1E611E519BFF002A0F9C /* BetaPageImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPageImage.png; sourceTree = "<group>"; };
+		E274A6661E5D4BE500E0FF6D /* BackGroundPages3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackGroundPages3.png; sourceTree = "<group>"; };
 		E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPageBG.png; sourceTree = "<group>"; };
 		E2A54D401E4DC03B00091538 /* CreateEventBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreateEventBtn.png; sourceTree = "<group>"; };
 		E2A54D411E4DC03B00091538 /* DiscoverBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoverBtn.png; sourceTree = "<group>"; };
@@ -1113,6 +1115,7 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E274A6661E5D4BE500E0FF6D /* BackGroundPages3.png */,
 				E2D8A7E51E544B3D007050F8 /* ConfirmLogoutbtn@2x.png */,
 				E2D8A7E61E544B3D007050F8 /* ConfirmLogoutbtn.png */,
 				E26B1E611E519BFF002A0F9C /* BetaPageImage.png */,
@@ -1417,6 +1420,7 @@
 				E2D8A7E71E544B3D007050F8 /* ConfirmLogoutbtn@2x.png in Resources */,
 				79383A631906135A00A1DBBC /* share2@2x.png in Resources */,
 				BB303E2918B879AA00B6EBC9 /* strip.png in Resources */,
+				E274A6671E5D4BE500E0FF6D /* BackGroundPages3.png in Resources */,
 				BB303E0D18B86B3400B6EBC9 /* Rettangolo.png in Resources */,
 				BB303DFD18B86B3400B6EBC9 /* Listred.png in Resources */,
 				7972E974195355B100F25E4D /* event-feed-mask@2x.png in Resources */,

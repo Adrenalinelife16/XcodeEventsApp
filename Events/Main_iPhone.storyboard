@@ -198,6 +198,7 @@
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="Search:" destination="XMy-k7-mqo" id="oJB-qs-333"/>
+                                <segue destination="Qsp-nK-F0D" kind="push" id="SDO-7C-Yi7"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="3ec-V9-YvN">
@@ -295,6 +296,7 @@
                             <outlet property="delegate" destination="Qsp-nK-F0D" id="8ve-2M-PdM"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="csf-JT-5H8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yO8-YW-BBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -312,25 +314,17 @@
                                 <rect key="frame" x="0.0" y="65" width="316" height="602"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="BetaPageBG.png" id="EzT-44-Axh">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="602"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" misplaced="YES" image="BackGroundPages3.png" id="pAd-4f-1Hv">
+                                        <rect key="frame" x="-2" y="0.0" width="323" height="455"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rIT-gf-HMQ" userLabel="CreateEventsButton">
-                                        <rect key="frame" x="56" y="152" width="95" height="60"/>
+                                        <rect key="frame" x="44" y="152" width="107" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="CreateEventBtn.png"/>
                                         <connections>
                                             <action selector="btnCreateEvent:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="zsj-LZ-YV8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="DiscoverBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dBd-qA-Eb3" userLabel="DiscoverButton">
-                                        <rect key="frame" x="166" y="152" width="95" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="DiscoverBtn.png"/>
-                                        <connections>
-                                            <action selector="btnDiscoverCategories:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="MgV-Pq-lpb"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" id="fk0-bd-V2T" userLabel="BetaPageText">
@@ -341,16 +335,24 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="BetaPageImage.png" id="PAh-lt-rbX">
-                                        <rect key="frame" x="17" y="23" width="287" height="121"/>
+                                        <rect key="frame" x="15" y="15" width="287" height="121"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Want more?                               Check back here for the latest updates in features. " textAlignment="center" id="drj-DM-lGT">
-                                        <rect key="frame" x="17" y="41" width="165" height="85"/>
+                                        <rect key="frame" x="17" y="33" width="165" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="DiscoverBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dBd-qA-Eb3" userLabel="DiscoverButton">
+                                        <rect key="frame" x="167" y="152" width="107" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="DiscoverBtn.png"/>
+                                        <connections>
+                                            <action selector="btnDiscoverCategories:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="MgV-Pq-lpb"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
@@ -1561,6 +1563,7 @@
         <image name="Action.png" width="20" height="20"/>
         <image name="Action3.png" width="23" height="20"/>
         <image name="AdrenalineLogo2.png" width="367" height="306"/>
+        <image name="BackGroundPages3.png" width="320" height="456"/>
         <image name="BetaPageBG.png" width="320" height="456"/>
         <image name="BetaPageImage.png" width="600" height="240"/>
         <image name="CreateEventBtn.png" width="249" height="143"/>
@@ -1592,6 +1595,6 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="gkd-uM-QVZ"/>
+        <segue reference="G5x-3c-mw0"/>
     </inferredMetricsTieBreakers>
 </document>
