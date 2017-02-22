@@ -121,8 +121,6 @@ NSMutableArray *gArrayEvents;
     
     strDate   =   [dateFormatter stringFromDate:date];
     return strDate;
-    
-    
 }
 
 +(NSString *)compareDates:(NSString *)strDate date:(NSDate *)anotherDate{
@@ -130,7 +128,7 @@ NSMutableArray *gArrayEvents;
     NSString *strResult = @"";
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"hh:mm a - dd MMM yyyy"];
+    [dateFormatter setDateFormat:@"E, MMM d yyyy h:mm a"];
     NSDate *date1 = [dateFormatter dateFromString:strDate];
     
     [dateFormatter setDateFormat:@"hh:mm a"];

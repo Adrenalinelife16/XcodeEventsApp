@@ -117,7 +117,7 @@
             for (NSMutableDictionary *dictFBfeeds in arrayFBfeedsTemp) {
                 NSString *strTemp   =   [dictFBfeeds objectForKey:@"created_time"];
                 [dictFBfeeds removeObjectForKey:@"created_time"];
-                [dictFBfeeds setObject:[Utility getFormatedDateString:strTemp dateFormatString:@"yyyy-MM-dd'T'HH:mm:ssZZ" dateFormatterString:@"h:mm a - dd MMM yyyy"] forKey:@"created_at"];
+                [dictFBfeeds setObject:[Utility getFormatedDateString:strTemp dateFormatString:@"yyyy-MM-dd'T'HH:mm:ssZZ" dateFormatterString:@"E, MMM d yyyy hh:mm a"] forKey:@"created_at"];
                 [arrayTempFeeds addObject:dictFBfeeds];
             }
             
@@ -125,7 +125,7 @@
                 
                 NSString *strTemp   =   [dictTwitterFeeds objectForKey:@"created_at"];
                 [dictTwitterFeeds removeObjectForKey:@"created_at"];
-                [dictTwitterFeeds setObject:[Utility getFormatedDateString:strTemp dateFormatString:@"EEE MMM dd HH:mm:ss ZZ yyyy" dateFormatterString:@"h:mm a - dd MMM yyyy"] forKey:@"created_at"];
+                [dictTwitterFeeds setObject:[Utility getFormatedDateString:strTemp dateFormatString:@"EEE MMM dd HH:mm:ss ZZ yyyy" dateFormatterString:@"E, MMM d yyyy hh:mm a"] forKey:@"created_at"];
                 [arrayTempFeeds addObject:dictTwitterFeeds];
             }
             
@@ -133,7 +133,7 @@
                 
                 NSDate *date = [NSDate dateWithTimeIntervalSince1970:[[dictOfInstagramFeeds objectForKey:@"created_time"] doubleValue]];
                 [dictOfInstagramFeeds removeObjectForKey:@"created_time"];
-                NSString *strDateTime = [Utility getFormatedDateString:[NSString stringWithFormat:@"%@",date] dateFormatString:@"yyyy-MM-dd HH:mm:ss ZZ" dateFormatterString:@"h:mm a - dd MMM yyyy"];
+                NSString *strDateTime = [Utility getFormatedDateString:[NSString stringWithFormat:@"%@",date] dateFormatString:@"yyyy-MM-dd HH:mm:ss ZZ" dateFormatterString:@"E, MMM d yyyy hh:mm a"];
                 [dictOfInstagramFeeds setObject:strDateTime forKey:@"created_at"];
                 
                 

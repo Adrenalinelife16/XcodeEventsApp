@@ -13,6 +13,7 @@
 #import "AboutViewController.h"
 #import "UIImageView+WebCache.h"
 #import "CreateEventViewController.h"
+#import "Utility.h"
 
 
 @interface ProgramViewController () <UISearchBarDelegate>
@@ -102,9 +103,7 @@
     self.searchController.searchResultsUpdater = self;
     self.searchController.dimsBackgroundDuringPresentation = NO;
     self.searchController.searchBar.delegate = self;
-    
     self.tableView.tableHeaderView = self.searchController.searchBar;
-    
     self.definesPresentationContext = YES;
     
     
@@ -152,9 +151,9 @@
                 eventObj.eventDescription       =   [dict objectForKey:@"event_content"];
                 
                 //12.15pm 4 June '14
-                eventObj.eventStartDateTime     =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_start_date"],[dict objectForKey:@"event_start_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"h:mm a - dd MMM yyyy"];
+                eventObj.eventStartDateTime     =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_start_date"],[dict objectForKey:@"event_start_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
                 
-                eventObj.eventEndDateTime       =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_end_date"],[dict objectForKey:@"event_end_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"h:mm a - dd MMM yyyy"];
+                eventObj.eventEndDateTime       =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_end_date"],[dict objectForKey:@"event_end_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
                 
                 eventObj.eventLocationName      =   [dict objectForKey:@"location_name"];
                 eventObj.eventLocationAddress   =   [dict objectForKey:@"location_address"];
