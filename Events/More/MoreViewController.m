@@ -8,11 +8,11 @@
 
 #import "MoreViewController.h"
 #import "LoginViewController.h"
+#import "MoreCustomCell.h"
 
 
 
 @interface MoreViewController ()
-
 
 
 @end
@@ -35,12 +35,16 @@
     
     moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", @"Settings", nil];
     [self checkLogin];
-}
 
--(void)viewWillAppear
+    
+    }
+
+- (void)viewWillAppear:(BOOL)animated;
 {
+    [self viewDidLoad];
     [super viewWillAppear:YES];
-    [self checkLogin];
+    [self.tableView reloadData];
+    
     
 }
 
@@ -54,11 +58,12 @@
 #pragma mark - Check login for MyFavorite and MyTickets
 -(void)checkLogin
 {
+    
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])  {
         NSLog(@"User ID is %@", strUserID);
-        [moreArray addObject:@"Logout"];
         
+        [moreArray addObject:@"Logout"];
 
     }
     else
@@ -106,24 +111,35 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    
-    if (!(indexPath.section == 0)) {
-        [self performSegueWithIdentifier:@"logoutPush" sender:self];
-    }
-    else if (!(indexPath.section == 1)) {
-        [self performSegueWithIdentifier:@"logoutPush" sender:self];
-    }
-    else if (!(indexPath.section == 2)) {
-        [self performSegueWithIdentifier:@"logoutPush" sender:self];
-    }
-    else if (!(indexPath.section == 3)) {
-        [self performSegueWithIdentifier:@"logoutPush" sender:self];
-    }
 
-    
+    if(indexPath.row==0)
+    {
+        [self performSegueWithIdentifier:@"helpCenter" sender:self];
+    }
+    else if(indexPath.row==1)
+    {
+        [self performSegueWithIdentifier:@"termsCondition" sender:self];
+    }
+    else if(indexPath.row==2)
+    {
+        [self performSegueWithIdentifier:@"pushSettings" sender:self];
+    }
+    else if(indexPath.row==3)
+    {
+        
+        NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+        if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
+            
+            [self performSegueWithIdentifier:@"logoutPush" sender:self];
+        
+        else
+        {
+            [self performSegueWithIdentifier:@"loginRegister" sender:self];
+
+        }
+
+    }
 }
-
-
 
 
 #pragma mark - Navigation

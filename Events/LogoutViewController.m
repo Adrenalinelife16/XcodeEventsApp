@@ -12,6 +12,7 @@
 #import "RegistrationViewController.h"
 #import "Utility.h"
 
+
 @interface LogoutViewController ()
 
 @end
@@ -28,6 +29,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidDisappear:(BOOL)animated;
+{
+   
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
 
 
 -(IBAction)btnLogoutPressed:(id)sender
@@ -35,20 +42,17 @@
 {
     
         [self resetDefaults];
+    
         NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
-    
-//    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])  {
-  //      NSLog(@"User ID is %@", strUserID);
-        
-    
         
         NSLog(@"User ID after logout is %@", strUserID);
         UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [av setTag:99];
         [av show];
+        [self dismissModalStack];
         [self.tabBarController setSelectedIndex:0];
-
-            }
+    
+    
+}
 
 - (void)resetDefaults {
     NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
@@ -59,6 +63,13 @@
     [defs synchronize];
 }
 
+-(void)dismissModalStack {
+    UIViewController *vc = self.presentingViewController;
+    while (vc.presentingViewController) {
+        vc = vc.presentingViewController;
+    }
+    [vc dismissViewControllerAnimated:YES completion:NULL];
+}
 
 
 

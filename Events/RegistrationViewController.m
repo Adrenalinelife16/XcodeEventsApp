@@ -35,7 +35,6 @@
     // Do any additional setup after loading the view.
     self.title = @"Registration";
     
- //   [self InitializeNavigationBarItem];
 }
 
 - (void)didReceiveMemoryWarning
@@ -110,7 +109,6 @@
                     [Utility setNSUserDefaultValueForString:[[response objectAtIndex:0] objectForKey:@"user_id"] strKey:KUSERID];
                     
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:[[response objectAtIndex:0] objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                    [av setTag:99];
                     [av show];
                 }
             }

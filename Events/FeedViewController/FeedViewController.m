@@ -41,6 +41,7 @@
     [super viewDidLoad];
     
     [self checkLogin];
+
     
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7"))
     {
@@ -143,13 +144,10 @@
                 [dictOfInstagramFeeds removeObjectForKey:@"created_time"];
                 NSString *strDateTime = [Utility getFormatedDateString:[NSString stringWithFormat:@"%@",date] dateFormatString:@"yyyy-MM-dd HH:mm:ss ZZ" dateFormatterString:@"h:mm a - dd MMM yyyy"];
                 [dictOfInstagramFeeds setObject:strDateTime forKey:@"created_at"];
-                
-                
+                                
                 
                 [arrayTempFeeds addObject:dictOfInstagramFeeds];
             }
-            
-            
             
             
             NSSortDescriptor *descriptorForFeeds  =   [[NSSortDescriptor alloc] initWithKey:@"created_at" ascending:NO];

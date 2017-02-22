@@ -35,6 +35,14 @@
  //   [self InitializeNavigationBatItem];
 }
 
+- (void)viewDidDisappear:(BOOL)animated;
+{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
