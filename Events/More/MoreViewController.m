@@ -33,7 +33,8 @@
 {
     [super viewDidLoad];
     
-    moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", @"Settings", nil];
+    // @"Settings"
+    moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", nil];
     [self checkLogin];
 
     
