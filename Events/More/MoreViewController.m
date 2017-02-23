@@ -45,8 +45,6 @@
     [self viewDidLoad];
     [super viewWillAppear:YES];
     [self.tableView reloadData];
-    
-    
 }
 
 
@@ -121,11 +119,11 @@
     {
         [self performSegueWithIdentifier:@"termsCondition" sender:self];
     }
+//    else if(indexPath.row==2)
+//    {
+//        [self performSegueWithIdentifier:@"pushSettings" sender:self];
+//    }
     else if(indexPath.row==2)
-    {
-        [self performSegueWithIdentifier:@"pushSettings" sender:self];
-    }
-    else if(indexPath.row==3)
     {
         
         NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
