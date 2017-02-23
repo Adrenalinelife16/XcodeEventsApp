@@ -45,8 +45,6 @@
     [self viewDidLoad];
     [super viewWillAppear:YES];
     [self.tableView reloadData];
-    
-    
 }
 
 
