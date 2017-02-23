@@ -180,20 +180,14 @@
 
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
         
-            // Call image for the cell
             
-            cell.imgIcon = [dictOfCalEvents valueForKey:@"event_image_url"];
+        if ([[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]) {
+                [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]]] placeholderImage:nil];
+            }
             
-            
-            
-//            
-//        if ([[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]) {
-//                [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]]] placeholderImage:nil];
-//            }
-//            
-//            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
-//            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//        
+            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
             
             // end image call
             
