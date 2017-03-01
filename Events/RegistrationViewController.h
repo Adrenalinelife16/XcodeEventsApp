@@ -33,5 +33,7 @@
 @property (strong, nonatomic) NSString *countryName, *countryCode;
 
 -(IBAction)btnRegisterPressed:(id)sender;
+-(IBAction)backgroundTouched:(id)sender;
+-(IBAction)textfieldReturn:(id)sender;
 
 @end

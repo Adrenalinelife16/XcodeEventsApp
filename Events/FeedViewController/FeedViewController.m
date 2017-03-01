@@ -39,10 +39,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self checkLogin];
 
-    
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7"))
     {
         if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
@@ -58,7 +55,10 @@
     [Utility afterDelay:0.01 withCompletion:^{
         [DSBezelActivityView newActivityViewForView:self.view.window];
         [self getFeedsFromServer];
-        [self checkLogin];
+        
+//  Uncomment after BETA release
+        
+//        [self checkLogin];
         
     }];
     

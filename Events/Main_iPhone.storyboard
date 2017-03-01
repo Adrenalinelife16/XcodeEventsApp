@@ -13,30 +13,30 @@
         <scene sceneID="p0g-Ji-e7I">
             <objects>
                 <viewController storyboardIdentifier="loginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofP-CN-yoG" customClass="LoginViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VxO-xc-TFe">
+                    <view key="view" contentMode="scaleToFill" id="VxO-xc-TFe" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" minimumFontSize="17" background="input.png" id="wC5-W8-nMQ">
-                                <rect key="frame" x="16" y="128" width="290" height="30"/>
+                                <rect key="frame" x="16" y="94" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                 <connections>
-                                    <outlet property="delegate" destination="ofP-CN-yoG" id="Z1H-5x-jqq"/>
+                                    <action selector="textfieldReturn:" destination="ofP-CN-yoG" eventType="editingDidEndOnExit" id="bii-2B-gEv"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" background="input.png" id="O35-QF-AZ1">
-                                <rect key="frame" x="16" y="187" width="290" height="30"/>
+                                <rect key="frame" x="16" y="132" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                 <connections>
-                                    <outlet property="delegate" destination="ofP-CN-yoG" id="l4f-GR-grs"/>
+                                    <action selector="textfieldReturn:" destination="ofP-CN-yoG" eventType="editingDidEndOnExit" id="XWh-Bl-D75"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SgS-Wz-zAb">
-                                <rect key="frame" x="16" y="216" width="127" height="30"/>
+                                <rect key="frame" x="16" y="170" width="127" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FpZ-6J-cDg">
-                                <rect key="frame" x="16" y="254" width="290" height="30"/>
+                                <rect key="frame" x="16" y="208" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login">
@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Ls-lN-DYH">
-                                <rect key="frame" x="16" y="292" width="290" height="30"/>
+                                <rect key="frame" x="16" y="246" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Register">
@@ -71,6 +71,9 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="ofP-CN-yoG" eventType="touchDown" id="MOR-Dz-WUJ"/>
+                        </connections>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="qo9-E4-aQS">
@@ -78,14 +81,15 @@
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="txtEmail" destination="wC5-W8-nMQ" id="sKH-rv-5s2"/>
-                        <outlet property="txtPassword" destination="O35-QF-AZ1" id="kgt-VS-q1J"/>
-                        <outlet property="txtUsername" destination="wC5-W8-nMQ" id="fVY-Nc-P14"/>
+                        <outlet property="txtEmail" destination="wC5-W8-nMQ" id="Vki-MN-F82"/>
+                        <outlet property="txtPassword" destination="O35-QF-AZ1" id="UV2-jb-cyK"/>
+                        <outlet property="txtUsername" destination="wC5-W8-nMQ" id="KZU-CC-VJM"/>
+                        <outlet property="view" destination="VxO-xc-TFe" id="Sfr-L5-2w9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTQ-ri-y7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1143" y="1200"/>
+            <point key="canvasLocation" x="-1143.5" y="1199.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XhB-8n-zSN">
@@ -101,9 +105,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="Mml-vq-zwo" kind="relationship" relationship="viewControllers" id="Q4L-4V-bvT"/>
-                        <segue destination="wat-zQ-9t5" kind="relationship" relationship="viewControllers" id="vqh-X5-jWu"/>
-                        <segue destination="Dlv-Lj-Hfo" kind="relationship" relationship="viewControllers" id="wmC-Pg-A59"/>
                         <segue destination="w6F-4W-hwU" kind="relationship" relationship="viewControllers" id="bfK-ML-XeQ"/>
+                        <segue destination="Dlv-Lj-Hfo" kind="relationship" relationship="viewControllers" id="wmC-Pg-A59"/>
+                        <segue destination="wat-zQ-9t5" kind="relationship" relationship="viewControllers" id="vqh-X5-jWu"/>
                         <segue destination="7QV-MF-lRy" kind="relationship" relationship="viewControllers" id="GmH-cQ-7tN"/>
                     </connections>
                 </tabBarController>
@@ -1265,6 +1269,7 @@
                         <segue destination="FGl-F9-htp" kind="push" identifier="pushSettings" id="gGn-OH-gI7"/>
                         <segue destination="Esk-Y6-vmr" kind="push" identifier="termsCondition" id="c3b-7q-UHr"/>
                         <segue destination="oXB-5q-Vnp" kind="push" identifier="logoutPush" id="9dV-Lg-3ef"/>
+                        <segue destination="T4o-Af-Ooy" kind="push" identifier="aboutUs" id="JfJ-9J-PcO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpL-EI-hBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1322,9 +1327,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Err-ik-Oo2">
-                                <rect key="frame" x="81" y="228" width="144" height="30"/>
+                                <rect key="frame" x="34" y="228" width="238" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93059724569320679" green="0.27452105283737183" blue="0.18561512231826782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1347,20 +1352,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGx-i1-IOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="1200"/>
+            <point key="canvasLocation" x="34.5" y="1199.5"/>
         </scene>
-        <!--About-->
+        <!--Discover-->
         <scene sceneID="FmA-aa-wp5">
             <objects>
                 <navigationController definesPresentationContext="YES" id="w6F-4W-hwU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" image="About.png" id="TIV-OW-V25"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="About.png" id="TIV-OW-V25"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5gO-R5-nLV">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="T4o-Af-Ooy" kind="relationship" relationship="rootViewController" id="uVO-C9-lqs"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKC-o7-Aye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1400,78 +1402,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fef-xs-pG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1670" y="-536"/>
+            <point key="canvasLocation" x="638" y="273"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="NId-DM-5Mk">
             <objects>
                 <viewController id="1D8-Gt-16Y" customClass="RegistrationViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lAo-2D-rSI">
+                    <view key="view" contentMode="scaleToFill" id="lAo-2D-rSI" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="First Name" textAlignment="natural" minimumFontSize="17" background="input.png" id="xIY-5F-sXV">
-                                <rect key="frame" x="16" y="133" width="289" height="30"/>
+                                <rect key="frame" x="16" y="81" width="289" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="4xv-AI-hAu"/>
                                     <outlet property="delegate" destination="lAo-2D-rSI" id="MoD-PL-hPb"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" background="input.png" id="WCC-dq-buU">
-                                <rect key="frame" x="16" y="247" width="289" height="30"/>
+                                <rect key="frame" x="16" y="195" width="289" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="rfe-cC-CHU"/>
                                     <outlet property="delegate" destination="lAo-2D-rSI" id="Dmw-Uo-LnQ"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="input.png" id="gAN-qu-wg9">
-                                <rect key="frame" x="16" y="285" width="289" height="30"/>
+                                <rect key="frame" x="16" y="233" width="289" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
+                                    <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="XzR-Db-Uc6"/>
                                     <outlet property="delegate" destination="lAo-2D-rSI" id="bBM-Jz-r1o"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" background="input.png" id="YgW-8Z-02v">
-                                <rect key="frame" x="16" y="323" width="289" height="30"/>
+                                <rect key="frame" x="16" y="271" width="289" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
-                                    <outlet property="delegate" destination="lAo-2D-rSI" id="V63-I9-bzA"/>
+                                    <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="Ijc-mT-Kik"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" background="input.png" id="R1G-NY-JLD">
-                                <rect key="frame" x="16" y="171" width="289" height="30"/>
+                                <rect key="frame" x="16" y="119" width="289" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="aYL-hW-S6G"/>
                                     <outlet property="delegate" destination="lAo-2D-rSI" id="0IS-1h-BgG"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" textAlignment="natural" minimumFontSize="17" background="input.png" id="D26-xv-UXo">
-                                <rect key="frame" x="16" y="209" width="289" height="30"/>
+                                <rect key="frame" x="16" y="157" width="289" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="0qs-Pe-itJ"/>
                                     <outlet property="delegate" destination="lAo-2D-rSI" id="CAP-uc-a6X"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="maw-QU-YQc">
-                                <rect key="frame" x="16" y="371" width="289" height="30"/>
+                                <rect key="frame" x="16" y="319" width="289" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Register">
@@ -1483,14 +1490,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="1D8-Gt-16Y" eventType="touchDown" id="XTS-DR-AOM"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="8yx-E0-AZg"/>
                     <connections>
-                        <outlet property="txtConfirmPassword" destination="YgW-8Z-02v" id="SDV-yb-O3Z"/>
+                        <outlet property="txtConfirmPassword" destination="YgW-8Z-02v" id="ARS-O3-yJX"/>
                         <outlet property="txtEmail" destination="WCC-dq-buU" id="cyj-OO-UTP"/>
                         <outlet property="txtFirstName" destination="xIY-5F-sXV" id="pg5-tu-nw9"/>
                         <outlet property="txtLastName" destination="R1G-NY-JLD" id="Pgu-lM-ttg"/>
-                        <outlet property="txtPassword" destination="gAN-qu-wg9" id="vez-OY-ciV"/>
+                        <outlet property="txtPassword" destination="gAN-qu-wg9" id="ieS-ha-WOy"/>
                         <outlet property="txtUsername" destination="D26-xv-UXo" id="XeG-nG-oZ2"/>
                     </connections>
                 </viewController>

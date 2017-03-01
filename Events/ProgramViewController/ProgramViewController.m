@@ -29,11 +29,13 @@
 
 
 
+
 @property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
 
 @end
 
 @implementation ProgramViewController
+
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -55,7 +57,6 @@
     NSDate *currentDate =   [NSDate date];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
-    [self checkLogin];
     
 }
 
@@ -63,7 +64,10 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
-    [self checkLogin];
+
+//      Uncomment after BETA release
+    
+//    [self checkLogin];
     
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -250,6 +254,13 @@
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    
+//    
+//    UIImage *img = [UIImage imageNamed:@"no_image.jpg"];
+//    [UIImageView ];
+//    UIImageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y,
+//                                 img.size.width, img.size.height);
     
     return cell;
 }

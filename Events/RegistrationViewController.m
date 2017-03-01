@@ -78,7 +78,7 @@
 -(void)CreateUser
     
     {
-       [self hideKeyboards];
+      
      {
          
         NSString *Fname = txtFirstName.text;
@@ -145,19 +145,12 @@
     txtPassword.inputAccessoryView = numberToolbar;
 }
 */
--(void)doneWithNumberPad
-{
-    [self hideKeyboards];
-}
+
 
 #pragma mark - Text Field Delegates
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     
     return YES;
-}
-
--(void)textFieldDidBeginEditing:(UITextField *)textField{
-    
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -213,17 +206,26 @@
     return YES;
 }
 
-/**
- *  Hide Text Fields keyboards
- */
--(void)hideKeyboards
+
+// Hide keyboard when touch background
+
+-(IBAction)backgroundTouched:(id)sender
 {
     [txtFirstName resignFirstResponder];
     [txtLastName resignFirstResponder];
-    [txtUsername resignFirstResponder];
     [txtEmail resignFirstResponder];
+    [txtUsername resignFirstResponder];
     [txtPassword resignFirstResponder];
+    [txtConfirmPassword resignFirstResponder];
 }
+
+//Hide keyboard when touch return
+
+-(IBAction)textfieldReturn:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
 
 #pragma mark - email validation
 -(BOOL)validateEmail:(NSString *) candidate {
@@ -243,7 +245,8 @@
     {
             [self CreateUser];
             [DSBezelActivityView newActivityViewForView:[UIApplication sharedApplication].keyWindow withLabel:@"Processing..."];
-            [self.tabBarController setSelectedIndex:0];
+        [self.tabBarController setSelectedIndex:0];
+        [self.navigationController popViewControllerAnimated:NO];
             // Perform segue code here to main events feed
     }
 }
