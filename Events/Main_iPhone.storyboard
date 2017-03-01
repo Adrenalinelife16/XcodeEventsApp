@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="DxO-cP-19h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="DxO-cP-19h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -114,21 +114,21 @@
         <!--ProgramViewController-->
         <scene sceneID="Zm0-gr-3hJ">
             <objects>
-                <tableViewController storyboardIdentifier="ProgamViewController" title="ProgramViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XMy-k7-mqo" userLabel="ProgramViewController" customClass="ProgramViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="360" sectionHeaderHeight="22" sectionFooterHeight="22" id="6eF-vP-BpW">
+                <tableViewController storyboardIdentifier="ProgramController" title="ProgramViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XMy-k7-mqo" userLabel="ProgramViewController" customClass="ProgramViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="206" sectionHeaderHeight="22" sectionFooterHeight="22" id="6eF-vP-BpW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="360" id="jUX-MS-syf" customClass="ProgramCustomCell">
-                                <rect key="frame" x="0.0" y="22" width="375" height="360"/>
+                            <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="206" id="jUX-MS-syf" customClass="ProgramCustomCell">
+                                <rect key="frame" x="0.0" y="22" width="375" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="359.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" misplaced="YES" id="Jyd-f3-EuW">
-                                            <rect key="frame" x="8" y="8" width="359" height="154"/>
+                                            <rect key="frame" x="8" y="0.0" width="359" height="154"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="no_image.png" id="QVz-m2-vxx">
@@ -197,8 +197,7 @@
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="search" id="Hoa-xt-dcm">
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="Search:" destination="XMy-k7-mqo" id="oJB-qs-333"/>
-                                <segue destination="Qsp-nK-F0D" kind="push" id="SDO-7C-Yi7"/>
+                                <action selector="searchButtonPressed:" destination="XMy-k7-mqo" id="f1z-sh-vGB"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="3ec-V9-YvN">
@@ -220,20 +219,20 @@
             </objects>
             <point key="canvasLocation" x="-1614.5" y="-2159.5"/>
         </scene>
-        <!--Search Results Table View Controller-->
+        <!--SearchResults-->
         <scene sceneID="4QS-t0-JyV">
             <objects>
-                <tableViewController id="Qsp-nK-F0D" customClass="SearchResultsTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SearchResults" title="SearchResults" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qsp-nK-F0D" customClass="SearchResultsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="p8r-N2-s8J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="9rR-r2-pX1">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCustomCell" rowHeight="200" id="9rR-r2-pX1" customClass="SearchCustomCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9rR-r2-pX1" id="0rB-Le-gNS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" misplaced="YES" id="z4M-rc-WzA">
@@ -324,7 +323,7 @@
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="CreateEventBtn.png"/>
                                         <connections>
-                                            <action selector="btnCreateEvent:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="zsj-LZ-YV8"/>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="CreateWebView" id="GPB-HE-q9b"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" id="fk0-bd-V2T" userLabel="BetaPageText">
@@ -350,7 +349,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="DiscoverBtn.png"/>
                                         <connections>
-                                            <action selector="btnDiscoverCategories:" destination="Nqn-cv-cJq" eventType="touchUpInside" id="MgV-Pq-lpb"/>
+                                            <segue destination="w1Z-bF-ar5" kind="push" id="BrZ-LB-8mF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -368,7 +367,116 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlP-9R-uaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1088.5" y="-2158.5"/>
+            <point key="canvasLocation" x="-1143" y="-2510"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="feH-eW-g6n">
+            <objects>
+                <viewController id="w1Z-bF-ar5" customClass="DiscoverViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFF-pG-qCN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="BackGroundPages3.png" id="Hqm-DJ-1sY">
+                                <rect key="frame" x="0.0" y="66" width="320" height="609"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="vqW-PU-Ibi">
+                                <rect key="frame" x="9" y="74" width="303" height="593"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="utK-J8-91L" userLabel="Yoga">
+                                        <rect key="frame" x="16" y="275" width="127" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Yoga.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="yoga" id="z1t-Ts-zQv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a4D-Um-XlC" userLabel="golf">
+                                        <rect key="frame" x="16" y="364" width="127" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Golf.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="golf" id="e3i-nm-w3q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BOi-qs-eEv" userLabel="frisbee">
+                                        <rect key="frame" x="151" y="275" width="127" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Frisbee.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="frisbee" id="jRU-uw-hap"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hrk-hL-Fyp" userLabel="soccer">
+                                        <rect key="frame" x="16" y="8" width="127" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Soccer.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="soccer" id="vps-4F-Qwj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tvA-5v-Zbk" userLabel="tablegames">
+                                        <rect key="frame" x="16" y="186" width="127" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="TableGames.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="tablegames" id="7RI-D6-Cu2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iJx-au-XtY" userLabel="kickball">
+                                        <rect key="frame" x="151" y="97" width="127" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="KickBall.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="kickball" id="GFy-m0-ule"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ar1-ol-i0Q" userLabel="basketball">
+                                        <rect key="frame" x="151" y="8" width="127" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Basketball.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="basketball" id="VwQ-eF-0p8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kyu-qv-LCM" userLabel="tennis">
+                                        <rect key="frame" x="16" y="97" width="127" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Tennis.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="tennis" id="TWf-r6-yUH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7qb-TL-xvM" userLabel="fishing">
+                                        <rect key="frame" x="151" y="186" width="127" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Fishing.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="fishing" id="l3q-09-JXn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l6d-Qv-Wgj" userLabel="more">
+                                        <rect key="frame" x="151" y="364" width="127" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="MORE.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="more" id="PWx-hH-SxD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="About.png" id="Emj-od-rTF"/>
+                    <navigationItem key="navigationItem" id="a40-XR-67K"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMO-Ty-6b2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="-2511"/>
         </scene>
         <!--Social Feed-->
         <scene sceneID="NyL-Lg-yae">
@@ -604,11 +712,11 @@
             <objects>
                 <viewController storyboardIdentifier="feedDetails" id="kYa-5B-zJd" customClass="FeedDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ptt-tX-ARC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="72I-VL-zaW">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -648,7 +756,7 @@
                                                 <rect key="frame" x="0.0" y="22" width="375" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mlj-73-nBr" id="g7m-NP-VL4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milan Fashion Week" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xdo-zz-QB9">
@@ -691,7 +799,7 @@
                                                 <rect key="frame" x="0.0" y="73" width="375" height="158"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZ8-Vq-MSU" id="3Vc-7L-PYu">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="157.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" misplaced="YES" id="a9b-9X-Mj4">
@@ -759,7 +867,7 @@
                                                 <rect key="frame" x="0.0" y="231" width="375" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qp3-EP-ht4" id="1fF-wg-hsC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date and Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8j-Ij-nhz">
@@ -1136,7 +1244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz0-9l-sJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-594" y="-1348"/>
+            <point key="canvasLocation" x="-540" y="-1393"/>
         </scene>
         <!--Program Description View Controller-->
         <scene sceneID="21W-JZ-5lT">
@@ -1168,7 +1276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WK-ya-r6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-179" y="-1348"/>
+            <point key="canvasLocation" x="-67" y="-1393"/>
         </scene>
         <!--Maps-->
         <scene sceneID="WdJ-TP-gcR">
@@ -1242,10 +1350,10 @@
                         <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MoreCell" id="rfb-6m-XYc">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1286,7 +1394,7 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NmC-VY-eFi" id="6AA-cR-tpb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Push Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="55Z-pA-sCO">
@@ -1562,18 +1670,28 @@
         <image name="Action3.png" width="23" height="20"/>
         <image name="AdrenalineLogo2.png" width="367" height="306"/>
         <image name="BackGroundPages3.png" width="320" height="456"/>
+        <image name="Basketball.png" width="249" height="143"/>
         <image name="BetaPageBG.png" width="320" height="456"/>
         <image name="BetaPageImage.png" width="600" height="240"/>
         <image name="CreateEventBtn.png" width="249" height="143"/>
         <image name="DiscoverBtn.png" width="249" height="143"/>
         <image name="Feed.png" width="22" height="22"/>
+        <image name="Fishing.png" width="249" height="143"/>
+        <image name="Frisbee.png" width="249" height="143"/>
+        <image name="Golf.png" width="249" height="143"/>
+        <image name="KickBall.png" width="249" height="143"/>
         <image name="Listred.png" width="23" height="23"/>
+        <image name="MORE.png" width="249" height="143"/>
         <image name="MyProgram.png" width="21" height="21"/>
         <image name="Next.png" width="20" height="20"/>
         <image name="Program.png" width="22" height="22"/>
         <image name="Rettangolo.png" width="320" height="42"/>
         <image name="Segmented.png" width="300" height="29"/>
+        <image name="Soccer.png" width="249" height="143"/>
+        <image name="TableGames.png" width="249" height="143"/>
+        <image name="Tennis.png" width="249" height="143"/>
         <image name="Twitter.png" width="26" height="22"/>
+        <image name="Yoga.png" width="249" height="143"/>
         <image name="arrow.png" width="11" height="14"/>
         <image name="date-cell-gray.png" width="164" height="33"/>
         <image name="event-feed-mask.png" width="92" height="92"/>
@@ -1594,5 +1712,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="G5x-3c-mw0"/>
+        <segue reference="GPB-HE-q9b"/>
     </inferredMetricsTieBreakers>
 </document>

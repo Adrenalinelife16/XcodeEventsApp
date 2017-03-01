@@ -237,6 +237,18 @@
 		E2252E901E4DB80300B0CD69 /* BetaPage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8F1E4DB80300B0CD69 /* BetaPage.png */; };
 		E26B1E621E519BFF002A0F9C /* BetaPageImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E26B1E611E519BFF002A0F9C /* BetaPageImage.png */; };
 		E274A6671E5D4BE500E0FF6D /* BackGroundPages3.png in Resources */ = {isa = PBXBuildFile; fileRef = E274A6661E5D4BE500E0FF6D /* BackGroundPages3.png */; };
+		E279AD9E1E653D6500D3B192 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E279AD9D1E653D6500D3B192 /* DiscoverViewController.m */; };
+		E279ADA91E654CAC00D3B192 /* Fishing.png in Resources */ = {isa = PBXBuildFile; fileRef = E279AD9F1E654CAC00D3B192 /* Fishing.png */; };
+		E279ADAA1E654CAC00D3B192 /* Golf.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA01E654CAC00D3B192 /* Golf.png */; };
+		E279ADAB1E654CAC00D3B192 /* Frisbee.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA11E654CAC00D3B192 /* Frisbee.png */; };
+		E279ADAC1E654CAC00D3B192 /* TableGames.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA21E654CAC00D3B192 /* TableGames.png */; };
+		E279ADAD1E654CAC00D3B192 /* Tennis.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA31E654CAC00D3B192 /* Tennis.png */; };
+		E279ADAE1E654CAC00D3B192 /* Basketball.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA41E654CAC00D3B192 /* Basketball.png */; };
+		E279ADAF1E654CAC00D3B192 /* Soccer.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA51E654CAC00D3B192 /* Soccer.png */; };
+		E279ADB01E654CAC00D3B192 /* Yoga.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA61E654CAC00D3B192 /* Yoga.png */; };
+		E279ADB11E654CAC00D3B192 /* MORE.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA71E654CAC00D3B192 /* MORE.png */; };
+		E279ADB21E654CAC00D3B192 /* KickBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA81E654CAC00D3B192 /* KickBall.png */; };
+		E279ADB91E66172200D3B192 /* SearchCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E279ADB81E66172200D3B192 /* SearchCustomCell.m */; };
 		E2A54D421E4DC03B00091538 /* BetaPageBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */; };
 		E2A54D431E4DC03B00091538 /* CreateEventBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D401E4DC03B00091538 /* CreateEventBtn.png */; };
 		E2A54D441E4DC03B00091538 /* DiscoverBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D411E4DC03B00091538 /* DiscoverBtn.png */; };
@@ -576,6 +588,20 @@
 		E2252E8F1E4DB80300B0CD69 /* BetaPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPage.png; sourceTree = "<group>"; };
 		E26B1E611E519BFF002A0F9C /* BetaPageImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPageImage.png; sourceTree = "<group>"; };
 		E274A6661E5D4BE500E0FF6D /* BackGroundPages3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackGroundPages3.png; sourceTree = "<group>"; };
+		E279AD9C1E653D6500D3B192 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		E279AD9D1E653D6500D3B192 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		E279AD9F1E654CAC00D3B192 /* Fishing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fishing.png; sourceTree = "<group>"; };
+		E279ADA01E654CAC00D3B192 /* Golf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Golf.png; sourceTree = "<group>"; };
+		E279ADA11E654CAC00D3B192 /* Frisbee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frisbee.png; sourceTree = "<group>"; };
+		E279ADA21E654CAC00D3B192 /* TableGames.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableGames.png; sourceTree = "<group>"; };
+		E279ADA31E654CAC00D3B192 /* Tennis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tennis.png; sourceTree = "<group>"; };
+		E279ADA41E654CAC00D3B192 /* Basketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Basketball.png; sourceTree = "<group>"; };
+		E279ADA51E654CAC00D3B192 /* Soccer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soccer.png; sourceTree = "<group>"; };
+		E279ADA61E654CAC00D3B192 /* Yoga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yoga.png; sourceTree = "<group>"; };
+		E279ADA71E654CAC00D3B192 /* MORE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MORE.png; sourceTree = "<group>"; };
+		E279ADA81E654CAC00D3B192 /* KickBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KickBall.png; sourceTree = "<group>"; };
+		E279ADB71E66172200D3B192 /* SearchCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCustomCell.h; sourceTree = "<group>"; };
+		E279ADB81E66172200D3B192 /* SearchCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCustomCell.m; sourceTree = "<group>"; };
 		E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPageBG.png; sourceTree = "<group>"; };
 		E2A54D401E4DC03B00091538 /* CreateEventBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreateEventBtn.png; sourceTree = "<group>"; };
 		E2A54D411E4DC03B00091538 /* DiscoverBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoverBtn.png; sourceTree = "<group>"; };
@@ -739,6 +765,7 @@
 		72C6E34A1E552FFE00B25C5F /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				E279ADB31E6616D900D3B192 /* SearchCustomCell */,
 				72C6E3541E563D1000B25C5F /* SearchResultsTableViewController.h */,
 				72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */,
 			);
@@ -1051,6 +1078,7 @@
 		BB303D9F18B863E300B6EBC9 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				E279AD9B1E653D1900D3B192 /* Discover */,
 				7225BD1E1E4AA76C00A35D30 /* Notes */,
 				725535CA1E1416260070D5B5 /* Events.entitlements */,
 				793508D0192132240001CC34 /* core data stack */,
@@ -1115,6 +1143,16 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E279AD9F1E654CAC00D3B192 /* Fishing.png */,
+				E279ADA01E654CAC00D3B192 /* Golf.png */,
+				E279ADA11E654CAC00D3B192 /* Frisbee.png */,
+				E279ADA21E654CAC00D3B192 /* TableGames.png */,
+				E279ADA31E654CAC00D3B192 /* Tennis.png */,
+				E279ADA41E654CAC00D3B192 /* Basketball.png */,
+				E279ADA51E654CAC00D3B192 /* Soccer.png */,
+				E279ADA61E654CAC00D3B192 /* Yoga.png */,
+				E279ADA71E654CAC00D3B192 /* MORE.png */,
+				E279ADA81E654CAC00D3B192 /* KickBall.png */,
 				E274A6661E5D4BE500E0FF6D /* BackGroundPages3.png */,
 				E2D8A7E51E544B3D007050F8 /* ConfirmLogoutbtn@2x.png */,
 				E2D8A7E61E544B3D007050F8 /* ConfirmLogoutbtn.png */,
@@ -1283,6 +1321,24 @@
 			path = MyProgramViewController;
 			sourceTree = "<group>";
 		};
+		E279AD9B1E653D1900D3B192 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				E279AD9C1E653D6500D3B192 /* DiscoverViewController.h */,
+				E279AD9D1E653D6500D3B192 /* DiscoverViewController.m */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		E279ADB31E6616D900D3B192 /* SearchCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				E279ADB71E66172200D3B192 /* SearchCustomCell.h */,
+				E279ADB81E66172200D3B192 /* SearchCustomCell.m */,
+			);
+			name = SearchCustomCell;
+			sourceTree = "<group>";
+		};
 		E2AB03221E4ADFAC00EAA5BF /* Create Event */ = {
 			isa = PBXGroup;
 			children = (
@@ -1383,13 +1439,17 @@
 				711221E918BC94F900E77A4A /* GreenDot.png in Resources */,
 				7112220618BCA62300E77A4A /* share@2x.png in Resources */,
 				BB303E2518B879AA00B6EBC9 /* pic.png in Resources */,
+				E279ADA91E654CAC00D3B192 /* Fishing.png in Resources */,
+				E279ADAC1E654CAC00D3B192 /* TableGames.png in Resources */,
 				7982242718F7299A009FA42E /* input.png in Resources */,
+				E279ADAF1E654CAC00D3B192 /* Soccer.png in Resources */,
 				7122DB2B18BB4BDB00C044E8 /* feedviewCell5.png in Resources */,
 				BB303DFE18B86B3400B6EBC9 /* Listred@2x.png in Resources */,
 				7122DB2C18BB4BDB00C044E8 /* feedviewCell4@2x.png in Resources */,
 				BB303E2618B879AA00B6EBC9 /* pic@2x.png in Resources */,
 				BB303E0C18B86B3400B6EBC9 /* Programred@2x.png in Resources */,
 				7112221518BCB83500E77A4A /* Direction@2x.png in Resources */,
+				E279ADAE1E654CAC00D3B192 /* Basketball.png in Resources */,
 				79383A621906135A00A1DBBC /* share2.png in Resources */,
 				BB303E2818B879AA00B6EBC9 /* Reload@2x.png in Resources */,
 				711221EA18BC94F900E77A4A /* GreenDot@2x.png in Resources */,
@@ -1401,6 +1461,7 @@
 				7972E972195355B100F25E4D /* date-cell-gray@2x.png in Resources */,
 				E26B1E621E519BFF002A0F9C /* BetaPageImage.png in Resources */,
 				BB303DF218B86B3400B6EBC9 /* About@2x.png in Resources */,
+				E279ADB11E654CAC00D3B192 /* MORE.png in Resources */,
 				79504C40191F7CE000EF3103 /* no_image@2x.png in Resources */,
 				BB303E2318B879AA00B6EBC9 /* nearby.png in Resources */,
 				7122DB1F18BB459C00C044E8 /* feedviewCell2.png in Resources */,
@@ -1426,6 +1487,7 @@
 				7972E974195355B100F25E4D /* event-feed-mask@2x.png in Resources */,
 				BB303E2018B879AA00B6EBC9 /* image1@2x.png in Resources */,
 				7122DB2918BB4BDB00C044E8 /* feedviewCell6.png in Resources */,
+				E279ADAA1E654CAC00D3B192 /* Golf.png in Resources */,
 				7972E97C195355B100F25E4D /* white-cell@2x.png in Resources */,
 				7225BD201E4AA78200A35D30 /* Notes in Resources */,
 				BB303E0418B86B3400B6EBC9 /* Livello3@2x.png in Resources */,
@@ -1440,6 +1502,7 @@
 				7122DB1E18BB459C00C044E8 /* feedviewCell2@2x.png in Resources */,
 				79504C43191F7E0C00EF3103 /* Milan-Fashion-Week-logo.png in Resources */,
 				BB857F4518B8928700B366D8 /* secondpic.png in Resources */,
+				E279ADB01E654CAC00D3B192 /* Yoga.png in Resources */,
 				79E815641953481800E58344 /* Icon@2x.png in Resources */,
 				7112221018BCB67600E77A4A /* registerBtn.png in Resources */,
 				711221F018BC9DFB00E77A4A /* placeIcon@2x.png in Resources */,
@@ -1453,6 +1516,8 @@
 				BB303DF418B86B3400B6EBC9 /* Aboutred@2x.png in Resources */,
 				BB303DF918B86B3400B6EBC9 /* Feedred.png in Resources */,
 				BB303DFA18B86B3400B6EBC9 /* Feedred@2x.png in Resources */,
+				E279ADB21E654CAC00D3B192 /* KickBall.png in Resources */,
+				E279ADAD1E654CAC00D3B192 /* Tennis.png in Resources */,
 				BB303E0618B86B3400B6EBC9 /* MyProgram@2x.png in Resources */,
 				79504C44191F7E0C00EF3103 /* Milan-Fashion-Week-logo@2x.png in Resources */,
 				BB303E1F18B879AA00B6EBC9 /* image1.png in Resources */,
@@ -1492,6 +1557,7 @@
 				BB303DFB18B86B3400B6EBC9 /* List.png in Resources */,
 				7112220518BCA62300E77A4A /* share.png in Resources */,
 				BB303DF518B86B3400B6EBC9 /* Action.png in Resources */,
+				E279ADAB1E654CAC00D3B192 /* Frisbee.png in Resources */,
 				7972E977195355B100F25E4D /* icon-feed-instagram.png in Resources */,
 				E2A54D421E4DC03B00091538 /* BetaPageBG.png in Resources */,
 				7920A7B919220B39001808B6 /* instagram_logo@2x.png in Resources */,
@@ -1557,6 +1623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7122DC1518BDE6D900DC9925 /* VRGCalendarView.m in Sources */,
+				E279AD9E1E653D6500D3B192 /* DiscoverViewController.m in Sources */,
 				BB303E3018B87FCE00B6EBC9 /* TabBarViewController.m in Sources */,
 				7986DCCF19C9E92A00EE4DD7 /* LocalizeHelper.m in Sources */,
 				BB303DB318B863E300B6EBC9 /* ViewController.m in Sources */,
@@ -1569,6 +1636,7 @@
 				793508DE192138240001CC34 /* FavouriteEvents.m in Sources */,
 				79691D0518F00C8700ABD52D /* ASIDataDecompressor.m in Sources */,
 				79691CAE18EFFF1F00ABD52D /* SBJsonWriter.m in Sources */,
+				E279ADB91E66172200D3B192 /* SearchCustomCell.m in Sources */,
 				711221DD18BC62DD00E77A4A /* NSMutableArray+convenience.m in Sources */,
 				798D9E1118F15F1400A69513 /* SDWebImagePrefetcher.m in Sources */,
 				72DCD05B1E5D2BF700792EEA /* MoreCustomCell.m in Sources */,

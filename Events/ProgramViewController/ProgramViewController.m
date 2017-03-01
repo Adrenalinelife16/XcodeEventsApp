@@ -14,14 +14,16 @@
 #import "UIImageView+WebCache.h"
 #import "CreateEventViewController.h"
 #import "Utility.h"
+#import "SearchResultsTableViewController.h"
 
 
-@interface ProgramViewController () <UISearchBarDelegate>
+@interface ProgramViewController () <UISearchResultsUpdating>
 {
     
     NSMutableArray *arrayEventList;
     NSMutableArray *sortedArrayEventList;
     NSDate *eventDate;
+    NSArray *results;
     
 }
 
@@ -30,7 +32,8 @@
 
 
 @property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
-
+@property (strong, nonatomic) UISearchController *controller;
+@property (strong, nonatomic) NSArray *results;
 @end
 
 @implementation ProgramViewController
@@ -57,6 +60,8 @@
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     [self checkLogin];
     
+    SearchResultsTableViewController *searchResults = (SearchResultsTableViewController *) self.controller.searchResultsController;
+    [self addObserver:searchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 
@@ -104,7 +109,7 @@
     
 }
 
-
+/*
 - (IBAction)Search:(UIBarButtonItem *)sender {
     
     self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
@@ -116,7 +121,7 @@
     
     
 }
-
+*/
 
 
 - (void)didReceiveMemoryWarning
@@ -204,7 +209,7 @@
      
      }];
 }
-
+////////////////////////////////////////TableView/////////////////////////////////////////////////////
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -220,7 +225,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 162;
+    return 155; //162
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -253,7 +258,7 @@
     
     return cell;
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 #pragma mark - Navigation
@@ -271,5 +276,45 @@
     }
     
 }
+
+/////////////////////Search Bar Code///////////////////@"ProgamViewController"
+
+- (UISearchController *)controller {
+    
+    if (!_controller) {
+        //
+        //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ProgramController" bundle:nil];
+        SearchResultsTableViewController *resultsController = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
+        
+        //
+        _controller = [[UISearchController alloc] initWithSearchResultsController:resultsController];
+        _controller.searchResultsUpdater = self;
+        
+        
+    }
+    return _controller;
+}
+/////////////////////
+#pragma mark - Search Results Updater
+
+-(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    
+    self.results = nil;
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"eventName contains [cd] %@", self.controller.searchBar.text];
+    //NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains [cd] %@", self.controller.searchBar.text];
+    self.results = [self->arrayEventList filteredArrayUsingPredicate:predicate];
+    
+    NSLog(@"Search Results are: %@", [self.results description]);
+}
+/////////////////////
+- (IBAction)searchButtonPressed:(id)sender {
+    [self presentViewController:self.controller animated:YES completion:nil];
+}
+/////////////////////
+
+
+
+
+////////////////////////////////////////////////////////
 
 @end

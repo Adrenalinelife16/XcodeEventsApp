@@ -30,7 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"Feed Details";
+    self.title = @"";
     /**
      *  It will load the feed URL in web view.
      */
