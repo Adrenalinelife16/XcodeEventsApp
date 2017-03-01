@@ -35,13 +35,11 @@
  //   [self InitializeNavigationBatItem];
 }
 
-- (void)viewDidDisappear:(BOOL)animated;
-{
-    
-    [self.navigationController popViewControllerAnimated:YES];
-    
-}
 
+- (void)viewWillAppear:(BOOL)animated;
+{
+    [self viewDidLoad];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -81,19 +79,19 @@
 
 
 
-#pragma mark - Registration Button
--(IBAction)btnRegistrationPressed:(id)sender
-{
-    RegistrationViewController *registrationView    =   [self.storyboard instantiateViewControllerWithIdentifier:@"registrationView"];
-    registrationView.delegate = self;
-    UINavigationController *navController   =   [[UINavigationController alloc] initWithRootViewController:registrationView];
-    
-    [UIView transitionWithView:self.view.window
-                      duration:0.5
-                       options:UIViewAnimationOptionTransitionFlipFromLeft
-                    animations:^{ [self.navigationController presentViewController:navController animated:NO completion:nil]; }
-                    completion:nil];
-}
+//#pragma mark - Registration Button
+//-(IBAction)btnRegistrationPressed:(id)sender
+//{
+//    RegistrationViewController *registrationView    =   [self.storyboard instantiateViewControllerWithIdentifier:@"registrationView"];
+//    registrationView.delegate = self;
+//    UINavigationController *navController   =   [[UINavigationController alloc] initWithRootViewController:registrationView];
+//    
+//    [UIView transitionWithView:self.view.window
+//                      duration:0.5
+//                       options:UIViewAnimationOptionTransitionFlipFromLeft
+//                    animations:^{ [self.navigationController presentViewController:navController animated:NO completion:nil]; }
+//                    completion:nil];
+//}
 
 /**
  *  Remove Registration View and back to login view
@@ -110,8 +108,8 @@
 #pragma mark - login button tap
 -(IBAction)btnLoginPressed:(id)sender
 {
-    [txtEmail resignFirstResponder];
-    [txtPassword resignFirstResponder];
+  //  [txtEmail resignFirstResponder];
+ //   [txtPassword resignFirstResponder];
     
     if ([self isValid]) {
         [DSBezelActivityView newActivityViewForView:self.view.window];
@@ -143,8 +141,10 @@
                     [av setTag:99];
                     [av show];
                     // Perform Segue Here to Main Program View
-                
+                    
+                    
                     [self.tabBarController setSelectedIndex:0];
+                    [self.navigationController popViewControllerAnimated:NO];
                     NSLog(@"User ID logged in %@", dictOfParameters);
                 
                     
@@ -158,6 +158,25 @@
         }];
     }
 }
+#pragma mark - Hide Keyboard
+// Hide keyboard when touch background
+
+-(IBAction)backgroundTouched:(id)sender
+{
+    [txtEmail resignFirstResponder];
+    [txtUsername resignFirstResponder];
+    [txtPassword resignFirstResponder];
+   
+}
+
+//Hide keyboard when touch return
+
+-(IBAction)textfieldReturn:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
+
 
 #pragma mark - Check Validations for login
 -(BOOL)isValid
@@ -180,24 +199,24 @@
     }
     return YES;
 }
-
-#pragma mark - TextField Delegates
--(BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    if (textField.returnKeyType == UIReturnKeyDone)
-    {
-        [textField resignFirstResponder];
-    }
-    else
-    {
-        UIResponder *nextResponder = [textField.superview viewWithTag:textField.tag+1];
-        
-        if (nextResponder){
-            [nextResponder becomeFirstResponder];
-        }
-    }
-    return NO;
-}
+//
+//#pragma mark - TextField Delegates
+//-(BOOL)textFieldShouldReturn:(UITextField *)textField
+//{
+//    if (textField.returnKeyType == UIReturnKeyDone)
+//    {
+//        [textField resignFirstResponder];
+//    }
+//    else
+//    {
+//        UIResponder *nextResponder = [textField.superview viewWithTag:textField.tag+1];
+//        
+//        if (nextResponder){
+//            [nextResponder becomeFirstResponder];
+//        }
+//    }
+//    return NO;
+//}
 /*
 #pragma mark - email validation
 -(BOOL)validateEmail:(NSString *) candidate {

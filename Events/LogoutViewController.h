@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventList.h"
 
 @interface LogoutViewController : UIViewController
+
+@property (strong, nonatomic) EventList *eventObj;
 
 
 @end

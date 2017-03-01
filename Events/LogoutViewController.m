@@ -11,13 +11,15 @@
 #import "LoginViewController.h"
 #import "RegistrationViewController.h"
 #import "Utility.h"
-
+#import "MMdbsupport.h"
+#import "AboutViewController.h"
 
 @interface LogoutViewController ()
 
 @end
 
 @implementation LogoutViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,6 +44,7 @@
 {
     
         [self resetDefaults];
+        [MMdbsupport MMExecuteSqlQuery:[NSString stringWithFormat:@"delete from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]];
     
         NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
         

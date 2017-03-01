@@ -28,6 +28,13 @@
 @property (nonatomic,strong) NSString *getDetails;
 
 -(IBAction)btnLoginPressed:(id)sender;
--(IBAction)btnRegistrationPressed:(id)sender;
+//-(IBAction)btnRegistrationPressed:(id)sender;
 -(IBAction)forgotPasswordPressed:(id)sender;
+
+
+-(IBAction)backgroundTouched:(id)sender;
+-(IBAction)textfieldReturn:(id)sender;
+
+
+
 @end

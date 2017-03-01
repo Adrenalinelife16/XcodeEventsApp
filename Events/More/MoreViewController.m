@@ -34,8 +34,8 @@
     [super viewDidLoad];
     
     // @"Settings"
-    moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", nil];
-    [self checkLogin];
+    moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", @"About Us", nil];
+ //   [self checkLogin];
 
     
     }
@@ -54,6 +54,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+// Un comment ater Beta Release
+
+/*
 #pragma mark - Check login for MyFavorite and MyTickets
 -(void)checkLogin
 {
@@ -70,7 +74,7 @@
         [moreArray addObject:@"Login"];
     }
 }
-
+*/
 
 #pragma mark - Table view data source
 
@@ -101,7 +105,6 @@
    
     
     cell.textLabel.text = [moreArray objectAtIndex:indexPath.row];
-    [self checkLogin];
     return cell;
     
 }
@@ -119,10 +122,16 @@
     {
         [self performSegueWithIdentifier:@"termsCondition" sender:self];
     }
-//    else if(indexPath.row==2)
-//    {
-//        [self performSegueWithIdentifier:@"pushSettings" sender:self];
-//    }
+    else if(indexPath.row==2)
+    {
+        [self performSegueWithIdentifier:@"aboutUs" sender:self];
+    }
+    
+    /*
+    else if(indexPath.row==2)
+    {
+        [self performSegueWithIdentifier:@"pushSettings" sender:self];
+    }
     else if(indexPath.row==2)
     {
         
@@ -136,8 +145,8 @@
             [self performSegueWithIdentifier:@"loginRegister" sender:self];
 
         }
-
     }
+     */
 }
 
 
