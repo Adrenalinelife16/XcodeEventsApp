@@ -122,9 +122,9 @@
          *  add event to local to add in favorites list
          */
         
-        NSUserDefaults *userFavorites = [NSUserDefaults standardUserDefaults];
-        [userFavorites setObject:eventObj forKey:KUSERID];
-        NSLog(@"User Favorites %@",userFavorites);
+//        NSUserDefaults *userFavorites = [NSUserDefaults standardUserDefaults];
+//        [userFavorites setObject:eventObj forKey:KUSERID];
+//        NSLog(@"User Favorites %@",userFavorites);
         
         
         
