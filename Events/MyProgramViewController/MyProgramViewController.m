@@ -264,7 +264,8 @@
 #pragma mark - Button Clicked Function
 - (IBAction)clickedMyTickets:(id)sender {
     
-    if ([self checkLogin]) {
+    if ([self checkLogin])
+    {
         [self.scrollViewMain setContentSize:CGSizeMake(0, 0)];
         [calendarBG removeFromSuperview];
         CGRect rect=self.tblMainTable.frame;
@@ -285,8 +286,28 @@
         [DSBezelActivityView newActivityViewForView:[UIApplication sharedApplication].keyWindow withLabel:@"Fetching..."];
         [self getMyTickets];
     }
-    else{
-        [self showLoginScreen];
+    else
+    {
+        [self.scrollViewMain setContentSize:CGSizeMake(0, 0)];
+        [calendarBG removeFromSuperview];
+        CGRect rect=self.tblMainTable.frame;
+        rect.origin.y=0;
+        if (IS_IPHONE_5)
+            rect.size.height=423;
+        else
+            rect.size.height=323;
+        self.tblMainTable.frame=rect;
+        segmentPosition=2;
+        [self.btnMyTickets setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
+        [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
+        self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented.png"];
+        [self.tblMainTable reloadData];
+        self.btnNotifiction.titleLabel.text=[NSString stringWithFormat:@"%lu",(unsigned long)arrMyProgram.count];
+        
+        [DSBezelActivityView newActivityViewForView:[UIApplication sharedApplication].keyWindow withLabel:@"Fetching..."];
+        [self getMyTickets];
+
     }
 }
 
