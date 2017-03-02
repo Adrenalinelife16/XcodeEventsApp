@@ -296,10 +296,7 @@
     if (!_controller) {
         //
        // UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ProgramController" bundle:nil];
-    //    SearchResultsTableViewController *resultsController = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
-        
-        UINavigationController *resultsController = [self.storyboard instantiateViewControllerWithIdentifier:@"searchResultsController"];
-        
+        SearchResultsTableViewController *resultsController = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
         
         
         //
