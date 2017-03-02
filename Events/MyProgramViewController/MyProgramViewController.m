@@ -52,6 +52,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     self.navigationItem.title = @"My Events";
     
     segmentPosition=0;
     //set current date as event date before getting from server

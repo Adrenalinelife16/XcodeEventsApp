@@ -70,6 +70,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
+    self.title = @"Events";
 
 //      Uncomment after BETA release
     
