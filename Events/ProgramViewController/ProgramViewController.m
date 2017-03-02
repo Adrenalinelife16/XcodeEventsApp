@@ -63,6 +63,7 @@
     
     SearchResultsTableViewController *searchResults = (SearchResultsTableViewController *) self.controller.searchResultsController;
     [self addObserver:searchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
+   
 }
 
 
@@ -294,8 +295,12 @@
     
     if (!_controller) {
         //
-        //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ProgramController" bundle:nil];
-        SearchResultsTableViewController *resultsController = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
+       // UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ProgramController" bundle:nil];
+    //    SearchResultsTableViewController *resultsController = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
+        
+        UINavigationController *resultsController = [self.storyboard instantiateViewControllerWithIdentifier:@"searchResultsController"];
+        
+        
         
         //
         _controller = [[UISearchController alloc] initWithSearchResultsController:resultsController];
@@ -315,7 +320,7 @@
     //NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains [cd] %@", self.controller.searchBar.text];
     self.results = [self->arrayEventList filteredArrayUsingPredicate:predicate];
     
-    NSLog(@"Search Results are: %@", [self.results description]);
+    
 }
 /////////////////////
 - (IBAction)searchButtonPressed:(id)sender {

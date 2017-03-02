@@ -19,7 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     BetaPageText.text = NSLocalizedString(@"CONTENT_BETAPAGE", @"CONTENT_BETAPAGE");
-
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     
 }
 
