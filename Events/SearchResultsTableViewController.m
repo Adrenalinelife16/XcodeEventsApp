@@ -107,6 +107,8 @@
         AboutViewController *aboutVwController = [segue destinationViewController];
         EventList *obj  =   [_searchResults objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
+        //[self.navigationController setNavigationBarHidden:NO];
+        //[self.navigationController pushViewController:aboutVwController animated:YES];
     }
     
 }

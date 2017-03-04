@@ -24,6 +24,7 @@
     NSMutableArray *sortedArrayEventList;
     NSDate *eventDate;
     NSArray *results;
+    NSArray *searchResults;
     
 }
 
