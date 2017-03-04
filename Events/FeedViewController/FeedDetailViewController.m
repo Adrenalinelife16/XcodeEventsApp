@@ -28,9 +28,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     // Do any additional setup after loading the view.
     
-    self.title = @"";
+    self.title = @"Find Your Life";
     /**
      *  It will load the feed URL in web view.
      */

@@ -26,15 +26,11 @@
 
 @implementation SearchResultsTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+    {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
+        
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -97,11 +93,11 @@
 
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    if ([segue.identifier isEqualToString:@"AboutView2"]) {
+    
+    if ([segue.identifier isEqualToString:@"aboutViewTwo"]) {
         
         NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
@@ -112,7 +108,5 @@
     }
     
 }
-
-
 
 @end

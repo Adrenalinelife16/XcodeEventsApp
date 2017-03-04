@@ -13,7 +13,4 @@
     __weak IBOutlet UITextView * BetaPageText;
 }
 
--(IBAction)btnCreateEvent:(id)sender;
--(IBAction)btnDiscoverCategories:(id)sender;
-
 @end

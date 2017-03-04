@@ -70,6 +70,9 @@
 		7293CFB31E0D9C5500E310C0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAF1E0D9C5500E310C0 /* FBSDKShareKit.framework */; };
 		72C6E3561E563D1000B25C5F /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */; };
 		72DCD05B1E5D2BF700792EEA /* MoreCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */; };
+		72DCD05E1E68716800792EEA /* More Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DCD05C1E68716800792EEA /* More Filled-50.png */; };
+		72DCD05F1E68716800792EEA /* More-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DCD05D1E68716800792EEA /* More-50.png */; };
+		72DCD0611E687AF200792EEA /* Back-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DCD0601E687AF200792EEA /* Back-50.png */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
 		7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916556719044E6900F4D9D3 /* MyEventTickets.m */; };
@@ -361,6 +364,9 @@
 		72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		72DCD0591E5D2BF700792EEA /* MoreCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCustomCell.h; sourceTree = "<group>"; };
 		72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCustomCell.m; sourceTree = "<group>"; };
+		72DCD05C1E68716800792EEA /* More Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "More Filled-50.png"; sourceTree = "<group>"; };
+		72DCD05D1E68716800792EEA /* More-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "More-50.png"; sourceTree = "<group>"; };
+		72DCD0601E687AF200792EEA /* Back-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Back-50.png"; path = "../../../../../../Downloads/Back-50.png"; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
 		790AE0B318F9862500FBE2F2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
@@ -1092,7 +1098,6 @@
 		BB303D9F18B863E300B6EBC9 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				E279AD9B1E653D1900D3B192 /* Discover */,
 				7225BD1E1E4AA76C00A35D30 /* Notes */,
 				725535CA1E1416260070D5B5 /* Events.entitlements */,
 				793508D0192132240001CC34 /* core data stack */,
@@ -1101,6 +1106,7 @@
 				79691C7D18EFFEDC00ABD52D /* Common Classes */,
 				7920A7AE1921F184001808B6 /* TSMiniWebBrowser */,
 				7982241A18F70949009FA42E /* Registration */,
+				E279AD9B1E653D1900D3B192 /* Discover */,
 				E2AB03221E4ADFAC00EAA5BF /* Create Event */,
 				7982241918F70946009FA42E /* Login */,
 				7225BD121E48B78F00A35D30 /* Logout */,
@@ -1511,6 +1517,7 @@
 				711221EC18BC94F900E77A4A /* RedDot@2x.png in Resources */,
 				BB303E0918B86B3400B6EBC9 /* Program.png in Resources */,
 				BB303E2718B879AA00B6EBC9 /* Reload.png in Resources */,
+				72DCD0611E687AF200792EEA /* Back-50.png in Resources */,
 				BB303DB018B863E300B6EBC9 /* Main_iPad.storyboard in Resources */,
 				79E815631953481800E58344 /* Icon.png in Resources */,
 				E29A6BE81E6AA3AD0041F782 /* HighResIconRed.png in Resources */,
@@ -1592,6 +1599,7 @@
 				7112221818BCC14B00E77A4A /* arrow.png in Resources */,
 				7972E97A195355B100F25E4D /* icon-feed-twitter@2x.png in Resources */,
 				E2AB03211E4AA95300EAA5BF /* CheckList in Resources */,
+				72DCD05E1E68716800792EEA /* More Filled-50.png in Resources */,
 				BB303E2C18B879AA00B6EBC9 /* Twitter@2x.png in Resources */,
 				7122DB1C18BB459C00C044E8 /* feedviewCell3@2x.png in Resources */,
 				7112220318BCA62300E77A4A /* sendto.png in Resources */,

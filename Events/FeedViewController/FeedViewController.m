@@ -52,9 +52,10 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+     self.navigationItem.title = @"Social Feed";
     [Utility afterDelay:0.01 withCompletion:^{
-        [DSBezelActivityView newActivityViewForView:self.view.window];
-        [self getFeedsFromServer];
+    [DSBezelActivityView newActivityViewForView:self.view.window];
+    [self getFeedsFromServer];
         
 //  Uncomment after BETA release
         
