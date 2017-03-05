@@ -43,6 +43,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+ //   self.navigationController.navigationBar.topItem.title = @"";
+ //   [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    
+}
+
 /*
 #pragma mark - Navigation
 

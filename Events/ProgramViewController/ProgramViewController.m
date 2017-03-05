@@ -31,8 +31,6 @@
 - (IBAction)Search:(UIBarButtonItem *)sender;
 
 
-
-
 @property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
 @property (strong, nonatomic) UISearchController *controller;
 @property (strong, nonatomic) NSArray *results;
@@ -216,8 +214,9 @@
      
      }];
 }
-////////////////////////////////////////TableView/////////////////////////////////////////////////////
+
 #pragma mark - Table view data source
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
@@ -272,8 +271,6 @@
     
     return cell;
 }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation
@@ -291,7 +288,7 @@
     
 }
 
-/////////////////////Search Bar Code///////////////////@"ProgamViewController"
+#pragma mark - Search Events
 
 - (UISearchController *)controller {
     
@@ -309,7 +306,7 @@
     }
     return _controller;
 }
-/////////////////////
+
 #pragma mark - Search Results Updater
 
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
@@ -319,17 +316,11 @@
     //NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains [cd] %@", self.controller.searchBar.text];
     self.results = [self->arrayEventList filteredArrayUsingPredicate:predicate];
     
-    
 }
-/////////////////////
+
+
 - (IBAction)searchButtonPressed:(id)sender {
     [self presentViewController:self.controller animated:YES completion:nil];
 }
-/////////////////////
-
-
-
-
-////////////////////////////////////////////////////////
 
 @end

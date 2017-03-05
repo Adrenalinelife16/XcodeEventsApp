@@ -46,9 +46,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationController.navigationBar.topItem.title = @"";
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
-
+    
 	// Do any additional setup after loading the view.
     [self initializeNavigationBar];
     
@@ -71,6 +69,14 @@
     
     [super viewWillAppear:YES];
     self.tabBarController.tabBar.hidden=NO;
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    
+    // Reset Event Name
+    
+    descriptionTextHeight = [Utility getTextSize:self.eventObj.eventDescription textWidth:300 fontSize:14.0f lineBreakMode:NSLineBreakByWordWrapping].height;
+
+    
     /**
      *  get location using locationmanager singleton class
      */

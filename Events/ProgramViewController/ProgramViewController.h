@@ -10,7 +10,6 @@
 
 @interface ProgramViewController : UITableViewController
 
-@property (strong, nonatomic) UISearchController *searchController;
 
 
 @end
