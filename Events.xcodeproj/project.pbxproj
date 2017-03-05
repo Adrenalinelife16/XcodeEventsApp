@@ -252,6 +252,10 @@
 		E279ADB11E654CAC00D3B192 /* MORE.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA71E654CAC00D3B192 /* MORE.png */; };
 		E279ADB21E654CAC00D3B192 /* KickBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA81E654CAC00D3B192 /* KickBall.png */; };
 		E279ADB91E66172200D3B192 /* SearchCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E279ADB81E66172200D3B192 /* SearchCustomCell.m */; };
+		E29A6BE11E6AA2160041F782 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A6BE01E6AA2160041F782 /* HelpViewController.m */; };
+		E29A6BE41E6AA2400041F782 /* TermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A6BE31E6AA2400041F782 /* TermsViewController.m */; };
+		E29A6BE61E6AA3950041F782 /* TransHighResFullLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = E29A6BE51E6AA3950041F782 /* TransHighResFullLogo.png */; };
+		E29A6BE81E6AA3AD0041F782 /* HighResIconRed.png in Resources */ = {isa = PBXBuildFile; fileRef = E29A6BE71E6AA3AD0041F782 /* HighResIconRed.png */; };
 		E2A54D421E4DC03B00091538 /* BetaPageBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */; };
 		E2A54D431E4DC03B00091538 /* CreateEventBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D401E4DC03B00091538 /* CreateEventBtn.png */; };
 		E2A54D441E4DC03B00091538 /* DiscoverBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A54D411E4DC03B00091538 /* DiscoverBtn.png */; };
@@ -608,6 +612,12 @@
 		E279ADA81E654CAC00D3B192 /* KickBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KickBall.png; sourceTree = "<group>"; };
 		E279ADB71E66172200D3B192 /* SearchCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCustomCell.h; sourceTree = "<group>"; };
 		E279ADB81E66172200D3B192 /* SearchCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCustomCell.m; sourceTree = "<group>"; };
+		E29A6BDF1E6AA2160041F782 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		E29A6BE01E6AA2160041F782 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		E29A6BE21E6AA2400041F782 /* TermsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewController.h; sourceTree = "<group>"; };
+		E29A6BE31E6AA2400041F782 /* TermsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsViewController.m; sourceTree = "<group>"; };
+		E29A6BE51E6AA3950041F782 /* TransHighResFullLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TransHighResFullLogo.png; sourceTree = "<group>"; };
+		E29A6BE71E6AA3AD0041F782 /* HighResIconRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HighResIconRed.png; sourceTree = "<group>"; };
 		E2A54D3F1E4DC03B00091538 /* BetaPageBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPageBG.png; sourceTree = "<group>"; };
 		E2A54D401E4DC03B00091538 /* CreateEventBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreateEventBtn.png; sourceTree = "<group>"; };
 		E2A54D411E4DC03B00091538 /* DiscoverBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoverBtn.png; sourceTree = "<group>"; };
@@ -713,6 +723,10 @@
 				72DCD0581E5D2BDD00792EEA /* MoreCustomCell */,
 				7112223F18BCD7E700E77A4A /* MoreViewController.h */,
 				7112224018BCD7E800E77A4A /* MoreViewController.m */,
+				E29A6BDF1E6AA2160041F782 /* HelpViewController.h */,
+				E29A6BE01E6AA2160041F782 /* HelpViewController.m */,
+				E29A6BE21E6AA2400041F782 /* TermsViewController.h */,
+				E29A6BE31E6AA2400041F782 /* TermsViewController.m */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -1149,9 +1163,8 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				72DCD0601E687AF200792EEA /* Back-50.png */,
-				72DCD05C1E68716800792EEA /* More Filled-50.png */,
-				72DCD05D1E68716800792EEA /* More-50.png */,
+				E29A6BE71E6AA3AD0041F782 /* HighResIconRed.png */,
+				E29A6BE51E6AA3950041F782 /* TransHighResFullLogo.png */,
 				E279AD9F1E654CAC00D3B192 /* Fishing.png */,
 				E279ADA01E654CAC00D3B192 /* Golf.png */,
 				E279ADA11E654CAC00D3B192 /* Frisbee.png */,
@@ -1507,7 +1520,7 @@
 				72DCD0611E687AF200792EEA /* Back-50.png in Resources */,
 				BB303DB018B863E300B6EBC9 /* Main_iPad.storyboard in Resources */,
 				79E815631953481800E58344 /* Icon.png in Resources */,
-				72DCD05F1E68716800792EEA /* More-50.png in Resources */,
+				E29A6BE81E6AA3AD0041F782 /* HighResIconRed.png in Resources */,
 				BB303E0B18B86B3400B6EBC9 /* Programred.png in Resources */,
 				BB303E0218B86B3400B6EBC9 /* Livello2@2x.png in Resources */,
 				7122DB1E18BB459C00C044E8 /* feedviewCell2@2x.png in Resources */,
@@ -1526,6 +1539,7 @@
 				7112221118BCB67600E77A4A /* registerBtn@2x.png in Resources */,
 				BB303DF418B86B3400B6EBC9 /* Aboutred@2x.png in Resources */,
 				BB303DF918B86B3400B6EBC9 /* Feedred.png in Resources */,
+				E29A6BE61E6AA3950041F782 /* TransHighResFullLogo.png in Resources */,
 				BB303DFA18B86B3400B6EBC9 /* Feedred@2x.png in Resources */,
 				E279ADB21E654CAC00D3B192 /* KickBall.png in Resources */,
 				E279ADAD1E654CAC00D3B192 /* Tennis.png in Resources */,
@@ -1677,6 +1691,7 @@
 				7122DB1418BB1F7300C044E8 /* SecondFeedCustomCell.m in Sources */,
 				7987137C18F0748800727E1A /* MyAnnotation.m in Sources */,
 				BB303DAA18B863E300B6EBC9 /* AppDelegate.m in Sources */,
+				E29A6BE11E6AA2160041F782 /* HelpViewController.m in Sources */,
 				798D9DFF18F15EE900A69513 /* SDWebImageCompat.m in Sources */,
 				791E3DE918F320A300220BDE /* NSString+HTML.m in Sources */,
 				7112222D18BCC69300E77A4A /* AboutCustomCell1.m in Sources */,
@@ -1709,6 +1724,7 @@
 				790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */,
 				7112222F18BCC69300E77A4A /* AboutCustomCell3.m in Sources */,
 				798D9E2218F15F2000A69513 /* UIImage+GIF.m in Sources */,
+				E29A6BE41E6AA2400041F782 /* TermsViewController.m in Sources */,
 				7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */,
 				72C6E3561E563D1000B25C5F /* SearchResultsTableViewController.m in Sources */,
 				798D9E0418F15EF800A69513 /* SDWebImageDownloader.m in Sources */,
