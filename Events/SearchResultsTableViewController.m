@@ -14,7 +14,7 @@
 #import "UIImageView+WebCache.h"
 #import "AboutViewController.h"
 
-@interface SearchResultsTableViewController ()
+@interface SearchResultsTableViewController () <UITableViewDelegate,UITableViewDataSource>
 {
     
     NSMutableArray *arrayEventList;

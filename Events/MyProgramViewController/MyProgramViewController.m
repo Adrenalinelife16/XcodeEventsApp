@@ -52,8 +52,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     self.navigationItem.title = @"My Events";
-    
     segmentPosition=0;
     //set current date as event date before getting from server
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
@@ -67,6 +65,12 @@
     [self clickedMyCalender:nil];
     
    }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationItem.title = @"My Events";
+}
 
 
 - (void)didReceiveMemoryWarning
