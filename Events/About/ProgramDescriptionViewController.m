@@ -47,7 +47,7 @@
 {
     [super viewWillAppear:animated];
  //   self.navigationController.navigationBar.topItem.title = @"";
- //   [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     
 }
 

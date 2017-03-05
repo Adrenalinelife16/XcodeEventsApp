@@ -71,9 +71,8 @@
     [super viewWillAppear:YES];
     self.navigationItem.title = @"Events";
 
-//      Uncomment after BETA release
     
-//    [self checkLogin];
+    [self checkLogin];
     
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;

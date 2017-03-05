@@ -11,7 +11,6 @@
 #import "MoreCustomCell.h"
 
 
-
 @interface MoreViewController ()
 
 
@@ -36,7 +35,7 @@
     
     // @"Settings"
     moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", @"About Us", nil];
- //   [self checkLogin];
+    [self checkLogin];
 
     
     }
@@ -56,9 +55,7 @@
 }
 
 
-// Un comment ater Beta Release
 
-/*
 #pragma mark - Check login for MyFavorite and MyTickets
 -(void)checkLogin
 {
@@ -75,7 +72,7 @@
         [moreArray addObject:@"Login"];
     }
 }
-*/
+
 
 #pragma mark - Table view data source
 
@@ -127,13 +124,8 @@
     {
         [self performSegueWithIdentifier:@"aboutUs" sender:self];
     }
-    
-    /*
-    else if(indexPath.row==2)
-    {
-        [self performSegueWithIdentifier:@"pushSettings" sender:self];
-    }
-    else if(indexPath.row==2)
+
+    else if(indexPath.row==3)
     {
         
         NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
@@ -147,7 +139,6 @@
 
         }
     }
-     */
 }
 
 

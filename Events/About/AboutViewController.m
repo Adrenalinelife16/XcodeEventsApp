@@ -69,8 +69,6 @@
     
     [super viewWillAppear:YES];
     self.tabBarController.tabBar.hidden=NO;
-    self.navigationController.navigationBar.topItem.title = @"";
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     
     // Reset Event Name
     
