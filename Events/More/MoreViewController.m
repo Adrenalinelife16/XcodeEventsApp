@@ -64,7 +64,10 @@
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])  {
         NSLog(@"User ID is %@", strUserID);
         
+        
+        [moreArray addObject:@"Me Events"];
         [moreArray addObject:@"Logout"];
+        
 
     }
     else

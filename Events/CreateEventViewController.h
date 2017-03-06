@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CreateEventViewController : UIViewController
-{
-    __weak IBOutlet UITextView * BetaPageText;
-}
+
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
+
 
 @end

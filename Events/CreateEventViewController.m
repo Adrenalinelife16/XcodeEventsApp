@@ -7,7 +7,7 @@
 //
 
 #import "CreateEventViewController.h"
-#import "FeedDetailViewController.h"
+
 
 @interface CreateEventViewController ()
 
@@ -17,12 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1000)];
      self.navigationItem.title = @"Create Event";
-    // Do any additional setup after loading the view.
-    BetaPageText.text = NSLocalizedString(@"CONTENT_BETAPAGE", @"CONTENT_BETAPAGE");
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,12 +32,10 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    FeedDetailViewController *feedDetailVwController = [segue destinationViewController];
-    if ([[segue identifier] isEqualToString:@"CreateWebView"]) {
-        feedDetailVwController.strFeedURL   =   [NSString stringWithFormat:@"http://www.adrenalinelife.org/create-event/"];
-    }
-    
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+
+{
+ 
 }
 
 
