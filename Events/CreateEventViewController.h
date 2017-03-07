@@ -15,7 +15,12 @@
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
 
+@property (strong, nonatomic) IBOutlet UITextField *eventName;
 @property (strong, nonatomic) IBOutlet UITextField *startText;
 @property (strong, nonatomic) IBOutlet UITextField *endText;
+
+@property (strong, nonatomic) IBOutlet UITextView *detailView;
+
+
 
 @end
