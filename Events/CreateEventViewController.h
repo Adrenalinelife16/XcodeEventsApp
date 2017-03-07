@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface CreateEventViewController : UIViewController
+{
+    UIDatePicker *datePicker;
+}
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
 
+@property (strong, nonatomic) IBOutlet UITextField *startText;
+@property (strong, nonatomic) IBOutlet UITextField *endText;
 
 @end
