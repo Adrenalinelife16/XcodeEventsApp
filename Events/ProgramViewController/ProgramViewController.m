@@ -62,7 +62,7 @@
     
     SearchResultsTableViewController *searchResults = (SearchResultsTableViewController *) self.controller.searchResultsController;
     [self addObserver:searchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
-   
+   [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
 }
 
 
