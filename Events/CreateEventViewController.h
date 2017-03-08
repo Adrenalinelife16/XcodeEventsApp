@@ -23,4 +23,8 @@
 
 
 
+@property (nonatomic, retain) NSString *titleText;
+
+
+
 @end

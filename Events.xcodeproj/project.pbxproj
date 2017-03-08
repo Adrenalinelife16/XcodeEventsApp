@@ -70,6 +70,7 @@
 		7293CFB31E0D9C5500E310C0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAF1E0D9C5500E310C0 /* FBSDKShareKit.framework */; };
 		72C6E3561E563D1000B25C5F /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */; };
 		72DCD05B1E5D2BF700792EEA /* MoreCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */; };
+		72DCD06D1E706C0200792EEA /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
 		7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916556719044E6900F4D9D3 /* MyEventTickets.m */; };
@@ -362,6 +363,8 @@
 		72DCD0591E5D2BF700792EEA /* MoreCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCustomCell.h; sourceTree = "<group>"; };
 		72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCustomCell.m; sourceTree = "<group>"; };
 		72DCD0681E6C979A00792EEA /* Back-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Back-50.png"; path = "../../../../../../Downloads/Back-50.png"; sourceTree = "<group>"; };
+		72DCD06B1E706C0200792EEA /* CategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewController.h; sourceTree = "<group>"; };
+		72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewController.m; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
 		790AE0B318F9862500FBE2F2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
@@ -796,6 +799,15 @@
 			name = MoreCustomCell;
 			sourceTree = "<group>";
 		};
+		72DCD06A1E706BDF00792EEA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				72DCD06B1E706C0200792EEA /* CategoryTableViewController.h */,
+				72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		791E3DE418F3208D00220BDE /* HTML string convertion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1103,6 +1115,7 @@
 				7920A7AE1921F184001808B6 /* TSMiniWebBrowser */,
 				7982241A18F70949009FA42E /* Registration */,
 				E279AD9B1E653D1900D3B192 /* Discover */,
+				72DCD06A1E706BDF00792EEA /* Category */,
 				E2AB03221E4ADFAC00EAA5BF /* Create Event */,
 				7982241918F70946009FA42E /* Login */,
 				7225BD121E48B78F00A35D30 /* Logout */,
@@ -1654,6 +1667,7 @@
 				798D9E0F18F15F1400A69513 /* SDWebImageManager.m in Sources */,
 				79504C4A191F8B1F00EF3103 /* CustomDatePicker.m in Sources */,
 				793508DE192138240001CC34 /* FavouriteEvents.m in Sources */,
+				72DCD06D1E706C0200792EEA /* CategoryTableViewController.m in Sources */,
 				79691D0518F00C8700ABD52D /* ASIDataDecompressor.m in Sources */,
 				79691CAE18EFFF1F00ABD52D /* SBJsonWriter.m in Sources */,
 				E279ADB91E66172200D3B192 /* SearchCustomCell.m in Sources */,

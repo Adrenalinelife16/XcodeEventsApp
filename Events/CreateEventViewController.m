@@ -15,15 +15,17 @@
 
 @implementation CreateEventViewController
 
+@synthesize titleText;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 2000)];
-     self.navigationItem.title = @"Create Event";
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     self.detailView.layer.borderWidth = 1.0f;
     self.detailView.layer.borderColor = [[UIColor blackColor] CGColor];
+    self.navigationItem.title = titleText;
     
 }
 
