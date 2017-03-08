@@ -20,12 +20,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 2000)];
+    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1550)];
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     self.detailView.layer.borderWidth = 1.0f;
     self.detailView.layer.borderColor = [[UIColor blackColor] CGColor];
     self.navigationItem.title = titleText;
+    _buttonBorder.layer.borderWidth = 1.0f;
+    [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
     
 }
 
@@ -33,10 +35,27 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+/*
+#pragma mark - Submit Event to server
+
+- (IBAction)submitEvent:(id)sender
+{
+    NSLog(@"Submit Event Tapped");
+}
+
+
+#pragma mark - Upload Photo from iPhone
+- (IBAction)uploadImageClicked:(id)sender
+{
+    NSLog(@"Upload Image Tapped");
+}
+*/
+
 - (IBAction)startDate:(UITextField *)sender
 {
     
-
     datePicker=[[UIDatePicker alloc]init];
     datePicker.datePickerMode=UIDatePickerModeDateAndTime;
     [self.startText setInputView:datePicker];

@@ -11,16 +11,15 @@
 @interface CreateEventViewController : UIViewController
 {
     UIDatePicker *datePicker;
+
 }
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
-
 @property (strong, nonatomic) IBOutlet UITextField *eventName;
 @property (strong, nonatomic) IBOutlet UITextField *startText;
 @property (strong, nonatomic) IBOutlet UITextField *endText;
-
 @property (strong, nonatomic) IBOutlet UITextView *detailView;
-
+@property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
 
 
 @property (nonatomic, retain) NSString *titleText;
