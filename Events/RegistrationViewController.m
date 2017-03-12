@@ -197,10 +197,9 @@
     {
         [self CheckPasswordMatch];
     }
-    
-    
+ 
     if ([message length]>0) {
-        [Utility alertNotice:@"" withMSG:message cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        [Utility alertNotice:APPNAME withMSG:message cancleButtonTitle:@"OK" otherButtonTitle:nil];
         return NO;
     }
     return YES;

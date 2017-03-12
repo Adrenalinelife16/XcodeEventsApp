@@ -97,8 +97,24 @@
     [sender endRefreshing];
 }
 
+#pragma mark - Create Event
+
+-(IBAction)createEvent:(id)sender
+{
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
+        
+        [self performSegueWithIdentifier:@"CEcategory" sender:self];
+    
+    else
+    {
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"User must login to create an event!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [av show];
+    }
+}
+
 #pragma mark - Check login
--(void)checkLogin
+-(BOOL)checkLogin
 {
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
@@ -107,10 +123,11 @@
     
     else
     {
+        
         NSLog(@"User is logged out!");
+        
     }
-
-    
+    return YES;
 }
 
 /*

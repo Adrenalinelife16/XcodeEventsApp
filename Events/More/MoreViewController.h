@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MoreViewController : UITableViewController
+@interface MoreViewController : UITableViewController <UIActionSheetDelegate>
 {
-NSMutableArray *moreArray;
+    NSMutableArray *moreArray;
+    UIActionSheet *logoutSheet;
 }
 
 

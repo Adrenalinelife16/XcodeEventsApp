@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1550)];
+    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1620)];
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     self.detailView.layer.borderWidth = 1.0f;
@@ -28,6 +28,9 @@
     self.navigationItem.title = titleText;
     _buttonBorder.layer.borderWidth = 1.0f;
     [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+
     
 }
 
@@ -37,12 +40,22 @@
 }
 
 
-/*
+
 #pragma mark - Submit Event to server
 
 - (IBAction)submitEvent:(id)sender
 {
-    NSLog(@"Submit Event Tapped");
+    
+//    NSString *Fname = txtFirstName.text;
+//    NSString *Lname = txtLastName.text;
+//    NSString *FirstLast = [NSString stringWithFormat:@" %@ %@", Fname, Lname];
+//    
+//    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:FirstLast,@"name",self.txtEmail.text,@"email",self.txtPassword.text,@"pwd", nil];
+//    
+//    [Utility GetDataForMethod:NSLocalizedString(@"REGISTER_METHOD", @"REGISTER_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+//        
+    [self.navigationController popViewControllerAnimated:NO];
+    
 }
 
 
@@ -51,11 +64,59 @@
 {
     NSLog(@"Upload Image Tapped");
 }
-*/
+
+
+#pragma mark - Check registration Field validations
+-(BOOL)IsValid
+{
+    NSString *message   =   @"";
+    
+    if (!([self.eventName.text length]>0)) {
+        message     =   @"Please enter event name!";
+    }
+    else if (!([self.startText.text length]>0)) {
+        message     =   @"Please enter start date!";
+    }else if (!([self.endText.text length]>0)) {
+        message     =   @"Please enter end date!";
+    }
+    else if (!([self.locationName.text length]>0)) {
+        message     =   @"Please enter location name!";
+    }
+    else if (!([self.address.text length]>0)) {
+        message     =   @"Please enter address!";
+    }
+    else if (!([self.city.text length]>0)) {
+        message     =   @"Please enter city!";
+    }
+    else if (!([self.state.text length]>0)) {
+        message     =   @"Please enter state!";
+    }
+    else if (!([self.zipCode.text length]>0)){
+        message     =   @"Please enter zip code!";
+    }
+    else if (!([self.detailView.text length]>0)){
+        message     =   @"Please enter description of event!";
+    }
+
+    else
+    {
+   // Do something here if you want
+    }
+    
+    
+    if ([message length]>0) {
+        [Utility alertNotice:APPNAME withMSG:message cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        return NO;
+    }
+    return YES;
+}
+
+
+
+#pragma mark - Date Picker
 
 - (IBAction)startDate:(UITextField *)sender
 {
-    
     datePicker=[[UIDatePicker alloc]init];
     datePicker.datePickerMode=UIDatePickerModeDateAndTime;
     [self.startText setInputView:datePicker];
@@ -65,7 +126,6 @@
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
     [self.startText setInputAccessoryView:toolBar];
-
 
 }
 - (IBAction)endDate:(UITextField *)sender

@@ -63,11 +63,7 @@
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])  {
         NSLog(@"User ID is %@", strUserID);
-        
-        
-        [moreArray addObject:@"Me Events"];
         [moreArray addObject:@"Logout"];
-        
 
     }
     else
@@ -133,17 +129,64 @@
         
         NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
         if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
-            
-            [self performSegueWithIdentifier:@"logoutPush" sender:self];
         
+            [self logoutSheet];
         else
         {
             [self performSegueWithIdentifier:@"loginRegister" sender:self];
-
         }
+       
     }
 }
 
+- (void)logoutSheet
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"Are you sure you want to logout?"
+                                preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *logout = [UIAlertAction actionWithTitle:@"Logout" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action)
+        {
+            [self resetDefaults];
+            
+            NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+            
+            NSLog(@"User ID after logout is %@", strUserID);
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [av show];
+            [self dismissModalStack];
+            [self.tabBarController setSelectedIndex:0];
+
+            
+            
+        }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action)
+        {
+         [self.tableView reloadData];
+        }];
+    
+    [alert addAction:logout];
+    [alert addAction:cancel];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+
+- (void)resetDefaults {
+    NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+    NSDictionary * dict = [defs dictionaryRepresentation];
+    for (id key in dict) {
+        [defs removeObjectForKey:key];
+    }
+    [defs synchronize];
+}
+
+-(void)dismissModalStack {
+    UIViewController *vc = self.presentingViewController;
+    while (vc.presentingViewController) {
+        vc = vc.presentingViewController;
+    }
+    [vc dismissViewControllerAnimated:YES completion:NULL];
+}
 
 #pragma mark - Navigation
 /*

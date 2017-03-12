@@ -23,6 +23,7 @@
 "GETFEEDS_METHOD"           =   "/webservices/tweet-fb.php";
 "LOGIN_METHOD"              =   "/api/Login";
 "REGISTER_METHOD"           =   "/api/Register";
+"CREATE_EVENT_METHOD"       =   "/api/CreateEvent";
 
 
 //About View Contents

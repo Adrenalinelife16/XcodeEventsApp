@@ -60,7 +60,6 @@
 		7122DC1518BDE6D900DC9925 /* VRGCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122DC1418BDE6D900DC9925 /* VRGCalendarView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7122DC1718BDFB7B00DC9925 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1618BDFB7B00DC9925 /* MapKit.framework */; };
 		7122DC1918BDFB8100DC9925 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1818BDFB8100DC9925 /* CoreLocation.framework */; };
-		7225BD151E492DA600A35D30 /* LogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7225BD141E492DA600A35D30 /* LogoutViewController.m */; };
 		7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */; };
 		7225BD201E4AA78200A35D30 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1F1E4AA78200A35D30 /* Notes */; };
 		7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */; };
@@ -348,8 +347,6 @@
 		7122DC1418BDE6D900DC9925 /* VRGCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRGCalendarView.m; sourceTree = "<group>"; };
 		7122DC1618BDFB7B00DC9925 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7122DC1818BDFB8100DC9925 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		7225BD131E492DA600A35D30 /* LogoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutViewController.h; sourceTree = "<group>"; };
-		7225BD141E492DA600A35D30 /* LogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoutViewController.m; sourceTree = "<group>"; };
 		7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		7225BD1F1E4AA78200A35D30 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		725535CA1E1416260070D5B5 /* Events.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Events.entitlements; sourceTree = "<group>"; };
@@ -762,15 +759,6 @@
 			path = MyProgramCustomCell;
 			sourceTree = "<group>";
 		};
-		7225BD121E48B78F00A35D30 /* Logout */ = {
-			isa = PBXGroup;
-			children = (
-				7225BD131E492DA600A35D30 /* LogoutViewController.h */,
-				7225BD141E492DA600A35D30 /* LogoutViewController.m */,
-			);
-			name = Logout;
-			sourceTree = "<group>";
-		};
 		7225BD1E1E4AA76C00A35D30 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1118,7 +1106,6 @@
 				72DCD06A1E706BDF00792EEA /* Category */,
 				E2AB03221E4ADFAC00EAA5BF /* Create Event */,
 				7982241918F70946009FA42E /* Login */,
-				7225BD121E48B78F00A35D30 /* Logout */,
 				7112223E18BCD7E700E77A4A /* More */,
 				7112220A18BCAEFF00E77A4A /* About */,
 				711221D118BC62DD00E77A4A /* Calendar */,
@@ -1717,7 +1704,6 @@
 				79691CD318F0086100ABD52D /* Reachability.m in Sources */,
 				79691CAD18EFFF1F00ABD52D /* SBJsonParser.m in Sources */,
 				79691D0418F00C8700ABD52D /* ASIDataCompressor.m in Sources */,
-				7225BD151E492DA600A35D30 /* LogoutViewController.m in Sources */,
 				79691D1F18F02EA900ABD52D /* DSActivityView.m in Sources */,
 				799499EE190985A6008AC6BD /* AbouViewControllers.m in Sources */,
 				798D9E1018F15F1400A69513 /* SDWebImageDecoder.m in Sources */,
