@@ -1,14 +1,17 @@
 //
-//  ProgramCustomCell.h
+//  ProgramCustomCell2.h
 //  Events
 //
-//  Created by Chazz Romeo, Michael Cather & Josh Martin.
-//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
+//  Created by Lamar Artare on 3/13/17.
+//  Copyright © 2017 Teknowledge Software. All rights reserved.
 //
 
+#import "ProgramCustomCell.h"
 #import <UIKit/UIKit.h>
 
-@interface ProgramCustomCell : UITableViewCell
+
+@interface ProgramCustomCell2 : UITableViewCell
+
 @property (strong, nonatomic) IBOutlet UIImageView *images;
 @property (strong, nonatomic) IBOutlet UILabel *lblDateTime;
 @property (strong, nonatomic) IBOutlet UILabel *lblEventName;

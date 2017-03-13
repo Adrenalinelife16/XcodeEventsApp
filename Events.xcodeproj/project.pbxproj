@@ -36,7 +36,6 @@
 		7112223318BCCBB300E77A4A /* MapTempImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7112223118BCCBB300E77A4A /* MapTempImage@2x.png */; };
 		7112223A18BCD08700E77A4A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7112223918BCD08700E77A4A /* MapViewController.m */; };
 		7112224118BCD7E800E77A4A /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7112224018BCD7E800E77A4A /* MoreViewController.m */; };
-		7122DB0818BB1F5C00C044E8 /* ProgramCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122DB0718BB1F5C00C044E8 /* ProgramCustomCell.m */; };
 		7122DB1218BB1F7300C044E8 /* FeedCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122DB0B18BB1F7300C044E8 /* FeedCustomCell.m */; };
 		7122DB1418BB1F7300C044E8 /* SecondFeedCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122DB0F18BB1F7300C044E8 /* SecondFeedCustomCell.m */; };
 		7122DB1518BB1F7300C044E8 /* ThirdFeedCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122DB1118BB1F7300C044E8 /* ThirdFeedCustomCell.m */; };
@@ -249,6 +248,8 @@
 		E279ADB11E654CAC00D3B192 /* MORE.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA71E654CAC00D3B192 /* MORE.png */; };
 		E279ADB21E654CAC00D3B192 /* KickBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA81E654CAC00D3B192 /* KickBall.png */; };
 		E279ADB91E66172200D3B192 /* SearchCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E279ADB81E66172200D3B192 /* SearchCustomCell.m */; };
+		E284A87A1E76F3C700E9ECA3 /* ProgramCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E284A8791E76F3C700E9ECA3 /* ProgramCustomCell.m */; };
+		E284A87E1E76F41B00E9ECA3 /* ProgramCustomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = E284A87D1E76F41B00E9ECA3 /* ProgramCustomCell2.m */; };
 		E29A6BE11E6AA2160041F782 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A6BE01E6AA2160041F782 /* HelpViewController.m */; };
 		E29A6BE41E6AA2400041F782 /* TermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A6BE31E6AA2400041F782 /* TermsViewController.m */; };
 		E29A6BE61E6AA3950041F782 /* TransHighResFullLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = E29A6BE51E6AA3950041F782 /* TransHighResFullLogo.png */; };
@@ -317,8 +318,6 @@
 		7112223918BCD08700E77A4A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		7112223F18BCD7E700E77A4A /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		7112224018BCD7E800E77A4A /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
-		7122DB0618BB1F5C00C044E8 /* ProgramCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramCustomCell.h; sourceTree = "<group>"; };
-		7122DB0718BB1F5C00C044E8 /* ProgramCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramCustomCell.m; sourceTree = "<group>"; };
 		7122DB0A18BB1F7300C044E8 /* FeedCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedCustomCell.h; sourceTree = "<group>"; };
 		7122DB0B18BB1F7300C044E8 /* FeedCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedCustomCell.m; sourceTree = "<group>"; };
 		7122DB0E18BB1F7300C044E8 /* SecondFeedCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondFeedCustomCell.h; sourceTree = "<group>"; };
@@ -607,6 +606,10 @@
 		E279ADA81E654CAC00D3B192 /* KickBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KickBall.png; sourceTree = "<group>"; };
 		E279ADB71E66172200D3B192 /* SearchCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCustomCell.h; sourceTree = "<group>"; };
 		E279ADB81E66172200D3B192 /* SearchCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCustomCell.m; sourceTree = "<group>"; };
+		E284A8781E76F3C700E9ECA3 /* ProgramCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgramCustomCell.h; path = Events/ProgramViewController/ProgramCustomCell.h; sourceTree = SOURCE_ROOT; };
+		E284A8791E76F3C700E9ECA3 /* ProgramCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgramCustomCell.m; path = Events/ProgramViewController/ProgramCustomCell.m; sourceTree = SOURCE_ROOT; };
+		E284A87C1E76F41B00E9ECA3 /* ProgramCustomCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramCustomCell2.h; sourceTree = "<group>"; };
+		E284A87D1E76F41B00E9ECA3 /* ProgramCustomCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramCustomCell2.m; sourceTree = "<group>"; };
 		E29A6BDF1E6AA2160041F782 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		E29A6BE01E6AA2160041F782 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		E29A6BE21E6AA2400041F782 /* TermsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewController.h; sourceTree = "<group>"; };
@@ -729,8 +732,8 @@
 		7122DB0518BB1F5C00C044E8 /* ProgramCustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				7122DB0618BB1F5C00C044E8 /* ProgramCustomCell.h */,
-				7122DB0718BB1F5C00C044E8 /* ProgramCustomCell.m */,
+				E284A8781E76F3C700E9ECA3 /* ProgramCustomCell.h */,
+				E284A8791E76F3C700E9ECA3 /* ProgramCustomCell.m */,
 			);
 			path = ProgramCustomCell;
 			sourceTree = "<group>";
@@ -1310,6 +1313,7 @@
 		BB303E3118B8801C00B6EBC9 /* ProgramViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E284A87B1E76F40800E9ECA3 /* ProgramCustomCell2 */,
 				7122DB0518BB1F5C00C044E8 /* ProgramCustomCell */,
 				BB303E3218B8802E00B6EBC9 /* ProgramViewController.h */,
 				BB303E3318B8802E00B6EBC9 /* ProgramViewController.m */,
@@ -1355,6 +1359,15 @@
 				E279ADB81E66172200D3B192 /* SearchCustomCell.m */,
 			);
 			name = SearchCustomCell;
+			sourceTree = "<group>";
+		};
+		E284A87B1E76F40800E9ECA3 /* ProgramCustomCell2 */ = {
+			isa = PBXGroup;
+			children = (
+				E284A87C1E76F41B00E9ECA3 /* ProgramCustomCell2.h */,
+				E284A87D1E76F41B00E9ECA3 /* ProgramCustomCell2.m */,
+			);
+			name = ProgramCustomCell2;
 			sourceTree = "<group>";
 		};
 		E2AB03221E4ADFAC00EAA5BF /* Create Event */ = {
@@ -1651,6 +1664,7 @@
 				7982242018F7098C009FA42E /* LoginViewController.m in Sources */,
 				7112223A18BCD08700E77A4A /* MapViewController.m in Sources */,
 				798D9E2318F15F2000A69513 /* UIImage+WebP.m in Sources */,
+				E284A87A1E76F3C700E9ECA3 /* ProgramCustomCell.m in Sources */,
 				798D9E0F18F15F1400A69513 /* SDWebImageManager.m in Sources */,
 				79504C4A191F8B1F00EF3103 /* CustomDatePicker.m in Sources */,
 				793508DE192138240001CC34 /* FavouriteEvents.m in Sources */,
@@ -1672,7 +1686,6 @@
 				79691D0218F00C8700ABD52D /* ASIAuthenticationDialog.m in Sources */,
 				798D9E2418F15F2000A69513 /* MKAnnotationView+WebCache.m in Sources */,
 				79691D0818F00C8700ABD52D /* ASIInputStream.m in Sources */,
-				7122DB0818BB1F5C00C044E8 /* ProgramCustomCell.m in Sources */,
 				BB62B12B18B8C07C000DBDBC /* MyProgramViewController.m in Sources */,
 				711221DC18BC62DD00E77A4A /* NSDate+convenience.m in Sources */,
 				79691CA918EFFF1F00ABD52D /* NSObject+SBJSON.m in Sources */,
@@ -1699,6 +1712,7 @@
 				7112224118BCD7E800E77A4A /* MoreViewController.m in Sources */,
 				BB303E3418B8802E00B6EBC9 /* ProgramViewController.m in Sources */,
 				79691CB418EFFFF700ABD52D /* Utility.m in Sources */,
+				E284A87E1E76F41B00E9ECA3 /* ProgramCustomCell2.m in Sources */,
 				7920A7B11921F1B0001808B6 /* TSMiniWebBrowser.m in Sources */,
 				7112222E18BCC69300E77A4A /* AboutCustomCell2.m in Sources */,
 				79691CD318F0086100ABD52D /* Reachability.m in Sources */,

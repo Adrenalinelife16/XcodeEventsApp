@@ -247,12 +247,12 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 155; //162
+    return 210; //162: ProgramCustomCell
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"ProgramCustomCell";
+    static NSString *CellIdentifier = @"ProgramCustomCell2";
     ProgramCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
                                
     if(!cell)
