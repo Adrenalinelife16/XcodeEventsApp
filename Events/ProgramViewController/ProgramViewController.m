@@ -294,7 +294,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([segue.identifier isEqualToString:@"AboutView"]) {
+    if ([segue.identifier isEqualToString:@"AboutView"] || [segue.identifier isEqualToString:@"AboutView2"]) {
         
         NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
