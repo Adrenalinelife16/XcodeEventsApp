@@ -132,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="22" width="375" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="205.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" id="Jyd-f3-EuW">
@@ -244,7 +244,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1091,7 +1091,7 @@
                                                     <segue destination="GJ5-Ez-Ag6" kind="push" identifier="program" id="gkd-uM-QVZ"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventCalCell" rowHeight="60" id="qp3-EP-ht4" customClass="EventCalCell">
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EventCalCell" rowHeight="60" id="qp3-EP-ht4" customClass="EventCalCell">
                                                 <rect key="frame" x="0.0" y="231" width="375" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qp3-EP-ht4" id="1fF-wg-hsC">
@@ -1131,6 +1131,7 @@
                                                     <outlet property="lblDateTime" destination="f8j-Ij-nhz" id="QfA-OY-OII"/>
                                                     <outlet property="lblEventName" destination="jXU-9X-DWW" id="Mg1-Ft-1Yu"/>
                                                     <outlet property="lblEventPlace" destination="nbf-V4-uEb" id="X4T-MZ-yw1"/>
+                                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="program" id="EK1-wX-Yhq"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -1481,7 +1482,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz0-9l-sJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-263" y="-1399"/>
+            <point key="canvasLocation" x="714" y="-865"/>
         </scene>
         <!--Program Description View Controller-->
         <scene sceneID="21W-JZ-5lT">
@@ -1513,7 +1514,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WK-ya-r6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="767" y="-1399"/>
+            <point key="canvasLocation" x="1305" y="-866"/>
         </scene>
         <!--Maps-->
         <scene sceneID="WdJ-TP-gcR">
@@ -1950,7 +1951,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="482-f4-L4W"/>
+        <segue reference="EK1-wX-Yhq"/>
         <segue reference="z1t-Ts-zQv"/>
     </inferredMetricsTieBreakers>
 </document>
