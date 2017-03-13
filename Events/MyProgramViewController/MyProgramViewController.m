@@ -397,7 +397,7 @@
 -(void)createCalendarView{
     
     CGRect rect=self.tblMainTable.frame;
-    rect.size.height=350;
+    rect.size.height=300;
     calendarBG=[[UIView alloc] initWithFrame:rect];
     VRGCalendarView *calendar = [[VRGCalendarView alloc] init];
     calendar.delegate=(id)self;
