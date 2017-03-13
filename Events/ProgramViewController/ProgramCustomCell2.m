@@ -1,14 +1,14 @@
 //
-//  ProgramCustomCell.m
+//  ProgramCustomCell2.m
 //  Events
 //
-//  Created by Chazz Romeo, Michael Cather & Josh Martin.
-//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
+//  Created by Lamar Artare on 3/13/17.
+//  Copyright © 2017 Teknowledge Software. All rights reserved.
 //
 
-#import "ProgramCustomCell.h"
+#import "ProgramCustomCell2.h"
 
-@implementation ProgramCustomCell
+@implementation ProgramCustomCell2
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -22,7 +22,7 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 
