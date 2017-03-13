@@ -161,7 +161,7 @@
         }];
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action)
         {
-         [self.tableView reloadData];
+            [self.tableView reloadData];
         }];
     
     [alert addAction:logout];
