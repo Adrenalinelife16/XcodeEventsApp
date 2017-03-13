@@ -132,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="22" width="375" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="205.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" id="Jyd-f3-EuW">
@@ -203,7 +203,7 @@
                                 <rect key="frame" x="0.0" y="228" width="375" height="289"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="9Um-de-t49" id="8wL-aY-Eur">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="288.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="288"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" id="fNe-kO-H4J">
@@ -215,31 +215,31 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rettangolo.png" id="LIK-Qg-iAQ">
-                                                    <rect key="frame" x="0.0" y="-7" width="175" height="31"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rettangolo.png" id="LIK-Qg-iAQ">
+                                                    <rect key="frame" x="0.0" y="-7" width="205" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rettangolo.png" id="lme-u8-CFW">
                                                     <rect key="frame" x="0.0" y="152" width="320" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wl1-Ms-NGj">
-                                                    <rect key="frame" x="4" y="177" width="314" height="25"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wl1-Ms-NGj">
+                                                    <rect key="frame" x="4" y="172" width="314" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MAs-yS-Ks3">
-                                                    <rect key="frame" x="0.0" y="-7" width="175" height="31"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MAs-yS-Ks3">
+                                                    <rect key="frame" x="0.0" y="-7" width="205" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U1K-qr-2kS">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U1K-qr-2kS">
                                                     <rect key="frame" x="4" y="152" width="316" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -260,6 +260,7 @@
                                     <outlet property="lblDateTime" destination="MAs-yS-Ks3" id="B71-cf-5uh"/>
                                     <outlet property="lblEventDesc" destination="wl1-Ms-NGj" id="ZEI-cd-f3G"/>
                                     <outlet property="lblEventName" destination="U1K-qr-2kS" id="l9f-gD-79X"/>
+                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="AboutView2" id="BNm-lt-kVg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -307,7 +308,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -2002,7 +2003,7 @@
         <image name="feedviewCell3.png" width="95" height="95"/>
         <image name="input.png" width="290" height="30"/>
         <image name="nearby.png" width="16" height="20"/>
-        <image name="no_image.png" width="300" height="120"/>
+        <image name="no_image.png" width="180" height="120"/>
         <image name="registerBtn.png" width="125" height="40"/>
         <image name="secondpic.png" width="104" height="95"/>
         <image name="white-cell.png" width="306" height="100"/>
@@ -2013,7 +2014,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="482-f4-L4W"/>
         <segue reference="GPB-HE-q9b"/>
+        <segue reference="BNm-lt-kVg"/>
     </inferredMetricsTieBreakers>
 </document>
