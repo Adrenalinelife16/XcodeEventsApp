@@ -66,6 +66,8 @@
 		7293CFB11E0D9C5500E310C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */; };
 		7293CFB21E0D9C5500E310C0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAE1E0D9C5500E310C0 /* FBSDKLoginKit.framework */; };
 		7293CFB31E0D9C5500E310C0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAF1E0D9C5500E310C0 /* FBSDKShareKit.framework */; };
+		72AF697A1E783EFD0033DB1F /* TabBarHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF69791E783EFD0033DB1F /* TabBarHeight.m */; };
+		72AF697D1E7843990033DB1F /* TabBarCenterIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */; };
 		72C6E3561E563D1000B25C5F /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */; };
 		72DCD05B1E5D2BF700792EEA /* MoreCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */; };
 		72DCD06D1E706C0200792EEA /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */; };
@@ -354,6 +356,10 @@
 		7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7293CFAE1E0D9C5500E310C0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		7293CFAF1E0D9C5500E310C0 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		72AF69781E783EFD0033DB1F /* TabBarHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarHeight.h; sourceTree = "<group>"; };
+		72AF69791E783EFD0033DB1F /* TabBarHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarHeight.m; sourceTree = "<group>"; };
+		72AF697B1E7843990033DB1F /* TabBarCenterIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarCenterIcon.h; sourceTree = "<group>"; };
+		72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarCenterIcon.m; sourceTree = "<group>"; };
 		72C6E3541E563D1000B25C5F /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
 		72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		72DCD0591E5D2BF700792EEA /* MoreCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCustomCell.h; sourceTree = "<group>"; };
@@ -771,6 +777,17 @@
 			name = Notes;
 			sourceTree = "<group>";
 		};
+		72AF696E1E783BDE0033DB1F /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				72AF69781E783EFD0033DB1F /* TabBarHeight.h */,
+				72AF69791E783EFD0033DB1F /* TabBarHeight.m */,
+				72AF697B1E7843990033DB1F /* TabBarCenterIcon.h */,
+				72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */,
+			);
+			name = "Tab Bar";
+			sourceTree = "<group>";
+		};
 		72C6E34A1E552FFE00B25C5F /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -1104,6 +1121,7 @@
 				79691D0B18F00F5800ABD52D /* Modal Classes */,
 				79691C7D18EFFEDC00ABD52D /* Common Classes */,
 				7920A7AE1921F184001808B6 /* TSMiniWebBrowser */,
+				72AF696E1E783BDE0033DB1F /* Tab Bar */,
 				7982241A18F70949009FA42E /* Registration */,
 				E279AD9B1E653D1900D3B192 /* Discover */,
 				72DCD06A1E706BDF00792EEA /* Category */,
@@ -1699,12 +1717,14 @@
 				7122DB1418BB1F7300C044E8 /* SecondFeedCustomCell.m in Sources */,
 				7987137C18F0748800727E1A /* MyAnnotation.m in Sources */,
 				BB303DAA18B863E300B6EBC9 /* AppDelegate.m in Sources */,
+				72AF697D1E7843990033DB1F /* TabBarCenterIcon.m in Sources */,
 				E29A6BE11E6AA2160041F782 /* HelpViewController.m in Sources */,
 				798D9DFF18F15EE900A69513 /* SDWebImageCompat.m in Sources */,
 				791E3DE918F320A300220BDE /* NSString+HTML.m in Sources */,
 				7112222D18BCC69300E77A4A /* AboutCustomCell1.m in Sources */,
 				79691CAB18EFFF1F00ABD52D /* SBJSON.m in Sources */,
 				79691CAC18EFFF1F00ABD52D /* SBJsonBase.m in Sources */,
+				72AF697A1E783EFD0033DB1F /* TabBarHeight.m in Sources */,
 				798D9E2518F15F2000A69513 /* UIButton+WebCache.m in Sources */,
 				79691D0718F00C8700ABD52D /* ASIFormDataRequest.m in Sources */,
 				7122DB4118BB6E9000C044E8 /* MyProgramCustomCell.m in Sources */,

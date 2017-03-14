@@ -91,13 +91,13 @@
             </objects>
             <point key="canvasLocation" x="-1143.5" y="1199.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar Center Icon-->
         <scene sceneID="XhB-8n-zSN">
             <objects>
-                <tabBarController storyboardIdentifier="engtab" definesPresentationContext="YES" id="DxO-cP-19h" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="engtab" definesPresentationContext="YES" id="DxO-cP-19h" customClass="TabBarCenterIcon" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tTe-dz-p6d"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" id="cie-gf-Xpg">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" id="cie-gf-Xpg" customClass="TabBarHeight">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1602,11 +1602,11 @@
             </objects>
             <point key="canvasLocation" x="-2663" y="-536"/>
         </scene>
-        <!--More-->
+        <!--Navigation Controller-->
         <scene sceneID="P2C-wx-DeA">
             <objects>
                 <navigationController definesPresentationContext="YES" id="7QV-MF-lRy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="More" id="Whh-wp-Ei3"/>
+                    <tabBarItem key="tabBarItem" title="" id="Whh-wp-Ei3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aeA-Xb-aZb">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1666,7 +1666,7 @@
             </objects>
             <point key="canvasLocation" x="-568.5" y="352.5"/>
         </scene>
-        <!--More-->
+        <!--More View Controller-->
         <scene sceneID="TcK-gX-dIz">
             <objects>
                 <tableViewController id="XD6-ka-Wa6" customClass="MoreViewController" sceneMemberID="viewController">
@@ -1690,7 +1690,7 @@
                             <outlet property="delegate" destination="XD6-ka-Wa6" id="qo5-fA-ZVz"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="More" image="List.png" id="Jz4-Is-M6B"/>
+                    <tabBarItem key="tabBarItem" title="" image="List.png" id="Jz4-Is-M6B"/>
                     <navigationItem key="navigationItem" id="ntU-5v-DPG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -1747,11 +1747,11 @@
             </objects>
             <point key="canvasLocation" x="-567" y="1200"/>
         </scene>
-        <!--Discover-->
+        <!--Navigation Controller-->
         <scene sceneID="FmA-aa-wp5">
             <objects>
                 <navigationController definesPresentationContext="YES" id="w6F-4W-hwU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover" image="About.png" selectedImage="Aboutred.png" id="TIV-OW-V25"/>
+                    <tabBarItem key="tabBarItem" title="" image="About.png" selectedImage="Aboutred.png" id="TIV-OW-V25"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5gO-R5-nLV">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1911,11 +1911,11 @@
             </objects>
             <point key="canvasLocation" x="-1143" y="2043"/>
         </scene>
-        <!--Events-->
+        <!--Navigation Controller-->
         <scene sceneID="ceR-vN-lrW">
             <objects>
                 <navigationController storyboardIdentifier="SearchNavigation" automaticallyAdjustsScrollViewInsets="NO" id="Mml-vq-zwo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" image="Program.png" id="TWS-hq-3Im"/>
+                    <tabBarItem key="tabBarItem" title="" image="Program.png" id="TWS-hq-3Im"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vdo-nW-dZc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1930,11 +1930,11 @@
             </objects>
             <point key="canvasLocation" x="-2210" y="-2161"/>
         </scene>
-        <!--Social-->
+        <!--Navigation Controller-->
         <scene sceneID="MHz-ui-Bco">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wat-zQ-9t5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Social" image="Feed.png" id="O87-YX-pra"/>
+                    <tabBarItem key="tabBarItem" title="" image="Feed.png" id="O87-YX-pra"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2NW-qe-2Ra">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1949,11 +1949,11 @@
             </objects>
             <point key="canvasLocation" x="-2211" y="-1349"/>
         </scene>
-        <!--My Events-->
+        <!--Navigation Controller-->
         <scene sceneID="u2T-EW-rju">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dlv-Lj-Hfo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Events" image="MyProgram.png" id="oVN-HQ-A1h"/>
+                    <tabBarItem key="tabBarItem" title="" image="MyProgram.png" id="oVN-HQ-A1h"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wyX-3r-IYA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
