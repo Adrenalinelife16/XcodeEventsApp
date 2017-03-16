@@ -252,6 +252,10 @@
 		E279ADB91E66172200D3B192 /* SearchCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E279ADB81E66172200D3B192 /* SearchCustomCell.m */; };
 		E284A87A1E76F3C700E9ECA3 /* ProgramCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E284A8791E76F3C700E9ECA3 /* ProgramCustomCell.m */; };
 		E284A87E1E76F41B00E9ECA3 /* ProgramCustomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = E284A87D1E76F41B00E9ECA3 /* ProgramCustomCell2.m */; };
+		E2893C971E7A4A2B00F58D00 /* imagelayover.png in Resources */ = {isa = PBXBuildFile; fileRef = E2893C951E7A4A2B00F58D00 /* imagelayover.png */; };
+		E2893C981E7A4A2B00F58D00 /* imagelayover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2893C961E7A4A2B00F58D00 /* imagelayover@2x.png */; };
+		E2893C9B1E7A4C1200F58D00 /* dateunderlay.png in Resources */ = {isa = PBXBuildFile; fileRef = E2893C991E7A4C1200F58D00 /* dateunderlay.png */; };
+		E2893C9C1E7A4C1200F58D00 /* dateunderlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2893C9A1E7A4C1200F58D00 /* dateunderlay@2x.png */; };
 		E29A6BE11E6AA2160041F782 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A6BE01E6AA2160041F782 /* HelpViewController.m */; };
 		E29A6BE41E6AA2400041F782 /* TermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A6BE31E6AA2400041F782 /* TermsViewController.m */; };
 		E29A6BE61E6AA3950041F782 /* TransHighResFullLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = E29A6BE51E6AA3950041F782 /* TransHighResFullLogo.png */; };
@@ -616,6 +620,10 @@
 		E284A8791E76F3C700E9ECA3 /* ProgramCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgramCustomCell.m; path = Events/ProgramViewController/ProgramCustomCell.m; sourceTree = SOURCE_ROOT; };
 		E284A87C1E76F41B00E9ECA3 /* ProgramCustomCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramCustomCell2.h; sourceTree = "<group>"; };
 		E284A87D1E76F41B00E9ECA3 /* ProgramCustomCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramCustomCell2.m; sourceTree = "<group>"; };
+		E2893C951E7A4A2B00F58D00 /* imagelayover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagelayover.png; sourceTree = "<group>"; };
+		E2893C961E7A4A2B00F58D00 /* imagelayover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imagelayover@2x.png"; sourceTree = "<group>"; };
+		E2893C991E7A4C1200F58D00 /* dateunderlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dateunderlay.png; sourceTree = "<group>"; };
+		E2893C9A1E7A4C1200F58D00 /* dateunderlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dateunderlay@2x.png"; sourceTree = "<group>"; };
 		E29A6BDF1E6AA2160041F782 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		E29A6BE01E6AA2160041F782 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		E29A6BE21E6AA2400041F782 /* TermsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewController.h; sourceTree = "<group>"; };
@@ -1180,6 +1188,10 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E2893C991E7A4C1200F58D00 /* dateunderlay.png */,
+				E2893C9A1E7A4C1200F58D00 /* dateunderlay@2x.png */,
+				E2893C951E7A4A2B00F58D00 /* imagelayover.png */,
+				E2893C961E7A4A2B00F58D00 /* imagelayover@2x.png */,
 				BB303DD218B86B3400B6EBC9 /* About.png */,
 				BB303DD318B86B3400B6EBC9 /* About@2x.png */,
 				E2A54D451E4DC3F700091538 /* AboutPage.png */,
@@ -1521,6 +1533,7 @@
 				E2252E901E4DB80300B0CD69 /* BetaPage.png in Resources */,
 				711221EB18BC94F900E77A4A /* RedDot.png in Resources */,
 				7972E976195355B100F25E4D /* icon-feed-facebook@2x.png in Resources */,
+				E2893C971E7A4A2B00F58D00 /* imagelayover.png in Resources */,
 				7920A7B819220B39001808B6 /* instagram_logo.png in Resources */,
 				BB303E0018B86B3400B6EBC9 /* Livello1@2x.png in Resources */,
 				7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */,
@@ -1596,6 +1609,7 @@
 				7112221918BCC14B00E77A4A /* arrow@2x.png in Resources */,
 				7972E97B195355B100F25E4D /* white-cell.png in Resources */,
 				E2A54D431E4DC03B00091538 /* CreateEventBtn.png in Resources */,
+				E2893C9C1E7A4C1200F58D00 /* dateunderlay@2x.png in Resources */,
 				BB303E2A18B879AA00B6EBC9 /* strip@2x.png in Resources */,
 				BB303DF618B86B3400B6EBC9 /* Action@2x.png in Resources */,
 				E2252E861E4D16D900B0CD69 /* AdrenalineLogo2.png in Resources */,
@@ -1617,10 +1631,12 @@
 				BB303E0F18B86B3400B6EBC9 /* Thumbs.db in Resources */,
 				79348D0A18F99D56006E56A5 /* login-btn.png in Resources */,
 				7122DB4918BB7D8600C044E8 /* Segmented_left.png in Resources */,
+				E2893C9B1E7A4C1200F58D00 /* dateunderlay.png in Resources */,
 				711221EF18BC9DFB00E77A4A /* placeIcon.png in Resources */,
 				BB303E0518B86B3400B6EBC9 /* MyProgram.png in Resources */,
 				E2252E8B1E4D899200B0CD69 /* discover-btn@2x.png in Resources */,
 				79A5E24719C9064E009D4018 /* Localizable.strings in Resources */,
+				E2893C981E7A4A2B00F58D00 /* imagelayover@2x.png in Resources */,
 				BB303DF318B86B3400B6EBC9 /* Aboutred.png in Resources */,
 				7112221818BCC14B00E77A4A /* arrow.png in Resources */,
 				7972E97A195355B100F25E4D /* icon-feed-twitter@2x.png in Resources */,

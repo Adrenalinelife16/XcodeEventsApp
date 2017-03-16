@@ -226,7 +226,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
        
-    EventList *objEvent ;
+    EventList *objEvent;
     BOOL IsMatch = NO;
     if ([segue.identifier isEqualToString:@"program"]) {
         for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {
