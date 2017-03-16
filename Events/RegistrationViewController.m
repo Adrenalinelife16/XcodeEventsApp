@@ -34,6 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Registration";
+    [self bottomBorder];
     
 }
 
@@ -120,31 +121,6 @@
         }];
     }
 }
-
-
-
-#pragma Done Button on Numeric Keyboard
-/**
- *  To add numeric keyboard and done toolbar on keyboad
- */
-/*
--(void)addDoneButtonOnNumericKeyboard
-{
-    UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
-    numberToolbar.barStyle = UIBarStyleBlackTranslucent;
-    numberToolbar.items = [NSArray arrayWithObjects:
-                           [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
-                           [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneWithNumberPad)],
-                           nil];
-    [numberToolbar sizeToFit];
-    
-    txtFirstName.inputAccessoryView = numberToolbar;
-    txtLastName.inputAccessoryView = numberToolbar;
-    txtUsername.inputAccessoryView = numberToolbar;
-    txtEmail.inputAccessoryView = numberToolbar;
-    txtPassword.inputAccessoryView = numberToolbar;
-}
-*/
 
 
 #pragma mark - Text Field Delegates
@@ -249,6 +225,41 @@
             // Perform segue code here to main events feed
     }
 }
+
+-(void)bottomBorder
+{
+    CALayer *BBFirstName = [CALayer layer];
+    BBFirstName.frame = CGRectMake(0.0f, self.txtFirstName.frame.size.height - 1, self.txtFirstName.frame.size.width, 1.0f);
+    BBFirstName.backgroundColor = [UIColor grayColor].CGColor;
+    [self.txtFirstName.layer addSublayer:BBFirstName];
+    
+    CALayer *BBLastName = [CALayer layer];
+    BBLastName.frame = CGRectMake(0.0f, self.txtLastName.frame.size.height - 1, self.txtLastName.frame.size.width, 1.0f);
+    BBLastName.backgroundColor = [UIColor grayColor].CGColor;
+    [self.txtLastName.layer addSublayer:BBLastName];
+    
+    CALayer *BBUserName = [CALayer layer];
+    BBUserName.frame = CGRectMake(0.0f, self.txtUsername.frame.size.height - 1, self.txtUsername.frame.size.width, 1.0f);
+    BBUserName.backgroundColor = [UIColor grayColor].CGColor;
+    [self.txtUsername.layer addSublayer:BBUserName];
+    
+    CALayer *BBEmail = [CALayer layer];
+    BBEmail.frame = CGRectMake(0.0f, self.txtEmail.frame.size.height - 1, self.txtEmail.frame.size.width, 1.0f);
+    BBEmail.backgroundColor = [UIColor grayColor].CGColor;
+    [self.txtEmail.layer addSublayer:BBEmail];
+    
+    CALayer *BBPassword = [CALayer layer];
+    BBPassword.frame = CGRectMake(0.0f, self.txtPassword.frame.size.height - 1, self.txtPassword.frame.size.width, 1.0f);
+    BBPassword.backgroundColor = [UIColor grayColor].CGColor;
+    [self.txtPassword.layer addSublayer:BBPassword];
+    
+    CALayer *BBConPassword = [CALayer layer];
+    BBConPassword.frame = CGRectMake(0.0f, self.txtConfirmPassword.frame.size.height - 1, self.txtConfirmPassword.frame.size.width, 1.0f);
+    BBConPassword.backgroundColor = [UIColor grayColor].CGColor;
+    [self.txtConfirmPassword.layer addSublayer:BBConPassword];
+    
+}
+
 
 
 #pragma phone Number Validation

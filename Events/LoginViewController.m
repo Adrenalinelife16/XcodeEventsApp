@@ -30,7 +30,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self bottomBorder];
+   
     self.title = @"Login";
  //   [self InitializeNavigationBatItem];
 }
@@ -47,28 +49,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Initialize Navigation Bar Item
-/*
--(void)InitializeNavigationBatItem
-{
-    UIButton *btnCancel = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btnCancel setFrame:CGRectMake(0, 7, 80, 30)];
-    [btnCancel setTitle:@"Cancel" forState:UIControlStateNormal];
-    [btnCancel addTarget:self action:@selector(btnCancelPressed)
-        forControlEvents:UIControlEventTouchUpInside];
-    [btnCancel setShowsTouchWhenHighlighted:YES];
-    UIBarButtonItem *leftBarBtn =[[UIBarButtonItem alloc] initWithCustomView:btnCancel];
-    self.navigationItem.leftBarButtonItems  =       [[NSArray alloc] initWithObjects:leftBarBtn, nil];
-}
-*/
-/**
- *  call delegate method through cancel button when user press cancel button instead of login
- */
 -(void)btnCancelPressed
 {
     if (delegate) {
         [delegate dismissLoginView];
     }
+}
+
+-(void)bottomBorder
+{
+    CALayer *bottomBorder = [CALayer layer];
+    bottomBorder.frame = CGRectMake(0.0f, self.txtUsername.frame.size.height - 1, self.txtUsername.frame.size.width, 1.0f);
+    bottomBorder.backgroundColor = [UIColor grayColor].CGColor;
+    [self.txtUsername.layer addSublayer:bottomBorder];
+    
+    CALayer *topBorder = [CALayer layer];
+    topBorder.frame = CGRectMake(0.0f, self.txtPassword.frame.size.height - 1, self.txtPassword.frame.size.width, 1.0f);
+    topBorder.backgroundColor = [UIColor grayColor].CGColor;
+    [self.txtPassword.layer addSublayer:topBorder];
+
 }
 
 -(IBAction)forgotPasswordPressed:(id)sender
@@ -77,25 +76,6 @@
 
 }
 
-
-
-//#pragma mark - Registration Button
-//-(IBAction)btnRegistrationPressed:(id)sender
-//{
-//    RegistrationViewController *registrationView    =   [self.storyboard instantiateViewControllerWithIdentifier:@"registrationView"];
-//    registrationView.delegate = self;
-//    UINavigationController *navController   =   [[UINavigationController alloc] initWithRootViewController:registrationView];
-//    
-//    [UIView transitionWithView:self.view.window
-//                      duration:0.5
-//                       options:UIViewAnimationOptionTransitionFlipFromLeft
-//                    animations:^{ [self.navigationController presentViewController:navController animated:NO completion:nil]; }
-//                    completion:nil];
-//}
-
-/**
- *  Remove Registration View and back to login view
- */
 -(void)dismissRegistrationView
 {
     [UIView transitionWithView:self.view
@@ -199,32 +179,8 @@
     }
     return YES;
 }
-//
-//#pragma mark - TextField Delegates
-//-(BOOL)textFieldShouldReturn:(UITextField *)textField
-//{
-//    if (textField.returnKeyType == UIReturnKeyDone)
-//    {
-//        [textField resignFirstResponder];
-//    }
-//    else
-//    {
-//        UIResponder *nextResponder = [textField.superview viewWithTag:textField.tag+1];
-//        
-//        if (nextResponder){
-//            [nextResponder becomeFirstResponder];
-//        }
-//    }
-//    return NO;
-//}
-/*
-#pragma mark - email validation
--(BOOL)validateEmail:(NSString *) candidate {
-    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
-    return [emailTest evaluateWithObject:candidate];
-}
-*/
+
+
 #pragma mark - Alert View Delegates
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
