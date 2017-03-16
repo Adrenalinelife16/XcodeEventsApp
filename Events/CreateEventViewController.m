@@ -54,7 +54,9 @@
 //    
 //    [Utility GetDataForMethod:NSLocalizedString(@"REGISTER_METHOD", @"REGISTER_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
 //        
-    [self.navigationController popViewControllerAnimated:NO];
+  //  [self.navigationController popViewControllerAnimated:NO];
+    
+    NSLog(@"Create event button pushed");
     
 }
 
