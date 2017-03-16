@@ -228,7 +228,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
        
-    EventList *objEvent ;
+    EventList *objEvent;
     BOOL IsMatch = NO;
     if ([segue.identifier isEqualToString:@"program"]) {
         for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {

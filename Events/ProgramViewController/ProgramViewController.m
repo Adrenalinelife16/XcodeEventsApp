@@ -15,6 +15,8 @@
 #import "CreateEventViewController.h"
 #import "Utility.h"
 #import "SearchResultsTableViewController.h"
+#import "FeedViewController.h"
+#import "FeedCustomCell.h"
 
 
 @interface ProgramViewController () <UISearchResultsUpdating>
@@ -130,27 +132,11 @@
     return YES;
 }
 
-/*
-- (IBAction)Search:(UIBarButtonItem *)sender {
-    
-    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-    self.searchController.searchResultsUpdater = self;
-    self.searchController.dimsBackgroundDuringPresentation = NO;
-    self.searchController.searchBar.delegate = self;
-    self.tableView.tableHeaderView = self.searchController.searchBar;
-    self.definesPresentationContext = YES;
-    
-    
-}
-*/
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 #pragma mark - Get All Event's from server
 -(void)getEventListFromServer
@@ -169,7 +155,6 @@
                     gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayEventList];
                     [self.tableView reloadData];
                     return;
-                    
                 }
             }
             
@@ -236,7 +221,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -247,7 +232,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 210; //162: ProgramCustomCell
+    return 165; //162: ProgramCustomCell
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -270,11 +255,11 @@
     
     if ([obj.eventImageURL length]) {
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
-        [cell.imgEventImage setContentMode:UIViewContentModeScaleAspectFill];
-        [cell.imgEventImage setClipsToBounds:YES];
+        //[cell.imgEventImage setContentMode:UIViewContentModeScaleAspectFill];
+        //[cell.imgEventImage setClipsToBounds:YES];
     }
     
-    cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
+    //cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
