@@ -42,10 +42,28 @@
     return self;
 }
 
+-(IBAction)currentLocationPressed:(id)sender
+{
+    
+    float spanX = 0.05;
+    float spanY = 0.05;
+    MKCoordinateRegion region;
+    region.center.latitude = eventLocationMapView.userLocation.coordinate.latitude;
+    region.center.longitude = eventLocationMapView.userLocation.coordinate.longitude;
+    region.span.latitudeDelta = spanX;
+    region.span.longitudeDelta = spanY;
+    [eventLocationMapView setRegion:region animated:YES];
+    NSLog(@"Location button pushed");
+    
+}
+
+
+
 #pragma mark - View life cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    eventLocationMapView.showsUserLocation = YES;
     
 	// Do any additional setup after loading the view.
     [self initializeNavigationBar];
@@ -396,8 +414,6 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
-        // Description for event name
-        
         NSString *redText = @"";
         NSString *strDescriptionText = @"";
         // Old Code = [self.eventObj.eventDescription stringByConvertingHTMLToPlainText]
@@ -413,7 +429,7 @@
         NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:strDesc
                                                attributes:attribs];
         
-        // color for Description
+
         NSRange redTextRange = [strDesc rangeOfString:redText];
         [attributedText setAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:102.0f/255.0f green:144.0f/255.0f blue:255.0f/255.0f alpha:1.0f]} range:redTextRange];
     
@@ -496,7 +512,7 @@
     {
         return nil;
     }
-    MyAnnotation *delegate = annotation;  //THIS CAST WAS WHAT WAS MISSING!
+    MyAnnotation *delegate = annotation;
     MKPinAnnotationView *annView = nil;
     annView = (MKPinAnnotationView*)[eventLocationMapView dequeueReusableAnnotationViewWithIdentifier:@"eventloc"];
     if( annView == nil ){

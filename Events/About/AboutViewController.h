@@ -34,6 +34,8 @@
 
 -(IBAction)btnCancelPressed:(id)sender;
 
+-(IBAction)currentLocationPressed:(id)sender;
+
 -(IBAction)btnEventRegistrationPressed:(id)sender;
 
 @end
