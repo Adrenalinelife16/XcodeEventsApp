@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateEventViewController : UIViewController
+@interface CreateEventViewController : UIViewController <UITextViewDelegate>
 {
     UIDatePicker *datePicker;
 

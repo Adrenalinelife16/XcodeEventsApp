@@ -9,7 +9,7 @@
 #import "CreateEventViewController.h"
 
 
-@interface CreateEventViewController ()
+@interface CreateEventViewController () <UITextViewDelegate>
 
 @end
 
@@ -30,7 +30,6 @@
     [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-
     
 }
 
@@ -46,6 +45,20 @@
 - (IBAction)submitEvent:(id)sender
 {
     [self IsValid];
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:eventName.text,@"eventName",
+                                         self.startText.text,@"startText",
+                                         self.endText.text,@"endText",
+                                         self.locationName.text,@"locationName",
+                                         self.address.text,@"address",
+                                         self.city.text,@"city",
+                                         self.state.text,@"state",
+                                         self.zipCode.text,@"zipode",
+                                         self.detailView.text,@"detailview", nil];
+
+    
+    
+    
+    
     NSLog(@"Create event button pushed");
     
 }
@@ -56,6 +69,7 @@
 {
     NSLog(@"Upload Image Tapped");
 }
+
 
 
 #pragma mark - Check registration Field validations
