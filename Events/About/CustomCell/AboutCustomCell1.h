@@ -11,7 +11,7 @@
 @interface AboutCustomCell1 : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *lblEventName;
 @property (strong, nonatomic) IBOutlet UILabel *lblEventAddress;
-@property (strong, nonatomic) IBOutlet UILabel *lblEventDistance;
+@property (strong, nonatomic) IBOutlet UILabel *lblEventAddressTwo;
 - (IBAction)clickedDirection:(id)sender;
 
 @end

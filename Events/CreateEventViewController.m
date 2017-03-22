@@ -14,7 +14,7 @@
 @end
 
 @implementation CreateEventViewController
-
+@synthesize eventName, locationName, address, city, state, zipCode, detailView;
 @synthesize titleText;
 
 - (void)viewDidLoad
@@ -45,17 +45,7 @@
 
 - (IBAction)submitEvent:(id)sender
 {
-    
-//    NSString *Fname = txtFirstName.text;
-//    NSString *Lname = txtLastName.text;
-//    NSString *FirstLast = [NSString stringWithFormat:@" %@ %@", Fname, Lname];
-//    
-//    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:FirstLast,@"name",self.txtEmail.text,@"email",self.txtPassword.text,@"pwd", nil];
-//    
-//    [Utility GetDataForMethod:NSLocalizedString(@"REGISTER_METHOD", @"REGISTER_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
-//        
-  //  [self.navigationController popViewControllerAnimated:NO];
-    
+    [self IsValid];
     NSLog(@"Create event button pushed");
     
 }

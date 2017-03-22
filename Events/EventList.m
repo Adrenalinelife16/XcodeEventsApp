@@ -25,6 +25,7 @@
 @synthesize eventLocationAddress;
 @synthesize eventLocationState;
 @synthesize eventLocationTown;
+@synthesize eventLocationpostcode;
 @synthesize eventLocationCountry;
 @synthesize eventTicketName;
 @synthesize eventTicketDescription;

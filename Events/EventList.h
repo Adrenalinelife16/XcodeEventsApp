@@ -24,6 +24,7 @@
 @property (nonatomic, strong) NSString *eventLocationAddress;
 @property (nonatomic, strong) NSString *eventLocationState;
 @property (nonatomic, strong) NSString *eventLocationTown;
+@property (nonatomic, strong) NSString *eventLocationpostcode;
 @property (nonatomic, strong) NSString *eventLocationCountry;
 //
 @property (nonatomic, strong) NSString *eventTicketName;

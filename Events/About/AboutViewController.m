@@ -63,7 +63,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    eventLocationMapView.showsUserLocation = YES;
+    
+    
+    
     
 	// Do any additional setup after loading the view.
     [self initializeNavigationBar];
@@ -385,14 +387,15 @@
         if (cell == nil) {
             cell = [[AboutCustomCell1 alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
-        cell.lblEventAddress.text   =   [NSString stringWithFormat:@"%@ %@ %@ %@",self.eventObj.eventLocationAddress,self.eventObj.eventLocationTown, self.eventObj.eventLocationState,self.eventObj.eventLocationCountry];
+        cell.lblEventAddress.text   =   [NSString stringWithFormat:@"%@",self.eventObj.eventLocationAddress];
+        cell.lblEventAddressTwo.text = [NSString stringWithFormat:@"%@ %@, %@", self.eventObj.eventLocationTown, self.eventObj.eventLocationState,self.eventObj.eventLocationpostcode];
         cell.lblEventName.text      =   self.eventObj.eventName;
         
         CLLocation *userLocation    =   [[CLLocation alloc] initWithLatitude:[[Utility getNSUserDefaultValue:KUSERLATITUDE] floatValue] longitude:[[Utility getNSUserDefaultValue:KUSERLONGITUDE] floatValue]];
         CLLocation *eventLocation   =   [[CLLocation alloc] initWithLatitude:[self.eventObj.eventLocationLatitude floatValue] longitude:[self.eventObj.eventLocationLongitude floatValue]];
         CLLocationDistance distance =   [userLocation distanceFromLocation:eventLocation];
         
-        cell.lblEventDistance.text  =   [NSString stringWithFormat:@"%f Miles",distance/FEET_IN_MILES];
+    //    cell.lblEventDistance.text  =   [NSString stringWithFormat:@"%f Miles",distance/FEET_IN_MILES];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
