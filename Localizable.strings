@@ -15,14 +15,14 @@
 //   "http://adrenalinelife.org/"
 
 //web service methods
-"GETEVENTS_METHOD"          =   "/events/api/getEvents";
+"GETEVENTS_METHOD"          =   "/Adrenaline_Custom/api/getEvents";
 "GETUSERTICKETS_METHOD"     =   "/api/getUserTickets";
 "BOOKTICKET_METHOD"         =   "/api/getUserTickets/bookTicket";
 "CHECKBOOK_METHOD"          =   "/api/getUserTickets/checkBook";
 "GETEVENTSBYMONTH_METHOD"   =   "/api/getEventsByMonth";
 "GETFEEDS_METHOD"           =   "/webservices/tweet-fb.php";
 "LOGIN_METHOD"              =   "/api/Login";
-"REGISTER_METHOD"           =   "/api/Register";
+"REGISTER_METHOD"           =   "/Adrenaline_Custom/api/Register";
 "CREATE_EVENT_METHOD"       =   "/api/CreateEvent";
 
 

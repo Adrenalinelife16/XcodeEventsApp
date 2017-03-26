@@ -113,6 +113,7 @@
                         <segue destination="Mml-vq-zwo" kind="relationship" relationship="viewControllers" id="Q4L-4V-bvT"/>
                         <segue destination="w6F-4W-hwU" kind="relationship" relationship="viewControllers" id="bfK-ML-XeQ"/>
                         <segue destination="Dlv-Lj-Hfo" kind="relationship" relationship="viewControllers" id="wmC-Pg-A59"/>
+                        <segue destination="wat-zQ-9t5" kind="relationship" relationship="viewControllers" id="tQz-fX-VEZ"/>
                         <segue destination="7QV-MF-lRy" kind="relationship" relationship="viewControllers" id="GmH-cQ-7tN"/>
                     </connections>
                 </tabBarController>
@@ -1419,11 +1420,11 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" mapType="standard" showsUserLocation="YES" id="F0C-ID-Dpb">
-                                <rect key="frame" x="0.0" y="65" width="320" height="255"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7vo-Zb-OAf">
-                                <rect key="frame" x="0.0" y="328" width="320" height="206"/>
+                                <rect key="frame" x="0.0" y="280" width="320" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -1441,30 +1442,54 @@
                                                     <color key="textColor" red="0.92941176470588238" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" id="ckw-DS-FOc">
+                                                    <rect key="frame" x="8" y="16" width="304" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="addressClicked:" destination="GJ5-Ez-Ag6" eventType="touchUpInside" id="tm3-gE-F0C"/>
+                                                    </connections>
+                                                </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="FCV-sP-n7o">
                                                     <rect key="frame" x="0.0" y="59" width="320" height="1"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="djN-Vn-WzL">
-                                                    <rect key="frame" x="8" y="20" width="295" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BrG-il-jjJ">
+                                                    <rect key="frame" x="8" y="34" width="296" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Address Two">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address Two" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zvs-OL-YAX">
-                                                    <rect key="frame" x="8" y="39" width="302" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7nQ-pU-oeX">
+                                                    <rect key="frame" x="8" y="16" width="296" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Address One">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="lblEventAddress" destination="djN-Vn-WzL" id="x6g-pi-c30"/>
-                                            <outlet property="lblEventAddressTwo" destination="zvs-OL-YAX" id="CiL-Ow-N2O"/>
+                                            <outlet property="addressOne" destination="7nQ-pU-oeX" id="lDv-Qy-Agq"/>
+                                            <outlet property="addressTwo" destination="BrG-il-jjJ" id="PQM-1v-JGk"/>
                                             <outlet property="lblEventName" destination="IIh-w5-Vj4" id="eqw-f2-TX7"/>
                                         </connections>
                                     </tableViewCell>
@@ -1548,14 +1573,6 @@
                                     <outlet property="delegate" destination="GJ5-Ez-Ag6" id="Rdw-4M-ygB"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bth-BC-kZ7">
-                                <rect key="frame" x="266" y="269" width="38" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="current location.png"/>
-                                <connections>
-                                    <action selector="currentLocationPressed:" destination="GJ5-Ez-Ag6" eventType="touchUpInside" id="ye2-52-y8Q"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
@@ -1998,7 +2015,6 @@
         <image name="Twitter.png" width="26" height="22"/>
         <image name="Yoga.png" width="249" height="143"/>
         <image name="arrow.png" width="11" height="14"/>
-        <image name="current location.png" width="128" height="128"/>
         <image name="date-cell-gray.png" width="164" height="33"/>
         <image name="dateunderlay.png" width="180" height="120"/>
         <image name="event-feed-mask.png" width="92" height="92"/>
@@ -2020,6 +2036,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="z1t-Ts-zQv"/>
-        <segue reference="gkd-uM-QVZ"/>
+        <segue reference="EK1-wX-Yhq"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -86,7 +86,7 @@
         NSString *Lname = txtLastName.text;
         NSString *FirstLast = [NSString stringWithFormat:@" %@ %@", Fname, Lname];
          
-        NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:FirstLast,@"name",self.txtEmail.text,@"email",self.txtPassword.text,@"pwd", nil];
+        NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:txtFirstName.text,@"fname", self.txtLastName.text,@"lname", self.txtEmail.text,@"email",self.txtUsername.text,@"user", self.txtPassword.text,@"pass", nil];
         
         [Utility GetDataForMethod:NSLocalizedString(@"REGISTER_METHOD", @"REGISTER_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
             
