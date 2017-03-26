@@ -9,12 +9,12 @@
 #import "CreateEventViewController.h"
 
 
-@interface CreateEventViewController ()
+@interface CreateEventViewController () <UITextViewDelegate>
 
 @end
 
 @implementation CreateEventViewController
-
+@synthesize eventName, locationName, address, city, state, zipCode, detailView;
 @synthesize titleText;
 
 - (void)viewDidLoad
@@ -30,7 +30,6 @@
     [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-
     
 }
 
@@ -45,16 +44,20 @@
 
 - (IBAction)submitEvent:(id)sender
 {
+    [self IsValid];
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:eventName.text,@"eventName",
+                                         self.startText.text,@"startText",
+                                         self.endText.text,@"endText",
+                                         self.locationName.text,@"locationName",
+                                         self.address.text,@"address",
+                                         self.city.text,@"city",
+                                         self.state.text,@"state",
+                                         self.zipCode.text,@"zipode",
+                                         self.detailView.text,@"detailview", nil];
+
     
-//    NSString *Fname = txtFirstName.text;
-//    NSString *Lname = txtLastName.text;
-//    NSString *FirstLast = [NSString stringWithFormat:@" %@ %@", Fname, Lname];
-//    
-//    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:FirstLast,@"name",self.txtEmail.text,@"email",self.txtPassword.text,@"pwd", nil];
-//    
-//    [Utility GetDataForMethod:NSLocalizedString(@"REGISTER_METHOD", @"REGISTER_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
-//        
-  //  [self.navigationController popViewControllerAnimated:NO];
+    
+    
     
     NSLog(@"Create event button pushed");
     
@@ -66,6 +69,7 @@
 {
     NSLog(@"Upload Image Tapped");
 }
+
 
 
 #pragma mark - Check registration Field validations

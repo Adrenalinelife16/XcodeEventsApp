@@ -42,11 +42,16 @@
     return self;
 }
 
+
 #pragma mark - View life cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    [self removeFavorite];
     
+ 
 	// Do any additional setup after loading the view.
     [self initializeNavigationBar];
     
@@ -64,6 +69,14 @@
         self.scrollViewMain.contentSize = CGSizeMake(self.scrollViewMain.frame.size.width, vwFreeRegisterBtn.frame.origin.y+vwFreeRegisterBtn.frame.size.height+50);
     }
 }
+- (IBAction)addressClicked:(id)sender
+{
+    
+    [self openAppleMaps];
+    
+}
+
+
 
 -(void)viewWillAppear:(BOOL)animated{
     
@@ -129,12 +142,6 @@
          *  add event to local to add in favorites list
          */
         
-//        NSUserDefaults *userFavorites = [NSUserDefaults standardUserDefaults];
-//        [userFavorites setObject:eventObj forKey:KUSERID];
-//        NSLog(@"User Favorites %@",userFavorites);
-        
-        
-        
         btn.selected = YES;
         AppDelegate *appdel = (AppDelegate *)[UIApplication sharedApplication].delegate;
         
@@ -163,6 +170,13 @@
         [Utility alertNotice:APPNAME withMSG:@"Event added as favorite!" cancleButtonTitle:@"OK" otherButtonTitle:nil];
     }
 }
+
+
+-(void)removeFavorite
+{
+    [MMdbsupport MMExecuteSqlQuery:[NSString stringWithFormat:@"delete from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]];
+}
+
 
 -(IBAction)btnEventRegistrationPressed:(id)sender
 {
@@ -213,6 +227,7 @@
 {
     [self.eventRegisterView setHidden:YES];
 }
+
 
 /**
  *  By Tap on submit button user can book ticket for event
@@ -367,14 +382,30 @@
         if (cell == nil) {
             cell = [[AboutCustomCell1 alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
-        cell.lblEventAddress.text   =   [NSString stringWithFormat:@"%@ %@ %@ %@",self.eventObj.eventLocationAddress,self.eventObj.eventLocationTown, self.eventObj.eventLocationState,self.eventObj.eventLocationCountry];
+        
+        NSString *underlineAddress = [NSString stringWithFormat:@"%@ %@, %@ %@",self.eventObj.eventLocationAddress ,self.eventObj.eventLocationTown, self.eventObj.eventLocationState,self.eventObj.eventLocationpostcode];
+        
+        NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:underlineAddress];
+        [attString addAttribute:(NSString*)kCTUnderlineStyleAttributeName
+                          value:[NSNumber numberWithInt:kCTUnderlineStyleSingle]
+                          range:(NSRange){0,[attString length]}];
+        cell.addressOne.attributedText = attString;
+        
+        NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
+        cell.addressOne.attributedText = [[NSAttributedString alloc] initWithString:underlineAddress
+                                                                 attributes:underlineAttribute];
+        
+        cell.addressOne.text = [NSString stringWithFormat:@"%@",self.eventObj.eventLocationAddress];
+        cell.addressTwo.text = [NSString stringWithFormat:@"%@ %@, %@",self.eventObj.eventLocationTown, self.eventObj.eventLocationState,self.eventObj.eventLocationpostcode];
+        
+        
         cell.lblEventName.text      =   self.eventObj.eventName;
         
         CLLocation *userLocation    =   [[CLLocation alloc] initWithLatitude:[[Utility getNSUserDefaultValue:KUSERLATITUDE] floatValue] longitude:[[Utility getNSUserDefaultValue:KUSERLONGITUDE] floatValue]];
         CLLocation *eventLocation   =   [[CLLocation alloc] initWithLatitude:[self.eventObj.eventLocationLatitude floatValue] longitude:[self.eventObj.eventLocationLongitude floatValue]];
         CLLocationDistance distance =   [userLocation distanceFromLocation:eventLocation];
         
-        cell.lblEventDistance.text  =   [NSString stringWithFormat:@"%f Miles",distance/FEET_IN_MILES];
+    //    cell.lblEventDistance.text  =   [NSString stringWithFormat:@"%f Miles",distance/FEET_IN_MILES];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
@@ -396,8 +427,6 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
-        // Description for event name
-        
         NSString *redText = @"";
         NSString *strDescriptionText = @"";
         // Old Code = [self.eventObj.eventDescription stringByConvertingHTMLToPlainText]
@@ -413,7 +442,7 @@
         NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:strDesc
                                                attributes:attribs];
         
-        // color for Description
+
         NSRange redTextRange = [strDesc rangeOfString:redText];
         [attributedText setAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:102.0f/255.0f green:144.0f/255.0f blue:255.0f/255.0f alpha:1.0f]} range:redTextRange];
     
@@ -449,6 +478,37 @@
     }
 }
 
+- (void)openAppleMaps
+{
+    
+    
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"Get Directions"
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *logout = [UIAlertAction actionWithTitle:@"Open in Maps" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action)
+            {
+                
+                NSString* directionsURL = [NSString stringWithFormat:@"http://maps.apple.com/?daddr=%@,%@",self.eventObj.eventLocationLatitude, self.eventObj.eventLocationLongitude];
+            [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURL]];
+            NSLog(@"Button Pushed to open maps");
+                                 
+                                 
+            }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action)
+                             {
+                                 
+                                 NSLog(@"Button Pushed to cancel maps");
+                                 
+                             }];
+    
+    [alert addAction:logout];
+    [alert addAction:cancel];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -465,6 +525,9 @@
  */
 -(void)addLocationPinOnMap
 {
+    
+
+    
     self.eventLocationMapView.delegate = (id)self;
     
     MKCoordinateRegion region;
@@ -496,7 +559,7 @@
     {
         return nil;
     }
-    MyAnnotation *delegate = annotation;  //THIS CAST WAS WHAT WAS MISSING!
+    MyAnnotation *delegate = annotation;
     MKPinAnnotationView *annView = nil;
     annView = (MKPinAnnotationView*)[eventLocationMapView dequeueReusableAnnotationViewWithIdentifier:@"eventloc"];
     if( annView == nil ){

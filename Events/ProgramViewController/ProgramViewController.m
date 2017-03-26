@@ -177,6 +177,7 @@
                 eventObj.eventLocationName      =   [dict objectForKey:@"location_name"];
                 eventObj.eventLocationAddress   =   [dict objectForKey:@"location_address"];
                 eventObj.eventLocationTown      =   [dict objectForKey:@"location_town"];
+                eventObj.eventLocationpostcode  =   [dict objectForKey:@"location_postcode"];
                 eventObj.eventLocationState     =   [dict objectForKey:@"location_state"];
                 eventObj.eventLocationCountry   =   [dict objectForKey:@"location_country"];
                 eventObj.eventLocationLatitude  =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_latitude"] floatValue]];

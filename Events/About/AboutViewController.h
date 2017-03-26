@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <MapKit/MapKit.h>
+#import <CoreText/CoreText.h>
 #import "EventList.h"
 #import "LoginViewController.h"
 #import "TSMiniWebBrowser.h"
@@ -34,6 +35,9 @@
 
 -(IBAction)btnCancelPressed:(id)sender;
 
+- (IBAction)addressClicked:(id)sender;
+
 -(IBAction)btnEventRegistrationPressed:(id)sender;
+
 
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateEventViewController : UIViewController
+@interface CreateEventViewController : UIViewController <UITextViewDelegate>
 {
     UIDatePicker *datePicker;
 
@@ -21,6 +21,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *city;
 @property (strong, nonatomic) IBOutlet UITextField *state;
 @property (strong, nonatomic) IBOutlet UITextField *zipCode;
+@property (strong, nonatomic) IBOutlet UITextView *detailView;
 
 
 // UI Format
@@ -28,7 +29,6 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
 @property (strong, nonatomic) IBOutlet UITextField *startText;
 @property (strong, nonatomic) IBOutlet UITextField *endText;
-@property (strong, nonatomic) IBOutlet UITextView *detailView;       // Also cell for submit event
 @property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
 @property (nonatomic, retain) NSString *titleText;
 
