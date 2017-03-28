@@ -61,7 +61,6 @@
 		7122DC1918BDFB8100DC9925 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1818BDFB8100DC9925 /* CoreLocation.framework */; };
 		7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */; };
 		7225BD201E4AA78200A35D30 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1F1E4AA78200A35D30 /* Notes */; };
-		728DFA441E7B3C8600033E71 /* current location.png in Resources */ = {isa = PBXBuildFile; fileRef = 728DFA431E7B3C8600033E71 /* current location.png */; };
 		7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */; };
 		7293CFB01E0D9C5500E310C0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAC1E0D9C5500E310C0 /* Bolts.framework */; };
 		7293CFB11E0D9C5500E310C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */; };
@@ -1655,7 +1654,6 @@
 				79348D0B18F99D56006E56A5 /* login-btn@2x.png in Resources */,
 				BB62B12318B8B529000DBDBC /* Segmented@2x.png in Resources */,
 				E2A54D461E4DC3F700091538 /* AboutPage.png in Resources */,
-				728DFA441E7B3C8600033E71 /* current location.png in Resources */,
 				7982242C18F72A57009FA42E /* register-btn@2x.png in Resources */,
 				7122DB2118BB459C00C044E8 /* feedviewCell1.png in Resources */,
 				7122DB1D18BB459C00C044E8 /* feedviewCell3.png in Resources */,
