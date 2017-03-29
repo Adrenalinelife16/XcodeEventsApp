@@ -183,6 +183,8 @@
                 eventObj.eventLocationLatitude  =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_latitude"] floatValue]];
                 eventObj.eventLocationLongitude =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_longitude"] floatValue]];
                 
+                
+                
                 if ([[dict objectForKey:@"ticket"] count]>0) {
                     NSDictionary *dictOfTicket  =   [[NSDictionary alloc] initWithDictionary:[dict objectForKey:@"ticket"]];
                     eventObj.eventTicketName            =   [dictOfTicket objectForKey:@"ticket_name"];

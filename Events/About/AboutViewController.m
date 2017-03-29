@@ -33,6 +33,7 @@
 @synthesize txtViewComment, txtFieldBookingSpaces, lblComment, lblTotalCost;
 @synthesize arrayTotalSpaces;
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -49,7 +50,6 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
-    [self removeFavorite];
     
  
 	// Do any additional setup after loading the view.
@@ -169,12 +169,6 @@
         
         [Utility alertNotice:APPNAME withMSG:@"Event added as favorite!" cancleButtonTitle:@"OK" otherButtonTitle:nil];
     }
-}
-
-
--(void)removeFavorite
-{
-    [MMdbsupport MMExecuteSqlQuery:[NSString stringWithFormat:@"delete from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]];
 }
 
 
@@ -383,29 +377,24 @@
             cell = [[AboutCustomCell1 alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
-        NSString *underlineAddress = [NSString stringWithFormat:@"%@ %@, %@ %@",self.eventObj.eventLocationAddress ,self.eventObj.eventLocationTown, self.eventObj.eventLocationState,self.eventObj.eventLocationpostcode];
         
-        NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:underlineAddress];
-        [attString addAttribute:(NSString*)kCTUnderlineStyleAttributeName
-                          value:[NSNumber numberWithInt:kCTUnderlineStyleSingle]
-                          range:(NSRange){0,[attString length]}];
-        cell.addressOne.attributedText = attString;
         
-        NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
-        cell.addressOne.attributedText = [[NSAttributedString alloc] initWithString:underlineAddress
-                                                                 attributes:underlineAttribute];
+        NSString *testButtonString = [NSString stringWithFormat:@"%@",self.eventObj.eventLocationAddress];
+
+        NSDictionary *attrs = @{ NSFontAttributeName:testButtonString, NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle) };
+        
         
         cell.addressOne.text = [NSString stringWithFormat:@"%@",self.eventObj.eventLocationAddress];
         cell.addressTwo.text = [NSString stringWithFormat:@"%@ %@, %@",self.eventObj.eventLocationTown, self.eventObj.eventLocationState,self.eventObj.eventLocationpostcode];
         
-        
+
         cell.lblEventName.text      =   self.eventObj.eventName;
         
         CLLocation *userLocation    =   [[CLLocation alloc] initWithLatitude:[[Utility getNSUserDefaultValue:KUSERLATITUDE] floatValue] longitude:[[Utility getNSUserDefaultValue:KUSERLONGITUDE] floatValue]];
         CLLocation *eventLocation   =   [[CLLocation alloc] initWithLatitude:[self.eventObj.eventLocationLatitude floatValue] longitude:[self.eventObj.eventLocationLongitude floatValue]];
         CLLocationDistance distance =   [userLocation distanceFromLocation:eventLocation];
         
-    //    cell.lblEventDistance.text  =   [NSString stringWithFormat:@"%f Miles",distance/FEET_IN_MILES];
+    
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }

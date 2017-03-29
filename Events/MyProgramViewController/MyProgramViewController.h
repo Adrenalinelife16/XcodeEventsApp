@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventList.h"
 #import "LoginViewController.h"
 
 @interface MyProgramViewController : UIViewController<loginViewDelegate>
@@ -20,6 +21,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnMyFavourites;
 @property (strong, nonatomic) IBOutlet UIButton *btnMyCalender;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain;
+@property (strong, nonatomic) EventList *eventObj;
 
 - (IBAction)clickedMyTickets:(id)sender;
 

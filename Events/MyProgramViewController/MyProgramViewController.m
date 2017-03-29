@@ -13,6 +13,8 @@
 #import "EventCalCell.h"
 #import "UIImageView+WebCache.h"
 #import "LoginViewController.h"
+#import "FavouriteEvents.h"
+#import "AboutViewController.h"
 
 #import "MMdbsupport.h"
 
@@ -38,6 +40,9 @@
 @end
 
 @implementation MyProgramViewController
+@synthesize eventObj;
+
+
 
 //- (id)initWithStyle:(UITableViewStyle)style
 //{
@@ -63,6 +68,7 @@
     [self.tblMainTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 
     [self clickedMyCalender:nil];
+    [self deleteFavorite];
     
    }
 
@@ -513,6 +519,32 @@
     [self.tblMainTable reloadData];
 }
 
+#pragma mark - Remove favorites based on current date
+
+-(void)deleteFavorite
+{
+    
+    NSDate *aDate = [NSDate date];
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDateComponents *components = [cal components:(NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:[NSDate date]];
+    NSDate *today = [cal dateFromComponents:components];
+    components = [cal components:(NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:aDate];
+    NSDate *otherDate = [cal dateFromComponents:components];
+    
+    if([today isEqualToDate:otherDate]) {
+       
+        [self removeFavorite];
+       
+    }
+
+    
+    
+    
+
+}
+
+
+
 /**
  *  Fetch Favorites program list from local
  */
@@ -528,6 +560,14 @@
     }
     [self.tblMainTable reloadData];
 }
+
+-(void)removeFavorite
+{
+    [MMdbsupport MMExecuteSqlQuery:[NSString stringWithFormat:@"delete from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]];
+}
+
+
+
 
 /**
  *  Fetch Tickets List From Server.
