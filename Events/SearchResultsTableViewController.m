@@ -91,22 +91,42 @@
      
 }
 
+/*
+-(void)perform {
+    UIViewController *sourceViewController = (UIViewController*)[self];
+    UIViewController *destinationController = (UIViewController*)[self];
+    
+    CATransition* transition = [CATransition animation];
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromLeft;
+    [sourceViewController.navigationController.view.layer addAnimation:transition forKey:kCATransition];
+    [sourceViewController.navigationController pushViewController:destinationController animated:NO];
+}
+*/
+
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation
-
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
     if ([segue.identifier isEqualToString:@"aboutViewTwo"]) {
         
+      
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"searchNavigation" bundle:nil];
+        AboutViewController *dealVC = (AboutViewController *)[storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+        [self.navigationController pushViewController:dealVC animated:YES];
+     
+        
+        
         NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
         EventList *obj  =   [_searchResults objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
-        //[self.navigationController setNavigationBarHidden:NO];
-        //[self.navigationController pushViewController:aboutVwController animated:YES];
+        
     }
     
 }
-
+*/
 @end

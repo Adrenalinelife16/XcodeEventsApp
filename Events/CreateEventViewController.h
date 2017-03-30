@@ -37,6 +37,9 @@
 
 - (IBAction)uploadImageClicked:(id)sender;
 
+-(IBAction)backgroundTouched:(id)sender;
+-(IBAction)textfieldReturn:(id)sender;
+
 
 
 

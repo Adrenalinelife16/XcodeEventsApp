@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProgramViewController : UITableViewController
+@interface ProgramViewController : UITableViewController <UIPopoverControllerDelegate>
 
 
 -(IBAction)createEvent:(id)sender;

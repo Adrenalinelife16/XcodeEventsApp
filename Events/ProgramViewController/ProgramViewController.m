@@ -285,7 +285,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([segue.identifier isEqualToString:@"AboutView"] || [segue.identifier isEqualToString:@"AboutView2"]) {
+    if ([segue.identifier isEqualToString:@"AboutView2"]) {
         
         NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
@@ -301,8 +301,8 @@
     
     if (!_controller) {
         //
-       // UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ProgramController" bundle:nil];
-        SearchResultsTableViewController *resultsController = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+        SearchResultsTableViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
         
         
         //

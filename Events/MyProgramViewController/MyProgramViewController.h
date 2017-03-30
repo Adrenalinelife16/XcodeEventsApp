@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *tblMainTable;//used for mytickets and my favorites
 
 
+
 @property (strong, nonatomic)NSMutableArray *arrDetails;
 @property (strong, nonatomic) IBOutlet UIButton *btnNotifiction;
 @property (strong, nonatomic) IBOutlet UIImageView *imgSegmentBar;

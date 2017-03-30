@@ -137,6 +137,30 @@
 }
 
 
+// Hide keyboard when touch background
+
+-(IBAction)backgroundTouched:(id)sender
+{
+    [eventName resignFirstResponder];
+    [locationName resignFirstResponder];
+    [address resignFirstResponder];
+    [city resignFirstResponder];
+    [state resignFirstResponder];
+    [zipCode resignFirstResponder];
+    [detailView resignFirstResponder];
+    [_startText resignFirstResponder];
+    [_endText resignFirstResponder];
+}
+
+//Hide keyboard when touch return
+
+-(IBAction)textfieldReturn:(id)sender
+{
+    [sender resignFirstResponder];
+}
+ 
+
+
 #pragma mark - Check registration Field validations
 -(BOOL)IsValid
 {

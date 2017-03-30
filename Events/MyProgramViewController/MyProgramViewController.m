@@ -15,11 +15,8 @@
 #import "LoginViewController.h"
 #import "FavouriteEvents.h"
 #import "AboutViewController.h"
-
 #import "MMdbsupport.h"
-
 #import "EventList.h"
-
 #import "AboutViewController.h"
 
 @interface MyProgramViewController ()
@@ -190,7 +187,7 @@
             cell.lblEventName.text=[dictOfCalEvents valueForKey:@"event_name"];
 
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
-        
+            
             
             UIImage *image=[[UIImage alloc]init];
             image=[UIImage imageNamed:@"no_image.png"];
@@ -235,11 +232,16 @@
 }
 
 
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-       
+    
+    NSIndexPath *selectedRowIndex = [self.tblMainTable indexPathForSelectedRow];
+    AboutViewController *aboutVwController = [segue destinationViewController];
+    EventList *obj  =   [arrayFavouriteProgram objectAtIndex:selectedRowIndex.row];
+    aboutVwController.eventObj  =   obj;
+    
     EventList *objEvent;
+    
     BOOL IsMatch = NO;
     if ([segue.identifier isEqualToString:@"program"]) {
         for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {

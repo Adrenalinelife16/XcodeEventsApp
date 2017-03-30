@@ -135,7 +135,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="205.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="205"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" id="Jyd-f3-EuW">
@@ -206,7 +206,7 @@
                                 <rect key="frame" x="0.0" y="228" width="320" height="289"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="9Um-de-t49" id="8wL-aY-Eur">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="288.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" misplaced="YES" id="fNe-kO-H4J">
@@ -314,7 +314,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -342,11 +342,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCustomCell" rowHeight="200" id="9rR-r2-pX1" customClass="SearchCustomCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SearchCustomCell" rowHeight="200" id="9rR-r2-pX1" customClass="SearchCustomCell">
                                 <rect key="frame" x="0.0" y="28" width="320" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9rR-r2-pX1" id="0rB-Le-gNS">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="199"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="redraw" misplaced="YES" id="1st-JF-SDE">
@@ -402,7 +402,7 @@
                                     <outlet property="lblDateTime" destination="h3g-dX-KSu" id="iEr-xW-buA"/>
                                     <outlet property="lblEventDesc" destination="YJ8-pl-dtf" id="m9B-ek-sVD"/>
                                     <outlet property="lblEventName" destination="6Gv-WM-z5V" id="Gep-3R-0Z9"/>
-                                    <segue destination="GJ5-Ez-Ag6" kind="modal" identifier="aboutViewTwo" id="sUZ-dE-uWa"/>
+                                    <segue destination="GJ5-Ez-Ag6" kind="custom" identifier="AboutViewTwo" animates="NO" id="sUZ-dE-uWa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -488,14 +488,14 @@
             <objects>
                 <viewController id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
-                        <rect key="frame" x="0.0" y="64" width="320" height="1126"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="1077"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" id="fga-UX-TPd">
                                 <rect key="frame" x="0.0" y="0.0" width="359" height="1077"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" id="2BV-HE-sTB">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" id="2BV-HE-sTB" customClass="UIControl">
                                         <rect key="frame" x="0.0" y="-3" width="322" height="1080"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -509,6 +509,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="shv-fJ-AS7"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Start Date and Time" minimumFontSize="17" clearButtonMode="whileEditing" id="47h-NS-wnn">
                                                 <rect key="frame" x="30" y="156" width="257" height="30"/>
@@ -518,6 +521,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <action selector="startDate:" destination="MgQ-Su-gZO" eventType="editingDidBegin" id="8UU-Fm-VXT"/>
+                                                    <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="crO-rh-xke"/>
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rIG-8t-qR8">
@@ -554,6 +558,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="uwY-mj-rID"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Address" textAlignment="natural" minimumFontSize="17" id="rpD-sW-GAv">
                                                 <rect key="frame" x="30" y="299" width="257" height="30"/>
@@ -561,6 +568,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="YvJ-uf-vnR"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="City" textAlignment="natural" minimumFontSize="17" id="8sw-DH-W16">
                                                 <rect key="frame" x="30" y="337" width="257" height="30"/>
@@ -568,6 +578,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="gim-vD-V4w"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="State" textAlignment="natural" minimumFontSize="17" id="BD2-3I-0LX">
                                                 <rect key="frame" x="30" y="375" width="257" height="30"/>
@@ -575,6 +588,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="dbL-Ec-jTr"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" id="lOK-6A-XlK">
                                                 <rect key="frame" x="30" y="413" width="257" height="30"/>
@@ -582,6 +598,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="R4z-lB-dmO"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="End Date and Time" minimumFontSize="17" clearButtonMode="whileEditing" id="VrP-la-v0A">
                                                 <rect key="frame" x="30" y="194" width="257" height="30"/>
@@ -591,9 +610,10 @@
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <action selector="endDate:" destination="MgQ-Su-gZO" eventType="editingDidBegin" id="Llc-58-vYb"/>
+                                                    <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="oRf-yf-zOY"/>
                                                 </connections>
                                             </textField>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" id="PxJ-Ag-XbP">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" keyboardDismissMode="interactive" id="PxJ-Ag-XbP">
                                                 <rect key="frame" x="30" y="480" width="257" height="195"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -635,10 +655,13 @@
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="backgroundTouched:" destination="MgQ-Su-gZO" eventType="touchDown" id="nL0-Q0-OGs"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <connections>
-                                    <outlet property="delegate" destination="2BV-HE-sTB" id="SVV-eV-GeO"/>
+                                    <outlet property="delegate" destination="PxJ-Ag-XbP" id="sxq-cw-nPY"/>
                                 </connections>
                             </scrollView>
                         </subviews>
@@ -1341,7 +1364,7 @@
         <!--About View Controller-->
         <scene sceneID="0v6-xa-O5w">
             <objects>
-                <viewController storyboardIdentifier="aboutView" id="GJ5-Ez-Ag6" customClass="AboutViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="aboutView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GJ5-Ez-Ag6" customClass="AboutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PNQ-T2-Nf5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1583,6 +1606,7 @@
                         <outlet property="tblView" destination="7vo-Zb-OAf" id="5IP-qN-I7P"/>
                         <outlet property="txtFieldBookingSpaces" destination="bop-gt-3UG" id="X0N-Yk-vfI"/>
                         <outlet property="txtViewComment" destination="zm9-ak-Y6K" id="pJ4-Kq-eXf"/>
+                        <segue destination="Qsp-nK-F0D" kind="custom" identifier="aboutPushBack" id="Y2Z-at-8Er"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz0-9l-sJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1721,7 +1745,7 @@
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1967,10 +1991,10 @@
             </objects>
             <point key="canvasLocation" x="-1143.5" y="2042.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--searchNavigation-->
         <scene sceneID="ceR-vN-lrW">
             <objects>
-                <navigationController storyboardIdentifier="SearchNavigation" automaticallyAdjustsScrollViewInsets="NO" id="Mml-vq-zwo" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="searchNavigation" title="searchNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mml-vq-zwo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Program.png" id="TWS-hq-3Im"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vdo-nW-dZc">
@@ -2024,25 +2048,6 @@
             </objects>
             <point key="canvasLocation" x="-1032" y="-1308"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="1d1-EN-ysG">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BmX-O6-Vxm" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bsQ-XY-ctp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Qsp-nK-F0D" kind="relationship" relationship="rootViewController" id="Ieh-ga-vYp"/>
-                        <segue destination="XMy-k7-mqo" kind="push" id="Dly-WI-zxK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qNx-p2-0T5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2211" y="-3076"/>
-        </scene>
     </scenes>
     <resources>
         <image name="About.png" width="23" height="14"/>
@@ -2092,8 +2097,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="gkd-uM-QVZ"/>
-        <segue reference="Dly-WI-zxK"/>
+        <segue reference="sUZ-dE-uWa"/>
         <segue reference="GPB-HE-q9b"/>
     </inferredMetricsTieBreakers>
 </document>
