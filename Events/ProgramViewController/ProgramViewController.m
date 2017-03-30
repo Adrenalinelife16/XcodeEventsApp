@@ -256,18 +256,21 @@
     cell.lblEventDesc.text  =   [obj.eventDescription stringByConvertingHTMLToPlainText];
     cell.lblEventDesc.text  =   [Utility TrimString:cell.lblEventDesc.text];
     
+    
     if ([obj.eventImageURL length]) {
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
         //[cell.imgEventImage setContentMode:UIViewContentModeScaleAspectFill];
         //[cell.imgEventImage setClipsToBounds:YES];
     }
     
-    //cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
+    cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
     
+     
+     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     
-//    
+    
 //    UIImage *img = [UIImage imageNamed:@"no_image.jpg"];
 //    [UIImageView ];
 //    UIImageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y,

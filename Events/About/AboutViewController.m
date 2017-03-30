@@ -379,13 +379,15 @@
         
         
         
-        NSString *testButtonString = [NSString stringWithFormat:@"%@",self.eventObj.eventLocationAddress];
-
-        NSDictionary *attrs = @{ NSFontAttributeName:testButtonString, NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle) };
-        
         
         cell.addressOne.text = [NSString stringWithFormat:@"%@",self.eventObj.eventLocationAddress];
         cell.addressTwo.text = [NSString stringWithFormat:@"%@ %@, %@",self.eventObj.eventLocationTown, self.eventObj.eventLocationState,self.eventObj.eventLocationpostcode];
+        
+        NSString *testButtonString = [NSString stringWithFormat:@"%@",self.eventObj.eventLocationAddress];
+        
+        NSDictionary *attrs = @{ NSFontAttributeName:testButtonString, NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle) };
+        
+
         
 
         cell.lblEventName.text      =   self.eventObj.eventName;

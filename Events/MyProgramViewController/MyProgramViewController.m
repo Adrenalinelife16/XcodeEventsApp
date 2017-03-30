@@ -192,6 +192,12 @@
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
         
             
+            UIImage *image=[[UIImage alloc]init];
+            image=[UIImage imageNamed:@"no_image.png"];
+            cell.imgIcon.image = image;
+            
+            /*
+            
         if ([[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]) {
                 [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]]] placeholderImage:nil];
             }
@@ -199,7 +205,8 @@
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
-            
+            */
+             
             // end image call
             
         }
