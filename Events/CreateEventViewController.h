@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateEventViewController : UIViewController <UITextViewDelegate>
+@interface CreateEventViewController : UIViewController <UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
     UIDatePicker *datePicker;
 
@@ -22,6 +22,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *state;
 @property (strong, nonatomic) IBOutlet UITextField *zipCode;
 @property (strong, nonatomic) IBOutlet UITextView *detailView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 
 // UI Format
@@ -33,6 +34,10 @@
 @property (nonatomic, retain) NSString *titleText;
 
 - (IBAction)submitEvent:(id)sender;
+
+- (IBAction)uploadImageClicked:(id)sender;
+
+
 
 
 

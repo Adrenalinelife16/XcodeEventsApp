@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1620)];
+    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1600)];
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     self.detailView.layer.borderWidth = 1.0f;
@@ -67,9 +67,74 @@
 #pragma mark - Upload Photo from iPhone
 - (IBAction)uploadImageClicked:(id)sender
 {
-    NSLog(@"Upload Image Tapped");
+   
+    [self openImageGallery];
+    
 }
 
+- (void)openImageGallery
+{
+    
+    
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"Upload image to display on your event"
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    
+    UIAlertAction *camera = [UIAlertAction actionWithTitle:@"Camera" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
+                             {
+                                 UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+                                 picker.delegate = self;
+                                 picker.allowsEditing = YES;
+                                 picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+                                 
+                                 [self presentViewController:picker animated:YES completion:NULL];
+                                 NSLog(@"Camera button pushed");
+                                 
+                             }];
+    
+    UIAlertAction *gallery = [UIAlertAction actionWithTitle:@"Gallery" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
+                             {
+                                 UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+                                 picker.delegate = self;
+                                 picker.allowsEditing = YES;
+                                 picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+                                 
+                                 [self presentViewController:picker animated:YES completion:NULL];
+                                 
+                                 NSLog(@"Button Pushed to open Gallery");
+                                 
+                                 
+                             }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action)
+                             {
+                                 
+                                 NSLog(@"Button Pushed to cancel");
+                                 
+                             }];
+    
+    
+    [alert addAction:camera];
+    [alert addAction:gallery];
+    [alert addAction:cancel];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imageView.image = chosenImage;
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
 
 
 #pragma mark - Check registration Field validations
