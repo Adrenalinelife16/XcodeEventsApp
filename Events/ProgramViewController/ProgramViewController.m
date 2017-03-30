@@ -298,11 +298,9 @@
     
     if (!_controller) {
         //
-       // UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ProgramController" bundle:nil];
-        SearchResultsTableViewController *resultsController = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
-        
-        
-        //
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+        SearchResultsTableViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
+    
         _controller = [[UISearchController alloc] initWithSearchResultsController:resultsController];
         _controller.searchResultsUpdater = self;
         
