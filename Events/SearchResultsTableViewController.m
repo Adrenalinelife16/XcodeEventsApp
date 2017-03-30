@@ -98,14 +98,16 @@
 {
     
     if ([segue.identifier isEqualToString:@"aboutViewTwo"]) {
+    
         
         NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
+        [self.navigationController setNavigationBarHidden:NO];
         EventList *obj  =   [_searchResults objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
         
-        //[self.navigationController setNavigationBarHidden:NO];
-        //[self.navigationController pushViewController:aboutVwController animated:YES];
+        //_searchController.active = false;
+        
     }
     
 }

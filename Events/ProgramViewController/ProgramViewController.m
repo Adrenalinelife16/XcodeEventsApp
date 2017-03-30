@@ -297,10 +297,10 @@
 - (UISearchController *)controller {
     
     if (!_controller) {
-        //
+        
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
         SearchResultsTableViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
-    
+        
         _controller = [[UISearchController alloc] initWithSearchResultsController:resultsController];
         _controller.searchResultsUpdater = self;
         
@@ -322,7 +322,7 @@
 
 
 - (IBAction)searchButtonPressed:(id)sender {
-    [self presentViewController:self.controller animated:YES completion:nil];
+    [self.navigationController presentViewController:self.controller animated:YES completion:nil];
 }
 
 @end
