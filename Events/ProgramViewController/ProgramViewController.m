@@ -327,6 +327,13 @@
 
 
 - (IBAction)searchButtonPressed:(id)sender {
+    
+    
+    NSString * storyboardName = @"Main_iPhone";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
+
+    
     [self presentViewController:self.controller animated:YES completion:nil];
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "CreateEventViewController.h"
+#import "CategoryTableViewController.h"
 
 
 @interface CreateEventViewController () <UITextViewDelegate>
@@ -45,23 +46,43 @@
 - (IBAction)submitEvent:(id)sender
 {
     [self IsValid];
+    
+    NSString *category = titleText;
+    
+    
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:eventName.text,@"eventName",
                                          self.startText.text,@"startText",
                                          self.endText.text,@"endText",
-                                         self.locationName.text,@"locationName",
+                                         self.locationName.text,@"locationname",
                                          self.address.text,@"address",
                                          self.city.text,@"city",
                                          self.state.text,@"state",
                                          self.zipCode.text,@"zipode",
-                                         self.detailView.text,@"detailview", nil];
-
+                                         self.detailView.text,@"eventInfo",
+                                         self.navigationItem.title = titleText,@"category", nil];
     
     
-    
+    [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        
+        [DSBezelActivityView removeViewAnimated:YES];
+        
+        
+        if ([response isKindOfClass:[NSDictionary class]]) {
+            [Utility alertNotice:@"" withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        }
+        else if([response isKindOfClass:[NSArray class]]){
+            [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        }
+        
+    }WithFailure:^(NSString *error){
+        [DSBezelActivityView removeViewAnimated:YES];
+        NSLog(@"%@",error);
+    }];
     
     NSLog(@"Create event button pushed");
-    
 }
+
+
 
 
 #pragma mark - Upload Photo from iPhone

@@ -23,7 +23,8 @@
 "GETFEEDS_METHOD"           =   "/webservices/tweet-fb.php";
 "LOGIN_METHOD"              =   "/api/Login";
 "REGISTER_METHOD"           =   "/Adrenaline_Custom/api/Register";
-"CREATE_EVENT_METHOD"       =   "/api/CreateEvent";
+"CREATE_EVENT_METHOD"       =   "/Adrenaline_Custom/api/postEvent";
+"REMOVE_FAV_EVENT"          =   "/Adrenaline_Custom/api/addRemoveFav";
 
 
 //About View Contents

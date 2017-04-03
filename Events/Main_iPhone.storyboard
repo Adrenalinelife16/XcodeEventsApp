@@ -97,7 +97,7 @@
         <!--Tab Bar Center Icon-->
         <scene sceneID="XhB-8n-zSN">
             <objects>
-                <tabBarController storyboardIdentifier="engtab" definesPresentationContext="YES" id="DxO-cP-19h" customClass="TabBarCenterIcon" sceneMemberID="viewController">
+                <tabBarController definesPresentationContext="YES" id="DxO-cP-19h" customClass="TabBarCenterIcon" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tTe-dz-p6d"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" id="cie-gf-Xpg" customClass="TabBarHeight">
@@ -131,11 +131,11 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="206" id="jUX-MS-syf" customClass="ProgramCustomCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="206" id="jUX-MS-syf" customClass="ProgramCustomCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="205"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="205"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" id="Jyd-f3-EuW">
@@ -199,14 +199,13 @@
                                     <outlet property="lblDateTime" destination="fYY-oT-H9o" id="P7b-qf-0Nh"/>
                                     <outlet property="lblEventDesc" destination="qgt-yW-c9q" id="tj9-XD-mdy"/>
                                     <outlet property="lblEventName" destination="J5G-nQ-AXo" id="J0i-HC-w2Y"/>
-                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="AboutView" id="482-f4-L4W"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramCustomCell2" rowHeight="289" id="9Um-de-t49" userLabel="ProgramCustomCell2" customClass="ProgramCustomCell">
                                 <rect key="frame" x="0.0" y="228" width="320" height="289"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="9Um-de-t49" id="8wL-aY-Eur">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="288.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" misplaced="YES" id="fNe-kO-H4J">
@@ -346,7 +345,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9rR-r2-pX1" id="0rB-Le-gNS">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="199"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="199.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="redraw" misplaced="YES" id="1st-JF-SDE">
@@ -402,7 +401,7 @@
                                     <outlet property="lblDateTime" destination="h3g-dX-KSu" id="iEr-xW-buA"/>
                                     <outlet property="lblEventDesc" destination="YJ8-pl-dtf" id="m9B-ek-sVD"/>
                                     <outlet property="lblEventName" destination="6Gv-WM-z5V" id="Gep-3R-0Z9"/>
-                                    <segue destination="GJ5-Ez-Ag6" kind="custom" identifier="AboutViewTwo" animates="NO" id="sUZ-dE-uWa"/>
+                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="" id="fe5-sW-g8r"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -417,7 +416,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yO8-YW-BBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1615" y="-3076.5"/>
+            <point key="canvasLocation" x="-1028" y="-3076.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6vi-zx-NAx">
@@ -481,7 +480,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlP-9R-uaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1031" y="-3077"/>
+            <point key="canvasLocation" x="-444" y="-3077.5"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="of1-2C-MFB">
@@ -621,10 +620,10 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" lookupSuggestion="YES"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GQ8-WB-i8I">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GQ8-WB-i8I">
                                                 <rect key="frame" x="30" y="712" width="257" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title=" + Upload Image">
+                                                <state key="normal" title="Upload Image">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -689,7 +688,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIR-xF-oLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-479" y="-2721"/>
+            <point key="canvasLocation" x="108" y="-2721"/>
         </scene>
         <!--Discover View Controller-->
         <scene sceneID="feH-eW-g6n">
@@ -1121,7 +1120,7 @@
                                                     <outlet property="lblStatus" destination="exe-n3-HHZ" id="TRG-I6-OWd"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="158" id="fZ8-Vq-MSU" customClass="ProgramCustomCell">
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="158" id="fZ8-Vq-MSU" customClass="ProgramCustomCell">
                                                 <rect key="frame" x="0.0" y="73" width="375" height="158"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZ8-Vq-MSU" id="3Vc-7L-PYu">
@@ -1178,7 +1177,7 @@
                                                     <outlet property="lblDateTime" destination="a8M-Of-ajR" id="3gd-Ye-WWM"/>
                                                     <outlet property="lblEventDesc" destination="9AC-1i-zZ1" id="jIP-Sj-GY9"/>
                                                     <outlet property="lblEventName" destination="Vpm-A5-QYE" id="VZV-4H-pO1"/>
-                                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="program" id="gkd-uM-QVZ"/>
+                                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="program" id="05A-j7-Rz0"/>
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EventCalCell" rowHeight="60" id="qp3-EP-ht4" customClass="EventCalCell">
@@ -1222,7 +1221,7 @@
                                                     <outlet property="lblDateTime" destination="f8j-Ij-nhz" id="QfA-OY-OII"/>
                                                     <outlet property="lblEventName" destination="jXU-9X-DWW" id="Mg1-Ft-1Yu"/>
                                                     <outlet property="lblEventPlace" destination="nbf-V4-uEb" id="X4T-MZ-yw1"/>
-                                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="event_name" id="EK1-wX-Yhq"/>
+                                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="event_name" id="GW1-iY-vhh"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -1316,7 +1315,7 @@
             </objects>
             <point key="canvasLocation" x="-479" y="-1307"/>
         </scene>
-        <!--Terms View Controller-->
+        <!--Terms & Conditions-->
         <scene sceneID="8It-6Z-hs9">
             <objects>
                 <viewController id="Esk-Y6-vmr" customClass="TermsViewController" sceneMemberID="viewController">
@@ -1349,7 +1348,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wNe-0G-OeE"/>
+                    <navigationItem key="navigationItem" title="Terms &amp; Conditions" id="wNe-0G-OeE"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
@@ -1606,7 +1605,6 @@
                         <outlet property="tblView" destination="7vo-Zb-OAf" id="5IP-qN-I7P"/>
                         <outlet property="txtFieldBookingSpaces" destination="bop-gt-3UG" id="X0N-Yk-vfI"/>
                         <outlet property="txtViewComment" destination="zm9-ak-Y6K" id="pJ4-Kq-eXf"/>
-                        <segue destination="Qsp-nK-F0D" kind="custom" identifier="aboutPushBack" id="Y2Z-at-8Er"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz0-9l-sJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1683,7 +1681,7 @@
             </objects>
             <point key="canvasLocation" x="-2212" y="353"/>
         </scene>
-        <!--Help View Controller-->
+        <!--Policy Agreement-->
         <scene sceneID="Jgg-4W-pTh">
             <objects>
                 <viewController storyboardIdentifier="termView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VXa-xe-yrs" customClass="HelpViewController" sceneMemberID="viewController">
@@ -1721,7 +1719,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gCe-j8-R42"/>
+                    <navigationItem key="navigationItem" title="Policy Agreement" id="gCe-j8-R42"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
@@ -1745,7 +1743,7 @@
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1866,7 +1864,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8an-5w-L1E"/>
+                    <navigationItem key="navigationItem" title="About Us" id="8an-5w-L1E"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
@@ -2003,7 +2001,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="XMy-k7-mqo" kind="relationship" relationship="rootViewController" id="bzb-fN-vxU"/>
+                        <segue destination="XMy-k7-mqo" kind="relationship" relationship="rootViewController" id="ZrE-a6-aH7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMk-o7-OAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2097,7 +2095,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sUZ-dE-uWa"/>
         <segue reference="GPB-HE-q9b"/>
+        <segue reference="GW1-iY-vhh"/>
     </inferredMetricsTieBreakers>
 </document>

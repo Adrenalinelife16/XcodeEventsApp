@@ -65,7 +65,7 @@
     [self.tblMainTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 
     [self clickedMyCalender:nil];
-    [self deleteFavorite];
+    
     
    }
 
@@ -73,6 +73,7 @@
 {
     [super viewWillAppear:animated];
     self.navigationItem.title = @"My Events";
+  //  [self removeFavorite]; not working, note - have connected to PHP but only saying favorite event inserted. will not remove
 }
 
 
@@ -242,9 +243,9 @@
     
     EventList *objEvent;
     
-    BOOL IsMatch = NO;
+    BOOL IsMatch = YES;
     if ([segue.identifier isEqualToString:@"program"]) {
-        for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {
+        for (int favCount = 1; favCount <[gArrayEvents count]; favCount ++) {
             objEvent = [gArrayEvents objectAtIndex:favCount];
             
             for (NSDictionary *dictDetails in arrayFavouriteProgram) {
@@ -545,9 +546,6 @@
         [self removeFavorite];
        
     }
-
-    
-    
     
 
 }
@@ -570,9 +568,44 @@
     [self.tblMainTable reloadData];
 }
 
+
+-(void)checkUserID
+{
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
+        NSLog(@"User ID is %@", strUserID);
+    }
+    else
+        NSLog(@"User is logged out");
+}
+
+
+
+
 -(void)removeFavorite
 {
-    [MMdbsupport MMExecuteSqlQuery:[NSString stringWithFormat:@"delete from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]];
+    
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    NSDictionary *dictOfParameters = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:[[Utility getNSUserDefaultValue:KUSERID] intValue]],@"user_id",self.eventObj.eventID,@"event_id", nil];
+    
+    NSLog(@"Remove favorite ID %@", strUserID);
+    
+    [Utility GetDataForMethod:NSLocalizedString(@"REMOVE_FAV_EVENT", @"REMOVE_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        [DSBezelActivityView removeViewAnimated:YES];
+        
+
+        if ([response isKindOfClass:[NSDictionary class]]) {
+            [Utility alertNotice:@"" withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        }
+        else if([response isKindOfClass:[NSArray class]]){
+            [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        }
+        [self.tblMainTable reloadData];
+        
+    }WithFailure:^(NSString *error){
+        [DSBezelActivityView removeViewAnimated:YES];
+        NSLog(@"%@",error);
+    }];
 }
 
 
