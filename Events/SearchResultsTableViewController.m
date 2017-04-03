@@ -109,6 +109,7 @@
 {
     
     if ([segue.identifier isEqualToString:@"aboutViewTwo"]) {
+    
         
         NSString * storyboardName = @"Main_iPhone";
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
@@ -117,6 +118,7 @@
         
         NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
+        [self.navigationController setNavigationBarHidden:NO];
         EventList *obj  =   [_searchResults objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
         
