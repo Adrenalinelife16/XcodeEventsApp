@@ -34,6 +34,7 @@
         NSString * storyboardName = @"Main_iPhone";
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
         UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
+        [self loadNavigationController];
         
         
     }
@@ -42,6 +43,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+-(void)loadNavigationController
+{
+    
+    UIViewController *bbp=[[UIViewController alloc]initWithNibName:@"UIViewController" bundle:nil];
+    UINavigationController *passcodeNavigationController = [[UINavigationController alloc] initWithRootViewController:bbp];
+    [self.navigationController pushViewController:passcodeNavigationController animated:YES];
+    
+}
+
+
 
 #pragma mark - Table view data source
 
