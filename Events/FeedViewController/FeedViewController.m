@@ -25,7 +25,6 @@
 
 @implementation FeedViewController
 
-
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -56,6 +55,7 @@
     [Utility afterDelay:0.01 withCompletion:^{
     [DSBezelActivityView newActivityViewForView:self.view.window];
     [self getFeedsFromServer];
+    [self sortSocialFeedFilter];
         
 //  Uncomment after BETA release
         
@@ -151,14 +151,6 @@
                 [arrayTempFeeds addObject:dictOfInstagramFeeds];
             }
             
-            
-            
-            NSSortDescriptor *descriptorForFeeds  =   [[NSSortDescriptor alloc] initWithKey:@"created_at" ascending:NO];
-       
-            
-            
-            [arrayTempFeeds sortUsingDescriptors:[NSArray arrayWithObjects:descriptorForFeeds,nil]];
-         
             
             
             arrayOfFeeds    =   [[NSMutableArray alloc] init];
@@ -265,6 +257,30 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
+
+/*
+-(void)sortSocialFeed
+{
+    NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"created_at" ascending:NO];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
+    NSArray *sortedEventArray = [arrayOfFeeds sortedArrayUsingDescriptors:sortDescriptors];
+    NSLog(@"Date is %@",dateDescriptor);
+    NSLog(@"Check Date %@",sortedEventArray);
+    NSLog(@"Array Date is %@",sortedEventArray);
+}
+*/
+
+
+
+-(void)sortSocialFeedFilter
+{
+    
+    NSSortDescriptor *sortDescriptor =
+    [[NSSortDescriptor alloc] initWithKey:@"created_time" ascending:YES];
+    NSLog(@"Date is %@",sortDescriptor);
+
+}
+
 
 
 #pragma mark - Navigation

@@ -115,7 +115,6 @@
                         <segue destination="Dlv-Lj-Hfo" kind="relationship" relationship="viewControllers" id="wmC-Pg-A59"/>
                         <segue destination="wat-zQ-9t5" kind="relationship" relationship="viewControllers" id="tQz-fX-VEZ"/>
                         <segue destination="7QV-MF-lRy" kind="relationship" relationship="viewControllers" id="GmH-cQ-7tN"/>
-                        <segue destination="BmX-O6-Vxm" kind="relationship" relationship="viewControllers" id="lWf-3v-Zlf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFb-jA-sY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -136,7 +135,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="205"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="205.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" id="Jyd-f3-EuW">
@@ -273,6 +272,7 @@
                     </refreshControl>
                     <connections>
                         <segue destination="Jo0-vK-BNb" kind="push" identifier="CEcategory" id="Bt6-Gi-eBC"/>
+                        <segue destination="Qsp-nK-F0D" kind="push" id="03i-zP-Xgd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afA-Kn-raX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -324,7 +324,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9rR-r2-pX1" id="0rB-Le-gNS">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="199.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="199.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="redraw" misplaced="YES" id="1st-JF-SDE">
@@ -1060,7 +1060,7 @@
                                                 <rect key="frame" x="0.0" y="22" width="375" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mlj-73-nBr" id="g7m-NP-VL4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milan Fashion Week" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xdo-zz-QB9">
@@ -1099,11 +1099,11 @@
                                                     <outlet property="lblStatus" destination="exe-n3-HHZ" id="TRG-I6-OWd"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="158" id="fZ8-Vq-MSU" customClass="ProgramCustomCell">
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="158" id="fZ8-Vq-MSU" customClass="ProgramCustomCell">
                                                 <rect key="frame" x="0.0" y="73" width="375" height="158"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZ8-Vq-MSU" id="3Vc-7L-PYu">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="157.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" id="a9b-9X-Mj4">
@@ -1159,11 +1159,11 @@
                                                     <segue destination="GJ5-Ez-Ag6" kind="push" identifier="program" id="05A-j7-Rz0"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EventCalCell" rowHeight="60" id="qp3-EP-ht4" customClass="EventCalCell">
+                                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EventCalCell" rowHeight="60" id="qp3-EP-ht4" customClass="EventCalCell">
                                                 <rect key="frame" x="0.0" y="231" width="375" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qp3-EP-ht4" id="1fF-wg-hsC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="59"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8j-Ij-nhz">
@@ -1719,10 +1719,10 @@
                         <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MoreCell" id="rfb-6m-XYc">
-                                <rect key="frame" x="0.0" y="56" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1764,7 +1764,7 @@
                                         <rect key="frame" x="0.0" y="35" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NmC-VY-eFi" id="6AA-cR-tpb">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="55Z-pA-sCO">
@@ -2073,7 +2073,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="BNm-lt-kVg"/>
         <segue reference="GPB-HE-q9b"/>
-        <segue reference="GW1-iY-vhh"/>
     </inferredMetricsTieBreakers>
 </document>

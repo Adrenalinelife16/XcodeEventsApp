@@ -18,6 +18,7 @@
 #import "MMdbsupport.h"
 #import "EventList.h"
 #import "AboutViewController.h"
+#import "ProgramViewController.h"
 
 @interface MyProgramViewController ()
 {
@@ -32,6 +33,9 @@
     NSDate *eventDate;//date of event
     
     VRGCalendarView *calView;
+    
+    NSMutableArray *arrayEventList;
+
     
 }
 @end
@@ -65,16 +69,17 @@
     [self.tblMainTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 
     [self clickedMyCalender:nil];
-    
+   
     
    }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationItem.title = @"My Events";
+    self.navigationItem.title = @"Find Your Life";
+    [self sortFavoriteEvents];
   //  [self removeFavorite]; not working, note - have connected to PHP but only saying favorite event inserted. will not remove
-}
+ }
 
 
 - (void)didReceiveMemoryWarning
@@ -214,6 +219,13 @@
         return NULL;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   
+       NSLog(@"selected tableview row is %ld",(long)indexPath.row);
+    
+}
+
 - (CGFloat) tableView: (UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *) indexPath
 {
     switch (segmentPosition) {
@@ -232,25 +244,33 @@
     }
 }
 
+-(void)sortFavoriteEvents
+{
+    
+    NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"event_start_date" ascending:NO];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
+    NSArray *sortedEventArray = [arrayEventList sortedArrayUsingDescriptors:sortDescriptors];
+    NSLog(@"Date is %@",dateDescriptor);
+    NSLog(@"Check Date %@",sortedEventArray);
+    NSLog(@"Array Date is %@",sortedEventArray);
+    
+    
+}
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
-    NSIndexPath *selectedRowIndex = [self.tblMainTable indexPathForSelectedRow];
-    AboutViewController *aboutVwController = [segue destinationViewController];
-    EventList *obj  =   [arrayFavouriteProgram objectAtIndex:selectedRowIndex.row];
-    aboutVwController.eventObj  =   obj;
     
     EventList *objEvent;
     
     BOOL IsMatch = YES;
     if ([segue.identifier isEqualToString:@"program"]) {
-        for (int favCount = 1; favCount <[gArrayEvents count]; favCount ++) {
+        for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {
             objEvent = [gArrayEvents objectAtIndex:favCount];
             
             for (NSDictionary *dictDetails in arrayFavouriteProgram) {
-                if ([objEvent.eventName isEqualToString:[dictDetails objectForKey:@"eventname"]]) {
-                    IsMatch = YES;
+                if ([objEvent.eventName isEqualToString:[dictDetails objectForKey:@""]]) {
+                    IsMatch = NO;
                     break;
                 }
             }
@@ -281,6 +301,7 @@
     }
     
 }
+
 
  
 #pragma mark - Button Clicked Function
@@ -528,29 +549,6 @@
     
     [self.tblMainTable reloadData];
 }
-
-#pragma mark - Remove favorites based on current date
-
--(void)deleteFavorite
-{
-    
-    NSDate *aDate = [NSDate date];
-    NSCalendar *cal = [NSCalendar currentCalendar];
-    NSDateComponents *components = [cal components:(NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:[NSDate date]];
-    NSDate *today = [cal dateFromComponents:components];
-    components = [cal components:(NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:aDate];
-    NSDate *otherDate = [cal dateFromComponents:components];
-    
-    if([today isEqualToDate:otherDate]) {
-       
-        [self removeFavorite];
-       
-    }
-    
-
-}
-
-
 
 /**
  *  Fetch Favorites program list from local
