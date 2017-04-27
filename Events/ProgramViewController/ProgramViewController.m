@@ -279,22 +279,6 @@
     return cell;
 }
 
-#pragma mark - Navigation
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    if ([segue.identifier isEqualToString:@"AboutView2"]) {
-        
-        NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
-        AboutViewController *aboutVwController = [segue destinationViewController];
-        EventList *obj  =   [arrayEventList objectAtIndex:selectedRowIndex.row];
-        aboutVwController.eventObj  =   obj;
-    }
-    
-}
-
 #pragma mark - Search Events
 
 - (UISearchController *)controller {
@@ -312,6 +296,19 @@
     return _controller;
 }
 
+
+- (IBAction)searchButtonPressed:(id)sender {
+    
+    
+    NSString * storyboardName = @"Main_iPhone";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
+    
+    
+    [self presentViewController:self.controller animated:YES completion:nil];
+}
+
+
 #pragma mark - Search Results Updater
 
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
@@ -324,15 +321,22 @@
 }
 
 
-- (IBAction)searchButtonPressed:(id)sender {
-    
-    
-    NSString * storyboardName = @"Main_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
 
+
+
+#pragma mark - Navigation
+// In a story board-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     
-    [self presentViewController:self.controller animated:YES completion:nil];
+    if ([segue.identifier isEqualToString:@"AboutView2"]) {
+        
+        NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
+        AboutViewController *aboutVwController = [segue destinationViewController];
+        EventList *obj  =   [arrayEventList objectAtIndex:selectedRowIndex.row];
+        aboutVwController.eventObj  =   obj;
+    }
+    
 }
 
 @end

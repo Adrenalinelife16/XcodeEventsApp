@@ -34,7 +34,6 @@
         NSString * storyboardName = @"Main_iPhone";
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
         UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
-        [self loadNavigationController];
         
         
     }
@@ -123,7 +122,8 @@
 {
     
     if ([segue.identifier isEqualToString:@"aboutViewTwo"]) {
-    
+        
+        
         
         NSString * storyboardName = @"Main_iPhone";
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
