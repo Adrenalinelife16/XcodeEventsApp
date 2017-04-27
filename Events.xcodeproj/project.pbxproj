@@ -59,6 +59,7 @@
 		7122DC1518BDE6D900DC9925 /* VRGCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122DC1418BDE6D900DC9925 /* VRGCalendarView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7122DC1718BDFB7B00DC9925 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1618BDFB7B00DC9925 /* MapKit.framework */; };
 		7122DC1918BDFB8100DC9925 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1818BDFB8100DC9925 /* CoreLocation.framework */; };
+		721BEE471EB17CB500C2DB6F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721BEE451EB17CB500C2DB6F /* Main_iPad.storyboard */; };
 		7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */; };
 		7225BD201E4AA78200A35D30 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1F1E4AA78200A35D30 /* Notes */; };
 		72653FBD1E8D35A200FF29A9 /* SearchSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72653FBC1E8D35A200FF29A9 /* SearchSegue.m */; };
@@ -165,7 +166,6 @@
 		BB303DA418B863E300B6EBC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB303DA218B863E300B6EBC9 /* InfoPlist.strings */; };
 		BB303DA618B863E300B6EBC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303DA518B863E300B6EBC9 /* main.m */; };
 		BB303DAA18B863E300B6EBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303DA918B863E300B6EBC9 /* AppDelegate.m */; };
-		BB303DB018B863E300B6EBC9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB303DAE18B863E300B6EBC9 /* Main_iPad.storyboard */; };
 		BB303DB318B863E300B6EBC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303DB218B863E300B6EBC9 /* ViewController.m */; };
 		BB303DB518B863E300B6EBC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB303DB418B863E300B6EBC9 /* Images.xcassets */; };
 		BB303DBC18B863E300B6EBC9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB303DBB18B863E300B6EBC9 /* XCTest.framework */; };
@@ -353,6 +353,7 @@
 		7122DC1418BDE6D900DC9925 /* VRGCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRGCalendarView.m; sourceTree = "<group>"; };
 		7122DC1618BDFB7B00DC9925 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7122DC1818BDFB8100DC9925 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		721BEE461EB17CB500C2DB6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		7225BD1F1E4AA78200A35D30 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		725535CA1E1416260070D5B5 /* Events.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Events.entitlements; sourceTree = "<group>"; };
@@ -527,7 +528,6 @@
 		BB303DA718B863E300B6EBC9 /* Events-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Events-Prefix.pch"; sourceTree = "<group>"; };
 		BB303DA818B863E300B6EBC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB303DA918B863E300B6EBC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BB303DAF18B863E300B6EBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		BB303DB118B863E300B6EBC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB303DB218B863E300B6EBC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB303DB418B863E300B6EBC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -1152,7 +1152,7 @@
 				BB303DA818B863E300B6EBC9 /* AppDelegate.h */,
 				BB303DA918B863E300B6EBC9 /* AppDelegate.m */,
 				7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */,
-				BB303DAE18B863E300B6EBC9 /* Main_iPad.storyboard */,
+				721BEE451EB17CB500C2DB6F /* Main_iPad.storyboard */,
 				BB303DB118B863E300B6EBC9 /* ViewController.h */,
 				BB303DB218B863E300B6EBC9 /* ViewController.m */,
 				BB303DB418B863E300B6EBC9 /* Images.xcassets */,
@@ -1547,6 +1547,7 @@
 				79736F09191EAD13005BA69B /* fb_logo@2x.png in Resources */,
 				7122DB4618BB7D8600C044E8 /* Segmented_middle@2x.png in Resources */,
 				BB62B11F18B8B529000DBDBC /* Action3@2x.png in Resources */,
+				721BEE471EB17CB500C2DB6F /* Main_iPad.storyboard in Resources */,
 				E2D8A7E71E544B3D007050F8 /* ConfirmLogoutbtn@2x.png in Resources */,
 				79383A631906135A00A1DBBC /* share2@2x.png in Resources */,
 				BB303E2918B879AA00B6EBC9 /* strip.png in Resources */,
@@ -1564,7 +1565,6 @@
 				711221EC18BC94F900E77A4A /* RedDot@2x.png in Resources */,
 				BB303E0918B86B3400B6EBC9 /* Program.png in Resources */,
 				BB303E2718B879AA00B6EBC9 /* Reload.png in Resources */,
-				BB303DB018B863E300B6EBC9 /* Main_iPad.storyboard in Resources */,
 				79E815631953481800E58344 /* Icon.png in Resources */,
 				E29A6BE81E6AA3AD0041F782 /* HighResIconRed.png in Resources */,
 				BB303E0B18B86B3400B6EBC9 /* Programred.png in Resources */,
@@ -1804,20 +1804,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		721BEE451EB17CB500C2DB6F /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721BEE461EB17CB500C2DB6F /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
 		BB303DA218B863E300B6EBC9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BB303DA318B863E300B6EBC9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		BB303DAE18B863E300B6EBC9 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB303DAF18B863E300B6EBC9 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		BB303DC418B863E300B6EBC9 /* InfoPlist.strings */ = {
@@ -1934,6 +1934,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1958,6 +1959,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
