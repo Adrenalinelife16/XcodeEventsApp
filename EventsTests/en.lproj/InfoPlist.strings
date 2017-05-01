@@ -13,4 +13,6 @@
 <string>1005768949528101</string>
 <key>FacebookDisplayName</key>
 <string>Adrenaline Life</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>$(PRODUCT_NAME) photo use</string>
 </dict>
