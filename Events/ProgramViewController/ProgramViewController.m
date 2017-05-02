@@ -14,9 +14,9 @@
 #import "UIImageView+WebCache.h"
 #import "CreateEventViewController.h"
 #import "Utility.h"
-#import "SearchResultsTableViewController.h"
 #import "FeedViewController.h"
 #import "FeedCustomCell.h"
+#import "SearchResultsViewController.h"
 
 
 @interface ProgramViewController () <UISearchResultsUpdating>
@@ -62,7 +62,7 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
-    SearchResultsTableViewController *searchResults = (SearchResultsTableViewController *) self.controller.searchResultsController;
+    SearchResultsViewController *EventSearchResults = (SearchResultsViewController *) self.controller.searchResultsController;
     [self addObserver:searchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
 }
@@ -235,7 +235,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 165; //162: ProgramCustomCell
+    return 162; //162: ProgramCustomCell
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -270,13 +270,8 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     
-    
-//    UIImage *img = [UIImage imageNamed:@"no_image.jpg"];
-//    [UIImageView ];
-//    UIImageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y,
-//                                 img.size.width, img.size.height);
-    
     return cell;
+    
 }
 
 #pragma mark - Search Events
@@ -286,7 +281,7 @@
     if (!_controller) {
         //
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-        SearchResultsTableViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
+         SearchResultsViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
         
         _controller = [[UISearchController alloc] initWithSearchResultsController:resultsController];
         _controller.searchResultsUpdater = self;
@@ -315,7 +310,6 @@
     
     self.results = nil;
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"eventName contains [cd] %@", self.controller.searchBar.text];
-    //NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains [cd] %@", self.controller.searchBar.text];
     self.results = [self->arrayEventList filteredArrayUsingPredicate:predicate];
     
 }

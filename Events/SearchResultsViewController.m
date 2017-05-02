@@ -1,12 +1,11 @@
 //
-//  SearchResultsTableViewController.m
+//  SearchResults.m
 //  Events
 //
-//  Created by Michael Cather on 2/16/17.
-//  Copyright © 2017 Teknowledge Software. All rights reserved.
+//  Created by Michael Cather on 5/1/17.
 //
 
-#import "SearchResultsTableViewController.h"
+#import "SearchResultsViewController.h"
 #import "ProgramCustomCell.h"
 #import "SearchCustomCell.h"
 #import "Utility.h"
@@ -14,28 +13,30 @@
 #import "UIImageView+WebCache.h"
 #import "AboutViewController.h"
 
-@interface SearchResultsTableViewController () <UITableViewDelegate,UITableViewDataSource>
+@interface SearchResultsViewController () <UITableViewDelegate,UITableViewDataSource>
 {
     
     NSMutableArray *arrayEventList;
+    IBOutlet UITableView *MyTableView;
 }
 
 @property (nonatomic, strong) NSArray *searchResults;
 
+
 @end
 
-@implementation SearchResultsTableViewController
+@implementation SearchResultsViewController
 
 - (void)viewDidLoad
-    {
+{
     [super viewDidLoad];
-        
-        NSString * storyboardName = @"Main_iPhone";
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-        UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
-        
-        
-    }
+    
+    NSString * storyboardName = @"Main_iPhone";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
+    
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -58,7 +59,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
+    
     return 1;
 }
 
@@ -105,8 +106,8 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     self.searchResults = [(NSArray *)object valueForKey:@"results"];
-    [self.tableView reloadData];
-     
+    [self.MyTableView reloadData];
+    
 }
 
 
@@ -129,7 +130,7 @@
         UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
         
         
-        NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
+        NSIndexPath *selectedRowIndex = [self.MyTableView indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
         [self.navigationController setNavigationBarHidden:NO];
         EventList *obj  =   [_searchResults objectAtIndex:selectedRowIndex.row];
