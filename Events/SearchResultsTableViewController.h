@@ -10,6 +10,6 @@
 
 @interface SearchResultsTableViewController : UITableViewController
 
-//@property (nonatomic, strong) UISearchController *searchController;
+@property (nonatomic, strong) UISearchController *searchController;
 
 @end

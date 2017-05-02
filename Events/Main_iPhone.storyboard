@@ -265,7 +265,7 @@
         <!--SearchResults-->
         <scene sceneID="WTf-Oy-ck8">
             <objects>
-                <viewController storyboardIdentifier="SearchResults" title="SearchResults" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eY9-YB-a3B" customClass="SearchResultsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchResults" title="SearchResults" id="eY9-YB-a3B" customClass="SearchResultsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uxl-Zy-ahA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -62,7 +62,7 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
-    SearchResultsViewController *searchResults = (SearchResultsViewController *) self.controller.searchResultsController;
+    SearchResultsViewController *EventSearchResults = (SearchResultsViewController *) self.controller.searchResultsController;
     [self addObserver:searchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
 }
@@ -270,13 +270,8 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     
-    
-//    UIImage *img = [UIImage imageNamed:@"no_image.jpg"];
-//    [UIImageView ];
-//    UIImageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y,
-//                                 img.size.width, img.size.height);
-    
     return cell;
+    
 }
 
 #pragma mark - Search Events
