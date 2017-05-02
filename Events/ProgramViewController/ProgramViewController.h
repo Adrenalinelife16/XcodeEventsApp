@@ -12,6 +12,7 @@
 
 
 -(IBAction)createEvent:(id)sender;
+-(IBAction)searchButtonPressed:(id)sender;
 
 
 
