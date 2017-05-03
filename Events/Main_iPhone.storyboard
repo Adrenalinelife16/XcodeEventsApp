@@ -265,7 +265,7 @@
         <!--SearchResults-->
         <scene sceneID="WTf-Oy-ck8">
             <objects>
-                <viewController storyboardIdentifier="SearchResults" title="SearchResults" id="eY9-YB-a3B" customClass="SearchResultsViewController" sceneMemberID="viewController">
+                <viewController title="SearchResults" id="eY9-YB-a3B" customClass="SearchResultsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uxl-Zy-ahA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,13 +348,38 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="5fT-6B-Als"/>
-                    <connections>
-                        <outlet property="MyTableView" destination="ebM-o6-BGj" id="ATb-is-NKE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lEO-pN-yeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="29.5" y="-3152.5"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="HXf-4i-Z6j">
+            <objects>
+                <tableViewController storyboardIdentifier="SearchResults" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uBz-d0-4nk" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bt5-bx-LPT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="v6e-G2-Not">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v6e-G2-Not" id="RXt-ZN-h8u">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uBz-d0-4nk" id="RXS-CN-DTi"/>
+                            <outlet property="delegate" destination="uBz-d0-4nk" id="lhS-t9-vMR"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZl-Vj-6z4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="-3998"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="4QS-t0-JyV">
@@ -708,7 +733,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIR-xF-oLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869" y="-2721"/>
+            <point key="canvasLocation" x="1142" y="-1901"/>
         </scene>
         <!--Discover View Controller-->
         <scene sceneID="feH-eW-g6n">
@@ -2012,7 +2037,7 @@
         <!--searchNavigation-->
         <scene sceneID="ceR-vN-lrW">
             <objects>
-                <navigationController storyboardIdentifier="searchNavigation" title="searchNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mml-vq-zwo" sceneMemberID="viewController">
+                <navigationController title="searchNavigation" automaticallyAdjustsScrollViewInsets="NO" id="Mml-vq-zwo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Program.png" id="TWS-hq-3Im"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vdo-nW-dZc">
@@ -2070,7 +2095,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ZEF-Pf-pQ4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="62z-QX-7Kg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="searchNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="62z-QX-7Kg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wro-fb-JCP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

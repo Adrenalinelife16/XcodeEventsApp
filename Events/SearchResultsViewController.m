@@ -17,43 +17,30 @@
 {
     
     NSMutableArray *arrayEventList;
-    IBOutlet UITableView *MyTableView;
+ //   IBOutlet UITableView *MyTableView;
 }
 
 @property (nonatomic, strong) NSArray *searchResults;
+@property (nonatomic, strong) UISearchController *searchController;
+@property (nonatomic, strong) UITableView *MyTableView;
 
 
 @end
 
 @implementation SearchResultsViewController
 
+@synthesize searchController;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSString * storyboardName = @"Main_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
-    
-    
+     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
--(void)loadNavigationController
-{
-    
-    UIViewController *bbp=[[UIViewController alloc]initWithNibName:@"UIViewController" bundle:nil];
-    UINavigationController *passcodeNavigationController = [[UINavigationController alloc] initWithRootViewController:bbp];
-    [self.navigationController pushViewController:passcodeNavigationController animated:YES];
-    
-}
-
 
 
 #pragma mark - Table view data source
@@ -69,7 +56,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 155; //162
+    return 162; //162
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -113,10 +100,6 @@
 
 
 #pragma mark - Navigation
-// In a story board-based application, you will often want to do a little preparation before navigation
-
-
-
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

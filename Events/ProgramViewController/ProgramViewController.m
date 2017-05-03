@@ -19,14 +19,12 @@
 #import "SearchResultsViewController.h"
 
 
-@interface ProgramViewController () <UISearchResultsUpdating>
+@interface ProgramViewController () <UISearchResultsUpdating, UISearchControllerDelegate>
 {
     
     NSMutableArray *arrayEventList;
     NSMutableArray *sortedArrayEventList;
     NSDate *eventDate;
-    NSArray *results;
-    NSArray *searchResults;
     
 }
 
@@ -36,6 +34,8 @@
 @property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
 @property (strong, nonatomic) UISearchController *controller;
 @property (strong, nonatomic) NSArray *results;
+@property (strong, nonatomic) NSMutableArray *arrayEventList;
+
 @end
 
 @implementation ProgramViewController
@@ -63,7 +63,7 @@
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
     SearchResultsViewController *EventSearchResults = (SearchResultsViewController *) self.controller.searchResultsController;
-    [self addObserver:searchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
+    [self addObserver:EventSearchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
 }
 
@@ -279,43 +279,35 @@
 - (UISearchController *)controller {
     
     if (!_controller) {
-        //
+        
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-         SearchResultsViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
+        SearchResultsViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
         
         _controller = [[UISearchController alloc] initWithSearchResultsController:resultsController];
         _controller.searchResultsUpdater = self;
+        _controller.delegate = self;
         
         
     }
     return _controller;
 }
 
-
-- (IBAction)searchButtonPressed:(id)sender {
-    
-    
-    NSString * storyboardName = @"Main_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
-    
-    
-    [self presentViewController:self.controller animated:YES completion:nil];
-}
-
-
 #pragma mark - Search Results Updater
 
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     
-    self.results = nil;
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"eventName contains [cd] %@", self.controller.searchBar.text];
-    self.results = [self->arrayEventList filteredArrayUsingPredicate:predicate];
+    self.results = [self.arrayEventList filteredArrayUsingPredicate:predicate];
     
 }
 
 
-
+- (IBAction)searchButtonPressed:(id)sender
+{
+    
+    [self presentViewController:self.controller animated:YES completion:nil];
+    
+}
 
 
 #pragma mark - Navigation
@@ -327,7 +319,7 @@
         
         NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
-        EventList *obj  =   [arrayEventList objectAtIndex:selectedRowIndex.row];
+        EventList *obj  =   [self.arrayEventList objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
     }
     

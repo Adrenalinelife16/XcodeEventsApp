@@ -70,7 +70,6 @@
 		7293CFB31E0D9C5500E310C0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAF1E0D9C5500E310C0 /* FBSDKShareKit.framework */; };
 		72AF697A1E783EFD0033DB1F /* TabBarHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF69791E783EFD0033DB1F /* TabBarHeight.m */; };
 		72AF697D1E7843990033DB1F /* TabBarCenterIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */; };
-		72C6E3561E563D1000B25C5F /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */; };
 		72DCD05B1E5D2BF700792EEA /* MoreCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */; };
 		72DCD06D1E706C0200792EEA /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
@@ -369,8 +368,6 @@
 		72AF69791E783EFD0033DB1F /* TabBarHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarHeight.m; sourceTree = "<group>"; };
 		72AF697B1E7843990033DB1F /* TabBarCenterIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarCenterIcon.h; sourceTree = "<group>"; };
 		72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarCenterIcon.m; sourceTree = "<group>"; };
-		72C6E3541E563D1000B25C5F /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
-		72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		72DCD0591E5D2BF700792EEA /* MoreCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCustomCell.h; sourceTree = "<group>"; };
 		72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCustomCell.m; sourceTree = "<group>"; };
 		72DCD0681E6C979A00792EEA /* Back-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Back-50.png"; path = "../../../../../../Downloads/Back-50.png"; sourceTree = "<group>"; };
@@ -804,8 +801,6 @@
 			isa = PBXGroup;
 			children = (
 				E279ADB31E6616D900D3B192 /* SearchCustomCell */,
-				72C6E3541E563D1000B25C5F /* SearchResultsTableViewController.h */,
-				72C6E3551E563D1000B25C5F /* SearchResultsTableViewController.m */,
 				722DAF171EB815FF00F4D808 /* SearchResultsViewController.h */,
 				722DAF181EB815FF00F4D808 /* SearchResultsViewController.m */,
 			);
@@ -1784,7 +1779,6 @@
 				798D9E2218F15F2000A69513 /* UIImage+GIF.m in Sources */,
 				E29A6BE41E6AA2400041F782 /* TermsViewController.m in Sources */,
 				7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */,
-				72C6E3561E563D1000B25C5F /* SearchResultsTableViewController.m in Sources */,
 				798D9E0418F15EF800A69513 /* SDWebImageDownloader.m in Sources */,
 				BB303DA618B863E300B6EBC9 /* main.m in Sources */,
 				7955F92118F863BD00870734 /* XMLReader.m in Sources */,
