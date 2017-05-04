@@ -63,8 +63,6 @@
 		7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */; };
 		7225BD201E4AA78200A35D30 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1F1E4AA78200A35D30 /* Notes */; };
 		722DAF191EB815FF00F4D808 /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722DAF181EB815FF00F4D808 /* SearchResultsViewController.m */; };
-		722DAF2B1EBB52EA00F4D808 /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722DAF2A1EBB52EA00F4D808 /* SearchResultsTableViewController.m */; };
-		722DAF2E1EBB892000F4D808 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722DAF2D1EBB892000F4D808 /* testViewController.m */; };
 		7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */; };
 		7293CFB01E0D9C5500E310C0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAC1E0D9C5500E310C0 /* Bolts.framework */; };
 		7293CFB11E0D9C5500E310C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */; };
@@ -359,10 +357,6 @@
 		7225BD1F1E4AA78200A35D30 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		722DAF171EB815FF00F4D808 /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
 		722DAF181EB815FF00F4D808 /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
-		722DAF291EBB52EA00F4D808 /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResultsTableViewController.h; path = ../../../../SearchResultsTableViewController.h; sourceTree = "<group>"; };
-		722DAF2A1EBB52EA00F4D808 /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResultsTableViewController.m; path = ../../../../SearchResultsTableViewController.m; sourceTree = "<group>"; };
-		722DAF2C1EBB892000F4D808 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
-		722DAF2D1EBB892000F4D808 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		725535CA1E1416260070D5B5 /* Events.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Events.entitlements; sourceTree = "<group>"; };
 		728DFA431E7B3C8600033E71 /* current location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "current location.png"; path = "../../../../../current location.png"; sourceTree = "<group>"; };
 		7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adrenaline Full Logo Transparent.png"; sourceTree = "<group>"; };
@@ -809,10 +803,6 @@
 				E279ADB31E6616D900D3B192 /* SearchCustomCell */,
 				722DAF171EB815FF00F4D808 /* SearchResultsViewController.h */,
 				722DAF181EB815FF00F4D808 /* SearchResultsViewController.m */,
-				722DAF291EBB52EA00F4D808 /* SearchResultsTableViewController.h */,
-				722DAF2A1EBB52EA00F4D808 /* SearchResultsTableViewController.m */,
-				722DAF2C1EBB892000F4D808 /* testViewController.h */,
-				722DAF2D1EBB892000F4D808 /* testViewController.m */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -1708,7 +1698,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7122DC1518BDE6D900DC9925 /* VRGCalendarView.m in Sources */,
-				722DAF2B1EBB52EA00F4D808 /* SearchResultsTableViewController.m in Sources */,
 				E279AD9E1E653D6500D3B192 /* DiscoverViewController.m in Sources */,
 				BB303E3018B87FCE00B6EBC9 /* TabBarViewController.m in Sources */,
 				7986DCCF19C9E92A00EE4DD7 /* LocalizeHelper.m in Sources */,
@@ -1773,7 +1762,6 @@
 				7112222E18BCC69300E77A4A /* AboutCustomCell2.m in Sources */,
 				79691CD318F0086100ABD52D /* Reachability.m in Sources */,
 				79691CAD18EFFF1F00ABD52D /* SBJsonParser.m in Sources */,
-				722DAF2E1EBB892000F4D808 /* testViewController.m in Sources */,
 				79691D0418F00C8700ABD52D /* ASIDataCompressor.m in Sources */,
 				79691D1F18F02EA900ABD52D /* DSActivityView.m in Sources */,
 				799499EE190985A6008AC6BD /* AbouViewControllers.m in Sources */,

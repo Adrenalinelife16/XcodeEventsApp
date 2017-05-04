@@ -17,8 +17,6 @@
 #import "FeedViewController.h"
 #import "FeedCustomCell.h"
 #import "SearchResultsViewController.h"
-#import "SearchResultsTableViewController.h"
-#import "testViewController.h"
 
 
 @interface ProgramViewController () <UISearchResultsUpdating>
@@ -33,14 +31,13 @@
 @property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
 @property (strong, nonatomic) UISearchController *controller;
 @property (strong, nonatomic) NSArray *results;
-//@property (strong, nonatomic) NSMutableArray *arrayEventList;
 
 @end
 
 @implementation ProgramViewController
 
 
-/*
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -49,7 +46,7 @@
     }
     return self;
 }
-*/
+
 
 #pragma mark - View Life Cycle
 - (void)viewDidLoad
@@ -64,6 +61,8 @@
     SearchResultsViewController *EventSearchResults = (SearchResultsViewController *) self.controller.searchResultsController;
     [self addObserver:EventSearchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
+
+    
 }
 
 
@@ -288,8 +287,9 @@
         SearchResultsViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
         
         _controller = [[UISearchController alloc] initWithSearchResultsController:resultsController];
+        
         _controller.searchResultsUpdater = self;
- 
+    
         
     }
     return _controller;
