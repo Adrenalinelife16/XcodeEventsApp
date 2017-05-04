@@ -1,11 +1,12 @@
 //
-//  SearchResults.m
+//  testViewController.m
 //  Events
 //
-//  Created by Michael Cather on 5/1/17.
+//  Created by Michael Cather on 5/4/17.
+//  Copyright © 2017 Teknowledge Software. All rights reserved.
 //
 
-#import "SearchResultsViewController.h"
+#import "testViewController.h"
 #import "ProgramCustomCell.h"
 #import "SearchCustomCell.h"
 #import "Utility.h"
@@ -13,19 +14,19 @@
 #import "UIImageView+WebCache.h"
 #import "AboutViewController.h"
 
-@interface SearchResultsViewController () <UITableViewDelegate,UITableViewDataSource>
+@interface testViewController () <UITableViewDelegate,UITableViewDataSource>
 {
     
     NSMutableArray *arrayEventList;
- 
+    IBOutlet UITableView *MyTableView;
 }
 
 @property (nonatomic, strong) NSArray *searchResults;
 
-
 @end
 
-@implementation SearchResultsViewController
+@implementation testViewController
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

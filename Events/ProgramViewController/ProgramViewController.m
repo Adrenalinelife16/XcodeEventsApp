@@ -17,9 +17,11 @@
 #import "FeedViewController.h"
 #import "FeedCustomCell.h"
 #import "SearchResultsViewController.h"
+#import "SearchResultsTableViewController.h"
+#import "testViewController.h"
 
 
-@interface ProgramViewController () <UISearchResultsUpdating, UISearchControllerDelegate>
+@interface ProgramViewController () <UISearchResultsUpdating>
 {
     
     NSMutableArray *arrayEventList;
@@ -28,20 +30,17 @@
     
 }
 
-- (IBAction)Search:(UIBarButtonItem *)sender;
-
-
 @property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
 @property (strong, nonatomic) UISearchController *controller;
 @property (strong, nonatomic) NSArray *results;
-@property (strong, nonatomic) NSMutableArray *arrayEventList;
+//@property (strong, nonatomic) NSMutableArray *arrayEventList;
 
 @end
 
 @implementation ProgramViewController
 
 
-
+/*
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -50,7 +49,7 @@
     }
     return self;
 }
-
+*/
 
 #pragma mark - View Life Cycle
 - (void)viewDidLoad
@@ -276,6 +275,11 @@
 
 #pragma mark - Search Events
 
+- (IBAction)searchButtonPressed:(id)sender
+{
+    [self presentViewController:self.controller animated:YES completion:nil];
+}
+
 - (UISearchController *)controller {
     
     if (!_controller) {
@@ -285,8 +289,7 @@
         
         _controller = [[UISearchController alloc] initWithSearchResultsController:resultsController];
         _controller.searchResultsUpdater = self;
-        _controller.delegate = self;
-        
+ 
         
     }
     return _controller;
@@ -297,17 +300,12 @@
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"eventName contains [cd] %@", self.controller.searchBar.text];
-    self.results = [self.arrayEventList filteredArrayUsingPredicate:predicate];
+    self.results = [self->arrayEventList filteredArrayUsingPredicate:predicate];
+    
+  //  NSLog(@"Results are: %@", [self.results description]);
     
 }
 
-
-- (IBAction)searchButtonPressed:(id)sender
-{
-    
-    [self presentViewController:self.controller animated:YES completion:nil];
-    
-}
 
 
 #pragma mark - Navigation
@@ -319,7 +317,7 @@
         
         NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
-        EventList *obj  =   [self.arrayEventList objectAtIndex:selectedRowIndex.row];
+        EventList *obj  =   [self->arrayEventList objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
     }
     
