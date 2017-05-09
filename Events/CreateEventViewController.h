@@ -33,6 +33,10 @@
 @property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
 @property (nonatomic, retain) NSString *titleText;
 
+
+@property(nonatomic) NSInteger minuteInterval;
+
+
 - (IBAction)submitEvent:(id)sender;
 
 - (IBAction)uploadImageClicked:(id)sender;

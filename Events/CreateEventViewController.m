@@ -32,6 +32,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -179,8 +180,6 @@
 {
     [sender resignFirstResponder];
 }
- 
-
 
 #pragma mark - Check registration Field validations
 -(BOOL)IsValid
@@ -242,6 +241,7 @@
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
     [self.startText setInputAccessoryView:toolBar];
+    datePicker.minuteInterval=(60/4);
 
 }
 - (IBAction)endDate:(UITextField *)sender
@@ -255,6 +255,7 @@
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
     [self.endText setInputAccessoryView:toolBar];
+    datePicker.minuteInterval=(60/4);
  
 }
 
@@ -271,7 +272,6 @@
     self.endText.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
     [self.endText resignFirstResponder];
 }
-
 
 #pragma mark - Navigation
 
