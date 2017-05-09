@@ -34,7 +34,9 @@
     [self bottomBorder];
    
     self.title = @"Login";
- //   [self InitializeNavigationBatItem];
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+ 
 }
 
 

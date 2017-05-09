@@ -87,6 +87,9 @@
     return cell;
 }
 
+
+
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     self.searchResults = [(NSArray *)object valueForKey:@"results"];
@@ -96,11 +99,23 @@
 
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+ 
+        AboutViewController *aboutViewController = (AboutViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+        [self.navigationController setNavigationBarHidden:NO];
+        EventList *obj = [_searchResults objectAtIndex:indexPath.row];
+        aboutViewController.eventObj = obj;
+        [self presentViewController:aboutViewController animated:true completion:nil];
+    
+    
+}
+
+
+
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation
-
-
-
+/*
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -118,5 +133,7 @@
     }
     
 }
+ 
+*/
 
 @end
