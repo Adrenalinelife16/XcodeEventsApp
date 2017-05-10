@@ -5,13 +5,13 @@
 //  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
-#import "AbouViewControllers.h"
+#import "AboutUsViewController.h"
 
-@interface AbouViewControllers ()
+@interface AboutUsViewController ()
 
 @end
 
-@implementation AbouViewControllers
+@implementation AboutUsViewController
 @synthesize scrlVW;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -36,7 +36,7 @@
     
     txtVWContent.text = NSLocalizedString(@"CONTENT_ABOUTVIEW", @"CONTENT_ABOUTVIEW");
     
-    [self.scrlVW setContentSize:CGSizeMake(self.scrlVW.frame.size.width, 1000)];
+    [self.scrlVW setContentSize:CGSizeMake(self.scrlVW.frame.size.width, 400)];
 }
 
 - (void)didReceiveMemoryWarning

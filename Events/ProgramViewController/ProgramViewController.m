@@ -108,10 +108,22 @@
     
     else
     {
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"User must login to create an event!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"User must login to create an event!" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login", nil];
         [av show];
     }
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *string = [alertView buttonTitleAtIndex:buttonIndex];
+    
+    if ([string isEqualToString:@"Login"]) {
+        
+        [self performSegueWithIdentifier:@"loginView" sender:self];
+        
+    }
+}
+
 
 #pragma mark - Check login
 -(BOOL)checkLogin

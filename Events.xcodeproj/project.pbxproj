@@ -153,7 +153,7 @@
 		798D9E2518F15F2000A69513 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9E1D18F15F2000A69513 /* UIButton+WebCache.m */; };
 		798D9E2618F15F2000A69513 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 798D9E1F18F15F2000A69513 /* UIImageView+WebCache.m */; };
 		798D9E2818F15F8300A69513 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798D9E2718F15F8300A69513 /* ImageIO.framework */; };
-		799499EE190985A6008AC6BD /* AbouViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 799499ED190985A6008AC6BD /* AbouViewControllers.m */; };
+		799499EE190985A6008AC6BD /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 799499ED190985A6008AC6BD /* AboutUsViewController.m */; };
 		79A36D871959DC7700C05F43 /* ProgramDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A36D861959DC7700C05F43 /* ProgramDescriptionViewController.m */; };
 		79A5E24719C9064E009D4018 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79A5E24619C9064E009D4018 /* Localizable.strings */; };
 		79E815631953481800E58344 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E815601953481800E58344 /* Icon.png */; };
@@ -507,8 +507,8 @@
 		798D9E1E18F15F2000A69513 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		798D9E1F18F15F2000A69513 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		798D9E2718F15F8300A69513 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		799499EC190985A6008AC6BD /* AbouViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbouViewControllers.h; path = "About New/AbouViewControllers.h"; sourceTree = "<group>"; };
-		799499ED190985A6008AC6BD /* AbouViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbouViewControllers.m; path = "About New/AbouViewControllers.m"; sourceTree = "<group>"; };
+		799499EC190985A6008AC6BD /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutUsViewController.h; path = "About New/AboutUsViewController.h"; sourceTree = "<group>"; };
+		799499ED190985A6008AC6BD /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutUsViewController.m; path = "About New/AboutUsViewController.m"; sourceTree = "<group>"; };
 		79A36D851959DC7700C05F43 /* ProgramDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramDescriptionViewController.h; sourceTree = "<group>"; };
 		79A36D861959DC7700C05F43 /* ProgramDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramDescriptionViewController.m; sourceTree = "<group>"; };
 		79A5E24619C9064E009D4018 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -1073,8 +1073,8 @@
 		79BD13B91908399100424DBA /* About new */ = {
 			isa = PBXGroup;
 			children = (
-				799499EC190985A6008AC6BD /* AbouViewControllers.h */,
-				799499ED190985A6008AC6BD /* AbouViewControllers.m */,
+				799499EC190985A6008AC6BD /* AboutUsViewController.h */,
+				799499ED190985A6008AC6BD /* AboutUsViewController.m */,
 			);
 			name = "About new";
 			sourceTree = "<group>";
@@ -1764,7 +1764,7 @@
 				79691CAD18EFFF1F00ABD52D /* SBJsonParser.m in Sources */,
 				79691D0418F00C8700ABD52D /* ASIDataCompressor.m in Sources */,
 				79691D1F18F02EA900ABD52D /* DSActivityView.m in Sources */,
-				799499EE190985A6008AC6BD /* AbouViewControllers.m in Sources */,
+				799499EE190985A6008AC6BD /* AboutUsViewController.m in Sources */,
 				798D9E1018F15F1400A69513 /* SDWebImageDecoder.m in Sources */,
 				79A36D871959DC7700C05F43 /* ProgramDescriptionViewController.m in Sources */,
 				E2AB03251E4ADFEA00EAA5BF /* CreateEventViewController.m in Sources */,

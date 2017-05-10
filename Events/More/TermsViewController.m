@@ -27,7 +27,7 @@
     
     txtVWContent.text = NSLocalizedString(@"CONTENT_TERMSCONDITIONS", @"CONTENT_TERMSCONDITIONS");
     
-    [self.scrlVW setContentSize:CGSizeMake(self.scrlVW.frame.size.width, 1000)];
+    [self.scrlVW setContentSize:CGSizeMake(self.scrlVW.frame.size.width, 2000)];
 }
 
 - (void)didReceiveMemoryWarning {

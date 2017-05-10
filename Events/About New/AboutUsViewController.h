@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AbouViewControllers : UIViewController
+@interface AboutUsViewController : UIViewController
 {
     __weak IBOutlet UITextView * txtVWContent;
 }
