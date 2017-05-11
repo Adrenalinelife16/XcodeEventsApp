@@ -32,7 +32,7 @@
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-    [self.scrollView setContentSize:CGSizeMake(200, 2000)];
+    [self.scrollView setContentSize:CGSizeMake(100, 5000)];
 }
 
 

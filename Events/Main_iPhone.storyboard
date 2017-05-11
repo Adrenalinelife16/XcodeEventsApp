@@ -1709,18 +1709,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fef-xs-pG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-140" y="353"/>
+            <point key="canvasLocation" x="-137" y="469"/>
         </scene>
         <!--Policy Agreement-->
         <scene sceneID="Ehu-Ka-v0l">
             <objects>
                 <viewController id="EYQ-sL-8zz" customClass="PolicyViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqD-x8-QHM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" misplaced="YES" image="NEBackGroundPages2.png" id="5wt-Ro-HoR">
-                                <rect key="frame" x="0.0" y="20" width="320" height="811"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="592"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="TransHighResFullLogo.png" id="oLO-WB-AZk">
@@ -1735,7 +1735,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" id="eRb-dL-vgi">
-                                <rect key="frame" x="16" y="164" width="288" height="649"/>
+                                <rect key="frame" x="16" y="164" width="288" height="448"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1745,8 +1745,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Policy Agreement" id="07e-hK-bpT"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="900"/>
                     <connections>
                         <outlet property="policyTextView" destination="eRb-dL-vgi" id="oaM-QF-fq1"/>
                         <outlet property="scrollView" destination="eRb-dL-vgi" id="k4U-Zv-Bn5"/>
@@ -1754,7 +1752,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VPi-j7-wIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1144" y="352"/>
+            <point key="canvasLocation" x="-1144" y="501.5"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="NId-DM-5Mk">
