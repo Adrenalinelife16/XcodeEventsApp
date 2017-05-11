@@ -19,23 +19,19 @@
 #import "SearchResultsViewController.h"
 
 
-@interface ProgramViewController () <UISearchResultsUpdating>
+@interface ProgramViewController ()
 {
     
     NSMutableArray *arrayEventList;
     NSMutableArray *sortedArrayEventList;
     NSDate *eventDate;
-    NSArray *results;
-    NSArray *searchResults;
     
 }
-
-- (IBAction)Search:(UIBarButtonItem *)sender;
-
 
 @property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
 @property (strong, nonatomic) UISearchController *controller;
 @property (strong, nonatomic) NSArray *results;
+
 @end
 
 @implementation ProgramViewController
@@ -63,8 +59,10 @@
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
     SearchResultsViewController *EventSearchResults = (SearchResultsViewController *) self.controller.searchResultsController;
-    [self addObserver:searchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
+    [self addObserver:EventSearchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
+
+    
 }
 
 
@@ -110,10 +108,22 @@
     
     else
     {
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"User must login to create an event!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"User must login to create an event!" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login", nil];
         [av show];
     }
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *string = [alertView buttonTitleAtIndex:buttonIndex];
+    
+    if ([string isEqualToString:@"Login"]) {
+        
+        [self performSegueWithIdentifier:@"loginView" sender:self];
+        
+    }
+}
+
 
 #pragma mark - Check login
 -(BOOL)checkLogin
@@ -224,7 +234,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -276,45 +286,37 @@
 
 #pragma mark - Search Events
 
+- (IBAction)searchButtonPressed:(id)sender
+{
+    [self presentViewController:self.controller animated:YES completion:nil];
+}
+
 - (UISearchController *)controller {
     
     if (!_controller) {
-        //
+        
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-         SearchResultsViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
+        SearchResultsViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
         
         _controller = [[UISearchController alloc] initWithSearchResultsController:resultsController];
-        _controller.searchResultsUpdater = self;
         
+        _controller.searchResultsUpdater = self;
+    
         
     }
     return _controller;
 }
 
-
-- (IBAction)searchButtonPressed:(id)sender {
-    
-    
-    NSString * storyboardName = @"Main_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
-    
-    
-    [self presentViewController:self.controller animated:YES completion:nil];
-}
-
-
 #pragma mark - Search Results Updater
 
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     
-    self.results = nil;
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"eventName contains [cd] %@", self.controller.searchBar.text];
     self.results = [self->arrayEventList filteredArrayUsingPredicate:predicate];
     
+  //  NSLog(@"Results are: %@", [self.results description]);
+    
 }
-
-
 
 
 
@@ -327,7 +329,7 @@
         
         NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
-        EventList *obj  =   [arrayEventList objectAtIndex:selectedRowIndex.row];
+        EventList *obj  =   [self->arrayEventList objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
     }
     

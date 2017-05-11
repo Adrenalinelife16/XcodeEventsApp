@@ -1,5 +1,4 @@
-//
-//  AbouViewControllers.h
+
 //  Events
 //
 //  Created by Chazz Romeo, Michael Cather & Josh Martin.
@@ -7,7 +6,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AbouViewControllers : UIViewController
+@interface PolicyAgreementController : UIViewController
 {
     __weak IBOutlet UITextView * txtVWContent;
 }

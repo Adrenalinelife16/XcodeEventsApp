@@ -17,7 +17,7 @@
 {
     
     NSMutableArray *arrayEventList;
-    IBOutlet UITableView *MyTableView;
+ 
 }
 
 @property (nonatomic, strong) NSArray *searchResults;
@@ -26,14 +26,9 @@
 @end
 
 @implementation SearchResultsViewController
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSString * storyboardName = @"Main_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
     
     
 }
@@ -41,17 +36,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-
--(void)loadNavigationController
-{
-    
-    UIViewController *bbp=[[UIViewController alloc]initWithNibName:@"UIViewController" bundle:nil];
-    UINavigationController *passcodeNavigationController = [[UINavigationController alloc] initWithRootViewController:bbp];
-    [self.navigationController pushViewController:passcodeNavigationController animated:YES];
-    
 }
 
 
@@ -103,6 +87,9 @@
     return cell;
 }
 
+
+
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     self.searchResults = [(NSArray *)object valueForKey:@"results"];
@@ -112,22 +99,29 @@
 
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+ 
+        AboutViewController *aboutViewController = (AboutViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+        [self.navigationController setNavigationBarHidden:NO];
+        EventList *obj = [_searchResults objectAtIndex:indexPath.row];
+        aboutViewController.eventObj = obj;
+        [self presentViewController:aboutViewController animated:true completion:nil];
+    
+    
+}
+
+
+
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation
-
-
-
+/*
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
     if ([segue.identifier isEqualToString:@"aboutViewTwo"]) {
         
-        
-        
-        NSString * storyboardName = @"Main_iPhone";
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-        UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"searchNavigation"];
         
         
         NSIndexPath *selectedRowIndex = [self.MyTableView indexPathForSelectedRow];
@@ -139,5 +133,7 @@
     }
     
 }
+ 
+*/
 
 @end

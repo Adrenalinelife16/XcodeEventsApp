@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProgramViewController : UITableViewController <UIPopoverControllerDelegate>
+@interface ProgramViewController : UITableViewController <UIPopoverControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate, UISearchControllerDelegate>
 
 
 -(IBAction)createEvent:(id)sender;

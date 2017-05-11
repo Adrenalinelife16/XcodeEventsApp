@@ -7,9 +7,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchResultsViewController : UISearchContainerViewController
+@interface SearchResultsViewController : UIViewController // UISearchContainerViewController
 
 @property (nonatomic, strong) UISearchController *searchController;
-@property (nonatomic, strong) UITableView *MyTableView;
+@property (strong, nonatomic) IBOutlet UITableView *MyTableView;
 
 @end
