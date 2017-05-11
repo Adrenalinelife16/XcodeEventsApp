@@ -70,6 +70,7 @@
 		7293CFB31E0D9C5500E310C0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAF1E0D9C5500E310C0 /* FBSDKShareKit.framework */; };
 		72AF697A1E783EFD0033DB1F /* TabBarHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF69791E783EFD0033DB1F /* TabBarHeight.m */; };
 		72AF697D1E7843990033DB1F /* TabBarCenterIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */; };
+		72D31C8E1EC51E4C0078D3AC /* PolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D31C8D1EC51E4C0078D3AC /* PolicyViewController.m */; };
 		72DCD05B1E5D2BF700792EEA /* MoreCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */; };
 		72DCD06D1E706C0200792EEA /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
@@ -256,7 +257,6 @@
 		E2893C981E7A4A2B00F58D00 /* imagelayover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2893C961E7A4A2B00F58D00 /* imagelayover@2x.png */; };
 		E2893C9B1E7A4C1200F58D00 /* dateunderlay.png in Resources */ = {isa = PBXBuildFile; fileRef = E2893C991E7A4C1200F58D00 /* dateunderlay.png */; };
 		E2893C9C1E7A4C1200F58D00 /* dateunderlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2893C9A1E7A4C1200F58D00 /* dateunderlay@2x.png */; };
-		E29A6BE11E6AA2160041F782 /* PolicyAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A6BE01E6AA2160041F782 /* PolicyAgreementController.m */; };
 		E29A6BE41E6AA2400041F782 /* TermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A6BE31E6AA2400041F782 /* TermsViewController.m */; };
 		E29A6BE61E6AA3950041F782 /* TransHighResFullLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = E29A6BE51E6AA3950041F782 /* TransHighResFullLogo.png */; };
 		E29A6BE81E6AA3AD0041F782 /* HighResIconRed.png in Resources */ = {isa = PBXBuildFile; fileRef = E29A6BE71E6AA3AD0041F782 /* HighResIconRed.png */; };
@@ -368,6 +368,8 @@
 		72AF69791E783EFD0033DB1F /* TabBarHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarHeight.m; sourceTree = "<group>"; };
 		72AF697B1E7843990033DB1F /* TabBarCenterIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarCenterIcon.h; sourceTree = "<group>"; };
 		72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarCenterIcon.m; sourceTree = "<group>"; };
+		72D31C8C1EC51E4C0078D3AC /* PolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyViewController.h; sourceTree = "<group>"; };
+		72D31C8D1EC51E4C0078D3AC /* PolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyViewController.m; sourceTree = "<group>"; };
 		72DCD0591E5D2BF700792EEA /* MoreCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCustomCell.h; sourceTree = "<group>"; };
 		72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCustomCell.m; sourceTree = "<group>"; };
 		72DCD0681E6C979A00792EEA /* Back-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Back-50.png"; path = "../../../../../../Downloads/Back-50.png"; sourceTree = "<group>"; };
@@ -625,8 +627,6 @@
 		E2893C961E7A4A2B00F58D00 /* imagelayover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imagelayover@2x.png"; sourceTree = "<group>"; };
 		E2893C991E7A4C1200F58D00 /* dateunderlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dateunderlay.png; sourceTree = "<group>"; };
 		E2893C9A1E7A4C1200F58D00 /* dateunderlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dateunderlay@2x.png"; sourceTree = "<group>"; };
-		E29A6BDF1E6AA2160041F782 /* PolicyAgreementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyAgreementController.h; sourceTree = "<group>"; };
-		E29A6BE01E6AA2160041F782 /* PolicyAgreementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyAgreementController.m; sourceTree = "<group>"; };
 		E29A6BE21E6AA2400041F782 /* TermsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewController.h; sourceTree = "<group>"; };
 		E29A6BE31E6AA2400041F782 /* TermsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsViewController.m; sourceTree = "<group>"; };
 		E29A6BE51E6AA3950041F782 /* TransHighResFullLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TransHighResFullLogo.png; sourceTree = "<group>"; };
@@ -736,12 +736,12 @@
 				72DCD0581E5D2BDD00792EEA /* MoreCustomCell */,
 				7112223F18BCD7E700E77A4A /* MoreViewController.h */,
 				7112224018BCD7E800E77A4A /* MoreViewController.m */,
-				E29A6BDF1E6AA2160041F782 /* PolicyAgreementController.h */,
-				E29A6BE01E6AA2160041F782 /* PolicyAgreementController.m */,
 				E29A6BE21E6AA2400041F782 /* TermsViewController.h */,
 				E29A6BE31E6AA2400041F782 /* TermsViewController.m */,
 				799499EC190985A6008AC6BD /* AboutUsViewController.h */,
 				799499ED190985A6008AC6BD /* AboutUsViewController.m */,
+				72D31C8C1EC51E4C0078D3AC /* PolicyViewController.h */,
+				72D31C8D1EC51E4C0078D3AC /* PolicyViewController.m */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -1735,7 +1735,6 @@
 				BB303DAA18B863E300B6EBC9 /* AppDelegate.m in Sources */,
 				722DAF191EB815FF00F4D808 /* SearchResultsViewController.m in Sources */,
 				72AF697D1E7843990033DB1F /* TabBarCenterIcon.m in Sources */,
-				E29A6BE11E6AA2160041F782 /* PolicyAgreementController.m in Sources */,
 				798D9DFF18F15EE900A69513 /* SDWebImageCompat.m in Sources */,
 				791E3DE918F320A300220BDE /* NSString+HTML.m in Sources */,
 				7112222D18BCC69300E77A4A /* AboutCustomCell1.m in Sources */,
@@ -1773,6 +1772,7 @@
 				7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */,
 				798D9E0418F15EF800A69513 /* SDWebImageDownloader.m in Sources */,
 				BB303DA618B863E300B6EBC9 /* main.m in Sources */,
+				72D31C8E1EC51E4C0078D3AC /* PolicyViewController.m in Sources */,
 				7955F92118F863BD00870734 /* XMLReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
