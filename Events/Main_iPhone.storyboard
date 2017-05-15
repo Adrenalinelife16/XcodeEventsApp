@@ -346,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bah-AD-jKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1028.5" y="-3165.5"/>
+            <point key="canvasLocation" x="-1059" y="-3121"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="of1-2C-MFB">
@@ -554,7 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIR-xF-oLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="-1901"/>
+            <point key="canvasLocation" x="393" y="-2424"/>
         </scene>
         <!--Discover View Controller-->
         <scene sceneID="feH-eW-g6n">
@@ -1473,7 +1473,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz0-9l-sJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31" y="-1306"/>
+            <point key="canvasLocation" x="422" y="-1309"/>
         </scene>
         <!--Program Description View Controller-->
         <scene sceneID="21W-JZ-5lT">
@@ -1505,7 +1505,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WK-ya-r6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576" y="-1306"/>
+            <point key="canvasLocation" x="1081" y="-1350"/>
         </scene>
         <!--Maps-->
         <scene sceneID="WdJ-TP-gcR">
@@ -1845,6 +1845,7 @@
         <!--Navigation Controller-->
         <scene sceneID="u2T-EW-rju">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Li-XT-Ytc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dlv-Lj-Hfo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="MyProgram.png" id="oVN-HQ-A1h"/>
                     <toolbarItems/>
@@ -1858,9 +1859,26 @@
                         <segue destination="3YM-N3-Ofp" kind="relationship" relationship="rootViewController" id="w97-PK-HJP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Li-XT-Ytc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1032" y="-1308"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z7b-tm-x2b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nPZ-tj-mXl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n1h-V6-Bpg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Zt-Hn-you" kind="relationship" relationship="rootViewController" id="PQ0-f7-gSk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t5c-wN-GjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1615" y="-3120"/>
         </scene>
     </scenes>
     <resources>
@@ -1908,8 +1926,8 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ymL-KN-Yv3"/>
-        <segue reference="BNm-lt-kVg"/>
         <segue reference="z1t-Ts-zQv"/>
+        <segue reference="GW1-iY-vhh"/>
+        <segue reference="ymL-KN-Yv3"/>
     </inferredMetricsTieBreakers>
 </document>

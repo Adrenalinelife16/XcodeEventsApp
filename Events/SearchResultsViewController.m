@@ -106,7 +106,9 @@
         [self.navigationController setNavigationBarHidden:NO];
         EventList *obj = [_searchResults objectAtIndex:indexPath.row];
         aboutViewController.eventObj = obj;
-        [self presentViewController:aboutViewController animated:true completion:nil];
+        aboutViewController.titleText = obj.eventName;
+      //  [self presentViewController:aboutViewController animated:true completion:nil];
+        [self.navigationController pushViewController:aboutViewController animated:true];
     
     
 }
