@@ -13,39 +13,13 @@
 #import "UIImageView+WebCache.h"
 #import "AboutViewController.h"
 
-@interface SearchResultsViewController () <UITableViewDelegate,UITableViewDataSource>
-{
-    
-    NSMutableArray *arrayEventList;
- 
-}
 
-@property (nonatomic, strong) NSArray *searchResults;
+//@interface SearchResultsViewController () <UITableViewDelegate,UITableViewDataSource>
 
+//@end
 
-@end
+@implementation SearchResultsViewController 
 
-@implementation SearchResultsViewController
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return 1;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.searchResults.count;
@@ -53,7 +27,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 155; //162
+    return 162;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -86,56 +60,5 @@
     
     return cell;
 }
-
-
-
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-    self.searchResults = [(NSArray *)object valueForKey:@"results"];
-    [self.MyTableView reloadData];
-    
-}
-
-
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
- 
-        AboutViewController *aboutViewController = (AboutViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
-        [self.navigationController setNavigationBarHidden:NO];
-        EventList *obj = [_searchResults objectAtIndex:indexPath.row];
-        aboutViewController.eventObj = obj;
-        aboutViewController.titleText = obj.eventName;
-      //  [self presentViewController:aboutViewController animated:true completion:nil];
-        [self.navigationController pushViewController:aboutViewController animated:true];
-    
-    
-}
-
-
-
-#pragma mark - Navigation
-// In a story board-based application, you will often want to do a little preparation before navigation
-/*
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    
-    if ([segue.identifier isEqualToString:@"aboutViewTwo"]) {
-        
-        
-        
-        NSIndexPath *selectedRowIndex = [self.MyTableView indexPathForSelectedRow];
-        AboutViewController *aboutVwController = [segue destinationViewController];
-        [self.navigationController setNavigationBarHidden:NO];
-        EventList *obj  =   [_searchResults objectAtIndex:selectedRowIndex.row];
-        aboutVwController.eventObj  =   obj;
-        
-    }
-    
-}
- 
-*/
 
 @end

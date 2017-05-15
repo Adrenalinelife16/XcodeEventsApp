@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProgramViewController : UITableViewController <UIPopoverControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate, UISearchControllerDelegate>
+@interface ProgramViewController : UITableViewController
 
 
 -(IBAction)createEvent:(id)sender;
--(IBAction)searchButtonPressed:(id)sender;
 
 
 
