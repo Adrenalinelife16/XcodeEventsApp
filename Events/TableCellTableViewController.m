@@ -10,6 +10,8 @@
 #import "EventList.h"
 #import "SearchCustomCell.h"
 #import "ProgramCustomCell.h"
+#import "UIImageView+WebCache.h"
+
 
 NSString *const kCellIdentifier = @"cellID";
 NSString *const kTableCellNibName = @"TableCell";
@@ -28,9 +30,15 @@ NSString *const kTableCellNibName = @"TableCell";
     cell.lblEventName.text  =   obj.eventName;
     cell.lblEventDesc.text  =   [obj.eventDescription stringByConvertingHTMLToPlainText];
     cell.lblEventDesc.text  =   [Utility TrimString:cell.lblEventDesc.text];
+    
   
-        
+    
+    if ([obj.eventImageURL length]) {
+        [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
+    }
+    
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
+    
 
 }
 
