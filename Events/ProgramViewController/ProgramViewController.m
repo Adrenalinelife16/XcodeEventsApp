@@ -331,22 +331,6 @@
 }
 
 /*
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    AboutViewController *aboutViewController = (AboutViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
-    [self.navigationController setNavigationBarHidden:NO];
-    EventList *obj = [searchResults objectAtIndex:indexPath.row];
-    aboutViewController.eventObj = obj;
-    aboutViewController.titleText = obj.eventName;
-    //  [self presentViewController:aboutViewController animated:true completion:nil];
-    [self.navigationController pushViewController:aboutViewController animated:true];
-    
-    
-}
-
-*/
-/*
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     EventList *obj = (tableView == self.tableView) ?
     self->arrayEventList[indexPath.row] : self.resultsTableController.searchResults[indexPath.row];

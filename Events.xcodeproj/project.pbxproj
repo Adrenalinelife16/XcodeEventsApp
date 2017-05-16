@@ -63,6 +63,7 @@
 		7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */; };
 		7225BD201E4AA78200A35D30 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1F1E4AA78200A35D30 /* Notes */; };
 		722DAF191EB815FF00F4D808 /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722DAF181EB815FF00F4D808 /* SearchResultsViewController.m */; };
+		7250A03D1ECA7AC300E1E9AE /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7250A03C1ECA7AC300E1E9AE /* TableCell.xib */; };
 		7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */; };
 		7293CFB01E0D9C5500E310C0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAC1E0D9C5500E310C0 /* Bolts.framework */; };
 		7293CFB11E0D9C5500E310C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */; };
@@ -357,6 +358,7 @@
 		7225BD1F1E4AA78200A35D30 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		722DAF171EB815FF00F4D808 /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
 		722DAF181EB815FF00F4D808 /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
+		7250A03C1ECA7AC300E1E9AE /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableCell.xib; path = TabBarController/TableCell.xib; sourceTree = "<group>"; };
 		725535CA1E1416260070D5B5 /* Events.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Events.entitlements; sourceTree = "<group>"; };
 		728DFA431E7B3C8600033E71 /* current location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "current location.png"; path = "../../../../../current location.png"; sourceTree = "<group>"; };
 		7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adrenaline Full Logo Transparent.png"; sourceTree = "<group>"; };
@@ -1140,6 +1142,7 @@
 				BB303DA918B863E300B6EBC9 /* AppDelegate.m */,
 				7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */,
 				721BEE451EB17CB500C2DB6F /* Main_iPad.storyboard */,
+				7250A03C1ECA7AC300E1E9AE /* TableCell.xib */,
 				BB303DB118B863E300B6EBC9 /* ViewController.h */,
 				BB303DB218B863E300B6EBC9 /* ViewController.m */,
 				BB303DB418B863E300B6EBC9 /* Images.xcassets */,
@@ -1500,6 +1503,7 @@
 				711221E918BC94F900E77A4A /* GreenDot.png in Resources */,
 				7112220618BCA62300E77A4A /* share@2x.png in Resources */,
 				BB303E2518B879AA00B6EBC9 /* pic.png in Resources */,
+				7250A03D1ECA7AC300E1E9AE /* TableCell.xib in Resources */,
 				E279ADA91E654CAC00D3B192 /* Fishing.png in Resources */,
 				E279ADAC1E654CAC00D3B192 /* TableGames.png in Resources */,
 				7982242718F7299A009FA42E /* input.png in Resources */,
