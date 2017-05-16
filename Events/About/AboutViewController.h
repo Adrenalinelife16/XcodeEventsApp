@@ -28,6 +28,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtFieldBookingSpaces;
 @property (strong, nonatomic) IBOutlet UILabel *lblTotalCost, *lblComment;
 @property (strong, nonatomic) IBOutlet UITextView *txtViewComment;
+@property (nonatomic, retain) NSString *titleText;
 
 @property (strong, nonatomic) NSMutableArray *arrayTotalSpaces;
 

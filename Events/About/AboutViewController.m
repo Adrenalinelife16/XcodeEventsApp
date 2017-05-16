@@ -32,6 +32,7 @@
 @synthesize eventRegisterView;
 @synthesize txtViewComment, txtFieldBookingSpaces, lblComment, lblTotalCost;
 @synthesize arrayTotalSpaces;
+@synthesize titleText;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -50,6 +51,8 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    self.navigationItem.title = titleText;
+    
 
 
  

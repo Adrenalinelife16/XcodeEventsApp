@@ -16,10 +16,10 @@
 #import "Utility.h"
 #import "FeedViewController.h"
 #import "FeedCustomCell.h"
-#import "SearchResultsViewController.h"
+#import "SearchResultsTableViewController.h"
 
 
-@interface ProgramViewController ()
+@interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating>
 {
     
     NSMutableArray *arrayEventList;
@@ -28,9 +28,17 @@
     
 }
 
+@property (nonatomic, strong) SearchResultsTableViewController *resultsTableController;
+
+
 @property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
-@property (strong, nonatomic) UISearchController *controller;
+@property (nonatomic, strong) UISearchController *searchController;
 @property (strong, nonatomic) NSArray *results;
+
+
+
+@property BOOL searchControllerWasActive;
+@property BOOL searchControllerSearchFieldWasFirstResponder;
 
 @end
 
@@ -58,8 +66,26 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
-    SearchResultsViewController *EventSearchResults = (SearchResultsViewController *) self.controller.searchResultsController;
-    [self addObserver:EventSearchResults forKeyPath:@"results" options:NSKeyValueObservingOptionNew context:nil];
+    _resultsTableController = [[SearchResultsTableViewController alloc] init];
+    _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
+    self.searchController.searchResultsUpdater = self;
+    [self.searchController.searchBar sizeToFit];
+    self.tableView.tableHeaderView = self.searchController.searchBar;
+    
+    // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
+    self.resultsTableController.tableView.delegate = self;
+    self.searchController.delegate = self;
+    self.searchController.dimsBackgroundDuringPresentation = NO; // default is YES
+    self.searchController.searchBar.delegate = self; // so we can monitor text changes + others
+    
+    // Search is now just presenting a view controller. As such, normal view controller
+    // presentation semantics apply. Namely that presentation will walk up the view controller
+    // hierarchy until it finds the root view controller or one that defines a presentation context.
+    //
+    self.definesPresentationContext = YES;  // know where you want UISearchController to be displayed
+    
+ 
+    
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
 
     
@@ -83,7 +109,27 @@
         [self getEventListFromServer];
     }];
     
+    
+    
+    // restore the searchController's active state
+    if (self.searchControllerWasActive) {
+        self.searchController.active = self.searchControllerWasActive;
+        _searchControllerWasActive = NO;
+        
+        if (self.searchControllerSearchFieldWasFirstResponder) {
+            [self.searchController.searchBar becomeFirstResponder];
+            _searchControllerSearchFieldWasFirstResponder = NO;
+        }
+    }
+    
 }
+
+#pragma mark - UISearchBarDelegate
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder];
+}
+
 
 - (IBAction)Refresh:(UIRefreshControl *)sender
 {
@@ -269,8 +315,6 @@
     
     if ([obj.eventImageURL length]) {
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
-        //[cell.imgEventImage setContentMode:UIViewContentModeScaleAspectFill];
-        //[cell.imgEventImage setClipsToBounds:YES];
     }
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
@@ -284,40 +328,121 @@
     
 }
 
-#pragma mark - Search Events
 
-- (IBAction)searchButtonPressed:(id)sender
-{
-    [self presentViewController:self.controller animated:YES completion:nil];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    EventList *obj = (tableView == self.tableView) ?
+    self->arrayEventList[indexPath.row] : self.resultsTableController.searchResults[indexPath.row];
+    
+    AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+    detailViewController.eventObj = obj; // hand off the current product to the detail view controller
+    
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    
+    // note: should not be necessary but current iOS 8.0 bug (seed 4) requires it
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
-- (UISearchController *)controller {
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    // update the filtered array based on the search text
+    NSString *searchText = searchController.searchBar.text;
+    NSMutableArray *searchResults = [self->arrayEventList mutableCopy];
     
-    if (!_controller) {
-        
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-        SearchResultsViewController *resultsController = [storyboard instantiateViewControllerWithIdentifier:@"SearchResults"];
-        
-        _controller = [[UISearchController alloc] initWithSearchResultsController:resultsController];
-        
-        _controller.searchResultsUpdater = self;
+    // strip out all the leading and trailing spaces
+    NSString *strippedString = [searchText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     
-        
+    // break up the search terms (separated by spaces)
+    NSArray *searchItems = nil;
+    if (strippedString.length > 0) {
+        searchItems = [strippedString componentsSeparatedByString:@" "];
     }
-    return _controller;
+    
+    // build all the "AND" expressions for each value in the searchString
+    //
+    NSMutableArray *andMatchPredicates = [NSMutableArray array];
+    
+    for (NSString *searchString in searchItems) {
+        
+        NSMutableArray *searchItemsPredicate = [NSMutableArray array];
+        
+        
+        NSExpression *lhs = [NSExpression expressionForKeyPath:@"eventName"];
+        NSExpression *rhs = [NSExpression expressionForConstantValue:searchString];
+        NSPredicate *finalPredicate = [NSComparisonPredicate
+                                       predicateWithLeftExpression:lhs
+                                       rightExpression:rhs
+                                       modifier:NSDirectPredicateModifier
+                                       type:NSContainsPredicateOperatorType
+                                       options:NSCaseInsensitivePredicateOption];
+        [searchItemsPredicate addObject:finalPredicate];
+            
+        
+        
+        // at this OR predicate to our master AND predicate
+        NSCompoundPredicate *orMatchPredicates = [NSCompoundPredicate orPredicateWithSubpredicates:searchItemsPredicate];
+        [andMatchPredicates addObject:orMatchPredicates];
+    }
+    
+    // match up the fields of the Product object
+    NSCompoundPredicate *finalCompoundPredicate =
+    [NSCompoundPredicate andPredicateWithSubpredicates:andMatchPredicates];
+    searchResults = [[searchResults filteredArrayUsingPredicate:finalCompoundPredicate] mutableCopy];
+    
+    // hand over the filtered results to our search results table
+    SearchResultsTableViewController *tableController = (SearchResultsTableViewController *)self.searchController.searchResultsController;
+    tableController.searchResults = searchResults;
+    [tableController.tableView reloadData];
 }
 
-#pragma mark - Search Results Updater
+NSString *const ViewControllerTitleKey = @"ViewControllerTitleKey";
+NSString *const SearchControllerIsActiveKey = @"SearchControllerIsActiveKey";
+NSString *const SearchBarTextKey = @"SearchBarTextKey";
+NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
 
--(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+- (void)encodeRestorableStateWithCoder:(NSCoder *)coder {
+    [super encodeRestorableStateWithCoder:coder];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"eventName contains [cd] %@", self.controller.searchBar.text];
-    self.results = [self->arrayEventList filteredArrayUsingPredicate:predicate];
+    // encode the view state so it can be restored later
     
-  //  NSLog(@"Results are: %@", [self.results description]);
+    // encode the title
+    [coder encodeObject:self.title forKey:ViewControllerTitleKey];
     
+    UISearchController *searchController = self.searchController;
+    
+    // encode the search controller's active state
+    BOOL searchDisplayControllerIsActive = searchController.isActive;
+    [coder encodeBool:searchDisplayControllerIsActive forKey:SearchControllerIsActiveKey];
+    
+    // encode the first responser status
+    if (searchDisplayControllerIsActive) {
+        [coder encodeBool:[searchController.searchBar isFirstResponder] forKey:SearchBarIsFirstResponderKey];
+    }
+    
+    // encode the search bar text
+    [coder encodeObject:searchController.searchBar.text forKey:SearchBarTextKey];
 }
 
+- (void)decodeRestorableStateWithCoder:(NSCoder *)coder {
+    [super decodeRestorableStateWithCoder:coder];
+    
+    // restore the title
+    self.title = [coder decodeObjectForKey:ViewControllerTitleKey];
+    
+    // restore the active state:
+    // we can't make the searchController active here since it's not part of the view
+    // hierarchy yet, instead we do it in viewWillAppear
+    //
+    _searchControllerWasActive = [coder decodeBoolForKey:SearchControllerIsActiveKey];
+    
+    // restore the first responder status:
+    // we can't make the searchController first responder here since it's not part of the view
+    // hierarchy yet, instead we do it in viewWillAppear
+    //
+    _searchControllerSearchFieldWasFirstResponder = [coder decodeBoolForKey:SearchBarIsFirstResponderKey];
+    
+    // restore the text in the search field
+    self.searchController.searchBar.text = [coder decodeObjectForKey:SearchBarTextKey];
+}
 
 
 #pragma mark - Navigation

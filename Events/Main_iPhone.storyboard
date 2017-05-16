@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="p0g-Ji-e7I">
             <objects>
                 <viewController storyboardIdentifier="loginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofP-CN-yoG" customClass="LoginViewController" sceneMemberID="viewController">
@@ -77,7 +77,7 @@
                         </connections>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="qo9-E4-aQS">
+                    <navigationItem key="navigationItem" title="Login" id="qo9-E4-aQS">
                         <barButtonItem key="backBarButtonItem" title="Back" id="C9h-Ll-d0G"/>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -183,7 +183,7 @@
                                 <rect key="frame" x="0.0" y="228" width="320" height="289"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="9Um-de-t49" id="8wL-aY-Eur">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="288.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" misplaced="YES" id="fNe-kO-H4J">
@@ -248,12 +248,6 @@
                         <sections/>
                     </tableView>
                     <navigationItem key="navigationItem" title="Events" id="UiF-4Q-GbU">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="search" id="NBW-3N-qy9">
-                            <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="searchButtonPressed:" destination="XMy-k7-mqo" id="Lqa-TK-lGh"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ec-V9-YvN">
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -663,7 +657,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIR-xF-oLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="-1901"/>
+            <point key="canvasLocation" x="393" y="-2424"/>
         </scene>
         <!--Discover View Controller-->
         <scene sceneID="feH-eW-g6n">
@@ -1295,11 +1289,11 @@
             <objects>
                 <viewController id="Esk-Y6-vmr" customClass="TermsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c4h-sN-FcG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" misplaced="YES" image="NEBackGroundPages2.png" id="GWS-Ao-cGO">
-                                <rect key="frame" x="0.0" y="64" width="320" height="771"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="553"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="TransHighResFullLogo.png" id="XaQ-Un-OSp">
@@ -1307,7 +1301,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" id="LEv-Nj-TN3">
-                                <rect key="frame" x="19" y="162" width="283" height="634"/>
+                                <rect key="frame" x="19" y="162" width="283" height="445"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98422032594680786" green="0.98438125848770142" blue="0.98418611288070679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1324,8 +1318,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Terms &amp; Conditions" id="wNe-0G-OeE"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="900"/>
                     <connections>
                         <outlet property="scrlVW" destination="LEv-Nj-TN3" id="rCy-d8-XSa"/>
                         <outlet property="txtVWContent" destination="LEv-Nj-TN3" id="ffS-oy-CA2"/>
@@ -1333,7 +1325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPE-pq-yVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-635" y="352"/>
+            <point key="canvasLocation" x="-621" y="352.5"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="0v6-xa-O5w">
@@ -1584,7 +1576,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz0-9l-sJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31" y="-1306"/>
+            <point key="canvasLocation" x="422" y="-1309"/>
         </scene>
         <!--Program Description View Controller-->
         <scene sceneID="21W-JZ-5lT">
@@ -1616,7 +1608,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WK-ya-r6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576" y="-1306"/>
+            <point key="canvasLocation" x="1081" y="-1350"/>
         </scene>
         <!--Maps-->
         <scene sceneID="WdJ-TP-gcR">
@@ -1656,49 +1648,6 @@
             </objects>
             <point key="canvasLocation" x="-2212" y="353"/>
         </scene>
-        <!--Policy Agreement-->
-        <scene sceneID="Jgg-4W-pTh">
-            <objects>
-                <viewController storyboardIdentifier="termView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VXa-xe-yrs" customClass="PolicyAgreementController" sceneMemberID="viewController">
-                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="rgM-fn-cLL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" misplaced="YES" image="NEBackGroundPages2.png" id="5wt-Ro-HoR">
-                                <rect key="frame" x="0.0" y="60" width="320" height="569"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="TransHighResFullLogo.png" id="oLO-WB-AZk">
-                                <rect key="frame" x="142" y="67" width="160" height="84"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" editable="NO" textAlignment="natural" selectable="NO" id="Tmo-tN-hMW">
-                                <rect key="frame" x="16" y="159" width="286" height="451"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98422032589999997" green="0.98438125850000002" blue="0.98418611290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Policy" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="Q2L-iy-i3J">
-                                <rect key="frame" x="30" y="94" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Policy Agreement" id="gCe-j8-R42"/>
-                    <connections>
-                        <outlet property="scrlVW" destination="Tmo-tN-hMW" id="aBN-M8-UFY"/>
-                        <outlet property="txtVWContent" destination="Tmo-tN-hMW" id="vZy-ju-jSL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="24n-Kx-TyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1137" y="351.5"/>
-        </scene>
         <!--More View Controller-->
         <scene sceneID="TcK-gX-dIz">
             <objects>
@@ -1730,9 +1679,9 @@
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
                         <segue destination="ofP-CN-yoG" kind="push" identifier="loginRegister" id="ymL-KN-Yv3"/>
-                        <segue destination="VXa-xe-yrs" kind="push" identifier="helpCenter" id="XAy-od-Eh6"/>
                         <segue destination="Esk-Y6-vmr" kind="push" identifier="termsCondition" id="c3b-7q-UHr"/>
                         <segue destination="T4o-Af-Ooy" kind="push" identifier="aboutUs" id="JfJ-9J-PcO"/>
+                        <segue destination="EYQ-sL-8zz" kind="push" identifier="helpCenter" id="okc-1f-ZH5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpL-EI-hBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1800,7 +1749,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fef-xs-pG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-140" y="353"/>
+            <point key="canvasLocation" x="-132" y="353"/>
+        </scene>
+        <!--Policy Agreement-->
+        <scene sceneID="Ehu-Ka-v0l">
+            <objects>
+                <viewController id="EYQ-sL-8zz" customClass="PolicyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dqD-x8-QHM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" misplaced="YES" image="NEBackGroundPages2.png" id="5wt-Ro-HoR">
+                                <rect key="frame" x="0.0" y="20" width="320" height="592"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="TransHighResFullLogo.png" id="oLO-WB-AZk">
+                                <rect key="frame" x="144" y="72" width="160" height="84"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Policy" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="Q2L-iy-i3J">
+                                <rect key="frame" x="16" y="99" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" id="eRb-dL-vgi">
+                                <rect key="frame" x="16" y="164" width="288" height="448"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Policy Agreement" id="07e-hK-bpT"/>
+                    <connections>
+                        <outlet property="policyTextView" destination="eRb-dL-vgi" id="oaM-QF-fq1"/>
+                        <outlet property="scrollView" destination="eRb-dL-vgi" id="k4U-Zv-Bn5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VPi-j7-wIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1144" y="353"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="NId-DM-5Mk">
@@ -1981,8 +1973,6 @@
         <image name="Action3.png" width="23" height="20"/>
         <image name="BackGroundPages3.png" width="320" height="456"/>
         <image name="Basketball.png" width="249" height="143"/>
-        <image name="BetaPageImage.png" width="600" height="240"/>
-        <image name="CreateEventBtn.png" width="249" height="143"/>
         <image name="Feed.png" width="22" height="22"/>
         <image name="Fishing.png" width="249" height="143"/>
         <image name="Frisbee.png" width="249" height="143"/>
@@ -2021,8 +2011,8 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ymL-KN-Yv3"/>
-        <segue reference="BNm-lt-kVg"/>
         <segue reference="z1t-Ts-zQv"/>
+        <segue reference="GW1-iY-vhh"/>
+        <segue reference="ymL-KN-Yv3"/>
     </inferredMetricsTieBreakers>
 </document>
