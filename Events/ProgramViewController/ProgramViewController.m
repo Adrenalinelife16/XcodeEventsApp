@@ -16,7 +16,7 @@
 #import "Utility.h"
 #import "FeedViewController.h"
 #import "FeedCustomCell.h"
-#import "SearchResultsViewController.h"
+#import "SearchResultsTableViewController.h"
 
 
 @interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating>
@@ -28,7 +28,7 @@
     
 }
 
-@property (nonatomic, strong) SearchResultsViewController *resultsTableController;
+@property (nonatomic, strong) SearchResultsTableViewController *resultsTableController;
 
 
 @property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
@@ -66,7 +66,7 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
-    _resultsTableController = [[SearchResultsViewController alloc] init];
+    _resultsTableController = [[SearchResultsTableViewController alloc] init];
     _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
     self.searchController.searchResultsUpdater = self;
     [self.searchController.searchBar sizeToFit];
@@ -315,8 +315,6 @@
     
     if ([obj.eventImageURL length]) {
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
-        //[cell.imgEventImage setContentMode:UIViewContentModeScaleAspectFill];
-        //[cell.imgEventImage setClipsToBounds:YES];
     }
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
@@ -330,7 +328,7 @@
     
 }
 
-/*
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     EventList *obj = (tableView == self.tableView) ?
     self->arrayEventList[indexPath.row] : self.resultsTableController.searchResults[indexPath.row];
@@ -343,7 +341,7 @@
     // note: should not be necessary but current iOS 8.0 bug (seed 4) requires it
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
-*/
+
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     // update the filtered array based on the search text
@@ -364,17 +362,8 @@
     NSMutableArray *andMatchPredicates = [NSMutableArray array];
     
     for (NSString *searchString in searchItems) {
-        // each searchString creates an OR predicate for: name, yearIntroduced, introPrice
-        //
-        // example if searchItems contains "iphone 599 2007":
-        //      name CONTAINS[c] "iphone"
-        //      name CONTAINS[c] "599", yearIntroduced ==[c] 599, introPrice ==[c] 599
-        //      name CONTAINS[c] "2007", yearIntroduced ==[c] 2007, introPrice ==[c] 2007
-        //
-        NSMutableArray *searchItemsPredicate = [NSMutableArray array];
         
-        // Below we use NSExpression represent expressions in our predicates.
-        // NSPredicate is made up of smaller, atomic parts: two NSExpressions (a left-hand value and a right-hand value)
+        NSMutableArray *searchItemsPredicate = [NSMutableArray array];
         
         
         NSExpression *lhs = [NSExpression expressionForKeyPath:@"eventName"];
@@ -400,7 +389,7 @@
     searchResults = [[searchResults filteredArrayUsingPredicate:finalCompoundPredicate] mutableCopy];
     
     // hand over the filtered results to our search results table
-    SearchResultsViewController *tableController = (SearchResultsViewController *)self.searchController.searchResultsController;
+    SearchResultsTableViewController *tableController = (SearchResultsTableViewController *)self.searchController.searchResultsController;
     tableController.searchResults = searchResults;
     [tableController.tableView reloadData];
 }

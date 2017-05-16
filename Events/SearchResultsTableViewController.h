@@ -3,14 +3,11 @@
 //  Events
 //
 //  Created by Michael Cather on 5/1/17.
-//
 
-#import <UIKit/UIKit.h>
+#import "TableCellTableViewController.h"
 
-@interface SearchResultsViewController : UITableViewController
-
+@interface SearchResultsTableViewController : TableCellTableViewController
 
 @property (nonatomic, strong) NSArray *searchResults;
-
 
 @end
