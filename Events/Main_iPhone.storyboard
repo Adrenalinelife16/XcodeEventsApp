@@ -672,17 +672,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="utK-J8-91L" userLabel="Yoga">
-                                        <rect key="frame" x="30" y="298" width="127" height="81"/>
+                                        <rect key="frame" x="30" y="180" width="127" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="Yoga.png"/>
+                                        <state key="normal" image="aYoga.png"/>
                                         <connections>
                                             <segue destination="kYa-5B-zJd" kind="push" identifier="yoga" id="z1t-Ts-zQv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BOi-qs-eEv" userLabel="frisbee">
-                                        <rect key="frame" x="165" y="298" width="127" height="81"/>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a4D-Um-XlC" userLabel="golf">
+                                        <rect key="frame" x="30" y="298" width="127" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="Frisbee.png"/>
+                                        <state key="normal" image="aGolf.png"/>
+                                        <connections>
+                                            <segue destination="kYa-5B-zJd" kind="push" identifier="golf" id="e3i-nm-w3q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BOi-qs-eEv" userLabel="frisbee">
+                                        <rect key="frame" x="165" y="180" width="127" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="aFrisbee.png"/>
                                         <connections>
                                             <segue destination="kYa-5B-zJd" kind="push" identifier="frisbee" id="jRU-uw-hap"/>
                                         </connections>
@@ -720,7 +728,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kyu-qv-LCM" userLabel="tennis">
-                                        <rect key="frame" x="30" y="180" width="127" height="110"/>
+                                        <rect key="frame" x="30" y="416" width="127" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aTennis.png"/>
                                         <connections>
@@ -728,7 +736,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7qb-TL-xvM" userLabel="fishing">
-                                        <rect key="frame" x="165" y="180" width="127" height="110"/>
+                                        <rect key="frame" x="165" y="298" width="127" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aFishing.png"/>
                                         <connections>
@@ -736,19 +744,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l6d-Qv-Wgj" userLabel="more">
-                                        <rect key="frame" x="165" y="387" width="127" height="81"/>
+                                        <rect key="frame" x="165" y="416" width="127" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="MORE.png"/>
+                                        <state key="normal" image="aMoreCategories.png"/>
                                         <connections>
                                             <segue destination="kYa-5B-zJd" kind="push" identifier="more" id="PWx-hH-SxD"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a4D-Um-XlC" userLabel="golf">
-                                        <rect key="frame" x="30" y="387" width="127" height="81"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="Golf.png"/>
-                                        <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="golf" id="e3i-nm-w3q"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1979,11 +1979,8 @@
         <image name="BetaPageImage.png" width="600" height="240"/>
         <image name="CreateEventBtn.png" width="249" height="143"/>
         <image name="Feed.png" width="22" height="22"/>
-        <image name="Frisbee.png" width="249" height="143"/>
-        <image name="Golf.png" width="249" height="143"/>
         <image name="HighResIconRed.png" width="1527" height="1707"/>
         <image name="List.png" width="23" height="23"/>
-        <image name="MORE.png" width="249" height="143"/>
         <image name="MyProgram.png" width="21" height="21"/>
         <image name="NEBackGroundPages2.png" width="320" height="456"/>
         <image name="Next.png" width="20" height="20"/>
@@ -1991,13 +1988,16 @@
         <image name="Segmented.png" width="300" height="29"/>
         <image name="TransHighResFullLogo.png" width="1087" height="617"/>
         <image name="Twitter.png" width="26" height="22"/>
-        <image name="Yoga.png" width="249" height="143"/>
         <image name="aBasketball.png" width="640" height="480"/>
         <image name="aFishing.png" width="640" height="480"/>
+        <image name="aFrisbee.png" width="640" height="480"/>
+        <image name="aGolf.png" width="640" height="480"/>
         <image name="aKickball.png" width="640" height="480"/>
+        <image name="aMoreCategories.png" width="640" height="480"/>
         <image name="aSoccer.png" width="640" height="480"/>
         <image name="aTableGames.png" width="640" height="480"/>
         <image name="aTennis.png" width="640" height="480"/>
+        <image name="aYoga.png" width="640" height="480"/>
         <image name="arrow.png" width="11" height="14"/>
         <image name="date-cell-gray.png" width="164" height="33"/>
         <image name="dateunderlay.png" width="180" height="120"/>
