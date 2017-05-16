@@ -14,7 +14,7 @@
 
 extern NSString *const kCellIdentifier;
 
-@interface TableCellTableViewController : UITableViewController
+@interface TableCellTableViewController : UITableViewController <UITableViewDataSource, UITextViewDelegate, UISearchBarDelegate>
 
 - (void)configureCell:(UITableViewCell *)cell forProduct:(EventList *)product;
 

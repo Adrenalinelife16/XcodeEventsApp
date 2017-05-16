@@ -84,7 +84,6 @@
     //
     self.definesPresentationContext = YES;  // know where you want UISearchController to be displayed
     
- 
     
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
 
@@ -338,8 +337,7 @@
     
     [self.navigationController pushViewController:detailViewController animated:YES];
     
-    // note: should not be necessary but current iOS 8.0 bug (seed 4) requires it
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+
 }
 
 
@@ -392,6 +390,7 @@
     SearchResultsTableViewController *tableController = (SearchResultsTableViewController *)self.searchController.searchResultsController;
     tableController.searchResults = searchResults;
     [tableController.tableView reloadData];
+    
 }
 
 NSString *const ViewControllerTitleKey = @"ViewControllerTitleKey";
@@ -447,6 +446,8 @@ NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
 
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation
+/*
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
@@ -459,5 +460,6 @@ NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
     }
     
 }
+ */
 
 @end

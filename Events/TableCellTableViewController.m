@@ -16,12 +16,11 @@
 NSString *const kCellIdentifier = @"cellID";
 NSString *const kTableCellNibName = @"TableCell";
 
-@implementation TableCellTableViewController
+@implementation TableCellTableViewController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerNib:[UINib nibWithNibName:kTableCellNibName bundle:nil] forCellReuseIdentifier:kCellIdentifier];
-    
 }
 
 - (void)configureCell:(ProgramCustomCell *)cell forProduct:(EventList *)obj {
