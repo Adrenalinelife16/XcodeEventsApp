@@ -11,12 +11,29 @@
 #import "SearchCustomCell.h"
 #import "ProgramCustomCell.h"
 #import "UIImageView+WebCache.h"
+#import "AboutViewController.h"
+#import "SearchResultsTableViewController.h"
+#import "ProgramViewController.h"
 
+@interface TableCellTableViewController ()
+
+@property (nonatomic, strong) SearchResultsTableViewController *resultsTableController;
+
+
+@end
 
 NSString *const kCellIdentifier = @"cellID";
 NSString *const kTableCellNibName = @"TableCell";
 
-@implementation TableCellTableViewController 
+@implementation TableCellTableViewController
+{
+    
+    NSMutableArray *arrayEventList;
+    NSMutableArray *sortedArrayEventList;
+    NSDate *eventDate;
+    
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,7 +55,17 @@ NSString *const kTableCellNibName = @"TableCell";
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
     
+}
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    EventList *obj = (tableView == self.tableView) ?
+    self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
+    
+    AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+    detailViewController.eventObj = obj;
+    
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    
 }
 
 @end

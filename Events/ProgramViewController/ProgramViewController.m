@@ -20,13 +20,7 @@
 
 
 @interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating>
-{
-    
-    NSMutableArray *arrayEventList;
-    NSMutableArray *sortedArrayEventList;
-    NSDate *eventDate;
-    
-}
+
 
 @property (nonatomic, strong) SearchResultsTableViewController *resultsTableController;
 
@@ -43,7 +37,13 @@
 @end
 
 @implementation ProgramViewController
-
+{
+    
+    NSMutableArray *arrayEventList;
+    NSMutableArray *sortedArrayEventList;
+    NSDate *eventDate;
+    
+}
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -327,19 +327,18 @@
     
 }
 
-
+/*
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     EventList *obj = (tableView == self.tableView) ?
-    self->arrayEventList[indexPath.row] : self.resultsTableController.searchResults[indexPath.row];
+  //  EventList *obj  =   [self->arrayEventList objectAtIndex:indexPath.row];
+    self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
     
     AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
-    detailViewController.eventObj = obj; // hand off the current product to the detail view controller
-    
     [self.navigationController pushViewController:detailViewController animated:YES];
+    detailViewController.eventObj = obj;
     
-
 }
-
+*/
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     // update the filtered array based on the search text
@@ -446,7 +445,7 @@ NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
 
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation
-/*
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -460,6 +459,6 @@ NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
     }
     
 }
- */
+
 
 @end
