@@ -239,6 +239,12 @@
 		E2252E8C1E4D899200B0CD69 /* discover-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8A1E4D899200B0CD69 /* discover-btn.png */; };
 		E2252E8E1E4DB57500B0CD69 /* FeaturePage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8D1E4DB57500B0CD69 /* FeaturePage.png */; };
 		E2252E901E4DB80300B0CD69 /* BetaPage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E8F1E4DB80300B0CD69 /* BetaPage.png */; };
+		E22D5E601ECAF01700DC7C4E /* aFishing.png in Resources */ = {isa = PBXBuildFile; fileRef = E22D5E5A1ECAF01700DC7C4E /* aFishing.png */; };
+		E22D5E611ECAF01700DC7C4E /* aTableGames.png in Resources */ = {isa = PBXBuildFile; fileRef = E22D5E5B1ECAF01700DC7C4E /* aTableGames.png */; };
+		E22D5E621ECAF01700DC7C4E /* aKickball.png in Resources */ = {isa = PBXBuildFile; fileRef = E22D5E5C1ECAF01700DC7C4E /* aKickball.png */; };
+		E22D5E631ECAF01700DC7C4E /* aBasketball.png in Resources */ = {isa = PBXBuildFile; fileRef = E22D5E5D1ECAF01700DC7C4E /* aBasketball.png */; };
+		E22D5E641ECAF01700DC7C4E /* aTennis.png in Resources */ = {isa = PBXBuildFile; fileRef = E22D5E5E1ECAF01700DC7C4E /* aTennis.png */; };
+		E22D5E651ECAF01700DC7C4E /* aSoccer.png in Resources */ = {isa = PBXBuildFile; fileRef = E22D5E5F1ECAF01700DC7C4E /* aSoccer.png */; };
 		E26B1E621E519BFF002A0F9C /* BetaPageImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E26B1E611E519BFF002A0F9C /* BetaPageImage.png */; };
 		E274A6671E5D4BE500E0FF6D /* BackGroundPages3.png in Resources */ = {isa = PBXBuildFile; fileRef = E274A6661E5D4BE500E0FF6D /* BackGroundPages3.png */; };
 		E279AD9E1E653D6500D3B192 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E279AD9D1E653D6500D3B192 /* DiscoverViewController.m */; };
@@ -608,6 +614,12 @@
 		E2252E8A1E4D899200B0CD69 /* discover-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover-btn.png"; sourceTree = "<group>"; };
 		E2252E8D1E4DB57500B0CD69 /* FeaturePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FeaturePage.png; sourceTree = "<group>"; };
 		E2252E8F1E4DB80300B0CD69 /* BetaPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPage.png; sourceTree = "<group>"; };
+		E22D5E5A1ECAF01700DC7C4E /* aFishing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aFishing.png; sourceTree = "<group>"; };
+		E22D5E5B1ECAF01700DC7C4E /* aTableGames.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aTableGames.png; sourceTree = "<group>"; };
+		E22D5E5C1ECAF01700DC7C4E /* aKickball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aKickball.png; sourceTree = "<group>"; };
+		E22D5E5D1ECAF01700DC7C4E /* aBasketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aBasketball.png; sourceTree = "<group>"; };
+		E22D5E5E1ECAF01700DC7C4E /* aTennis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aTennis.png; sourceTree = "<group>"; };
+		E22D5E5F1ECAF01700DC7C4E /* aSoccer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aSoccer.png; sourceTree = "<group>"; };
 		E26B1E611E519BFF002A0F9C /* BetaPageImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPageImage.png; sourceTree = "<group>"; };
 		E274A6661E5D4BE500E0FF6D /* BackGroundPages3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackGroundPages3.png; sourceTree = "<group>"; };
 		E279AD9C1E653D6500D3B192 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
@@ -1189,6 +1201,12 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E22D5E5A1ECAF01700DC7C4E /* aFishing.png */,
+				E22D5E5B1ECAF01700DC7C4E /* aTableGames.png */,
+				E22D5E5C1ECAF01700DC7C4E /* aKickball.png */,
+				E22D5E5D1ECAF01700DC7C4E /* aBasketball.png */,
+				E22D5E5E1ECAF01700DC7C4E /* aTennis.png */,
+				E22D5E5F1ECAF01700DC7C4E /* aSoccer.png */,
 				728DFA431E7B3C8600033E71 /* current location.png */,
 				E2893C991E7A4C1200F58D00 /* dateunderlay.png */,
 				E2893C9A1E7A4C1200F58D00 /* dateunderlay@2x.png */,
@@ -1513,6 +1531,7 @@
 				E279ADAC1E654CAC00D3B192 /* TableGames.png in Resources */,
 				7982242718F7299A009FA42E /* input.png in Resources */,
 				E279ADAF1E654CAC00D3B192 /* Soccer.png in Resources */,
+				E22D5E641ECAF01700DC7C4E /* aTennis.png in Resources */,
 				7122DB2B18BB4BDB00C044E8 /* feedviewCell5.png in Resources */,
 				BB303DFE18B86B3400B6EBC9 /* Listred@2x.png in Resources */,
 				7122DB2C18BB4BDB00C044E8 /* feedviewCell4@2x.png in Resources */,
@@ -1537,6 +1556,7 @@
 				7122DB1F18BB459C00C044E8 /* feedviewCell2.png in Resources */,
 				BB303DF718B86B3400B6EBC9 /* Feed.png in Resources */,
 				BB62B12218B8B529000DBDBC /* Segmented.png in Resources */,
+				E22D5E621ECAF01700DC7C4E /* aKickball.png in Resources */,
 				BB62B11E18B8B529000DBDBC /* Action3.png in Resources */,
 				7112223218BCCBB300E77A4A /* MapTempImage.png in Resources */,
 				E2252E901E4DB80300B0CD69 /* BetaPage.png in Resources */,
@@ -1584,6 +1604,7 @@
 				BB303E0718B86B3400B6EBC9 /* MyProgramred.png in Resources */,
 				7972E975195355B100F25E4D /* icon-feed-facebook.png in Resources */,
 				BB303DFC18B86B3400B6EBC9 /* List@2x.png in Resources */,
+				E22D5E631ECAF01700DC7C4E /* aBasketball.png in Resources */,
 				7112221118BCB67600E77A4A /* registerBtn@2x.png in Resources */,
 				BB303DF418B86B3400B6EBC9 /* Aboutred@2x.png in Resources */,
 				BB303DF918B86B3400B6EBC9 /* Feedred.png in Resources */,
@@ -1594,6 +1615,7 @@
 				BB303E0618B86B3400B6EBC9 /* MyProgram@2x.png in Resources */,
 				79504C44191F7E0C00EF3103 /* Milan-Fashion-Week-logo@2x.png in Resources */,
 				BB303E1F18B879AA00B6EBC9 /* image1.png in Resources */,
+				E22D5E651ECAF01700DC7C4E /* aSoccer.png in Resources */,
 				7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */,
 				7972E978195355B100F25E4D /* icon-feed-instagram@2x.png in Resources */,
 				BB303E0318B86B3400B6EBC9 /* Livello3.png in Resources */,
@@ -1635,6 +1657,7 @@
 				7972E977195355B100F25E4D /* icon-feed-instagram.png in Resources */,
 				E2A54D421E4DC03B00091538 /* BetaPageBG.png in Resources */,
 				7920A7B919220B39001808B6 /* instagram_logo@2x.png in Resources */,
+				E22D5E601ECAF01700DC7C4E /* aFishing.png in Resources */,
 				7122DB4718BB7D8600C044E8 /* Segmented_middle.png in Resources */,
 				7122DB2818BB4BDB00C044E8 /* feedviewCell6@2x.png in Resources */,
 				BB303E0F18B86B3400B6EBC9 /* Thumbs.db in Resources */,
@@ -1642,6 +1665,7 @@
 				7122DB4918BB7D8600C044E8 /* Segmented_left.png in Resources */,
 				E2893C9B1E7A4C1200F58D00 /* dateunderlay.png in Resources */,
 				711221EF18BC9DFB00E77A4A /* placeIcon.png in Resources */,
+				E22D5E611ECAF01700DC7C4E /* aTableGames.png in Resources */,
 				BB303E0518B86B3400B6EBC9 /* MyProgram.png in Resources */,
 				E2252E8B1E4D899200B0CD69 /* discover-btn@2x.png in Resources */,
 				79A5E24719C9064E009D4018 /* Localizable.strings in Resources */,

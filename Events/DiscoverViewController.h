@@ -10,6 +10,9 @@
 
 @interface DiscoverViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UIScrollView *scrlVW;
+
 -(IBAction)btnDiscoverCategories:(id)sender;
+
 
 @end

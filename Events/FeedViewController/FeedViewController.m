@@ -17,6 +17,7 @@
 @interface FeedViewController ()
 {
     NSMutableArray *    arrayOfFeeds;
+    NSMutableArray *    sortedEventArray;
 }
 
 - (IBAction)Refresh:(UIRefreshControl *)sender;
@@ -55,7 +56,9 @@
     [Utility afterDelay:0.01 withCompletion:^{
     [DSBezelActivityView newActivityViewForView:self.view.window];
     [self getFeedsFromServer];
-    [self sortSocialFeedFilter];
+    //[self sortSocialFeedFilter];
+    //[self sortSocialFeed];
+        
         
 //  Uncomment after BETA release
         
@@ -191,6 +194,8 @@
                     feedsObj.facebookPicture    =   [dictOfFeeds objectForKey:@"picture"];
                 }
                 [arrayOfFeeds addObject:feedsObj];
+            
+                
                 
             }
             [self.tableView reloadData];
@@ -207,6 +212,10 @@
 {
     // Return the number of sections.
     return 1;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 125;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -232,12 +241,14 @@
         if ([feedsObj.instagramDescription isKindOfClass:[NSNull class]]) {
             cell.lblTweet.text      =   @"";
         }
+        
         else
             cell.lblTweet.text          =   feedsObj.instagramDescription;
         [cell.imgVWIcon setImage:[UIImage imageNamed:@"icon-feed-instagram.png"]];
         [cell.imgMainImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",feedsObj.instagramThumbnail]] placeholderImage:[UIImage imageNamed:@"event-feed-mask.png"]];
         
     }
+    
     else if ([feedsObj.tweetUserName length]>0) {
         
         cell.lblUserName.text       =   feedsObj.tweetUserName;
@@ -246,6 +257,7 @@
         [cell.imgVWIcon setImage:[UIImage imageNamed:@"icon-feed-twitter.png"]];
         [cell.imgMainImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",feedsObj.tweetUserProfileImage] ] placeholderImage:[UIImage imageNamed:@"event-feed-mask.png"]];
     }
+    /*
     else{
         
         cell.lblUserName.text       =   @"";
@@ -254,21 +266,20 @@
         [cell.imgVWIcon setImage:[UIImage imageNamed:@"icon-feed-facebook.png"]];
         [cell.imgMainImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",feedsObj.facebookPicture] ] placeholderImage:[UIImage imageNamed:@"event-feed-mask.png"]];
     }
+     */
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
-/*
+
 -(void)sortSocialFeed
 {
-    NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"created_at" ascending:NO];
+    NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"created_time" ascending:YES];
     NSArray *sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
     NSArray *sortedEventArray = [arrayOfFeeds sortedArrayUsingDescriptors:sortDescriptors];
-    NSLog(@"Date is %@",dateDescriptor);
-    NSLog(@"Check Date %@",sortedEventArray);
-    NSLog(@"Array Date is %@",sortedEventArray);
+
 }
-*/
+
 
 
 

@@ -14,6 +14,7 @@
 @end
 
 @implementation DiscoverViewController
+@synthesize scrlVW;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,6 +25,12 @@
 {
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Discover";
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    [self.scrlVW setContentSize:CGSizeMake(100, 1800)];
 }
 
 
