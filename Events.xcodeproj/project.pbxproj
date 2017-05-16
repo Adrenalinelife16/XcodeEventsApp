@@ -1933,6 +1933,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = "Events/Events-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
