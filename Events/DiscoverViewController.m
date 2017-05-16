@@ -30,7 +30,7 @@
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-    [self.scrlVW setContentSize:CGSizeMake(100, 1800)];
+    [self.scrlVW setContentSize:CGSizeMake(100, 600)];
 }
 
 
