@@ -20,13 +20,7 @@
 
 
 @interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating>
-{
-    
-    NSMutableArray *arrayEventList;
-    NSMutableArray *sortedArrayEventList;
-    NSDate *eventDate;
-    
-}
+
 
 @property (nonatomic, strong) SearchResultsTableViewController *resultsTableController;
 
@@ -43,7 +37,13 @@
 @end
 
 @implementation ProgramViewController
-
+{
+    
+    NSMutableArray *arrayEventList;
+    NSMutableArray *sortedArrayEventList;
+    NSDate *eventDate;
+    
+}
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -66,6 +66,7 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
+    
     _resultsTableController = [[SearchResultsTableViewController alloc] init];
     _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
     self.searchController.searchResultsUpdater = self;
@@ -78,16 +79,29 @@
     self.searchController.dimsBackgroundDuringPresentation = NO; // default is YES
     self.searchController.searchBar.delegate = self; // so we can monitor text changes + others
     
+    
     // Search is now just presenting a view controller. As such, normal view controller
     // presentation semantics apply. Namely that presentation will walk up the view controller
     // hierarchy until it finds the root view controller or one that defines a presentation context.
     //
     self.definesPresentationContext = YES;  // know where you want UISearchController to be displayed
+
     
     
+        
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
 
     
+}
+
+- (void)willPresentSearchController:(UISearchController *)searchController {
+    // do something before the search controller is presented
+    self.navigationController.navigationBar.translucent = YES;
+}
+
+-(void)willDismissSearchController:(UISearchController *)searchController
+{
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 
@@ -95,6 +109,8 @@
 {
     [super viewWillAppear:YES];
     self.navigationItem.title = @"Events";
+
+    self.searchController.hidesNavigationBarDuringPresentation = NO;
 
     
     [self checkLogin];
@@ -327,17 +343,48 @@
     
 }
 
+/*
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([segue.identifier isEqualToString:@"AboutView2"]) {
+        
+        NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
+        AboutViewController *aboutVwController = [segue destinationViewController];
+        EventList *obj  =   [self->arrayEventList objectAtIndex:selectedRowIndex.row];
+        aboutVwController.eventObj  =   obj;
+    }
+    
+}
+
+*/
+
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    EventList *obj = (tableView == self.tableView) ?
-    self->arrayEventList[indexPath.row] : self.resultsTableController.searchResults[indexPath.row];
     
-    AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
-    detailViewController.eventObj = obj; // hand off the current product to the detail view controller
     
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    
+    if ([self.searchController isActive]) {
+        
 
+        EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
+        AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+        detailViewController.eventObj = obj;
+        
+        
+    } else {
+        
+        EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
+        AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+        detailViewController.eventObj = obj;
+
+        }
+    
+    NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
+    EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
+    AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+    detailViewController.eventObj = obj;
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 
@@ -373,7 +420,7 @@
                                        type:NSContainsPredicateOperatorType
                                        options:NSCaseInsensitivePredicateOption];
         [searchItemsPredicate addObject:finalPredicate];
-            
+
         
         
         // at this OR predicate to our master AND predicate
@@ -442,24 +489,5 @@ NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
     // restore the text in the search field
     self.searchController.searchBar.text = [coder decodeObjectForKey:SearchBarTextKey];
 }
-
-
-#pragma mark - Navigation
-// In a story board-based application, you will often want to do a little preparation before navigation
-/*
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    
-    if ([segue.identifier isEqualToString:@"AboutView2"]) {
-        
-        NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
-        AboutViewController *aboutVwController = [segue destinationViewController];
-        EventList *obj  =   [self->arrayEventList objectAtIndex:selectedRowIndex.row];
-        aboutVwController.eventObj  =   obj;
-    }
-    
-}
- */
 
 @end

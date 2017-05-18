@@ -77,7 +77,6 @@
 {
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Find Your Life";
-    [self sortFavoriteEvents];
   //  [self removeFavorite]; not working, note - have connected to PHP but only saying favorite event inserted. will not remove
  }
 
@@ -199,19 +198,6 @@
             image=[UIImage imageNamed:@"no_image.png"];
             cell.imgIcon.image = image;
             
-            /*
-            
-        if ([[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]) {
-                [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]]] placeholderImage:nil];
-            }
-            
-            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        
-            */
-             
-            // end image call
-            
         }
         return cell;
     }
@@ -243,20 +229,6 @@
             break;
     }
 }
-
--(void)sortFavoriteEvents
-{
-    
-    NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"event_start_date" ascending:NO];
-    NSArray *sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
-    NSArray *sortedEventArray = [arrayEventList sortedArrayUsingDescriptors:sortDescriptors];
-    NSLog(@"Date is %@",dateDescriptor);
-    NSLog(@"Check Date %@",sortedEventArray);
-    NSLog(@"Array Date is %@",sortedEventArray);
-    
-    
-}
-
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -605,8 +577,6 @@
         NSLog(@"%@",error);
     }];
 }
-
-
 
 
 /**

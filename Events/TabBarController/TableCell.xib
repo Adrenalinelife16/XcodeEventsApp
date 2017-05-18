@@ -24,11 +24,11 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>
                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="redraw" fixedFrame="YES" image="dateunderlay.png" translatesAutoresizingMaskIntoConstraints="NO" id="32H-KQ-wuF">
-                        <rect key="frame" x="0.0" y="-73" width="320" height="173"/>
+                        <rect key="frame" x="0.0" y="-73" width="329" height="178"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </imageView>
                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" fixedFrame="YES" image="imagelayover.png" translatesAutoresizingMaskIntoConstraints="NO" id="d1d-4S-X6w">
-                        <rect key="frame" x="0.0" y="108" width="320" height="54"/>
+                        <rect key="frame" x="0.0" y="93" width="320" height="69"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </imageView>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description about Event!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRx-RX-VX8">
