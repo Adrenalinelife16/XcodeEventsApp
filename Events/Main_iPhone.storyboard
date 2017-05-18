@@ -242,7 +242,6 @@
                                     <outlet property="lblDateTime" destination="MAs-yS-Ks3" id="B71-cf-5uh"/>
                                     <outlet property="lblEventDesc" destination="wl1-Ms-NGj" id="ZEI-cd-f3G"/>
                                     <outlet property="lblEventName" destination="U1K-qr-2kS" id="l9f-gD-79X"/>
-                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="AboutView2" id="BNm-lt-kVg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1867,7 +1866,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="bDj-6L-rqu"/>
-        <segue reference="BNm-lt-kVg"/>
+        <segue reference="GW1-iY-vhh"/>
         <segue reference="Yzg-yO-FJ6"/>
     </inferredMetricsTieBreakers>
 </document>

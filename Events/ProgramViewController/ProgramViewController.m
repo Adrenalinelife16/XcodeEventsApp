@@ -66,6 +66,7 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
+    
     _resultsTableController = [[SearchResultsTableViewController alloc] init];
     _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
     self.searchController.searchResultsUpdater = self;
@@ -137,15 +138,6 @@
     }
     
 }
-
-- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
-    {
-        
-        
-        NSLog(@"Cancel button clicked");
-
-    }
-
 
 #pragma mark - UISearchBarDelegate
 
@@ -351,16 +343,55 @@
     
 }
 
+/*
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([segue.identifier isEqualToString:@"AboutView2"]) {
+        
+        NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
+        AboutViewController *aboutVwController = [segue destinationViewController];
+        EventList *obj  =   [self->arrayEventList objectAtIndex:selectedRowIndex.row];
+        aboutVwController.eventObj  =   obj;
+    }
+    
+}
+
+*/
+
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    EventList *obj = (tableView == self.tableView) ?
-  //  EventList *obj  =   [self->arrayEventList objectAtIndex:indexPath.row];
-    self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
     
+    
+    if ([self.searchController isActive]) {
+        
+        EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
+        AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+        detailViewController.eventObj = obj;
+        
+        
+    } else {
+        
+        EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
+        AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+        detailViewController.eventObj = obj;
+
+        }
+    
+    
+    
+    
+    
+    
+    
+    NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
+    EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
+ //   EventList *obj  =   [self->arrayEventList objectAtIndex:selectedRowIndex.row];
     AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
-    [self.navigationController pushViewController:detailViewController animated:YES];
     detailViewController.eventObj = obj;
     
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 
@@ -396,7 +427,7 @@
                                        type:NSContainsPredicateOperatorType
                                        options:NSCaseInsensitivePredicateOption];
         [searchItemsPredicate addObject:finalPredicate];
-            
+
         
         
         // at this OR predicate to our master AND predicate
@@ -470,7 +501,7 @@ NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation
 
-
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
@@ -483,6 +514,6 @@ NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
     }
     
 }
-
+*/
 
 @end
