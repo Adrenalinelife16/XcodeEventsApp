@@ -384,7 +384,6 @@
     EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
     AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
     detailViewController.eventObj = obj;
-    
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
@@ -490,24 +489,5 @@ NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
     // restore the text in the search field
     self.searchController.searchBar.text = [coder decodeObjectForKey:SearchBarTextKey];
 }
-
-
-#pragma mark - Navigation
-// In a story board-based application, you will often want to do a little preparation before navigation
-
-/*
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    
-    if ([segue.identifier isEqualToString:@"AboutView2"]) {
-        
-        NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
-        AboutViewController *aboutVwController = [segue destinationViewController];
-        EventList *obj  =   [self->arrayEventList objectAtIndex:selectedRowIndex.row];
-        aboutVwController.eventObj  =   obj;
-    }
-    
-}
-*/
 
 @end
