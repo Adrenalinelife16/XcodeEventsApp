@@ -366,6 +366,7 @@
     
     if ([self.searchController isActive]) {
         
+
         EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
         AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
         detailViewController.eventObj = obj;
@@ -379,15 +380,8 @@
 
         }
     
-    
-    
-    
-    
-    
-    
     NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
     EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
- //   EventList *obj  =   [self->arrayEventList objectAtIndex:selectedRowIndex.row];
     AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
     detailViewController.eventObj = obj;
     

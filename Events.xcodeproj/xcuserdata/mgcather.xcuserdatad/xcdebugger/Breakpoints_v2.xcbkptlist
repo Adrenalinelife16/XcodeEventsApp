@@ -314,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/ProgramViewController/ProgramViewController.m"
-            timestampString = "516817199.155966"
+            timestampString = "516817471.718664"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "398"
-            endingLineNumber = "398"
+            startingLineNumber = "392"
+            endingLineNumber = "392"
             landmarkName = "-updateSearchResultsForSearchController:"
             landmarkType = "7">
          </BreakpointContent>
