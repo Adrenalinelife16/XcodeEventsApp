@@ -8,12 +8,24 @@
 #import "SearchResultsTableViewController.h"
 #import "TableCellTableViewController.h"
 #import "EventList.h"
+#import "AboutViewController.h"
 
 
-@interface SearchResultsTableViewController ()
+@interface SearchResultsTableViewController () <UITableViewDataSource, UITextViewDelegate>
+
+
+@property (nonatomic, strong) SearchResultsTableViewController *resultsTableController;
+
 @end
 
-@implementation SearchResultsTableViewController 
+@implementation SearchResultsTableViewController
+{
+    
+    NSMutableArray *arrayEventList;
+    NSMutableArray *sortedArrayEventList;
+    NSDate *eventDate;
+    
+}
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

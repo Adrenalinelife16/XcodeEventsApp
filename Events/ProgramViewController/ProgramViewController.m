@@ -78,16 +78,29 @@
     self.searchController.dimsBackgroundDuringPresentation = NO; // default is YES
     self.searchController.searchBar.delegate = self; // so we can monitor text changes + others
     
+    
     // Search is now just presenting a view controller. As such, normal view controller
     // presentation semantics apply. Namely that presentation will walk up the view controller
     // hierarchy until it finds the root view controller or one that defines a presentation context.
     //
     self.definesPresentationContext = YES;  // know where you want UISearchController to be displayed
+
     
     
+        
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
 
     
+}
+
+- (void)willPresentSearchController:(UISearchController *)searchController {
+    // do something before the search controller is presented
+    self.navigationController.navigationBar.translucent = YES;
+}
+
+-(void)willDismissSearchController:(UISearchController *)searchController
+{
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 
@@ -95,6 +108,8 @@
 {
     [super viewWillAppear:YES];
     self.navigationItem.title = @"Events";
+
+    self.searchController.hidesNavigationBarDuringPresentation = NO;
 
     
     [self checkLogin];
@@ -122,6 +137,15 @@
     }
     
 }
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+    {
+        
+        
+        NSLog(@"Cancel button clicked");
+
+    }
+
 
 #pragma mark - UISearchBarDelegate
 
@@ -327,7 +351,7 @@
     
 }
 
-/*
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     EventList *obj = (tableView == self.tableView) ?
   //  EventList *obj  =   [self->arrayEventList objectAtIndex:indexPath.row];
@@ -338,7 +362,7 @@
     detailViewController.eventObj = obj;
     
 }
-*/
+
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     // update the filtered array based on the search text
