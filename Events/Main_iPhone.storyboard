@@ -518,15 +518,15 @@
             <objects>
                 <viewController id="w1Z-bF-ar5" customClass="DiscoverViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jFF-pG-qCN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="vqW-PU-Ibi">
-                                <rect key="frame" x="0.0" y="66" width="320" height="553"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="610"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="utK-J8-91L" userLabel="Yoga">
-                                        <rect key="frame" x="30" y="180" width="127" height="110"/>
+                                        <rect key="frame" x="8" y="180" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aYoga.png"/>
                                         <connections>
@@ -534,7 +534,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a4D-Um-XlC" userLabel="golf">
-                                        <rect key="frame" x="30" y="298" width="127" height="110"/>
+                                        <rect key="frame" x="8" y="298" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aGolf.png"/>
                                         <connections>
@@ -542,7 +542,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BOi-qs-eEv" userLabel="frisbee">
-                                        <rect key="frame" x="165" y="180" width="127" height="110"/>
+                                        <rect key="frame" x="165" y="180" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aFrisbee.png"/>
                                         <connections>
@@ -550,7 +550,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hrk-hL-Fyp" userLabel="soccer">
-                                        <rect key="frame" x="30" y="-56" width="127" height="110"/>
+                                        <rect key="frame" x="8" y="-56" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aSoccer.png"/>
                                         <connections>
@@ -558,7 +558,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tvA-5v-Zbk" userLabel="tablegames">
-                                        <rect key="frame" x="30" y="62" width="127" height="110"/>
+                                        <rect key="frame" x="8" y="62" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aTableGames.png"/>
                                         <connections>
@@ -566,7 +566,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iJx-au-XtY" userLabel="kickball">
-                                        <rect key="frame" x="165" y="-56" width="127" height="110"/>
+                                        <rect key="frame" x="165" y="-56" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aKickball.png"/>
                                         <connections>
@@ -574,7 +574,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ar1-ol-i0Q" userLabel="basketball">
-                                        <rect key="frame" x="165" y="62" width="127" height="110"/>
+                                        <rect key="frame" x="165" y="62" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aBasketball.png"/>
                                         <connections>
@@ -582,7 +582,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kyu-qv-LCM" userLabel="tennis">
-                                        <rect key="frame" x="30" y="416" width="127" height="110"/>
+                                        <rect key="frame" x="8" y="416" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aTennis.png"/>
                                         <connections>
@@ -590,7 +590,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7qb-TL-xvM" userLabel="fishing">
-                                        <rect key="frame" x="165" y="298" width="127" height="110"/>
+                                        <rect key="frame" x="165" y="298" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aFishing.png"/>
                                         <connections>
@@ -598,7 +598,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l6d-Qv-Wgj" userLabel="more">
-                                        <rect key="frame" x="165" y="416" width="127" height="110"/>
+                                        <rect key="frame" x="165" y="416" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aMoreCategories.png"/>
                                         <connections>
@@ -615,14 +615,14 @@
                     <navigationItem key="navigationItem" id="a40-XR-67K"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="667"/>
+                    <size key="freeformSize" width="320" height="725"/>
                     <connections>
                         <outlet property="scrlVW" destination="vqW-PU-Ibi" id="HNW-P6-Nmk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMO-Ty-6b2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1712" y="-536.5"/>
+            <point key="canvasLocation" x="-1712" y="-537.5"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="NyL-Lg-yae">
@@ -1135,7 +1135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guj-AN-y0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-479" y="-1307"/>
+            <point key="canvasLocation" x="-484" y="-1350"/>
         </scene>
         <!--Terms & Conditions-->
         <scene sceneID="8It-6Z-hs9">
@@ -1865,7 +1865,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bDj-6L-rqu"/>
+        <segue reference="z1t-Ts-zQv"/>
         <segue reference="GW1-iY-vhh"/>
         <segue reference="Yzg-yO-FJ6"/>
     </inferredMetricsTieBreakers>
