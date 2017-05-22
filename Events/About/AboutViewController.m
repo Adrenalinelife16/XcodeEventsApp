@@ -52,10 +52,9 @@
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     self.navigationItem.title = titleText;
+    self.navigationController.navigationBar.translucent = YES;
+
     
-
-
- 
 	// Do any additional setup after loading the view.
     [self initializeNavigationBar];
     
@@ -318,6 +317,16 @@
 {
     if (alertView.tag == 99 || alertView.tag == 1001) {
         [self.eventRegisterView setHidden:YES];
+    }  else {
+        
+        NSString *string = [alertView buttonTitleAtIndex:buttonIndex];
+        
+        if ([string isEqualToString:@"Login"]) {
+            
+            [self performSegueWithIdentifier:@"loginView" sender:self];
+            
+        }
+
     }
 }
 
