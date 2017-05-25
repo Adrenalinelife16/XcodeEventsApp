@@ -85,6 +85,7 @@
     
     [super viewWillAppear:YES];
     self.tabBarController.tabBar.hidden=NO;
+    [self checkLogin];
     
     // Reset Event Name
     
@@ -106,26 +107,43 @@
 #pragma mark - Initialize Navigation bar
 -(void)initializeNavigationBar{
     self.title = self.eventObj.eventName;
-    UIImage* image1 = [UIImage imageNamed:@"share.png"];
-    CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
-    UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
-    [shareButton setImage:image1 forState:UIControlStateNormal];
-    [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
-    [shareButton addTarget:self action:@selector(clickedShare:)
-          forControlEvents:UIControlEventTouchUpInside];
-    [shareButton setShowsTouchWhenHighlighted:YES];
-    /**
-     *  get events detail data from local on basis of eventID
-     */
-    NSMutableArray *arrayTemp = [[NSMutableArray alloc] initWithArray:[MMdbsupport MMfetchFavEvents:[NSString stringWithFormat:@"select * from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]]];
-    if ([arrayTemp count]>0) {
-        shareButton.selected=YES;
-    }
-    UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:shareButton];
-    
-    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,nil];
     [self addLocationPinOnMap];
 }
+
+#pragma mark - Check login for MyFavorite and MyTickets
+-(void)checkLogin
+{
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
+        
+        UIImage* image1 = [UIImage imageNamed:@"share.png"];
+        CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
+        UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
+        [shareButton setImage:image1 forState:UIControlStateNormal];
+        [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
+        [shareButton addTarget:self action:@selector(clickedShare:)
+              forControlEvents:UIControlEventTouchUpInside];
+        [shareButton setShowsTouchWhenHighlighted:YES];
+        /**
+         *  get events detail data from local on basis of eventID
+         
+        NSMutableArray *arrayTemp = [[NSMutableArray alloc] initWithArray:[MMdbsupport MMfetchFavEvents:[NSString stringWithFormat:@"select * from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]]];
+        if ([arrayTemp count]>0) {
+            shareButton.selected=YES;
+        }
+         */
+        UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:shareButton];
+        
+        self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,nil];
+        
+
+    }
+    else
+        NSLog(@"Do nothing");
+
+}
+
+
 
 #pragma mark - Button Clicked
 -(IBAction)clickedShare:(id)sender{
@@ -136,8 +154,12 @@
          *  delete event from local to remove from favorites list
          */
         btn.selected=NO;
+        
+        [self addRemoveFavorite];
+        /*
         [MMdbsupport MMExecuteSqlQuery:[NSString stringWithFormat:@"delete from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]];
         [Utility alertNotice:APPNAME withMSG:@"Event removed from favorite!" cancleButtonTitle:@"OK" otherButtonTitle:nil];
+         */
     }
     else{
         
@@ -146,6 +168,10 @@
          */
         
         btn.selected = YES;
+        
+        [self addRemoveFavorite];
+        /*
+        
         AppDelegate *appdel = (AppDelegate *)[UIApplication sharedApplication].delegate;
         
         FavouriteEvents *objData = [NSEntityDescription insertNewObjectForEntityForName:@"FavouriteEvents" inManagedObjectContext:appdel.managedObjectContext];
@@ -171,10 +197,36 @@
         [appdel.managedObjectContext save:nil];
         
         [Utility alertNotice:APPNAME withMSG:@"Event added as favorite!" cancleButtonTitle:@"OK" otherButtonTitle:nil];
+         */
     }
 }
 
+-(void)addRemoveFavorite
+{
+    
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    NSDictionary *dictOfParameters = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:[[Utility getNSUserDefaultValue:KUSERID] intValue]],@"user_id",self.eventObj.eventID,@"event_id", nil];
+    
+    
+    [Utility GetDataForMethod:NSLocalizedString(@"ADD_REMOVE_FAV_EVENT", @"ADD_REMOVE_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        [DSBezelActivityView removeViewAnimated:YES];
+        
+        
+        if ([response isKindOfClass:[NSDictionary class]]) {
+            [Utility alertNotice:@"" withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        }
+        else if([response isKindOfClass:[NSArray class]]){
+            [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        }
+        [self.tblView reloadData];
+        
+    }WithFailure:^(NSString *error){
+        [DSBezelActivityView removeViewAnimated:YES];
+        NSLog(@"%@",error);
+    }];
+}
 
+/*
 -(IBAction)btnEventRegistrationPressed:(id)sender
 {
     if ([self checkLogin]) {
@@ -218,6 +270,9 @@
         [self showLoginScreen];
     }
 }
+ 
+ */
+ 
 
 #pragma mark - Event Registration View Clicked events
 -(IBAction)btnCancelPressed:(id)sender
@@ -330,16 +385,6 @@
     }
 }
 
-#pragma mark - Check login for MyFavorite and MyTickets
--(BOOL)checkLogin
-{
-    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
-    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
-        return YES;
-    }
-    else
-        return NO;
-}
 
 /**
  *  Show login view controller with animation

@@ -19,6 +19,7 @@
 #import "EventList.h"
 #import "AboutViewController.h"
 #import "ProgramViewController.h"
+#import "Utility.h"
 
 @interface MyProgramViewController ()
 {
@@ -77,7 +78,7 @@
 {
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Find Your Life";
-  //  [self removeFavorite]; not working, note - have connected to PHP but only saying favorite event inserted. will not remove
+ 
  }
 
 
@@ -343,7 +344,8 @@
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites..."];
-    [self getFavouriteProgramList];
+//    [self getFavouriteProgramList];
+    [self getFavorites];
 }
 
 - (IBAction)clickedMyCalender:(id)sender {
@@ -523,7 +525,7 @@
 }
 
 /**
- *  Fetch Favorites program list from local
+ *  Fetch Favorites program list from local hard coded machine, not php pull
  */
 -(void)getFavouriteProgramList
 {
@@ -551,24 +553,32 @@
 
 
 
-
--(void)removeFavorite
-{
+-(void)getFavorites{
     
-    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
-    NSDictionary *dictOfParameters = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:[[Utility getNSUserDefaultValue:KUSERID] intValue]],@"user_id",self.eventObj.eventID,@"event_id", nil];
     
-    NSLog(@"Remove favorite ID %@", strUserID);
+    NSDictionary *dictOfEventRequestParameter = [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id", @"",@"page",@"",@"event_id", nil];
     
-    [Utility GetDataForMethod:NSLocalizedString(@"REMOVE_FAV_EVENT", @"REMOVE_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
-        [DSBezelActivityView removeViewAnimated:YES];
+    [Utility GetDataForMethod:NSLocalizedString(@"GET_FAV_EVENT", @"GET_FAV_EVENT") parameters:dictOfEventRequestParameter key:@"" withCompletion:^(id response){
         
-
+        
+                
+        [DSBezelActivityView removeViewAnimated:NO];
+        arrayFavouriteProgram  =   [[NSMutableArray alloc] init];
+        NSLog(@"Favorite Event ID %@", dictOfEventRequestParameter);
+        
         if ([response isKindOfClass:[NSDictionary class]]) {
             [Utility alertNotice:@"" withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+            
+            
+            NSLog(@"First Favorite Event ID %@", response);
+            
         }
         else if([response isKindOfClass:[NSArray class]]){
             [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+            
+            
+            
+            NSLog(@"Second Favorite Event ID %@", response);
         }
         [self.tblMainTable reloadData];
         
@@ -578,10 +588,16 @@
     }];
 }
 
-
+        
+        
+        
+        
 /**
  *  Fetch Tickets List From Server.
  */
+
+
+
 -(void)getMyTickets
 {
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"",@"page",@"",@"page_size", nil];

@@ -38,7 +38,7 @@
 
 - (IBAction)addressClicked:(id)sender;
 
--(IBAction)btnEventRegistrationPressed:(id)sender;
+//-(IBAction)btnEventRegistrationPressed:(id)sender;
 
 
 

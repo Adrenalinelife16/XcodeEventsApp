@@ -219,6 +219,8 @@
         [DSBezelActivityView removeViewAnimated:NO];
         arrayEventList  =   [[NSMutableArray alloc] init];
         
+        NSLog(@"Main Events %@", dictOfEventRequestParameter);
+        
         if ([response isKindOfClass:[NSArray class]]) {
             if ([[[response objectAtIndex:0] allKeys] containsObject:@"status"]) {
                 if ([[[response objectAtIndex:0] objectForKey:@"status"] intValue] == 0) {
@@ -228,6 +230,8 @@
                     return;
                 }
             }
+            
+            
             
             NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
             NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
