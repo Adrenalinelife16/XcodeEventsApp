@@ -128,20 +128,25 @@
             
             NSMutableArray  *arrayTempFeeds =   [[NSMutableArray alloc] init];
             
+            /*
+            
             for (NSMutableDictionary *dictFBfeeds in arrayFBfeedsTemp) {
                 NSString *strTemp   =   [dictFBfeeds objectForKey:@"created_time"];
                 [dictFBfeeds removeObjectForKey:@"created_time"];
                 [dictFBfeeds setObject:[Utility getFormatedDateString:strTemp dateFormatString:@"yyyy-MM-dd'T'HH:mm:ssZZ" dateFormatterString:@"E, MMM d yyyy hh:mm a"] forKey:@"created_at"];
                 [arrayTempFeeds addObject:dictFBfeeds];
             }
+             
+             */
             
             for (NSMutableDictionary *dictTwitterFeeds in arrayTwitterFeedsTemp) {
                 
-                NSString *strTemp   =   [dictTwitterFeeds objectForKey:@"created_at"];
-                [dictTwitterFeeds removeObjectForKey:@"created_at"];
+                NSString *strTemp   =   [dictTwitterFeeds objectForKey:@"created_time"];
+                [dictTwitterFeeds removeObjectForKey:@"created_time"];
                 [dictTwitterFeeds setObject:[Utility getFormatedDateString:strTemp dateFormatString:@"EEE MMM dd HH:mm:ss ZZ yyyy" dateFormatterString:@"E, MMM d yyyy hh:mm a"] forKey:@"created_at"];
                 [arrayTempFeeds addObject:dictTwitterFeeds];
             }
+             
             
             for (NSMutableDictionary *dictOfInstagramFeeds in arrayInstagramFeedsTemp) {;
                 
@@ -269,27 +274,6 @@
      */
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
-}
-
-
--(void)sortSocialFeed
-{
-    NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"created_time" ascending:YES];
-    NSArray *sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
-    NSArray *sortedEventArray = [arrayOfFeeds sortedArrayUsingDescriptors:sortDescriptors];
-
-}
-
-
-
-
--(void)sortSocialFeedFilter
-{
-    
-    NSSortDescriptor *sortDescriptor =
-    [[NSSortDescriptor alloc] initWithKey:@"created_time" ascending:YES];
-    NSLog(@"Date is %@",sortDescriptor);
-
 }
 
 

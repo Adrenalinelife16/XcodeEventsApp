@@ -124,14 +124,14 @@
         [shareButton addTarget:self action:@selector(clickedShare:)
               forControlEvents:UIControlEventTouchUpInside];
         [shareButton setShowsTouchWhenHighlighted:YES];
-        /**
-         *  get events detail data from local on basis of eventID
+        
+        // get events detail data from local on basis of eventID
          
         NSMutableArray *arrayTemp = [[NSMutableArray alloc] initWithArray:[MMdbsupport MMfetchFavEvents:[NSString stringWithFormat:@"select * from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]]];
         if ([arrayTemp count]>0) {
             shareButton.selected=YES;
         }
-         */
+         
         UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:shareButton];
         
         self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,nil];
@@ -150,54 +150,24 @@
     UIButton *btn = (UIButton *)sender;
     
     if (btn.selected) {
-        /**
-         *  delete event from local to remove from favorites list
-         */
+        
+         // delete event from local to remove from favorites list
+        
         btn.selected=NO;
         
         [self addRemoveFavorite];
-        /*
-        [MMdbsupport MMExecuteSqlQuery:[NSString stringWithFormat:@"delete from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]];
-        [Utility alertNotice:APPNAME withMSG:@"Event removed from favorite!" cancleButtonTitle:@"OK" otherButtonTitle:nil];
-         */
+        
     }
     else{
         
-        /**
-         *  add event to local to add in favorites list
-         */
+        
+        // add event to local to add in favorites list
+        
         
         btn.selected = YES;
         
         [self addRemoveFavorite];
-        /*
         
-        AppDelegate *appdel = (AppDelegate *)[UIApplication sharedApplication].delegate;
-        
-        FavouriteEvents *objData = [NSEntityDescription insertNewObjectForEntityForName:@"FavouriteEvents" inManagedObjectContext:appdel.managedObjectContext];
-        objData.event_all_day       =   self.eventObj.eventAllDay;
-        objData.event_content       =   self.eventObj.eventDescription;
-        objData.event_end_dateTime  =   self.eventObj.eventEndDateTime;
-        objData.event_id            =   self.eventObj.eventID;
-        objData.event_image_url     =   self.eventObj.eventImageURL;
-        objData.event_name          =   self.eventObj.eventName;
-        objData.event_owner         =   @"";
-        objData.event_start_dateTime=   self.eventObj.eventStartDateTime;
-        objData.event_loc_address   =   self.eventObj.eventLocationAddress;
-        objData.event_loc_country   =   self.eventObj.eventLocationCountry;
-        objData.event_loc_latitude  =   self.eventObj.eventLocationLatitude;
-        objData.event_loc_longitude =   self.eventObj.eventLocationLongitude;
-        objData.event_loc_name      =   self.eventObj.eventLocationName;
-        objData.event_loc_owner     =   @"";
-        objData.event_loc_postcode  =   @"";
-        objData.event_loc_region    =   @"";
-        objData.event_loc_state     =   [NSString stringWithFormat:@"%@",self.eventObj.eventLocationState];
-        objData.event_loc_town      =   [NSString stringWithFormat:@"%@",self.eventObj.eventLocationTown];
-        
-        [appdel.managedObjectContext save:nil];
-        
-        [Utility alertNotice:APPNAME withMSG:@"Event added as favorite!" cancleButtonTitle:@"OK" otherButtonTitle:nil];
-         */
     }
 }
 
@@ -207,9 +177,12 @@
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     NSDictionary *dictOfParameters = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:[[Utility getNSUserDefaultValue:KUSERID] intValue]],@"user_id",self.eventObj.eventID,@"event_id", nil];
     
+    NSLog(@"user and event id %@", dictOfParameters);
+    
     
     [Utility GetDataForMethod:NSLocalizedString(@"ADD_REMOVE_FAV_EVENT", @"ADD_REMOVE_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         [DSBezelActivityView removeViewAnimated:YES];
+    
         
         
         if ([response isKindOfClass:[NSDictionary class]]) {

@@ -43,7 +43,7 @@
 
 @implementation MyProgramViewController
 @synthesize eventObj;
-
+@synthesize receivedData;
 
 
 //- (id)initWithStyle:(UITableViewStyle)style
@@ -73,6 +73,7 @@
    
     
    }
+
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -541,8 +542,8 @@
 }
 
 
--(void)checkUserID
-{
+-(void)checkUserID{
+    
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
         NSLog(@"User ID is %@", strUserID);
@@ -555,31 +556,30 @@
 
 -(void)getFavorites{
     
+
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"",@"page",@"",@"page_size", nil];
     
-    NSDictionary *dictOfEventRequestParameter = [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id", @"",@"page",@"",@"event_id", nil];
     
-    [Utility GetDataForMethod:NSLocalizedString(@"GET_FAV_EVENT", @"GET_FAV_EVENT") parameters:dictOfEventRequestParameter key:@"" withCompletion:^(id response){
+    [Utility GetDataForMethod:NSLocalizedString(@"GET_FAV_EVENT_TEST", @"GET_FAV_EVENT_TEST") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         
-        
-                
+    
         [DSBezelActivityView removeViewAnimated:NO];
         arrayFavouriteProgram  =   [[NSMutableArray alloc] init];
-        NSLog(@"Favorite Event ID %@", dictOfEventRequestParameter);
         
-        if ([response isKindOfClass:[NSDictionary class]]) {
-            [Utility alertNotice:@"" withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-            
-            
-            NSLog(@"First Favorite Event ID %@", response);
-            
-        }
-        else if([response isKindOfClass:[NSArray class]]){
-            [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-            
+        
+        if ([response isKindOfClass:[NSArray class]]) {
+            if ([[[response objectAtIndex:0] allKeys] containsObject:@"status"]) {
+                if ([[[response objectAtIndex:0] objectForKey:@"status"] intValue] == 0) {
+                    [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+                    gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
+                    [self.tblMainTable reloadData];
+                    return;
+                }
+            }
             
             
             NSLog(@"Second Favorite Event ID %@", response);
-        }
+                    }
         [self.tblMainTable reloadData];
         
     }WithFailure:^(NSString *error){

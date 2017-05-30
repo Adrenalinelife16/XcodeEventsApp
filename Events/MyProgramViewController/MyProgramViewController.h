@@ -24,6 +24,9 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain;
 @property (strong, nonatomic) EventList *eventObj;
 
+
+@property (nonatomic,retain) NSMutableData *receivedData;
+
 - (IBAction)clickedMyTickets:(id)sender;
 
 - (IBAction)clickedMyFavourites:(id)sender;

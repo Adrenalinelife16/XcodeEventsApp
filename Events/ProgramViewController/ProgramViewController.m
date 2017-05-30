@@ -219,7 +219,6 @@
         [DSBezelActivityView removeViewAnimated:NO];
         arrayEventList  =   [[NSMutableArray alloc] init];
         
-        NSLog(@"Main Events %@", dictOfEventRequestParameter);
         
         if ([response isKindOfClass:[NSArray class]]) {
             if ([[[response objectAtIndex:0] allKeys] containsObject:@"status"]) {

@@ -46,42 +46,62 @@
 
 - (IBAction)submitEvent:(id)sender
 {
-    [self IsValid];
+
     
-    NSString *category = titleText;
+    NSMutableString *rawSTr = [NSMutableString stringWithFormat:@"event_name=%@&start_time=%@&end_time=%@&location_name=%@&location_address=%@&location_city=%@&location_state=%@&location_zip=%@&event_info=%@",
+                               
+                               eventName.text,
+                               _startText.text,
+                               _endText.text,
+                               locationName.text,
+                               address.text,
+                               city.text,
+                               state.text,
+                               zipCode.text,
+                               detailView.text];
+    
+    NSLog(@"Event Info %@", rawSTr);
+    
+    NSData *data = [rawSTr dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSURL *URL = [NSURL URLWithString:@"http://www.adrenalinelife.org/Adrenaline_Custom/add_event.php"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:data];
     
     
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:eventName.text,@"eventName",
-                                         self.startText.text,@"startText",
-                                         self.endText.text,@"endText",
-                                         self.locationName.text,@"locationname",
-                                         self.address.text,@"address",
-                                         self.city.text,@"city",
-                                         self.state.text,@"state",
-                                         self.zipCode.text,@"zipode",
-                                         self.detailView.text,@"eventInfo",
-                                         self.navigationItem.title = titleText,@"category", nil];
+    NSURLResponse *response;
+    NSError *err;
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
     
+    NSError *error;
+    NSMutableArray *dictionary = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
+    NSLog(@"%@", dictionary);
     
-    [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+    NSMutableDictionary *object = [dictionary objectAtIndex:0];
+    NSMutableArray *number = [object objectForKey:@"Error"];
+    NSLog(@"%@", number);
+    
+    NSNumber *errorCode = number;
+    
+    // Check Username and Email duplicates-------------------------------------------------------------------------------
+    
+    /*
+    if ([errorCode intValue] == 0) {
+        NSLog(@"Username Doesn't Exist");
+     //   [self performSegueWithIdentifier:@"register" sender:self];
         
-        [DSBezelActivityView removeViewAnimated:YES];
-        
-        
-        if ([response isKindOfClass:[NSDictionary class]]) {
-            [Utility alertNotice:@"" withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-        }
-        else if([response isKindOfClass:[NSArray class]]){
-            [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-        }
-        
-    }WithFailure:^(NSString *error){
-        [DSBezelActivityView removeViewAnimated:YES];
-        NSLog(@"%@",error);
-    }];
+    }
     
-    NSLog(@"Create event button pushed");
+    if ([errorCode intValue] == 1) {
+        NSLog(@"Username Already Exist");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"Username and Email Already Exist!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alert show];
+    }
+    */
 }
+
 
 
 
@@ -232,8 +252,9 @@
 
 - (IBAction)startDate:(UITextField *)sender
 {
+    
     datePicker=[[UIDatePicker alloc]init];
-    datePicker.datePickerMode=UIDatePickerModeDateAndTime;
+    datePicker.datePickerMode=UIDatePickerModeDate;
     [self.startText setInputView:datePicker];
     UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
     [toolBar setTintColor:[UIColor grayColor]];
@@ -242,12 +263,13 @@
     [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
     [self.startText setInputAccessoryView:toolBar];
     datePicker.minuteInterval=(60/4);
+    
 
 }
 - (IBAction)endDate:(UITextField *)sender
 {
     datePicker=[[UIDatePicker alloc]init];
-    datePicker.datePickerMode=UIDatePickerModeDateAndTime;
+    datePicker.datePickerMode=UIDatePickerModeDate;
     [self.endText setInputView:datePicker];
     UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
     [toolBar setTintColor:[UIColor grayColor]];
@@ -261,14 +283,16 @@
 
 -(void)ShowSelectedStartDate
 {   NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"E, MMM d yyyy h:mm a"];
+    [formatter setDateFormat:@"E, MMM d yyyy"];
+    self.startText.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
     self.startText.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
     [self.startText resignFirstResponder];
+    
 }
 
 -(void)ShowSelectedEndDate
 {   NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"E, MMM d yyyy h:mm a"];
+    [formatter setDateFormat:@"E, MMM d yyyy"];
     self.endText.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
     [self.endText resignFirstResponder];
 }
