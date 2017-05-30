@@ -21,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1000)];
+    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1075)];
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     self.detailView.layer.borderWidth = 1.0f;
@@ -48,17 +48,22 @@
 {
 
     
-    NSMutableString *rawSTr = [NSMutableString stringWithFormat:@"event_name=%@&start_time=%@&end_time=%@&location_name=%@&location_address=%@&location_city=%@&location_state=%@&location_zip=%@&event_info=%@",
+    NSMutableString *rawSTr = [NSMutableString stringWithFormat:@"location_name=%@&location_address=%@&location_city=%@&location_zip=%@&location_state=%@&category=%@&user=%@&event_name=%@&event_info=%@&start_time=%@&end_time=%@&start_date=%@&end_date=%@",
                                
-                               eventName.text,
-                               _startText.text,
-                               _endText.text,
                                locationName.text,
                                address.text,
                                city.text,
-                               state.text,
                                zipCode.text,
-                               detailView.text];
+                               state.text,
+                               self.navigationItem.title = titleText,
+                               [Utility getNSUserDefaultValue:KUSERID],
+                               eventName.text,
+                               detailView.text,
+                               _startTime.text,
+                               _endTime.text,
+                               _startDate,
+                               _endDate];
+                               
     
     NSLog(@"Event Info %@", rawSTr);
     
@@ -87,19 +92,21 @@
     
     // Check Username and Email duplicates-------------------------------------------------------------------------------
     
-    /*
+    
     if ([errorCode intValue] == 0) {
-        NSLog(@"Username Doesn't Exist");
-     //   [self performSegueWithIdentifier:@"register" sender:self];
+        NSLog(@"Event Doesn't Exist");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event Created" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alert show];
+        [self performSegueWithIdentifier:@"eventCreated" sender:self];
         
     }
     
     if ([errorCode intValue] == 1) {
-        NSLog(@"Username Already Exist");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"Username and Email Already Exist!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        NSLog(@"Event Already Exist");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"Event Already Exist!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
     }
-    */
+    
 }
 
 
@@ -190,8 +197,10 @@
     [state resignFirstResponder];
     [zipCode resignFirstResponder];
     [detailView resignFirstResponder];
-    [_startText resignFirstResponder];
-    [_endText resignFirstResponder];
+    [_startDate resignFirstResponder];
+    [_endDate resignFirstResponder];
+    [_startTime resignFirstResponder];
+    [_endTime resignFirstResponder];
 }
 
 //Hide keyboard when touch return
@@ -209,9 +218,15 @@
     if (!([self.eventName.text length]>0)) {
         message     =   @"Please enter event name!";
     }
-    else if (!([self.startText.text length]>0)) {
+    else if (!([self.startDate.text length]>0)) {
         message     =   @"Please enter start date!";
-    }else if (!([self.endText.text length]>0)) {
+    }else if (!([self.endDate.text length]>0)) {
+        message     =   @"Please enter end date!";
+    }
+    else if (!([self.startTime.text length]>0)) {
+        message     =   @"Please enter end date!";
+    }
+    else if (!([self.endTime.text length]>0)) {
         message     =   @"Please enter end date!";
     }
     else if (!([self.locationName.text length]>0)) {
@@ -255,14 +270,14 @@
     
     datePicker=[[UIDatePicker alloc]init];
     datePicker.datePickerMode=UIDatePickerModeDate;
-    [self.startText setInputView:datePicker];
+    [self.startDate setInputView:datePicker];
     UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
     [toolBar setTintColor:[UIColor grayColor]];
     UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(ShowSelectedStartDate)];
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
-    [self.startText setInputAccessoryView:toolBar];
-    datePicker.minuteInterval=(60/4);
+    [self.startDate setInputAccessoryView:toolBar];
+
     
 
 }
@@ -270,32 +285,82 @@
 {
     datePicker=[[UIDatePicker alloc]init];
     datePicker.datePickerMode=UIDatePickerModeDate;
-    [self.endText setInputView:datePicker];
+    [self.endDate setInputView:datePicker];
     UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
     [toolBar setTintColor:[UIColor grayColor]];
     UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(ShowSelectedEndDate)];
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
-    [self.endText setInputAccessoryView:toolBar];
-    datePicker.minuteInterval=(60/4);
+    [self.endDate setInputAccessoryView:toolBar];
+    
  
 }
 
 -(void)ShowSelectedStartDate
 {   NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
     [formatter setDateFormat:@"E, MMM d yyyy"];
-    self.startText.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
-    self.startText.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
-    [self.startText resignFirstResponder];
+    self.startDate.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
+    self.startDate.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
+    [self.startDate resignFirstResponder];
     
 }
 
 -(void)ShowSelectedEndDate
 {   NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
     [formatter setDateFormat:@"E, MMM d yyyy"];
-    self.endText.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
-    [self.endText resignFirstResponder];
+    self.endDate.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
+    [self.endDate resignFirstResponder];
 }
+
+#pragma mark - Time Picker
+
+- (IBAction)startTime:(UITextField *)sender
+{
+    
+    datePicker=[[UIDatePicker alloc]init];
+    datePicker.datePickerMode=UIDatePickerModeTime;
+    [self.startTime setInputView:datePicker];
+    UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
+    [toolBar setTintColor:[UIColor grayColor]];
+    UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(ShowSelectedStartTime)];
+    UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
+    [self.startTime setInputAccessoryView:toolBar];
+    datePicker.minuteInterval=(60/4);
+    
+    
+}
+- (IBAction)endTime:(UITextField *)sender
+{
+    datePicker=[[UIDatePicker alloc]init];
+    datePicker.datePickerMode=UIDatePickerModeTime;
+    [self.endTime setInputView:datePicker];
+    UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
+    [toolBar setTintColor:[UIColor grayColor]];
+    UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(ShowSelectedEndTime)];
+    UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
+    [self.endTime setInputAccessoryView:toolBar];
+    datePicker.minuteInterval=(60/4);
+    
+}
+
+-(void)ShowSelectedStartTime
+{   NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"h:mm a"];
+    self.startTime.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
+    self.startTime.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
+    [self.startTime resignFirstResponder];
+    
+}
+
+-(void)ShowSelectedEndTime
+{   NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"h:mm a"];
+    self.endTime.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
+    [self.endTime resignFirstResponder];
+}
+
 
 #pragma mark - Navigation
 
