@@ -54,6 +54,7 @@
     self.navigationItem.title = titleText;
     self.navigationController.navigationBar.translucent = YES;
 
+
     
 	// Do any additional setup after loading the view.
     [self initializeNavigationBar];
@@ -86,6 +87,7 @@
     [super viewWillAppear:YES];
     self.tabBarController.tabBar.hidden=NO;
     [self checkLogin];
+    [self checkUserFavorite];
     
     // Reset Event Name
     
@@ -150,21 +152,54 @@
 -(void)checkUserFavorite{
     
     
-    
-    UIImage* image1 = [UIImage imageNamed:@"share.png"];
-    CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
-    UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
-    [shareButton setImage:image1 forState:UIControlStateNormal];
-    [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
-    
-    
-    
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],
+                                         @"user_id",
+                                         @"2",
+                                         @"page",
+                                         @"2",
+                                         @"page_size",
+                                         nil];
     
     
-    shareButton.selected = YES;
-    
-    
+    [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        
+        if ([response count]> 0) {
+            UIImage* image1 = [UIImage imageNamed:@"share.png"];
+            CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
+            UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
+            [shareButton setImage:image1 forState:UIControlStateNormal];
+            [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
+            
+            
+            shareButton.selected = YES;
+            
+            NSLog(@"Check User Fav %@", response);
+            
+        }
+        [DSBezelActivityView removeViewAnimated:YES];
+        
+    }WithFailure:^(NSString *error){
+        [DSBezelActivityView removeViewAnimated:YES];
+        NSLog(@"%@",error);
+    }];
 }
+
+
+
+     /*
+    if ([dictOfParameters count] > 0) {
+        UIImage* image1 = [UIImage imageNamed:@"share.png"];
+        CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
+        UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
+        [shareButton setImage:image1 forState:UIControlStateNormal];
+        [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
+
+        
+        shareButton.selected = YES;
+        }
+    */
+
+
 
 
 
