@@ -52,10 +52,9 @@
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     self.navigationItem.title = titleText;
+    self.navigationController.navigationBar.translucent = YES;
+
     
-
-
- 
 	// Do any additional setup after loading the view.
     [self initializeNavigationBar];
     
@@ -86,6 +85,7 @@
     
     [super viewWillAppear:YES];
     self.tabBarController.tabBar.hidden=NO;
+    [self checkLogin];
     
     // Reset Event Name
     
@@ -107,75 +107,122 @@
 #pragma mark - Initialize Navigation bar
 -(void)initializeNavigationBar{
     self.title = self.eventObj.eventName;
+    [self addLocationPinOnMap];
+}
+
+#pragma mark - Check login for MyFavorite and MyTickets
+-(void)checkLogin
+{
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
+        
+        UIImage* image1 = [UIImage imageNamed:@"share.png"];
+        CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
+        UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
+        [shareButton setImage:image1 forState:UIControlStateNormal];
+        [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
+        [shareButton addTarget:self action:@selector(clickedShare:)
+              forControlEvents:UIControlEventTouchUpInside];
+        [shareButton setShowsTouchWhenHighlighted:YES];
+        
+        // get events detail data from local on basis of eventID
+         
+        NSMutableArray *arrayTemp = [[NSMutableArray alloc] initWithArray:[MMdbsupport MMfetchFavEvents:[NSString stringWithFormat:@"select * from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]]];
+        
+        
+        
+        
+        if ([arrayTemp count]>0) {
+            shareButton.selected=YES;
+        }
+         
+        UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:shareButton];
+        
+        self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,nil];
+        
+
+    }
+    else
+        NSLog(@"Do nothing");
+
+}
+
+-(void)checkUserFavorite{
+    
+    
+    
     UIImage* image1 = [UIImage imageNamed:@"share.png"];
     CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
     UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
     [shareButton setImage:image1 forState:UIControlStateNormal];
     [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
-    [shareButton addTarget:self action:@selector(clickedShare:)
-          forControlEvents:UIControlEventTouchUpInside];
-    [shareButton setShowsTouchWhenHighlighted:YES];
-    /**
-     *  get events detail data from local on basis of eventID
-     */
-    NSMutableArray *arrayTemp = [[NSMutableArray alloc] initWithArray:[MMdbsupport MMfetchFavEvents:[NSString stringWithFormat:@"select * from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]]];
-    if ([arrayTemp count]>0) {
-        shareButton.selected=YES;
-    }
-    UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:shareButton];
     
-    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,nil];
-    [self addLocationPinOnMap];
+    
+    
+    
+    
+    shareButton.selected = YES;
+    
+    
 }
+
+
 
 #pragma mark - Button Clicked
 -(IBAction)clickedShare:(id)sender{
     UIButton *btn = (UIButton *)sender;
     
     if (btn.selected) {
-        /**
-         *  delete event from local to remove from favorites list
-         */
+        
+         // delete event from local to remove from favorites list
+        
         btn.selected=NO;
-        [MMdbsupport MMExecuteSqlQuery:[NSString stringWithFormat:@"delete from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]];
-        [Utility alertNotice:APPNAME withMSG:@"Event removed from favorite!" cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        
+        [self addRemoveFavorite];
+        
     }
     else{
         
-        /**
-         *  add event to local to add in favorites list
-         */
+        
+        // add event to local to add in favorites list
+        
         
         btn.selected = YES;
-        AppDelegate *appdel = (AppDelegate *)[UIApplication sharedApplication].delegate;
         
-        FavouriteEvents *objData = [NSEntityDescription insertNewObjectForEntityForName:@"FavouriteEvents" inManagedObjectContext:appdel.managedObjectContext];
-        objData.event_all_day       =   self.eventObj.eventAllDay;
-        objData.event_content       =   self.eventObj.eventDescription;
-        objData.event_end_dateTime  =   self.eventObj.eventEndDateTime;
-        objData.event_id            =   self.eventObj.eventID;
-        objData.event_image_url     =   self.eventObj.eventImageURL;
-        objData.event_name          =   self.eventObj.eventName;
-        objData.event_owner         =   @"";
-        objData.event_start_dateTime=   self.eventObj.eventStartDateTime;
-        objData.event_loc_address   =   self.eventObj.eventLocationAddress;
-        objData.event_loc_country   =   self.eventObj.eventLocationCountry;
-        objData.event_loc_latitude  =   self.eventObj.eventLocationLatitude;
-        objData.event_loc_longitude =   self.eventObj.eventLocationLongitude;
-        objData.event_loc_name      =   self.eventObj.eventLocationName;
-        objData.event_loc_owner     =   @"";
-        objData.event_loc_postcode  =   @"";
-        objData.event_loc_region    =   @"";
-        objData.event_loc_state     =   [NSString stringWithFormat:@"%@",self.eventObj.eventLocationState];
-        objData.event_loc_town      =   [NSString stringWithFormat:@"%@",self.eventObj.eventLocationTown];
+        [self addRemoveFavorite];
         
-        [appdel.managedObjectContext save:nil];
-        
-        [Utility alertNotice:APPNAME withMSG:@"Event added as favorite!" cancleButtonTitle:@"OK" otherButtonTitle:nil];
     }
 }
 
+-(void)addRemoveFavorite
+{
+    
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    NSDictionary *dictOfParameters = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:[[Utility getNSUserDefaultValue:KUSERID] intValue]],@"user_id",self.eventObj.eventID,@"event_id", nil];
+    
+    NSLog(@"user and event id %@", dictOfParameters);
+    
+    
+    [Utility GetDataForMethod:NSLocalizedString(@"ADD_REMOVE_FAV_EVENT", @"ADD_REMOVE_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        [DSBezelActivityView removeViewAnimated:YES];
+    
+        
+        
+        if ([response isKindOfClass:[NSDictionary class]]) {
+            [Utility alertNotice:@"" withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        }
+        else if([response isKindOfClass:[NSArray class]]){
+            [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        }
+        [self.tblView reloadData];
+        
+    }WithFailure:^(NSString *error){
+        [DSBezelActivityView removeViewAnimated:YES];
+        NSLog(@"%@",error);
+    }];
+}
 
+/*
 -(IBAction)btnEventRegistrationPressed:(id)sender
 {
     if ([self checkLogin]) {
@@ -219,6 +266,9 @@
         [self showLoginScreen];
     }
 }
+ 
+ */
+ 
 
 #pragma mark - Event Registration View Clicked events
 -(IBAction)btnCancelPressed:(id)sender
@@ -318,19 +368,19 @@
 {
     if (alertView.tag == 99 || alertView.tag == 1001) {
         [self.eventRegisterView setHidden:YES];
+    }  else {
+        
+        NSString *string = [alertView buttonTitleAtIndex:buttonIndex];
+        
+        if ([string isEqualToString:@"Login"]) {
+            
+            [self performSegueWithIdentifier:@"loginView" sender:self];
+            
+        }
+
     }
 }
 
-#pragma mark - Check login for MyFavorite and MyTickets
--(BOOL)checkLogin
-{
-    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
-    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
-        return YES;
-    }
-    else
-        return NO;
-}
 
 /**
  *  Show login view controller with animation

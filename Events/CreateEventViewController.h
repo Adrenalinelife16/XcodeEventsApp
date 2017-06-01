@@ -28,8 +28,10 @@
 // UI Format
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
-@property (strong, nonatomic) IBOutlet UITextField *startText;
-@property (strong, nonatomic) IBOutlet UITextField *endText;
+@property (strong, nonatomic) IBOutlet UITextField *startDate;
+@property (strong, nonatomic) IBOutlet UITextField *endDate;
+@property (strong, nonatomic) IBOutlet UITextField *startTime;
+@property (strong, nonatomic) IBOutlet UITextField *endTime;
 @property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
 @property (nonatomic, retain) NSString *titleText;
 
