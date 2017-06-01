@@ -235,6 +235,8 @@
             NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
             NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
             
+            
+            
             for (NSDictionary *dict in sortedArrayEventList) {
                 EventList *eventObj = [[EventList alloc] init];
                 eventObj.eventID                =   [NSNumber numberWithInt:[[dict objectForKey:@"event_id"] intValue]];

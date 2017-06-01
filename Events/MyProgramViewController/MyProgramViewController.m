@@ -45,15 +45,16 @@
 @synthesize eventObj;
 @synthesize receivedData;
 
-
-//- (id)initWithStyle:(UITableViewStyle)style
-//{
-//    self = [ initWithStyle:style];
-//    if (self) {
-//        // Custom initialization
-//    }
-//    return self;
-//}
+/*
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [ initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+*/
 
 #pragma mark - View Life Cycle
 - (void)viewDidLoad
@@ -195,7 +196,7 @@
 
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
             
-            
+        
             UIImage *image=[[UIImage alloc]init];
             image=[UIImage imageNamed:@"no_image.png"];
             cell.imgIcon.image = image;
@@ -344,7 +345,7 @@
     [self.btnMyFavourites setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
-    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites..."];
+    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
 //    [self getFavouriteProgramList];
     [self getFavorites];
 }
@@ -557,10 +558,18 @@
 -(void)getFavorites{
     
 
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"",@"page",@"",@"page_size", nil];
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],
+                                         @"user_id",
+                                         @"2",
+                                         @"page",
+                                         @"2",
+                                         @"page_size",
+                                         nil];
+    
+    NSLog(@"Fav event %@", dictOfParameters);
     
     
-    [Utility GetDataForMethod:NSLocalizedString(@"GET_FAV_EVENT_TEST", @"GET_FAV_EVENT_TEST") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+    [Utility GetDataForMethod:NSLocalizedString(@"GET_FAV_EVENT", @"GET_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         
     
         [DSBezelActivityView removeViewAnimated:NO];
@@ -578,15 +587,72 @@
             }
             
             
-            NSLog(@"Second Favorite Event ID %@", response);
-                    }
+            NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
+            NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
+        
+    
+            for (NSDictionary *dict in sortedArrayEventList) {
+                EventList *eventObjFav = [[EventList alloc] init];
+                eventObjFav.eventID                =   [NSNumber numberWithInt:[[dict objectForKey:@"event_id"] intValue]];
+                eventObjFav.eventName              =   [dict objectForKey:@"event_name"];
+                eventObjFav.eventImageURL          =   [dict objectForKey:@"event_image_url"];
+                //       NSLog(@"Data%@",sortedArrayEventList);
+                eventObjFav.eventDescription       =   [dict objectForKey:@"event_content"];
+                
+                //12.15pm 4 June '14
+                eventObjFav.eventStartDateTime     =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_start_date"],[dict objectForKey:@"event_start_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
+                
+                eventObjFav.eventEndDateTime       =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_end_date"],[dict objectForKey:@"event_end_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
+                
+                eventObjFav.eventLocationName      =   [dict objectForKey:@"location_name"];
+                eventObjFav.eventLocationAddress   =   [dict objectForKey:@"location_address"];
+                eventObjFav.eventLocationTown      =   [dict objectForKey:@"location_town"];
+                eventObjFav.eventLocationpostcode  =   [dict objectForKey:@"location_postcode"];
+                eventObjFav.eventLocationState     =   [dict objectForKey:@"location_state"];
+                eventObjFav.eventLocationCountry   =   [dict objectForKey:@"location_country"];
+                eventObjFav.eventLocationLatitude  =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_latitude"] floatValue]];
+                eventObjFav.eventLocationLongitude =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_longitude"] floatValue]];
+                
+                NSLog(@"Fav Info %@", eventObjFav);
+                
+                
+                
+                if ([[dict objectForKey:@"ticket"] count]>0) {
+                    NSDictionary *dictOfTicket  =   [[NSDictionary alloc] initWithDictionary:[dict objectForKey:@"ticket"]];
+                    eventObjFav.eventTicketName            =   [dictOfTicket objectForKey:@"ticket_name"];
+                    eventObjFav.eventTicketDescription     =   [dictOfTicket objectForKey:@"ticket_description"];
+                    eventObjFav.eventTicketPrice           =   [dictOfTicket objectForKey:@"ticket_price"];
+                    eventObjFav.eventTicketStart           =   [dictOfTicket objectForKey:@"ticket_start"];
+                    eventObjFav.eventTicketEnd             =   [dictOfTicket objectForKey:@"ticket_end"];
+                    eventObjFav.eventTicketMembers         =   [dictOfTicket objectForKey:@"ticket_members_roles"];
+                    eventObjFav.eventTicketGuests          =   [dictOfTicket objectForKey:@"ticket_guests"];
+                    eventObjFav.eventTicketRequired        =   [dictOfTicket objectForKey:@"ticket_required"];
+                    eventObjFav.eventTicketAvailSpaces     =   [NSNumber numberWithInt:[[dictOfTicket objectForKey:@"avail_spaces"] intValue]];
+                    eventObjFav.eventTicketBookedSpaces    =   [NSNumber numberWithInt:[[dictOfTicket objectForKey:@"booked_spaces"] intValue]];
+                    eventObjFav.eventTicketTotalSpaces     =   [NSNumber numberWithInt:[[dictOfTicket objectForKey:@"total_spaces"] intValue]];
+                }
+                
+                [arrayFavouriteProgram addObject:eventObjFav];
+                
+                
+            }
+        }
+        
+        /**
+         *  global array for events data.
+         */
+        gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
+        
         [self.tblMainTable reloadData];
         
-    }WithFailure:^(NSString *error){
-        [DSBezelActivityView removeViewAnimated:YES];
-        NSLog(@"%@",error);
-    }];
+    }WithFailure:^(NSString *error)
+     {
+         [DSBezelActivityView removeViewAnimated:NO];
+         
+         
+     }];
 }
+
 
         
         

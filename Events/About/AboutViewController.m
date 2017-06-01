@@ -128,6 +128,10 @@
         // get events detail data from local on basis of eventID
          
         NSMutableArray *arrayTemp = [[NSMutableArray alloc] initWithArray:[MMdbsupport MMfetchFavEvents:[NSString stringWithFormat:@"select * from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]]];
+        
+        
+        
+        
         if ([arrayTemp count]>0) {
             shareButton.selected=YES;
         }
@@ -141,6 +145,25 @@
     else
         NSLog(@"Do nothing");
 
+}
+
+-(void)checkUserFavorite{
+    
+    
+    
+    UIImage* image1 = [UIImage imageNamed:@"share.png"];
+    CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
+    UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
+    [shareButton setImage:image1 forState:UIControlStateNormal];
+    [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
+    
+    
+    
+    
+    
+    shareButton.selected = YES;
+    
+    
 }
 
 

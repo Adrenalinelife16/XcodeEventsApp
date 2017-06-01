@@ -50,19 +50,8 @@
     
     NSMutableString *rawSTr = [NSMutableString stringWithFormat:@"location_name=%@&location_address=%@&location_city=%@&location_zip=%@&location_state=%@&category=%@&user=%@&event_name=%@&event_info=%@&start_time=%@&end_time=%@&start_date=%@&end_date=%@",
                                
-                               locationName.text,
-                               address.text,
-                               city.text,
-                               zipCode.text,
-                               state.text,
-                               self.navigationItem.title = titleText,
-                               [Utility getNSUserDefaultValue:KUSERID],
-                               eventName.text,
-                               detailView.text,
-                               _startTime.text,
-                               _endTime.text,
-                               _startDate,
-                               _endDate];
+            locationName.text, address.text, city.text, zipCode.text, state.text, self.navigationItem.title = titleText,
+            [Utility getNSUserDefaultValue:KUSERID], eventName.text, detailView.text, _startTime.text, _endTime.text, _startDate, _endDate];
                                
     
     NSLog(@"Event Info %@", rawSTr);
@@ -82,12 +71,10 @@
     
     NSError *error;
     NSMutableArray *dictionary = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
-    NSLog(@"%@", dictionary);
     
     NSMutableDictionary *object = [dictionary objectAtIndex:0];
     NSMutableArray *number = [object objectForKey:@"Error"];
-    NSLog(@"%@", number);
-    
+       
     NSNumber *errorCode = number;
     
     // Check Username and Email duplicates-------------------------------------------------------------------------------
@@ -97,13 +84,13 @@
         NSLog(@"Event Doesn't Exist");
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event Created" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
-        [self performSegueWithIdentifier:@"eventCreated" sender:self];
+    //    [self performSegueWithIdentifier:@"eventCreated" sender:self];
         
     }
     
     if ([errorCode intValue] == 1) {
         NSLog(@"Event Already Exist");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"Event Already Exist!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event Already Exist!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
     }
     
