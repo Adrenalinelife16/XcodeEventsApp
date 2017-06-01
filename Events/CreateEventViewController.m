@@ -78,7 +78,7 @@
     NSNumber *errorCode = number;
     
     // Check Username and Email duplicates-------------------------------------------------------------------------------
-    
+    /*
     
     if ([errorCode intValue] == 0) {
         NSLog(@"Event Doesn't Exist");
@@ -93,7 +93,7 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event Already Exist!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
     }
-    
+    */
 }
 
 
