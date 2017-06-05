@@ -560,9 +560,9 @@
 
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],
                                          @"user_id",
-                                         @"2",
+                                         @"1",
                                          @"page",
-                                         @"2",
+                                         @"1",
                                          @"page_size",
                                          nil];
     
