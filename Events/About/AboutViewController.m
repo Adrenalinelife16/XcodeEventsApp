@@ -152,18 +152,18 @@
 -(void)checkUserFavorite{
     
     
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],
-                                         @"user_id",
-                                         @"2",
-                                         @"page",
-                                         @"2",
-                                         @"page_size",
-                                         nil];
+        NSDictionary *dictOfParameters = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:[[Utility getNSUserDefaultValue:KUSERID] intValue]],@"user_id",@"383",@"event_id", nil];
     
-    
-    [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        [DSBezelActivityView removeViewAnimated:YES];
+            
+        NSLog(@"User and Event Info %@", dictOfParameters);
+
         
-        if ([response count]> 0) {
+        NSLog(@"Response One %@", response);
+                
+        
+        if ([response isKindOfClass:[NSDictionary class]]) {
             UIImage* image1 = [UIImage imageNamed:@"share.png"];
             CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
             UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
@@ -173,15 +173,31 @@
             
             shareButton.selected = YES;
             
-            NSLog(@"Check User Fav %@", response);
+            [Utility alertNotice:@""  withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        }
+        else if([response isKindOfClass:[NSDictionary class]]){
+            UIImage* image1 = [UIImage imageNamed:@"share.png"];
+            CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
+            UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
+            [shareButton setImage:image1 forState:UIControlStateNormal];
+            [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
+            
+            
+            shareButton.selected = YES;
+            
+            [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
             
         }
-        [DSBezelActivityView removeViewAnimated:YES];
+        [self.tblView reloadData];
+        
+        NSLog(@"Response Two %@", response);
+        
         
     }WithFailure:^(NSString *error){
         [DSBezelActivityView removeViewAnimated:YES];
         NSLog(@"%@",error);
     }];
+
 }
 
 
@@ -238,18 +254,19 @@
     NSLog(@"user and event id %@", dictOfParameters);
     
     
+    
     [Utility GetDataForMethod:NSLocalizedString(@"ADD_REMOVE_FAV_EVENT", @"ADD_REMOVE_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         [DSBezelActivityView removeViewAnimated:YES];
-    
-        
         
         if ([response isKindOfClass:[NSDictionary class]]) {
-            [Utility alertNotice:@"" withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+            [Utility alertNotice:APPNAME withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
         }
         else if([response isKindOfClass:[NSArray class]]){
-            [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+            [Utility alertNotice:APPNAME withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
         }
         [self.tblView reloadData];
+        
+         NSLog(@"Response two %@", response);
         
     }WithFailure:^(NSString *error){
         [DSBezelActivityView removeViewAnimated:YES];
