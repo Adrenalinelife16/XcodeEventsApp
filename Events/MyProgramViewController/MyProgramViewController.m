@@ -558,51 +558,82 @@
 -(void)getFavorites{
     
 
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],
-                                         @"user_id",
-                                         @"1",
-                                         @"page",
-                                         @"1",
-                                         @"page_size",
-                                         nil];
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
     
-    NSLog(@"Fav event %@", dictOfParameters);
-    
-    
-    [Utility GetDataForMethod:NSLocalizedString(@"GET_FAV_EVENT", @"GET_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+    [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        [DSBezelActivityView removeViewAnimated:NO];
+        arrayFavouriteProgram  =   [[NSMutableArray alloc] init];
         
-    
-        [DSBezelActivityView removeViewAnimated:YES];
         
-        if ([response isKindOfClass:[NSDictionary class]]) {
-            [Utility alertNotice:@"" withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+        if ([response isKindOfClass:[NSArray class]]) {
+            if ([[[response objectAtIndex:0] allKeys] containsObject:@"status"]) {
+                if ([[[response objectAtIndex:0] objectForKey:@"status"] intValue] == 0) {
+                    [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+                    gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
+                    [self.tblMainTable reloadData];
+                    return;
+                }
+            }
+            
+            NSString *strFromDict = [NSString stringWithFormat:@"%@", response];
+
+            
+            
+            NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
+            NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
+            
+            
+            
+            for (NSDictionary *dict in sortedArrayEventList) {
+                EventList *eventObjFav = [[EventList alloc] init];
+                eventObjFav.eventID                =   [NSNumber numberWithInt:[[dict objectForKey:@"event_id"] intValue]];
+                eventObjFav.eventName              =   [dict objectForKey:@"event_name"];
+                eventObjFav.eventImageURL          =   [dict objectForKey:@"event_image_url"];
+                //       NSLog(@"Data%@",sortedArrayEventList);
+                eventObjFav.eventDescription       =   [dict objectForKey:@"event_content"];
+                
+                //12.15pm 4 June '14
+                eventObjFav.eventStartDateTime     =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_start_date"],[dict objectForKey:@"event_start_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
+                
+                eventObjFav.eventEndDateTime       =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_end_date"],[dict objectForKey:@"event_end_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
+                
+                eventObjFav.eventLocationName      =   [dict objectForKey:@"location_name"];
+                eventObjFav.eventLocationAddress   =   [dict objectForKey:@"location_address"];
+                eventObjFav.eventLocationTown      =   [dict objectForKey:@"location_town"];
+                eventObjFav.eventLocationpostcode  =   [dict objectForKey:@"location_postcode"];
+                eventObjFav.eventLocationState     =   [dict objectForKey:@"location_state"];
+                eventObjFav.eventLocationCountry   =   [dict objectForKey:@"location_country"];
+                eventObjFav.eventLocationLatitude  =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_latitude"] floatValue]];
+                eventObjFav.eventLocationLongitude =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_longitude"] floatValue]];
+                
+                
+                [arrayFavouriteProgram addObject:eventObj];
+            }
         }
-        else if([response isKindOfClass:[NSArray class]]){
-            [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-        }
+        
+        /**
+         *  global array for events data.
+         */
+        gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
+        
         [self.tblMainTable reloadData];
         
-    }WithFailure:^(NSString *error){
-        [DSBezelActivityView removeViewAnimated:YES];
-        NSLog(@"%@",error);
-    }];
-
+    }WithFailure:^(NSString *error)
+     {
+         [DSBezelActivityView removeViewAnimated:NO];
+         
+         
+     }];
 }
 
-
-        
-        
-        
-        
+     
 /**
  *  Fetch Tickets List From Server.
  */
 
-
-
 -(void)getMyTickets
 {
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"",@"page",@"",@"page_size", nil];
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
     
     [Utility GetDataForMethod:NSLocalizedString(@"GETUSERTICKETS_METHOD", @"GETUSERTICKETS_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         [DSBezelActivityView removeViewAnimated:YES];

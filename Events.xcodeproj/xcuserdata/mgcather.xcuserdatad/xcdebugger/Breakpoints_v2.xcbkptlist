@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/About/AboutViewController.m"
-            timestampString = "518492058.75574"
+            timestampString = "518744968.465965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "687"
-            endingLineNumber = "687"
+            startingLineNumber = "652"
+            endingLineNumber = "652"
             landmarkName = "-showCustomPicker"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/About/AboutViewController.m"
-            timestampString = "518492058.75574"
+            timestampString = "518744968.465965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "686"
-            endingLineNumber = "686"
+            startingLineNumber = "651"
+            endingLineNumber = "651"
             landmarkName = "-showCustomPicker"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/About/AboutViewController.m"
-            timestampString = "518492058.75574"
+            timestampString = "518744968.465965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "685"
-            endingLineNumber = "685"
+            startingLineNumber = "650"
+            endingLineNumber = "650"
             landmarkName = "-showCustomPicker"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/About/AboutViewController.m"
-            timestampString = "518492058.75574"
+            timestampString = "518744968.465965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "688"
-            endingLineNumber = "688"
+            startingLineNumber = "653"
+            endingLineNumber = "653"
             landmarkName = "-showCustomPicker"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/About/AboutViewController.m"
-            timestampString = "518492058.75574"
+            timestampString = "518744968.465965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "689"
-            endingLineNumber = "689"
+            startingLineNumber = "654"
+            endingLineNumber = "654"
             landmarkName = "-customPickerValuePicked:tag:"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/About/AboutViewController.m"
-            timestampString = "518492058.75574"
+            timestampString = "518744968.465965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "690"
-            endingLineNumber = "690"
+            startingLineNumber = "655"
+            endingLineNumber = "655"
             landmarkName = "-customPickerValuePicked:tag:"
             landmarkType = "7">
          </BreakpointContent>
@@ -314,54 +314,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "517948173.789763"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "570"
-            endingLineNumber = "570"
-            landmarkName = "-getFavorites"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[MyProgramViewController getFavorites]"
-                  moduleName = "Events"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mgcather/Desktop/EventFulliOS/EventFulliOS/Event%20iOS%20App/Events/MyProgramViewController/MyProgramViewController.m"
-                  timestampString = "517937087.955724"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "571"
-                  endingLineNumber = "571"
-                  offsetFromSymbolStart = "272">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__39-[MyProgramViewController getFavorites]_block_invoke"
-                  moduleName = "Events"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mgcather/Desktop/EventFulliOS/EventFulliOS/Event%20iOS%20App/Events/MyProgramViewController/MyProgramViewController.m"
-                  timestampString = "517937087.958153"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "571"
-                  endingLineNumber = "571"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
             timestampString = "517948520.747"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -374,7 +326,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
@@ -441,54 +393,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "517950564.910825"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "572"
-            endingLineNumber = "572"
-            landmarkName = "-getFavorites"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[MyProgramViewController getFavorites]"
-                  moduleName = "Events"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mgcather/Desktop/EventFulliOS/EventFulliOS/Event%20iOS%20App/Events/MyProgramViewController/MyProgramViewController.m"
-                  timestampString = "517949330.858117"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "572"
-                  endingLineNumber = "572"
-                  offsetFromSymbolStart = "272">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__39-[MyProgramViewController getFavorites]_block_invoke"
-                  moduleName = "Events"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mgcather/Desktop/EventFulliOS/EventFulliOS/Event%20iOS%20App/Events/MyProgramViewController/MyProgramViewController.m"
-                  timestampString = "517949330.861331"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "572"
-                  endingLineNumber = "572"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Events/ProgramViewController/ProgramViewController.m"
             timestampString = "517955273.453137"
             startingColumnNumber = "9223372036854775807"
@@ -506,140 +410,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/About/AboutViewController.m"
-            timestampString = "518489620.745569"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "-checkUserFavorite"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Events/About/AboutViewController.m"
-            timestampString = "518490367.423368"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "@implementation AboutViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Events/About/AboutViewController.m"
-            timestampString = "518490367.423368"
+            timestampString = "518744968.465965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "208"
             endingLineNumber = "208"
-            landmarkName = "@implementation AboutViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__40-[AboutViewController checkUserFavorite]_block_invoke"
-                  moduleName = "Events"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mgcather/Desktop/EventFulliOS/EventFulliOS/Event%20iOS%20App/Events/About/AboutViewController.m"
-                  timestampString = "518487323.416618"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "555">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__40-[AboutViewController checkUserFavorite]_block_invoke"
-                  moduleName = "Events"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mgcather/Desktop/EventFulliOS/EventFulliOS/Event%20iOS%20App/Events/About/AboutViewController.m"
-                  timestampString = "518487323.42004"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "579">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Events/About/AboutViewController.m"
-            timestampString = "518491840.682207"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "-checkUserFavorite"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[AboutViewController checkUserFavorite]"
-                  moduleName = "Events"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mgcather/Desktop/EventFulliOS/EventFulliOS/Event%20iOS%20App/Events/About/AboutViewController.m"
-                  timestampString = "518491887.463212"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "157"
-                  endingLineNumber = "157"
-                  offsetFromSymbolStart = "273">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__40-[AboutViewController checkUserFavorite]_block_invoke"
-                  moduleName = "Events"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mgcather/Desktop/EventFulliOS/EventFulliOS/Event%20iOS%20App/Events/About/AboutViewController.m"
-                  timestampString = "518491887.466183"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "157"
-                  endingLineNumber = "157"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Events/About/AboutViewController.m"
-            timestampString = "518491879.203692"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
-            landmarkName = "-checkUserFavorite"
+            landmarkName = "-clickedShare:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -650,11 +426,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/About/AboutViewController.m"
-            timestampString = "518491880.357639"
+            timestampString = "518744968.465965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "-clickedShare:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Events/About/AboutViewController.m"
+            timestampString = "518734335.006049"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "-checkUserFavorite"
             landmarkType = "7">
          </BreakpointContent>

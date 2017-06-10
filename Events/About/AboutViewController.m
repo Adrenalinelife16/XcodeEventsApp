@@ -54,7 +54,6 @@
     self.navigationItem.title = titleText;
     self.navigationController.navigationBar.translucent = YES;
 
-
     
 	// Do any additional setup after loading the view.
     [self initializeNavigationBar];
@@ -127,17 +126,7 @@
               forControlEvents:UIControlEventTouchUpInside];
         [shareButton setShowsTouchWhenHighlighted:YES];
         
-        // get events detail data from local on basis of eventID
-         
-        NSMutableArray *arrayTemp = [[NSMutableArray alloc] initWithArray:[MMdbsupport MMfetchFavEvents:[NSString stringWithFormat:@"select * from ZFAVOURITEEVENTS where ZEVENT_ID = '%@'",self.eventObj.eventID]]];
-        
-        
-        
-        
-        if ([arrayTemp count]>0) {
-            shareButton.selected=YES;
-        }
-         
+
         UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:shareButton];
         
         self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,nil];
@@ -145,77 +134,53 @@
 
     }
     else
-        NSLog(@"Do nothing");
+        NSLog(@"Hide Favorite Heart");
 
 }
 
 -(void)checkUserFavorite{
     
-    
-        NSDictionary *dictOfParameters = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:[[Utility getNSUserDefaultValue:KUSERID] intValue]],@"user_id",@"383",@"event_id", nil];
+   
+        NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
     
         [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         [DSBezelActivityView removeViewAnimated:YES];
             
-        NSLog(@"User and Event Info %@", dictOfParameters);
-
-        
-        NSLog(@"Response One %@", response);
+            
+            NSString *strFromInt = [NSString stringWithFormat:@"%@", eventObj.eventID];
+            NSString *strFromDict = [NSString stringWithFormat:@"%@", response];
+            
+            UIImage* image1 = [UIImage imageNamed:@"share.png"];
+            CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
+            UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
+            [shareButton setImage:image1 forState:UIControlStateNormal];
+            [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
+            [shareButton addTarget:self action:@selector(clickedShare:)
+                  forControlEvents:UIControlEventTouchUpInside];
+            [shareButton setShowsTouchWhenHighlighted:YES];
+            
+            
+            UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:shareButton];
+            
+            self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,nil];
+            
+            
+             if ([strFromDict containsString:strFromInt]){
                 
-        
-        if ([response isKindOfClass:[NSDictionary class]]) {
-            UIImage* image1 = [UIImage imageNamed:@"share.png"];
-            CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
-            UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
-            [shareButton setImage:image1 forState:UIControlStateNormal];
-            [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
+                
+                shareButton.selected = YES;
+  
+               
+            }
+            [self.tblView reloadData];
             
             
-            shareButton.selected = YES;
-            
-            [Utility alertNotice:@""  withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-        }
-        else if([response isKindOfClass:[NSDictionary class]]){
-            UIImage* image1 = [UIImage imageNamed:@"share.png"];
-            CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
-            UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
-            [shareButton setImage:image1 forState:UIControlStateNormal];
-            [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
-            
-            
-            shareButton.selected = YES;
-            
-            [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-            
-        }
-        [self.tblView reloadData];
-        
-        NSLog(@"Response Two %@", response);
-        
-        
     }WithFailure:^(NSString *error){
         [DSBezelActivityView removeViewAnimated:YES];
         NSLog(@"%@",error);
     }];
 
 }
-
-
-
-     /*
-    if ([dictOfParameters count] > 0) {
-        UIImage* image1 = [UIImage imageNamed:@"share.png"];
-        CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
-        UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
-        [shareButton setImage:image1 forState:UIControlStateNormal];
-        [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
-
-        
-        shareButton.selected = YES;
-        }
-    */
-
-
 
 
 
