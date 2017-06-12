@@ -159,11 +159,14 @@
     else if(segmentPosition==1)
     {
         static NSString *CellIdentifier = @"ProgramCustomCell";
+        NSLog(@"Event Fav Data %@",arrayFavouriteProgram);
         ProgramCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
         if(!cell)
         {
             cell = [[ProgramCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         }
+        
+        
         
         cell.lblDateTime.text   =   [Utility compareDates:[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventenddatetime"] date:[NSDate date]];
         cell.lblEventName.text  =   [[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventname"];
@@ -571,25 +574,24 @@
                     [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
                     gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
                     [self.tblMainTable reloadData];
+                    
                     return;
+                    
+                    
                 }
             }
             
-            NSString *strFromDict = [NSString stringWithFormat:@"%@", response];
-
-            
-            
-            NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
+                        
+            NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_time"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
             NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
             
             
             
             for (NSDictionary *dict in sortedArrayEventList) {
                 EventList *eventObjFav = [[EventList alloc] init];
-                eventObjFav.eventID                =   [NSNumber numberWithInt:[[dict objectForKey:@"event_id"] intValue]];
+                eventObjFav.eventID                =   [NSNumber numberWithInt:[[dict objectForKey:@"%d"] intValue]];
                 eventObjFav.eventName              =   [dict objectForKey:@"event_name"];
                 eventObjFav.eventImageURL          =   [dict objectForKey:@"event_image_url"];
-                //       NSLog(@"Data%@",sortedArrayEventList);
                 eventObjFav.eventDescription       =   [dict objectForKey:@"event_content"];
                 
                 //12.15pm 4 June '14
@@ -607,7 +609,8 @@
                 eventObjFav.eventLocationLongitude =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_longitude"] floatValue]];
                 
                 
-                [arrayFavouriteProgram addObject:eventObj];
+                [arrayFavouriteProgram addObject:eventObjFav];
+                NSLog(@"Fav Event Data %@", eventObjFav);
             }
         }
         
