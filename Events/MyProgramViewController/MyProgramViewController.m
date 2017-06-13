@@ -225,7 +225,7 @@
             return 60;
             break;
         case 1:
-            return 162;
+            return 250;
             break;
         case 2:
             return 56;
