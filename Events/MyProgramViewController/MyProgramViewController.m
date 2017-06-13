@@ -166,13 +166,7 @@
         {
             cell = [[ProgramCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         }
-        
-        
-        
-        
-        EventList *obj = [arrayFavouriteProgram objectAtIndex:indexPath.row];
-        
-        
+    
         
         cell.lblDateTime.text   =   [Utility compareDates:[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventenddatetime"] date:[NSDate date]];
         cell.lblEventName.text  =   [[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventname"];
@@ -567,17 +561,35 @@
 -(void)getFavorites{
     
 
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],
-                                         @"user_id",
-                                         @"1",
-                                         @"page",
-                                         @"1",
-                                         @"page_size",
-                                         nil];
-    
-    NSLog(@"Fav event %@", dictOfParameters);
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
     
     [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        [DSBezelActivityView removeViewAnimated:YES];
+        
+        NSLog(@"Test on getting fav event id %@", response);
+        
+        [self showFavEvents];
+    
+        
+        [self.tblMainTable reloadData];
+        
+        
+    }WithFailure:^(NSString *error){
+        [DSBezelActivityView removeViewAnimated:YES];
+        NSLog(@"%@",error);
+    }];
+ 
+    
+   
+}
+
+        
+-(void)showFavEvents {
+    
+    NSDictionary *dictOfEventRequestParameter = [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id", nil];
+    
+    [Utility GetDataForMethod:NSLocalizedString(@"GETEVENTS_METHOD", @"GETEVENTS_METHOD") parameters:dictOfEventRequestParameter key:@"" withCompletion:^(id response){
+        
         [DSBezelActivityView removeViewAnimated:NO];
         arrayFavouriteProgram  =   [[NSMutableArray alloc] init];
         
@@ -588,23 +600,22 @@
                     [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
                     gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
                     [self.tblMainTable reloadData];
-                    
                     return;
-                    
-                    
                 }
             }
             
+            
+            
             NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
             NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
-            
-             
-            
-            for (NSDictionary *dict in response) {
+    
+
+            for (NSDictionary *dict in sortedArrayEventList) {
                 EventList *eventObj = [[EventList alloc] init];
-                eventObj.eventID                =   [dict objectForKey:@"event_id"];
+                eventObj.eventID                =   [NSNumber numberWithInt:[[dict objectForKey:@"event_id"] intValue]];
                 eventObj.eventName              =   [dict objectForKey:@"event_name"];
                 eventObj.eventImageURL          =   [dict objectForKey:@"event_image_url"];
+                //       NSLog(@"Data%@",sortedArrayEventList);
                 eventObj.eventDescription       =   [dict objectForKey:@"event_content"];
                 
                 //12.15pm 4 June '14
@@ -622,8 +633,24 @@
                 eventObj.eventLocationLongitude =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_longitude"] floatValue]];
                 
                 
+                
+                if ([[dict objectForKey:@"ticket"] count]>0) {
+                    NSDictionary *dictOfTicket  =   [[NSDictionary alloc] initWithDictionary:[dict objectForKey:@"ticket"]];
+                    eventObj.eventTicketName            =   [dictOfTicket objectForKey:@"ticket_name"];
+                    eventObj.eventTicketDescription     =   [dictOfTicket objectForKey:@"ticket_description"];
+                    eventObj.eventTicketPrice           =   [dictOfTicket objectForKey:@"ticket_price"];
+                    eventObj.eventTicketStart           =   [dictOfTicket objectForKey:@"ticket_start"];
+                    eventObj.eventTicketEnd             =   [dictOfTicket objectForKey:@"ticket_end"];
+                    eventObj.eventTicketMembers         =   [dictOfTicket objectForKey:@"ticket_members_roles"];
+                    eventObj.eventTicketGuests          =   [dictOfTicket objectForKey:@"ticket_guests"];
+                    eventObj.eventTicketRequired        =   [dictOfTicket objectForKey:@"ticket_required"];
+                    eventObj.eventTicketAvailSpaces     =   [NSNumber numberWithInt:[[dictOfTicket objectForKey:@"avail_spaces"] intValue]];
+                    eventObj.eventTicketBookedSpaces    =   [NSNumber numberWithInt:[[dictOfTicket objectForKey:@"booked_spaces"] intValue]];
+                    eventObj.eventTicketTotalSpaces     =   [NSNumber numberWithInt:[[dictOfTicket objectForKey:@"total_spaces"] intValue]];
+                }
+                
                 [arrayFavouriteProgram addObject:eventObj];
-                NSLog(@"Fav Event ID %@", response);
+                
             }
         }
         
@@ -633,7 +660,6 @@
         gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
         
         [self.tblMainTable reloadData];
-        NSLog(@"Favorite %@", response);
         
     }WithFailure:^(NSString *error)
      {
@@ -643,7 +669,7 @@
      }];
 }
 
-     
+
 /**
  *  Fetch Tickets List From Server.
  */
