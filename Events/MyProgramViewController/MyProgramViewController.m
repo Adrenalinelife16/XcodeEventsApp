@@ -231,7 +231,7 @@
             return 60;
             break;
         case 1:
-            return 162;
+            return 250;
             break;
         case 2:
             return 56;
@@ -567,7 +567,15 @@
 -(void)getFavorites{
     
 
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],
+                                         @"user_id",
+                                         @"1",
+                                         @"page",
+                                         @"1",
+                                         @"page_size",
+                                         nil];
+    
+    NSLog(@"Fav event %@", dictOfParameters);
     
     [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         [DSBezelActivityView removeViewAnimated:NO];
@@ -625,6 +633,7 @@
         gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
         
         [self.tblMainTable reloadData];
+        NSLog(@"Favorite %@", response);
         
     }WithFailure:^(NSString *error)
      {
