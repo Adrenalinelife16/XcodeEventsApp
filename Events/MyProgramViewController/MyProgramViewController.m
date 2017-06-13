@@ -42,7 +42,7 @@
 @end
 
 @implementation MyProgramViewController
-@synthesize eventObj;
+@synthesize eventObjFav;
 @synthesize receivedData;
 
 /*
@@ -71,7 +71,8 @@
     [self.tblMainTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 
     [self clickedMyCalender:nil];
-   
+    
+    
     
    }
 
@@ -165,6 +166,11 @@
         {
             cell = [[ProgramCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         }
+        
+        
+        
+        
+        EventList *obj = [arrayFavouriteProgram objectAtIndex:indexPath.row];
         
         
         
@@ -275,7 +281,7 @@
     
     if (IsMatch) {
         AboutViewController *aboutVwController = [segue destinationViewController];
-        aboutVwController.eventObj  =   objEvent;
+        aboutVwController.eventObj  =   eventObjFav;
     }
     
 }
@@ -581,36 +587,35 @@
                 }
             }
             
-                        
-            NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_time"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
+            NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
             NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
             
+             
             
-            
-            for (NSDictionary *dict in sortedArrayEventList) {
-                EventList *eventObjFav = [[EventList alloc] init];
-                eventObjFav.eventID                =   [NSNumber numberWithInt:[[dict objectForKey:@"%d"] intValue]];
-                eventObjFav.eventName              =   [dict objectForKey:@"event_name"];
-                eventObjFav.eventImageURL          =   [dict objectForKey:@"event_image_url"];
-                eventObjFav.eventDescription       =   [dict objectForKey:@"event_content"];
+            for (NSDictionary *dict in response) {
+                EventList *eventObj = [[EventList alloc] init];
+                eventObj.eventID                =   [dict objectForKey:@"event_id"];
+                eventObj.eventName              =   [dict objectForKey:@"event_name"];
+                eventObj.eventImageURL          =   [dict objectForKey:@"event_image_url"];
+                eventObj.eventDescription       =   [dict objectForKey:@"event_content"];
                 
                 //12.15pm 4 June '14
-                eventObjFav.eventStartDateTime     =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_start_date"],[dict objectForKey:@"event_start_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
+                eventObj.eventStartDateTime     =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_start_date"],[dict objectForKey:@"event_start_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
                 
-                eventObjFav.eventEndDateTime       =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_end_date"],[dict objectForKey:@"event_end_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
+                eventObj.eventEndDateTime       =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_end_date"],[dict objectForKey:@"event_end_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
                 
-                eventObjFav.eventLocationName      =   [dict objectForKey:@"location_name"];
-                eventObjFav.eventLocationAddress   =   [dict objectForKey:@"location_address"];
-                eventObjFav.eventLocationTown      =   [dict objectForKey:@"location_town"];
-                eventObjFav.eventLocationpostcode  =   [dict objectForKey:@"location_postcode"];
-                eventObjFav.eventLocationState     =   [dict objectForKey:@"location_state"];
-                eventObjFav.eventLocationCountry   =   [dict objectForKey:@"location_country"];
-                eventObjFav.eventLocationLatitude  =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_latitude"] floatValue]];
-                eventObjFav.eventLocationLongitude =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_longitude"] floatValue]];
+                eventObj.eventLocationName      =   [dict objectForKey:@"location_name"];
+                eventObj.eventLocationAddress   =   [dict objectForKey:@"location_address"];
+                eventObj.eventLocationTown      =   [dict objectForKey:@"location_town"];
+                eventObj.eventLocationpostcode  =   [dict objectForKey:@"location_postcode"];
+                eventObj.eventLocationState     =   [dict objectForKey:@"location_state"];
+                eventObj.eventLocationCountry   =   [dict objectForKey:@"location_country"];
+                eventObj.eventLocationLatitude  =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_latitude"] floatValue]];
+                eventObj.eventLocationLongitude =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_longitude"] floatValue]];
                 
                 
-                [arrayFavouriteProgram addObject:eventObjFav];
-                NSLog(@"Fav Event Data %@", eventObjFav);
+                [arrayFavouriteProgram addObject:eventObj];
+                NSLog(@"Fav Event ID %@", response);
             }
         }
         
