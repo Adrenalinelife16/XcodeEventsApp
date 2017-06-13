@@ -560,9 +560,9 @@
 
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],
                                          @"user_id",
-                                         @"2",
+                                         @"1",
                                          @"page",
-                                         @"2",
+                                         @"1",
                                          @"page_size",
                                          nil];
     
@@ -581,6 +581,7 @@
             [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
         }
         [self.tblMainTable reloadData];
+        NSLog(@"Favorite %@", response);
         
     }WithFailure:^(NSString *error){
         [DSBezelActivityView removeViewAnimated:YES];
