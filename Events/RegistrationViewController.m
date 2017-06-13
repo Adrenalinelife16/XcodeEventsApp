@@ -86,9 +86,9 @@
         NSString *Lname = txtLastName.text;
         NSString *FirstLast = [NSString stringWithFormat:@" %@ %@", Fname, Lname];
          
-        NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:txtFirstName.text,@"fname", self.txtLastName.text,@"lname", self.txtEmail.text,@"email",self.txtUsername.text,@"user", self.txtPassword.text,@"pass", nil];
+        NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:txtFirstName.text,@"first_name", self.txtLastName.text,@"last_name", self.txtEmail.text,@"email",self.txtUsername.text,@"username", self.txtPassword.text,@"password", nil];
         
-        [Utility GetDataForMethod:NSLocalizedString(@"REGISTER_METHOD", @"REGISTER_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        [Utility GetDataForMethod:NSLocalizedString(@"REGISTER_METHOD_TEST", @"REGISTER_METHOD_TEST") parameters:dictOfParameters key:@"" withCompletion:^(id response){
             
             if ([response isKindOfClass:[NSDictionary class]]) {
                 if ([[response objectForKey:@"message"] isEqualToString:@"Sorry, that username already exists!"]) {

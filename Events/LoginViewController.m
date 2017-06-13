@@ -103,7 +103,7 @@
             if ([response isKindOfClass:[NSArray class]]) {
                 
                 if ([[[response objectAtIndex:0] objectForKey:@"status"] intValue] == 0) {
-                    [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+                    [Utility alertNotice:APPNAME withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
                 }
                 else{
                     [Utility setNSUserDefaultValueForString:[[response objectAtIndex:0] objectForKey:@"user_id"] strKey:KUSERID];

@@ -58,7 +58,7 @@
     
     NSData *data = [rawSTr dataUsingEncoding:NSUTF8StringEncoding];
     
-    NSURL *URL = [NSURL URLWithString:@"http://www.adrenalinelife.org/Adrenaline_Custom/add_event.php"];
+    NSURL *URL = [NSURL URLWithString:@"http://www.adrenalinelife.org/Adrenaline_Custom/add_new.php"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
     
     [request setHTTPMethod:@"POST"];
@@ -78,7 +78,7 @@
     NSNumber *errorCode = number;
     
     // Check Username and Email duplicates-------------------------------------------------------------------------------
-    /*
+    
     
     if ([errorCode intValue] == 0) {
         NSLog(@"Event Doesn't Exist");
@@ -93,7 +93,7 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event Already Exist!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
     }
-    */
+    
 }
 
 
