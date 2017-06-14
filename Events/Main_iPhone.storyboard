@@ -136,7 +136,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="205.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="205.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" id="Jyd-f3-EuW">
@@ -191,8 +191,8 @@
                                             <rect key="frame" x="8" y="8" width="304" height="242"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="actionbar_bg_4.png" id="hZz-Fc-C5U">
-                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="54"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="actionbar_bg_6.png" id="hZz-Fc-C5U">
+                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" image="no_image.png" id="ILR-go-4Tt">
@@ -200,7 +200,7 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="actionbar_bg_4.png" id="tX4-rk-1Qb">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="actionbar_bg_6.png" id="tX4-rk-1Qb">
                                                     <rect key="frame" x="0.0" y="188" width="304" height="54"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -968,7 +968,7 @@
                                                 <rect key="frame" x="0.0" y="73" width="375" height="356"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZ8-Vq-MSU" id="3Vc-7L-PYu">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="355.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="356"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" misplaced="YES" id="u16-Ax-dGJ">
@@ -1535,7 +1535,7 @@
                                 <rect key="frame" x="0.0" y="56" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1546,7 +1546,7 @@
                             <outlet property="delegate" destination="XD6-ka-Wa6" id="qo5-fA-ZVz"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="ic_nav4_sel.png" id="Jz4-Is-M6B"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_nav4.png" id="Jz4-Is-M6B"/>
                     <navigationItem key="navigationItem" id="ntU-5v-DPG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1861,6 +1861,7 @@
         <image name="aTennis.png" width="640" height="480"/>
         <image name="aYoga.png" width="640" height="480"/>
         <image name="actionbar_bg_4.png" width="640" height="80"/>
+        <image name="actionbar_bg_6.png" width="640" height="80"/>
         <image name="arrow.png" width="11" height="14"/>
         <image name="date-cell-gray.png" width="164" height="33"/>
         <image name="discover_.png" width="47" height="46"/>
@@ -1873,7 +1874,7 @@
         <image name="feedviewCell3.png" width="95" height="95"/>
         <image name="ic_nav2.png" width="47" height="46"/>
         <image name="ic_nav3.png" width="47" height="46"/>
-        <image name="ic_nav4_sel.png" width="47" height="46"/>
+        <image name="ic_nav4.png" width="47" height="46"/>
         <image name="nearby.png" width="16" height="20"/>
         <image name="no_image.png" width="180" height="120"/>
         <image name="registerBtn.png" width="125" height="40"/>
@@ -1886,9 +1887,9 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="ymL-KN-Yv3"/>
         <segue reference="z1t-Ts-zQv"/>
         <segue reference="GW1-iY-vhh"/>
         <segue reference="ZrE-a6-aH7"/>
-        <segue reference="Yzg-yO-FJ6"/>
     </inferredMetricsTieBreakers>
 </document>
