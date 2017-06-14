@@ -160,7 +160,6 @@
     else if(segmentPosition==1)
     {
         static NSString *CellIdentifier = @"ProgramCustomCell";
-        NSLog(@"Event Fav Data %@",arrayFavouriteProgram);
         ProgramCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
         if(!cell)
         {
@@ -236,52 +235,7 @@
     }
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    
-    EventList *objEvent;
-    
-    BOOL IsMatch = YES;
-    if ([segue.identifier isEqualToString:@"program"]) {
-        for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {
-            objEvent = [gArrayEvents objectAtIndex:favCount];
-            
-            for (NSDictionary *dictDetails in arrayFavouriteProgram) {
-                if ([objEvent.eventName isEqualToString:[dictDetails objectForKey:@""]]) {
-                    IsMatch = NO;
-                    break;
-                }
-            }
-            if (IsMatch) {
-                break;
-            }
-        }
-    }
-    else{
-        for (int eventCount = 0; eventCount < [gArrayEvents count]; eventCount++) {
-            objEvent = [gArrayEvents objectAtIndex:eventCount];
-            
-            for (NSDictionary *dictEventDetails in arrMyCalEvents) {
-                if ([objEvent.eventName isEqualToString:[dictEventDetails objectForKey:@"event_name"]]) {
-                    IsMatch = YES;
-                    break;
-                }
-            }
-            if (IsMatch) {
-                break;
-            }
-        }
-    }
-    
-    if (IsMatch) {
-        AboutViewController *aboutVwController = [segue destinationViewController];
-        aboutVwController.eventObj  =   eventObjFav;
-    }
-    
-}
 
-
- 
 #pragma mark - Button Clicked Function
 - (IBAction)clickedMyTickets:(id)sender {
     
@@ -350,7 +304,8 @@
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
 //    [self getFavouriteProgramList];
-    [self getFavorites];
+  //  [self getFavorites];
+    [self showFavEvents];
 }
 
 - (IBAction)clickedMyCalender:(id)sender {
@@ -694,5 +649,50 @@
         NSLog(@"%@",error);
     }];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    EventList *objEvent;
+    
+    BOOL IsMatch = YES;
+    if ([segue.identifier isEqualToString:@"program"]) {
+        for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {
+            objEvent = [gArrayEvents objectAtIndex:favCount];
+            
+            for (NSDictionary *dictDetails in arrayFavouriteProgram) {
+                if ([objEvent.eventName isEqualToString:[dictDetails objectForKey:@""]]) {
+                    IsMatch = NO;
+                    break;
+                }
+            }
+            if (IsMatch) {
+                break;
+            }
+        }
+    }
+    else{
+        for (int eventCount = 0; eventCount < [gArrayEvents count]; eventCount++) {
+            objEvent = [gArrayEvents objectAtIndex:eventCount];
+            
+            for (NSDictionary *dictEventDetails in arrMyCalEvents) {
+                if ([objEvent.eventName isEqualToString:[dictEventDetails objectForKey:@"event_name"]]) {
+                    IsMatch = YES;
+                    break;
+                }
+            }
+            if (IsMatch) {
+                break;
+            }
+        }
+    }
+    
+    if (IsMatch) {
+        AboutViewController *aboutVwController = [segue destinationViewController];
+        aboutVwController.eventObj  =   eventObjFav;
+    }
+    
+}
+
 
 @end
