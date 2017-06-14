@@ -22,7 +22,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnMyFavourites;
 @property (strong, nonatomic) IBOutlet UIButton *btnMyCalender;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain;
-@property (strong, nonatomic) EventList *eventObj;
+@property (strong, nonatomic) EventList *eventObjFav;
 
 
 @property (nonatomic,retain) NSMutableData *receivedData;

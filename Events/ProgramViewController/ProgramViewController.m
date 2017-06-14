@@ -90,6 +90,8 @@
     
         
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
+    
+    
 
     
 }
@@ -277,6 +279,7 @@
                 }
                 
                 [arrayEventList addObject:eventObj];
+            
             }
         }
         
