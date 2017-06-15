@@ -44,6 +44,7 @@
 @implementation MyProgramViewController
 @synthesize eventObjFav;
 @synthesize receivedData;
+@synthesize arrayFavEvent;
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style
@@ -167,18 +168,27 @@
         }
     
         
-        cell.lblDateTime.text   =   [Utility compareDates:[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventenddatetime"] date:[NSDate date]];
-        cell.lblEventName.text  =   [[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventname"];
-        cell.lblEventDesc.text  =   [[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventcontent"] stringByConvertingHTMLToPlainText];
+        EventList *obj = [arrayFavouriteProgram objectAtIndex:indexPath.row];
+        
+        cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
+        cell.lblEventName.text  =   obj.eventName;
+        cell.lblEventDesc.text  =   [obj.eventDescription stringByConvertingHTMLToPlainText];
         cell.lblEventDesc.text  =   [Utility TrimString:cell.lblEventDesc.text];
         
-        if ([[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"] length]>0) {
-            [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",[[arrayFavouriteProgram objectAtIndex:indexPath.row] objectForKey:@"eventimageurl"]]] placeholderImage:nil];
+        
+        if ([obj.eventImageURL length]) {
+            [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
         }
         
         cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
+        
+        
+        
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        
         return cell;
+
     }
     else if(segmentPosition==0)
     {
@@ -209,14 +219,25 @@
     else
         return NULL;
 }
+/*
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
+    if (segmentPosition==1) {
+        
+        
+        EventList *obj = (tableView == self.tblMainTable) ? self->arrayFavouriteProgram[indexPath.row]: self.[index];
+        AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+        detailViewController.eventObj = obj;
+    
    
        NSLog(@"selected tableview row is %ld",(long)indexPath.row);
     
+        }
 }
-
+*/
 - (CGFloat) tableView: (UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *) indexPath
 {
     switch (segmentPosition) {
@@ -304,8 +325,8 @@
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
 //    [self getFavouriteProgramList];
-  //  [self getFavorites];
-    [self showFavEvents];
+    [self getFavorites];
+ //   [self showFavEvents];
 }
 
 - (IBAction)clickedMyCalender:(id)sender {
@@ -521,11 +542,11 @@
     [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         [DSBezelActivityView removeViewAnimated:YES];
         
-        NSLog(@"Test on getting fav event id %@", response);
-        
-        [self showFavEvents];
     
-        
+        arrayFavEvent = response;
+        NSLog(@"test %@", arrayFavEvent);
+                
+    
         [self.tblMainTable reloadData];
         
         
@@ -540,6 +561,24 @@
 
         
 -(void)showFavEvents {
+    
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
+    
+    [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id responseFav){
+        [DSBezelActivityView removeViewAnimated:YES];
+        
+        
+        [self.tblMainTable reloadData];
+        
+        
+    }WithFailure:^(NSString *error){
+        [DSBezelActivityView removeViewAnimated:YES];
+        NSLog(@"%@",error);
+    }];
+
+    
+    
+    
     
     NSDictionary *dictOfEventRequestParameter = [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id", nil];
     
@@ -558,6 +597,7 @@
                     return;
                 }
             }
+
             
             
             
@@ -604,6 +644,7 @@
                     eventObj.eventTicketTotalSpaces     =   [NSNumber numberWithInt:[[dictOfTicket objectForKey:@"total_spaces"] intValue]];
                 }
                 
+                
                 [arrayFavouriteProgram addObject:eventObj];
                 
             }
@@ -621,7 +662,8 @@
          [DSBezelActivityView removeViewAnimated:NO];
          
          
-     }];
+     }];    
+    
 }
 
 
@@ -650,19 +692,22 @@
     }];
 }
 
+
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
-    EventList *objEvent;
+    EventList *eventObj;
     
-    BOOL IsMatch = YES;
+    BOOL IsMatch = NO;
     if ([segue.identifier isEqualToString:@"program"]) {
         for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {
-            objEvent = [gArrayEvents objectAtIndex:favCount];
+            eventObj = [gArrayEvents objectAtIndex:favCount];
             
             for (NSDictionary *dictDetails in arrayFavouriteProgram) {
-                if ([objEvent.eventName isEqualToString:[dictDetails objectForKey:@""]]) {
-                    IsMatch = NO;
+                if ([eventObj.eventName isEqualToString:[dictDetails objectForKey:@""]]) {
+                    IsMatch = YES;
                     break;
                 }
             }
@@ -673,10 +718,10 @@
     }
     else{
         for (int eventCount = 0; eventCount < [gArrayEvents count]; eventCount++) {
-            objEvent = [gArrayEvents objectAtIndex:eventCount];
+            eventObj = [gArrayEvents objectAtIndex:eventCount];
             
             for (NSDictionary *dictEventDetails in arrMyCalEvents) {
-                if ([objEvent.eventName isEqualToString:[dictEventDetails objectForKey:@"event_name"]]) {
+                if ([eventObj.eventName isEqualToString:[dictEventDetails objectForKey:@"event_name"]]) {
                     IsMatch = YES;
                     break;
                 }
@@ -689,7 +734,7 @@
     
     if (IsMatch) {
         AboutViewController *aboutVwController = [segue destinationViewController];
-        aboutVwController.eventObj  =   eventObjFav;
+        aboutVwController.eventObj =   eventObj;
     }
     
 }

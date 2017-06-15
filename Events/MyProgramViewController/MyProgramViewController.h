@@ -15,7 +15,7 @@
 
 
 
-@property (strong, nonatomic)NSMutableArray *arrDetails;
+@property (strong, nonatomic) NSMutableArray *arrDetails;
 @property (strong, nonatomic) IBOutlet UIButton *btnNotifiction;
 @property (strong, nonatomic) IBOutlet UIImageView *imgSegmentBar;
 @property (strong, nonatomic) IBOutlet UIButton *btnMyTickets;
@@ -26,6 +26,7 @@
 
 
 @property (nonatomic,retain) NSMutableData *receivedData;
+@property (strong, nonatomic) NSMutableArray *arrayFavEvent;
 
 - (IBAction)clickedMyTickets:(id)sender;
 
