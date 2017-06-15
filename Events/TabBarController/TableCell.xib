@@ -11,15 +11,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="201" id="elP-pa-sEk" customClass="ProgramCustomCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="297" id="elP-pa-sEk" customClass="ProgramCustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="elP-pa-sEk" id="06g-g7-osl">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="161.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="VL7-KG-7Zl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>
@@ -65,7 +65,7 @@
                 <outlet property="lblEventDesc" destination="gRx-RX-VX8" id="GZ0-nI-XiQ"/>
                 <outlet property="lblEventName" destination="Ypd-Ht-Awb" id="bjK-xE-Oc4"/>
             </connections>
-            <point key="canvasLocation" x="102" y="31"/>
+            <point key="canvasLocation" x="102" y="-17"/>
         </tableViewCell>
     </objects>
     <resources>

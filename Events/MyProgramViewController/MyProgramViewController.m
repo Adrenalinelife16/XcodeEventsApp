@@ -27,6 +27,8 @@
     NSMutableArray *arrayFavouriteProgram;//for my favorites
     NSMutableArray *arrMyCalEvents;//for event calendar eventlist
     NSMutableArray *arrayResponseCalEvents;//for event calendar eventlist response from server
+    NSMutableArray *arrayFilterResults;
+    NSMutableArray *arrayFavList;
     
     int segmentPosition;//0 or 1 or 2 to check which segment is selected
     UIView *calendarBG;//for calendar view
@@ -45,6 +47,7 @@
 @synthesize eventObjFav;
 @synthesize receivedData;
 @synthesize arrayFavEvent;
+@synthesize arrayFavList;
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style
@@ -62,6 +65,7 @@
 {
     [super viewDidLoad];
     segmentPosition=0;
+
     //set current date as event date before getting from server
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -168,7 +172,7 @@
         }
     
         
-        EventList *obj = [arrayFavouriteProgram objectAtIndex:indexPath.row];
+        EventList *obj = [arrayFilterResults objectAtIndex:indexPath.row];
         
         cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
         cell.lblEventName.text  =   obj.eventName;
@@ -324,7 +328,6 @@
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
-//    [self getFavouriteProgramList];
     [self getFavorites];
  //   [self showFavEvents];
 }
@@ -544,21 +547,83 @@
         
     
         arrayFavEvent = response;
-        NSLog(@"test %@", arrayFavEvent);
-                
-    
-        [self.tblMainTable reloadData];
+        NSLog(@"getFavorites Method = %@", arrayFavEvent);
+        [self filterFavEventsArray];
         
         
     }WithFailure:^(NSString *error){
         [DSBezelActivityView removeViewAnimated:YES];
         NSLog(@"%@",error);
     }];
- 
-    
    
 }
 
+- (void)filterFavEventsArray {
+    // update the filtered array based on the search text
+    //NSLog(@"arrayFavEvent = %@", arrayFavEvent);
+
+    NSString *favEventsString = [NSString stringWithFormat:@"%@", arrayFavEvent];
+    //NSLog(@"favEventsString = %@", favEventsString);
+
+    NSMutableArray *filterResults = [self->arrayFavList mutableCopy];
+    //NSLog(@"Original Filter Results = %@", filterResults);
+
+    
+    // strip out all the leading and trailing spaces
+    NSString *strippedString = [favEventsString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSLog(@"strippedString = %@", strippedString);
+    
+    // break up the search terms (separated by spaces)
+    NSArray *filterItems = nil;
+    if (strippedString.length > 0) {
+        filterItems = [strippedString componentsSeparatedByString:@",\n"];
+        NSLog(@"filterItems = %@", filterItems);
+
+    }
+    
+    // build all the "AND" expressions for each value in the searchString
+    //
+    NSMutableArray *andMatchPredicates = [NSMutableArray array];
+    
+    for (NSString *searchString in filterItems) {
+        
+        NSMutableArray *filterItemsPredicate = [NSMutableArray array];
+        
+        NSExpression *lhs = [NSExpression expressionForKeyPath:@"event_id"];
+        //NSLog(@"Expression for Key Path = %@", lhs);
+
+        NSExpression *rhs = [NSExpression expressionForConstantValue:searchString];
+        //NSLog(@"searchString = %@", rhs);
+        NSPredicate *finalPredicate = [NSComparisonPredicate
+                                       predicateWithLeftExpression:lhs
+                                       rightExpression:rhs
+                                       modifier:NSDirectPredicateModifier
+                                       type:NSContainsPredicateOperatorType
+                                       options:NSCaseInsensitivePredicateOption];
+        [filterItemsPredicate addObject:finalPredicate];
+        //NSLog(@"FINAL FILTER = %@", filterItemsPredicate);
+        
+        
+        
+        // at this OR predicate to our master AND predicate
+        NSCompoundPredicate *orMatchPredicates = [NSCompoundPredicate orPredicateWithSubpredicates:filterItemsPredicate];
+        //NSLog(@"orMatchPredicate = %@", orMatchPredicates);
+        [andMatchPredicates addObject:orMatchPredicates];
+        //NSLog(@"andMatchPredicates = %@", andMatchPredicates);
+    }
+    
+    // match up the fields of the Product object
+    NSCompoundPredicate *finalCompoundPredicate =[NSCompoundPredicate andPredicateWithSubpredicates:andMatchPredicates];
+    //NSLog(@"finalCompoundPredicate = %@", finalCompoundPredicate);
+    filterResults = [[filterResults filteredArrayUsingPredicate:finalCompoundPredicate] mutableCopy];
+    //NSLog(@"END filterReults = %@", filterResults);
+    
+    // hand over the filtered results to our search results table
+    //SearchResultsTableViewController *tableController = (SearchResultsTableViewController *)self.searchController.searchResultsController;
+    arrayFilterResults = filterResults;
+    NSLog(@"Array Filter Results = %@", arrayFilterResults);
+    
+}
         
 -(void)showFavEvents {
     
@@ -654,6 +719,7 @@
          *  global array for events data.
          */
         gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
+        arrayFavList = gArrayEvents;
         
         [self.tblMainTable reloadData];
         

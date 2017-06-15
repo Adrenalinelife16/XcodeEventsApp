@@ -27,6 +27,7 @@
 
 @property (nonatomic,retain) NSMutableData *receivedData;
 @property (strong, nonatomic) NSMutableArray *arrayFavEvent;
+@property (strong, nonatomic) NSMutableArray *arrayFavList;
 
 - (IBAction)clickedMyTickets:(id)sender;
 
