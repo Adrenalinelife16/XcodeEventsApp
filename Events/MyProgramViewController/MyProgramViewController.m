@@ -330,6 +330,8 @@
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
     [self getFavEvents];
     [self getFavorites];
+    
+    
 }
 
 - (IBAction)clickedMyCalender:(id)sender {
@@ -558,73 +560,27 @@
    
 }
 
+// LOOK RIGHT HERE YOU MOTHER FUCKER!!!!!
 - (void)filterFavEventsArray {
-    // update the filtered array based on the search text
-    //NSLog(@"arrayFavEvent = %@", arrayFavEvent);
-
-    NSString *favEventsString = [NSString stringWithFormat:@"%@", arrayFavEvent];
-    //NSLog(@"favEventsString = %@", favEventsString);
-
-    NSMutableArray *filterResults = [self->arrayFavList mutableCopy];
-    //NSLog(@"Original Filter Results = %@", filterResults);
-
     
-    // strip out all the leading and trailing spaces
-    NSString *strippedString = [favEventsString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSLog(@"strippedString = %@", strippedString);
+    //NSString *currentFavId = [arrayFavEvent[0] valueForKey:@"event_id"]; --PULLS THE STRING OF EVENT IDS FROM THE MAIN_EVENTS_ARRAY (HERE IM CALLING TO ONLY GET ID AT INDEX PATH 0)
     
-    // break up the search terms (separated by spaces)
-    NSArray *filterItems = nil;
-    if (strippedString.length > 0) {
-        filterItems = [strippedString componentsSeparatedByString:@",\n"];
-        NSLog(@"filterItems = %@", filterItems);
-
-    }
+    NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == 610"];//DOES ANY EVENT_ID IN MAIN_EVENTS_ARRAY MATCH THE NUMBER 610?
     
-    // build all the "AND" expressions for each value in the searchString
-    //
-    NSMutableArray *andMatchPredicates = [NSMutableArray array];
+    //- I AM CHECKING FOR ANY EVENT ID THAT MATCHES ID NUMBER 610, WHICH IS A FAVORITED EVENT ID BTW...
+    //IT FINDS IT AND MATCHES IT!!!!!!!!! SO THIS PREDICATE WORKS!!!!WE SHOULD BE ABLE TO BUILD OFF OF THIS, WHICH IT ALSO MATCHES DATES AND OTHER SHIT AS WELL
     
-    for (NSString *searchString in filterItems) {
-        
-        NSMutableArray *filterItemsPredicate = [NSMutableArray array];
-        
-        NSExpression *lhs = [NSExpression expressionForKeyPath:@"event_id"];
-        //NSLog(@"Expression for Key Path = %@", lhs);
-
-        NSExpression *rhs = [NSExpression expressionForConstantValue:searchString];
-        //NSLog(@"searchString = %@", rhs);
-        NSPredicate *finalPredicate = [NSComparisonPredicate
-                                       predicateWithLeftExpression:lhs
-                                       rightExpression:rhs
-                                       modifier:NSDirectPredicateModifier
-                                       type:NSContainsPredicateOperatorType
-                                       options:NSCaseInsensitivePredicateOption];
-        [filterItemsPredicate addObject:finalPredicate];
-        //NSLog(@"FINAL FILTER = %@", filterItemsPredicate);
-        
-        
-        
-        // at this OR predicate to our master AND predicate
-        NSCompoundPredicate *orMatchPredicates = [NSCompoundPredicate orPredicateWithSubpredicates:filterItemsPredicate];
-        //NSLog(@"orMatchPredicate = %@", orMatchPredicates);
-        [andMatchPredicates addObject:orMatchPredicates];
-        //NSLog(@"andMatchPredicates = %@", andMatchPredicates);
-    }
+    //BOOM
     
-    // match up the fields of the Product object
-    NSCompoundPredicate *finalCompoundPredicate =[NSCompoundPredicate andPredicateWithSubpredicates:andMatchPredicates];
-    //NSLog(@"finalCompoundPredicate = %@", finalCompoundPredicate);
-    filterResults = [[filterResults filteredArrayUsingPredicate:finalCompoundPredicate] mutableCopy];
-    //NSLog(@"END filterReults = %@", filterResults);
+    [arrayFavouriteProgram filterUsingPredicate:ePredicate];
+    NSLog(@"Filtered array list = %@", arrayFavouriteProgram);
+    [self.tblMainTable reloadData];
     
-    // hand over the filtered results to our search results table
-    //SearchResultsTableViewController *tableController = (SearchResultsTableViewController *)self.searchController.searchResultsController;
-    arrayFilterResults = filterResults;
-    NSLog(@"Array Filter Results = %@", arrayFilterResults);
+    //EventList *obj = [arrayFilterResults objectAtIndex:indexPath.row]; //- THIS CODE MIGHT BE WHAT I WAS ASKING ABOUT, CREATING A EVENT OBJ IN MY FILTER LOOP IN JAVA (FOR ME MORE THAN YOU)
     
 }
-        
+
+
 -(void)showFavEvents {
     
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
@@ -747,9 +703,6 @@
         [DSBezelActivityView removeViewAnimated:YES];
         NSLog(@"%@",error);
     }];
-    
-    
-    
     
     
     NSDictionary *dictOfEventRequestParameter = [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id", nil];
