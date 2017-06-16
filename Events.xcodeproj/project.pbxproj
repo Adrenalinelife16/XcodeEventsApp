@@ -232,6 +232,9 @@
 		BB62B12B18B8C07C000DBDBC /* MyProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB62B12A18B8C07C000DBDBC /* MyProgramViewController.m */; };
 		BB857F4518B8928700B366D8 /* secondpic.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4318B8928700B366D8 /* secondpic.png */; };
 		BB857F4618B8928700B366D8 /* secondpic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4418B8928700B366D8 /* secondpic@2x.png */; };
+		E202AE761EF3B648001B39FD /* actionbar_bg_black.png in Resources */ = {isa = PBXBuildFile; fileRef = E202AE751EF3B648001B39FD /* actionbar_bg_black.png */; };
+		E202AE791EF3BCCA001B39FD /* actionbar_bg_grey6.png in Resources */ = {isa = PBXBuildFile; fileRef = E202AE771EF3BCCA001B39FD /* actionbar_bg_grey6.png */; };
+		E202AE7A1EF3BCCA001B39FD /* actionbar_bg_grey1.png in Resources */ = {isa = PBXBuildFile; fileRef = E202AE781EF3BCCA001B39FD /* actionbar_bg_grey1.png */; };
 		E2252E861E4D16D900B0CD69 /* AdrenalineLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E831E4D16D900B0CD69 /* AdrenalineLogo2.png */; };
 		E2252E871E4D16D900B0CD69 /* createEvent-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E841E4D16D900B0CD69 /* createEvent-btn.png */; };
 		E2252E881E4D16D900B0CD69 /* createEvent-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2252E851E4D16D900B0CD69 /* createEvent-btn@2x.png */; };
@@ -624,6 +627,9 @@
 		BB62B12A18B8C07C000DBDBC /* MyProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProgramViewController.m; sourceTree = "<group>"; };
 		BB857F4318B8928700B366D8 /* secondpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondpic.png; sourceTree = "<group>"; };
 		BB857F4418B8928700B366D8 /* secondpic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondpic@2x.png"; sourceTree = "<group>"; };
+		E202AE751EF3B648001B39FD /* actionbar_bg_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_black.png; sourceTree = "<group>"; };
+		E202AE771EF3BCCA001B39FD /* actionbar_bg_grey6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_grey6.png; sourceTree = "<group>"; };
+		E202AE781EF3BCCA001B39FD /* actionbar_bg_grey1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_grey1.png; sourceTree = "<group>"; };
 		E2252E831E4D16D900B0CD69 /* AdrenalineLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdrenalineLogo2.png; sourceTree = "<group>"; };
 		E2252E841E4D16D900B0CD69 /* createEvent-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createEvent-btn.png"; sourceTree = "<group>"; };
 		E2252E851E4D16D900B0CD69 /* createEvent-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createEvent-btn@2x.png"; sourceTree = "<group>"; };
@@ -1235,6 +1241,9 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E202AE771EF3BCCA001B39FD /* actionbar_bg_grey6.png */,
+				E202AE781EF3BCCA001B39FD /* actionbar_bg_grey1.png */,
+				E202AE751EF3B648001B39FD /* actionbar_bg_black.png */,
 				E2D37A941EEF934C00395B03 /* actionbar_bg_6.png */,
 				E2D37A951EEF934C00395B03 /* actionbar_bg_5.png */,
 				E2D37A841EEF7A5000395B03 /* ic_nav4.png */,
@@ -1604,8 +1613,10 @@
 				7972E973195355B100F25E4D /* event-feed-mask.png in Resources */,
 				7972E972195355B100F25E4D /* date-cell-gray@2x.png in Resources */,
 				E26B1E621E519BFF002A0F9C /* BetaPageImage.png in Resources */,
+				E202AE791EF3BCCA001B39FD /* actionbar_bg_grey6.png in Resources */,
 				BB303DF218B86B3400B6EBC9 /* About@2x.png in Resources */,
 				E279ADB11E654CAC00D3B192 /* MORE.png in Resources */,
+				E202AE7A1EF3BCCA001B39FD /* actionbar_bg_grey1.png in Resources */,
 				79504C40191F7CE000EF3103 /* no_image@2x.png in Resources */,
 				BB303E2318B879AA00B6EBC9 /* nearby.png in Resources */,
 				7122DB1F18BB459C00C044E8 /* feedviewCell2.png in Resources */,
@@ -1755,6 +1766,7 @@
 				E2A54D461E4DC3F700091538 /* AboutPage.png in Resources */,
 				7982242C18F72A57009FA42E /* register-btn@2x.png in Resources */,
 				7122DB2118BB459C00C044E8 /* feedviewCell1.png in Resources */,
+				E202AE761EF3B648001B39FD /* actionbar_bg_black.png in Resources */,
 				7122DB1D18BB459C00C044E8 /* feedviewCell3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -563,21 +563,33 @@
 // LOOK RIGHT HERE YOU MOTHER FUCKER!!!!!
 - (void)filterFavEventsArray {
     
-    //NSString *currentFavId = [arrayFavEvent[0] valueForKey:@"event_id"]; --PULLS THE STRING OF EVENT IDS FROM THE MAIN_EVENTS_ARRAY (HERE IM CALLING TO ONLY GET ID AT INDEX PATH 0)
-    
-    NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == 610"];//DOES ANY EVENT_ID IN MAIN_EVENTS_ARRAY MATCH THE NUMBER 610?
-    
-    //- I AM CHECKING FOR ANY EVENT ID THAT MATCHES ID NUMBER 610, WHICH IS A FAVORITED EVENT ID BTW...
-    //IT FINDS IT AND MATCHES IT!!!!!!!!! SO THIS PREDICATE WORKS!!!!WE SHOULD BE ABLE TO BUILD OFF OF THIS, WHICH IT ALSO MATCHES DATES AND OTHER SHIT AS WELL
-    
-    //BOOM
-    
+    NSNumber *currentFavId = [arrayFavEvent valueForKey:@"event_id"];
+    NSMutableArray *filterResults = [self->arrayFavouriteProgram mutableCopy];
+    //NSNumber *currentFavId = [arrayFavEvent[0] valueForKey:@"event_id"];
+    NSLog(@"currentFavId = %@", currentFavId);
+    NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == %d", currentFavId];
     [arrayFavouriteProgram filterUsingPredicate:ePredicate];
+    
+    
+    /*
+    //NSNumber *currentFavId = [arrayFavEvent valueForKey:@"event_id"];
+    //NSInteger test = 610;
+    //NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == %d", currentFavId];
+    
+    for (int i = 0; i < arrayFavouriteProgram.count; i++) {
+        NSNumber *currentFavId = [arrayFavEvent[i] valueForKey:@"event_id"];
+        NSLog(@"currentFavId = %@", currentFavId);
+        NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == %d", currentFavId];
+        [arrayFavouriteProgram filterUsingPredicate:ePredicate];
+        
+    }
+    
     NSLog(@"Filtered array list = %@", arrayFavouriteProgram);
+    //[arrayFavouriteProgram filterUsingPredicate:ePredicate];
     [self.tblMainTable reloadData];
     
     //EventList *obj = [arrayFilterResults objectAtIndex:indexPath.row]; //- THIS CODE MIGHT BE WHAT I WAS ASKING ABOUT, CREATING A EVENT OBJ IN MY FILTER LOOP IN JAVA (FOR ME MORE THAN YOU)
-    
+    */
 }
 
 
