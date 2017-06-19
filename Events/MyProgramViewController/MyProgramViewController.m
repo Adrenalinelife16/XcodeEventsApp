@@ -544,7 +544,6 @@
     [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         [DSBezelActivityView removeViewAnimated:YES];
         
-    
         arrayFavEvent = response;
         [self filterFavEventsArray];
         
@@ -557,25 +556,97 @@
 }
 
 
+
+- (void)filterFavEventsArray {
+    /*
+    
+    NSString *selectedCategory = @"eventID";
+    
+    //filter array by category using predicate
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"eventID[c] == %@", selectedCategory];
+    NSArray *filteredArray = [arrayFavouriteProgram filteredArrayUsingPredicate:predicate];
+    
+    NSLog(@"predicate info %@", filteredArray);
+
+     
+    
+    // ALL EVENTS FROM SERVER
+    
+    NSArray *getEventID = [arrayFavouriteProgram valueForKey:@"eventID"];
+    
+    // USER FAVORITE EVENTS ID'S
+    
+    NSArray *currentFavId = [arrayFavEvent valueForKey:@"event_id"];
+    
+    NSMutableSet *allEventID = [[NSMutableSet alloc] initWithArray:getEventID] ;
+    NSMutableSet *userFavEventID = [[NSMutableSet alloc] initWithArray:currentFavId];
+    
+    NSLog(@"All Event ID's %@", getEventID);
+    NSLog(@"User Fav Event ID's %@", userFavEventID);
+    
+    
+    
+    [allEventID intersectSet:userFavEventID];
+    
+    NSArray *outPut = [allEventID allObjects];
+    NSLog(@"%@",outPut);
+    */
+    
+    // ALL EVENTS FROM SERVER
+    
+    NSArray *getEventID = [arrayFavouriteProgram valueForKey:@"eventID"];
+    NSString *stringAllEvents = [NSString stringWithFormat:@"%@", getEventID];
+    
+    
+    NSArray *array1 = getEventID;
+    array1 = [array1 sortedArrayUsingSelector: @selector(compare:)];
+    NSLog(@"Events from server %@",array1);
+    
+    
+    // USER FAVORITE EVENTS ID
+    
+    NSArray *currentFavId = [arrayFavEvent valueForKey:@"event_id"];
+    NSString *userFavID = [NSString stringWithFormat:@"%@", currentFavId];
+
+    
+    
+    
+    NSArray *temp1 = [NSArray arrayWithObjects:getEventID, nil];
+    NSArray *temp2 = [NSArray arrayWithObjects:currentFavId, nil];
+                                        
+                                        NSMutableSet *telephoneSet = [[NSMutableSet alloc] initWithArray:temp1] ;
+                                        NSMutableSet *telephoneSet2 = [[NSMutableSet alloc] initWithArray:temp2];
+                                        
+                                        
+                                        [telephoneSet intersectSet:telephoneSet2];
+                                        
+                                        NSArray *outPut = [telephoneSet allObjects];
+                                        NSLog(@"Temp Array %@",outPut);
+    
+    
+    
+    
+}
+
+
+
+/*
 - (void)filterFavEventsArray {
     
-    NSNumber *currentFavId = [arrayFavEvent valueForKey:@"event_id"];
-    NSMutableArray *filterResults = [self->arrayFavouriteProgram mutableCopy];
- //   NSNumber *currentFavId = [arrayFavouriteProgram[0] valueForKey:@"event_id"];
-    NSLog(@"currentFavId = %@", currentFavId);
-    NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == %d", 610];
-    [arrayFilterResults filterUsingPredicate:ePredicate];
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    [self.tblMainTable reloadData];
+        
 }
+
+
+
+NSNumber *currentFavId = [arrayFavEvent valueForKey:@"event_id"];
+NSMutableArray *filterResults = [self->arrayFavouriteProgram mutableCopy];
+//   NSNumber *currentFavId = [arrayFavouriteProgram[0] valueForKey:@"event_id"];
+NSLog(@"currentFavId = %@", currentFavId);
+NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == %d", 610];
+[arrayFilterResults filterUsingPredicate:ePredicate];
+
+
+*/
 
 
 
