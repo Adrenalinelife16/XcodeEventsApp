@@ -37,7 +37,7 @@
     VRGCalendarView *calView;
     
     NSMutableArray *arrayEventList;
-
+    
     
 }
 @end
@@ -48,44 +48,44 @@
 @synthesize arrayFavEvent;
 
 /*
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [ initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
+ - (id)initWithStyle:(UITableViewStyle)style
+ {
+ self = [ initWithStyle:style];
+ if (self) {
+ // Custom initialization
+ }
+ return self;
+ }
+ */
 
 #pragma mark - View Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     segmentPosition=0;
-
+    
     //set current date as event date before getting from server
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     NSDate *currentDate =   [NSDate date];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
-        
+    
     [self.tblMainTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-
+    
     [self clickedMyCalender:nil];
     
     
     
-   }
+}
 
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Find Your Life";
- 
- }
+    
+}
 
 
 - (void)didReceiveMemoryWarning
@@ -143,7 +143,7 @@
         
         cell.lblDateTime.text=strDate;
         cell.lblProgramName.text=[[arrMyProgram objectAtIndex:indexPath.row] valueForKey:@"event_name"];
-    
+        
         NSString *strPrice = [NSString stringWithFormat:@"%@",[[[arrMyProgram objectAtIndex:indexPath.row] objectForKey:@"ticket"] valueForKey:@"ticket_price"]];
         if ([strPrice floatValue] == 00.00) {
             cell.lblStatus.text = @"Free";
@@ -154,7 +154,7 @@
         
         NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:17]};
         CGSize stringsize = [cell.lblDateTime.text sizeWithAttributes:attributes];
-
+        
         [cell.lblDateTime setFrame:CGRectMake(cell.lblDateTime.frame.origin.x,cell.lblDateTime.frame.origin.y,stringsize.width, 21)];
         [cell.lblStatus setFrame:CGRectMake(stringsize.width+5,cell.lblStatus.frame.origin.y,cell.lblStatus.frame.size.width, cell.lblStatus.frame.size.height)];
         
@@ -168,7 +168,7 @@
         {
             cell = [[ProgramCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         }
-    
+        
         
         EventList *obj = [arrayFilterResults objectAtIndex:indexPath.row];
         
@@ -190,7 +190,7 @@
         
         
         return cell;
-
+        
     }
     else if(segmentPosition==0)
     {
@@ -204,16 +204,23 @@
             // Configure the cell...
             
             NSDictionary *dictOfCalEvents = [NSDictionary dictionaryWithDictionary:[arrMyCalEvents objectAtIndex:indexPath.row]];
-
+            
+            
+            EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
+            
+            
             cell.lblDateTime.text = [Utility getFormatedDateString:[dictOfCalEvents objectForKey:@"event_start_date"] dateFormatString:@"yyyy-MM-dd" dateFormatterString:@"dd MMMM"];
             cell.lblEventName.text=[dictOfCalEvents valueForKey:@"event_name"];
-
+            
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
             
-        
-            UIImage *image=[[UIImage alloc]init];
-            image=[UIImage imageNamed:@"no_image.png"];
-            cell.imgIcon.image = image;
+            if ([obj.eventImageURL length]) {
+                [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
+            }
+            
+            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
+            
+            
             
         }
         return cell;
@@ -222,24 +229,24 @@
         return NULL;
 }
 /*
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    
-    if (segmentPosition==1) {
-        
-        
-        EventList *obj = (tableView == self.tblMainTable) ? self->arrayFavouriteProgram[indexPath.row]: self.[index];
-        AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
-        detailViewController.eventObj = obj;
-    
-   
-       NSLog(@"selected tableview row is %ld",(long)indexPath.row);
-    
-        }
-}
-*/
+ 
+ - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ 
+ 
+ if (segmentPosition==1) {
+ 
+ 
+ EventList *obj = (tableView == self.tblMainTable) ? self->arrayFavouriteProgram[indexPath.row]: self.[index];
+ AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
+ detailViewController.eventObj = obj;
+ 
+ 
+ NSLog(@"selected tableview row is %ld",(long)indexPath.row);
+ 
+ }
+ }
+ */
 - (CGFloat) tableView: (UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *) indexPath
 {
     switch (segmentPosition) {
@@ -280,7 +287,7 @@
         self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented.png"];
         [self.tblMainTable reloadData];
         self.btnNotifiction.titleLabel.text=[NSString stringWithFormat:@"%lu",(unsigned long)arrMyProgram.count];
-    
+        
         [DSBezelActivityView newActivityViewForView:[UIApplication sharedApplication].keyWindow withLabel:@"Fetching..."];
         [self getMyTickets];
     }
@@ -305,7 +312,7 @@
         
         [DSBezelActivityView newActivityViewForView:[UIApplication sharedApplication].keyWindow withLabel:@"Fetching..."];
         [self getMyTickets];
-
+        
     }
 }
 
@@ -326,10 +333,7 @@
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
-    [self showFavEvents];
-    [self getFavEvents];
-    [self getFavorites];
-    [self filterFavEventsArray];
+    [self getAllEventsFromServer];
     
     
 }
@@ -347,7 +351,7 @@
 }
 
 
-// add logout method under the else statement 
+// add logout method under the else statement
 
 #pragma mark - Check login for MyFavorite and MyTickets
 -(BOOL)checkLogin
@@ -541,7 +545,7 @@
 
 -(void)getFavorites{
     
-
+    
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
     
     [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
@@ -555,13 +559,12 @@
         [DSBezelActivityView removeViewAnimated:YES];
         NSLog(@"%@",error);
     }];
-   
+    
 }
 
 
 
 - (void)filterFavEventsArray {
-    /*
     
     //Create emtpy array
     NSMutableArray *finalArray = [NSMutableArray array];
@@ -596,7 +599,7 @@
             //Convert singleId string to NSInteger
             NSInteger value = [singleId intValue];
             NSLog(@"value = %li", value);
-        
+            
             //if event id = fav id
             if (valueId == value){
                 NSLog(@"valueId DOES MATCH value");
@@ -612,112 +615,6 @@
     arrayFavouriteProgram = finalArray;
     [self.tblMainTable reloadData];
 }
-
-
-
--(void)showFavEvents {
-    
-    // ALL EVENTS FROM SERVER
-    
-    NSArray *getEventID = [arrayFavouriteProgram valueForKey:@"eventID"];
-    NSString *stringAllEvents = [NSString stringWithFormat:@"%@", getEventID];
-    
-    
-    NSArray *array1 = getEventID;
-    array1 = [array1 sortedArrayUsingSelector: @selector(compare:)];
-    NSLog(@"Events from server %@",array1);
-    
-    
-    // USER FAVORITE EVENTS ID
-    
-    NSArray *currentFavId = [arrayFavEvent valueForKey:@"event_id"];
-    NSString *userFavID = [NSString stringWithFormat:@"%@", currentFavId];
-
-    
-
-            for (NSDictionary *dict in sortedArrayEventList) {
-                EventList *eventObj = [[EventList alloc] init];
-                eventObj.eventID                =   [NSNumber numberWithInt:[[dict objectForKey:@"event_id"] intValue]];
-                eventObj.eventName              =   [dict objectForKey:@"event_name"];
-                eventObj.eventImageURL          =   [dict objectForKey:@"event_image_url"];
-                //       NSLog(@"Data%@",sortedArrayEventList);
-                eventObj.eventDescription       =   [dict objectForKey:@"event_content"];
-                
-                //12.15pm 4 June '14
-                eventObj.eventStartDateTime     =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_start_date"],[dict objectForKey:@"event_start_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
-                
-                eventObj.eventEndDateTime       =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_end_date"],[dict objectForKey:@"event_end_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
-                
-                eventObj.eventLocationName      =   [dict objectForKey:@"location_name"];
-                eventObj.eventLocationAddress   =   [dict objectForKey:@"location_address"];
-                eventObj.eventLocationTown      =   [dict objectForKey:@"location_town"];
-                eventObj.eventLocationpostcode  =   [dict objectForKey:@"location_postcode"];
-                eventObj.eventLocationState     =   [dict objectForKey:@"location_state"];
-                eventObj.eventLocationCountry   =   [dict objectForKey:@"location_country"];
-                eventObj.eventLocationLatitude  =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_latitude"] floatValue]];
-                eventObj.eventLocationLongitude =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_longitude"] floatValue]];
-                
-                
-                
-                if ([[dict objectForKey:@"ticket"] count]>0) {
-                    NSDictionary *dictOfTicket  =   [[NSDictionary alloc] initWithDictionary:[dict objectForKey:@"ticket"]];
-                    eventObj.eventTicketName            =   [dictOfTicket objectForKey:@"ticket_name"];
-                    eventObj.eventTicketDescription     =   [dictOfTicket objectForKey:@"ticket_description"];
-                    eventObj.eventTicketPrice           =   [dictOfTicket objectForKey:@"ticket_price"];
-                    eventObj.eventTicketStart           =   [dictOfTicket objectForKey:@"ticket_start"];
-                    eventObj.eventTicketEnd             =   [dictOfTicket objectForKey:@"ticket_end"];
-                    eventObj.eventTicketMembers         =   [dictOfTicket objectForKey:@"ticket_members_roles"];
-                    eventObj.eventTicketGuests          =   [dictOfTicket objectForKey:@"ticket_guests"];
-                    eventObj.eventTicketRequired        =   [dictOfTicket objectForKey:@"ticket_required"];
-                    eventObj.eventTicketAvailSpaces     =   [NSNumber numberWithInt:[[dictOfTicket objectForKey:@"avail_spaces"] intValue]];
-                    eventObj.eventTicketBookedSpaces    =   [NSNumber numberWithInt:[[dictOfTicket objectForKey:@"booked_spaces"] intValue]];
-                    eventObj.eventTicketTotalSpaces     =   [NSNumber numberWithInt:[[dictOfTicket objectForKey:@"total_spaces"] intValue]];
-                }
-                
-                
-                [arrayFavouriteProgram addObject:eventObj];
-                
-            }
-        }
-        
-        /**
-         *  global array for events data.
-         */
-        gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
-        //arrayFavList = gArrayEvents;
-        [self filterFavEventsArray];
-        
-        [self.tblMainTable reloadData];
-        
-    }WithFailure:^(NSString *error)
-     {
-         [DSBezelActivityView removeViewAnimated:NO];
-         
-         
-     }];    
-    
-}
-
-
-
-/*
-- (void)filterFavEventsArray {
-    
-        
-}
-
-
-
-NSNumber *currentFavId = [arrayFavEvent valueForKey:@"event_id"];
-NSMutableArray *filterResults = [self->arrayFavouriteProgram mutableCopy];
-//   NSNumber *currentFavId = [arrayFavouriteProgram[0] valueForKey:@"event_id"];
-NSLog(@"currentFavId = %@", currentFavId);
-NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == %d", 610];
-[arrayFilterResults filterUsingPredicate:ePredicate];
-
-
-*/
-
 
 
 -(void)getAllEventsFromServer {
@@ -804,7 +701,7 @@ NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == %d", 610
          [DSBezelActivityView removeViewAnimated:NO];
          
          
-     }];    
+     }];
     
 }
 
