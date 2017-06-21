@@ -170,7 +170,7 @@
         }
         
         
-        EventList *obj = [arrayFilterResults objectAtIndex:indexPath.row];
+        EventList *obj = [arrayFavouriteProgram objectAtIndex:indexPath.row];
         
         cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
         cell.lblEventName.text  =   obj.eventName;
@@ -638,9 +638,6 @@
                 }
             }
             
-            
-            
-            
             NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
             NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
             
@@ -737,15 +734,27 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
+    if ([segue.identifier isEqualToString:@"program"]) {
+        
+        NSIndexPath *selectedRowIndex = [self.tblMainTable indexPathForSelectedRow];
+        AboutViewController *aboutVwController = [segue destinationViewController];
+        EventList *obj  =   [self->arrayFavouriteProgram objectAtIndex:selectedRowIndex.row];
+        aboutVwController.eventObj  =   obj;
+        
+    }
+}
+
+    
+    /*
     EventList *eventObj;
     
-    BOOL IsMatch = NO;
+    BOOL IsMatch = YES;
     if ([segue.identifier isEqualToString:@"program"]) {
         for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {
             eventObj = [gArrayEvents objectAtIndex:favCount];
             
             for (NSDictionary *dictDetails in arrayFavouriteProgram) {
-                if ([eventObj.eventName isEqualToString:[dictDetails objectForKey:@""]]) {
+                if ([eventObj.eventName isEqualToString:[dictDetails objectForKey:@"%@"]]) {
                     IsMatch = YES;
                     break;
                 }
@@ -775,8 +784,9 @@
         AboutViewController *aboutVwController = [segue destinationViewController];
         aboutVwController.eventObj =   eventObj;
     }
+     
     
 }
 
-
+*/
 @end
