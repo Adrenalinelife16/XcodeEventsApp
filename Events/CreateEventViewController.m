@@ -48,50 +48,32 @@
 {
 
     
-    NSMutableString *rawSTr = [NSMutableString stringWithFormat:@"location_name=%@&location_address=%@&location_city=%@&location_zip=%@&location_state=%@&category=%@&user=%@&event_name=%@&event_info=%@&start_time=%@&end_time=%@&start_date=%@&end_date=%@",
-                               
-            locationName.text, address.text, city.text, zipCode.text, state.text, self.navigationItem.title = titleText,
-            [Utility getNSUserDefaultValue:KUSERID], eventName.text, detailView.text, _startTime.text, _endTime.text, _startDate, _endDate];
-                               
+    NSMutableString *post = [NSMutableString stringWithFormat:@"location_name=%@&location_address=%@&location_city=%@&location_zip=%@&location_state=%@&category=%@&user=%@&event_name=%@&event_info=%@&start_time=%@&end_time=%@&start_date=%@&end_date=%@",
+                             
+                             locationName.text, address.text, city.text, zipCode.text, state.text, self.navigationItem.title = titleText,
+                             [Utility getNSUserDefaultValue:KUSERID], eventName.text, detailView.text, _startTime.text, _endTime.text, _startDate, _endDate];
     
-    NSLog(@"Event Info %@", rawSTr);
     
-    NSData *data = [rawSTr dataUsingEncoding:NSUTF8StringEncoding];
     
-    NSURL *URL = [NSURL URLWithString:@"http://www.adrenalinelife.org/Adrenaline_Custom/add_new.php"];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
     
+    NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    
+    NSString *postLength = [NSString stringWithFormat:@"%lu",(unsigned long)[postData length]];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    
+    [request setURL:[NSURL URLWithString:@"http://www.adrenalinelife.org/Adrenaline_Custom/addEvent.php"]];
     [request setHTTPMethod:@"POST"];
-    [request setHTTPBody:data];
+    [request setHTTPBody:postData];
     
+    NSLog(@"Post Data %@", post);
     
-    NSURLResponse *response;
-    NSError *err;
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
-    NSError *error;
-    NSMutableArray *dictionary = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
-    
-    NSMutableDictionary *object = [dictionary objectAtIndex:0];
-    NSMutableArray *number = [object objectForKey:@"Error"];
-       
-    NSNumber *errorCode = number;
-    
-    // Check Username and Email duplicates-------------------------------------------------------------------------------
-    
-    
-    if ([errorCode intValue] == 0) {
-        NSLog(@"Event Doesn't Exist");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event Created" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-        [alert show];
-    //    [self performSegueWithIdentifier:@"eventCreated" sender:self];
-        
-    }
-    
-    if ([errorCode intValue] == 1) {
-        NSLog(@"Event Already Exist");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event Already Exist!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-        [alert show];
+    if(conn) {
+        NSLog(@"Connection Successful");
+    } else {
+        NSLog(@"Connection could not be made");
     }
     
 }

@@ -111,6 +111,9 @@
 {
     [super viewWillAppear:YES];
     self.navigationItem.title = @"Events";
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.searchController.searchBar.barTintColor = [UIColor grayColor];
 
     self.searchController.hidesNavigationBarDuringPresentation = NO;
 
@@ -428,12 +431,12 @@
                                        type:NSContainsPredicateOperatorType
                                        options:NSCaseInsensitivePredicateOption];
         [searchItemsPredicate addObject:finalPredicate];
-
         
         
         // at this OR predicate to our master AND predicate
         NSCompoundPredicate *orMatchPredicates = [NSCompoundPredicate orPredicateWithSubpredicates:searchItemsPredicate];
         [andMatchPredicates addObject:orMatchPredicates];
+        
     }
     
     // match up the fields of the Product object
