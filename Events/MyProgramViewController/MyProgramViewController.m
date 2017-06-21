@@ -328,8 +328,10 @@
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
+    [self showFavEvents];
     [self getFavEvents];
     [self getFavorites];
+    [self filterFavEventsArray];
     
     
 }
@@ -563,34 +565,56 @@
 // LOOK RIGHT HERE YOU MOTHER FUCKER!!!!!
 - (void)filterFavEventsArray {
     
-    NSNumber *currentFavId = [arrayFavEvent valueForKey:@"event_id"];
-    NSMutableArray *filterResults = [self->arrayFavouriteProgram mutableCopy];
-    //NSNumber *currentFavId = [arrayFavEvent[0] valueForKey:@"event_id"];
-    NSLog(@"currentFavId = %@", currentFavId);
-    NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == %d", currentFavId];
-    [arrayFavouriteProgram filterUsingPredicate:ePredicate];
+    //Create emtpy array
+    NSMutableArray *finalArray = [NSMutableArray array];
+    
+    //Pull Array of Ids only from Dictionary
+    NSArray *arrayWithIds = [arrayFavEvent valueForKey:@"event_id"];
+    
+    //Pull all the event ids out of index/array
+    NSArray * stringId = [arrayWithIds objectAtIndex:0];
+    NSLog(@"stringId = %@", stringId);
     
     
-    /*
-    //NSNumber *currentFavId = [arrayFavEvent valueForKey:@"event_id"];
-    //NSInteger test = 610;
-    //NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == %d", currentFavId];
-    
-    for (int i = 0; i < arrayFavouriteProgram.count; i++) {
-        NSNumber *currentFavId = [arrayFavEvent[i] valueForKey:@"event_id"];
-        NSLog(@"currentFavId = %@", currentFavId);
-        NSPredicate *ePredicate = [NSPredicate predicateWithFormat:@"eventID == %d", currentFavId];
-        [arrayFavouriteProgram filterUsingPredicate:ePredicate];
+    /**Loop through each individual event id**/
+    for (NSUInteger i = 0, count = [arrayFavouriteProgram count]; i < count; i++){
+        NSLog(@"Beginning MAIN For Loop");
+        NSLog(@"i = %li", i);
         
+        //Pull single event id from main array
+        NSString *arrayId = [[arrayFavouriteProgram[i] valueForKey:@"eventID"] stringValue];
+        NSInteger valueId = [arrayId intValue];
+        NSLog(@"MainarrayIds = %@", arrayId);
+        
+        /**Loop through each individual fav id**/
+        for (NSUInteger f = 0, count = [stringId count]; f < count; f++){
+            NSLog(@"FAV For Loop");
+            NSLog(@"f = %li", f);
+            
+            
+            //Pull single event id out of stringId
+            NSString *singleId = stringId[f];
+            
+            //Convert singleId string to NSInteger
+            NSInteger value = [singleId intValue];
+            NSLog(@"value = %li", value);
+        
+            //if event id = fav id
+            if (valueId == value){
+                NSLog(@"valueId DOES MATCH value");
+                //add that current event into an array
+                [finalArray addObject:arrayFavouriteProgram[i]];
+            }
+            //end of fav loop
+        }
+        //end of main loop
     }
-    
-    NSLog(@"Filtered array list = %@", arrayFavouriteProgram);
-    //[arrayFavouriteProgram filterUsingPredicate:ePredicate];
+    //end of method
+    NSLog(@"Final Array List = %@", finalArray);
+    arrayFavouriteProgram = finalArray;
     [self.tblMainTable reloadData];
-    
-    //EventList *obj = [arrayFilterResults objectAtIndex:indexPath.row]; //- THIS CODE MIGHT BE WHAT I WAS ASKING ABOUT, CREATING A EVENT OBJ IN MY FILTER LOOP IN JAVA (FOR ME MORE THAN YOU)
-    */
 }
+
 
 
 -(void)showFavEvents {
@@ -687,7 +711,8 @@
          *  global array for events data.
          */
         gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
-        arrayFavList = gArrayEvents;
+        //arrayFavList = gArrayEvents;
+        [self filterFavEventsArray];
         
         [self.tblMainTable reloadData];
         
