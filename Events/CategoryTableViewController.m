@@ -37,7 +37,8 @@
 {
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Choose a Category";
-   
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 

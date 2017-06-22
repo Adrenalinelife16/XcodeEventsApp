@@ -35,6 +35,8 @@
     // Do any additional setup after loading the view.
     self.title = @"Registration";
     [self bottomBorder];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     
 }
 

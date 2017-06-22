@@ -84,6 +84,8 @@
 {
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Find Your Life";
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     
 }
 
@@ -205,8 +207,11 @@
             
             NSDictionary *dictOfCalEvents = [NSDictionary dictionaryWithDictionary:[arrMyCalEvents objectAtIndex:indexPath.row]];
             
+            NSDictionary *posterDict = [arrMyCalEvents objectAtIndex:indexPath.row];
+            NSString *pathToPoster= [posterDict objectForKey:@"event_image_url"];
             
-            EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
+            
+           
             
             
             cell.lblDateTime.text = [Utility getFormatedDateString:[dictOfCalEvents objectForKey:@"event_start_date"] dateFormatString:@"yyyy-MM-dd" dateFormatterString:@"dd MMMM"];
@@ -214,9 +219,8 @@
             
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
             
-            if ([obj.eventImageURL length]) {
-                [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
-            }
+            cell.imgIcon.image = [posterDict valueForKey:pathToPoster];
+            
             
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
             

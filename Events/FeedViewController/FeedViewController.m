@@ -53,6 +53,8 @@
 {
     [super viewWillAppear:animated];
      self.navigationItem.title = @"Social Feed";
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [Utility afterDelay:0.01 withCompletion:^{
     [DSBezelActivityView newActivityViewForView:self.view.window];
     [self getFeedsFromServer];
@@ -137,7 +139,7 @@
                 [arrayTempFeeds addObject:dictFBfeeds];
             }
              
-             */
+             
             
             for (NSMutableDictionary *dictTwitterFeeds in arrayTwitterFeedsTemp) {
                 
@@ -147,7 +149,8 @@
                 [arrayTempFeeds addObject:dictTwitterFeeds];
             }
              
-            
+            */
+             
             for (NSMutableDictionary *dictOfInstagramFeeds in arrayInstagramFeedsTemp) {;
                 
                 NSDate *date = [NSDate dateWithTimeIntervalSince1970:[[dictOfInstagramFeeds objectForKey:@"created_time"] doubleValue]];

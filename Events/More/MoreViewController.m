@@ -45,6 +45,8 @@
     [self viewDidLoad];
     [super viewWillAppear:YES];
     [self.tableView reloadData];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 

@@ -53,6 +53,8 @@
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     self.navigationItem.title = titleText;
     self.navigationController.navigationBar.translucent = YES;
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 
     
 	// Do any additional setup after loading the view.

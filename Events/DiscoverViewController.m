@@ -25,6 +25,8 @@
 {
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Discover";
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 - (void)viewDidLayoutSubviews
