@@ -570,43 +570,53 @@
 
 - (void)filterFavEventsArray {
     
-    //Create emtpy array
-    NSMutableArray *finalArray = [NSMutableArray array];
     
-    //Pull Array of Ids only from Dictionary
-    NSArray *arrayWithIds = [arrayFavEvent valueForKey:@"event_id"];
-    
-    //Pull all the event ids out of index/array
-    NSArray * stringId = [arrayWithIds objectAtIndex:0];
-    
-    /**Loop through each individual event id**/
-    for (NSUInteger i = 0, count = [arrayFavouriteProgram count]; i < count; i++){
-    
-        //Pull single event id from main array
-        NSString *arrayId = [[arrayFavouriteProgram[i] valueForKey:@"eventID"] stringValue];
-        NSInteger valueId = [arrayId intValue];
+    if ([self checkLogin]) {
+        //Create emtpy array
+        NSMutableArray *finalArray = [NSMutableArray array];
         
-        /**Loop through each individual fav id**/
-        for (NSUInteger f = 0, count = [stringId count]; f < count; f++){
+        //Pull Array of Ids only from Dictionary
+        NSArray *arrayWithIds = [arrayFavEvent valueForKey:@"event_id"];
+        
+        //Pull all the event ids out of index/array
+        NSArray * stringId = [arrayWithIds objectAtIndex:0];
+        
+        /**Loop through each individual event id**/
+        for (NSUInteger i = 0, count = [arrayFavouriteProgram count]; i < count; i++){
             
-            //Pull single event id out of stringId
-            NSString *singleId = stringId[f];
+            //Pull single event id from main array
+            NSString *arrayId = [[arrayFavouriteProgram[i] valueForKey:@"eventID"] stringValue];
+            NSInteger valueId = [arrayId intValue];
             
-            //Convert singleId string to NSInteger
-            NSInteger value = [singleId intValue];
-            
-            //if event id = fav id
-            if (valueId == value){
-                //add that current event into an array
-                [finalArray addObject:arrayFavouriteProgram[i]];
+            /**Loop through each individual fav id**/
+            for (NSUInteger f = 0, count = [stringId count]; f < count; f++){
+                
+                //Pull single event id out of stringId
+                NSString *singleId = stringId[f];
+                
+                //Convert singleId string to NSInteger
+                NSInteger value = [singleId intValue];
+                
+                //if event id = fav id
+                if (valueId == value){
+                    //add that current event into an array
+                    [finalArray addObject:arrayFavouriteProgram[i]];
+                }
+                //end of fav loop
             }
-            //end of fav loop
+            //end of main loop
         }
-        //end of main loop
+        //end of method
+        arrayFavouriteProgram = finalArray;
+        [self.tblMainTable reloadData];
+
+    } else {
+        
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Login to check Favorite Events" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [av show];
+        
     }
-    //end of method
-    arrayFavouriteProgram = finalArray;
-    [self.tblMainTable reloadData];
+
 }
 
 
