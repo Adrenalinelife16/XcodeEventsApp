@@ -187,8 +187,8 @@
                     
                 }
             }
-               
-            [self.tblView reloadData];
+            
+        [self.tblView reloadData];
             
             
     }WithFailure:^(NSString *error){
