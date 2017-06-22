@@ -252,6 +252,9 @@
 		E22D5E6A1ECB60AB00DC7C4E /* aYoga.png in Resources */ = {isa = PBXBuildFile; fileRef = E22D5E671ECB60AB00DC7C4E /* aYoga.png */; };
 		E22D5E6B1ECB60AB00DC7C4E /* aFrisbee.png in Resources */ = {isa = PBXBuildFile; fileRef = E22D5E681ECB60AB00DC7C4E /* aFrisbee.png */; };
 		E22D5E6D1ECB634F00DC7C4E /* aGolf.png in Resources */ = {isa = PBXBuildFile; fileRef = E22D5E6C1ECB634F00DC7C4E /* aGolf.png */; };
+		E22DC9F81EFB812200A98DA7 /* actionbar_bg_white.png in Resources */ = {isa = PBXBuildFile; fileRef = E22DC9F61EFB812200A98DA7 /* actionbar_bg_white.png */; };
+		E22DC9F91EFB812200A98DA7 /* actionbar_bg_6solid.png in Resources */ = {isa = PBXBuildFile; fileRef = E22DC9F71EFB812200A98DA7 /* actionbar_bg_6solid.png */; };
+		E22DC9FB1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = E22DC9FA1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png */; };
 		E26B1E621E519BFF002A0F9C /* BetaPageImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E26B1E611E519BFF002A0F9C /* BetaPageImage.png */; };
 		E274A6671E5D4BE500E0FF6D /* BackGroundPages3.png in Resources */ = {isa = PBXBuildFile; fileRef = E274A6661E5D4BE500E0FF6D /* BackGroundPages3.png */; };
 		E279AD9E1E653D6500D3B192 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E279AD9D1E653D6500D3B192 /* DiscoverViewController.m */; };
@@ -647,6 +650,9 @@
 		E22D5E671ECB60AB00DC7C4E /* aYoga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aYoga.png; sourceTree = "<group>"; };
 		E22D5E681ECB60AB00DC7C4E /* aFrisbee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aFrisbee.png; sourceTree = "<group>"; };
 		E22D5E6C1ECB634F00DC7C4E /* aGolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aGolf.png; sourceTree = "<group>"; };
+		E22DC9F61EFB812200A98DA7 /* actionbar_bg_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_white.png; sourceTree = "<group>"; };
+		E22DC9F71EFB812200A98DA7 /* actionbar_bg_6solid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_6solid.png; sourceTree = "<group>"; };
+		E22DC9FA1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FINALHIGHRESFULLLOGO.png; sourceTree = "<group>"; };
 		E26B1E611E519BFF002A0F9C /* BetaPageImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetaPageImage.png; sourceTree = "<group>"; };
 		E274A6661E5D4BE500E0FF6D /* BackGroundPages3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackGroundPages3.png; sourceTree = "<group>"; };
 		E279AD9C1E653D6500D3B192 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
@@ -1241,6 +1247,9 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E22DC9FA1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png */,
+				E22DC9F61EFB812200A98DA7 /* actionbar_bg_white.png */,
+				E22DC9F71EFB812200A98DA7 /* actionbar_bg_6solid.png */,
 				E202AE771EF3BCCA001B39FD /* actionbar_bg_grey6.png */,
 				E202AE781EF3BCCA001B39FD /* actionbar_bg_grey1.png */,
 				E202AE751EF3B648001B39FD /* actionbar_bg_black.png */,
@@ -1649,8 +1658,10 @@
 				E279ADAA1E654CAC00D3B192 /* Golf.png in Resources */,
 				7972E97C195355B100F25E4D /* white-cell@2x.png in Resources */,
 				7225BD201E4AA78200A35D30 /* Notes in Resources */,
+				E22DC9F81EFB812200A98DA7 /* actionbar_bg_white.png in Resources */,
 				BB303E0418B86B3400B6EBC9 /* Livello3@2x.png in Resources */,
 				E2D37A7F1EEF72F300395B03 /* actionbar_bg_4.png in Resources */,
+				E22DC9FB1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png in Resources */,
 				E2252E881E4D16D900B0CD69 /* createEvent-btn@2x.png in Resources */,
 				711221EC18BC94F900E77A4A /* RedDot@2x.png in Resources */,
 				BB303E0918B86B3400B6EBC9 /* Program.png in Resources */,
@@ -1744,6 +1755,7 @@
 				E2893C9B1E7A4C1200F58D00 /* dateunderlay.png in Resources */,
 				711221EF18BC9DFB00E77A4A /* placeIcon.png in Resources */,
 				E22D5E611ECAF01700DC7C4E /* aTableGames.png in Resources */,
+				E22DC9F91EFB812200A98DA7 /* actionbar_bg_6solid.png in Resources */,
 				BB303E0518B86B3400B6EBC9 /* MyProgram.png in Resources */,
 				E2252E8B1E4D899200B0CD69 /* discover-btn@2x.png in Resources */,
 				79A5E24719C9064E009D4018 /* Localizable.strings in Resources */,

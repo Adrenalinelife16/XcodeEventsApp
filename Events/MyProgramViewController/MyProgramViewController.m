@@ -254,7 +254,7 @@
             return 60;
             break;
         case 1:
-            return 250;
+            return 265;
             break;
         case 2:
             return 56;
@@ -574,35 +574,25 @@
     
     //Pull all the event ids out of index/array
     NSArray * stringId = [arrayWithIds objectAtIndex:0];
-    NSLog(@"stringId = %@", stringId);
-    
     
     /**Loop through each individual event id**/
     for (NSUInteger i = 0, count = [arrayFavouriteProgram count]; i < count; i++){
-        NSLog(@"Beginning MAIN For Loop");
-        NSLog(@"i = %li", i);
-        
+    
         //Pull single event id from main array
         NSString *arrayId = [[arrayFavouriteProgram[i] valueForKey:@"eventID"] stringValue];
         NSInteger valueId = [arrayId intValue];
-        NSLog(@"MainarrayIds = %@", arrayId);
         
         /**Loop through each individual fav id**/
         for (NSUInteger f = 0, count = [stringId count]; f < count; f++){
-            NSLog(@"FAV For Loop");
-            NSLog(@"f = %li", f);
-            
             
             //Pull single event id out of stringId
             NSString *singleId = stringId[f];
             
             //Convert singleId string to NSInteger
             NSInteger value = [singleId intValue];
-            NSLog(@"value = %li", value);
             
             //if event id = fav id
             if (valueId == value){
-                NSLog(@"valueId DOES MATCH value");
                 //add that current event into an array
                 [finalArray addObject:arrayFavouriteProgram[i]];
             }
@@ -611,7 +601,6 @@
         //end of main loop
     }
     //end of method
-    NSLog(@"Final Array List = %@", finalArray);
     arrayFavouriteProgram = finalArray;
     [self.tblMainTable reloadData];
 }

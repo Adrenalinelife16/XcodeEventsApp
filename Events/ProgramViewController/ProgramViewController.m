@@ -71,6 +71,9 @@
     _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
     self.searchController.searchResultsUpdater = self;
     [self.searchController.searchBar sizeToFit];
+    [self.searchController.searchBar setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6solid.png"]];
+    
+    
     self.tableView.tableHeaderView = self.searchController.searchBar;
     
     // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
@@ -500,5 +503,7 @@ NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
     // restore the text in the search field
     self.searchController.searchBar.text = [coder decodeObjectForKey:SearchBarTextKey];
 }
+
+
 
 @end
