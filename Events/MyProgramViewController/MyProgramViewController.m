@@ -59,8 +59,8 @@
  */
 
 #pragma mark - View Life Cycle
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
     segmentPosition=0;
     
@@ -71,10 +71,11 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
+    // issues with displaying cells, possibly
+    
     [self.tblMainTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     [self clickedMyCalender:nil];
-    
     
     
 }
@@ -209,7 +210,7 @@
             
             
            
-           EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
+            EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
             NSString *image = [dictOfCalEvents objectForKey:@"event_image_url"];
             
             cell.lblDateTime.text = [Utility getFormatedDateString:[dictOfCalEvents objectForKey:@"event_start_date"] dateFormatString:@"yyyy-MM-dd" dateFormatterString:@"dd MMMM"];
@@ -217,42 +218,28 @@
             
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
             
+            
+            
             if ([[arrMyCalEvents objectAtIndex:indexPath.row] valueForKey:@"event_image_url"] != nil) {
                 
-                
-                NSLog(@"Image URL %@",image);
+
                 [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",image]] placeholderImage:nil];
-                
                 
             }
             
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
-            
+
         }
+        
+        
         return cell;
     }
     else
         return NULL;
 }
-/*
- 
- - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
- {
- 
- 
- if (segmentPosition==1) {
- 
- 
- EventList *obj = (tableView == self.tblMainTable) ? self->arrayFavouriteProgram[indexPath.row]: self.[index];
- AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
- detailViewController.eventObj = obj;
- 
- 
- NSLog(@"selected tableview row is %ld",(long)indexPath.row);
- 
- }
- }
- */
+
+
+
 - (CGFloat) tableView: (UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *) indexPath
 {
     switch (segmentPosition) {
@@ -490,6 +477,7 @@
             }
             else{
                 [self.tblMainTable reloadData];
+                
                 return ;
             }
         }
@@ -621,7 +609,6 @@
 
 }
 
-
 -(void)getAllEventsFromServer {
     
     
@@ -752,10 +739,16 @@
         EventList *obj  =   [self->arrayFavouriteProgram objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
         
+    } if ([segue.identifier isEqualToString:@"event_name"]) {
+        
+        NSIndexPath *selectedRowIndex = [self.tblMainTable indexPathForSelectedRow];
+        AboutViewController *aboutVwController = [segue destinationViewController];
+        EventList *obj  =   [self->arrMyCalEvents objectAtIndex:selectedRowIndex.row];
+        aboutVwController.eventObj  =   obj;
     }
 }
 
-    
+
     /*
     EventList *eventObj;
     

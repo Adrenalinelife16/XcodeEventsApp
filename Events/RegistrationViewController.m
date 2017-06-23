@@ -80,45 +80,46 @@
 
 -(void)CreateUser {
     
-    NSMutableString *rawSTr = [NSMutableString stringWithFormat:@"first_name=%@&last_name=%@&email=%@&username=%@&pass=%@", txtFirstName.text, txtLastName.text, txtEmail.text, txtUsername.text, txtPassword.text];
-    
-    NSData *data = [rawSTr dataUsingEncoding:NSUTF8StringEncoding];
-    
-    NSURL *URL = [NSURL URLWithString:@"http://www.adrenalinelife.org/Adrenaline_Custom/newUser.php"];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
-    
-    [request setHTTPMethod:@"POST"];
-    [request setHTTPBody:data];
-    
-    
-    NSURLResponse *response;
-    NSError *err;
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
-    
-    NSError *error;
-    NSMutableArray *dictionary = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
-    NSLog(@"Dictionary Results %@", dictionary);
-    
-    NSMutableDictionary *object = [dictionary objectAtIndex:0];
-    NSMutableArray *number = [object objectForKey:@"Error"];
-    NSLog(@"%@", number);
-    
-    NSNumber *errorCode = number;
-    
-    // Check Username and Email duplicates-------------------------------------------------------------------------------
-    
-    
-    if ([errorCode intValue] == 0) {
-        NSLog(@"Username Doesn't Exist");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Account Created" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-        [alert show];
+    {
         
-    }
-    
-    if ([errorCode intValue] == 1) {
-        NSLog(@"Username Already Exist");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Username and Email Already Exist!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-        [alert show];
+        NSString *Fname = txtFirstName.text;
+        NSString *Lname = txtLastName.text;
+        NSString *FirstLast = [NSString stringWithFormat:@" %@ %@", Fname, Lname];
+        NSString *noCaps = [self.txtUsername.text lowercaseString];
+        
+        NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:FirstLast,@"name", self.txtUsername.text,@"user_login",noCaps,@"login_name", self.txtEmail.text,@"user_email",self.txtPassword.text,@"pwd", nil];
+        
+        [Utility GetDataForMethod:NSLocalizedString(@"REGISTER_METHOD", @"REGISTER_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+            
+            if ([response isKindOfClass:[NSDictionary class]]) {
+                if ([[response objectForKey:@"message"] isEqualToString:@"Sorry, that username already exists!"]) {
+                    [Utility alertNotice:APPNAME withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+                }
+                else{
+                    [Utility setNSUserDefaultValueForString:[response objectForKey:@"user_id"] strKey:KUSERID];
+                    UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:[response objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                    [av setTag:99];
+                    [av show];
+                }
+            }
+            else if ([response isKindOfClass:[NSArray class]]) {
+                
+                if ([[[response objectAtIndex:0] objectForKey:@"message"] isEqualToString:@"Sorry, that username already exists!"]) {
+                    [Utility alertNotice:APPNAME withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+                }
+                else{
+                    [Utility setNSUserDefaultValueForString:[[response objectAtIndex:0] objectForKey:@"user_id"] strKey:KUSERID];
+                    
+                    UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:[[response objectAtIndex:0] objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                    [av show];
+                }
+            }
+            [DSBezelActivityView removeViewAnimated:YES];
+            
+        }WithFailure:^(NSString *error){
+            [DSBezelActivityView removeViewAnimated:YES];
+            NSLog(@"%@",error);
+        }];
     }
 }
 

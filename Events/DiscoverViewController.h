@@ -11,6 +11,7 @@
 @interface DiscoverViewController : UIViewController
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrlVW;
+@property (strong, nonatomic) IBOutlet UITableView *tblDiscResults; // Displaying Discover results
 
 -(IBAction)btnDiscoverCategories:(id)sender;
 

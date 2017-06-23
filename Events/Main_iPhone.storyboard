@@ -1921,9 +1921,9 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ymL-KN-Yv3"/>
-        <segue reference="z1t-Ts-zQv"/>
         <segue reference="GW1-iY-vhh"/>
+        <segue reference="ymL-KN-Yv3"/>
+        <segue reference="7RI-D6-Cu2"/>
         <segue reference="5S3-4t-Vn7"/>
     </inferredMetricsTieBreakers>
 </document>
