@@ -207,24 +207,26 @@
             
             NSDictionary *dictOfCalEvents = [NSDictionary dictionaryWithDictionary:[arrMyCalEvents objectAtIndex:indexPath.row]];
             
-            NSDictionary *posterDict = [arrMyCalEvents objectAtIndex:indexPath.row];
-            NSString *pathToPoster= [posterDict objectForKey:@"event_image_url"];
-            
             
            
-            
+           EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
+            NSString *image = [dictOfCalEvents objectForKey:@"event_image_url"];
             
             cell.lblDateTime.text = [Utility getFormatedDateString:[dictOfCalEvents objectForKey:@"event_start_date"] dateFormatString:@"yyyy-MM-dd" dateFormatterString:@"dd MMMM"];
             cell.lblEventName.text=[dictOfCalEvents valueForKey:@"event_name"];
             
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
             
-            cell.imgIcon.image = [posterDict valueForKey:pathToPoster];
-            
+            if ([[arrMyCalEvents objectAtIndex:indexPath.row] valueForKey:@"event_image_url"] != nil) {
+                
+                
+                NSLog(@"Image URL %@",image);
+                [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",image]] placeholderImage:nil];
+                
+                
+            }
             
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
-            
-            
             
         }
         return cell;
