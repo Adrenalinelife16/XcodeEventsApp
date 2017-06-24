@@ -1,8 +1,8 @@
 //
 //  XMLReader.m
 //
-//  Created by Troy on 9/18/10.
-//  Copyright 2010 Troy Brant. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import "XMLReader.h"

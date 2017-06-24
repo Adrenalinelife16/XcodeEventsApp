@@ -2,8 +2,8 @@
 //  PolicyViewController.h
 //  Events
 //
-//  Created by Michael Cather on 5/11/17.
-//  Copyright © 2017 Teknowledge Software. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

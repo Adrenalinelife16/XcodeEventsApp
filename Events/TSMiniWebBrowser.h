@@ -2,7 +2,7 @@
 //  TSMiniWebBrowser.h
 //  TSMiniWebBrowserDemo
 //
-//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Created by Chazz Romeo, Michael Cather.
 //  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
