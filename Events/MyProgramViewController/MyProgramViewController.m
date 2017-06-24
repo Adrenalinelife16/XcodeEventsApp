@@ -28,6 +28,8 @@
     NSMutableArray *arrMyCalEvents;//for event calendar eventlist
     NSMutableArray *arrayResponseCalEvents;//for event calendar eventlist response from server
     NSMutableArray *arrayFilterResults; // Array that displays on Fav events
+    NSMutableArray *arrayCalConversion; // Using for segue to about controller
+    NSMutableArray *arrayCalStorage; // Store all events for calendar
     
     int segmentPosition;//0 or 1 or 2 to check which segment is selected
     UIView *calendarBG;//for calendar view
@@ -208,7 +210,7 @@
             
             NSDictionary *dictOfCalEvents = [NSDictionary dictionaryWithDictionary:[arrMyCalEvents objectAtIndex:indexPath.row]];
             
-            
+            arrayCalConversion = arrMyCalEvents;
            
             EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
             NSString *image = [dictOfCalEvents objectForKey:@"event_image_url"];
@@ -231,7 +233,8 @@
 
         }
         
-        
+        [self arrayConversion];
+        [self getAllEventsFromServer];
         return cell;
     }
     else
@@ -431,6 +434,7 @@
 {
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading Events"];
     
+    
     NSCalendar* calendar = [NSCalendar currentCalendar];
     NSDateComponents* components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:[NSDate date]];
     NSString *strYear = [NSString stringWithFormat:@"%ld",(long)[components year]];
@@ -471,9 +475,11 @@
                 NSMutableArray *arrayTempDates = [[NSMutableArray alloc] init];
                 for (NSString *str in arrayCalDateSelectedMonth) {
                     [arrayTempDates addObject:[NSNumber numberWithInt:[str intValue]]];
+                    arrayCalConversion = arrayTempDates;
                 }
                 
                 [calView markDates:[NSArray arrayWithArray:arrayTempDates]];
+           
             }
             else{
                 [self.tblMainTable reloadData];
@@ -538,7 +544,7 @@
 
 
 -(void)getFavorites{
-    
+  
     
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
     
@@ -547,8 +553,8 @@
         
         arrayFavEvent = response;
         [self filterFavEventsArray];
-        
-        
+            
+
     }WithFailure:^(NSString *error){
         [DSBezelActivityView removeViewAnimated:YES];
         NSLog(@"%@",error);
@@ -598,7 +604,15 @@
         }
         //end of method
         arrayFavouriteProgram = finalArray;
-        [self.tblMainTable reloadData];
+        
+        if ([finalArray count]>0) {
+            [self.tblMainTable reloadData];
+        } else {
+            
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Favorite Events" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [av show];
+            
+        }
 
     } else {
         
@@ -609,7 +623,56 @@
 
 }
 
+
+-(void)arrayConversion {
+    
+    
+    //Create emtpy array
+    NSMutableArray *finalArray = [NSMutableArray array];
+    
+    //Pull Array of Ids only from Dictionary
+    NSArray *arrayWithIds = [arrayCalConversion valueForKey:@"event_id"];
+    
+    //Pull all the event ids out of index/array
+    NSArray * stringId = [arrayWithIds objectAtIndex:0];
+    
+    /**Loop through each individual event id**/
+    for (NSUInteger i = 0, count = [arrayFavouriteProgram count]; i < count; i++){
+        
+        //Pull single event id from main array
+        NSString *arrayId = [[arrayFavouriteProgram[i] valueForKey:@"eventID"] stringValue];
+        NSInteger valueId = [arrayId intValue];
+        
+        /**Loop through each individual fav id**/
+        for (NSUInteger f = 0, count = [stringId count]; f < count; f++){
+            
+            //Pull single event id out of stringId
+            NSString *singleId = stringId[f];
+            
+            //Convert singleId string to NSInteger
+            NSInteger value = [singleId intValue];
+            
+            //if event id = fav id
+            if (valueId == value){
+                //add that current event into an array
+                [finalArray addObject:arrayCalConversion[i]];
+            }
+            //end of fav loop
+        }
+        //end of main loop
+    }
+    //end of method
+    arrayCalConversion = finalArray;
+    
+    
+    
+    
+}
+
+
+
 -(void)getAllEventsFromServer {
+    
     
     
     NSDictionary *dictOfEventRequestParameter = [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id", nil];
@@ -684,7 +747,7 @@
          */
         gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
         [self getFavorites];
-        
+    
     }WithFailure:^(NSString *error)
      {
          [DSBezelActivityView removeViewAnimated:NO];
@@ -727,8 +790,6 @@
 }
 
 
-
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
@@ -748,49 +809,4 @@
     }
 }
 
-
-    /*
-    EventList *eventObj;
-    
-    BOOL IsMatch = YES;
-    if ([segue.identifier isEqualToString:@"program"]) {
-        for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {
-            eventObj = [gArrayEvents objectAtIndex:favCount];
-            
-            for (NSDictionary *dictDetails in arrayFavouriteProgram) {
-                if ([eventObj.eventName isEqualToString:[dictDetails objectForKey:@"%@"]]) {
-                    IsMatch = YES;
-                    break;
-                }
-            }
-            if (IsMatch) {
-                break;
-            }
-        }
-    }
-    else{
-        for (int eventCount = 0; eventCount < [gArrayEvents count]; eventCount++) {
-            eventObj = [gArrayEvents objectAtIndex:eventCount];
-            
-            for (NSDictionary *dictEventDetails in arrMyCalEvents) {
-                if ([eventObj.eventName isEqualToString:[dictEventDetails objectForKey:@"event_name"]]) {
-                    IsMatch = YES;
-                    break;
-                }
-            }
-            if (IsMatch) {
-                break;
-            }
-        }
-    }
-    
-    if (IsMatch) {
-        AboutViewController *aboutVwController = [segue destinationViewController];
-        aboutVwController.eventObj =   eventObj;
-    }
-     
-    
-}
-
-*/
 @end
