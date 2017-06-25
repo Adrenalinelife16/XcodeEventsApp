@@ -89,6 +89,7 @@
     self.navigationItem.title = @"Find Your Life";
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [self getAllEventsFromServer];
     
 }
 
@@ -327,7 +328,7 @@
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
-    [self getAllEventsFromServer];
+    [self getFavorites];
     
     
 }
@@ -629,7 +630,7 @@
     NSMutableArray *finalArray = [NSMutableArray array];
     
     //Pull Array of Ids only from Dictionary
-    NSArray *arrayWithIds = [arrayCalConversion valueForKey:@"event_id"];
+    NSArray *arrayWithIds = [arrMyCalEvents valueForKey:@"event_id"];
     
     //Pull all the event ids out of index/array
     NSArray * stringId = [arrayWithIds objectAtIndex:0];
@@ -744,7 +745,7 @@
          *  global array for events data.
          */
         gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
-        [self getFavorites];
+        
     
     }WithFailure:^(NSString *error)
      {
