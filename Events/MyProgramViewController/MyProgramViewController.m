@@ -232,9 +232,7 @@
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
 
         }
-        
-        [self arrayConversion];
-        [self getAllEventsFromServer];
+    
         return cell;
     }
     else
