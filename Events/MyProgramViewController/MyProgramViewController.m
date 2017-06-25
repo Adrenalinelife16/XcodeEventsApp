@@ -30,6 +30,7 @@
     NSMutableArray *arrayFilterResults; // Array that displays on Fav events
     NSMutableArray *arrayCalConversion; // Using for segue to about controller
     NSMutableArray *arrayCalStorage; // Store all events for calendar
+    NSMutableArray *arrayFilterMyCalResults; //Store all cal events for segue
     
     int segmentPosition;//0 or 1 or 2 to check which segment is selected
     UIView *calendarBG;//for calendar view
@@ -559,6 +560,50 @@
         NSLog(@"%@",error);
     }];
     
+}
+
+- (void)filterMyCalEvents {
+    
+    //Create emtpy array
+    NSMutableArray *finalArray = [NSMutableArray array];
+    
+    //Pull Array of Ids only from Dictionary
+    NSArray *arrayCalWithIds = [arrMyCalEvents valueForKey:@"event_id"];
+    NSLog(@"arrayCalWithIds = %@", arrayCalWithIds);
+    
+    
+    /**Loop through each individual event id**/
+    for (NSUInteger i = 0, count = [arrayFavouriteProgram count]; i < count; i++){
+        
+        //Pull single event id from main array
+        NSString *arrayId = [[arrayFavouriteProgram[i] valueForKey:@"eventID"] stringValue];
+        NSLog(@"arrayId = %@", arrayId);
+        NSInteger valueId = [arrayId intValue];
+        
+        /**Loop through each individual fav id**/
+        for (NSUInteger f = 0, count = [arrayCalWithIds count]; f < count; f++){
+            //Pull all the event ids out of index/array
+            NSString * stringId = [arrayCalWithIds objectAtIndex:f];
+            NSLog(@"stringId = %@", stringId);
+            NSLog(@"count = %lu", count);
+            NSLog(@"f = %lu", f);
+            //Pull single event id out of stringId
+            //NSString *singleId = stringId[0];
+            //Convert singleId string to NSInteger
+            NSInteger value = [stringId intValue];
+            
+            //if event id = fav id
+            if (valueId == value){
+                //add that current event into an array
+                [finalArray addObject:arrayFavouriteProgram[i]];
+            }
+            //end of fav loop
+        }
+        //end of main loop
+    }
+    //end of method
+    arrayFilterMyCalResults = finalArray;
+    NSLog(@"final Array = %@", finalArray);
 }
 
 
