@@ -667,56 +667,7 @@
 
 }
 
-
--(void)arrayConversion {
-    
-    
-    //Create emtpy array
-    NSMutableArray *finalArray = [NSMutableArray array];
-    
-    //Pull Array of Ids only from Dictionary
-    NSArray *arrayWithIds = [arrMyCalEvents valueForKey:@"event_id"];
-    
-    //Pull all the event ids out of index/array
-    NSArray * stringId = [arrayWithIds objectAtIndex:0];
-    
-    /**Loop through each individual event id**/
-    for (NSUInteger i = 0, count = [arrayFavouriteProgram count]; i < count; i++){
-        
-        //Pull single event id from main array
-        NSString *arrayId = [[arrayFavouriteProgram[i] valueForKey:@"eventID"] stringValue];
-        NSInteger valueId = [arrayId intValue];
-        
-        /**Loop through each individual fav id**/
-        for (NSUInteger f = 0, count = [stringId count]; f < count; f++){
-            
-            //Pull single event id out of stringId
-            NSString *singleId = stringId[f];
-            
-            //Convert singleId string to NSInteger
-            NSInteger value = [singleId intValue];
-            
-            //if event id = fav id
-            if (valueId == value){
-                //add that current event into an array
-                [finalArray addObject:arrayCalConversion[i]];
-            }
-            //end of fav loop
-        }
-        //end of main loop
-    }
-    //end of method
-    arrayCalConversion = finalArray;
-    
-    
-    
-    
-}
-
-
-
 -(void)getAllEventsFromServer {
-    
     
     
     NSDictionary *dictOfEventRequestParameter = [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id", nil];
@@ -848,7 +799,7 @@
         
         NSIndexPath *selectedRowIndex = [self.tblMainTable indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
-        EventList *obj  =   [self->arrMyCalEvents objectAtIndex:selectedRowIndex.row];
+        EventList *obj  =   [self->arrayFilterMyCalResults objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
     }
 }
