@@ -2,7 +2,7 @@
 //  MyProgramViewController.m
 //  Events
 //
-//  Created by Chazz Romeo, Michael Cather & Josh Martin.
+//  Created by Chazz Romeo, Michael Cather.
 //  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
@@ -28,6 +28,8 @@
     NSMutableArray *arrMyCalEvents;//for event calendar eventlist
     NSMutableArray *arrayResponseCalEvents;//for event calendar eventlist response from server
     NSMutableArray *arrayFilterResults; // Array that displays on Fav events
+    NSMutableArray *arrayCalConversion; // Using for segue to about controller
+    NSMutableArray *arrayCalStorage; // Store all events for calendar
     
     int segmentPosition;//0 or 1 or 2 to check which segment is selected
     UIView *calendarBG;//for calendar view
@@ -59,8 +61,8 @@
  */
 
 #pragma mark - View Life Cycle
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
     segmentPosition=0;
     
@@ -71,10 +73,11 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
+    // issues with displaying cells, possibly
+    
     [self.tblMainTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     [self clickedMyCalender:nil];
-    
     
     
 }
@@ -86,6 +89,7 @@
     self.navigationItem.title = @"Find Your Life";
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [self getAllEventsFromServer];
     
 }
 
@@ -207,9 +211,9 @@
             
             NSDictionary *dictOfCalEvents = [NSDictionary dictionaryWithDictionary:[arrMyCalEvents objectAtIndex:indexPath.row]];
             
-            
+            arrayCalConversion = arrMyCalEvents;
            
-           EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
+            EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
             NSString *image = [dictOfCalEvents objectForKey:@"event_image_url"];
             
             cell.lblDateTime.text = [Utility getFormatedDateString:[dictOfCalEvents objectForKey:@"event_start_date"] dateFormatString:@"yyyy-MM-dd" dateFormatterString:@"dd MMMM"];
@@ -217,42 +221,27 @@
             
             cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
             
+            
+            
             if ([[arrMyCalEvents objectAtIndex:indexPath.row] valueForKey:@"event_image_url"] != nil) {
                 
-                
-                NSLog(@"Image URL %@",image);
+
                 [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",image]] placeholderImage:nil];
-                
                 
             }
             
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
-            
+
         }
+    
         return cell;
     }
     else
         return NULL;
 }
-/*
- 
- - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
- {
- 
- 
- if (segmentPosition==1) {
- 
- 
- EventList *obj = (tableView == self.tblMainTable) ? self->arrayFavouriteProgram[indexPath.row]: self.[index];
- AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
- detailViewController.eventObj = obj;
- 
- 
- NSLog(@"selected tableview row is %ld",(long)indexPath.row);
- 
- }
- }
- */
+
+
+
 - (CGFloat) tableView: (UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *) indexPath
 {
     switch (segmentPosition) {
@@ -339,7 +328,7 @@
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
-    [self getAllEventsFromServer];
+    [self getFavorites];
     
     
 }
@@ -444,6 +433,7 @@
 {
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading Events"];
     
+    
     NSCalendar* calendar = [NSCalendar currentCalendar];
     NSDateComponents* components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:[NSDate date]];
     NSString *strYear = [NSString stringWithFormat:@"%ld",(long)[components year]];
@@ -484,12 +474,15 @@
                 NSMutableArray *arrayTempDates = [[NSMutableArray alloc] init];
                 for (NSString *str in arrayCalDateSelectedMonth) {
                     [arrayTempDates addObject:[NSNumber numberWithInt:[str intValue]]];
+                    arrayCalConversion = arrayTempDates;
                 }
                 
                 [calView markDates:[NSArray arrayWithArray:arrayTempDates]];
+           
             }
             else{
                 [self.tblMainTable reloadData];
+                
                 return ;
             }
         }
@@ -550,7 +543,7 @@
 
 
 -(void)getFavorites{
-    
+  
     
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
     
@@ -559,8 +552,8 @@
         
         arrayFavEvent = response;
         [self filterFavEventsArray];
-        
-        
+            
+
     }WithFailure:^(NSString *error){
         [DSBezelActivityView removeViewAnimated:YES];
         NSLog(@"%@",error);
@@ -610,7 +603,15 @@
         }
         //end of method
         arrayFavouriteProgram = finalArray;
-        [self.tblMainTable reloadData];
+        
+        if ([finalArray count]>0) {
+            [self.tblMainTable reloadData];
+        } else {
+            
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Favorite Events" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [av show];
+            
+        }
 
     } else {
         
@@ -622,7 +623,55 @@
 }
 
 
+-(void)arrayConversion {
+    
+    
+    //Create emtpy array
+    NSMutableArray *finalArray = [NSMutableArray array];
+    
+    //Pull Array of Ids only from Dictionary
+    NSArray *arrayWithIds = [arrMyCalEvents valueForKey:@"event_id"];
+    
+    //Pull all the event ids out of index/array
+    NSArray * stringId = [arrayWithIds objectAtIndex:0];
+    
+    /**Loop through each individual event id**/
+    for (NSUInteger i = 0, count = [arrayFavouriteProgram count]; i < count; i++){
+        
+        //Pull single event id from main array
+        NSString *arrayId = [[arrayFavouriteProgram[i] valueForKey:@"eventID"] stringValue];
+        NSInteger valueId = [arrayId intValue];
+        
+        /**Loop through each individual fav id**/
+        for (NSUInteger f = 0, count = [stringId count]; f < count; f++){
+            
+            //Pull single event id out of stringId
+            NSString *singleId = stringId[f];
+            
+            //Convert singleId string to NSInteger
+            NSInteger value = [singleId intValue];
+            
+            //if event id = fav id
+            if (valueId == value){
+                //add that current event into an array
+                [finalArray addObject:arrayCalConversion[i]];
+            }
+            //end of fav loop
+        }
+        //end of main loop
+    }
+    //end of method
+    arrayCalConversion = finalArray;
+    
+    
+    
+    
+}
+
+
+
 -(void)getAllEventsFromServer {
+    
     
     
     NSDictionary *dictOfEventRequestParameter = [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id", nil];
@@ -696,8 +745,8 @@
          *  global array for events data.
          */
         gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
-        [self getFavorites];
         
+    
     }WithFailure:^(NSString *error)
      {
          [DSBezelActivityView removeViewAnimated:NO];
@@ -740,8 +789,6 @@
 }
 
 
-
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
@@ -752,52 +799,13 @@
         EventList *obj  =   [self->arrayFavouriteProgram objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
         
-    }
-}
-
-    
-    /*
-    EventList *eventObj;
-    
-    BOOL IsMatch = YES;
-    if ([segue.identifier isEqualToString:@"program"]) {
-        for (int favCount = 0; favCount <[gArrayEvents count]; favCount ++) {
-            eventObj = [gArrayEvents objectAtIndex:favCount];
-            
-            for (NSDictionary *dictDetails in arrayFavouriteProgram) {
-                if ([eventObj.eventName isEqualToString:[dictDetails objectForKey:@"%@"]]) {
-                    IsMatch = YES;
-                    break;
-                }
-            }
-            if (IsMatch) {
-                break;
-            }
-        }
-    }
-    else{
-        for (int eventCount = 0; eventCount < [gArrayEvents count]; eventCount++) {
-            eventObj = [gArrayEvents objectAtIndex:eventCount];
-            
-            for (NSDictionary *dictEventDetails in arrMyCalEvents) {
-                if ([eventObj.eventName isEqualToString:[dictEventDetails objectForKey:@"event_name"]]) {
-                    IsMatch = YES;
-                    break;
-                }
-            }
-            if (IsMatch) {
-                break;
-            }
-        }
-    }
-    
-    if (IsMatch) {
+    } if ([segue.identifier isEqualToString:@"event_name"]) {
+        
+        NSIndexPath *selectedRowIndex = [self.tblMainTable indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
-        aboutVwController.eventObj =   eventObj;
+        EventList *obj  =   [self->arrMyCalEvents objectAtIndex:selectedRowIndex.row];
+        aboutVwController.eventObj  =   obj;
     }
-     
-    
 }
 
-*/
 @end

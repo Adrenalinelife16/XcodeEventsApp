@@ -2,8 +2,8 @@
 //  SearchCustomCell.h
 //  Events
 //
-//  Created by Lamar Artare on 2/28/17.
-//  Copyright © 2017 Teknowledge Software. All rights reserved.
+//  Created by Chazz Romeo, Michael Cather.
+//  Copyright (c) 2017 Adrenaline Life. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
