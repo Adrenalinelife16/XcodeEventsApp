@@ -28,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Find Your Life";
+    
     // Do any additional setup after loading the view.
 }
 
@@ -39,7 +40,8 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [self getAllEventsFromServer];
-    self.navigationItem.hidesBackButton = YES;    
+    self.navigationItem.hidesBackButton = YES;
+    
 }
 
 

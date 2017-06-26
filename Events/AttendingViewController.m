@@ -38,21 +38,30 @@
 
 #pragma mark - Button Clicked Function
 - (IBAction)clickedMyAttending:(id)sender {
+    [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
+    [self.btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
+    [self.btnMyCalender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+
     
     [self getMyTickets];
+    
     
     
     
 }
 
 - (IBAction)clickedMyFavourites:(id)sender {
+    [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
+    [self.btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
+    [self.btnMyCalender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+
     
     
     
 }
 
 - (IBAction)clickedMyCalender:(id)sender {
-    
+       
 }
 
 
