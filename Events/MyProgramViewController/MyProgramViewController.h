@@ -21,14 +21,14 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnMyTickets;
 @property (strong, nonatomic) IBOutlet UIButton *btnMyFavourites;
 @property (strong, nonatomic) IBOutlet UIButton *btnMyCalender;
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain;
+@property (strong, nonatomic) IBOutlet UIScrollView *calendarView;
 @property (strong, nonatomic) EventList *eventObjFav;
 
 
 @property (nonatomic,retain) NSMutableData *receivedData;
 @property (strong, nonatomic) NSMutableArray *arrayFavEvent;
 
-- (IBAction)clickedMyTickets:(id)sender;
+- (IBAction)clickedMyAttending:(id)sender;
 
 - (IBAction)clickedMyFavourites:(id)sender;
 

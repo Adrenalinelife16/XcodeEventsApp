@@ -15,22 +15,22 @@
 //   "http://adrenalinelife.org/"
 
 //web service methods
-"GETEVENTS_METHOD"          =   "/Adrenaline_Custom/api/getEvents";
+"GETEVENTS_METHOD"          =   "/Adrenaline_App/api/getEvents";
 "GETUSERTICKETS_METHOD"     =   "/api/getUserTickets";
 "BOOKTICKET_METHOD"         =   "/api/getUserTickets/bookTicket";
 "CHECKBOOK_METHOD"          =   "/api/getUserTickets/checkBook";
 "GETEVENTSBYMONTH_METHOD"   =   "/api/getEventsByMonth";
 "GETFEEDS_METHOD"           =   "/webservices/tweet-fb.php";
 "LOGIN_METHOD"              =   "/api/Login";
-"REGISTER_METHOD"           =   "/Adrenaline_Custom/api/Register";
-"CREATE_EVENT_METHOD"       =   "/Adrenaline_Custom/add_new.php";
-"ADD_REMOVE_FAV_EVENT"      =   "/Adrenaline_Custom/api/addRemoveFav";
-"GET_FAV_EVENT"             =   "/Adrenaline_Custom/api/getFavEvents";
+"REGISTER_METHOD"           =   "/Adrenaline_App/api/Register";
+"CREATE_EVENT_METHOD"       =   "/Adrenaline_App/add_new.php";
+"ADD_REMOVE_FAV_EVENT"      =   "/Adrenaline_App/api/addRemoveFav";
+"GET_FAV_EVENT"             =   "/Adrenaline_App/api/getFavEvents";
 //"USER_HAS_FAV_EVENT"        =   "/Adrenaline_Custom/api/getFavEvents/isFavourite";
 
 // Testing PHP hit method.
 
-"USER_HAS_FAV_EVENT"        =   "/Adrenaline_Custom/api/getFavEvents";
+"USER_HAS_FAV_EVENT"        =   "/Adrenaline_App/api/getFavEvents";
 
 
 

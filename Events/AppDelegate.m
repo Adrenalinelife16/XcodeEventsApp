@@ -18,6 +18,7 @@
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6.png"] forBarMetrics:UIBarMetricsDefault];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
 
     
     // Override point for customization after application launch.

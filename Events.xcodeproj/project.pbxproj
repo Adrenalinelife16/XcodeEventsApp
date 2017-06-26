@@ -76,6 +76,7 @@
 		72DCD05B1E5D2BF700792EEA /* MoreCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */; };
 		72DCD06D1E706C0200792EEA /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */; };
 		72ED09851F001D2200F60832 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ED09841F001D2200F60832 /* FavoritesViewController.m */; };
+		72ED09881F01405500F60832 /* AttendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ED09871F01405500F60832 /* AttendingViewController.m */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
 		7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916556719044E6900F4D9D3 /* MyEventTickets.m */; };
@@ -412,6 +413,8 @@
 		72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewController.m; sourceTree = "<group>"; };
 		72ED09831F001D2200F60832 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
 		72ED09841F001D2200F60832 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		72ED09861F01405500F60832 /* AttendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendingViewController.h; sourceTree = "<group>"; };
+		72ED09871F01405500F60832 /* AttendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendingViewController.m; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
 		790AE0B318F9862500FBE2F2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
@@ -854,6 +857,13 @@
 			name = Notes;
 			sourceTree = "<group>";
 		};
+		7274EC5B1F016C250019B9AB /* Favorite Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Favorite Custom Cell";
+			sourceTree = "<group>";
+		};
 		72AF696E1E783BDE0033DB1F /* Tab Bar */ = {
 			isa = PBXGroup;
 			children = (
@@ -898,6 +908,7 @@
 		72ED09811F001BE800F60832 /* Favorites Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7274EC5B1F016C250019B9AB /* Favorite Custom Cell */,
 				72ED09831F001D2200F60832 /* FavoritesViewController.h */,
 				72ED09841F001D2200F60832 /* FavoritesViewController.m */,
 			);
@@ -907,6 +918,8 @@
 		72ED09821F001C1B00F60832 /* Attending Controller */ = {
 			isa = PBXGroup;
 			children = (
+				72ED09861F01405500F60832 /* AttendingViewController.h */,
+				72ED09871F01405500F60832 /* AttendingViewController.m */,
 			);
 			name = "Attending Controller";
 			sourceTree = "<group>";
@@ -1893,6 +1906,7 @@
 				798D9E2518F15F2000A69513 /* UIButton+WebCache.m in Sources */,
 				79691D0718F00C8700ABD52D /* ASIFormDataRequest.m in Sources */,
 				7122DB4118BB6E9000C044E8 /* MyProgramCustomCell.m in Sources */,
+				72ED09881F01405500F60832 /* AttendingViewController.m in Sources */,
 				793508D3192132400001CC34 /* Events.xcdatamodeld in Sources */,
 				7112224118BCD7E800E77A4A /* MoreViewController.m in Sources */,
 				BB303E3418B8802E00B6EBC9 /* ProgramViewController.m in Sources */,
