@@ -20,6 +20,7 @@
 #import "AboutViewController.h"
 #import "ProgramViewController.h"
 #import "Utility.h"
+#import "FavoritesViewController.h"
 
 @interface MyProgramViewController ()
 {
@@ -328,9 +329,12 @@
     [self.btnMyFavourites setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
-    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
-    [self getFavorites];
-    
+//    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
+//    [self getFavorites];
+    NSString * storyboardName = @"Main_iPhone";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"favoriteVC"];
+    [self presentViewController:vc animated:NO completion:nil];
     
 }
 

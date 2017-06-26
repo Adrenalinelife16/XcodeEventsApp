@@ -1067,7 +1067,6 @@
                                         </state>
                                         <connections>
                                             <action selector="clickedMyFavourites:" destination="3YM-N3-Ofp" eventType="touchUpInside" id="Pgf-Zc-ttV"/>
-                                            <segue destination="q9C-wm-4ug" kind="push" id="uE7-SJ-Gk2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="A3x-0X-7oU">
@@ -1167,7 +1166,7 @@
         <!--Favorites View Controller-->
         <scene sceneID="K9f-oL-E49">
             <objects>
-                <viewController id="q9C-wm-4ug" customClass="FavoritesViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="favoriteVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q9C-wm-4ug" customClass="FavoritesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qhD-BP-gm6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
