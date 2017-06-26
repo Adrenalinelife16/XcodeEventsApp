@@ -60,6 +60,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
+    
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     NSDate *currentDate =   [NSDate date];

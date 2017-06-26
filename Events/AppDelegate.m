@@ -16,7 +16,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6.png"] forBarMetrics:UIBarMetricsDefault];
-    
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
 

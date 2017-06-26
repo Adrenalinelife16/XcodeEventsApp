@@ -4,42 +4,49 @@ Issues before Beta Launch
 
 1. Search Description
 
-2. Fix Icons
+2. Fix Icons                                    -           MICHAEL
 
-3. Discover Page
+3. Discover Page (Fix Images Now)               -           CHAZZ
 
-4. Calendar Adjustment
+4. Calendar Adjustment                          -       HOLD for new cal controller
 
-5. Adjusting My Program View Controller
+5. Adjusting My Program View Controller         -           MICHAEL
 
-6. UI Design Calendar Event format
+6. UI Design Calendar Event format              -       HOLD for new cal controller
 
-7. White space on favorites
-
-8. When searching image size changes
+7. White space on favorites                     -       HOLD for new fav controller
 
 9. Fix all scroll views
 
-    - Discover Scroll
-    - Favorites Scroll
-    - Social Scroll
-    - Policy Scroll
-    - Terms Scroll
-    - Abous Us Scroll
+    - Favorites Scroll                          -       HOLD for new fav controllor
 
-10. Ask Julie about Social Feed Title
 
-11. Clean up Login
-
-12. Clean up Register
+10. Ask Julie about Social Feed Title           -       ASKED JULIE (MUST FOLLOW UP)
 
 13. Login user after they register
 
-14. Registration title change to Register
+------------------------FINISHED CHECKLIST FOR 6/25/17--------------------------------------
 
-15. Segue from Register for Terms/Pivacy Policy
+8. When searching image size changes            - DONE
 
-16. Status bar hidden when open app - DONE 
+9. Fix all scroll views
+
+- Discover Scroll                           - DONE
+- Favorites Scroll                          -       HOLD for new fav controllor
+- Social Scroll                             - DONE
+- Policy Scroll                             - DONE
+- Terms Scroll                              - DONE
+- Abous Us Scroll                           - DONE
+
+-11. Clean up Login                              - DONE
+
+-12. Clean up Register                           - DONE
+
+14. Registration title change to Register       - DONE
+
+15. Segue from Register for Terms/Pivacy Policy - DONE
+
+-16. Status bar hidden when open app             - DONE
 
 
 
