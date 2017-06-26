@@ -171,6 +171,8 @@
     UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"attendingVC"];
     [self presentViewController:vc animated:NO completion:nil];
     
+    // test
+    
     /*
     if ([self checkLogin])
     {
