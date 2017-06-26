@@ -27,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"Find Your Life";
     // Do any additional setup after loading the view.
 }
 
@@ -38,7 +39,7 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [self getAllEventsFromServer];
-    
+    self.navigationItem.hidesBackButton = YES;    
 }
 
 
@@ -50,11 +51,7 @@
 #pragma mark - Button Clicked Function
 - (IBAction)clickedMyAttending:(id)sender {
     
-    NSString * storyboardName = @"Main_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"attendingVC"];
-    [self presentViewController:vc animated:NO completion:nil];
-
+    
    
     
     }
@@ -71,22 +68,12 @@
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     //    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
     //    [self getFavorites];
-    NSString * storyboardName = @"Main_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"favoriteVC"];
-    [self presentViewController:vc animated:NO completion:nil];
-
     
     
 }
 
 - (IBAction)clickedMyCalender:(id)sender {
-    NSString * storyboardName = @"Main_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"eventsFeed"];
-    [self presentViewController:vc animated:NO completion:nil];
-  
-
+    
 }
 
 #pragma mark - Table view data source

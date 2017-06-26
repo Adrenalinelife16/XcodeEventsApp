@@ -67,8 +67,6 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    segmentPosition=0;
-    
     //set current date as event date before getting from server
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -93,6 +91,7 @@
     self.navigationItem.title = @"Find Your Life";
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationItem.hidesBackButton = YES;
     [self createCalendarView];
  //   [self.tblMainTable reloadData];
     
@@ -166,11 +165,6 @@
 #pragma mark - Button Clicked Function
 - (IBAction)clickedMyAttending:(id)sender {
     
-    NSString * storyboardName = @"Main_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"attendingVC"];
-    [self presentViewController:vc animated:NO completion:nil];
-    
     // test
     
     /*
@@ -241,17 +235,10 @@
 //    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
 //    [self getFavorites];
 
-    NSString * storyboardName = @"Main_iPhone";
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"favoriteVC"];
-    [self presentViewController:vc animated:NO completion:nil];
-
-
     
 }
 
 - (IBAction)clickedMyCalender:(id)sender {
-    segmentPosition=0;
     
     [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     [self.btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
