@@ -19,6 +19,10 @@
     
     // Center Tab bar icons and removed shadow
     
+    
+    
+    
+    
     [[UITabBar appearance] setSelectionIndicatorImage:[[UIImage alloc] init]];
     
     [self.viewControllers enumerateObjectsUsingBlock:^(UIViewController *vc, NSUInteger idx, BOOL *stop) {
