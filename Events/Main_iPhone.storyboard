@@ -994,10 +994,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.20634347200393677" green="0.21870088577270508" blue="0.21913972496986389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" id="OpQ-At-nbu">
-                                <rect key="frame" x="0.0" y="110" width="320" height="306"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.1939549446105957" green="0.20323929190635681" blue="0.20356130599975586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
