@@ -10,15 +10,15 @@
 #import <UIKit/UIKit.h>
 #import "UIColor+expanded.h"
 
-#define kVRGCalendarViewTopBarHeight 60
+#define kVRGCalendarViewTopBarHeight 45
 #define kVRGCalendarViewWidth 320
 
+//#define kVRGCalendarViewDayWidth 44
+//#define kVRGCalendarViewDayHeight 40
 #define kVRGCalendarViewDayWidth 44
-#define kVRGCalendarViewDayHeight 44
-//#define kVRGCalendarViewDayWidth 30
-//#define kVRGCalendarViewDayHeight 30
+#define kVRGCalendarViewDayHeight 35
 
-#define kVRGCalendarViewDayPadding 15
+#define kVRGCalendarViewDayPadding 5
 @protocol VRGCalendarViewDelegate;
 @interface VRGCalendarView : UIView {
     id <VRGCalendarViewDelegate> delegate;

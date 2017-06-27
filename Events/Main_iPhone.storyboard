@@ -931,10 +931,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" id="OpQ-At-nbu">
-                                <rect key="frame" x="0.0" y="113" width="320" height="306"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
                             <view contentMode="scaleToFill" id="Fo9-QF-KNL">
                                 <rect key="frame" x="0.0" y="64" width="320" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -984,6 +980,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.20634347200393677" green="0.21870088577270508" blue="0.21913972496986389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" id="OpQ-At-nbu">
+                                <rect key="frame" x="0.0" y="110" width="320" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.1939549446105957" green="0.20323929190635681" blue="0.20356130599975586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -2032,6 +2032,6 @@
         <segue reference="5S3-4t-Vn7"/>
         <segue reference="lUk-1e-ZYk"/>
         <segue reference="4ze-bK-Lvy"/>
-        <segue reference="B3C-Zm-d5g"/>
+        <segue reference="Cdl-T2-4OV"/>
     </inferredMetricsTieBreakers>
 </document>
