@@ -1742,7 +1742,7 @@
             </objects>
             <point key="canvasLocation" x="-1144" y="352.5"/>
         </scene>
-        <!--Registration View Controller-->
+        <!--Register-->
         <scene sceneID="NId-DM-5Mk">
             <objects>
                 <viewController id="1D8-Gt-16Y" customClass="RegistrationViewController" sceneMemberID="viewController">
@@ -1889,7 +1889,7 @@
                             <action selector="backgroundTouched:" destination="1D8-Gt-16Y" eventType="touchDown" id="XTS-DR-AOM"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="8yx-E0-AZg"/>
+                    <navigationItem key="navigationItem" title="Register" id="8yx-E0-AZg"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
@@ -2077,13 +2077,13 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="okc-1f-ZH5"/>
-        <segue reference="c3b-7q-UHr"/>
+        <segue reference="Cdl-T2-4OV"/>
+        <segue reference="4ze-bK-Lvy"/>
+        <segue reference="lUk-1e-ZYk"/>
         <segue reference="bDj-6L-rqu"/>
         <segue reference="Yzg-yO-FJ6"/>
         <segue reference="5S3-4t-Vn7"/>
-        <segue reference="lUk-1e-ZYk"/>
-        <segue reference="4ze-bK-Lvy"/>
-        <segue reference="Cdl-T2-4OV"/>
+        <segue reference="4M8-vo-jHA"/>
+        <segue reference="CLK-cx-blz"/>
     </inferredMetricsTieBreakers>
 </document>

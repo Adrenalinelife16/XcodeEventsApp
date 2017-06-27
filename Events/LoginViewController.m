@@ -33,7 +33,7 @@
     
     [self bottomBorder];
    
-    self.title = @"Login";
+    self.navigationItem.title = @"Login";
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     [self.navigationController.navigationBar setTitleTextAttributes:
@@ -45,6 +45,8 @@
 - (void)viewWillAppear:(BOOL)animated;
 {
     [self viewDidLoad];
+    self.navigationItem.title = @"Login";
+
 }
 
 - (void)didReceiveMemoryWarning
