@@ -19,7 +19,12 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     
-   
+    
+    
+    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setTintColor:[UIColor blackColor]];
+    
+
     
     // Override point for customization after application launch.
     
