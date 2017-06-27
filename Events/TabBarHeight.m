@@ -21,6 +21,7 @@
     sizeThatFits.height = 45;
     
     return  sizeThatFits;
+
     
 }
 

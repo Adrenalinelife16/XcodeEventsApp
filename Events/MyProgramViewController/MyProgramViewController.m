@@ -104,7 +104,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*
+
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -114,8 +114,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//   return [arrMyCalEvents count];
-    return 1;
+   return [arrMyCalEvents count];
 
 }
 
@@ -159,7 +158,7 @@
         return cell;
 }
 
-*/
+
 
 
 #pragma mark - Button Clicked Function
@@ -232,9 +231,7 @@
     [self.btnMyFavourites setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
-//    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
-//    [self getFavorites];
-
+    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
     
 }
 
@@ -292,8 +289,8 @@
 #pragma mark - Calendar Functions
 -(void)createCalendarView{
     
-    CGRect rect=self.tblMainTable.frame;
-    rect.size.height=300;
+    CGRect rect=self.calendarView.frame;
+    rect.size.height=300; // 300
     calendarBG=[[UIView alloc] initWithFrame:rect];
     VRGCalendarView *calendar = [[VRGCalendarView alloc] init];
     calendar.delegate=(id)self;
@@ -308,9 +305,9 @@
     
     CGRect rect=self.tblMainTable.frame;
     rect.origin.y=targetHeight;
-    rect.size.height=200;
+    rect.size.height=200; // 200
     self.tblMainTable.frame=rect;
-    [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)];
+    [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)]; // 320
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd h:mm:ss"];
     NSDate *currentDate =   [NSDate date];

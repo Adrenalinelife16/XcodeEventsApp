@@ -51,6 +51,8 @@
 }
 
 - (IBAction)clickedMyFavourites:(id)sender {
+    
+    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
     [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     [self.btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     [self.btnMyCalender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

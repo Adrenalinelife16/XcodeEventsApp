@@ -18,6 +18,12 @@
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6.png"] forBarMetrics:UIBarMetricsDefault];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
+    
+    
+    
+    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setTintColor:[UIColor blackColor]];
+    
 
     
     // Override point for customization after application launch.

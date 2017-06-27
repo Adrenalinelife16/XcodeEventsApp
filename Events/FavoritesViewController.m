@@ -39,6 +39,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Find Your Life";
     
+    
     // Do any additional setup after loading the view.
 }
 
@@ -51,6 +52,7 @@
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [self getAllEventsFromServer];
     self.navigationItem.hidesBackButton = YES;
+    
     
 }
 
@@ -78,7 +80,7 @@
     [self.btnMyFavourites setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
-    //    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
+    //[DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
     //    [self getFavorites];
     
     
@@ -150,7 +152,6 @@
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
     
     [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
-        [DSBezelActivityView removeViewAnimated:YES];
         
         arrayFavEvent = response;
         [self filterFavEventsArray];
@@ -205,6 +206,7 @@
         arrayFavouriteProgram = finalArray;
         
         if ([finalArray count]>0) {
+            [DSBezelActivityView removeViewAnimated:YES];
             [self.tblFavTable reloadData];
         } else {
             

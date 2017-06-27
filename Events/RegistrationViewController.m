@@ -33,12 +33,22 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"Register";
+    self.navigationItem.title = @"Register";
     [self bottomBorder];
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationItem.title = @"Register";
+    
+}
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
