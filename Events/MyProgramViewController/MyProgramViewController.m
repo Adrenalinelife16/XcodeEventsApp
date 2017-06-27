@@ -104,7 +104,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*
+
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -114,8 +114,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//   return [arrMyCalEvents count];
-    return 1;
+   return [arrMyCalEvents count];
 
 }
 
@@ -159,7 +158,7 @@
         return cell;
 }
 
-*/
+
 
 
 #pragma mark - Button Clicked Function
@@ -292,7 +291,7 @@
 #pragma mark - Calendar Functions
 -(void)createCalendarView{
     
-    CGRect rect=self.tblMainTable.frame;
+    CGRect rect=self.calendarView.frame;
     rect.size.height=300;
     calendarBG=[[UIView alloc] initWithFrame:rect];
     VRGCalendarView *calendar = [[VRGCalendarView alloc] init];
