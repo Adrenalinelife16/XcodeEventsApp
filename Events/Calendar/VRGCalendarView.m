@@ -82,7 +82,9 @@
 
 #pragma mark - Next & Previous
 -(void)showNextMonth {
+    
     if (isAnimating) return;
+    
     self.markedDates=nil;
     isAnimating=YES;
     prepAnimationNextMonth=YES;
@@ -127,6 +129,7 @@
     [UIView animateWithDuration:.35
                      animations:^{
                          [self updateSize];
+                         
                          //blockSafeSelf.frameHeight = 100;
                          if (hasNextMonthDays) {
                              animationView_A.frameY = -animationView_A.frameHeight + kVRGCalendarViewDayHeight+3;
@@ -147,9 +150,12 @@
 }
 
 -(void)showPreviousMonth {
+    
     if (isAnimating) return;
     isAnimating=YES;
+    
     self.markedDates=nil;
+    
     //Prepare current screen
     prepAnimationPreviousMonth = YES;
     [self setNeedsDisplay];
@@ -276,7 +282,7 @@
     labelCurrentMonth.text = [[formatter stringFromDate:self.currentMonth] uppercaseString];
     [labelCurrentMonth sizeToFit];
     labelCurrentMonth.frameX = roundf(self.frame.size.width/2 - labelCurrentMonth.frameWidth/2);
-    labelCurrentMonth.frameY = 10;
+    labelCurrentMonth.frameY = 5;
     [formatter release];
     [currentMonth firstWeekDayInMonth];
     
@@ -291,7 +297,7 @@
     //Arrows
     int arrowSize = 12;
     int xmargin = 20;
-    int ymargin = 18;
+    int ymargin = 10;
     
     //Arrow Left
     CGContextBeginPath(context);
@@ -332,7 +338,7 @@
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
         paragraphStyle.lineBreakMode = NSLineBreakByClipping;
         paragraphStyle.alignment = NSTextAlignmentCenter;
-        [weekdayValue drawInRect:CGRectMake(i*(kVRGCalendarViewDayWidth+2), 40, kVRGCalendarViewDayWidth+2, 20) withAttributes:@{ NSFontAttributeName: font, NSParagraphStyleAttributeName: paragraphStyle  }];
+        [weekdayValue drawInRect:CGRectMake(i*(kVRGCalendarViewDayWidth+2), 30, kVRGCalendarViewDayWidth+2, 20) withAttributes:@{ NSFontAttributeName: font, NSParagraphStyleAttributeName: paragraphStyle  }];
     }
     
     int numRows = [self numRows];
@@ -463,12 +469,12 @@
         
         //draw selected date
         if (selectedDate && i==selectedDateBlock) {
-            CGRect rectangleGrid = CGRectMake(targetX+5,targetY+5,kVRGCalendarViewDayWidth-8,kVRGCalendarViewDayHeight-8);
+            CGRect rectangleGrid = CGRectMake(targetX+6,targetY+3,kVRGCalendarViewDayWidth-10,kVRGCalendarViewDayHeight-12);
             CGContextSetFillColorWithColor(context, COMMON_COLOR_RED.CGColor);
             CGContextFillEllipseInRect(context, rectangleGrid);
             CGContextSetFillColorWithColor(context,[UIColor whiteColor].CGColor);
         } else if (todayBlock==i) {
-            CGRect rectangleGrid = CGRectMake(targetX+5,targetY+5,kVRGCalendarViewDayWidth-8,kVRGCalendarViewDayHeight-8);
+            CGRect rectangleGrid = CGRectMake(targetX+6,targetY+3,kVRGCalendarViewDayWidth-10,kVRGCalendarViewDayHeight-12);
             CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
             CGContextFillEllipseInRect(context, rectangleGrid);
             CGContextSetStrokeColorWithColor(context,COMMON_COLOR_RED.CGColor);
@@ -477,11 +483,11 @@
             
         }
         
-        UIFont *font = [UIFont fontWithName:@"HelveticaNeue-thin" size:17];
+        UIFont *font = [UIFont fontWithName:@"HelveticaNeue-thin" size:14];
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
         paragraphStyle.lineBreakMode = NSLineBreakByClipping;
         paragraphStyle.alignment = NSTextAlignmentCenter;
-        [date drawInRect:CGRectMake(targetX+1, targetY+12, kVRGCalendarViewDayWidth, kVRGCalendarViewDayHeight) withAttributes:@{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle }];
+        [date drawInRect:CGRectMake(targetX+1, targetY+5, kVRGCalendarViewDayWidth, kVRGCalendarViewDayHeight) withAttributes:@{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle }];
     }
     
     //    CGContextClosePath(context);

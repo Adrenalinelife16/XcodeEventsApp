@@ -1,8 +1,8 @@
+
+
 6/25/17
 
 Issues before Beta Launch
-
-1. Search Description
 
 2. Fix Icons                                    -           MICHAEL
 
@@ -14,12 +14,6 @@ Issues before Beta Launch
 
 6. UI Design Calendar Event format              -       HOLD for new cal controller
 
-7. White space on favorites                     -       HOLD for new fav controller
-
-9. Fix all scroll views
-
-    - Favorites Scroll                          -       HOLD for new fav controllor
-
 
 10. Ask Julie about Social Feed Title           -       ASKED JULIE (MUST FOLLOW UP)
 
@@ -27,30 +21,30 @@ Issues before Beta Launch
 
 ------------------------FINISHED CHECKLIST FOR 6/25/17--------------------------------------
 
-8. When searching image size changes            - DONE
+1. Search Description                            - DONE
+
+8. When searching image size changes             - DONE
+
+7. White space on favorites                      - DONE
 
 9. Fix all scroll views
 
-- Discover Scroll                           - DONE
-- Favorites Scroll                          -       HOLD for new fav controllor
-- Social Scroll                             - DONE
-- Policy Scroll                             - DONE
-- Terms Scroll                              - DONE
-- Abous Us Scroll                           - DONE
+- Discover Scroll                                - DONE
+- Favorites Scroll                               - DONE
+- Social Scroll                                  - DONE
+- Policy Scroll                                  - DONE
+- Terms Scroll                                   - DONE
+- Abous Us Scroll                                - DONE
 
 -11. Clean up Login                              - DONE
 
 -12. Clean up Register                           - DONE
 
-14. Registration title change to Register       - DONE
+14. Registration title change to Register        - DONE
 
-15. Segue from Register for Terms/Pivacy Policy - DONE
+15. Segue from Register for Terms/Pivacy Policy  - DONE
 
 -16. Status bar hidden when open app             - DONE
-
-
-
-
 
 
 
@@ -83,14 +77,6 @@ When done add another dish and put "Done"
 10. Register button isnt working on main event controller - Michael
 
 11. Register button isnt working on register for Adrenaline, pushes back to login page - Michael - DONE!!!!
-
-
-
-
-
-
-
-
 
 
 

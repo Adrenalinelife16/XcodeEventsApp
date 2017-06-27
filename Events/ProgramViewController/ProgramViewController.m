@@ -419,13 +419,12 @@
     }
     
     // build all the "AND" expressions for each value in the searchString
-    //
     NSMutableArray *andMatchPredicates = [NSMutableArray array];
     
     for (NSString *searchString in searchItems) {
         
         NSMutableArray *searchItemsPredicate = [NSMutableArray array];
-        
+        NSMutableArray *searchItemsPredicate2 = [NSMutableArray array];
         
         NSExpression *lhs = [NSExpression expressionForKeyPath:@"eventName"];
         NSExpression *rhs = [NSExpression expressionForConstantValue:searchString];
@@ -435,11 +434,20 @@
                                        modifier:NSDirectPredicateModifier
                                        type:NSContainsPredicateOperatorType
                                        options:NSCaseInsensitivePredicateOption];
-        [searchItemsPredicate addObject:finalPredicate];
+        
+        NSExpression *lhs2 = [NSExpression expressionForKeyPath:@"eventDescription"];
+        NSExpression *rhs2 = [NSExpression expressionForConstantValue:searchString];
+        NSPredicate *finalPredicate2 = [NSComparisonPredicate
+                                       predicateWithLeftExpression:lhs2
+                                       rightExpression:rhs2
+                                       modifier:NSDirectPredicateModifier
+                                       type:NSContainsPredicateOperatorType
+                                       options:NSCaseInsensitivePredicateOption];
         
         
         // at this OR predicate to our master AND predicate
-        NSCompoundPredicate *orMatchPredicates = [NSCompoundPredicate orPredicateWithSubpredicates:searchItemsPredicate];
+        NSCompoundPredicate *orMatchPredicates = [NSCompoundPredicate orPredicateWithSubpredicates:
+                                          @[finalPredicate, finalPredicate2]];
         [andMatchPredicates addObject:orMatchPredicates];
         
     }
