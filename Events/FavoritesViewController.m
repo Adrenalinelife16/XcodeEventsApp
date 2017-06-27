@@ -101,6 +101,11 @@
   
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 250; //162: ProgramCustomCell
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -323,7 +328,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.identifier isEqualToString:@"program"]) {
+    if ([segue.identifier isEqualToString:@"eventDetailsSegue"]) {
         
         NSIndexPath *selectedRowIndex = [self.tblFavTable indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
