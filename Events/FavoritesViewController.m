@@ -9,6 +9,9 @@
 #import "FavoritesViewController.h"
 #import "ProgramCustomCell.h"
 #import "EventList.h"
+#import "AboutViewController.h"
+#import "MyFavoriteCustomCell.h"
+#import "UIImageView+WebCache.h"
 
 
 @interface FavoritesViewController ()
@@ -16,7 +19,14 @@
     
     NSMutableArray *arrayFavouriteProgram;//for my favorites
     
+    NSMutableArray *arrMyCalEvents;//for event calendar eventlist
+    NSMutableArray *arrayResponseCalEvents;//for event calendar eventlist response from server
+    NSMutableArray *arrayFilterResults; // Array that displays on Fav events
+    NSMutableArray *arrayCalConversion; // Using for segue to about controller
+    NSMutableArray *arrayCalStorage; // Store all events for calendar
+    NSMutableArray *arrayFilterMyCalResults; //Store all cal events for segue
     
+    NSMutableArray *arrayEventList;
     
 }
 
@@ -112,11 +122,8 @@
     
     
     if ([obj.eventImageURL length]) {
-        
-        // need variable image in cell
-        
-        
-  //      [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
+               
+        [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
     }
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
@@ -278,6 +285,7 @@
                 
                 [arrayFavouriteProgram addObject:eventObj];
                 
+                
             }
         }
         
@@ -285,6 +293,7 @@
          *  global array for events data.
          */
         gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
+        [self getFavorites];
         
         
     }WithFailure:^(NSString *error)
@@ -309,25 +318,18 @@
 
 
 
-
-
-
 #pragma mark - Navigation
-/*
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"program"]) {
         
-        NSIndexPath *selectedRowIndex = [self.tblMainTable indexPathForSelectedRow];
+        NSIndexPath *selectedRowIndex = [self.tblFavTable indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
         EventList *obj  =   [self->arrayFavouriteProgram objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
-
-
-
+    }
 
 }
-
-*/
 @end
