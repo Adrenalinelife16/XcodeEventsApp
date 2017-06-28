@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "345"
-            endingLineNumber = "345"
+            startingLineNumber = "348"
+            endingLineNumber = "348"
             landmarkName = "-getCalendarData:"
             landmarkType = "7">
             <Locations>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "358"
-            endingLineNumber = "358"
+            startingLineNumber = "361"
+            endingLineNumber = "361"
             landmarkName = "-getCalendarData:"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "386"
-            endingLineNumber = "386"
+            startingLineNumber = "389"
+            endingLineNumber = "389"
             landmarkName = "-getCalendarData:"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "382"
-            endingLineNumber = "382"
+            startingLineNumber = "385"
+            endingLineNumber = "385"
             landmarkName = "-getCalendarData:"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,7 +106,53 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "383"
+            endingLineNumber = "383"
+            landmarkName = "-getCalendarData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
+            timestampString = "520310743.671388"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "605"
+            endingLineNumber = "605">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
+            timestampString = "520310743.671388"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "393"
+            endingLineNumber = "393"
+            landmarkName = "@implementation MyProgramViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "380"
@@ -122,13 +168,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "428"
-            endingLineNumber = "428"
-            landmarkName = "-filterMyCalEvents"
-            landmarkType = "7">
+            startingLineNumber = "580"
+            endingLineNumber = "580">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,13 +182,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "390"
-            endingLineNumber = "390"
-            landmarkName = "-getCalendarData:"
-            landmarkType = "7">
+            startingLineNumber = "634"
+            endingLineNumber = "634">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -154,13 +196,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "377"
-            endingLineNumber = "377"
-            landmarkName = "-getCalendarData:"
-            landmarkType = "7">
+            startingLineNumber = "640"
+            endingLineNumber = "640">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -170,59 +210,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "403"
-            endingLineNumber = "403"
-            landmarkName = "-compareEventDateAndSelectedDate"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "457"
-            endingLineNumber = "457"
-            landmarkName = "-filterMyCalEvents"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "463"
-            endingLineNumber = "463"
-            landmarkName = "-filterMyCalEvents"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "313"
-            endingLineNumber = "313"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
             landmarkName = "-calendarView:switchedToMonth:targetHeight:animated:"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,11 +242,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520301982.141621"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,11 +258,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520301982.141621"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "-tableView:numberOfRowsInSection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,11 +274,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520301982.141621"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "-numberOfSectionsInTableView:"
             landmarkType = "7">
          </BreakpointContent>
@@ -442,11 +434,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "334"
-            endingLineNumber = "334"
+            startingLineNumber = "337"
+            endingLineNumber = "337"
             landmarkName = "-getCalendarData:"
             landmarkType = "7">
          </BreakpointContent>
@@ -458,13 +450,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "469"
-            endingLineNumber = "469"
-            landmarkName = "-filterMyCalEvents"
-            landmarkType = "7">
+            startingLineNumber = "646"
+            endingLineNumber = "646">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -474,13 +464,53 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/MyProgramViewController.m"
-            timestampString = "520302657.243522"
+            timestampString = "520310743.671388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "411"
-            endingLineNumber = "411"
-            landmarkName = "-compareEventDateAndSelectedDate"
-            landmarkType = "7">
+            startingLineNumber = "588"
+            endingLineNumber = "588">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
+            timestampString = "520310743.671388"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "656"
+            endingLineNumber = "656">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
+            timestampString = "520310743.671388"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "643"
+            endingLineNumber = "643">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Events/MyProgramViewController/MyProgramViewController.m"
+            timestampString = "520310743.671388"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "647"
+            endingLineNumber = "647">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
