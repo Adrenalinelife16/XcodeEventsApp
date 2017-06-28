@@ -75,11 +75,8 @@
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_left.png"];
     
-    // issues with displaying cells, possibly
-    
-//    [self.tblMainTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    
     [self clickedMyCalender:nil];
+
     
     
 }
@@ -93,7 +90,7 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.hidesBackButton = YES;
     [self createCalendarView];
- //   [self.tblMainTable reloadData];
+    [self.tblMainTable reloadData];
     
     
 }
@@ -330,7 +327,7 @@
  */
 -(void)getCalendarData:(NSString *)strMonth
 {
-    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading Events"];
+ //   [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading Events"];
     
     
     NSCalendar* calendar = [NSCalendar currentCalendar];
@@ -380,12 +377,12 @@
            
             }
             else{
-                [self.tblMainTable reloadData];
+        
                 
                 return ;
             }
         }
-        
+
     }WithFailure:^(NSString *error){
         [DSBezelActivityView removeViewAnimated:YES];
         NSLog(@"%@",error);
@@ -409,7 +406,8 @@
         }
     }
     
-    [self.tblMainTable reloadData];
+ //   [self.tblMainTable reloadData];
+    [self filterMyCalEvents];
 }
 
 
@@ -465,13 +463,10 @@
     }
     //end of method
     arrayFilterMyCalResults = finalArray;
+    [self.tblMainTable reloadData];
+    
     NSLog(@"final Array = %@", finalArray);
 }
-
-/**
- *  Fetch Tickets List From Server.
- */
-
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
