@@ -28,9 +28,7 @@
     NSMutableArray *arrayFavouriteProgram;//for my favorites
     NSMutableArray *arrMyCalEvents;//for event calendar eventlist
     NSMutableArray *arrayResponseCalEvents;//for event calendar eventlist response from server
-    NSMutableArray *arrayFilterResults; // Array that displays on Fav events
     NSMutableArray *arrayCalConversion; // Using for segue to about controller
-    NSMutableArray *arrayCalStorage; // Store all events for calendar
     NSMutableArray *arrayFilterMyCalResults; //Store all cal events for segue
     
     int segmentPosition;//0 or 1 or 2 to check which segment is selected
@@ -42,10 +40,6 @@
     
     NSMutableArray *arrayEventList;
     
-    // test master app michael
-    // Chazz is better than michael
-    //FALSE I HAD TO FIX IT FO YO BITCH ASS NIGGER 
-    
 }
 @end
 
@@ -54,17 +48,6 @@
 @synthesize receivedData;
 @synthesize arrayFavEvent;
 
-
-/*
- - (id)initWithStyle:(UITableViewStyle)style
- {
- self = [ initWithStyle:style];
- if (self) {
- // Custom initialization
- }
- return self;
- }
- */
 
 #pragma mark - View Life Cycle
 - (void)viewDidLoad {
