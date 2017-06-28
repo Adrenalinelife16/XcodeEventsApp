@@ -65,9 +65,7 @@
     
     [self clickedMyCalender:nil];
     [self getAllEventsFromServer];
-    
-    
-    
+        
 }
 
 
@@ -81,7 +79,6 @@
     [self createCalendarView];
     [self.tblMainTable reloadData];
     
-    
 }
 
 
@@ -90,6 +87,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)Refresh:(UIRefreshControl *)sender
+{
+    // Reload the data.
+     [self clickedMyCalender:nil];
+    
+    // Reload the table data with the new data
+    [self.tblMainTable reloadData];
+    
+    // Restore the view to normal
+    [sender endRefreshing];
+}
+
 
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
