@@ -123,7 +123,7 @@
         EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
         NSString *image = [dictOfCalEvents objectForKey:@"event_image_url"];
         
-        cell.lblDateTime.text = [Utility getFormatedDateString:[dictOfCalEvents objectForKey:@"event_start_date"] dateFormatString:@"yyyy-MM-dd" dateFormatterString:@"dd MMMM"];
+        cell.lblDateTime.text = [Utility getFormatedDateString:[dictOfCalEvents objectForKey:@"event_start_date"] dateFormatString:@"yyyy-MM-dd" dateFormatterString:@"E, MMM d yyyy h:mm a"];
         cell.lblEventName.text=[dictOfCalEvents valueForKey:@"event_name"];
         
         cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
@@ -134,10 +134,12 @@
             
             
             [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",image]] placeholderImage:nil];
+          //  cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
+            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFit;
             
         }
         
-        cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
+        
         
     }
     
@@ -246,8 +248,7 @@
 }
 
 /**
- *  Show login view controller with animation
- */
+ 
 -(void)showLoginScreen
 {
     LoginViewController *loginView = [self.storyboard instantiateViewControllerWithIdentifier:@"loginView"];
@@ -261,9 +262,7 @@
                     completion:nil];
 }
 
-/**
- *  remove login view controller with animation
- */
+
 -(void)dismissLoginView
 {
     [UIView transitionWithView:self.view
@@ -272,7 +271,7 @@
                     animations:^{ [self dismissViewControllerAnimated:NO completion:nil]; }
                     completion:nil];
 }
-
+*/
 #pragma mark - Calendar Functions
 -(void)createCalendarView{
     
