@@ -42,7 +42,7 @@
     
     NSMutableArray *arrayEventList;
     
-    // test
+    // test chazz comp
     
     
 }
