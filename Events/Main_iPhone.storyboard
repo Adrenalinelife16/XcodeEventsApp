@@ -299,7 +299,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -937,18 +937,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventCalCell" rowHeight="97" id="wmc-XB-UsH" customClass="EventCalCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventCalCell" rowHeight="97" id="pwo-KW-FsL" customClass="EventCalCell">
                                         <rect key="frame" x="0.0" y="28" width="320" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wmc-XB-UsH" id="1zc-xa-KoJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="96.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wmc-XB-UsH" id="1gc-xa-KoL">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="no_image.png" id="V9S-Of-8Hr">
                                                     <rect key="frame" x="8" y="8" width="104" height="72"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date and Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9ZR-2v-zbc">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date and Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9ZH-4c-vbl">
                                                     <rect key="frame" x="116" y="8" width="192" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -962,7 +962,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QrU-fc-EdP">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ToF-fd-EdP">
                                                     <rect key="frame" x="120" y="59" width="192" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -973,7 +973,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imgIcon" destination="V9S-Of-8Hr" id="aF3-M7-2pm"/>
-                                            <outlet property="lblDateTime" destination="9ZR-2v-zbc" id="AiS-IS-EOl"/>
+                                            <outlet property="lblDateTime" destination="9ZR-2v-zbc" id="-I-IS-EOl"/>
                                             <outlet property="lblEventName" destination="aFV-qf-nWi" id="KZg-hx-k9V"/>
                                             <outlet property="lblEventPlace" destination="QrU-fc-EdP" id="gGF-6s-Hee"/>
                                         </connections>
@@ -984,11 +984,11 @@
                                     <outlet property="delegate" destination="3YM-N3-Ofp" id="5pa-J5-hs9"/>
                                 </connections>
                             </tableView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="OpQ-At-nbu">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="JeO-So-lse">
                                 <rect key="frame" x="0.0" y="56" width="320" height="328"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <outlet property="delegate" destination="3YM-N3-Ofp" id="W6C-0h-5jv"/>
+                                    <outlet property="delegate" destination="3YM-N3-Ofp" id="M7U-6h-1jd"/>
                                 </connections>
                             </scrollView>
                             <view contentMode="scaleToFill" misplaced="YES" id="Fo9-QF-KNL">
@@ -1047,7 +1047,7 @@
                                     <outlet property="delegate" destination="3YM-N3-Ofp" id="W6C-0h-5jv"/>
                                 </connections>
                             </scrollView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TZI-2F-yAy">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KUD-5K-yAy">
                                 <rect key="frame" x="0.0" y="364" width="320" height="246"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1059,7 +1059,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image.png" id="V9S-Of-8Hr">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image.png" id="V9S-Ps-4Gr">
                                                     <rect key="frame" x="8" y="8" width="104" height="84"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -1070,7 +1070,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aFV-qf-nWi">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dPG-ks-lDp">
                                                     <rect key="frame" x="120" y="40" width="192" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1087,10 +1087,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imgIcon" destination="V9S-Of-8Hr" id="aF3-M7-2pm"/>
-                                            <outlet property="lblDateTime" destination="9ZR-2v-zbc" id="AiS-IS-EOl"/>
-                                            <outlet property="lblEventName" destination="aFV-qf-nWi" id="KZg-hx-k9V"/>
-                                            <outlet property="lblEventPlace" destination="QrU-fc-EdP" id="gGF-6s-Hee"/>
+                                            <outlet property="imgIcon" destination="V9S-Of-8Hr" id="bJ5-M7-5am"/>
+                                            <outlet property="lblDateTime" destination="9ZR-2v-zbc" id="AiF-IL-E8l"/>
+                                            <outlet property="lblEventPlace" destination="QrU-fc-EdP" id="gGF-3d-Jpp"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1123,7 +1122,6 @@
                         <outlet property="btnMyFavourites" destination="hmd-oU-Owk" id="Pdi-CD-PTd"/>
                         <outlet property="btnMyTickets" destination="1Ub-X6-W5X" id="rgk-ll-FT8"/>
                         <outlet property="btnNotifiction" destination="Ag5-ci-98f" id="1ZU-sT-Z5L"/>
-                        <outlet property="calendarView" destination="OpQ-At-nbu" id="ghQ-mx-EOx"/>
                         <outlet property="imgSegmentBar" destination="DsM-kn-YnU" id="Whu-J1-LGT"/>
                         <outlet property="tblMainTable" destination="TZI-2F-yAy" id="Wtm-K5-9Kx"/>
                     </connections>
@@ -1669,7 +1667,7 @@
                                 <rect key="frame" x="0.0" y="56" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
