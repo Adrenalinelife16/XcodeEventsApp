@@ -43,6 +43,7 @@
     NSMutableArray *arrayEventList;
     
     // test master app michael
+    // Chazz is better than michael
     
 }
 @end
