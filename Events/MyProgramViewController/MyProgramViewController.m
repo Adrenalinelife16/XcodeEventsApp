@@ -216,14 +216,15 @@
     
     [self.calendarView setContentSize:CGSizeMake(0, 0)];
     [calendarBG removeFromSuperview];
-    segmentPosition=1;
+    /*
     CGRect rect=self.tblMainTable.frame;
     rect.origin.y=0;
     if(IS_IPHONE_5)
         rect.size.height=423;
     else
         rect.size.height=323;
-    self.tblMainTable.frame=rect;
+     */
+//    self.tblMainTable.frame=rect;
     [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     [self.btnMyFavourites setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
@@ -287,7 +288,7 @@
 -(void)createCalendarView{
     
     CGRect rect=self.calendarView.frame;
-    rect.size.height=300; // 300
+   // rect.size.height=300; // 300
     calendarBG=[[UIView alloc] initWithFrame:rect];
     VRGCalendarView *calendar = [[VRGCalendarView alloc] init];
     calendar.delegate=(id)self;
@@ -301,10 +302,10 @@
     calView = calendarView;
     
     CGRect rect=self.tblMainTable.frame;
-    rect.origin.y=targetHeight;
-    rect.size.height=200; // 200
+ //   rect.origin.y=targetHeight;
+  //  rect.size.height=200; // 200
     self.tblMainTable.frame=rect;
-    [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)]; // 320
+  //  [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)]; // 320
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd h:mm:ss"];
     NSDate *currentDate =   [NSDate date];
