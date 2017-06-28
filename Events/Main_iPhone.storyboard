@@ -971,12 +971,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="imgIcon" destination="V9S-Of-8Hr" id="aF3-M7-2pm"/>
-                                            <outlet property="lblDateTime" destination="9ZR-2v-zbc" id="-I-IS-EOl"/>
-                                            <outlet property="lblEventName" destination="aFV-qf-nWi" id="KZg-hx-k9V"/>
-                                            <outlet property="lblEventPlace" destination="QrU-fc-EdP" id="gGF-6s-Hee"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -1086,11 +1080,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="imgIcon" destination="V9S-Of-8Hr" id="bJ5-M7-5am"/>
-                                            <outlet property="lblDateTime" destination="9ZR-2v-zbc" id="AiF-IL-E8l"/>
-                                            <outlet property="lblEventPlace" destination="QrU-fc-EdP" id="gGF-3d-Jpp"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
