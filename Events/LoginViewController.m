@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import "ProgramViewController.h"
 
-@interface LoginViewController ()
+@interface LoginViewController () <UITextFieldDelegate>
 
 @end
 
@@ -38,6 +38,7 @@
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.txtPassword.delegate = self;
  
 }
 
@@ -89,6 +90,16 @@
                        options:UIViewAnimationOptionTransitionFlipFromRight
                     animations:^{ [self dismissViewControllerAnimated:NO completion:nil]; }
                     completion:nil];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [txtPassword resignFirstResponder];
+    
+    [self btnLoginPressed:self];
+    
+    
+    return YES;
 }
 
 #pragma mark - login button tap

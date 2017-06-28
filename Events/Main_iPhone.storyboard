@@ -36,7 +36,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99026118922298756" green="1" blue="0.98396727064061851" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="textfieldReturn:" destination="ofP-CN-yoG" eventType="editingDidEndOnExit" id="XWh-Bl-D75"/>
                                 </connections>
@@ -299,7 +299,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1765,7 +1765,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
                                     <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="4xv-AI-hAu"/>
                                     <outlet property="delegate" destination="lAo-2D-rSI" id="MoD-PL-hPb"/>
@@ -1776,7 +1776,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
                                     <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="rfe-cC-CHU"/>
                                     <outlet property="delegate" destination="lAo-2D-rSI" id="Dmw-Uo-LnQ"/>
@@ -1787,7 +1787,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="XzR-Db-Uc6"/>
                                     <outlet property="delegate" destination="lAo-2D-rSI" id="bBM-Jz-r1o"/>
@@ -1798,7 +1798,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="Ijc-mT-Kik"/>
                                 </connections>
@@ -1808,7 +1808,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
                                     <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="aYL-hW-S6G"/>
                                     <outlet property="delegate" destination="lAo-2D-rSI" id="0IS-1h-BgG"/>
@@ -1819,7 +1819,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
                                     <action selector="textfieldReturn:" destination="1D8-Gt-16Y" eventType="editingDidEndOnExit" id="0qs-Pe-itJ"/>
                                     <outlet property="delegate" destination="lAo-2D-rSI" id="CAP-uc-a6X"/>

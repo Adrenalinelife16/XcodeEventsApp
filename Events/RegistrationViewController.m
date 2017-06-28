@@ -37,6 +37,8 @@
     [self bottomBorder];
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.txtConfirmPassword.delegate = self;
+
     
 }
 
@@ -46,7 +48,6 @@
     self.navigationItem.title = @"Register";
     
 }
-
 
 
 
@@ -142,6 +143,12 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    
+    [txtConfirmPassword resignFirstResponder];
+    
+    [self btnRegisterPressed:self];
+    
+    
     if (textField.returnKeyType == UIReturnKeyDone)
     {
         [textField resignFirstResponder];
