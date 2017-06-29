@@ -967,160 +967,154 @@
             </objects>
             <point key="canvasLocation" x="-621" y="352.5"/>
         </scene>
-        <!--Favorites View Controller-->
-        <scene sceneID="K9f-oL-E49">
+        <!--Favorites Table View Controller-->
+        <scene sceneID="gaG-EY-ddZ">
             <objects>
-                <viewController storyboardIdentifier="favoriteVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q9C-wm-4ug" customClass="FavoritesViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qhD-BP-gm6">
+                <tableViewController id="BPn-5N-zfJ" customClass="FavoritesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NdS-6S-fEe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" id="vVJ-bI-sMO">
-                                <rect key="frame" x="1" y="66" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Segmented.png" id="iw9-aA-Ma6">
-                                        <rect key="frame" x="8" y="6" width="300" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hnT-et-Emt">
-                                        <rect key="frame" x="8" y="6" width="101" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Calendar">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clickedMyCalender:" destination="q9C-wm-4ug" eventType="touchUpInside" id="dST-RL-o4F"/>
-                                            <segue destination="ymv-lc-u6U" kind="push" animates="NO" id="Caw-4u-Ufj"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lAD-to-a8x">
-                                        <rect key="frame" x="209" y="6" width="99" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Attending">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clickedMyAttending:" destination="q9C-wm-4ug" eventType="touchUpInside" id="rTz-PE-6mT"/>
-                                            <segue destination="uN1-jK-Wuq" kind="push" animates="NO" id="B3C-Zm-d5g"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sCe-jK-Vab">
-                                        <rect key="frame" x="106" y="8" width="102" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Favorites">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clickedMyFavourites:" destination="q9C-wm-4ug" eventType="touchUpInside" id="LHF-gD-lgW"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="249" sectionHeaderHeight="28" sectionFooterHeight="28" id="NWI-pS-Xg9">
-                                <rect key="frame" x="0.0" y="115" width="320" height="409"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProgramCustomCell" rowHeight="249" id="23R-uc-O35" customClass="MyFavoriteCustomCell">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="249"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="23R-uc-O35" id="w8Z-N2-MuE">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" id="sfO-v4-Av0">
-                                                    <rect key="frame" x="0.0" y="3" width="320" height="242"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" id="HpL-lZ-jm6">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="24"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" id="Z60-5g-wRF">
-                                                            <rect key="frame" x="0.0" y="188" width="320" height="54"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="no_image.png" id="tg3-6p-tks">
-                                                            <rect key="frame" x="0.0" y="19" width="320" height="170"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </imageView>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN EVENT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OiY-qm-4Im">
-                                                            <rect key="frame" x="4" y="188" width="318" height="25"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                            <color key="textColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue, Mar 20 2017 12:00 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pmo-PW-clD">
-                                                            <rect key="frame" x="4" y="-7" width="318" height="31"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="yHv-K2-OCC">
-                                                            <rect key="frame" x="4" y="211" width="318" height="31"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="n about Event!">
-                                                                    <attributes>
-                                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" size="11" name=".SFNSText"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <outlet property="imgEventImage" destination="tg3-6p-tks" id="egb-CA-shd"/>
-                                            <outlet property="lblDateTime" destination="Pmo-PW-clD" id="O2G-GI-RWx"/>
-                                            <outlet property="lblEventDesc" destination="yHv-K2-OCC" id="uYL-9z-RNm"/>
-                                            <outlet property="lblEventName" destination="OiY-qm-4Im" id="jmB-Xr-ngN"/>
-                                            <segue destination="GJ5-Ez-Ag6" kind="push" identifier="eventDetailsSegue" id="V9k-x8-Dse"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="q9C-wm-4ug" id="7eV-kY-dZO"/>
-                                    <outlet property="delegate" destination="q9C-wm-4ug" id="Ri5-6q-ABn"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ctM-8T-fvk"/>
+                        <color key="sectionIndexBackgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="2IL-SV-7pg">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fV1-a4-NlA">
+                                    <rect key="frame" x="8" y="6" width="101" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <state key="normal" title="Calendar">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickedMyCalender:" destination="uN1-jK-Wuq" eventType="touchUpInside" id="g27-GU-tZY"/>
+                                        <segue destination="ymv-lc-u6U" kind="push" animates="NO" id="U3F-sb-sE9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6vW-6T-Ud5">
+                                    <rect key="frame" x="209" y="6" width="99" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <state key="normal" title="Attending">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickedMyAttending:" destination="uN1-jK-Wuq" eventType="touchUpInside" id="BPF-kB-MPo"/>
+                                        <segue destination="uN1-jK-Wuq" kind="push" animates="NO" id="AVa-mX-VeI"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yca-km-Xu4">
+                                    <rect key="frame" x="106" y="8" width="102" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <state key="normal" title="Favorites">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickedMyFavourites:" destination="uN1-jK-Wuq" eventType="touchUpInside" id="lGR-2c-uTB"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="249" id="ky5-CE-e2c" customClass="MyFavoriteCustomCell">
+                                <rect key="frame" x="0.0" y="71" width="320" height="249"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ky5-CE-e2c" id="Xk3-xK-uxZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="249"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" id="sfO-v4-Av0">
+                                            <rect key="frame" x="0.0" y="3" width="320" height="242"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" id="HpL-lZ-jm6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" id="Z60-5g-wRF">
+                                                    <rect key="frame" x="0.0" y="188" width="320" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="no_image.png" id="tg3-6p-tks">
+                                                    <rect key="frame" x="0.0" y="19" width="320" height="170"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN EVENT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OiY-qm-4Im">
+                                                    <rect key="frame" x="4" y="188" width="318" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue, Mar 20 2017 12:00 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pmo-PW-clD">
+                                                    <rect key="frame" x="4" y="-7" width="318" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="yHv-K2-OCC">
+                                                    <rect key="frame" x="4" y="211" width="318" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="n about Event!">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="11" name=".SFNSText"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="imgEventImage" destination="tg3-6p-tks" id="ukK-f4-U2G"/>
+                                    <outlet property="lblDateTime" destination="Pmo-PW-clD" id="9aN-kQ-jyJ"/>
+                                    <outlet property="lblEventDesc" destination="yHv-K2-OCC" id="18h-HR-pyP"/>
+                                    <outlet property="lblEventName" destination="OiY-qm-4Im" id="E6n-ZH-UNy"/>
+                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="eventDetailsSegue" id="4JL-TO-diO"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BPn-5N-zfJ" id="WIB-IY-pbC"/>
+                            <outlet property="delegate" destination="BPn-5N-zfJ" id="gG2-oZ-J61"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="upw-6F-XsS"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="TU4-bm-Vlc">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="Refresh:" destination="BPn-5N-zfJ" eventType="valueChanged" id="iyl-U5-Epn"/>
+                        </connections>
+                    </refreshControl>
                     <connections>
-                        <outlet property="btnMyCalender" destination="hnT-et-Emt" id="Hmk-sv-aJj"/>
-                        <outlet property="btnMyFavourites" destination="sCe-jK-Vab" id="kN2-FN-lR7"/>
-                        <outlet property="btnMyTickets" destination="lAD-to-a8x" id="2Lp-fI-maf"/>
-                        <outlet property="imgSegmentBar" destination="iw9-aA-Ma6" id="8n6-hL-7EC"/>
-                        <outlet property="tblFavTable" destination="NWI-pS-Xg9" id="ldT-OZ-lih"/>
+                        <outlet property="btnMyCalender" destination="fV1-a4-NlA" id="gzJ-C7-7be"/>
+                        <outlet property="btnMyFavourites" destination="yca-km-Xu4" id="Cei-F4-Ste"/>
+                        <outlet property="btnMyTickets" destination="6vW-6T-Ud5" id="pbT-cj-mqc"/>
+                        <outlet property="tblFavTable" destination="NdS-6S-fEe" id="Neq-AB-Fjp"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d8m-p4-Zyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5Q-vu-gIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="-1422.5"/>
+            <point key="canvasLocation" x="94" y="-1350"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="0v6-xa-O5w">
@@ -1823,52 +1817,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" id="2IL-SV-7pg">
-                                <rect key="frame" x="0.0" y="63" width="320" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iVw-7M-43o">
+                                <rect key="frame" x="109" y="72" width="102" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Segmented.png" id="YVD-nO-uze">
-                                        <rect key="frame" x="8" y="6" width="300" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fV1-a4-NlA">
-                                        <rect key="frame" x="8" y="6" width="101" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Calendar">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clickedMyCalender:" destination="uN1-jK-Wuq" eventType="touchUpInside" id="g27-GU-tZY"/>
-                                            <segue destination="ymv-lc-u6U" kind="push" animates="NO" id="eg5-sk-kwe"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6vW-6T-Ud5">
-                                        <rect key="frame" x="209" y="6" width="99" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Attending">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clickedMyAttending:" destination="uN1-jK-Wuq" eventType="touchUpInside" id="BPF-kB-MPo"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yca-km-Xu4">
-                                        <rect key="frame" x="106" y="8" width="102" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Favorites">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clickedMyFavourites:" destination="uN1-jK-Wuq" eventType="touchUpInside" id="lGR-2c-uTB"/>
-                                            <segue destination="q9C-wm-4ug" kind="push" animates="NO" id="L6Q-hR-pXI"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Favorites">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BPn-5N-zfJ" kind="push" animates="NO" id="IPh-Ar-d5t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L9s-Qm-fhI">
+                                <rect key="frame" x="213" y="69" width="107" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Attending">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZVa-Xe-DfQ">
+                                <rect key="frame" x="0.0" y="71" width="101" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Calendar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ymv-lc-u6U" kind="push" animates="NO" id="rdp-Lt-wIv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.22352941176470587" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1876,10 +1854,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
-                        <outlet property="btnMyCalender" destination="fV1-a4-NlA" id="Fib-Ga-LXA"/>
-                        <outlet property="btnMyFavourites" destination="yca-km-Xu4" id="h0B-Sj-A6D"/>
-                        <outlet property="btnMyTickets" destination="6vW-6T-Ud5" id="0Gb-l3-74N"/>
-                        <outlet property="imgSegmentBar" destination="YVD-nO-uze" id="D0c-HM-byh"/>
+                        <outlet property="btnMyCalender" destination="ZVa-Xe-DfQ" id="eU9-a0-qNd"/>
+                        <outlet property="btnMyFavourites" destination="iVw-7M-43o" id="ilC-zl-fkU"/>
+                        <outlet property="btnMyTickets" destination="L9s-Qm-fhI" id="RY5-3U-jAg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixq-g6-bii" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1903,10 +1880,6 @@
                                 <rect key="frame" x="0.0" y="63" width="320" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Segmented.png" id="MNk-uV-Mlh">
-                                        <rect key="frame" x="8" y="6" width="300" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="glN-PG-mcU">
                                         <rect key="frame" x="8" y="6" width="101" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1934,7 +1907,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="q9C-wm-4ug" kind="push" animates="NO" id="3TW-bE-gSX"/>
+                                            <segue destination="BPn-5N-zfJ" kind="push" animates="NO" id="tEp-Xd-Rdh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1952,7 +1925,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="82.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="no image" id="nHp-xq-Ubb">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="no_image.png" id="nHp-xq-Ubb">
                                                     <rect key="frame" x="8" y="0.0" width="92" height="75"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -1964,14 +1937,21 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bla-0b-Z4X">
-                                                    <rect key="frame" x="108" y="27" width="219" height="21"/>
+                                                    <rect key="frame" x="108" y="21" width="219" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.92941188809999997" green="0.1098037362" blue="0.14117646219999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event Desciption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8jq-1I-Lhe">
-                                                    <rect key="frame" x="108" y="47" width="219" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8jq-1I-Lhe">
+                                                    <rect key="frame" x="108" y="41" width="179" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="54l-5P-Pn6">
+                                                    <rect key="frame" x="108" y="50" width="162" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
@@ -1981,9 +1961,9 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imgIcon" destination="nHp-xq-Ubb" id="vHD-KH-LFF"/>
+                                            <outlet property="lblAddress" destination="8jq-1I-Lhe" id="iD4-LT-r1C"/>
                                             <outlet property="lblDateTime" destination="5Xi-OI-WT1" id="PkH-k0-BDq"/>
                                             <outlet property="lblEventName" destination="bla-0b-Z4X" id="uIe-hW-LnL"/>
-                                            <outlet property="lblEventPlace" destination="8jq-1I-Lhe" id="adm-GT-UKZ"/>
                                             <segue destination="GJ5-Ez-Ag6" kind="push" identifier="event_cal" id="GQZ-yq-JN7"/>
                                         </connections>
                                     </tableViewCell>
@@ -2004,7 +1984,6 @@
                         <outlet property="btnMyFavourites" destination="Fec-lO-v4N" id="0xb-NO-ZpM"/>
                         <outlet property="btnMyTickets" destination="i2K-Lp-h1d" id="TnF-bz-hfe"/>
                         <outlet property="calendarView" destination="g3A-tZ-1m6" id="JxI-65-v9N"/>
-                        <outlet property="imgSegmentBar" destination="MNk-uV-Mlh" id="NCn-nW-K2b"/>
                         <outlet property="tblMainTable" destination="SzQ-aL-qMg" id="uLz-9E-r9C"/>
                     </connections>
                 </viewController>
@@ -2016,7 +1995,6 @@
     <resources>
         <image name="FINALHIGHRESFULLLOGO.png" width="1184" height="369"/>
         <image name="HighResIconRed.png" width="1527" height="1707"/>
-        <image name="Segmented.png" width="300" height="29"/>
         <image name="Twitter.png" width="26" height="22"/>
         <image name="aBasketball.png" width="640" height="480"/>
         <image name="aFishing.png" width="640" height="480"/>
@@ -2042,7 +2020,6 @@
         <image name="ic_nav3.png" width="47" height="46"/>
         <image name="ic_nav4_sel.png" width="47" height="46"/>
         <image name="nearby.png" width="16" height="20"/>
-        <image name="no image" width="16" height="16"/>
         <image name="no_image.png" width="540" height="360"/>
         <image name="registerBtn.png" width="125" height="40"/>
         <image name="secondpic.png" width="104" height="95"/>
@@ -2055,13 +2032,13 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ZrE-a6-aH7"/>
-        <segue reference="Yzg-yO-FJ6"/>
-        <segue reference="4M8-vo-jHA"/>
-        <segue reference="CLK-cx-blz"/>
         <segue reference="bDj-6L-rqu"/>
-        <segue reference="6n8-q3-lxy"/>
-        <segue reference="eg5-sk-kwe"/>
+        <segue reference="Yzg-yO-FJ6"/>
+        <segue reference="CLK-cx-blz"/>
+        <segue reference="4M8-vo-jHA"/>
         <segue reference="GQZ-yq-JN7"/>
-        <segue reference="3TW-bE-gSX"/>
+        <segue reference="U3F-sb-sE9"/>
+        <segue reference="tEp-Xd-Rdh"/>
+        <segue reference="6n8-q3-lxy"/>
     </inferredMetricsTieBreakers>
 </document>

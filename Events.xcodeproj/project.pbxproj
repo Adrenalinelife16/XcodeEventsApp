@@ -77,7 +77,7 @@
 		72DCD05B1E5D2BF700792EEA /* MoreCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */; };
 		72DCD06D1E706C0200792EEA /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */; };
 		72E417561F043A3600E6F81A /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E417551F043A3600E6F81A /* CalendarViewController.m */; };
-		72ED09851F001D2200F60832 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ED09841F001D2200F60832 /* FavoritesViewController.m */; };
+		72E4175C1F046C4A00E6F81A /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */; };
 		72ED09881F01405500F60832 /* AttendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ED09871F01405500F60832 /* AttendingViewController.m */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
@@ -416,8 +416,8 @@
 		72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewController.m; sourceTree = "<group>"; };
 		72E417541F043A3600E6F81A /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		72E417551F043A3600E6F81A /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
-		72ED09831F001D2200F60832 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
-		72ED09841F001D2200F60832 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		72E4175A1F046C4A00E6F81A /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
+		72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
 		72ED09861F01405500F60832 /* AttendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendingViewController.h; sourceTree = "<group>"; };
 		72ED09871F01405500F60832 /* AttendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendingViewController.m; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
@@ -914,8 +914,8 @@
 			isa = PBXGroup;
 			children = (
 				7274EC5B1F016C250019B9AB /* Favorite Custom Cell */,
-				72ED09831F001D2200F60832 /* FavoritesViewController.h */,
-				72ED09841F001D2200F60832 /* FavoritesViewController.m */,
+				72E4175A1F046C4A00E6F81A /* FavoritesTableViewController.h */,
+				72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */,
 			);
 			name = "Favorites Controller";
 			sourceTree = "<group>";
@@ -1895,7 +1895,6 @@
 				791E3DED18F3277A00220BDE /* Feeds.m in Sources */,
 				7122DB1518BB1F7300C044E8 /* ThirdFeedCustomCell.m in Sources */,
 				798D9E2118F15F2000A69513 /* UIImage+MultiFormat.m in Sources */,
-				72ED09851F001D2200F60832 /* FavoritesViewController.m in Sources */,
 				79691D2618F037A200ABD52D /* LocationManager.m in Sources */,
 				7122DB1418BB1F7300C044E8 /* SecondFeedCustomCell.m in Sources */,
 				7987137C18F0748800727E1A /* MyAnnotation.m in Sources */,
@@ -1927,6 +1926,7 @@
 				799499EE190985A6008AC6BD /* AboutUsViewController.m in Sources */,
 				798D9E1018F15F1400A69513 /* SDWebImageDecoder.m in Sources */,
 				79A36D871959DC7700C05F43 /* ProgramDescriptionViewController.m in Sources */,
+				72E4175C1F046C4A00E6F81A /* FavoritesTableViewController.m in Sources */,
 				E2AB03251E4ADFEA00EAA5BF /* CreateEventViewController.m in Sources */,
 				711221DF18BC62DD00E77A4A /* UIView+convenience.m in Sources */,
 				79691D1118F0175600ABD52D /* EventList.m in Sources */,

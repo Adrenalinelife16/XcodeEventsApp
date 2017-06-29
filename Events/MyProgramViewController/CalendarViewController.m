@@ -20,7 +20,7 @@
 #import "AboutViewController.h"
 #import "ProgramViewController.h"
 #import "Utility.h"
-#import "FavoritesViewController.h"
+#import "FavoritesTableViewController.h"
 
 @interface CalendarViewController ()
 {
@@ -61,13 +61,22 @@
     NSDate *currentDate =   [NSDate date];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
-    self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_left.png"];
     
     [self clickedMyCalender:nil];
     [self getAllEventsFromServer];
+    
+    [self calendarView:calView dateSelected:eventDate];
         
 }
+/*
+-(void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date {
+    
+    eventDate   =   [[NSDate alloc] init];
+    eventDate   =   date;
+    [self compareEventDateAndSelectedDate];
+}
 
+*/
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -77,7 +86,9 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.hidesBackButton = YES;
     [self createCalendarView];
-    [self.tblMainTable reloadData];
+    
+    [_btnMyCalender setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+  //  [self.tblMainTable reloadData];
     
 }
 
@@ -128,6 +139,8 @@
         
         NSDictionary *dictOfCalEvents = [NSDictionary dictionaryWithDictionary:[arrMyCalEvents objectAtIndex:indexPath.row]];
         
+        NSLog(@"address info %@",dictOfCalEvents);
+        
         arrayCalConversion = arrMyCalEvents;
         
         EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
@@ -136,10 +149,12 @@
         cell.lblDateTime.text = [Utility getFormatedDateString:[dictOfCalEvents objectForKey:@"event_start_date"] dateFormatString:@"yyyy-MM-dd" dateFormatterString:@"E, MMM d yyyy h:mm a"];
         cell.lblEventName.text=[dictOfCalEvents valueForKey:@"event_name"];
         
-        cell.lblEventPlace.text=[dictOfCalEvents valueForKey:@"location_address"];
+        cell.lblAddress.text=[dictOfCalEvents valueForKey:@"location_address"];
+        cell.lblCity.text=[dictOfCalEvents valueForKey:@"location_town"];
+        cell.lblState.text=[dictOfCalEvents valueForKey:@"location_state"];
+        cell.lblPostCode.text=[dictOfCalEvents valueForKey:@"location_postcode"];
         
-        
-        
+
         if ([[arrMyCalEvents objectAtIndex:indexPath.row] valueForKey:@"event_image_url"] != nil) {
             
             
@@ -217,29 +232,12 @@
     
     [self.calendarView setContentSize:CGSizeMake(0, 0)];
     [calendarBG removeFromSuperview];
-    /*
-     CGRect rect=self.tblMainTable.frame;
-     rect.origin.y=0;
-     if(IS_IPHONE_5)
-     rect.size.height=423;
-     else
-     rect.size.height=323;
-     */
-    //    self.tblMainTable.frame=rect;
-    [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
-    [self.btnMyFavourites setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
-    self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
     
 }
 
 - (IBAction)clickedMyCalender:(id)sender {
     
-    [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
-    [self.btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
-    [self.btnMyCalender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_left.png"];
     self.btnNotifiction.titleLabel.text=@"";
 }
 
@@ -404,8 +402,6 @@
             [arrMyCalEvents addObject:dictOfEvent];
         }
     }
-    
-    //   [self.tblMainTable reloadData];
     [self filterMyCalEvents];
 }
 
@@ -428,27 +424,19 @@
     
     //Pull Array of Ids only from Dictionary
     NSArray *arrayCalWithIds = [arrMyCalEvents valueForKey:@"event_id"];
-    NSLog(@"arrayCalWithIds = %@", arrayCalWithIds);
-    
     
     /**Loop through each individual event id**/
     for (NSUInteger i = 0, count = [arrayFavouriteProgram count]; i < count; i++){
         
         //Pull single event id from main array
         NSString *arrayId = [[arrayFavouriteProgram[i] valueForKey:@"eventID"] stringValue];
-        NSLog(@"arrayId = %@", arrayId);
         NSInteger valueId = [arrayId intValue];
         
         /**Loop through each individual fav id**/
         for (NSUInteger f = 0, count = [arrayCalWithIds count]; f < count; f++){
             //Pull all the event ids out of index/array
             NSString * stringId = [arrayCalWithIds objectAtIndex:f];
-            NSLog(@"stringId = %@", stringId);
-            NSLog(@"count = %lu", count);
-            NSLog(@"f = %lu", f);
-            //Pull single event id out of stringId
-            //NSString *singleId = stringId[0];
-            //Convert singleId string to NSInteger
+
             NSInteger value = [stringId intValue];
             
             //if event id = fav id
@@ -463,8 +451,7 @@
     //end of method
     arrayFilterMyCalResults = finalArray;
     [self.tblMainTable reloadData];
-    
-    NSLog(@"final Array = %@", finalArray);
+
 }
 
 -(void)getAllEventsFromServer {

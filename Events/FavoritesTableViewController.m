@@ -1,20 +1,19 @@
 //
-//  FavoritesViewController.m
+//  FavoritesTableViewController.m
 //  Events
 //
-//  Created by Michael Cather on 6/25/17.
+//  Created by Michael Cather on 6/28/17.
 //  Copyright © 2017 Teknowledge Software. All rights reserved.
 //
 
-#import "FavoritesViewController.h"
+#import "FavoritesTableViewController.h"
 #import "ProgramCustomCell.h"
 #import "EventList.h"
 #import "AboutViewController.h"
 #import "MyFavoriteCustomCell.h"
 #import "UIImageView+WebCache.h"
 
-
-@interface FavoritesViewController ()
+@interface FavoritesTableViewController ()
 {
     
     NSMutableArray *arrayFavouriteProgram;//for my favorites
@@ -30,17 +29,18 @@
     
 }
 
+@property (strong, nonatomic) IBOutlet UIRefreshControl *Refresh;
+
 @end
 
-@implementation FavoritesViewController
+@implementation FavoritesTableViewController
 @synthesize arrayFavEvent;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Find Your Life";
+    [self getAllEventsFromServer];
     
-    
-    // Do any additional setup after loading the view.
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -50,8 +50,11 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
-    [self getAllEventsFromServer];
+    
     self.navigationItem.hidesBackButton = YES;
+    
+    [_btnMyFavourites setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+
     
     
 }
@@ -62,23 +65,36 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)Refresh:(UIRefreshControl *)sender
+{
+    // Reload the data.
+    [self getAllEventsFromServer];
+    
+    // Reload the table data with the new data
+    [self.tblFavTable reloadData];
+    
+    // Restore the view to normal
+    [sender endRefreshing];
+}
+
+
 #pragma mark - Button Clicked Function
 - (IBAction)clickedMyAttending:(id)sender {
     
     
-   
     
-    }
+    
+}
 
 - (IBAction)clickedMyFavourites:(id)sender {
     
-/*
-    
-    [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
-    [self.btnMyFavourites setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
-    self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
- */
+    /*
+     
+     [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
+     [self.btnMyFavourites setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+     [self.btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
+     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
+     */
     //[DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
     //    [self getFavorites];
     
@@ -99,7 +115,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     return [arrayFavouriteProgram count];
-  
+    
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -128,7 +144,7 @@
     
     
     if ([obj.eventImageURL length]) {
-               
+        
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
     }
     
@@ -140,7 +156,7 @@
     
     
     return cell;
-
+    
     
 }
 
@@ -240,7 +256,7 @@
                 if ([[[response objectAtIndex:0] objectForKey:@"status"] intValue] == 0) {
                     [Utility alertNotice:@"" withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
                     gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
-   //                 [self.tblMainTable reloadData];
+                    //                 [self.tblMainTable reloadData];
                     return;
                 }
             }
@@ -336,6 +352,6 @@
         EventList *obj  =   [self->arrayFavouriteProgram objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
     }
-
+    
 }
 @end

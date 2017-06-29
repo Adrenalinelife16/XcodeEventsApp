@@ -31,18 +31,20 @@
     self.navigationItem.title = @"Find Your Life";
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented.png"];
      [self getMyTickets];
     self.navigationItem.hidesBackButton = YES;
+    [_btnMyTickets setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+
 }
 
 #pragma mark - Button Clicked Function
 - (IBAction)clickedMyAttending:(id)sender {
+    /*
     [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     [self.btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     [self.btnMyCalender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 
-    
+    */
     [self getMyTickets];
     
     
@@ -53,10 +55,11 @@
 - (IBAction)clickedMyFavourites:(id)sender {
     
     [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
+    /*
     [self.btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     [self.btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     [self.btnMyCalender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-
+     */
     
     
     

@@ -10,7 +10,10 @@
 
 @interface EventCalCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *lblDateTime;
-@property (strong, nonatomic) IBOutlet UILabel *lblEventPlace;
+@property (strong, nonatomic) IBOutlet UILabel *lblAddress;
+@property (strong, nonatomic) IBOutlet UILabel *lblCity;
+@property (strong, nonatomic) IBOutlet UILabel *lblState;
+@property (strong, nonatomic) IBOutlet UILabel *lblPostCode;
 @property (strong, nonatomic) IBOutlet UILabel *lblEventName;
 @property (strong, nonatomic) IBOutlet UIImageView *imgIcon;
 @property (nonatomic, retain) IBOutlet UIButton *btnRow;

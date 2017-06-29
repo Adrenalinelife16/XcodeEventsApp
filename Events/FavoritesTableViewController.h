@@ -1,19 +1,21 @@
 //
-//  FavoritesViewController.h
+//  FavoritesTableViewController.h
 //  Events
 //
-//  Created by Michael Cather on 6/25/17.
+//  Created by Michael Cather on 6/28/17.
 //  Copyright © 2017 Teknowledge Software. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface FavoritesViewController : UITableViewController
+@interface FavoritesTableViewController : UITableViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *imgSegmentBar;
 @property (strong, nonatomic) IBOutlet UIButton *btnMyTickets;
 @property (strong, nonatomic) IBOutlet UIButton *btnMyFavourites;
 @property (strong, nonatomic) IBOutlet UIButton *btnMyCalender;
+
+
 
 @property (strong, nonatomic) NSMutableArray *arrayFavEvent;
 
@@ -25,5 +27,6 @@
 - (IBAction)clickedMyFavourites:(id)sender;
 
 - (IBAction)clickedMyCalender:(id)sender;
+
 
 @end
