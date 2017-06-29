@@ -87,7 +87,7 @@
     self.navigationItem.hidesBackButton = YES;
     [self createCalendarView];
     
-    [_btnMyCalender setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [_btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
   //  [self.tblMainTable reloadData];
     
 }
@@ -121,7 +121,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [arrMyCalEvents count];
+    return [arrayFilterMyCalResults count];
     
 }
 
@@ -134,14 +134,13 @@
         cell = [[EventCalCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    if ([arrMyCalEvents count]>0) {
+    if ([arrayFilterMyCalResults count]>0) {
         // Configure the cell...
         
-        NSDictionary *dictOfCalEvents = [NSDictionary dictionaryWithDictionary:[arrMyCalEvents objectAtIndex:indexPath.row]];
+        NSDictionary *dictOfCalEvents = [NSDictionary dictionaryWithDictionary:[arrayFilterMyCalResults objectAtIndex:indexPath.row]];
         
-        NSLog(@"address info %@",dictOfCalEvents);
         
-        arrayCalConversion = arrMyCalEvents;
+   //     arrayCalConversion = arrMyCalEvents;
         
         EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
         NSString *image = [dictOfCalEvents objectForKey:@"event_image_url"];
@@ -153,6 +152,8 @@
         cell.lblCity.text=[dictOfCalEvents valueForKey:@"location_town"];
         cell.lblState.text=[dictOfCalEvents valueForKey:@"location_state"];
         cell.lblPostCode.text=[dictOfCalEvents valueForKey:@"location_postcode"];
+        
+       
         
 
         if ([[arrMyCalEvents objectAtIndex:indexPath.row] valueForKey:@"event_image_url"] != nil) {

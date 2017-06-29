@@ -53,7 +53,7 @@
     
     self.navigationItem.hidesBackButton = YES;
     
-    [_btnMyFavourites setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [_btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
 
     
     

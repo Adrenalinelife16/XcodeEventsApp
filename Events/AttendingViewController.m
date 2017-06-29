@@ -33,7 +33,7 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
      [self getMyTickets];
     self.navigationItem.hidesBackButton = YES;
-    [_btnMyTickets setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [_btnMyTickets setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
 
 }
 
