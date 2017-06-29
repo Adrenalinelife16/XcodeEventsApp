@@ -976,7 +976,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="2IL-SV-7pg">
+                        <view key="tableHeaderView" clipsSubviews="YES" contentMode="scaleToFill" id="2IL-SV-7pg">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -1961,7 +1961,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imgIcon" destination="nHp-xq-Ubb" id="vHD-KH-LFF"/>
-                                            <outlet property="lblAddress" destination="8jq-1I-Lhe" id="iD4-LT-r1C"/>
+                                            <outlet property="lblAddressOne" destination="8jq-1I-Lhe" id="4mY-gf-Pfj"/>
+                                            <outlet property="lblAddressTwo" destination="54l-5P-Pn6" id="sgX-8G-rHw"/>
                                             <outlet property="lblDateTime" destination="5Xi-OI-WT1" id="PkH-k0-BDq"/>
                                             <outlet property="lblEventName" destination="bla-0b-Z4X" id="uIe-hW-LnL"/>
                                             <segue destination="GJ5-Ez-Ag6" kind="push" identifier="event_cal" id="GQZ-yq-JN7"/>
@@ -2031,14 +2032,14 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ZrE-a6-aH7"/>
-        <segue reference="bDj-6L-rqu"/>
-        <segue reference="Yzg-yO-FJ6"/>
-        <segue reference="CLK-cx-blz"/>
-        <segue reference="4M8-vo-jHA"/>
-        <segue reference="GQZ-yq-JN7"/>
-        <segue reference="U3F-sb-sE9"/>
         <segue reference="tEp-Xd-Rdh"/>
-        <segue reference="6n8-q3-lxy"/>
+        <segue reference="U3F-sb-sE9"/>
+        <segue reference="AVa-mX-VeI"/>
+        <segue reference="4JL-TO-diO"/>
+        <segue reference="ZrE-a6-aH7"/>
+        <segue reference="Yzg-yO-FJ6"/>
+        <segue reference="4M8-vo-jHA"/>
+        <segue reference="CLK-cx-blz"/>
+        <segue reference="bDj-6L-rqu"/>
     </inferredMetricsTieBreakers>
 </document>

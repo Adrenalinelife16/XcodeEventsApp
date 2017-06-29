@@ -137,35 +137,20 @@
     if ([arrayFilterMyCalResults count]>0) {
         // Configure the cell...
         
-        NSDictionary *dictOfCalEvents = [NSDictionary dictionaryWithDictionary:[arrayFilterMyCalResults objectAtIndex:indexPath.row]];
+        EventList *obj = [arrayFilterMyCalResults objectAtIndex:indexPath.row];
         
         
-   //     arrayCalConversion = arrMyCalEvents;
+        cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
+        cell.lblEventName.text  =   obj.eventName;
         
-        EventList *obj = [arrMyCalEvents objectAtIndex:indexPath.row];
-        NSString *image = [dictOfCalEvents objectForKey:@"event_image_url"];
+        cell.lblAddressOne.text = [NSString stringWithFormat:@"%@",obj.eventLocationAddress];
+        cell.lblAddressTwo.text = [NSString stringWithFormat:@"%@ %@, %@",obj.eventLocationTown, obj.eventLocationState,obj.eventLocationpostcode];
         
-        cell.lblDateTime.text = [Utility getFormatedDateString:[dictOfCalEvents objectForKey:@"event_start_date"] dateFormatString:@"yyyy-MM-dd" dateFormatterString:@"E, MMM d yyyy h:mm a"];
-        cell.lblEventName.text=[dictOfCalEvents valueForKey:@"event_name"];
-        
-        cell.lblAddress.text=[dictOfCalEvents valueForKey:@"location_address"];
-        cell.lblCity.text=[dictOfCalEvents valueForKey:@"location_town"];
-        cell.lblState.text=[dictOfCalEvents valueForKey:@"location_state"];
-        cell.lblPostCode.text=[dictOfCalEvents valueForKey:@"location_postcode"];
-        
-       
-        
-
-        if ([[arrMyCalEvents objectAtIndex:indexPath.row] valueForKey:@"event_image_url"] != nil) {
+        if ([obj.eventImageURL length]) {
             
-            
-            [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",image]] placeholderImage:nil];
-          //  cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
+            [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFit;
-            
         }
-        
-        
         
     }
     
