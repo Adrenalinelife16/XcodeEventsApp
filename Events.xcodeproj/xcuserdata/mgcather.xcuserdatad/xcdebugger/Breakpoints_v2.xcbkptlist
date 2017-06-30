@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/FavoritesTableViewController.m"
-            timestampString = "520446487.426906"
+            timestampString = "520531336.593851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/MyProgramViewController/CalendarViewController.m"
-            timestampString = "520461023.95289"
+            timestampString = "520531498.123137"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "293"
-            endingLineNumber = "293"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "-calendarView:switchedToMonth:targetHeight:animated:"
             landmarkType = "7">
          </BreakpointContent>

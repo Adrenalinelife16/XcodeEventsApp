@@ -65,7 +65,6 @@
     [self clickedMyCalender:nil];
     [self getAllEventsFromServer];
     
-    [self calendarView:calView dateSelected:eventDate];
         
 }
 /*
@@ -88,8 +87,7 @@
     [self createCalendarView];
     
     [_btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
-  //  [self.tblMainTable reloadData];
-    
+     [self calendarView:calView dateSelected:eventDate];
 }
 
 
@@ -218,13 +216,13 @@
     
     [self.calendarView setContentSize:CGSizeMake(0, 0)];
     [calendarBG removeFromSuperview];
-    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Fetching favorites"];
+    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading..."];
     
 }
 
 - (IBAction)clickedMyCalender:(id)sender {
     
-    self.btnNotifiction.titleLabel.text=@"";
+    
 }
 
 
@@ -303,14 +301,10 @@
     [self compareEventDateAndSelectedDate];
 }
 
-/**
- *  get events by selected month from server
- *
- *  @param strMonth month for events
- */
+
 -(void)getCalendarData:(NSString *)strMonth
 {
-    //   [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading Events"];
+    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading..."];
     
     
     NSCalendar* calendar = [NSCalendar currentCalendar];

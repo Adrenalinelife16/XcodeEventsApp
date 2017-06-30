@@ -96,9 +96,6 @@
         
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
     
-    
-
-    
 }
 
 - (void)willPresentSearchController:(UISearchController *)searchController {
@@ -148,6 +145,7 @@
     }
     
 }
+
 
 #pragma mark - UISearchBarDelegate
 

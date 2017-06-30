@@ -41,6 +41,7 @@
     self.navigationItem.title = @"Find Your Life";
     [self getAllEventsFromServer];
     
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -54,6 +55,7 @@
     self.navigationItem.hidesBackButton = YES;
     
     [_btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
+    
 
     
     

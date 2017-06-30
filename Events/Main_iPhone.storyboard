@@ -1011,9 +1011,6 @@
                                     <state key="normal" title="Favorites">
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <connections>
-                                        <action selector="clickedMyFavourites:" destination="uN1-jK-Wuq" eventType="touchUpInside" id="lGR-2c-uTB"/>
-                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1826,6 +1823,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="clickedMyFavourites:" destination="uN1-jK-Wuq" eventType="touchUpInside" id="Mrm-jH-Lye"/>
                                     <segue destination="BPn-5N-zfJ" kind="push" animates="NO" id="IPh-Ar-d5t"/>
                                 </connections>
                             </button>
@@ -1907,7 +1905,8 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BPn-5N-zfJ" kind="push" animates="NO" id="tEp-Xd-Rdh"/>
+                                            <action selector="clickedMyFavourites:" destination="ymv-lc-u6U" eventType="touchUpInside" id="svH-QT-pob"/>
+                                            <segue destination="BPn-5N-zfJ" kind="push" animates="NO" id="C9L-jn-ty6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1981,9 +1980,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
-                        <outlet property="btnMyCalender" destination="glN-PG-mcU" id="54F-4v-uNF"/>
-                        <outlet property="btnMyFavourites" destination="Fec-lO-v4N" id="0xb-NO-ZpM"/>
-                        <outlet property="btnMyTickets" destination="i2K-Lp-h1d" id="TnF-bz-hfe"/>
+                        <outlet property="btnMyCalender" destination="glN-PG-mcU" id="pIh-ha-vO9"/>
+                        <outlet property="btnMyFavourites" destination="Fec-lO-v4N" id="h7R-4F-2sY"/>
+                        <outlet property="btnMyTickets" destination="i2K-Lp-h1d" id="aJK-7l-IEc"/>
                         <outlet property="calendarView" destination="g3A-tZ-1m6" id="JxI-65-v9N"/>
                         <outlet property="tblMainTable" destination="SzQ-aL-qMg" id="uLz-9E-r9C"/>
                     </connections>
@@ -2032,10 +2031,10 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="tEp-Xd-Rdh"/>
-        <segue reference="U3F-sb-sE9"/>
-        <segue reference="AVa-mX-VeI"/>
-        <segue reference="4JL-TO-diO"/>
+        <segue reference="IPh-Ar-d5t"/>
+        <segue reference="6n8-q3-lxy"/>
+        <segue reference="rdp-Lt-wIv"/>
+        <segue reference="GQZ-yq-JN7"/>
         <segue reference="ZrE-a6-aH7"/>
         <segue reference="Yzg-yO-FJ6"/>
         <segue reference="4M8-vo-jHA"/>
