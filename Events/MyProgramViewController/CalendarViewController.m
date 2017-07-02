@@ -21,6 +21,7 @@
 #import "ProgramViewController.h"
 #import "Utility.h"
 #import "FavoritesTableViewController.h"
+#import "VRGCalendarView.h"
 
 @interface CalendarViewController ()
 {
@@ -51,6 +52,8 @@
 @synthesize arrayFavEvent;
 
 
+
+
 #pragma mark - View Life Cycle
 - (void)viewDidLoad {
     
@@ -64,18 +67,12 @@
     
     [self clickedMyCalender:nil];
     [self getAllEventsFromServer];
+    [self calendarView:nil todaysDate:currentDate];
     
         
 }
-/*
--(void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date {
-    
-    eventDate   =   [[NSDate alloc] init];
-    eventDate   =   date;
-    [self compareEventDateAndSelectedDate];
-}
 
-*/
+
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -87,9 +84,36 @@
     [self createCalendarView];
     
     [_btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
-     [self calendarView:calView dateSelected:eventDate];
+    
+    
+   
 }
 
+-(void)calendarView:(VRGCalendarView  *)calendarView todaysDate:(NSDate *)today {
+    
+    
+    eventDate   =   [[NSDate alloc] init];
+    eventDate   =   today;
+    
+    [self compareEventDateAndSelectedDate];
+    
+    NSLog(@"todays date %@", today);
+    
+    
+     // test date 2017-06-30 23:07:30 +0000
+    
+}
+/*
+-(void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date {
+    
+    eventDate   =   [[NSDate alloc] init];
+    eventDate   =   date;
+    
+    NSLog(@"test date %@", date);
+    [self compareEventDateAndSelectedDate];
+}
+
+*/
 
 - (void)didReceiveMemoryWarning
 {
@@ -298,6 +322,8 @@
     
     eventDate   =   [[NSDate alloc] init];
     eventDate   =   date;
+    
+    NSLog(@"test date %@", date);
     [self compareEventDateAndSelectedDate];
 }
 

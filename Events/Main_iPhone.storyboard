@@ -1531,7 +1531,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About Us" id="8an-5w-L1E"/>
+                    <navigationItem key="navigationItem" title="Help Center" id="8an-5w-L1E"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
@@ -2036,9 +2036,9 @@
         <segue reference="rdp-Lt-wIv"/>
         <segue reference="GQZ-yq-JN7"/>
         <segue reference="ZrE-a6-aH7"/>
-        <segue reference="Yzg-yO-FJ6"/>
-        <segue reference="4M8-vo-jHA"/>
-        <segue reference="CLK-cx-blz"/>
+        <segue reference="ymL-KN-Yv3"/>
+        <segue reference="okc-1f-ZH5"/>
+        <segue reference="c3b-7q-UHr"/>
         <segue reference="bDj-6L-rqu"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -43,6 +43,33 @@
     if ([delegate respondsToSelector:@selector(calendarView:dateSelected:)]) [delegate calendarView:self dateSelected:self.selectedDate];
 }
 
+-(void)todaysDate:(int)today {
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *comps = [gregorian components:NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay fromDate:self.currentMonth];
+    [comps setDay:today];
+    self.selectedDate = [gregorian dateFromComponents:comps];
+    
+    int selectedDateYear = [selectedDate year];
+    int selectedDateMonth = [selectedDate month];
+    int currentMonthYear = [currentMonth year];
+    int currentMonthMonth = [currentMonth month];
+    
+    if (selectedDateYear < currentMonthYear) {
+        [self showPreviousMonth];
+    } else if (selectedDateYear > currentMonthYear) {
+        [self showNextMonth];
+    } else if (selectedDateMonth < currentMonthMonth) {
+        [self showPreviousMonth];
+    } else if (selectedDateMonth > currentMonthMonth) {
+        [self showNextMonth];
+    } else {
+        [self setNeedsDisplay];
+    }
+    
+    if ([delegate respondsToSelector:@selector(calendarView:dateSelected:)]) [delegate calendarView:self dateSelected:self.selectedDate];
+}
+
+
 #pragma mark - Mark Dates
 //NSArray can either contain NSDate objects or NSNumber objects with an int of the day.
 -(void)markDates:(NSArray *)dates {

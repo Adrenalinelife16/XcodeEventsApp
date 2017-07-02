@@ -29,6 +29,10 @@
 @property (nonatomic,retain) NSMutableData *receivedData;
 @property (strong, nonatomic) NSMutableArray *arrayFavEvent;
 
+
+@property (nonatomic, retain) NSDate *currentMonth;
+@property (nonatomic, retain, getter = selectedDate) NSDate *selectedDate;
+
 - (IBAction)clickedMyAttending:(id)sender;
 
 - (IBAction)clickedMyFavourites:(id)sender;
