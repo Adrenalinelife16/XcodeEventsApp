@@ -59,10 +59,12 @@
 
 
 #pragma mark - Check login for MyFavorite and MyTickets
--(void)checkLogin
-{
+-(void)checkLogin {
     
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+ //   NSString *strUserEmail     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSER_EMAIL]];
+    
+    
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])  {
         NSLog(@"User ID is %@", strUserID);
         [moreArray addObject:@"Logout"];

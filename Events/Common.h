@@ -22,3 +22,5 @@
 #define KUSERLONGITUDE @"userlongitude"
 
 #define KUSERID @"user_id"
+
+#define KUSER_EMAIL @"user_email"
