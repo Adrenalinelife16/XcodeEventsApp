@@ -39,7 +39,10 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.txtPassword.delegate = self;
- 
+    
+    [txtUsername addTarget:txtPassword action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+      
+    
 }
 
 
@@ -110,7 +113,7 @@
     
     if ([self isValid]) {
         [DSBezelActivityView newActivityViewForView:self.view.window];
-        NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.txtEmail.text,@"email",self.txtUsername.text,@"username",self.txtPassword.text,@"pwd", nil];
+        NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.txtEmail.text,@"email", self.txtUsername.text,@"username", self.txtPassword.text,@"pwd", nil];
         
         [Utility GetDataForMethod:NSLocalizedString(@"LOGIN_METHOD", @"LOGIN_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
             
@@ -124,8 +127,9 @@
                     [Utility setNSUserDefaultValueForString:[[response objectAtIndex:0] objectForKey:@"user_id"] strKey:KUSERID];
                     
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Login Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                    [av setTag:99];
                     [av show];
+                    
+                    
                 }
             }
             else if ([response isKindOfClass:[NSDictionary class]]){
@@ -138,7 +142,6 @@
                     [av setTag:99];
                     [av show];
                     // Perform Segue Here to Main Program View
-                    
                     
                     [self.tabBarController setSelectedIndex:0];
                     [self.navigationController popViewControllerAnimated:NO];

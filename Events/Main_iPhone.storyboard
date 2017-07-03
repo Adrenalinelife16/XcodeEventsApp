@@ -291,7 +291,7 @@
             <objects>
                 <tableViewController id="Jo0-vK-BNb" customClass="CategoryTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6AN-eq-lqA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -312,6 +312,7 @@
                             <outlet property="delegate" destination="Jo0-vK-BNb" id="6a1-7J-kSx"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="bu3-FD-XWK"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yoc-v0-Jun" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2036,9 +2037,9 @@
         <segue reference="rdp-Lt-wIv"/>
         <segue reference="GQZ-yq-JN7"/>
         <segue reference="ZrE-a6-aH7"/>
-        <segue reference="ymL-KN-Yv3"/>
-        <segue reference="okc-1f-ZH5"/>
-        <segue reference="c3b-7q-UHr"/>
         <segue reference="bDj-6L-rqu"/>
+        <segue reference="ymL-KN-Yv3"/>
+        <segue reference="CLK-cx-blz"/>
+        <segue reference="4M8-vo-jHA"/>
     </inferredMetricsTieBreakers>
 </document>

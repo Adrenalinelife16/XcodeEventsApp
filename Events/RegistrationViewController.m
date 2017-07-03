@@ -40,6 +40,12 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.txtConfirmPassword.delegate = self;
+    
+    [txtFirstName addTarget:txtLastName action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [txtLastName addTarget:txtUsername action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [txtUsername addTarget:txtEmail action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [txtEmail addTarget:txtPassword action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [txtPassword addTarget:txtConfirmPassword action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
 
     
 }
