@@ -22,6 +22,10 @@
 #import "Utility.h"
 #import "FavoritesTableViewController.h"
 #import "VRGCalendarView.h"
+#import <QuartzCore/QuartzCore.h>
+#import "NSDate+convenience.h"
+#import "NSMutableArray+convenience.h"
+#import "UIView+convenience.h"
 
 @interface CalendarViewController ()
 {
@@ -95,25 +99,13 @@
     eventDate   =   [[NSDate alloc] init];
     eventDate   =   today;
     
-    [self compareEventDateAndSelectedDate];
-    
     NSLog(@"todays date %@", today);
-    
-    
-     // test date 2017-06-30 23:07:30 +0000
-    
-}
-/*
--(void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date {
-    
-    eventDate   =   [[NSDate alloc] init];
-    eventDate   =   date;
-    
-    NSLog(@"test date %@", date);
-    [self compareEventDateAndSelectedDate];
-}
 
-*/
+    
+    [self compareEventDateAndSelectedDate];
+    
+
+}
 
 - (void)didReceiveMemoryWarning
 {

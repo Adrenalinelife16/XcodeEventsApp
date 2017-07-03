@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "EventList.h"
 #import "LoginViewController.h"
+#import "VRGCalendarView.h"
 
 @interface CalendarViewController : UIViewController
+
 
 @property (strong, nonatomic) IBOutlet UITableView *tblMainTable;//used for mytickets and my favorites
 
