@@ -34,6 +34,13 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     
     
+    [locationName addTarget:address action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [address addTarget:city action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [city addTarget:state action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [state addTarget:zipCode action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [zipCode addTarget:detailView action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -291,7 +291,7 @@
             <objects>
                 <tableViewController id="Jo0-vK-BNb" customClass="CategoryTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6AN-eq-lqA">
-                        <rect key="frame" x="0.0" y="64" width="320" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -323,20 +323,20 @@
         <scene sceneID="of1-2C-MFB">
             <objects>
                 <viewController id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
-                        <rect key="frame" x="0.0" y="64" width="320" height="1187"/>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="xKb-jB-jd7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" id="fga-UX-TPd">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="1083"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" id="fga-UX-TPd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" id="2BV-HE-sTB" customClass="UIControl">
-                                        <rect key="frame" x="0.0" y="-3" width="320" height="1107"/>
+                                        <rect key="frame" x="0.0" y="-3" width="320" height="1147"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="actionbar_bg_white.png" id="ne0-V7-A9h">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="1087"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="1154"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Event Name" minimumFontSize="17" id="ddN-7u-BEs">
@@ -408,7 +408,7 @@
                                                 <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <connections>
                                                     <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="uwY-mj-rID"/>
                                                 </connections>
@@ -419,7 +419,7 @@
                                                 <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <connections>
                                                     <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="YvJ-uf-vnR"/>
                                                 </connections>
@@ -430,7 +430,7 @@
                                                 <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <connections>
                                                     <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="gim-vD-V4w"/>
                                                 </connections>
@@ -441,7 +441,7 @@
                                                 <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <connections>
                                                     <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="dbL-Ec-jTr"/>
                                                 </connections>
@@ -452,7 +452,7 @@
                                                 <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <connections>
                                                     <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="R4z-lB-dmO"/>
                                                 </connections>
@@ -2036,10 +2036,10 @@
         <segue reference="6n8-q3-lxy"/>
         <segue reference="rdp-Lt-wIv"/>
         <segue reference="GQZ-yq-JN7"/>
-        <segue reference="ZrE-a6-aH7"/>
         <segue reference="bDj-6L-rqu"/>
         <segue reference="ymL-KN-Yv3"/>
         <segue reference="CLK-cx-blz"/>
         <segue reference="4M8-vo-jHA"/>
+        <segue reference="5S3-4t-Vn7"/>
     </inferredMetricsTieBreakers>
 </document>
