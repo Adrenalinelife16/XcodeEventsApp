@@ -57,7 +57,6 @@
 
 
 
-
 #pragma mark - View Life Cycle
 - (void)viewDidLoad {
     
@@ -68,16 +67,14 @@
     NSDate *currentDate =   [NSDate date];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
+
     
     [self clickedMyCalender:nil];
     [self getAllEventsFromServer];
-    
-   
-    
+
+
         
 }
-
-
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -90,7 +87,11 @@
     
     [_btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     
-    [self compareEventDateAndSelectedDate];
+//    [self compareEventDateAndSelectedDate];
+    
+    
+    
+    
    
 }
 
@@ -101,11 +102,8 @@
     eventDate   =   today;
     
     NSLog(@"todays date %@", today);
-    
-    VRGCalendarView *calendar = [[VRGCalendarView alloc] init];
-    calendar.delegate = (id)self;
-
-
+    [self compareEventDateAndTodaysDate];
+   
 }
 
 - (void)didReceiveMemoryWarning
@@ -167,9 +165,8 @@
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFit;
         } else {
             
-            NSLog(@"No images exist");
-            cell.imgIcon.image = [UIImage imageNamed:@"no_image.png"];
-            
+
+            cell.imgIcon.image = [UIImage imageNamed:@"no_image.png"];          
             
         }
         
@@ -322,7 +319,7 @@
     eventDate   =   [[NSDate alloc] init];
     eventDate   =   date;
     
-    NSLog(@"test date %@", date);
+    NSLog(@"selected date %@", date);
     [self compareEventDateAndSelectedDate];
 }
 
@@ -368,7 +365,7 @@
                         [arrayCalDateSelectedMonth addObject:strDay];
                     }
                 }
-                [self compareEventDateAndSelectedDate];
+     //           [self compareEventDateAndSelectedDate];
                 NSMutableArray *arrayTempDates = [[NSMutableArray alloc] init];
                 for (NSString *str in arrayCalDateSelectedMonth) {
                     [arrayTempDates addObject:[NSNumber numberWithInt:[str intValue]]];
@@ -376,6 +373,7 @@
                 }
                 
                 [calView markDates:[NSArray arrayWithArray:arrayTempDates]];
+                [self calendarView:nil todaysDate:eventDate];
                 
             }
             else{
@@ -406,6 +404,30 @@
         NSDate *selectedEventDate   =   [dateFormatter dateFromString:[NSString stringWithFormat:@"%@",[dictOfEvent objectForKey:@"event_start_date"]]];
         
         if ([eventDate compare:selectedEventDate] == NSOrderedSame) {
+            [arrMyCalEvents addObject:dictOfEvent];
+        }
+    }
+    [self filterMyCalEvents];
+}
+
+-(void)compareEventDateAndTodaysDate {
+
+    
+    
+    NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    NSDate *currentDate =   [NSDate date];
+    NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
+    eventDate   =   [dateFormatter dateFromString:strCurrentDate];
+
+    arrMyCalEvents  =   [[NSMutableArray alloc] init];
+    for (NSDictionary *dictOfEvent in arrayResponseCalEvents) {
+        
+        NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+        NSDate *selectedEventDate   =   [dateFormatter dateFromString:[NSString stringWithFormat:strCurrentDate ,[dictOfEvent objectForKey:@"event_start_date"]]];
+        
+        if ([eventDate compare:selectedEventDate] == NSOrderedSame) {       
             [arrMyCalEvents addObject:dictOfEvent];
         }
     }
@@ -536,6 +558,7 @@
          *  global array for events data.
          */
         gArrayEvents = [[NSMutableArray alloc] initWithArray:arrayFavouriteProgram];
+
         
     }WithFailure:^(NSString *error)
      {
