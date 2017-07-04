@@ -342,6 +342,12 @@
     
     if ([obj.eventImageURL length]) {
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
+    } else {
+        
+        NSLog(@"No images exist");
+        cell.imgEventImage.image = [UIImage imageNamed:@"no_image.png"];
+   
+        
     }
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;

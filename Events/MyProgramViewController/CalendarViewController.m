@@ -90,7 +90,7 @@
     
     [_btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     
-    
+    [self compareEventDateAndSelectedDate];
    
 }
 
@@ -165,6 +165,12 @@
             
             [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFit;
+        } else {
+            
+            NSLog(@"No images exist");
+            cell.imgIcon.image = [UIImage imageNamed:@"no_image.png"];
+            
+            
         }
         
     }
