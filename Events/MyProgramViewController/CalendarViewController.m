@@ -67,30 +67,22 @@
     NSDate *currentDate =   [NSDate date];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
-
-    
-    [self clickedMyCalender:nil];
-    [self getAllEventsFromServer];
-
-
         
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
+-(void)viewWillAppear:(BOOL)animated {
+    
+    
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Find Your Life";
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.hidesBackButton = YES;
     [self createCalendarView];
+    [self clickedMyCalender:nil];
+    [self getAllEventsFromServer];
     
     [_btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
-    
-//    [self compareEventDateAndSelectedDate];
-    
-    
-    
     
    
 }
@@ -101,7 +93,6 @@
     eventDate   =   [[NSDate alloc] init];
     eventDate   =   today;
     
-    NSLog(@"todays date %@", today);
     [self compareEventDateAndTodaysDate];
    
 }
@@ -427,7 +418,7 @@
         [dateFormatter setDateFormat:@"yyyy-MM-dd"];
         NSDate *selectedEventDate   =   [dateFormatter dateFromString:[NSString stringWithFormat:strCurrentDate ,[dictOfEvent objectForKey:@"event_start_date"]]];
         
-        if ([eventDate compare:selectedEventDate] == NSOrderedSame) {       
+        if ([eventDate compare:selectedEventDate] == NSOrderedSame) {
             [arrMyCalEvents addObject:dictOfEvent];
         }
     }
