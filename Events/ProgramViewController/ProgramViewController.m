@@ -19,7 +19,7 @@
 #import "SearchResultsTableViewController.h"
 
 
-@interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating>
+@interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate>
 
 
 @property (nonatomic, strong) SearchResultsTableViewController *resultsTableController;
@@ -90,13 +90,11 @@
     // hierarchy until it finds the root view controller or one that defines a presentation context.
     //
     self.definesPresentationContext = YES;  // know where you want UISearchController to be displayed
-
-    
-    
         
    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
     
 }
+
 
 - (void)willPresentSearchController:(UISearchController *)searchController {
     // do something before the search controller is presented

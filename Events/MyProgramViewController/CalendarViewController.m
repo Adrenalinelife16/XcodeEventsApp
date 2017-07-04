@@ -71,7 +71,8 @@
     
     [self clickedMyCalender:nil];
     [self getAllEventsFromServer];
-    [self calendarView:nil todaysDate:currentDate];
+    
+   
     
         
 }
@@ -100,10 +101,10 @@
     eventDate   =   today;
     
     NSLog(@"todays date %@", today);
+    
+    VRGCalendarView *calendar = [[VRGCalendarView alloc] init];
+    calendar.delegate = (id)self;
 
-    
-    [self compareEventDateAndSelectedDate];
-    
 
 }
 
@@ -301,7 +302,7 @@
     //   rect.origin.y=targetHeight;
     //  rect.size.height=200; // 200
     self.tblMainTable.frame=rect;
-    //  [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)]; // 320
+ //   [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)]; // 320
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd h:mm:ss"];
     NSDate *currentDate =   [NSDate date];
@@ -376,6 +377,8 @@
                 
                 return ;
             }
+            
+            
         }
         
     }WithFailure:^(NSString *error){

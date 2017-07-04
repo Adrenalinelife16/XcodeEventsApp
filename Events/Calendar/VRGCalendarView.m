@@ -43,6 +43,42 @@
     if ([delegate respondsToSelector:@selector(calendarView:dateSelected:)]) [delegate calendarView:self dateSelected:self.selectedDate];
 }
 
+-(void)todaysDate {
+
+    NSDate *currentDate =   [NSDate date];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd"];
+ 
+    NSString *stringFromDate = [formatter stringFromDate:[NSDate date]];
+    NSInteger integerDate = [stringFromDate integerValue];
+    
+    
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *comps = [gregorian components:NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay fromDate:currentDate];
+    [comps setDay:integerDate];
+     
+    self.selectedDate = [gregorian dateFromComponents:comps];
+    
+    int selectedDateYear = [selectedDate year];
+    int selectedDateMonth = [selectedDate month];
+    int currentMonthYear = [currentMonth year];
+    int currentMonthMonth = [currentMonth month];
+    
+    if (selectedDateYear < currentMonthYear) {
+        [self showPreviousMonth];
+    } else if (selectedDateYear > currentMonthYear) {
+        [self showNextMonth];
+    } else if (selectedDateMonth < currentMonthMonth) {
+        [self showPreviousMonth];
+    } else if (selectedDateMonth > currentMonthMonth) {
+        [self showNextMonth];
+    } else {
+        [self setNeedsDisplay];
+    }
+    
+    if ([delegate respondsToSelector:@selector(todaysDate)]) [delegate calendarView:self dateSelected:currentDate];
+}
 
 #pragma mark - Mark Dates
 //NSArray can either contain NSDate objects or NSNumber objects with an int of the day.
@@ -536,6 +572,7 @@
         CGContextSetFillColorWithColor(context, color.CGColor);
         CGContextFillEllipseInRect(context, CGRectMake(targetX+13,targetY+8, 4, 4));
         
+        
         //CGContextSetFillColorWithColor(context, color.CGColor);
         //CGContextFillPath(context);
     }
@@ -571,6 +608,7 @@
         
         [self performSelector:@selector(reset) withObject:nil afterDelay:0.1]; //so delegate can be set after init and still get called on init
         //        [self reset];
+        [self todaysDate];
     }
     return self;
 }

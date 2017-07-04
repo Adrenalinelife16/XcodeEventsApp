@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ProgramViewController.h"
 
-@implementation AppDelegate
+@implementation AppDelegate 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
@@ -32,9 +33,17 @@
     [MMdbsupport MMinitializeDb];
     [MMdbsupport MMOpenDataBase];
 
+
     return YES;
 }
 
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    
+    NSLog(@"Controller");
+    
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application

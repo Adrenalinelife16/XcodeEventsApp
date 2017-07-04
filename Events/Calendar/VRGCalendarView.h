@@ -25,6 +25,8 @@
     
     NSDate *currentMonth;
     
+    NSDate *eventDate;
+    
     UILabel *labelCurrentMonth;
     
     BOOL isAnimating;
@@ -49,6 +51,7 @@
 @property (nonatomic, retain, getter = selectedDate) NSDate *selectedDate;
 
 -(void)selectDate:(int)date;
+-(void)todaysDate;
 -(void)reset;
 
 -(void)markDates:(NSArray *)dates;
