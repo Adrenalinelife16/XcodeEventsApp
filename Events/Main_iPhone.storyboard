@@ -92,7 +92,6 @@
                     <connections>
                         <outlet property="txtEmail" destination="wC5-W8-nMQ" id="Vki-MN-F82"/>
                         <outlet property="txtPassword" destination="O35-QF-AZ1" id="UV2-jb-cyK"/>
-                        <outlet property="txtUsername" destination="wC5-W8-nMQ" id="KZU-CC-VJM"/>
                         <outlet property="view" destination="VxO-xc-TFe" id="Sfr-L5-2w9"/>
                     </connections>
                 </viewController>
@@ -2036,10 +2035,10 @@
         <segue reference="U3F-sb-sE9"/>
         <segue reference="GQZ-yq-JN7"/>
         <segue reference="6n8-q3-lxy"/>
-        <segue reference="ZrE-a6-aH7"/>
+        <segue reference="bDj-6L-rqu"/>
         <segue reference="Yzg-yO-FJ6"/>
+        <segue reference="5S3-4t-Vn7"/>
         <segue reference="CLK-cx-blz"/>
         <segue reference="4M8-vo-jHA"/>
-        <segue reference="bDj-6L-rqu"/>
     </inferredMetricsTieBreakers>
 </document>

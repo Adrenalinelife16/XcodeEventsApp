@@ -62,12 +62,13 @@
     
     [super viewDidLoad];
     //set current date as event date before getting from server
+    NSDate *currentDate =   [[NSDate alloc]init];
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-    NSDate *currentDate =   [NSDate date];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"CDT"]];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
-        
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -402,23 +403,30 @@
 }
 
 -(void)compareEventDateAndTodaysDate {
+    
+     NSLog(@"Current Date %@",eventDate);
+
 
     
-    
-    NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-    NSDate *currentDate =   [NSDate date];
-    NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
-    eventDate   =   [dateFormatter dateFromString:strCurrentDate];
-
     arrMyCalEvents  =   [[NSMutableArray alloc] init];
     for (NSDictionary *dictOfEvent in arrayResponseCalEvents) {
         
+        NSDate *currentDate =   [[NSDate alloc]init];
         NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-        NSDate *selectedEventDate   =   [dateFormatter dateFromString:[NSString stringWithFormat:strCurrentDate ,[dictOfEvent objectForKey:@"event_start_date"]]];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"CDT"]];
+        NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
+        eventDate   =   [dateFormatter dateFromString:strCurrentDate];
         
-        if ([eventDate compare:selectedEventDate] == NSOrderedSame) {
+        NSString *newStr;
+        
+        newStr = [strCurrentDate substringToIndex:[strCurrentDate length]-0];
+        
+        NSDate *todaysEventDate   =   [dateFormatter dateFromString:[NSString stringWithFormat:newStr ,[dictOfEvent
+            objectForKey:@"event_start_date"]]];
+        
+        
+        if ([newStr isEqual:todaysEventDate] == NSOrderedSame) {
             [arrMyCalEvents addObject:dictOfEvent];
         }
     }

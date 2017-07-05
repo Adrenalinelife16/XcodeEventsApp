@@ -69,9 +69,9 @@
 -(void)bottomBorder
 {
     CALayer *bottomBorder = [CALayer layer];
-    bottomBorder.frame = CGRectMake(0.0f, self.txtUsername.frame.size.height - 1, self.txtUsername.frame.size.width, 1.0f);
+    bottomBorder.frame = CGRectMake(0.0f, self.txtEmail.frame.size.height - 1, self.txtEmail.frame.size.width, 1.0f);
     bottomBorder.backgroundColor = [UIColor grayColor].CGColor;
-    [self.txtUsername.layer addSublayer:bottomBorder];
+    [self.txtEmail.layer addSublayer:bottomBorder];
     
     CALayer *topBorder = [CALayer layer];
     topBorder.frame = CGRectMake(0.0f, self.txtPassword.frame.size.height - 1, self.txtPassword.frame.size.width, 1.0f);
@@ -113,9 +113,13 @@
     
     if ([self isValid]) {
         [DSBezelActivityView newActivityViewForView:self.view.window];
-        NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.txtEmail.text,@"email", self.txtUsername.text,@"username", self.txtPassword.text,@"pwd", nil];
+        NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:
+                self.txtEmail.text,@"email", self.txtPassword.text,@"pwd", nil];
+        
         
         [Utility GetDataForMethod:NSLocalizedString(@"LOGIN_METHOD", @"LOGIN_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+            
+            NSLog(@"Login Response %@", response);
             
             [DSBezelActivityView removeViewAnimated:YES];
             if ([response isKindOfClass:[NSArray class]]) {
@@ -145,8 +149,6 @@
                     
                     [self.tabBarController setSelectedIndex:0];
                     [self.navigationController popViewControllerAnimated:NO];
-                    NSLog(@"User ID logged in %@", dictOfParameters);
-                
                     
                     }
                 
