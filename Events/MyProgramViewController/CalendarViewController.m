@@ -280,7 +280,7 @@
 -(void)createCalendarView{
     
     CGRect rect=self.calendarView.frame;
-    // rect.size.height=300; // 300
+    rect.size.height=300; // 300
     calendarBG=[[UIView alloc] initWithFrame:rect];
     VRGCalendarView *calendar = [[VRGCalendarView alloc] init];
     calendar.delegate=(id)self;
@@ -289,29 +289,29 @@
 }
 
 #pragma mark - VRGCalendarView delegate methods
--(void)calendarView:(VRGCalendarView *)calendarView switchedToMonth:(int)month targetHeight:(float)targetHeight animated:(BOOL)animated {
+-(void)calendarView:(VRGCalendarView *)calendarView switchedToMonth:(int)month targetHeight:(float) targetHeight animated:(BOOL)animated {
     
     calView = calendarView;
     
     CGRect rect=self.tblMainTable.frame;
-    //   rect.origin.y=targetHeight;
-    //  rect.size.height=200; // 200
+    rect.origin.y= 360; //360
+    rect.size.height= 165; // 165
     self.tblMainTable.frame=rect;
- //   [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)]; // 320
+    [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)]; // 320
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd h:mm:ss"];
     NSDate *currentDate =   [NSDate date];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     [self getCalendarData:[NSString stringWithFormat:@"%d",month]];
+    
 }
 
 -(void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date {
     
     eventDate   =   [[NSDate alloc] init];
     eventDate   =   date;
-    
-    NSLog(@"selected date %@", date);
+
     [self compareEventDateAndSelectedDate];
 }
 

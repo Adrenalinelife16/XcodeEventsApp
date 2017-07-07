@@ -116,6 +116,8 @@
         NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:
                 self.txtEmail.text,@"email", self.txtPassword.text,@"pwd", nil];
         
+         NSLog(@"Pushed Paramaters %@", dictOfParameters);
+        
         
         [Utility GetDataForMethod:NSLocalizedString(@"LOGIN_METHOD", @"LOGIN_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
             
