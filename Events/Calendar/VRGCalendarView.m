@@ -77,7 +77,7 @@
         [self setNeedsDisplay];
     }
     
-    if ([delegate respondsToSelector:@selector(todaysDate)]) [delegate calendarView:self dateSelected:currentDate];
+  //  if ([delegate respondsToSelector:@selector(todaysDate)]) [delegate calendarView:self dateSelected:currentDate];
 }
 
 #pragma mark - Mark Dates
