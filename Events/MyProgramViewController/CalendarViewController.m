@@ -402,39 +402,8 @@
     [self filterMyCalEvents];
 }
 
--(void)compareEventDateAndTodaysDate2 {
-    
-     NSLog(@"Current Date %@",eventDate);
-
-
-    
-    arrMyCalEvents  =   [[NSMutableArray alloc] init];
-    for (NSDictionary *dictOfEvent in arrayResponseCalEvents) {
-        
-        NSDate *currentDate =   [[NSDate alloc]init];
-        NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"CDT"]];
-        NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
-        eventDate   =   [dateFormatter dateFromString:strCurrentDate];
-        
-        NSString *newStr;
-        
-        newStr = [strCurrentDate substringToIndex:[strCurrentDate length]-0];
-        
-        NSDate *todaysEventDate   =   [dateFormatter dateFromString:[NSString stringWithFormat:newStr ,[dictOfEvent
-            objectForKey:@"event_start_date"]]];
-        
-        
-        if ([newStr isEqual:todaysEventDate] == NSOrderedSame) {
-            [arrMyCalEvents addObject:dictOfEvent];
-        }
-    }
-    [self filterMyCalEvents];
-}
 
 -(void)compareEventDateAndTodaysDate {
-    NSLog(@"Starting compare events date to today");
     
     NSMutableArray *finalArray = [NSMutableArray array];
     NSMutableArray *finalArray2 = [NSMutableArray array];
@@ -446,15 +415,15 @@
     
     //Todays String
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
-    NSLog(@"strCurrentDate %@", strCurrentDate);
+    
     
     /**Loop through each individual event id**/
     for (NSUInteger i = 0, count = [arrayResponseCalEvents count]; i < count; i++){
-        NSLog(@"Beginning Loop");
+        
         
         //Current array string date
         NSString *stringDate = [arrayResponseCalEvents[i] valueForKey:@"event_start_date"];
-        NSLog(@"Current array String date %@", stringDate);
+        
         
         //if event id = fav id
         if([strCurrentDate isEqualToString:stringDate]) {
@@ -465,7 +434,6 @@
         //end of main loop
     }
     
-    NSLog(@"finalArray %@", finalArray);
     
     //start next loop here to check event_id
     for (NSUInteger i = 0, count = [gArrayEvents count]; i < count; i++){
@@ -473,7 +441,6 @@
         //Pull single event id from main array
         NSString *arrayId = [[gArrayEvents[i] valueForKey:@"eventID"] stringValue];
         NSInteger valueId = [arrayId intValue];
-        NSLog(@"arrayId %@", arrayId);
         
         /**Loop through each individual fav id**/
         for (NSUInteger f = 0, count = [finalArray count]; f < count; f++){
@@ -482,7 +449,6 @@
             NSString *stringDate = [finalArray[f] valueForKey:@"event_id"];
             //Convert singleId string to NSInteger
             NSInteger value = [stringDate intValue];
-            NSLog(@"stringDate %@", stringDate);
             
             //if event id = fav id
             if (valueId == value){
@@ -496,7 +462,6 @@
     
     //end of method
     arrayFilterMyCalResults = finalArray2;
-    NSLog(@"final arrayFilterMyCalResults %@", arrayFilterMyCalResults);
     [self.tblMainTable reloadData];
     
     
