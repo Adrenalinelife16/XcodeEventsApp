@@ -54,7 +54,7 @@
 
 - (IBAction)clickedMyFavourites:(id)sender {
     
-    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading..."];
+  //  [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading..."];
        
 }
 

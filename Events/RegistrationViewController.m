@@ -8,6 +8,7 @@
 
 #import "RegistrationViewController.h"
 #import "XMLReader.h"
+#import "MoreViewController.h"
 
 @interface RegistrationViewController ()
 
@@ -118,6 +119,14 @@
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:[response objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [av setTag:99];
                     [av show];
+                    
+                    [self.tabBarController setSelectedIndex:0];
+                    [self.navigationController popViewControllerAnimated:NO];
+                    [self.navigationController popViewControllerAnimated:NO];
+                    
+                
+             
+                    
                 }
             }
             else if ([response isKindOfClass:[NSArray class]]) {

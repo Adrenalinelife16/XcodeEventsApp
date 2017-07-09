@@ -648,7 +648,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aMoreCategories.png"/>
                                         <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="more" id="PWx-hH-SxD"/>
+                                            <segue destination="eDO-mI-sMP" kind="push" id="QYN-Zo-SnL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1421,6 +1421,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0is-ca-8AR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2727" y="353"/>
+        </scene>
+        <!--Discover Table View Controller-->
+        <scene sceneID="Bfa-tI-Yqg">
+            <objects>
+                <tableViewController id="eDO-mI-sMP" customClass="DiscoverTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zmw-en-MN6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="AzF-n8-jVC" customClass="EventCalCell">
+                                <rect key="frame" x="0.0" y="28" width="320" height="83"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AzF-n8-jVC" id="KTN-Hd-u8H">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="82.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="no_image.png" id="IZA-9e-nNR">
+                                            <rect key="frame" x="8" y="4" width="92" height="75"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="orM-vp-kqw">
+                                            <rect key="frame" x="106" y="26" width="219" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.92941188809999997" green="0.1098037362" blue="0.14117646219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="auO-lE-yWD">
+                                            <rect key="frame" x="106" y="48" width="179" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VJp-49-bbo">
+                                            <rect key="frame" x="106" y="64" width="162" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date and Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wEb-VU-mEt">
+                                            <rect key="frame" x="106" y="4" width="219" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgIcon" destination="IZA-9e-nNR" id="AGu-e0-v8F"/>
+                                    <outlet property="lblAddressOne" destination="auO-lE-yWD" id="9GZ-hk-usC"/>
+                                    <outlet property="lblAddressTwo" destination="VJp-49-bbo" id="tJK-oj-Zob"/>
+                                    <outlet property="lblDateTime" destination="wEb-VU-mEt" id="vqH-lO-ycq"/>
+                                    <outlet property="lblEventName" destination="orM-vp-kqw" id="3v3-S2-rPn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eDO-mI-sMP" id="n09-ar-zR0"/>
+                            <outlet property="delegate" destination="eDO-mI-sMP" id="iu9-4f-2M4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="5ab-iO-Wa4"/>
+                    <connections>
+                        <segue destination="GJ5-Ez-Ag6" kind="push" identifier="discoverEvent" id="Pah-ek-4S9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncD-zV-sfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-594" y="-538"/>
         </scene>
         <!--Navigation Controller-->
@@ -2032,13 +2105,13 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="C9L-jn-ty6"/>
-        <segue reference="U3F-sb-sE9"/>
-        <segue reference="GQZ-yq-JN7"/>
+        <segue reference="rdp-Lt-wIv"/>
         <segue reference="6n8-q3-lxy"/>
-        <segue reference="bDj-6L-rqu"/>
-        <segue reference="Yzg-yO-FJ6"/>
+        <segue reference="vps-4F-Qwj"/>
         <segue reference="5S3-4t-Vn7"/>
+        <segue reference="Yzg-yO-FJ6"/>
         <segue reference="CLK-cx-blz"/>
         <segue reference="4M8-vo-jHA"/>
+        <segue reference="Pah-ek-4S9"/>
     </inferredMetricsTieBreakers>
 </document>

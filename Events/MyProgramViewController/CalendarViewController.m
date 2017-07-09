@@ -228,7 +228,7 @@
     
     [self.calendarView setContentSize:CGSizeMake(0, 0)];
     [calendarBG removeFromSuperview];
-    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading..."];
+ //   [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading..."];
     
 }
 
@@ -318,7 +318,7 @@
 
 -(void)getCalendarData:(NSString *)strMonth
 {
-    [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading..."];
+ //   [DSBezelActivityView newActivityViewForView:self.view.window withLabel:@"Loading..."];
     
     
     NSCalendar* calendar = [NSCalendar currentCalendar];
@@ -329,7 +329,7 @@
     
     [Utility GetDataForMethod:NSLocalizedString(@"GETEVENTSBYMONTH_METHOD", @"GETEVENTSBYMONTH_METHOD") parameters:dictOfParameters key:@"Calendar" withCompletion:^(id response){
         
-        [DSBezelActivityView removeViewAnimated:YES];
+  //      [DSBezelActivityView removeViewAnimated:YES];
         if ([response isKindOfClass:[NSArray class]]) {
             arrayResponseCalEvents  =   [[NSMutableArray alloc] init];
             

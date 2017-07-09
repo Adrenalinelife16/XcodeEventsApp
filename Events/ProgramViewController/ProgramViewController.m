@@ -135,7 +135,7 @@
     }
 
     [Utility afterDelay:0.01 withCompletion:^{
-        [DSBezelActivityView newActivityViewForView:self.view.window];
+   //     [DSBezelActivityView newActivityViewForView:self.view.window];
         [self getEventListFromServer];
     }];
     

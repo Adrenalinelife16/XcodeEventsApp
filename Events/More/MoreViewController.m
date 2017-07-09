@@ -56,6 +56,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)dissmissLoginRegister {
+    
+    [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"Hit");
+    
+}
+
 
 
 #pragma mark - Check login for MyFavorite and MyTickets

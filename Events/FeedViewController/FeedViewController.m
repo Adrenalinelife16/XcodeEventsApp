@@ -56,7 +56,7 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [Utility afterDelay:0.01 withCompletion:^{
-    [DSBezelActivityView newActivityViewForView:self.view.window];
+//    [DSBezelActivityView newActivityViewForView:self.view.window];
     [self getFeedsFromServer];
     //[self sortSocialFeedFilter];
     //[self sortSocialFeed];
@@ -117,7 +117,9 @@
 {
     NSDictionary *dictOfEventRequestParameter = [[NSDictionary alloc] init];
     
-    [Utility GetDataForMethod:NSLocalizedString(@"GETFEEDS_METHOD", @"GETFEEDS_METHOD") parameters:dictOfEventRequestParameter key:@"" withCompletion:^(id response){ [DSBezelActivityView removeViewAnimated:NO];
+    [Utility GetDataForMethod:NSLocalizedString(@"GETFEEDS_METHOD", @"GETFEEDS_METHOD") parameters:dictOfEventRequestParameter key:@"" withCompletion:^(id response){
+        
+        [DSBezelActivityView removeViewAnimated:NO];
         
         
         if ([response isKindOfClass:[NSDictionary class]]) {

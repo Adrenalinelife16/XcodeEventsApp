@@ -17,6 +17,7 @@
 @interface RegistrationViewController : UIViewController<UITextFieldDelegate,UIAlertViewDelegate>{
     id<registrationViewDelegate> __unsafe_unretained delegate;
     
+    
 }
 
 @property (assign, nonatomic) id<registrationViewDelegate> __unsafe_unretained delegate;
@@ -32,8 +33,12 @@
 @property (strong, nonatomic) NSArray *countryArray;
 @property (strong, nonatomic) NSString *countryName, *countryCode;
 
+-(void)dissmissLoginRegister;
+
 -(IBAction)btnRegisterPressed:(id)sender;
 -(IBAction)backgroundTouched:(id)sender;
 -(IBAction)textfieldReturn:(id)sender;
+
+
 
 @end

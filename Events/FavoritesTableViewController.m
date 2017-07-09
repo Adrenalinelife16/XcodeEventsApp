@@ -180,7 +180,7 @@
         
         
     }WithFailure:^(NSString *error){
-        [DSBezelActivityView removeViewAnimated:YES];
+//        [DSBezelActivityView removeViewAnimated:YES];
         NSLog(@"%@",error);
     }];
     
@@ -228,7 +228,7 @@
         arrayFavouriteProgram = finalArray;
         
         if ([finalArray count]>0) {
-            [DSBezelActivityView removeViewAnimated:YES];
+  //          [DSBezelActivityView removeViewAnimated:YES];
             [self.tblFavTable reloadData];
         } else {
             
@@ -254,7 +254,7 @@
     
     [Utility GetDataForMethod:NSLocalizedString(@"GETEVENTS_METHOD", @"GETEVENTS_METHOD") parameters:dictOfEventRequestParameter key:@"" withCompletion:^(id response){
         
-        [DSBezelActivityView removeViewAnimated:NO];
+  //      [DSBezelActivityView removeViewAnimated:NO];
         arrayFavouriteProgram  =   [[NSMutableArray alloc] init];
         
         
