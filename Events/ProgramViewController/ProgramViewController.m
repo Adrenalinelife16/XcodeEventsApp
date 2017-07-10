@@ -212,7 +212,7 @@
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
         
-        NSLog(@"Username or Email is %@", strUserID);
+        NSLog(@"Username ID = %@", strUserID);
     
     else
     {

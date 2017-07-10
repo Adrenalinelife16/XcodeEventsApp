@@ -116,18 +116,20 @@
                     
     
                      NSLog(@"username already exist");
-                    
+                
                 }
+                
+                
                 else{
                     [Utility setNSUserDefaultValueForString:[response objectForKey:@"user_id"] strKey:KUSERID];
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:[response objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [av setTag:99];
                     [av show];
                     
-                    
-                    
                 }
+    
             }
+        
             else if ([response isKindOfClass:[NSArray class]]) {
                 
                 if ([[[response objectAtIndex:0] objectForKey:@"message"] isEqualToString:@"Sorry, that email address is already used!"]) {
@@ -142,25 +144,26 @@
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:[[response objectAtIndex:0] objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [av show];
                     
-                   
-                    
+              //      [self.tabBarController setSelectedIndex:0];
+              //      [self.navigationController popViewControllerAnimated:NO];
+                
                     
                 }
-                
-                
-                //           [self.tabBarController setSelectedIndex:0];
-                //         [self.navigationController popViewControllerAnimated:NO];
 
                 
             }
-     //       [DSBezelActivityView removeViewAnimated:YES];
+            [DSBezelActivityView removeViewAnimated:YES];
             
-        }WithFailure:^(NSString *error){
+        }
+            WithFailure:^(NSString *error){
             [DSBezelActivityView removeViewAnimated:YES];
             NSLog(@"%@",error);
         }];
-    }
+         
+         
+         }
 }
+         
 
 
 #pragma mark - Text Field Delegates
