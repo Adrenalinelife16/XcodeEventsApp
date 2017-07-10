@@ -113,6 +113,10 @@
             if ([response isKindOfClass:[NSDictionary class]]) {
                 if ([[response objectForKey:@"message"] isEqualToString:@"Sorry, that username already exists!"]) {
                     [Utility alertNotice:APPNAME withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+                    
+    
+                     NSLog(@"username already exist");
+                    
                 }
                 else{
                     [Utility setNSUserDefaultValueForString:[response objectForKey:@"user_id"] strKey:KUSERID];
@@ -120,28 +124,36 @@
                     [av setTag:99];
                     [av show];
                     
-                    [self.tabBarController setSelectedIndex:0];
-                    [self.navigationController popViewControllerAnimated:NO];
-                    [self.navigationController popViewControllerAnimated:NO];
                     
-                
-             
                     
                 }
             }
             else if ([response isKindOfClass:[NSArray class]]) {
                 
-                if ([[[response objectAtIndex:0] objectForKey:@"message"] isEqualToString:@"Sorry, that username already exists!"]) {
+                if ([[[response objectAtIndex:0] objectForKey:@"message"] isEqualToString:@"Sorry, that email address is already used!"]) {
                     [Utility alertNotice:APPNAME withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+                    
+                    NSLog(@"email already exist");
+                    
                 }
                 else{
                     [Utility setNSUserDefaultValueForString:[[response objectAtIndex:0] objectForKey:@"user_id"] strKey:KUSERID];
                     
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:[[response objectAtIndex:0] objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [av show];
+                    
+                   
+                    
+                    
                 }
+                
+                
+                //           [self.tabBarController setSelectedIndex:0];
+                //         [self.navigationController popViewControllerAnimated:NO];
+
+                
             }
-            [DSBezelActivityView removeViewAnimated:YES];
+     //       [DSBezelActivityView removeViewAnimated:YES];
             
         }WithFailure:^(NSString *error){
             [DSBezelActivityView removeViewAnimated:YES];
