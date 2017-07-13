@@ -1873,7 +1873,7 @@
         <scene sceneID="lcY-T4-2sD">
             <objects>
                 <viewController storyboardIdentifier="attendingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uN1-jK-Wuq" customClass="AttendingViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IAm-9V-4bq">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="IAm-9V-4bq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1890,7 +1890,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L9s-Qm-fhI">
-                                <rect key="frame" x="213" y="69" width="107" height="31"/>
+                                <rect key="frame" x="213" y="69" width="99" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Attending">
@@ -2093,14 +2093,14 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="4JL-TO-diO"/>
+        <segue reference="IPh-Ar-d5t"/>
+        <segue reference="AVa-mX-VeI"/>
+        <segue reference="U3F-sb-sE9"/>
+        <segue reference="CLK-cx-blz"/>
         <segue reference="vps-4F-Qwj"/>
-        <segue reference="Pah-ek-4S9"/>
         <segue reference="ymL-KN-Yv3"/>
         <segue reference="4M8-vo-jHA"/>
-        <segue reference="CLK-cx-blz"/>
         <segue reference="5S3-4t-Vn7"/>
-        <segue reference="rdp-Lt-wIv"/>
-        <segue reference="6n8-q3-lxy"/>
-        <segue reference="C9L-jn-ty6"/>
     </inferredMetricsTieBreakers>
 </document>
