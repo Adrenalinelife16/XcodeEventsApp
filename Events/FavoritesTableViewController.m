@@ -228,7 +228,7 @@
         arrayFavouriteProgram = finalArray;
         
         if ([finalArray count]>0) {
-  //          [DSBezelActivityView removeViewAnimated:YES];
+            [DSBezelActivityView removeViewAnimated:YES];
             [self.tblFavTable reloadData];
         } else {
             

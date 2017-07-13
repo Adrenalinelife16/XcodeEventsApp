@@ -126,6 +126,11 @@
                     [av setTag:99];
                     [av show];
                     
+                    [self.tabBarController setSelectedIndex:0];
+                    [self.navigationController popViewControllerAnimated:NO];
+                    [delegate dismissRegistrationView];
+                    
+                    
                 }
     
             }
