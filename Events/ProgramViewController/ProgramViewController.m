@@ -68,6 +68,30 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
+    _resultsTableController = [[SearchResultsTableViewController alloc] init];
+    _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
+    self.searchController.searchResultsUpdater = self;
+    [self.searchController.searchBar sizeToFit];
+    [self.searchController.searchBar setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6solid.png"]];
+    
+    
+    self.tableView.tableHeaderView = self.searchController.searchBar;
+    
+    // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
+    self.resultsTableController.tableView.delegate = self;
+    self.searchController.delegate = self;
+    self.searchController.dimsBackgroundDuringPresentation = NO; // default is YES
+    self.searchController.searchBar.delegate = self; // so we can monitor text changes + others
+    
+    
+    // Search is now just presenting a view controller. As such, normal view controller
+    // presentation semantics apply. Namely that presentation will walk up the view controller
+    // hierarchy until it finds the root view controller or one that defines a presentation context.
+    //
+    self.definesPresentationContext = YES;  // know where you want UISearchController to be displayed
+    
+    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
+    
     
     UITabBarController *tabBarController = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController ;
     
@@ -106,29 +130,7 @@
     
     // Added Search controller info here
     
-    _resultsTableController = [[SearchResultsTableViewController alloc] init];
-    _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
-    self.searchController.searchResultsUpdater = self;
-    [self.searchController.searchBar sizeToFit];
-    [self.searchController.searchBar setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6solid.png"]];
     
-    
-    self.tableView.tableHeaderView = self.searchController.searchBar;
-    
-    // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
-    self.resultsTableController.tableView.delegate = self;
-    self.searchController.delegate = self;
-    self.searchController.dimsBackgroundDuringPresentation = NO; // default is YES
-    self.searchController.searchBar.delegate = self; // so we can monitor text changes + others
-    
-    
-    // Search is now just presenting a view controller. As such, normal view controller
-    // presentation semantics apply. Namely that presentation will walk up the view controller
-    // hierarchy until it finds the root view controller or one that defines a presentation context.
-    //
-    self.definesPresentationContext = YES;  // know where you want UISearchController to be displayed
-    
-    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:[UIColor redColor]];
 
 
     
