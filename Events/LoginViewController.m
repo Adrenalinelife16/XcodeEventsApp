@@ -165,8 +165,8 @@
 #pragma mark - Hide Keyboard
 // Hide keyboard when touch background
 
--(IBAction)backgroundTouched:(id)sender
-{
+-(IBAction)backgroundTouched:(id)sender {
+    
     [txtEmail resignFirstResponder];
     [txtUsername resignFirstResponder];
     [txtPassword resignFirstResponder];

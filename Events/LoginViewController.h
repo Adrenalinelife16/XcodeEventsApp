@@ -34,6 +34,7 @@
 
 -(IBAction)backgroundTouched:(id)sender;
 -(IBAction)textfieldReturn:(id)sender;
+-(IBAction)registerPush:(id)sender;
 
 
 

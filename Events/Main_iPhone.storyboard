@@ -63,18 +63,6 @@
                                     <action selector="btnLoginPressed:" destination="ofP-CN-yoG" eventType="touchUpInside" id="yu8-nb-m4k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Ls-lN-DYH">
-                                <rect key="frame" x="16" y="246" width="290" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="1D8-Gt-16Y" kind="push" id="y6k-3i-JjZ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -141,7 +129,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="205.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="205.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" misplaced="YES" id="Jyd-f3-EuW">
@@ -290,15 +278,15 @@
             <objects>
                 <tableViewController id="Jo0-vK-BNb" customClass="CategoryTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6AN-eq-lqA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Category" id="Lel-J1-g6z">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1547,6 +1535,7 @@
                         <segue destination="Esk-Y6-vmr" kind="push" identifier="termsCondition" id="c3b-7q-UHr"/>
                         <segue destination="T4o-Af-Ooy" kind="push" identifier="aboutUs" id="JfJ-9J-PcO"/>
                         <segue destination="EYQ-sL-8zz" kind="push" identifier="helpCenter" id="okc-1f-ZH5"/>
+                        <segue destination="1D8-Gt-16Y" kind="push" identifier="registerVC" id="Tr9-s1-lRx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpL-EI-hBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1662,7 +1651,7 @@
         <!--Register-->
         <scene sceneID="NId-DM-5Mk">
             <objects>
-                <viewController id="1D8-Gt-16Y" customClass="RegistrationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1D8-Gt-16Y" customClass="RegistrationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lAo-2D-rSI" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2104,14 +2093,14 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="C9L-jn-ty6"/>
+        <segue reference="vps-4F-Qwj"/>
+        <segue reference="Pah-ek-4S9"/>
+        <segue reference="ymL-KN-Yv3"/>
+        <segue reference="4M8-vo-jHA"/>
+        <segue reference="CLK-cx-blz"/>
+        <segue reference="5S3-4t-Vn7"/>
         <segue reference="rdp-Lt-wIv"/>
         <segue reference="6n8-q3-lxy"/>
-        <segue reference="vps-4F-Qwj"/>
-        <segue reference="5S3-4t-Vn7"/>
-        <segue reference="Yzg-yO-FJ6"/>
-        <segue reference="CLK-cx-blz"/>
-        <segue reference="4M8-vo-jHA"/>
-        <segue reference="Pah-ek-4S9"/>
+        <segue reference="C9L-jn-ty6"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -80,6 +80,7 @@
     else
     {
         [moreArray addObject:@"Login"];
+        [moreArray addObject:@"Register"];
     }
 }
 
@@ -147,6 +148,10 @@
             [self performSegueWithIdentifier:@"loginRegister" sender:self];
         }
        
+    }
+    else if(indexPath.row==4)
+    {
+        [self performSegueWithIdentifier:@"registerVC" sender:self];
     }
 }
 
