@@ -21,7 +21,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1075)];
+    self.scrollViewCE.delegate = self;
+    self.scrollViewCE.scrollEnabled = YES;
+    _scrollViewCE.userInteractionEnabled = YES;
+    
+    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1100)];
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     self.detailView.layer.borderWidth = 1.0f;
@@ -42,6 +46,7 @@
     
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
