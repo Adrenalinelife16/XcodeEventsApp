@@ -59,10 +59,20 @@
     
     UIImage *imageFromImageView = _imageView.image;
     
-    NSData *dataForPNGFile = UIImagePNGRepresentation(imageFromImageView);
+    
+    NSData *dataImage = [[NSData alloc] init];
+    dataImage = UIImagePNGRepresentation(imageFromImageView);
+    NSString *stringImage = [dataImage base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    
+    
+    
+    
+ //   UIImage *imageFromImageView = _imageView.image;
+    
+  //  NSData *dataForPNGFile = UIImagePNGRepresentation(imageFromImageView);
 
    
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.eventName.text,@"event_name", self.startDate.text,@"start_date",self.endDate.text,@"end_date",self.startTime.text,@"start_time",self.endTime.text,@"end_time", self.locationName.text,@"location_name",self.address.text,@"address",self.city.text,@"city",self.state.text,@"state",self.zipCode.text,@"zipcode",self.detailView.text,@"detailView",dataForPNGFile,@"image", nil];
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.eventName.text,@"event_name", self.startDate.text,@"start_date",self.endDate.text,@"end_date",self.startTime.text,@"start_time",self.endTime.text,@"end_time", self.locationName.text,@"location_name",self.address.text,@"address",self.city.text,@"city",self.state.text,@"state",self.zipCode.text,@"zipcode",self.detailView.text,@"detailView",stringImage,@"image", nil];
     
     [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         

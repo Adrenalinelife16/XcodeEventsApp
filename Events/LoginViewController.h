@@ -22,7 +22,7 @@
 
 @property(nonatomic,assign) id<loginViewDelegate> __unsafe_unretained delegate;
 
-@property (strong, nonatomic) IBOutlet UITextField *txtEmail;
+
 @property (strong, nonatomic) IBOutlet UITextField *txtUsername;
 @property (strong, nonatomic) IBOutlet UITextField *txtPassword;
 @property (nonatomic,strong) NSString *getDetails;
@@ -34,7 +34,6 @@
 
 -(IBAction)backgroundTouched:(id)sender;
 -(IBAction)textfieldReturn:(id)sender;
--(IBAction)registerPush:(id)sender;
 
 
 

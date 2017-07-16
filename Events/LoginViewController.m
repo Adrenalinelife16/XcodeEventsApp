@@ -15,7 +15,7 @@
 
 @implementation LoginViewController
 @synthesize delegate;
-@synthesize txtEmail, txtPassword, txtUsername;
+@synthesize txtPassword, txtUsername;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -69,9 +69,9 @@
 -(void)bottomBorder
 {
     CALayer *bottomBorder = [CALayer layer];
-    bottomBorder.frame = CGRectMake(0.0f, self.txtEmail.frame.size.height - 1, self.txtEmail.frame.size.width, 1.0f);
+    bottomBorder.frame = CGRectMake(0.0f, self.txtUsername.frame.size.height - 1, self.txtUsername.frame.size.width, 1.0f);
     bottomBorder.backgroundColor = [UIColor grayColor].CGColor;
-    [self.txtEmail.layer addSublayer:bottomBorder];
+    [self.txtUsername.layer addSublayer:bottomBorder];
     
     CALayer *topBorder = [CALayer layer];
     topBorder.frame = CGRectMake(0.0f, self.txtPassword.frame.size.height - 1, self.txtPassword.frame.size.width, 1.0f);
@@ -97,6 +97,7 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
     
+    [txtUsername resignFirstResponder];
     [txtPassword resignFirstResponder];
     
     [self btnLoginPressed:self];
@@ -114,7 +115,7 @@
     if ([self isValid]) {
         [DSBezelActivityView newActivityViewForView:self.view.window];
         NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:
-                self.txtEmail.text,@"email", self.txtPassword.text,@"pwd", nil];
+                self.txtUsername.text,@"email", self.txtPassword.text,@"pwd", nil];
         
          NSLog(@"Pushed Paramaters %@", dictOfParameters);
         
@@ -167,7 +168,6 @@
 
 -(IBAction)backgroundTouched:(id)sender {
     
-    [txtEmail resignFirstResponder];
     [txtUsername resignFirstResponder];
     [txtPassword resignFirstResponder];
    
@@ -186,7 +186,7 @@
 -(BOOL)isValid
 {
     NSString *message   =   @"";
-    if (!([txtEmail.text length]>0)) {
+    if (!([txtUsername.text length]>0)) {
         message =   @"Please enter Username or Email";
     }
     else if (!([txtPassword.text length]>0)){

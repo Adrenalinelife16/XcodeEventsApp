@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                 <connections>
-                                    <action selector="textfieldReturn:" destination="ofP-CN-yoG" eventType="editingDidEndOnExit" id="bii-2B-gEv"/>
+                                    <action selector="textfieldReturn:" destination="ofP-CN-yoG" eventType="editingDidEndOnExit" id="CbY-gl-yOU"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" id="O35-QF-AZ1">
@@ -78,9 +78,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
-                        <outlet property="txtEmail" destination="wC5-W8-nMQ" id="Vki-MN-F82"/>
                         <outlet property="txtPassword" destination="O35-QF-AZ1" id="UV2-jb-cyK"/>
-                        <outlet property="view" destination="VxO-xc-TFe" id="Sfr-L5-2w9"/>
+                        <outlet property="txtUsername" destination="wC5-W8-nMQ" id="aJe-eT-xIk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTQ-ri-y7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
