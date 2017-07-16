@@ -56,9 +56,13 @@
 #pragma mark - Submit Event to server
 
 - (IBAction)submitEvent:(id)sender {
+    
+    UIImage *imageFromImageView = _imageView.image;
+    
+    NSData *dataForPNGFile = UIImagePNGRepresentation(imageFromImageView);
 
    
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:eventName,@"name", self.startDate.text,@"user_login",self.endDate.text,@"user_email",self.startTime.text,@"pwd", nil];
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.eventName.text,@"event_name", self.startDate.text,@"start_date",self.endDate.text,@"end_date",self.startTime.text,@"start_time",self.endTime.text,@"end_time", self.locationName.text,@"location_name",self.address.text,@"address",self.city.text,@"city",self.state.text,@"state",self.zipCode.text,@"zipcode",self.detailView.text,@"detailView",dataForPNGFile,@"image", nil];
     
     [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         
