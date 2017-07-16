@@ -55,37 +55,15 @@
 
 #pragma mark - Submit Event to server
 
-- (IBAction)submitEvent:(id)sender
-{
+- (IBAction)submitEvent:(id)sender {
 
-    
-    NSMutableString *post = [NSMutableString stringWithFormat:@"location_name=%@&location_address=%@&location_city=%@&location_zip=%@&location_state=%@&category=%@&user=%@&event_name=%@&event_info=%@&start_time=%@&end_time=%@&start_date=%@&end_date=%@",
-                             
-                             locationName.text, address.text, city.text, zipCode.text, state.text, self.navigationItem.title = titleText,
-                             [Utility getNSUserDefaultValue:KUSERID], eventName.text, detailView.text, _startTime.text, _endTime.text, _startDate, _endDate];
+   
     
     
     
     
-    NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     
-    NSString *postLength = [NSString stringWithFormat:@"%lu",(unsigned long)[postData length]];
     
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    
-    [request setURL:[NSURL URLWithString:@"http://www.adrenalinelife.org/Adrenaline_Custom/addEvent.php"]];
-    [request setHTTPMethod:@"POST"];
-    [request setHTTPBody:postData];
-    
-    NSLog(@"Post Data %@", post);
-    
-    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    
-    if(conn) {
-        NSLog(@"Connection Successful");
-    } else {
-        NSLog(@"Connection could not be made");
-    }
     
 }
 
