@@ -58,15 +58,49 @@
 - (IBAction)submitEvent:(id)sender {
 
    
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:eventName,@"name", self.startDate.text,@"user_login",self.endDate.text,@"user_email",self.startTime.text,@"pwd", nil];
     
-    
-    
-    
-    
-    
+    [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+        
+        
+        if ([response isKindOfClass:[NSDictionary class]]) {
+            if ([[response objectForKey:@"message"] isEqualToString:@"Sorry, that username already exists!"]) {
+                [Utility alertNotice:APPNAME withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+               
+                
+            }
+            
+            
+            else{
+        
+                
+            }
+            
+        }
+        
+        else if ([response isKindOfClass:[NSArray class]]) {
+            
+            if ([[[response objectAtIndex:0] objectForKey:@"message"] isEqualToString:@"Sorry, that email address is already used!"]) {
+                [Utility alertNotice:APPNAME withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+            
+                
+            }
+            else{
+           
+                
+            }
+            
+            
+        }
+        [DSBezelActivityView removeViewAnimated:YES];
+        
+    }
+                  WithFailure:^(NSString *error){
+                      [DSBezelActivityView removeViewAnimated:YES];
+                      NSLog(@"%@",error);
+                  }];
     
 }
-
 
 
 
