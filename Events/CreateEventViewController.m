@@ -21,9 +21,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.scrollViewCE.delegate = self;
     
-    [self.scrollViewCE setContentSize:CGSizeMake(self.scrollViewCE.frame.size.width, 1068)];
+ 
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     self.detailView.layer.borderWidth = 1.0f;
@@ -46,6 +45,36 @@
 }
 
 
+-(void)viewWillAppear:(BOOL)animated {
+    
+    self.scrollViewCE.delegate = self;
+     [_scrollViewCE setContentSize:CGSizeMake(320, 1068)];
+    
+}
+
+
+-(void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+   
+    
+    // Adjust frame for iPhone 5s
+    
+    if (IS_IPHONE_5) {
+        
+       
+        
+    } else {
+      
+        
+        
+    }
+
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -57,6 +86,8 @@
 
 - (IBAction)submitEvent:(id)sender {
     
+    
+    
     UIImage *imageFromImageView = _imageView.image;
     
     
@@ -64,14 +95,14 @@
     dataImage = UIImagePNGRepresentation(imageFromImageView);
     NSString *stringImage = [dataImage base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     
+    /*
     
     
+    UIImage *imageFromImageView = _imageView.image;
     
- //   UIImage *imageFromImageView = _imageView.image;
-    
-  //  NSData *dataForPNGFile = UIImagePNGRepresentation(imageFromImageView);
+    NSData *dataForPNGFile = UIImagePNGRepresentation(imageFromImageView);
 
-   
+   */
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.eventName.text,@"event_name", self.startDate.text,@"start_date",self.endDate.text,@"end_date",self.startTime.text,@"start_time",self.endTime.text,@"end_time", self.locationName.text,@"location_name",self.address.text,@"address",self.city.text,@"city",self.state.text,@"state",self.zipCode.text,@"zipcode",self.detailView.text,@"detailView",stringImage,@"image", nil];
     
     [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
