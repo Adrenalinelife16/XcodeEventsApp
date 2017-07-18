@@ -9,6 +9,7 @@
 #import "DiscoverTableViewController.h"
 #import "EventCalCell.h"
 #import "UIImageView+WebCache.h"
+#import "DiscoverViewController.h"
 
 
 
@@ -25,17 +26,19 @@
 
 }
 @synthesize eventObjFav;
+@synthesize discoverText;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+
+    
     [self getAllEventsFromServer];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    NSLog(@"button text %@",discoverText);
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

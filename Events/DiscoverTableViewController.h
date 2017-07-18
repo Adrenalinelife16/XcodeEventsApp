@@ -14,4 +14,6 @@
 
 @property (strong, nonatomic) EventList *eventObjFav;
 
+@property (nonatomic, retain) NSString *discoverText;
+
 @end

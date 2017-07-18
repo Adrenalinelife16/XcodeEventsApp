@@ -8,12 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface DiscoverViewController : UIViewController
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrlVW;
+@property (nonatomic, retain) IBOutlet UIButton *soccer;
+
 @property (strong, nonatomic) IBOutlet UITableView *tblDiscResults; // Displaying Discover results
 
--(IBAction)btnDiscoverCategories:(id)sender;
+
+
+-(IBAction)soccerPressed:(id)sender;
 
 
 @end

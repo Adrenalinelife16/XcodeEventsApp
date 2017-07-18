@@ -128,7 +128,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="205.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="205.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" id="Jyd-f3-EuW">
@@ -285,7 +285,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -552,81 +552,54 @@
                                         <rect key="frame" x="8" y="180" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aYoga.png"/>
-                                        <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="yoga" id="z1t-Ts-zQv"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a4D-Um-XlC" userLabel="golf">
                                         <rect key="frame" x="8" y="298" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aGolf.png"/>
-                                        <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="golf" id="e3i-nm-w3q"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BOi-qs-eEv" userLabel="frisbee">
                                         <rect key="frame" x="165" y="180" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aFrisbee.png"/>
-                                        <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="frisbee" id="jRU-uw-hap"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hrk-hL-Fyp" userLabel="soccer">
                                         <rect key="frame" x="8" y="-56" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aSoccer.png"/>
                                         <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="soccer" id="vps-4F-Qwj"/>
+                                            <action selector="soccerPressed:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="12K-OV-fQP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tvA-5v-Zbk" userLabel="tablegames">
                                         <rect key="frame" x="8" y="62" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aTableGames.png"/>
-                                        <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="tablegames" id="7RI-D6-Cu2"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iJx-au-XtY" userLabel="kickball">
                                         <rect key="frame" x="165" y="-56" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aKickball.png"/>
-                                        <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="kickball" id="GFy-m0-ule"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ar1-ol-i0Q" userLabel="basketball">
                                         <rect key="frame" x="165" y="62" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aBasketball.png"/>
-                                        <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="basketball" id="VwQ-eF-0p8"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kyu-qv-LCM" userLabel="tennis">
                                         <rect key="frame" x="8" y="416" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aTennis.png"/>
-                                        <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="tennis" id="TWf-r6-yUH"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7qb-TL-xvM" userLabel="fishing">
                                         <rect key="frame" x="165" y="298" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aFishing.png"/>
-                                        <connections>
-                                            <segue destination="kYa-5B-zJd" kind="push" identifier="fishing" id="l3q-09-JXn"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l6d-Qv-Wgj" userLabel="more">
                                         <rect key="frame" x="165" y="416" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aMoreCategories.png"/>
-                                        <connections>
-                                            <segue destination="eDO-mI-sMP" kind="push" id="QYN-Zo-SnL"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20242354273796082" green="0.2147795557975769" blue="0.21521890163421631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -641,6 +614,8 @@
                     <size key="freeformSize" width="320" height="725"/>
                     <connections>
                         <outlet property="scrlVW" destination="vqW-PU-Ibi" id="HNW-P6-Nmk"/>
+                        <outlet property="soccer" destination="hrk-hL-Fyp" id="1dQ-Xr-cl7"/>
+                        <segue destination="eDO-mI-sMP" kind="push" identifier="discoverEvent" id="3BG-k8-tmr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMO-Ty-6b2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -899,7 +874,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPM-9G-1mz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1144" y="-537"/>
+            <point key="canvasLocation" x="-487" y="-538"/>
         </scene>
         <!--Terms & Conditions-->
         <scene sceneID="8It-6Z-hs9">
@@ -1471,7 +1446,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncD-zV-sfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-594" y="-538"/>
+            <point key="canvasLocation" x="-1097" y="-539"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P2C-wx-DeA">
@@ -1503,7 +1478,7 @@
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -2083,14 +2058,13 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="vps-4F-Qwj"/>
         <segue reference="Pt4-qg-fXb"/>
         <segue reference="C9L-jn-ty6"/>
-        <segue reference="GQZ-yq-JN7"/>
         <segue reference="6n8-q3-lxy"/>
         <segue reference="ymL-KN-Yv3"/>
         <segue reference="CLK-cx-blz"/>
         <segue reference="4M8-vo-jHA"/>
+        <segue reference="Pah-ek-4S9"/>
         <segue reference="5S3-4t-Vn7"/>
     </inferredMetricsTieBreakers>
 </document>
