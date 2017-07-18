@@ -61,13 +61,13 @@
     
     // Adjust frame for iPhone 5s
     
-    if (IS_IPHONE_5) {
+    if (IS_IPHONE_4_OR_LESS) {
         
-       
+        NSLog(@"Yes it is");
         
     } else {
       
-        
+        NSLog(@"No it isnt");
         
     }
 
