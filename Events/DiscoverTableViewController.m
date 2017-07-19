@@ -108,27 +108,11 @@
 
 -(void)searchDiscoverArray {
     
+    /*
+    NSPredicate *filterPredicate = [NSPredicate predicateWithFormat:@"eventDescription CONTAINS[cd]", discoverText];
+    NSArray *temp = [discoverAllEvents filteredArrayUsingPredicate:filterPredicate];
     
-
-    NSString *stringToSearch = discoverText;
-    
-    
-    NSMutableArray *finalArray = [NSMutableArray array];
-    
-    
-    /**Loop through each individual event id**/
-    for (NSUInteger i = 0, count = [discoverAllEvents count]; i < count; i++){
-        
-        
-        //Search Array
-        BOOL isTheObjectThere = [discoverAllEvents containsObject:@"Soccer"];
-        
-        
-            //add that current event into an array
-            [finalArray addObject:discoverAllEvents[i]];
-            
-        }
-        //end of main loop
+    */
     [self.tblDiscover reloadData];
 
 }
@@ -211,8 +195,8 @@
         gArrayEvents = [[NSMutableArray alloc] initWithArray:discoverAllEvents];
         
         
-    //    [self searchDiscoverArray];
-      [self.tblDiscover reloadData];  
+        [self searchDiscoverArray];
+     
         
     }WithFailure:^(NSString *error)
      {
