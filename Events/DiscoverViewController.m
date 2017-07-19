@@ -21,7 +21,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _soccer.accessibilityLabel=@"Soccer";
+    _butZero.accessibilityLabel=@"Soccer";
+    _butOne.accessibilityLabel=@"Kickball";
+    _butTwo.accessibilityLabel=@"Table Games";
+    _butThree.accessibilityLabel=@"Basketball";
+    _butFour.accessibilityLabel=@"Yoga";
+    _butFive.accessibilityLabel=@"Frisbee";
+    _butSix.accessibilityLabel=@"Golf";
+    _butSeven.accessibilityLabel=@"Fishing";
+    _butEight.accessibilityLabel=@"Tennis";
+    _butNine.accessibilityLabel=@"Riding";
     
     
 }
@@ -47,15 +56,97 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)soccerPressed:(id)sender {
+-(IBAction)buttonZero:(id)sender {
     
     
     UIButton *btn= (UIButton *)sender;
-    NSLog(@"Button String = %@",btn.accessibilityLabel);
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
     
 }
+
+-(IBAction)buttonOne:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonTwo:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonThree:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonFour:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonFive:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonSix:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonSeven:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonEight:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonNine:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+
 
 
 #pragma mark - Navigation

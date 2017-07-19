@@ -37,8 +37,18 @@
     
     [self getAllEventsFromServer];
     
+    NSLog(@"Button Pushed %@", discoverText);
+    
     
     }
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationItem.title = discoverText;
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -61,7 +71,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    static NSString *CellIdentifier = @"EventCalCell";
+    static NSString *CellIdentifier = @"DiscoverCalCell";
     EventCalCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     if(!cell){
         cell = [[EventCalCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
@@ -201,8 +211,8 @@
         gArrayEvents = [[NSMutableArray alloc] initWithArray:discoverAllEvents];
         
         
-        [self searchDiscoverArray];
-        
+    //    [self searchDiscoverArray];
+      [self.tblDiscover reloadData];  
         
     }WithFailure:^(NSString *error)
      {
@@ -217,7 +227,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
-    if ([segue.identifier isEqualToString:@"event_cal"]) {
+    if ([segue.identifier isEqualToString:@"discoverCell"]) {
         
         NSIndexPath *selectedRowIndex = [self.tblDiscover indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];

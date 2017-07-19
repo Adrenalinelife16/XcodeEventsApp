@@ -552,54 +552,81 @@
                                         <rect key="frame" x="8" y="180" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aYoga.png"/>
+                                        <connections>
+                                            <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="K9h-7s-1xM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a4D-Um-XlC" userLabel="golf">
                                         <rect key="frame" x="8" y="298" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aGolf.png"/>
+                                        <connections>
+                                            <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="lvF-u8-qo7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BOi-qs-eEv" userLabel="frisbee">
                                         <rect key="frame" x="165" y="180" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aFrisbee.png"/>
+                                        <connections>
+                                            <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="174-mu-M68"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hrk-hL-Fyp" userLabel="soccer">
                                         <rect key="frame" x="8" y="-56" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aSoccer.png"/>
                                         <connections>
-                                            <action selector="soccerPressed:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="12K-OV-fQP"/>
+                                            <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ATN-Yk-faF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tvA-5v-Zbk" userLabel="tablegames">
                                         <rect key="frame" x="8" y="62" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aTableGames.png"/>
+                                        <connections>
+                                            <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ClF-IV-0up"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iJx-au-XtY" userLabel="kickball">
                                         <rect key="frame" x="165" y="-56" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aKickball.png"/>
+                                        <connections>
+                                            <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="MQb-97-S2x"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ar1-ol-i0Q" userLabel="basketball">
                                         <rect key="frame" x="165" y="62" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aBasketball.png"/>
+                                        <connections>
+                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="x58-lQ-OEq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kyu-qv-LCM" userLabel="tennis">
                                         <rect key="frame" x="8" y="416" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aTennis.png"/>
+                                        <connections>
+                                            <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="UeV-I8-Y50"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7qb-TL-xvM" userLabel="fishing">
                                         <rect key="frame" x="165" y="298" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aFishing.png"/>
+                                        <connections>
+                                            <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="LwS-e7-TmG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l6d-Qv-Wgj" userLabel="more">
                                         <rect key="frame" x="165" y="416" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="aMoreCategories.png"/>
+                                        <connections>
+                                            <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="uyK-Rk-0Gi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20242354273796082" green="0.2147795557975769" blue="0.21521890163421631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -613,8 +640,17 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="725"/>
                     <connections>
+                        <outlet property="butEight" destination="Kyu-qv-LCM" id="fmP-Sz-jvc"/>
+                        <outlet property="butFive" destination="BOi-qs-eEv" id="LB9-Yw-GiO"/>
+                        <outlet property="butFour" destination="utK-J8-91L" id="vye-fW-Z8J"/>
+                        <outlet property="butNine" destination="l6d-Qv-Wgj" id="koA-iA-sJv"/>
+                        <outlet property="butOne" destination="iJx-au-XtY" id="5lU-Na-Fgm"/>
+                        <outlet property="butSeven" destination="7qb-TL-xvM" id="NMR-rx-0Jd"/>
+                        <outlet property="butSix" destination="a4D-Um-XlC" id="MuI-Mf-QWk"/>
+                        <outlet property="butThree" destination="Ar1-ol-i0Q" id="MBq-Ep-tBK"/>
+                        <outlet property="butTwo" destination="tvA-5v-Zbk" id="cev-op-9to"/>
+                        <outlet property="butZero" destination="hrk-hL-Fyp" id="ghw-N9-vhy"/>
                         <outlet property="scrlVW" destination="vqW-PU-Ibi" id="HNW-P6-Nmk"/>
-                        <outlet property="soccer" destination="hrk-hL-Fyp" id="1dQ-Xr-cl7"/>
                         <segue destination="eDO-mI-sMP" kind="push" identifier="discoverEvent" id="3BG-k8-tmr"/>
                     </connections>
                 </viewController>
@@ -1379,16 +1415,16 @@
         <scene sceneID="Bfa-tI-Yqg">
             <objects>
                 <tableViewController id="eDO-mI-sMP" customClass="DiscoverTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zmw-en-MN6">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zmw-en-MN6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="AzF-n8-jVC" customClass="EventCalCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DiscoverCalCell" rowHeight="83" id="AzF-n8-jVC" customClass="EventCalCell">
                                 <rect key="frame" x="0.0" y="28" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AzF-n8-jVC" id="KTN-Hd-u8H">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="82.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="82.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image.png" id="IZA-9e-nNR">
@@ -1431,6 +1467,7 @@
                                     <outlet property="lblAddressTwo" destination="VJp-49-bbo" id="tJK-oj-Zob"/>
                                     <outlet property="lblDateTime" destination="wEb-VU-mEt" id="vqH-lO-ycq"/>
                                     <outlet property="lblEventName" destination="orM-vp-kqw" id="3v3-S2-rPn"/>
+                                    <segue destination="GJ5-Ez-Ag6" kind="push" identifier="discoverCell" id="5BI-DP-Akc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1442,7 +1479,6 @@
                     <navigationItem key="navigationItem" id="5ab-iO-Wa4"/>
                     <connections>
                         <outlet property="tblDiscover" destination="Zmw-en-MN6" id="79a-nd-1Ix"/>
-                        <segue destination="GJ5-Ez-Ag6" kind="push" identifier="discoverEvent" id="Pah-ek-4S9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncD-zV-sfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2065,7 +2101,7 @@
         <segue reference="ymL-KN-Yv3"/>
         <segue reference="CLK-cx-blz"/>
         <segue reference="4M8-vo-jHA"/>
-        <segue reference="Pah-ek-4S9"/>
+        <segue reference="5BI-DP-Akc"/>
         <segue reference="5S3-4t-Vn7"/>
     </inferredMetricsTieBreakers>
 </document>
