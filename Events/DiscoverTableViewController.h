@@ -16,4 +16,6 @@
 
 @property (nonatomic, retain) NSString *discoverText;
 
+@property (strong, nonatomic) IBOutlet UITableView *tblDiscover;
+
 @end

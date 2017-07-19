@@ -10,6 +10,7 @@
 #import "EventCalCell.h"
 #import "UIImageView+WebCache.h"
 #import "DiscoverViewController.h"
+#import "AboutViewController.h"
 
 
 
@@ -36,7 +37,6 @@
     
     [self getAllEventsFromServer];
     
-    NSLog(@"button text %@",discoverText);
     
     }
 
@@ -93,6 +93,34 @@
     }
     
     return cell;
+}
+
+
+-(void)searchDiscoverArray {
+    
+    
+
+    NSString *stringToSearch = discoverText;
+    
+    
+    NSMutableArray *finalArray = [NSMutableArray array];
+    
+    
+    /**Loop through each individual event id**/
+    for (NSUInteger i = 0, count = [discoverAllEvents count]; i < count; i++){
+        
+        
+        //Search Array
+        BOOL isTheObjectThere = [discoverAllEvents containsObject:@"Soccer"];
+        
+        
+            //add that current event into an array
+            [finalArray addObject:discoverAllEvents[i]];
+            
+        }
+        //end of main loop
+    [self.tblDiscover reloadData];
+
 }
 
 
@@ -173,6 +201,9 @@
         gArrayEvents = [[NSMutableArray alloc] initWithArray:discoverAllEvents];
         
         
+        [self searchDiscoverArray];
+        
+        
     }WithFailure:^(NSString *error)
      {
          [DSBezelActivityView removeViewAnimated:NO];
@@ -183,14 +214,16 @@
 }
 
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([segue.identifier isEqualToString:@"event_cal"]) {
+        
+        NSIndexPath *selectedRowIndex = [self.tblDiscover indexPathForSelectedRow];
+        AboutViewController *aboutVwController = [segue destinationViewController];
+        EventList *obj  =   [self->discoverAllEvents objectAtIndex:selectedRowIndex.row];
+        aboutVwController.eventObj  =   obj;
+    }
 }
-*/
 
 @end
