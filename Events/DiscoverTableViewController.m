@@ -108,6 +108,8 @@
 
 -(void)searchDiscoverArray {
     
+    NSString *buttonString = discoverText;
+    
     /*
     NSPredicate *filterPredicate = [NSPredicate predicateWithFormat:@"eventDescription CONTAINS[cd]", discoverText];
     NSArray *temp = [discoverAllEvents filteredArrayUsingPredicate:filterPredicate];
