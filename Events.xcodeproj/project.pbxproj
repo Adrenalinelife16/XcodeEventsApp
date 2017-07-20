@@ -60,7 +60,6 @@
 		7122DC1718BDFB7B00DC9925 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1618BDFB7B00DC9925 /* MapKit.framework */; };
 		7122DC1918BDFB8100DC9925 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1818BDFB8100DC9925 /* CoreLocation.framework */; };
 		721BEE471EB17CB500C2DB6F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721BEE451EB17CB500C2DB6F /* Main_iPad.storyboard */; };
-		72204AD01F2050E200F27B0D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72204ACF1F2050E200F27B0D /* Launch Screen.storyboard */; };
 		7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */; };
 		7225BD201E4AA78200A35D30 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1F1E4AA78200A35D30 /* Notes */; };
 		722DAF191EB815FF00F4D808 /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722DAF181EB815FF00F4D808 /* SearchResultsTableViewController.m */; };
@@ -389,7 +388,6 @@
 		7122DC1618BDFB7B00DC9925 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7122DC1818BDFB8100DC9925 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		721BEE461EB17CB500C2DB6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		72204ACF1F2050E200F27B0D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "TabBarController/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		7225BD1F1E4AA78200A35D30 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		722DAF171EB815FF00F4D808 /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
@@ -1250,7 +1248,6 @@
 				7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */,
 				721BEE451EB17CB500C2DB6F /* Main_iPad.storyboard */,
 				7250A03C1ECA7AC300E1E9AE /* TableCell.xib */,
-				72204ACF1F2050E200F27B0D /* Launch Screen.storyboard */,
 				BB303DB118B863E300B6EBC9 /* ViewController.h */,
 				BB303DB218B863E300B6EBC9 /* ViewController.m */,
 				BB303DB418B863E300B6EBC9 /* Images.xcassets */,
@@ -1742,7 +1739,6 @@
 				E279ADB21E654CAC00D3B192 /* KickBall.png in Resources */,
 				E279ADAD1E654CAC00D3B192 /* Tennis.png in Resources */,
 				BB303E0618B86B3400B6EBC9 /* MyProgram@2x.png in Resources */,
-				72204AD01F2050E200F27B0D /* Launch Screen.storyboard in Resources */,
 				79504C44191F7E0C00EF3103 /* Milan-Fashion-Week-logo@2x.png in Resources */,
 				BB303E1F18B879AA00B6EBC9 /* image1.png in Resources */,
 				E22D5E651ECAF01700DC7C4E /* aSoccer.png in Resources */,
