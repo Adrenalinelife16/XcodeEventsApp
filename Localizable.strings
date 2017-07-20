@@ -11,8 +11,8 @@
 /**
  *  application service url
  */
-//"APPLICATION_URL"           =   "http://www.adrenalinelife.org";
-"APPLICATION_URL"           =   "http://173.254.64.67";   // testing from Blue Host
+"APPLICATION_URL"           =   "http://www.adrenalinelife.org";
+//"APPLICATION_URL"           =   "http://173.254.64.67";   // testing from Blue Host
 //   "http://adrenalinelife.org/"
 
 //web service methods
