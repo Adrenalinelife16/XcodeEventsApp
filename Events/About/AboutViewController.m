@@ -86,6 +86,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:YES];
+    self.title = self.eventObj.eventName;
     self.tabBarController.tabBar.hidden=NO;
     [self checkLogin];
     [self checkUserFavorite];

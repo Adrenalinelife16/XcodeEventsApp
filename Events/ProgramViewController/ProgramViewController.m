@@ -156,6 +156,7 @@
 }
 
 
+
 #pragma mark - UISearchBarDelegate
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
@@ -273,8 +274,16 @@
                 eventObj.eventLocationpostcode  =   [dict objectForKey:@"location_postcode"];
                 eventObj.eventLocationState     =   [dict objectForKey:@"location_state"];
                 eventObj.eventLocationCountry   =   [dict objectForKey:@"location_country"];
-                eventObj.eventLocationLatitude  =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_latitude"] floatValue]];
-                eventObj.eventLocationLongitude =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_longitude"] floatValue]];
+                
+                // testing purposes only
+            
+                if ([eventObj.eventLocationpostcode length] > 4) {
+        
+                    eventObj.eventLocationLatitude  =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_latitude"] floatValue]];
+                    eventObj.eventLocationLongitude =   [NSNumber numberWithFloat:[[dict objectForKey:@"location_longitude"] floatValue]];
+                    
+                  
+                }
                 
                 
                 

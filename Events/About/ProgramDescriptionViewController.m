@@ -35,6 +35,8 @@
 
     txtVWDescription.textColor = [UIColor blackColor];
     txtVWDescription.text = [NSString stringWithFormat:@"%@",self.strDescription];
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,9 +48,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
- //   self.navigationController.navigationBar.topItem.title = @"";
-    [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
-    
+     
 }
 
 /*
