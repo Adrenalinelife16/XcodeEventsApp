@@ -21,7 +21,7 @@
 @implementation DiscoverTableViewController
 {
     
-    NSMutableArray *arrayDiscoverResults;
+    NSArray *arrayDiscoverResults;
     NSMutableArray *discoverAllEvents;
     
 
@@ -64,7 +64,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [discoverAllEvents count];
+    return [arrayDiscoverResults count];
     
 }
 
@@ -77,10 +77,10 @@
         cell = [[EventCalCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    if ([discoverAllEvents count]>0) {
+    if ([arrayDiscoverResults count]>0) {
         // Configure the cell...
         
-        EventList *obj = [discoverAllEvents objectAtIndex:indexPath.row];
+        EventList *obj = [arrayDiscoverResults objectAtIndex:indexPath.row];
         
         
         cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
@@ -110,13 +110,15 @@
     
     NSString *buttonString = discoverText;
     
-    /*
-    NSPredicate *filterPredicate = [NSPredicate predicateWithFormat:@"eventDescription CONTAINS[cd]", discoverText];
-    NSArray *temp = [discoverAllEvents filteredArrayUsingPredicate:filterPredicate];
+    NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"eventDescription contains[cd] 'Basketball'"];
+    NSArray *beginWithB = [discoverAllEvents filteredArrayUsingPredicate:bPredicate];
+ 
     
-    */
+    arrayDiscoverResults = beginWithB;
+    
     [self.tblDiscover reloadData];
 
+        
 }
 
 
@@ -217,7 +219,7 @@
         
         NSIndexPath *selectedRowIndex = [self.tblDiscover indexPathForSelectedRow];
         AboutViewController *aboutVwController = [segue destinationViewController];
-        EventList *obj  =   [self->discoverAllEvents objectAtIndex:selectedRowIndex.row];
+        EventList *obj  =   [self->arrayDiscoverResults objectAtIndex:selectedRowIndex.row];
         aboutVwController.eventObj  =   obj;
     }
 }
