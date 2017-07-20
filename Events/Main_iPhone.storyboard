@@ -1365,8 +1365,8 @@
                                 <rect key="frame" x="0.0" y="38" width="320" height="582"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hello lorem ipsum" id="YS9-jV-dl6">
-                                <rect key="frame" x="0.0" y="83" width="320" height="501"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Hello lorem ipsum" id="YS9-jV-dl6">
+                                <rect key="frame" x="0.0" y="63" width="320" height="531"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1388,7 +1388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WK-ya-r6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1397" y="-1366"/>
+            <point key="canvasLocation" x="1397" y="-1366.5"/>
         </scene>
         <!--Maps-->
         <scene sceneID="WdJ-TP-gcR">
