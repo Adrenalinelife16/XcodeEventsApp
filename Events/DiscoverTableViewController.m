@@ -110,7 +110,7 @@
     
     NSString *buttonString = discoverText;
     
-    NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"eventDescription contains[cd] 'BASKETBALL'"];
+    NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"eventDescription CONTAINS[cd] %@ || eventName CONTAINS[cd] %@",buttonString,buttonString];
     NSArray *beginWithB = [discoverAllEvents filteredArrayUsingPredicate:bPredicate];
  
     
