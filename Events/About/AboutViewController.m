@@ -74,13 +74,11 @@
         self.scrollViewMain.contentSize = CGSizeMake(self.scrollViewMain.frame.size.width, vwFreeRegisterBtn.frame.origin.y+vwFreeRegisterBtn.frame.size.height+50);
     }
 }
-- (IBAction)addressClicked:(id)sender
-{
+- (IBAction)addressClicked:(id)sender {
     
     [self openAppleMaps];
     
 }
-
 
 
 -(void)viewWillAppear:(BOOL)animated{

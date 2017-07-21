@@ -565,22 +565,22 @@
 		79E815601953481800E58344 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		79E815611953481800E58344 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		79E815621953481800E58344 /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon120.png; sourceTree = "<group>"; };
-		BB303D9618B863E300B6EBC9 /* Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Events.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB303D9618B863E300B6EBC9 /* Adrenaline Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adrenaline Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB303D9918B863E300B6EBC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB303D9B18B863E300B6EBC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BB303D9D18B863E300B6EBC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BB303DA118B863E300B6EBC9 /* Events-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Events-Info.plist"; sourceTree = "<group>"; };
+		BB303DA118B863E300B6EBC9 /* Adrenaline Life-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Adrenaline Life-Info.plist"; sourceTree = "<group>"; };
 		BB303DA318B863E300B6EBC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB303DA518B863E300B6EBC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BB303DA718B863E300B6EBC9 /* Events-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Events-Prefix.pch"; sourceTree = "<group>"; };
+		BB303DA718B863E300B6EBC9 /* Adrenaline Life-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Adrenaline Life-Prefix.pch"; sourceTree = "<group>"; };
 		BB303DA818B863E300B6EBC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB303DA918B863E300B6EBC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB303DB118B863E300B6EBC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB303DB218B863E300B6EBC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB303DB418B863E300B6EBC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BB303DBA18B863E300B6EBC9 /* EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB303DBA18B863E300B6EBC9 /* Adrenaline LifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adrenaline LifeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB303DBB18B863E300B6EBC9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		BB303DC318B863E300B6EBC9 /* EventsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventsTests-Info.plist"; sourceTree = "<group>"; };
+		BB303DC318B863E300B6EBC9 /* Adrenaline LifeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Adrenaline LifeTests-Info.plist"; sourceTree = "<group>"; };
 		BB303DC518B863E300B6EBC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB303DC718B863E300B6EBC9 /* EventsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsTests.m; sourceTree = "<group>"; };
 		BB303DD218B86B3400B6EBC9 /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = About.png; sourceTree = "<group>"; };
@@ -1191,8 +1191,8 @@
 		BB303D9718B863E300B6EBC9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB303D9618B863E300B6EBC9 /* Events.app */,
-				BB303DBA18B863E300B6EBC9 /* EventsTests.xctest */,
+				BB303D9618B863E300B6EBC9 /* Adrenaline Life.app */,
+				BB303DBA18B863E300B6EBC9 /* Adrenaline LifeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1260,10 +1260,10 @@
 			isa = PBXGroup;
 			children = (
 				BB303DD118B86B3400B6EBC9 /* Images */,
-				BB303DA118B863E300B6EBC9 /* Events-Info.plist */,
+				BB303DA118B863E300B6EBC9 /* Adrenaline Life-Info.plist */,
 				BB303DA218B863E300B6EBC9 /* InfoPlist.strings */,
 				BB303DA518B863E300B6EBC9 /* main.m */,
-				BB303DA718B863E300B6EBC9 /* Events-Prefix.pch */,
+				BB303DA718B863E300B6EBC9 /* Adrenaline Life-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1280,7 +1280,7 @@
 		BB303DC218B863E300B6EBC9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BB303DC318B863E300B6EBC9 /* EventsTests-Info.plist */,
+				BB303DC318B863E300B6EBC9 /* Adrenaline LifeTests-Info.plist */,
 				BB303DC418B863E300B6EBC9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -1546,9 +1546,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB303D9518B863E300B6EBC9 /* Events */ = {
+		BB303D9518B863E300B6EBC9 /* Adrenaline Life */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB303DCB18B863E300B6EBC9 /* Build configuration list for PBXNativeTarget "Events" */;
+			buildConfigurationList = BB303DCB18B863E300B6EBC9 /* Build configuration list for PBXNativeTarget "Adrenaline Life" */;
 			buildPhases = (
 				BB303D9218B863E300B6EBC9 /* Sources */,
 				BB303D9318B863E300B6EBC9 /* Frameworks */,
@@ -1559,14 +1559,14 @@
 			);
 			dependencies = (
 			);
-			name = Events;
+			name = "Adrenaline Life";
 			productName = Events;
-			productReference = BB303D9618B863E300B6EBC9 /* Events.app */;
+			productReference = BB303D9618B863E300B6EBC9 /* Adrenaline Life.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BB303DB918B863E300B6EBC9 /* EventsTests */ = {
+		BB303DB918B863E300B6EBC9 /* Adrenaline LifeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB303DCE18B863E300B6EBC9 /* Build configuration list for PBXNativeTarget "EventsTests" */;
+			buildConfigurationList = BB303DCE18B863E300B6EBC9 /* Build configuration list for PBXNativeTarget "Adrenaline LifeTests" */;
 			buildPhases = (
 				BB303DB618B863E300B6EBC9 /* Sources */,
 				BB303DB718B863E300B6EBC9 /* Frameworks */,
@@ -1577,9 +1577,9 @@
 			dependencies = (
 				BB303DC018B863E300B6EBC9 /* PBXTargetDependency */,
 			);
-			name = EventsTests;
+			name = "Adrenaline LifeTests";
 			productName = EventsTests;
-			productReference = BB303DBA18B863E300B6EBC9 /* EventsTests.xctest */;
+			productReference = BB303DBA18B863E300B6EBC9 /* Adrenaline LifeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -1589,7 +1589,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "Teknowledge Software";
+				ORGANIZATIONNAME = "Adrenaline Life";
 				TargetAttributes = {
 					BB303D9518B863E300B6EBC9 = {
 						DevelopmentTeam = X3THT57J9K;
@@ -1611,7 +1611,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB303D9118B863E300B6EBC9 /* Build configuration list for PBXProject "Events" */;
+			buildConfigurationList = BB303D9118B863E300B6EBC9 /* Build configuration list for PBXProject "Adrenaline Life" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1624,8 +1624,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB303D9518B863E300B6EBC9 /* Events */,
-				BB303DB918B863E300B6EBC9 /* EventsTests */,
+				BB303D9518B863E300B6EBC9 /* Adrenaline Life */,
+				BB303DB918B863E300B6EBC9 /* Adrenaline LifeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1965,7 +1965,7 @@
 /* Begin PBXTargetDependency section */
 		BB303DC018B863E300B6EBC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BB303D9518B863E300B6EBC9 /* Events */;
+			target = BB303D9518B863E300B6EBC9 /* Adrenaline Life */;
 			targetProxy = BB303DBF18B863E300B6EBC9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -2094,9 +2094,9 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Events/Events-Prefix.pch";
+				GCC_PREFIX_HEADER = "Events/Adrenaline Life-Prefix.pch";
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				INFOPLIST_FILE = "Events/Events-Info.plist";
+				INFOPLIST_FILE = "Events/Adrenaline Life-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App;
@@ -2120,9 +2120,9 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Events/Events-Prefix.pch";
+				GCC_PREFIX_HEADER = "Events/Adrenaline Life-Prefix.pch";
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				INFOPLIST_FILE = "Events/Events-Info.plist";
+				INFOPLIST_FILE = "Events/Adrenaline Life-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2147,7 +2147,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "EventsTests/EventsTests-Info.plist";
+				INFOPLIST_FILE = "EventsTests/Adrenaline LifeTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "teks.co.in.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -2166,7 +2166,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Events/Events-Prefix.pch";
-				INFOPLIST_FILE = "EventsTests/EventsTests-Info.plist";
+				INFOPLIST_FILE = "EventsTests/Adrenaline LifeTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "teks.co.in.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -2177,7 +2177,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB303D9118B863E300B6EBC9 /* Build configuration list for PBXProject "Events" */ = {
+		BB303D9118B863E300B6EBC9 /* Build configuration list for PBXProject "Adrenaline Life" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB303DC918B863E300B6EBC9 /* Debug */,
@@ -2186,7 +2186,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB303DCB18B863E300B6EBC9 /* Build configuration list for PBXNativeTarget "Events" */ = {
+		BB303DCB18B863E300B6EBC9 /* Build configuration list for PBXNativeTarget "Adrenaline Life" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB303DCC18B863E300B6EBC9 /* Debug */,
@@ -2195,7 +2195,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB303DCE18B863E300B6EBC9 /* Build configuration list for PBXNativeTarget "EventsTests" */ = {
+		BB303DCE18B863E300B6EBC9 /* Build configuration list for PBXNativeTarget "Adrenaline LifeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB303DCF18B863E300B6EBC9 /* Debug */,

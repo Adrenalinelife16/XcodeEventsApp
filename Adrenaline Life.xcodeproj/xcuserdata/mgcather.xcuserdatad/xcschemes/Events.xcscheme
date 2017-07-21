@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB303D9518B863E300B6EBC9"
-               BuildableName = "Events.app"
-               BlueprintName = "Events"
-               ReferencedContainer = "container:Events.xcodeproj">
+               BuildableName = "Adrenaline Life.app"
+               BlueprintName = "Adrenaline Life"
+               ReferencedContainer = "container:Adrenaline Life.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB303DB918B863E300B6EBC9"
-               BuildableName = "EventsTests.xctest"
-               BlueprintName = "EventsTests"
-               ReferencedContainer = "container:Events.xcodeproj">
+               BuildableName = "Adrenaline LifeTests.xctest"
+               BlueprintName = "Adrenaline LifeTests"
+               ReferencedContainer = "container:Adrenaline Life.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB303D9518B863E300B6EBC9"
-            BuildableName = "Events.app"
-            BlueprintName = "Events"
-            ReferencedContainer = "container:Events.xcodeproj">
+            BuildableName = "Adrenaline Life.app"
+            BlueprintName = "Adrenaline Life"
+            ReferencedContainer = "container:Adrenaline Life.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB303D9518B863E300B6EBC9"
-            BuildableName = "Events.app"
-            BlueprintName = "Events"
-            ReferencedContainer = "container:Events.xcodeproj">
+            BuildableName = "Adrenaline Life.app"
+            BlueprintName = "Adrenaline Life"
+            ReferencedContainer = "container:Adrenaline Life.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB303D9518B863E300B6EBC9"
-            BuildableName = "Events.app"
-            BlueprintName = "Events"
-            ReferencedContainer = "container:Events.xcodeproj">
+            BuildableName = "Adrenaline Life.app"
+            BlueprintName = "Adrenaline Life"
+            ReferencedContainer = "container:Adrenaline Life.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
