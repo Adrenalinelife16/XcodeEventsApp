@@ -39,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Find Your Life";
-    [self getAllEventsFromServer];
+    
     
     
 }
@@ -51,6 +51,7 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.imgSegmentBar.image=[UIImage imageNamed:@"Segmented_middle.png"];
+    [self checkLogin];
     
     self.navigationItem.hidesBackButton = YES;
     
@@ -70,13 +71,32 @@
 - (IBAction)Refresh:(UIRefreshControl *)sender
 {
     // Reload the data.
-    [self getAllEventsFromServer];
+    [self checkLogin];
     
     // Reload the table data with the new data
     [self.tblFavTable reloadData];
     
     // Restore the view to normal
     [sender endRefreshing];
+}
+
+
+#pragma mark - Check login
+-(void)checkLogin {
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
+        
+        NSLog(@"Username ID = %@", strUserID);
+        [self getAllEventsFromServer];
+    }
+    else {
+        
+        NSLog(@"User is logged out!");
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Please login to favorite an event" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [av show];
+        
+    }
+
 }
 
 
@@ -189,7 +209,6 @@
 - (void)filterFavEventsArray {
     
     
-    if ([self checkLogin]) {
         //Create emtpy array
         NSMutableArray *finalArray = [NSMutableArray array];
         
@@ -236,15 +255,8 @@
             [av show];
             
         }
-        
-    } else {
-        
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Login to check Favorite Events" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [av show];
-        
-    }
-    
-}
+    }     
+
 
 
 -(void)getAllEventsFromServer {
@@ -338,17 +350,6 @@
          
      }];
     
-}
-
-#pragma mark - Check login for MyFavorite and MyTickets
--(BOOL)checkLogin
-{
-    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
-    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
-        return YES;
-    }
-    else
-        return NO;
 }
 
 
