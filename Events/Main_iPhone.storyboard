@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,8 +14,8 @@
             <objects>
                 <viewController storyboardIdentifier="loginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofP-CN-yoG" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aO0-tr-wX6"/>
-                        <viewControllerLayoutGuide type="bottom" id="z5O-ag-czV"/>
+                        <viewControllerLayoutGuide type="top" id="VJz-8M-Hdd"/>
+                        <viewControllerLayoutGuide type="bottom" id="H4k-QD-m1h"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VxO-xc-TFe" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -132,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" tableViewCell="jUX-MS-syf" id="lNf-ZQ-Zxo">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="205.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="205.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jyd-f3-EuW">
@@ -289,7 +289,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -314,8 +314,8 @@
             <objects>
                 <viewController id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GbO-Z7-M2i"/>
-                        <viewControllerLayoutGuide type="bottom" id="fdu-8K-V9r"/>
+                        <viewControllerLayoutGuide type="top" id="S0L-MW-wcJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="IU5-pQ-Ahv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1068"/>
@@ -549,8 +549,8 @@
             <objects>
                 <viewController id="w1Z-bF-ar5" customClass="DiscoverViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kkc-cf-FEY"/>
-                        <viewControllerLayoutGuide type="bottom" id="aqP-Er-71G"/>
+                        <viewControllerLayoutGuide type="top" id="ZRw-uI-7Bk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xrv-Yh-taX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jFF-pG-qCN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="725"/>
@@ -899,8 +899,8 @@
             <objects>
                 <viewController storyboardIdentifier="feedDetails" id="kYa-5B-zJd" customClass="FeedDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mhn-HH-ntd"/>
-                        <viewControllerLayoutGuide type="bottom" id="ElQ-bd-95Q"/>
+                        <viewControllerLayoutGuide type="top" id="2kV-XU-bSo"/>
+                        <viewControllerLayoutGuide type="bottom" id="ABU-sg-9yv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ptt-tX-ARC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -933,8 +933,8 @@
             <objects>
                 <viewController id="Esk-Y6-vmr" customClass="TermsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dVA-2S-9IY"/>
-                        <viewControllerLayoutGuide type="bottom" id="gbX-CI-Ios"/>
+                        <viewControllerLayoutGuide type="top" id="sgj-eD-k9a"/>
+                        <viewControllerLayoutGuide type="bottom" id="87x-rl-99W"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c4h-sN-FcG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -1028,7 +1028,7 @@
                                 <rect key="frame" x="0.0" y="71" width="320" height="249"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ky5-CE-e2c" id="Xk3-xK-uxZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="249"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="249"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sfO-v4-Av0">
@@ -1127,8 +1127,8 @@
             <objects>
                 <viewController storyboardIdentifier="aboutView" automaticallyAdjustsScrollViewInsets="NO" id="GJ5-Ez-Ag6" customClass="AboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="a8u-6O-S8k"/>
-                        <viewControllerLayoutGuide type="bottom" id="guk-9t-zGI"/>
+                        <viewControllerLayoutGuide type="top" id="xpr-kL-qsm"/>
+                        <viewControllerLayoutGuide type="bottom" id="J1w-7S-GEa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PNQ-T2-Nf5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -1382,27 +1382,35 @@
             <objects>
                 <viewController id="yVU-lJ-K5Q" customClass="ProgramDescriptionViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fmp-nY-xNk"/>
-                        <viewControllerLayoutGuide type="bottom" id="3VG-rp-VPK"/>
+                        <viewControllerLayoutGuide type="top" id="GtT-9J-q3I"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lvu-tJ-y0r"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QzG-OX-15u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="mkr-sh-u2G">
-                                <rect key="frame" x="0.0" y="38" width="320" height="582"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="mkr-sh-u2G">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Hello lorem ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="YS9-jV-dl6">
-                                <rect key="frame" x="0.0" y="63" width="320" height="531"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" text="Hello lorem ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="YS9-jV-dl6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mkr-sh-u2G" secondAttribute="trailing" id="2eW-mE-mum"/>
+                            <constraint firstItem="YS9-jV-dl6" firstAttribute="leading" secondItem="QzG-OX-15u" secondAttribute="leading" id="3NY-x6-yo8"/>
+                            <constraint firstItem="Lvu-tJ-y0r" firstAttribute="top" secondItem="YS9-jV-dl6" secondAttribute="bottom" id="6Ci-u1-hHp"/>
+                            <constraint firstItem="mkr-sh-u2G" firstAttribute="top" secondItem="GtT-9J-q3I" secondAttribute="bottom" id="JaY-pQ-F6o"/>
+                            <constraint firstAttribute="trailing" secondItem="YS9-jV-dl6" secondAttribute="trailing" id="SfC-C5-oN2"/>
+                            <constraint firstItem="Lvu-tJ-y0r" firstAttribute="top" secondItem="mkr-sh-u2G" secondAttribute="bottom" id="qcY-DI-XYV"/>
+                            <constraint firstItem="YS9-jV-dl6" firstAttribute="top" secondItem="GtT-9J-q3I" secondAttribute="bottom" id="wah-ZF-Q7f"/>
+                            <constraint firstItem="mkr-sh-u2G" firstAttribute="leading" secondItem="QzG-OX-15u" secondAttribute="leading" id="wdG-D8-kYh"/>
+                        </constraints>
                         <inset key="insetFor6xAndEarlier" minX="0.0" minY="-20" maxX="0.0" maxY="20"/>
                     </view>
                     <navigationItem key="navigationItem" id="qix-CE-HbP"/>
@@ -1423,8 +1431,8 @@
             <objects>
                 <viewController storyboardIdentifier="Events" id="kOC-bS-aI0" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VFF-3T-6o7"/>
-                        <viewControllerLayoutGuide type="bottom" id="N7g-sD-lDS"/>
+                        <viewControllerLayoutGuide type="top" id="haa-7c-Gis"/>
+                        <viewControllerLayoutGuide type="bottom" id="yP2-Qm-Jdq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Events" id="P3Q-B4-jzb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -1456,7 +1464,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AzF-n8-jVC" id="KTN-Hd-u8H">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="82.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="82.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="IZA-9e-nNR">
@@ -1547,7 +1555,7 @@
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1597,8 +1605,8 @@
             <objects>
                 <viewController storyboardIdentifier="aboutViewNew" id="T4o-Af-Ooy" userLabel="Abou View Controllers - About" customClass="AboutUsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RZ1-YS-xX1"/>
-                        <viewControllerLayoutGuide type="bottom" id="uwh-uS-qh7"/>
+                        <viewControllerLayoutGuide type="top" id="5vX-Rt-XL8"/>
+                        <viewControllerLayoutGuide type="bottom" id="EGM-Bm-u55"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ygh-UW-D4E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -1647,8 +1655,8 @@
             <objects>
                 <viewController id="EYQ-sL-8zz" customClass="PolicyViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6Il-ti-kTA"/>
-                        <viewControllerLayoutGuide type="bottom" id="Th1-5Z-TuY"/>
+                        <viewControllerLayoutGuide type="top" id="gXC-d1-Zgb"/>
+                        <viewControllerLayoutGuide type="bottom" id="EGu-VW-VHv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dqD-x8-QHM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -1694,8 +1702,8 @@
             <objects>
                 <viewController storyboardIdentifier="registerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1D8-Gt-16Y" customClass="RegistrationViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6uw-9X-zYc"/>
-                        <viewControllerLayoutGuide type="bottom" id="sU7-ZE-qWC"/>
+                        <viewControllerLayoutGuide type="top" id="AJN-wi-36O"/>
+                        <viewControllerLayoutGuide type="bottom" id="v4w-0r-aQi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lAo-2D-rSI" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -1919,8 +1927,8 @@
             <objects>
                 <viewController storyboardIdentifier="attendingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uN1-jK-Wuq" customClass="AttendingViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3tz-cv-ypv"/>
-                        <viewControllerLayoutGuide type="bottom" id="yWL-YC-Var"/>
+                        <viewControllerLayoutGuide type="top" id="BIO-G9-pbg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z5a-DR-bBX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IAm-9V-4bq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -1979,8 +1987,8 @@
             <objects>
                 <viewController storyboardIdentifier="calendarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ymv-lc-u6U" customClass="CalendarViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="g6p-tO-6aA"/>
-                        <viewControllerLayoutGuide type="bottom" id="RqU-eH-ktf"/>
+                        <viewControllerLayoutGuide type="top" id="JGV-Tg-KPm"/>
+                        <viewControllerLayoutGuide type="bottom" id="oqv-7h-cbb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="62d-d4-v1i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
