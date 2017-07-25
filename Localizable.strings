@@ -24,7 +24,7 @@
 "GETFEEDS_METHOD"           =   "/webservices/tweet-fb.php";
 "LOGIN_METHOD"              =   "/api/Login";
 "REGISTER_METHOD"           =   "/Adrenaline_App/api/Register";
-"CREATE_EVENT_METHOD"       =   "/Adrenaline_App/add_new.php";
+"CREATE_EVENT_METHOD"       =   "/api/addEvent";
 "ADD_REMOVE_FAV_EVENT"      =   "/Adrenaline_App/api/addRemoveFav";
 "GET_FAV_EVENT"             =   "/Adrenaline_App/api/getFavEvents";
 //"USER_HAS_FAV_EVENT"        =   "/Adrenaline_Custom/api/getFavEvents/isFavourite";

@@ -86,24 +86,38 @@
 
 - (IBAction)submitEvent:(id)sender {
     
-    
+    // Set image formatt
     
     UIImage *imageFromImageView = _imageView.image;
-    
-    
     NSData *dataImage = [[NSData alloc] init];
     dataImage = UIImagePNGRepresentation(imageFromImageView);
     NSString *stringImage = [dataImage base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     
-    /*
+    // set start/end time formatt
     
     
-    UIImage *imageFromImageView = _imageView.image;
+    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+    [timeFormatter setDateFormat:@"HH:mm:ss"];
+    self.startTime.text=[NSString stringWithFormat:@"%@",[timeFormatter stringFromDate:datePicker.date]];
+    self.endTime.text=[NSString stringWithFormat:@"%@",[timeFormatter stringFromDate:datePicker.date]];
     
-    NSData *dataForPNGFile = UIImagePNGRepresentation(imageFromImageView);
-
-   */
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.eventName.text,@"event_name", self.startDate.text,@"start_date",self.endDate.text,@"end_date",self.startTime.text,@"start_time",self.endTime.text,@"end_time", self.locationName.text,@"location_name",self.address.text,@"address",self.city.text,@"city",self.state.text,@"state",self.zipCode.text,@"zipcode",self.detailView.text,@"detailView",stringImage,@"image", nil];
+    
+    
+    
+    // set start/end date formatt
+    
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    self.startDate.text=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
+    self.endDate.text=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
+    
+    
+    
+    
+    
+    
+    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.eventName.text,@"event_name", self.startDate.text,@"start_date",self.endDate.text,@"end_date",self.startTime.text,@"start_time",self.endTime.text,@"end_time", self.locationName.text,@"location_name",self.address.text,@"location_address",self.city.text,@"location_city",self.state.text,@"location_state",self.zipCode.text,@"location_zip",self.detailView.text,@"event_info",stringImage,@"image",titleText,@"category", nil];
     
     [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         

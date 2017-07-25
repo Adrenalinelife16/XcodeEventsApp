@@ -63,6 +63,7 @@
 		7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */; };
 		7225BD201E4AA78200A35D30 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1F1E4AA78200A35D30 /* Notes */; };
 		722DAF191EB815FF00F4D808 /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722DAF181EB815FF00F4D808 /* SearchResultsTableViewController.m */; };
+		7237DBB31F27C4C9008C9588 /* ReviewCreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7237DBB21F27C4C9008C9588 /* ReviewCreateEventViewController.m */; };
 		7250A03D1ECA7AC300E1E9AE /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7250A03C1ECA7AC300E1E9AE /* TableCell.xib */; };
 		7250A0401ECA7F7100E1E9AE /* TableCellTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7250A03F1ECA7F7100E1E9AE /* TableCellTableViewController.m */; };
 		7274EC5E1F01C5500019B9AB /* MyFavoriteCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7274EC5D1F01C5500019B9AB /* MyFavoriteCustomCell.m */; };
@@ -392,6 +393,8 @@
 		7225BD1F1E4AA78200A35D30 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		722DAF171EB815FF00F4D808 /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
 		722DAF181EB815FF00F4D808 /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
+		7237DBB11F27C4C9008C9588 /* ReviewCreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewCreateEventViewController.h; sourceTree = "<group>"; };
+		7237DBB21F27C4C9008C9588 /* ReviewCreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewCreateEventViewController.m; sourceTree = "<group>"; };
 		7250A03C1ECA7AC300E1E9AE /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableCell.xib; path = TabBarController/TableCell.xib; sourceTree = "<group>"; };
 		7250A03E1ECA7F7100E1E9AE /* TableCellTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellTableViewController.h; sourceTree = "<group>"; };
 		7250A03F1ECA7F7100E1E9AE /* TableCellTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCellTableViewController.m; sourceTree = "<group>"; };
@@ -1539,6 +1542,8 @@
 			children = (
 				E2AB03231E4ADFEA00EAA5BF /* CreateEventViewController.h */,
 				E2AB03241E4ADFEA00EAA5BF /* CreateEventViewController.m */,
+				7237DBB11F27C4C9008C9588 /* ReviewCreateEventViewController.h */,
+				7237DBB21F27C4C9008C9588 /* ReviewCreateEventViewController.m */,
 			);
 			name = "Create Event";
 			sourceTree = "<group>";
@@ -1895,6 +1900,7 @@
 				79691D0818F00C8700ABD52D /* ASIInputStream.m in Sources */,
 				711221DC18BC62DD00E77A4A /* NSDate+convenience.m in Sources */,
 				79691CA918EFFF1F00ABD52D /* NSObject+SBJSON.m in Sources */,
+				7237DBB31F27C4C9008C9588 /* ReviewCreateEventViewController.m in Sources */,
 				711221DE18BC62DD00E77A4A /* UIColor+expanded.m in Sources */,
 				793508D7192134F90001CC34 /* MMdbsupport.m in Sources */,
 				790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */,
