@@ -553,12 +553,12 @@
                         <outlet property="state" destination="BD2-3I-0LX" id="IDR-Jj-rEE"/>
                         <outlet property="view" destination="fga-UX-TPd" id="zy5-ER-kmw"/>
                         <outlet property="zipCode" destination="lOK-6A-XlK" id="2t0-R8-fTm"/>
-                        <segue destination="raa-mk-ymy" kind="push" id="q5c-Xo-Ml5"/>
+                        <segue destination="raa-mk-ymy" kind="push" id="d8v-8f-5Yj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIR-xF-oLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-350" y="-2478"/>
+            <point key="canvasLocation" x="-487" y="-2482"/>
         </scene>
         <!--Discover View Controller-->
         <scene sceneID="feH-eW-g6n">
