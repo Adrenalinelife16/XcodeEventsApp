@@ -312,17 +312,17 @@
         <!--Create Event View Controller-->
         <scene sceneID="of1-2C-MFB">
             <objects>
-                <viewController extendedLayoutIncludesOpaqueBars="YES" id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
+                <viewController id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S0L-MW-wcJ"/>
                         <viewControllerLayoutGuide type="bottom" id="IU5-pQ-Ahv"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="xKb-jB-jd7">
+                    <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
                         <rect key="frame" x="0.0" y="64" width="320" height="1037"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="1086"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ne0-V7-A9h">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
@@ -512,7 +512,6 @@
                                         </state>
                                         <connections>
                                             <action selector="sendReview:" destination="MgQ-Su-gZO" eventType="touchUpInside" id="CCX-Qr-59p"/>
-                                            <segue destination="raa-mk-ymy" kind="push" identifier="createEventReview" id="1L8-dw-op3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -554,6 +553,7 @@
                         <outlet property="state" destination="BD2-3I-0LX" id="IDR-Jj-rEE"/>
                         <outlet property="view" destination="fga-UX-TPd" id="zy5-ER-kmw"/>
                         <outlet property="zipCode" destination="lOK-6A-XlK" id="2t0-R8-fTm"/>
+                        <segue destination="raa-mk-ymy" kind="push" identifier="createEventReview" id="n30-Vc-9Ww"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIR-xF-oLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2139,16 +2139,16 @@
                         <viewControllerLayoutGuide type="top" id="N12-6o-j75"/>
                         <viewControllerLayoutGuide type="bottom" id="Ysu-pV-gE4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MUU-3I-Yys">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1068"/>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="MUU-3I-Yys">
+                        <rect key="frame" x="0.0" y="64" width="320" height="955"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-7k-7nq">
-                                <rect key="frame" x="0.0" y="64" width="320" height="955"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="955"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZRk-q4-cHA">
-                                        <rect key="frame" x="0.0" y="-64" width="320" height="955"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="962"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J54-mW-fbJ">
@@ -2294,6 +2294,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="gLd-G6-W9m"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1068"/>

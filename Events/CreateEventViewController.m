@@ -23,7 +23,7 @@
 {
     [super viewDidLoad];
     
- 
+    
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     self.detailView.layer.borderWidth = 1.0f;
@@ -49,8 +49,18 @@
     
     
     self.navigationItem.title = titleText;
-//    self.scrollViewCE.delegate = self;
- //    [_scrollViewCE setContentSize:CGSizeMake(320, 1068)];
+
+    
+    
+}
+
+-(void)viewDidLayoutSubviews {
+    
+    self.navigationController.navigationBar.translucent = NO;
+    
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+
     
 }
 
@@ -147,6 +157,8 @@
                       NSLog(@"%@",error);
                   }];
      */
+    
+    [self performSegueWithIdentifier:@"createEventReview" sender:sender];
     
 }
 

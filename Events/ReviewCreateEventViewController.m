@@ -19,17 +19,29 @@
     // Do any additional setup after loading the view.
 }
 
--(void)viewWillAppear:(BOOL)animated{
+-(void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:YES];
     self.title = @"Event Review";
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     
+    UIViewController *viewController = [[UIViewController alloc] init];
+    viewController.edgesForExtendedLayout = UIRectEdgeNone;
+    UINavigationController *mainNavigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+}
+
+-(void)viewDidLayoutSubviews {
+    
+    self.navigationController.navigationBar.translucent = NO;
+    
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
     
     
-    
-    }
+}
+
 
 
 - (void)didReceiveMemoryWarning {
