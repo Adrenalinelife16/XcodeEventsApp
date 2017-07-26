@@ -8,6 +8,7 @@
 
 #import "CreateEventViewController.h"
 #import "CategoryTableViewController.h"
+#import "ReviewCreateEventViewController.h"
 
 
 @interface CreateEventViewController () <UITextViewDelegate>
@@ -24,10 +25,9 @@
     
  
     self.navigationController.navigationBar.topItem.title = @"";
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     self.detailView.layer.borderWidth = 1.0f;
     self.detailView.layer.borderColor = [[UIColor blackColor] CGColor];
-    self.navigationItem.title = titleText;
     _buttonBorder.layer.borderWidth = 1.0f;
     [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -47,31 +47,13 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     
-    self.scrollViewCE.delegate = self;
-     [_scrollViewCE setContentSize:CGSizeMake(320, 1068)];
+    
+    self.navigationItem.title = titleText;
+//    self.scrollViewCE.delegate = self;
+ //    [_scrollViewCE setContentSize:CGSizeMake(320, 1068)];
     
 }
 
-
--(void)viewDidLayoutSubviews
-{
-    [super viewDidLayoutSubviews];
-    
-   
-    
-    // Adjust frame for iPhone 5s
-    
-    if (IS_IPHONE_4_OR_LESS) {
-        
-        NSLog(@"Yes it is");
-        
-    } else {
-      
-        NSLog(@"No it isnt");
-        
-    }
-
-}
 
 
 
@@ -84,9 +66,11 @@
 
 #pragma mark - Submit Event to server
 
-- (IBAction)submitEvent:(id)sender {
+- (IBAction)sendReview:(id)sender {
+    
     
     // Set image formatt
+    
     
     UIImage *imageFromImageView = _imageView.image;
     NSData *dataImage = [[NSData alloc] init];
@@ -112,10 +96,14 @@
     self.startDate.text=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
     self.endDate.text=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
     
+    // Text field info
+    
+     NSString *eventNameStr = eventName.text;
     
     
     
     
+    /*
     
     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.eventName.text,@"event_name", self.startDate.text,@"start_date",self.endDate.text,@"end_date",self.startTime.text,@"start_time",self.endTime.text,@"end_time", self.locationName.text,@"location_name",self.address.text,@"location_address",self.city.text,@"location_city",self.state.text,@"location_state",self.zipCode.text,@"location_zip",self.detailView.text,@"event_info",stringImage,@"image",titleText,@"category", nil];
     
@@ -158,6 +146,7 @@
                       [DSBezelActivityView removeViewAnimated:YES];
                       NSLog(@"%@",error);
                   }];
+     */
     
 }
 
@@ -418,10 +407,12 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    
-    
-    
- 
+    if ([[segue identifier] isEqualToString:@"createEventReview"]) {
+        ReviewCreateEventViewController *destinationView = [segue destinationViewController];
+        
+        
+    }
+
 }
 
 

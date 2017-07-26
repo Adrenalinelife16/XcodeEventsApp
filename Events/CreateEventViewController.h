@@ -39,7 +39,7 @@
 @property(nonatomic) NSInteger minuteInterval;
 
 
-- (IBAction)submitEvent:(id)sender;
+- (IBAction)sendReview:(id)sender;
 
 - (IBAction)uploadImageClicked:(id)sender;
 

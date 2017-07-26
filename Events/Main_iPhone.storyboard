@@ -312,23 +312,23 @@
         <!--Create Event View Controller-->
         <scene sceneID="of1-2C-MFB">
             <objects>
-                <viewController id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S0L-MW-wcJ"/>
                         <viewControllerLayoutGuide type="bottom" id="IU5-pQ-Ahv"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="xKb-jB-jd7">
                         <rect key="frame" x="0.0" y="64" width="320" height="1037"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1086"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ne0-V7-A9h">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="Myg-Cr-XEQ"/>
-                                            <constraint firstAttribute="height" constant="1037" id="yV8-Uz-SlU"/>
+                                            <constraint firstAttribute="height" constant="1037" id="nTV-DX-WDn"/>
+                                            <constraint firstAttribute="width" constant="320" id="yPh-UM-TFy"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Event Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ddN-7u-BEs">
@@ -511,26 +511,27 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="submitEvent:" destination="MgQ-Su-gZO" eventType="touchUpInside" id="t4S-d7-ISn"/>
+                                            <action selector="sendReview:" destination="MgQ-Su-gZO" eventType="touchUpInside" id="CCX-Qr-59p"/>
+                                            <segue destination="raa-mk-ymy" kind="push" identifier="createEventReview" id="1L8-dw-op3"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="13g-ds-TWZ"/>
-                                    <constraint firstAttribute="height" constant="1037" id="71d-a8-HfO"/>
-                                    <constraint firstAttribute="width" constant="320" id="PrH-Ng-Ods"/>
-                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="YNl-Kd-qIn"/>
-                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="von-Gf-efB"/>
-                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="yvn-zX-hdP"/>
+                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="5UO-kF-hGq"/>
+                                    <constraint firstAttribute="height" constant="1037" id="7Do-Lb-n52"/>
+                                    <constraint firstAttribute="width" constant="320" id="Ak0-pR-x5q"/>
+                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="Rcs-BB-NvZ"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="WFA-MD-mA0"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="wUh-WY-ePV"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="S0L-MW-wcJ" secondAttribute="bottom" id="DtT-9z-Pkp"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="H5b-4q-lCx"/>
-                            <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="SN0-Xz-yhD"/>
-                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="zOc-IO-h8u"/>
+                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="d2g-v7-PME"/>
+                            <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="gq8-R8-pdl"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="S0L-MW-wcJ" secondAttribute="bottom" id="lb9-rb-FMU"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="sFv-R8-RHP"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -553,7 +554,6 @@
                         <outlet property="state" destination="BD2-3I-0LX" id="IDR-Jj-rEE"/>
                         <outlet property="view" destination="fga-UX-TPd" id="zy5-ER-kmw"/>
                         <outlet property="zipCode" destination="lOK-6A-XlK" id="2t0-R8-fTm"/>
-                        <segue destination="raa-mk-ymy" kind="push" id="d8v-8f-5Yj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIR-xF-oLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2288,9 +2288,6 @@
                                         <state key="normal" title="Submit Event">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="submitEvent:" destination="MgQ-Su-gZO" eventType="touchUpInside" id="V3p-jZ-PMn"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>

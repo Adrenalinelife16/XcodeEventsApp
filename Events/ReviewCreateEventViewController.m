@@ -19,6 +19,19 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:YES];
+    self.title = @"Event Review";
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
+    
+    
+    
+    
+    }
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
