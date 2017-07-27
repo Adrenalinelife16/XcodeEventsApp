@@ -78,87 +78,14 @@
 
 - (IBAction)sendReview:(id)sender {
     
-    
-    // Set image formatt
-    
-    
-    UIImage *imageFromImageView = _imageView.image;
-    NSData *dataImage = [[NSData alloc] init];
-    dataImage = UIImagePNGRepresentation(imageFromImageView);
-    NSString *stringImage = [dataImage base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
-    
-    // set start/end time formatt
-    
-    
-    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
-    [timeFormatter setDateFormat:@"HH:mm:ss"];
-    self.startTime.text=[NSString stringWithFormat:@"%@",[timeFormatter stringFromDate:datePicker.date]];
-    self.endTime.text=[NSString stringWithFormat:@"%@",[timeFormatter stringFromDate:datePicker.date]];
-    
-    
-    
-    
-    // set start/end date formatt
-    
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-    self.startDate.text=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
-    self.endDate.text=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
-    
-    // Text field info
-    
-     NSString *eventNameStr = eventName.text;
-    
-    
-    
+    [self performSegueWithIdentifier:@"createEventReview" sender:sender];
     
     /*
-    
-    NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.eventName.text,@"event_name", self.startDate.text,@"start_date",self.endDate.text,@"end_date",self.startTime.text,@"start_time",self.endTime.text,@"end_time", self.locationName.text,@"location_name",self.address.text,@"location_address",self.city.text,@"location_city",self.state.text,@"location_state",self.zipCode.text,@"location_zip",self.detailView.text,@"event_info",stringImage,@"image",titleText,@"category", nil];
-    
-    [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
+    if ([self IsValid]) {
         
-        
-        if ([response isKindOfClass:[NSDictionary class]]) {
-            if ([[response objectForKey:@"message"] isEqualToString:@"Sorry, that username already exists!"]) {
-                [Utility alertNotice:APPNAME withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-               
-                
-            }
-            
-            
-            else{
-        
-                
-            }
-            
-        }
-        
-        else if ([response isKindOfClass:[NSArray class]]) {
-            
-            if ([[[response objectAtIndex:0] objectForKey:@"message"] isEqualToString:@"Sorry, that email address is already used!"]) {
-                [Utility alertNotice:APPNAME withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-            
-                
-            }
-            else{
-           
-                
-            }
-            
-            
-        }
-        [DSBezelActivityView removeViewAnimated:YES];
-        
+        [self performSegueWithIdentifier:@"createEventReview" sender:sender];
     }
-                  WithFailure:^(NSString *error){
-                      [DSBezelActivityView removeViewAnimated:YES];
-                      NSLog(@"%@",error);
-                  }];
-     */
-    
-    [self performSegueWithIdentifier:@"createEventReview" sender:sender];
+    */
     
 }
 
@@ -263,8 +190,8 @@
 }
 
 #pragma mark - Check registration Field validations
--(BOOL)IsValid
-{
+-(BOOL)IsValid {
+    
     NSString *message   =   @"";
     
     if (!([self.eventName.text length]>0)) {
@@ -419,13 +346,35 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
+    NSString *enteredEventName = [eventName text];
+    NSString *enteredStartDate = [_startDate text];
+    NSString *enteredEndDate = [_endDate text];
+    NSString *enteredStartTime = [_startTime text];
+    NSString *enteredEndTime = [_endTime text];
+    NSString *enteredLocationName = [locationName text];
+    NSString *enteredAddress = [address text];
+    NSString *enteredCity = [city text];
+    NSString *enteredState = [state text];
+    NSString *enteredZipCode = [zipCode text];
+ //   UITextView *enteredDetail = [detailView text];
+  //  UIImage *userImage = [_imageView image];
+    
 
     
     if ([[segue identifier] isEqualToString:@"createEventReview"]) {
         ReviewCreateEventViewController *destinationView = [segue destinationViewController];
-        destinationView.strEventName = eventName.text;
-       
-        
+        destinationView.strEventName = enteredEventName;
+        destinationView.strCategory = titleText;
+        destinationView.strStartDate = enteredStartDate;
+        destinationView.strEndDate = enteredEndDate;
+        destinationView.strStartTime = enteredStartTime;
+        destinationView.strEndTime = enteredEndTime;
+        destinationView.strLocationName = enteredLocationName;
+        destinationView.strAddress = enteredAddress;
+        destinationView.strCity = enteredCity;
+        destinationView.strState = enteredState;
+        destinationView.strZipCode = enteredZipCode;
+
         
     }
 

@@ -12,23 +12,40 @@
 
 // Fields for event submit
 @property (nonatomic,retain) IBOutlet NSString *strEventName;
-@property (strong, nonatomic) IBOutlet UILabel *category;
-@property (strong, nonatomic) IBOutlet UILabel *locationName;
-@property (strong, nonatomic) IBOutlet UILabel *address;
-@property (strong, nonatomic) IBOutlet UILabel *city;
-@property (strong, nonatomic) IBOutlet UILabel *state;
-@property (strong, nonatomic) IBOutlet UILabel *zipCode;
-@property (strong, nonatomic) IBOutlet UITextView *detailView;
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic,retain) IBOutlet NSString *strCategory;
+@property (nonatomic,retain) IBOutlet NSString *strStartDate;
+@property (nonatomic,retain) IBOutlet NSString *strEndDate;
+@property (nonatomic,retain) IBOutlet NSString *strStartTime;
+@property (nonatomic,retain) IBOutlet NSString *strEndTime;
+@property (nonatomic,retain) IBOutlet NSString *strLocationName;
+@property (nonatomic,retain) IBOutlet NSString *strAddress;
+@property (nonatomic,retain) IBOutlet NSString *strCity;
+@property (nonatomic,retain) IBOutlet NSString *strState;
+@property (nonatomic,retain) IBOutlet NSString *strZipCode;
+@property (nonatomic,retain) IBOutlet UITextView *detailView;
+@property (nonatomic,retain) IBOutlet UIImageView *imageView;
+
+
+// Labels view
+
+@property (strong, nonatomic) IBOutlet UILabel *labelEventName;
+@property (strong, nonatomic) IBOutlet UILabel *labelCategory;
+@property (strong, nonatomic) IBOutlet UILabel *labelStartDate;
+@property (strong, nonatomic) IBOutlet UILabel *labelEndDate;
+@property (strong, nonatomic) IBOutlet UILabel *labelStartTime;
+@property (strong, nonatomic) IBOutlet UILabel *labelEndTime;
+@property (strong, nonatomic) IBOutlet UILabel *labelLocationName;
+@property (strong, nonatomic) IBOutlet UILabel *labelAddress;
+@property (strong, nonatomic) IBOutlet UILabel *labelCity;
+@property (strong, nonatomic) IBOutlet UILabel *labelState;
+@property (strong, nonatomic) IBOutlet UILabel *labelZipCode;
+@property (strong, nonatomic) IBOutlet UITextView *userDetailView;
+@property (strong, nonatomic) IBOutlet UIImageView *userImage;
 
 
 // UI Format
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
-@property (strong, nonatomic) IBOutlet UILabel *startDate;
-@property (strong, nonatomic) IBOutlet UILabel *endDate;
-@property (strong, nonatomic) IBOutlet UILabel *startTime;
-@property (strong, nonatomic) IBOutlet UILabel *endTime;
 @property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
 
 

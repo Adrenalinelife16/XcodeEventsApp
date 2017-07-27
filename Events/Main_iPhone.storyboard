@@ -312,7 +312,7 @@
         <!--Create Event View Controller-->
         <scene sceneID="of1-2C-MFB">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
+                <viewController id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S0L-MW-wcJ"/>
                         <viewControllerLayoutGuide type="bottom" id="IU5-pQ-Ahv"/>
@@ -327,8 +327,8 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ne0-V7-A9h">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1037" id="Dbe-8b-NwC"/>
-                                            <constraint firstAttribute="width" constant="320" id="Gd8-tq-ypc"/>
+                                            <constraint firstAttribute="width" constant="320" id="7rg-PT-CS6"/>
+                                            <constraint firstAttribute="height" constant="1037" id="zTL-EW-aZm"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Event Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ddN-7u-BEs">
@@ -516,19 +516,27 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="5FP-bA-P1X"/>
-                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="C4C-B0-Tkf"/>
-                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="vEF-1o-hUj"/>
-                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="xcM-fQ-AZW"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="1B8-Jz-wC8"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="2wA-dW-nWi"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="31W-PL-lDB"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="6Yo-gL-7YC"/>
+                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="9Dl-Od-c44"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="Esj-gQ-30F"/>
+                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="VJP-sZ-o6q"/>
+                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="YT8-c4-Fcl"/>
+                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="aBT-V5-I2F"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="cYr-jz-aYw"/>
+                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="jDI-CW-BgP"/>
+                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="tXy-6E-FBK"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="Adc-Nc-L4T"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="S0L-MW-wcJ" secondAttribute="bottom" id="Aht-Ei-fjg"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="KMt-Qr-ch5"/>
-                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="N5B-oP-ych"/>
+                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="1QS-69-NzP"/>
+                            <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="CXw-I8-Kao"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="Nhe-a6-V8q"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="S0L-MW-wcJ" secondAttribute="bottom" id="O5W-MX-Ywn"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -2313,8 +2321,20 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1068"/>
                     <connections>
-                        <outlet property="detailView" destination="toe-n2-bbn" id="YHT-8b-0JO"/>
-                        <outlet property="strEventName" destination="mbh-ZK-oLe" id="tQY-YD-L4t"/>
+                        <outlet property="detailView" destination="toe-n2-bbn" id="RIa-9g-zOK"/>
+                        <outlet property="labelAddress" destination="UxK-V4-DfB" id="OFm-0h-2e2"/>
+                        <outlet property="labelCategory" destination="722-LU-INl" id="2eN-2R-LBA"/>
+                        <outlet property="labelCity" destination="iW4-X9-wUZ" id="XKN-49-x41"/>
+                        <outlet property="labelEndDate" destination="sD6-uC-zqZ" id="dMl-UA-TDh"/>
+                        <outlet property="labelEndTime" destination="Hl5-bm-bq7" id="nCt-OV-tQ1"/>
+                        <outlet property="labelEventName" destination="mbh-ZK-oLe" id="1V8-wY-427"/>
+                        <outlet property="labelLocationName" destination="a0o-UY-f10" id="M7P-At-CyW"/>
+                        <outlet property="labelStartDate" destination="XPD-JI-NT5" id="yiK-gU-si4"/>
+                        <outlet property="labelStartTime" destination="1H4-C3-3a3" id="f4L-a6-RKD"/>
+                        <outlet property="labelState" destination="Jco-Z9-lD9" id="a3f-Zw-GJQ"/>
+                        <outlet property="labelZipCode" destination="AOC-LK-FuG" id="jDI-rc-ari"/>
+                        <outlet property="userDetailView" destination="toe-n2-bbn" id="HZw-s8-RUH"/>
+                        <outlet property="userImage" destination="wJJ-l6-SJ7" id="4QM-TZ-J6J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwz-Zp-LqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
