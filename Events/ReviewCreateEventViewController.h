@@ -22,8 +22,8 @@
 @property (nonatomic,retain) IBOutlet NSString *strCity;
 @property (nonatomic,retain) IBOutlet NSString *strState;
 @property (nonatomic,retain) IBOutlet NSString *strZipCode;
-@property (nonatomic,retain) IBOutlet UITextView *detailView;
-@property (nonatomic,retain) IBOutlet UIImageView *imageView;
+@property (nonatomic,retain) IBOutlet UITextView *userDetailView;
+@property (nonatomic,retain) IBOutlet UIImageView *userImageView;
 
 
 // Labels view
@@ -39,8 +39,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *labelCity;
 @property (strong, nonatomic) IBOutlet UILabel *labelState;
 @property (strong, nonatomic) IBOutlet UILabel *labelZipCode;
-@property (strong, nonatomic) IBOutlet UITextView *userDetailView;
-@property (strong, nonatomic) IBOutlet UIImageView *userImage;
+@property (strong, nonatomic) IBOutlet UITextView *detailView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 
 // UI Format

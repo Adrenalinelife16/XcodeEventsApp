@@ -356,8 +356,8 @@
     NSString *enteredCity = [city text];
     NSString *enteredState = [state text];
     NSString *enteredZipCode = [zipCode text];
- //   UITextView *enteredDetail = [detailView text];
-  //  UIImage *userImage = [_imageView image];
+    UITextView *enteredDetail = detailView;
+    UIImageView *userImage = _imageView;
     
 
     
@@ -374,6 +374,8 @@
         destinationView.strCity = enteredCity;
         destinationView.strState = enteredState;
         destinationView.strZipCode = enteredZipCode;
+        destinationView.userDetailView = enteredDetail;
+        destinationView.userImageView = userImage;
 
         
     }

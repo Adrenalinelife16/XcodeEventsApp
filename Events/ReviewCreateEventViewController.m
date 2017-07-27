@@ -16,7 +16,7 @@
 @implementation ReviewCreateEventViewController
 @synthesize strEventName,strCategory,strStartDate,strEndDate,strStartTime,strEndTime;
 @synthesize strLocationName,strAddress,strCity,strState,strZipCode;
-
+@synthesize userDetailView,userImageView;
 
 
 - (void)viewDidLoad {
@@ -53,10 +53,9 @@
     _labelCity.text = self.strCity;
     _labelZipCode.text = self.strZipCode;
     
-    
-   
-    
-    
+    _detailView = self.userDetailView;
+    _imageView = self.userImageView;
+       
     
 }
 

@@ -2322,6 +2322,7 @@
                     <size key="freeformSize" width="320" height="1068"/>
                     <connections>
                         <outlet property="detailView" destination="toe-n2-bbn" id="RIa-9g-zOK"/>
+                        <outlet property="imageView" destination="wJJ-l6-SJ7" id="rWG-0F-jv1"/>
                         <outlet property="labelAddress" destination="UxK-V4-DfB" id="OFm-0h-2e2"/>
                         <outlet property="labelCategory" destination="722-LU-INl" id="2eN-2R-LBA"/>
                         <outlet property="labelCity" destination="iW4-X9-wUZ" id="XKN-49-x41"/>
@@ -2333,8 +2334,6 @@
                         <outlet property="labelStartTime" destination="1H4-C3-3a3" id="f4L-a6-RKD"/>
                         <outlet property="labelState" destination="Jco-Z9-lD9" id="a3f-Zw-GJQ"/>
                         <outlet property="labelZipCode" destination="AOC-LK-FuG" id="jDI-rc-ari"/>
-                        <outlet property="userDetailView" destination="toe-n2-bbn" id="HZw-s8-RUH"/>
-                        <outlet property="userImage" destination="wJJ-l6-SJ7" id="4QM-TZ-J6J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwz-Zp-LqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
