@@ -11,7 +11,7 @@
 @interface ReviewCreateEventViewController : UIViewController
 
 // Fields for event submit
-@property (strong, nonatomic) IBOutlet UILabel *eventName;
+@property (nonatomic,retain) IBOutlet NSString *strEventName;
 @property (strong, nonatomic) IBOutlet UILabel *category;
 @property (strong, nonatomic) IBOutlet UILabel *locationName;
 @property (strong, nonatomic) IBOutlet UILabel *address;

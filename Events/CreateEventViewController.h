@@ -15,7 +15,7 @@
 }
 
 // Fields for event submit
-@property (strong, nonatomic) IBOutlet UITextField *eventName;
+@property (nonatomic,retain) IBOutlet UITextField *eventName;
 @property (strong, nonatomic) IBOutlet UITextField *locationName;
 @property (strong, nonatomic) IBOutlet UITextField *address;
 @property (strong, nonatomic) IBOutlet UITextField *city;

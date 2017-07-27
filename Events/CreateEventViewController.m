@@ -19,10 +19,13 @@
 @synthesize eventName, locationName, address, city, state, zipCode, detailView;
 @synthesize titleText;
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
     
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
@@ -49,19 +52,16 @@
     
     
     self.navigationItem.title = titleText;
+    
 
     
     
 }
 
 -(void)viewDidLayoutSubviews {
+   
     
-    self.navigationController.navigationBar.translucent = NO;
     
-    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    
-       
 }
 
 
@@ -419,8 +419,12 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
+
+    
     if ([[segue identifier] isEqualToString:@"createEventReview"]) {
         ReviewCreateEventViewController *destinationView = [segue destinationViewController];
+        destinationView.strEventName = eventName.text;
+       
         
         
     }
