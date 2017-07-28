@@ -377,8 +377,6 @@
         destinationView.strZipCode = enteredZipCode;
         destinationView.userDetailView = textValue;
         destinationView.userImageView = newImage;
-   
-
         
     }
 

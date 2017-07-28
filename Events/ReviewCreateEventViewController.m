@@ -91,8 +91,8 @@
      
      NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
      [timeFormatter setDateFormat:@"HH:mm:ss"];
-     self.strStartTime=[NSString stringWithFormat:@"%@",[timeFormatter stringFromDate:datePicker.date]];
-     self.strEndTime=[NSString stringWithFormat:@"%@",[timeFormatter stringFromDate:datePicker.date]];
+     self.strStartTime=[NSString stringWithFormat:@"%@", timeFormatter];
+     self.strEndTime=[NSString stringWithFormat:@"%@",timeFormatter];
      
      
      
