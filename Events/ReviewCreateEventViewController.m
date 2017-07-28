@@ -53,7 +53,7 @@
     _labelCity.text = self.strCity;
     _labelZipCode.text = self.strZipCode;
     
-    _detailView = self.userDetailView;
+    _detailView.text = self.userDetailView;
     _imageView.image = self.userImageView;
        
     
@@ -75,7 +75,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*
+
  - (IBAction)submitEvent:(id)sender {
      
      // Set image formatt
@@ -91,8 +91,8 @@
      
      NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
      [timeFormatter setDateFormat:@"HH:mm:ss"];
-     self.startTime.text=[NSString stringWithFormat:@"%@",[timeFormatter stringFromDate:datePicker.date]];
-     self.endTime.text=[NSString stringWithFormat:@"%@",[timeFormatter stringFromDate:datePicker.date]];
+     self.strStartTime=[NSString stringWithFormat:@"%@",[timeFormatter stringFromDate:datePicker.date]];
+     self.strEndTime=[NSString stringWithFormat:@"%@",[timeFormatter stringFromDate:datePicker.date]];
      
      
      
@@ -102,13 +102,13 @@
      
      NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
      [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-     self.startDate.text=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
-     self.endDate.text=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
+     self.strStartDate=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
+     self.strEndDate=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
      
      // Text field info
      
      
-     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.eventName.text,@"event_name", self.startDate.text,@"start_date",self.endDate.text,@"end_date",self.startTime.text,@"start_time",self.endTime.text,@"end_time", self.locationName.text,@"location_name",self.address.text,@"location_address",self.city.text,@"location_city",self.state.text,@"location_state",self.zipCode.text,@"location_zip",self.detailView.text,@"event_info",stringImage,@"image",titleText,@"category", nil];
+     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.strEventName,@"event_name", self.strStartDate,@"start_date",self.strEndDate,@"end_date",self.strStartTime,@"start_time",self.strEndTime,@"end_time", self.strLocationName,@"location_name",self.strAddress,@"location_address",self.strCity,@"location_city",self.strState,@"location_state",self.strZipCode,@"location_zip",self.userDetailView,@"event_info",stringImage,@"image",strCategory,@"category", nil];
      
      [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
          
@@ -151,5 +151,5 @@
                    }];
     
  }
-*/
+
  @end

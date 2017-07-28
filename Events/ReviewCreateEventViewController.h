@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ReviewCreateEventViewController : UIViewController
+{
+    UIDatePicker *datePicker;
+    
+}
+
 
 // Fields for event submit
 @property (nonatomic,retain) IBOutlet NSString *strEventName;
@@ -22,7 +27,7 @@
 @property (nonatomic,retain) IBOutlet NSString *strCity;
 @property (nonatomic,retain) IBOutlet NSString *strState;
 @property (nonatomic,retain) IBOutlet NSString *strZipCode;
-@property (nonatomic,retain) IBOutlet UITextView *userDetailView;
+@property (nonatomic,retain) IBOutlet NSString *userDetailView;
 @property (nonatomic,retain) IBOutlet UIImage *userImageView;
 
 
@@ -47,6 +52,8 @@
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
 @property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
+
+- (IBAction)submitEvent:(id)sender;
 
 
 @end

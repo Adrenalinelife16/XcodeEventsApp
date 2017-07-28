@@ -79,13 +79,13 @@
 - (IBAction)sendReview:(id)sender {
     
     [self performSegueWithIdentifier:@"createEventReview" sender:sender];
-    
+
     /*
     if ([self IsValid]) {
         
         [self performSegueWithIdentifier:@"createEventReview" sender:sender];
     }
-    */
+     */
     
 }
 
@@ -356,8 +356,8 @@
     NSString *enteredCity = [city text];
     NSString *enteredState = [state text];
     NSString *enteredZipCode = [zipCode text];
-    UITextView *enteredDetail = detailView;
-    
+
+    NSString *textValue = [NSString stringWithFormat:@"%@", detailView.text];
     
     UIImage *newImage = [UIImage imageWithData:UIImagePNGRepresentation(_imageView.image)];
 
@@ -375,8 +375,9 @@
         destinationView.strCity = enteredCity;
         destinationView.strState = enteredState;
         destinationView.strZipCode = enteredZipCode;
-        destinationView.userDetailView = enteredDetail;
+        destinationView.userDetailView = textValue;
         destinationView.userImageView = newImage;
+   
 
         
     }

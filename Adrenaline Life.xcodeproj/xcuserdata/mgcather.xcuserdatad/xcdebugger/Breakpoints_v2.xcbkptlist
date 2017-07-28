@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/CreateEventViewController.m"
-            timestampString = "522881343.254897"
+            timestampString = "522948756.292557"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "365"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/CreateEventViewController.m"
-            timestampString = "522881343.254897"
+            timestampString = "522948756.292557"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "368"
@@ -74,13 +74,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Events/CreateEventViewController.m"
-            timestampString = "522881343.254897"
+            timestampString = "522948756.292557"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "382"
-            endingLineNumber = "382"
+            startingLineNumber = "383"
+            endingLineNumber = "383"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Events/ReviewCreateEventViewController.m"
+            timestampString = "522949124.753125"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "-submitEvent:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ReviewCreateEventViewController submitEvent:]"
+                  moduleName = "Adrenaline Life"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mgcather/Desktop/EventFulliOS/EventFulliOS/Event%20iOS%20App/Events/ReviewCreateEventViewController.m"
+                  timestampString = "522949624.299741"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "2108">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__47-[ReviewCreateEventViewController submitEvent:]_block_invoke"
+                  moduleName = "Adrenaline Life"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mgcather/Desktop/EventFulliOS/EventFulliOS/Event%20iOS%20App/Events/ReviewCreateEventViewController.m"
+                  timestampString = "522949624.303751"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
