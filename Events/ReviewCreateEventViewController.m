@@ -54,7 +54,7 @@
     _labelZipCode.text = self.strZipCode;
     
     _detailView = self.userDetailView;
-    _imageView = self.userImageView;
+    _imageView.image = self.userImageView;
        
     
 }

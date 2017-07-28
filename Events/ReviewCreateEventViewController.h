@@ -23,7 +23,7 @@
 @property (nonatomic,retain) IBOutlet NSString *strState;
 @property (nonatomic,retain) IBOutlet NSString *strZipCode;
 @property (nonatomic,retain) IBOutlet UITextView *userDetailView;
-@property (nonatomic,retain) IBOutlet UIImageView *userImageView;
+@property (nonatomic,retain) IBOutlet UIImage *userImageView;
 
 
 // Labels view

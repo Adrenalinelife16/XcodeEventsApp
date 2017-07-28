@@ -357,8 +357,9 @@
     NSString *enteredState = [state text];
     NSString *enteredZipCode = [zipCode text];
     UITextView *enteredDetail = detailView;
-    UIImageView *userImage = _imageView;
     
+    
+    UIImage *newImage = [UIImage imageWithData:UIImagePNGRepresentation(_imageView.image)];
 
     
     if ([[segue identifier] isEqualToString:@"createEventReview"]) {
@@ -375,7 +376,7 @@
         destinationView.strState = enteredState;
         destinationView.strZipCode = enteredZipCode;
         destinationView.userDetailView = enteredDetail;
-        destinationView.userImageView = userImage;
+        destinationView.userImageView = newImage;
 
         
     }
