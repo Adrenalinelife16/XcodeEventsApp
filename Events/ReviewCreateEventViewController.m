@@ -55,7 +55,13 @@
     
     _detailView.text = self.userDetailView;
     _imageView.image = self.userImageView;
-       
+    
+    NSString *dateString = strStartDate;
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    NSDate *dateFromString = [dateFormatter dateFromString:dateString];
+    
+    NSLog(@"start date %@",dateFromString);
     
 }
 
@@ -87,26 +93,19 @@
      NSString *stringImage = [dataImage base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
      
      // set start/end time formatt
-     
-     
-     NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
-     [timeFormatter setDateFormat:@"HH:mm:ss"];
-     self.strStartTime=[NSString stringWithFormat:@"%@", timeFormatter];
-     self.strEndTime=[NSString stringWithFormat:@"%@",timeFormatter];
-     
-     
+
      
      
      // set start/end date formatt
      
-     
+
      NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
      [dateFormatter setDateFormat:@"yyyy-MM-dd"];
      self.strStartDate=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
      self.strEndDate=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
      
      // Text field info
-     
+
      
      NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.strEventName,@"event_name", self.strStartDate,@"start_date",self.strEndDate,@"end_date",self.strStartTime,@"start_time",self.strEndTime,@"end_time", self.strLocationName,@"location_name",self.strAddress,@"location_address",self.strCity,@"location_city",self.strState,@"location_state",self.strZipCode,@"location_zip",self.userDetailView,@"event_info",stringImage,@"image",strCategory,@"category", nil];
      

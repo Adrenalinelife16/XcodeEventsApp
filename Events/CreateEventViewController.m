@@ -279,7 +279,6 @@
 {   NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
     [formatter setDateFormat:@"E, MMM d yyyy"];
     self.startDate.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
-    self.startDate.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
     [self.startDate resignFirstResponder];
     
 }
@@ -327,7 +326,6 @@
 -(void)ShowSelectedStartTime
 {   NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
     [formatter setDateFormat:@"h:mm a"];
-    self.startTime.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
     self.startTime.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
     [self.startTime resignFirstResponder];
     
