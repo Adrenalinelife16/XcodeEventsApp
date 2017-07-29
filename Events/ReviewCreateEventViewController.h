@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CreateEventViewController.h"
 
 @interface ReviewCreateEventViewController : UIViewController
 {
@@ -52,6 +53,7 @@
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
 @property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
+
 
 - (IBAction)submitEvent:(id)sender;
 

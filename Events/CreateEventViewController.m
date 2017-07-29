@@ -376,6 +376,7 @@
         destinationView.userDetailView = textValue;
         destinationView.userImageView = newImage;
         
+            
     }
 
 }

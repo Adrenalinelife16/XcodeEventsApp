@@ -19,6 +19,7 @@
 @synthesize userDetailView,userImageView;
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.detailView.layer.borderWidth = 1.0f;
@@ -43,7 +44,7 @@
 
     _labelEventName.text = self.strEventName;
     _labelCategory.text = self.strCategory;
-    _labelStartDate.text = self.strStartDate;
+    _labelStartDate.text = strStartDate;
     _labelEndDate.text = self.strEndDate;
     _labelStartTime.text = self.strStartTime;
     _labelEndTime.text = self.strEndTime;
@@ -56,12 +57,6 @@
     _detailView.text = self.userDetailView;
     _imageView.image = self.userImageView;
     
-    NSString *dateString = strStartDate;
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-    NSDate *dateFromString = [dateFormatter dateFromString:dateString];
-    
-    NSLog(@"start date %@",dateFromString);
     
 }
 
@@ -93,16 +88,41 @@
      NSString *stringImage = [dataImage base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
      
      // set start/end time formatt
+     
+     NSDateFormatter *startTimeFormat = [[NSDateFormatter alloc] init];
+     [startTimeFormat setDateFormat:@"h:mm a"];
+     NSDate *startTime = [startTimeFormat dateFromString:strStartTime];
+     
+     [startTimeFormat setDateFormat:@"HH:mm:ss"];
+     strStartTime = [startTimeFormat stringFromDate:startTime];
+     
+     NSDateFormatter *endTimeFormat = [[NSDateFormatter alloc] init];
+     [endTimeFormat setDateFormat:@"h:mm a"];
+     NSDate *endTime = [endTimeFormat dateFromString:strEndTime];
+     
+     [endTimeFormat setDateFormat:@"HH:mm:ss"];
+     strEndTime = [endTimeFormat stringFromDate:endTime];
+
 
      
      
      // set start/end date formatt
      
+     NSDateFormatter *startDateFormat = [[NSDateFormatter alloc] init];
+     [startDateFormat setDateFormat:@"E, MMM d yyyy"];
+     NSDate *startDate = [startDateFormat dateFromString:strStartDate];
+     
+     [startDateFormat setDateFormat:@"yyyy-MM-dd"];
+     strStartDate = [startDateFormat stringFromDate:startDate];
+     
+     NSDateFormatter *endDateFormat = [[NSDateFormatter alloc] init];
+     [endDateFormat setDateFormat:@"E, MMM d yyyy"];
+     NSDate *endDate = [endDateFormat dateFromString:strEndDate];
+     
+     [endDateFormat setDateFormat:@"yyyy-MM-dd"];
+     strEndDate = [endDateFormat stringFromDate:endDate];
+     
 
-     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-     self.strStartDate=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
-     self.strEndDate=[NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:datePicker.date]];
      
      // Text field info
 
