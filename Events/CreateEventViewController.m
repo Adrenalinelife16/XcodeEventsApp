@@ -26,9 +26,8 @@
     
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.navigationItem.title = titleText;
     
-    self.navigationController.navigationBar.topItem.title = @"";
-    [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     self.detailView.layer.borderWidth = 1.0f;
     self.detailView.layer.borderColor = [[UIColor blackColor] CGColor];
     _buttonBorder.layer.borderWidth = 1.0f;
@@ -49,6 +48,9 @@
 
 
 -(void)viewWillAppear:(BOOL)animated {
+    
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     
     
     self.navigationItem.title = titleText;

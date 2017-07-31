@@ -51,7 +51,6 @@
 
 // UI Format
 
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
 @property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
 
 

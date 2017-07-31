@@ -133,7 +133,7 @@
          
          
          if ([response isKindOfClass:[NSDictionary class]]) {
-             if ([[response objectForKey:@"message"] isEqualToString:@"Sorry, that username already exists!"]) {
+             if ([[response objectForKey:@"message"] isEqualToString:@"Event has been successfully completed"]) {
                  [Utility alertNotice:APPNAME withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
                  
                  
@@ -149,7 +149,7 @@
          
          else if ([response isKindOfClass:[NSArray class]]) {
              
-             if ([[[response objectAtIndex:0] objectForKey:@"message"] isEqualToString:@"Sorry, that email address is already used!"]) {
+             if ([[[response objectAtIndex:0] objectForKey:@"message"] isEqualToString:@"Event has been successfully completed"]) {
                  [Utility alertNotice:APPNAME withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
                  
                  

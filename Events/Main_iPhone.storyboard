@@ -545,7 +545,6 @@
                         <outlet property="eventName" destination="ddN-7u-BEs" id="ka7-QK-NDC"/>
                         <outlet property="imageView" destination="0CV-Jl-t2C" id="sM9-lR-0St"/>
                         <outlet property="locationName" destination="iuk-xc-jBU" id="c9z-z6-pEE"/>
-                        <outlet property="scrollViewCE" destination="fga-UX-TPd" id="2EX-qh-FfO"/>
                         <outlet property="startDate" destination="47h-NS-wnn" id="9HW-hE-MfH"/>
                         <outlet property="startTime" destination="Pfg-bc-J7S" id="unO-3A-OCF"/>
                         <outlet property="state" destination="BD2-3I-0LX" id="IDR-Jj-rEE"/>
@@ -1991,6 +1990,9 @@
                     <navigationItem key="navigationItem" id="6bj-0R-t3h"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
+                    <connections>
+                        <outlet property="btnMyTickets" destination="9Jp-Xb-i2i" id="6Fx-Z6-DLx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixq-g6-bii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2378,9 +2380,9 @@
         <segue reference="ymL-KN-Yv3"/>
         <segue reference="4M8-vo-jHA"/>
         <segue reference="CLK-cx-blz"/>
-        <segue reference="GQZ-yq-JN7"/>
-        <segue reference="U3F-sb-sE9"/>
-        <segue reference="C9L-jn-ty6"/>
-        <segue reference="6n8-q3-lxy"/>
+        <segue reference="AVa-mX-VeI"/>
+        <segue reference="Eci-Y5-EQn"/>
+        <segue reference="4JL-TO-diO"/>
+        <segue reference="vfq-B5-cTA"/>
     </inferredMetricsTieBreakers>
 </document>

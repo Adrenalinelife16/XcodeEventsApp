@@ -27,7 +27,6 @@
 
 // UI Format
 
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewCE;
 @property (strong, nonatomic) IBOutlet UITextField *startDate;
 @property (strong, nonatomic) IBOutlet UITextField *endDate;
 @property (strong, nonatomic) IBOutlet UITextField *startTime;
