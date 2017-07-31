@@ -169,8 +169,8 @@
 
 // Hide keyboard when touch background
 
--(IBAction)backgroundTouched:(id)sender
-{
+-(IBAction)backgroundTouched:(id)sender {
+    
     [eventName resignFirstResponder];
     [locationName resignFirstResponder];
     [address resignFirstResponder];
