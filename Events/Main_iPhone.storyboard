@@ -337,7 +337,7 @@
                                         <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="yes"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Start Date" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="47h-NS-wnn">
                                         <rect key="frame" x="32" y="104" width="257" height="30"/>
@@ -397,7 +397,7 @@
                                         <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                         <connections>
                                             <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="uwY-mj-rID"/>
                                         </connections>
@@ -408,7 +408,7 @@
                                         <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
                                         <connections>
                                             <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="YvJ-uf-vnR"/>
                                         </connections>
@@ -419,7 +419,7 @@
                                         <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                         <connections>
                                             <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="gim-vD-V4w"/>
                                         </connections>
@@ -430,7 +430,7 @@
                                         <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="next"/>
                                         <connections>
                                             <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="dbL-Ec-jTr"/>
                                         </connections>
