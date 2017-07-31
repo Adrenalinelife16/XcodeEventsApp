@@ -1951,7 +1951,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHf-rj-2Hd">
-                                        <rect key="frame" x="8" y="6" width="106" height="31"/>
+                                        <rect key="frame" x="8" y="7" width="106" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="Calendar">
@@ -2376,12 +2376,12 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Yzg-yO-FJ6"/>
         <segue reference="CLK-cx-blz"/>
         <segue reference="4M8-vo-jHA"/>
-        <segue reference="Yzg-yO-FJ6"/>
-        <segue reference="U3F-sb-sE9"/>
         <segue reference="Eci-Y5-EQn"/>
         <segue reference="AVa-mX-VeI"/>
+        <segue reference="vfq-B5-cTA"/>
         <segue reference="4JL-TO-diO"/>
     </inferredMetricsTieBreakers>
 </document>
