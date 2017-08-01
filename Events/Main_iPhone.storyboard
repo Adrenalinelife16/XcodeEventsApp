@@ -317,14 +317,14 @@
                         <viewControllerLayoutGuide type="top" id="S0L-MW-wcJ"/>
                         <viewControllerLayoutGuide type="bottom" id="IU5-pQ-Ahv"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7" customClass="UIControl">
+                    <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
                         <rect key="frame" x="0.0" y="64" width="320" height="1037"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
+                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ne0-V7-A9h">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ne0-V7-A9h">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1037" id="Unb-kB-1qm"/>
@@ -338,6 +338,10 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="yes"/>
+                                        <connections>
+                                            <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="tg1-RO-VNJ"/>
+                                            <outlet property="delegate" destination="ne0-V7-A9h" id="n6s-hn-ViX"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Start Date" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="47h-NS-wnn">
                                         <rect key="frame" x="32" y="104" width="257" height="30"/>
@@ -348,7 +352,6 @@
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="startDate:" destination="MgQ-Su-gZO" eventType="editingDidBegin" id="4cv-bz-nle"/>
-                                            <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="crO-rh-xke"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="End Time" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="z3m-kE-FiA">
@@ -360,7 +363,6 @@
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="endTime:" destination="MgQ-Su-gZO" eventType="editingDidBegin" id="trq-4V-zll"/>
-                                            <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="UgZ-Cc-DX5"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIG-8t-qR8">
@@ -398,9 +400,6 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
-                                        <connections>
-                                            <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="uwY-mj-rID"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rpD-sW-GAv">
                                         <rect key="frame" x="32" y="323" width="257" height="30"/>
@@ -408,10 +407,7 @@
                                         <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
-                                        <connections>
-                                            <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="YvJ-uf-vnR"/>
-                                        </connections>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8sw-DH-W16">
                                         <rect key="frame" x="32" y="361" width="257" height="30"/>
@@ -419,10 +415,7 @@
                                         <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
-                                        <connections>
-                                            <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="gim-vD-V4w"/>
-                                        </connections>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BD2-3I-0LX">
                                         <rect key="frame" x="32" y="399" width="257" height="30"/>
@@ -431,9 +424,6 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="next"/>
-                                        <connections>
-                                            <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="dbL-Ec-jTr"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lOK-6A-XlK">
                                         <rect key="frame" x="32" y="437" width="257" height="30"/>
@@ -442,9 +432,6 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                        <connections>
-                                            <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="R4z-lB-dmO"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="End Date" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VrP-la-v0A">
                                         <rect key="frame" x="32" y="142" width="257" height="30"/>
@@ -455,7 +442,6 @@
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="endDate:" destination="MgQ-Su-gZO" eventType="editingDidBegin" id="AjL-5u-oaM"/>
-                                            <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="oRf-yf-zOY"/>
                                         </connections>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="PxJ-Ag-XbP">
@@ -497,7 +483,6 @@
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="startTime:" destination="MgQ-Su-gZO" eventType="editingDidBegin" id="WUH-5n-mi2"/>
-                                            <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="G8u-eq-NJN"/>
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQw-yU-nto">
@@ -518,6 +503,9 @@
                                     <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="NDy-hi-9ZW"/>
                                     <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="yry-aE-LnP"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="ne0-V7-A9h" id="h6z-YU-Tod"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -680,7 +668,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMO-Ty-6b2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1712" y="-537.5"/>
+            <point key="canvasLocation" x="-1712" y="-510"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="NyL-Lg-yae">
@@ -1535,7 +1523,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncD-zV-sfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1097" y="-539"/>
+            <point key="canvasLocation" x="-1144" y="-509"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P2C-wx-DeA">
@@ -1610,7 +1598,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKC-o7-Aye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2211" y="-537"/>
+            <point key="canvasLocation" x="-2213" y="-510"/>
         </scene>
         <!--Abou View Controllers - About-->
         <scene sceneID="E16-uO-jp2">
@@ -2376,12 +2364,12 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="5BI-DP-Akc"/>
         <segue reference="Yzg-yO-FJ6"/>
         <segue reference="CLK-cx-blz"/>
         <segue reference="4M8-vo-jHA"/>
-        <segue reference="Eci-Y5-EQn"/>
         <segue reference="AVa-mX-VeI"/>
+        <segue reference="Eci-Y5-EQn"/>
         <segue reference="vfq-B5-cTA"/>
-        <segue reference="4JL-TO-diO"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -249,6 +249,7 @@
         if ([finalArray count]>0) {
             [DSBezelActivityView removeViewAnimated:YES];
             [self.tblFavTable reloadData];
+            
         } else {
             
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Favorite Events" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];

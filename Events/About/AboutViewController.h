@@ -19,7 +19,7 @@
     __weak IBOutlet UIView *vwFreeRegisterBtn;
 }
 
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewMain;
+
 @property (strong, nonatomic) IBOutlet MKMapView *eventLocationMapView;
 @property (strong, nonatomic) EventList *eventObj;
 @property (strong, nonatomic) IBOutlet UITableView *tblView;

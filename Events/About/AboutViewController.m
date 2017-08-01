@@ -26,7 +26,7 @@
 @end
 
 @implementation AboutViewController
-@synthesize scrollViewMain, eventLocationMapView;
+@synthesize eventLocationMapView;
 @synthesize eventObj;
 @synthesize tblView;
 @synthesize eventRegisterView;
@@ -58,22 +58,10 @@
 
     
 	// Do any additional setup after loading the view.
-    [self initializeNavigationBar];
+   // [self initializeNavigationBar];
     
-    descriptionTextHeight = [Utility getTextSize:self.eventObj.eventDescription textWidth:300 fontSize:14.0f lineBreakMode:NSLineBreakByWordWrapping].height;
     
-    self.tblView.frame = CGRectMake(self.tblView.frame.origin.x, self.tblView.frame.origin.y, self.tblView.frame.size.width, self.tblView.frame.size.height+descriptionTextHeight);
-    vwFreeRegisterBtn.frame = CGRectMake(vwFreeRegisterBtn.frame.origin.x, self.tblView.frame.origin.y+self.tblView.frame.size.height, vwFreeRegisterBtn.frame.size.width, vwFreeRegisterBtn.frame.size.height);
-    
-    if (IS_IPHONE_5) {
-        self.scrollViewMain.frame = CGRectMake(self.scrollViewMain.frame.origin.x, self.scrollViewMain.frame.origin.y, self.scrollViewMain.frame.size.width, self.scrollViewMain.frame.size.height+100);
-    
-        self.scrollViewMain.contentSize = CGSizeMake(self.scrollViewMain.frame.size.width, vwFreeRegisterBtn.frame.origin.y+vwFreeRegisterBtn.frame.size.height+50);
     }
-    else{
-        self.scrollViewMain.contentSize = CGSizeMake(self.scrollViewMain.frame.size.width, vwFreeRegisterBtn.frame.origin.y+vwFreeRegisterBtn.frame.size.height+50);
-    }
-}
 - (IBAction)addressClicked:(id)sender {
     
     [self openAppleMaps];
@@ -84,12 +72,13 @@
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:YES];
+    [self addLocationPinOnMap];
     self.title = self.eventObj.eventName;
     self.tabBarController.tabBar.hidden=NO;
     [self checkLogin];
     [self checkUserFavorite];
     
-    // Reset Event Name
+
     
     descriptionTextHeight = [Utility getTextSize:self.eventObj.eventDescription textWidth:300 fontSize:14.0f lineBreakMode:NSLineBreakByWordWrapping].height;
 
@@ -104,12 +93,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Initialize Navigation bar
--(void)initializeNavigationBar{
-    self.title = self.eventObj.eventName;
-    [self addLocationPinOnMap];
 }
 
 #pragma mark - Check login for MyFavorite and MyTickets
@@ -150,7 +133,7 @@
 }
 
 
--(void)checkUserFavorite{
+-(void)checkUserFavorite {
     
    
         NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:[Utility getNSUserDefaultValue:KUSERID],@"user_id",@"1",@"page",@"30",@"page_size", nil];
@@ -180,10 +163,8 @@
                 
                 if ([strFromDict containsString:strFromInt]){
                     
-                    
                     shareButton.selected = YES;
-                    
-                    
+           
                 }
             }
             

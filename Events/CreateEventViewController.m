@@ -55,6 +55,7 @@
     
     self.navigationItem.title = titleText;
     
+    
 
     
     
@@ -189,6 +190,11 @@
 -(IBAction)textfieldReturn:(id)sender
 {
     [sender resignFirstResponder];
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 #pragma mark - Check registration Field validations
