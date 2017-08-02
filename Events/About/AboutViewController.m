@@ -635,6 +635,10 @@
     annView.animatesDrop=TRUE;
     annView.canShowCallout = YES;
     annView.rightCalloutAccessoryView = disclosureButton;
+    annView.rightCalloutAccessoryView.tintColor = [UIColor blackColor];
+    [mapView setShowsUserLocation:YES];
+    
+    
     
     return annView;
 }

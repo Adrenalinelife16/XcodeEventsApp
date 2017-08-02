@@ -38,6 +38,8 @@
 @property(nonatomic) NSInteger minuteInterval;
 
 
+@property (nonatomic, retain) IBOutlet UIScrollView *scrlVWCE;
+
 - (IBAction)sendReview:(id)sender;
 
 - (IBAction)uploadImageClicked:(id)sender;

@@ -12,6 +12,7 @@
 #import "EventList.h"
 #import "LoginViewController.h"
 #import "TSMiniWebBrowser.h"
+#import <CoreLocation/CoreLocation.h>
 
 #import "CustomPickerView.h"
 

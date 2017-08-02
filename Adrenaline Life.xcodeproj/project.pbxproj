@@ -57,7 +57,6 @@
 		7122DB4818BB7D8600C044E8 /* Segmented_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7122DB4418BB7D8600C044E8 /* Segmented_left@2x.png */; };
 		7122DB4918BB7D8600C044E8 /* Segmented_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 7122DB4518BB7D8600C044E8 /* Segmented_left.png */; };
 		7122DC1518BDE6D900DC9925 /* VRGCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122DC1418BDE6D900DC9925 /* VRGCalendarView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7122DC1718BDFB7B00DC9925 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1618BDFB7B00DC9925 /* MapKit.framework */; };
 		7122DC1918BDFB8100DC9925 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7122DC1818BDFB8100DC9925 /* CoreLocation.framework */; };
 		721BEE471EB17CB500C2DB6F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721BEE451EB17CB500C2DB6F /* Main_iPad.storyboard */; };
 		7225BD1D1E4A482B00A35D30 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */; };
@@ -386,7 +385,6 @@
 		7122DB4518BB7D8600C044E8 /* Segmented_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Segmented_left.png; sourceTree = "<group>"; };
 		7122DC1318BDE6D900DC9925 /* VRGCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRGCalendarView.h; sourceTree = "<group>"; };
 		7122DC1418BDE6D900DC9925 /* VRGCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRGCalendarView.m; sourceTree = "<group>"; };
-		7122DC1618BDFB7B00DC9925 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7122DC1818BDFB8100DC9925 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		721BEE461EB17CB500C2DB6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -733,7 +731,6 @@
 				798D9E2818F15F8300A69513 /* ImageIO.framework in Frameworks */,
 				7293CFB31E0D9C5500E310C0 /* FBSDKShareKit.framework in Frameworks */,
 				7293CFB11E0D9C5500E310C0 /* FBSDKCoreKit.framework in Frameworks */,
-				7122DC1718BDFB7B00DC9925 /* MapKit.framework in Frameworks */,
 				79691D0A18F00DD400ABD52D /* libz.dylib in Frameworks */,
 				7293CFB01E0D9C5500E310C0 /* Bolts.framework in Frameworks */,
 				7122DC1918BDFB8100DC9925 /* CoreLocation.framework in Frameworks */,
@@ -1212,7 +1209,6 @@
 				798D9E2718F15F8300A69513 /* ImageIO.framework */,
 				79691D0918F00DD400ABD52D /* libz.dylib */,
 				7122DC1818BDFB8100DC9925 /* CoreLocation.framework */,
-				7122DC1618BDFB7B00DC9925 /* MapKit.framework */,
 				BB303D9918B863E300B6EBC9 /* Foundation.framework */,
 				BB303D9B18B863E300B6EBC9 /* CoreGraphics.framework */,
 				BB303D9D18B863E300B6EBC9 /* UIKit.framework */,

@@ -24,7 +24,7 @@
     
     // Created Category Array
 
-    categoryArray = [[NSMutableArray alloc] initWithObjects:@"Soccer", @"Basketball", @"Fishing", @"Football", @"Riding", @"Billards", @"Golf", @"Kickball", @"Baseball", @"Softball", @"Dance", @"Yoga", nil];
+    categoryArray = [[NSMutableArray alloc] initWithObjects:@"Soccer", @"Basketball", @"Fishing", @"Football", @"Riding", @"Billards", @"Golf", @"Kickball", @"Baseball", @"Softball", @"Dance", @"Yoga",@"Bowling",@"Archery",@"Other", nil];
     
     //Sort Array
     

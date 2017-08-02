@@ -55,17 +55,31 @@
     
     self.navigationItem.title = titleText;
     
+    [self.view endEditing: YES];
+    
+    UITapGestureRecognizer *yourTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollTap:)];
+    [_scrlVWCE addGestureRecognizer:yourTap];
+    [self.view addSubview:_scrlVWCE];
+    
+    // actionbar_bg_white.png
+    
     
 
-    
-    
 }
+
+- (void)scrollTap:(UIGestureRecognizer*)gestureRecognizer {
+    
+    //make keyboard disappear , you can use resignFirstResponder too, it's depend.
+    [self.view endEditing:YES];
+}
+
 
 -(void)viewDidLayoutSubviews {
    
     
     
 }
+
 
 
 
@@ -78,6 +92,7 @@
 
 
 #pragma mark - Submit Event to server
+
 
 - (IBAction)sendReview:(id)sender {
     
@@ -192,10 +207,6 @@
     [sender resignFirstResponder];
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [self.view endEditing:YES];
-}
 
 #pragma mark - Check registration Field validations
 -(BOOL)IsValid {
