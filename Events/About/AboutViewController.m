@@ -604,10 +604,12 @@
     [self.eventLocationMapView setRegion:region animated:YES];
     MyAnnotation *ann=[[MyAnnotation alloc]init];
     ann.title   =   self.eventObj.eventName;
-    ann.subtitle=@"";
+    ann.subtitle=   self.eventObj.eventLocationAddress;
     ann.coordinate=region.center;
     [self.eventLocationMapView addAnnotation:ann];
     [self.eventLocationMapView setRegion:region animated:YES];
+    
+
 }
 
 #pragma mark - MapView Delegates
@@ -624,9 +626,15 @@
         annView = [[MKPinAnnotationView alloc] initWithAnnotation:delegate reuseIdentifier:@"eventloc"];
     }
     
-    annView.pinColor = MKPinAnnotationColorGreen;
+    UIButton *disclosureButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    [disclosureButton addTarget:self
+                         action:@selector(openAppleMaps)
+               forControlEvents:UIControlEventTouchUpInside];
+    
+    annView.pinColor = MKPinAnnotationColorRed;
     annView.animatesDrop=TRUE;
     annView.canShowCallout = YES;
+    annView.rightCalloutAccessoryView = disclosureButton;
     
     return annView;
 }
