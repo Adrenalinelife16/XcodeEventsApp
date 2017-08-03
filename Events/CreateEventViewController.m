@@ -24,6 +24,8 @@
 {
     [super viewDidLoad];
     
+    // new view push
+    
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
     self.navigationItem.title = titleText;
