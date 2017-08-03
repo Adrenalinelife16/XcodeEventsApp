@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -325,13 +324,16 @@
                             <scrollView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70Z-9c-S00">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ne0-V7-A9h">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="TdY-Kc-dWF"/>
-                                            <constraint firstAttribute="width" secondItem="ne0-V7-A9h" secondAttribute="height" multiplier="320:1037" id="mdX-eT-1Ug"/>
-                                            <constraint firstAttribute="height" constant="1037" id="yFw-6l-0g5"/>
+                                            <constraint firstAttribute="width" constant="320" id="SnL-M2-hzo"/>
+                                            <constraint firstAttribute="height" constant="1037" id="yNL-th-cUx"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Event Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ddN-7u-BEs">
@@ -397,18 +399,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Location Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuk-xc-jBU">
-                                        <rect key="frame" x="32" y="285" width="257" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
-                                    </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rpD-sW-GAv">
                                         <rect key="frame" x="32" y="323" width="257" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.9883696290192866" green="1" blue="0.98639517431437163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Location Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KjV-Hh-RIB">
+                                        <rect key="frame" x="31" y="285" width="257" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.98836962900000003" green="1" blue="0.98639517430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
@@ -448,14 +450,6 @@
                                             <action selector="endDate:" destination="MgQ-Su-gZO" eventType="editingDidBegin" id="AjL-5u-oaM"/>
                                         </connections>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="PxJ-Ag-XbP">
-                                        <rect key="frame" x="32" y="504" width="257" height="195"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" lookupSuggestion="YES"/>
-                                    </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQ8-WB-i8I">
                                         <rect key="frame" x="32" y="747" width="257" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -500,16 +494,24 @@
                                             <action selector="sendReview:" destination="MgQ-Su-gZO" eventType="touchUpInside" id="CCX-Qr-59p"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="PxJ-Ag-XbP">
+                                        <rect key="frame" x="32" y="504" width="257" height="195"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" lookupSuggestion="YES"/>
+                                    </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="0P8-yk-fXv"/>
-                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="3Cq-p3-2M5"/>
-                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="DY6-sP-Bnb"/>
-                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="OpN-gH-l6c"/>
-                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="eNn-s5-wY7"/>
-                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="n61-3R-Vzq"/>
-                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="sGP-2X-6s4"/>
-                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="sYu-kl-VW6"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="19D-7Z-99T"/>
+                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="b6d-bm-JNb"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="c9Y-rz-Y4b"/>
+                                    <constraint firstAttribute="bottom" secondItem="70Z-9c-S00" secondAttribute="bottom" id="cjQ-3P-UWO"/>
+                                    <constraint firstItem="70Z-9c-S00" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="mHG-bx-i2f"/>
+                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="o4k-YO-wgr"/>
+                                    <constraint firstItem="70Z-9c-S00" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="tQu-5G-Gwq"/>
+                                    <constraint firstAttribute="trailing" secondItem="70Z-9c-S00" secondAttribute="trailing" id="yBO-XT-HtA"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="ne0-V7-A9h" id="h6z-YU-Tod"/>
@@ -518,10 +520,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="4Ab-cN-ZVI"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="S0L-MW-wcJ" secondAttribute="bottom" id="HxL-7W-MfI"/>
-                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="MRz-nT-xiO"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="cAp-60-mpF"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="S0L-MW-wcJ" secondAttribute="bottom" id="Hgf-ar-ZAC"/>
+                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="Kkt-N9-Yhp"/>
+                            <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="WgH-ZO-5Pp"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="nFw-4H-kKt"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -537,7 +539,7 @@
                         <outlet property="endTime" destination="z3m-kE-FiA" id="CY5-y3-rDD"/>
                         <outlet property="eventName" destination="ddN-7u-BEs" id="ka7-QK-NDC"/>
                         <outlet property="imageView" destination="0CV-Jl-t2C" id="sM9-lR-0St"/>
-                        <outlet property="locationName" destination="iuk-xc-jBU" id="c9z-z6-pEE"/>
+                        <outlet property="locationName" destination="KjV-Hh-RIB" id="lLx-df-It3"/>
                         <outlet property="scrlVWCE" destination="fga-UX-TPd" id="CHP-CW-xv4"/>
                         <outlet property="startDate" destination="47h-NS-wnn" id="9HW-hE-MfH"/>
                         <outlet property="startTime" destination="Pfg-bc-J7S" id="unO-3A-OCF"/>
@@ -2378,10 +2380,10 @@
     <inferredMetricsTieBreakers>
         <segue reference="CLK-cx-blz"/>
         <segue reference="4M8-vo-jHA"/>
-        <segue reference="Yzg-yO-FJ6"/>
-        <segue reference="vfq-B5-cTA"/>
+        <segue reference="Pt4-qg-fXb"/>
         <segue reference="6n8-q3-lxy"/>
         <segue reference="C9L-jn-ty6"/>
         <segue reference="GQZ-yq-JN7"/>
+        <segue reference="Yzg-yO-FJ6"/>
     </inferredMetricsTieBreakers>
 </document>

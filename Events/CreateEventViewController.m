@@ -54,6 +54,7 @@
     
     
     self.navigationItem.title = titleText;
+  
     
     [self.view endEditing: YES];
     
@@ -107,6 +108,26 @@
     
 }
 
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    if (textField == self.locationName) {
+        [UIView beginAnimations:Nil context:NULL];
+        [UIView setAnimationDelegate:self];
+        [UIView setAnimationDuration:0.5];
+        [UIView setAnimationBeginsFromCurrentState:YES];
+        self.scrlVWCE.frame = CGRectMake(self.view.frame.origin.x, (self.view.frame.origin.y - 250), self.view.frame.size.width, self.view.frame.size.height);
+        [UIView commitAnimations];
+        
+    }
+    
+}
+
+/*
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    CGPoint scrollPoint = CGPointMake(-250, locationName.frame.origin.y);
+    [_scrlVWCE setContentOffset:scrollPoint animated:YES];
+}
+*/
 
 
 

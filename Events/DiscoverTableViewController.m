@@ -37,9 +37,6 @@
     
     [self getAllEventsFromServer];
     
-    NSLog(@"Button Pushed %@", discoverText);
-    
-    
     }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -124,13 +121,8 @@
         
         UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Events Found" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil , nil];
         [av show];
-        
-    
+            
     }
-    
-    
-    
-
         
 }
 
