@@ -180,6 +180,7 @@
 
 -(IBAction)createEvent:(id)sender
 {
+  
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
         
@@ -190,6 +191,7 @@
         UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"User must login to create an event!" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login", nil];
         [av show];
     }
+
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex

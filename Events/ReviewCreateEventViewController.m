@@ -125,9 +125,12 @@
 
      
      // Text field info
+     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+     
+    
 
      
-     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.strEventName,@"event_name", self.strStartDate,@"start_date",self.strEndDate,@"end_date",self.strStartTime,@"start_time",self.strEndTime,@"end_time", self.strLocationName,@"location_name",self.strAddress,@"location_address",self.strCity,@"location_city",self.strState,@"location_state",self.strZipCode,@"location_zip",self.userDetailView,@"event_info",stringImage,@"image",strCategory,@"category", nil];
+     NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.strEventName,@"event_name", self.strStartDate,@"start_date",self.strEndDate,@"end_date",self.strStartTime,@"start_time",self.strEndTime,@"end_time", self.strLocationName,@"location_name",self.strAddress,@"location_address",self.strCity,@"location_city",self.strState,@"location_state",self.strZipCode,@"location_zip",self.userDetailView,@"event_info",stringImage,@"image",strCategory,@"category", strUserID,@"user", nil];
      
      [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
          

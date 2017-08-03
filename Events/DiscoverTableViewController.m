@@ -112,11 +112,24 @@
     
     NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"eventDescription CONTAINS[cd] %@ || eventName CONTAINS[cd] %@",buttonString,buttonString];
     NSArray *beginWithB = [discoverAllEvents filteredArrayUsingPredicate:bPredicate];
- 
+    
     
     arrayDiscoverResults = beginWithB;
     
-    [self.tblDiscover reloadData];
+    if ([beginWithB count] > 0 ) {
+        
+        [self.tblDiscover reloadData];
+        
+    } else {
+        
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Events Found" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil , nil];
+        [av show];
+        
+    
+    }
+    
+    
+    
 
         
 }

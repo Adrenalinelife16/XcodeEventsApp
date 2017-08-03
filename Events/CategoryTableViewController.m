@@ -24,14 +24,12 @@
     
     // Created Category Array
 
-    categoryArray = [[NSMutableArray alloc] initWithObjects:@"Soccer", @"Basketball", @"Fishing", @"Football", @"Riding", @"Billards", @"Golf", @"Kickball", @"Baseball", @"Softball", @"Dance", @"Yoga",@"Bowling",@"Archery",@"Other", nil];
+    categoryArray = [[NSMutableArray alloc] initWithObjects:@"Baseball/Softball", @"Basketball", @"Billiards", @"Bowling", @"Camping", @"Climbing", @"Disc Games", @"Fishing", @"Fitness", @"Football", @"Golf", @"Lacrosse",@"Other",@"Riding",@"Running/Hiking",@"Soccer",@"Table Games",@"Tennis",@"Water Games",@"Yoga",@"Kickball", nil];
     
     //Sort Array
     
     [categoryArray sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-    
-
-    
+   
 }
 
 

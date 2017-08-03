@@ -41,3 +41,6 @@
 #define KUSERID @"user_id"
 
 #define KUSER_EMAIL @"user_email"
+
+
+#define KUSER_ID_TEST @"25"

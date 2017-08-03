@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -321,9 +322,18 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="1037"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
+                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                                 <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ne0-V7-A9h">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="TdY-Kc-dWF"/>
+                                            <constraint firstAttribute="width" secondItem="ne0-V7-A9h" secondAttribute="height" multiplier="320:1037" id="mdX-eT-1Ug"/>
+                                            <constraint firstAttribute="height" constant="1037" id="yFw-6l-0g5"/>
+                                        </constraints>
+                                    </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Event Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ddN-7u-BEs">
                                         <rect key="frame" x="32" y="37" width="257" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -333,6 +343,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="yes"/>
                                         <connections>
                                             <action selector="textfieldReturn:" destination="MgQ-Su-gZO" eventType="editingDidEndOnExit" id="tg1-RO-VNJ"/>
+                                            <outlet property="delegate" destination="ne0-V7-A9h" id="n6s-hn-ViX"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Start Date" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="47h-NS-wnn">
@@ -491,17 +502,26 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="KUw-CB-7kn"/>
-                                    <constraint firstAttribute="height" constant="1037" id="Pw9-ev-7vR"/>
+                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="0P8-yk-fXv"/>
+                                    <constraint firstAttribute="trailing" secondItem="ne0-V7-A9h" secondAttribute="trailing" id="3Cq-p3-2M5"/>
+                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="DY6-sP-Bnb"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="OpN-gH-l6c"/>
+                                    <constraint firstAttribute="bottom" secondItem="ne0-V7-A9h" secondAttribute="bottom" id="eNn-s5-wY7"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="n61-3R-Vzq"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="sGP-2X-6s4"/>
+                                    <constraint firstItem="ne0-V7-A9h" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="sYu-kl-VW6"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="ne0-V7-A9h" id="h6z-YU-Tod"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="Ety-9d-LVD"/>
-                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="IPU-nx-gdy"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="hJn-yq-K8V"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="S0L-MW-wcJ" secondAttribute="bottom" id="xPZ-oj-lkI"/>
+                            <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="4Ab-cN-ZVI"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="S0L-MW-wcJ" secondAttribute="bottom" id="HxL-7W-MfI"/>
+                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="MRz-nT-xiO"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="cAp-60-mpF"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
