@@ -107,18 +107,25 @@
     return YES;
 }
 
-#pragma mark - login button tap
--(IBAction)btnLoginPressed:(id)sender
-{
-  //  [txtEmail resignFirstResponder];
- //   [txtPassword resignFirstResponder];
+-(BOOL)checkForEmail {
     
-    if ([self isValid]) {
+    
+    NSString *checkEmail = [txtUsername text];
+    
+    
+    if ([checkEmail containsString:@"@"]) {
+        
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Sorry, please use your Username" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil , nil];
+        [av show];
+        
+        
+    } else {
+        
         [DSBezelActivityView newActivityViewForView:self.view.window];
         NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:
-                self.txtUsername.text,@"email", self.txtPassword.text,@"pwd", nil];
+                                             self.txtUsername.text,@"email", self.txtPassword.text,@"pwd", nil];
         
-         NSLog(@"Pushed Paramaters %@", dictOfParameters);
+        NSLog(@"Pushed Paramaters %@", dictOfParameters);
         
         
         [Utility GetDataForMethod:NSLocalizedString(@"LOGIN_METHOD", @"LOGIN_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
@@ -154,7 +161,7 @@
                     [self.tabBarController setSelectedIndex:0];
                     [self.navigationController popViewControllerAnimated:NO];
                     
-                    }
+                }
                 
             }
             
@@ -162,8 +169,23 @@
             NSLog(@"%@",error);
             [DSBezelActivityView removeViewAnimated:YES];
         }];
+        
+        
     }
+    return YES;
 }
+
+
+
+#pragma mark - login button tap
+-(IBAction)btnLoginPressed:(id)sender {
+
+    
+    [self isValid];
+    
+}
+
+
 #pragma mark - Hide Keyboard
 // Hide keyboard when touch background
 
@@ -188,20 +210,17 @@
 {
     NSString *message   =   @"";
     if (!([txtUsername.text length]>0)) {
-        message =   @"Please enter Username or Email";
+        message =   @"Please enter Username";
     }
     else if (!([txtPassword.text length]>0)){
         message =   @"Please enter password";
     }
-    /*
-    else if (![self validateEmail:txtEmail.text]){
-        message =   @"Please enter valid Username or Email";
-    }
-    */
+   
     if ([message length]>0) {
         [Utility alertNotice:APPNAME withMSG:message cancleButtonTitle:@"OK" otherButtonTitle:nil];
         return NO;
     }
+    [self checkForEmail];
     return YES;
 }
 
