@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -289,7 +289,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -656,7 +656,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="discover_.png" id="Emj-od-rTF"/>
+                    <tabBarItem key="tabBarItem" title="" image="discover_sel.png" selectedImage="discover_sel.png" id="Emj-od-rTF"/>
                     <navigationItem key="navigationItem" id="a40-XR-67K"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1474,7 +1474,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AzF-n8-jVC" id="KTN-Hd-u8H">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="82.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="83"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="IZA-9e-nNR">
@@ -1562,10 +1562,10 @@
                         <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MoreCell" id="rfb-6m-XYc">
-                                <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfb-6m-XYc" id="hT7-pf-t8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1576,7 +1576,7 @@
                             <outlet property="delegate" destination="XD6-ka-Wa6" id="qo5-fA-ZVz"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="ic_nav4_sel.png" selectedImage="ic_nav4_sel.png" id="Jz4-Is-M6B"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_nav4_sel.png" selectedImage="ic_nav4.png" id="Jz4-Is-M6B"/>
                     <navigationItem key="navigationItem" id="ntU-5v-DPG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1597,7 +1597,7 @@
         <scene sceneID="FmA-aa-wp5">
             <objects>
                 <navigationController definesPresentationContext="YES" id="w6F-4W-hwU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="discover_.png" selectedImage="discover_sel.png" id="TIV-OW-V25"/>
+                    <tabBarItem key="tabBarItem" title="" image="discover_sel.png" selectedImage="discover_.png" id="TIV-OW-V25"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5gO-R5-nLV">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1878,7 +1878,7 @@
         <scene sceneID="ceR-vN-lrW">
             <objects>
                 <navigationController title="searchNavigation" automaticallyAdjustsScrollViewInsets="NO" id="Mml-vq-zwo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="events_.png" id="TWS-hq-3Im"/>
+                    <tabBarItem key="tabBarItem" title="" image="events_sel.png" selectedImage="events_.png" id="TWS-hq-3Im"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vdo-nW-dZc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1916,7 +1916,7 @@
         <scene sceneID="u2T-EW-rju">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dlv-Lj-Hfo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_nav3.png" id="oVN-HQ-A1h"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_nav3_sel.png" selectedImage="ic_nav3.png" id="oVN-HQ-A1h"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dOz-Be-Idu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wyX-3r-IYA">
@@ -2058,7 +2058,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pVL-q7-4gh" id="x77-DM-ZvH">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="82.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="nHp-xq-Ubb">
@@ -2355,12 +2355,15 @@
         <image name="discover_sel.png" width="47" height="46"/>
         <image name="event-feed-mask.png" width="92" height="92"/>
         <image name="events_.png" width="47" height="46"/>
+        <image name="events_sel.png" width="47" height="46"/>
         <image name="feedviewCell1.png" width="95" height="94"/>
         <image name="feedviewCell2.png" width="96" height="95"/>
         <image name="feedviewCell3.png" width="95" height="95"/>
         <image name="ic_nav2.png" width="47" height="46"/>
         <image name="ic_nav2_sel.png" width="47" height="46"/>
         <image name="ic_nav3.png" width="47" height="46"/>
+        <image name="ic_nav3_sel.png" width="47" height="46"/>
+        <image name="ic_nav4.png" width="47" height="46"/>
         <image name="ic_nav4_sel.png" width="47" height="46"/>
         <image name="nearby.png" width="16" height="20"/>
         <image name="no_image.png" width="540" height="360"/>
@@ -2374,12 +2377,12 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="CLK-cx-blz"/>
-        <segue reference="4M8-vo-jHA"/>
+        <segue reference="ymL-KN-Yv3"/>
+        <segue reference="okc-1f-ZH5"/>
+        <segue reference="c3b-7q-UHr"/>
         <segue reference="Pt4-qg-fXb"/>
-        <segue reference="6n8-q3-lxy"/>
         <segue reference="C9L-jn-ty6"/>
         <segue reference="GQZ-yq-JN7"/>
-        <segue reference="Yzg-yO-FJ6"/>
+        <segue reference="6n8-q3-lxy"/>
     </inferredMetricsTieBreakers>
 </document>
