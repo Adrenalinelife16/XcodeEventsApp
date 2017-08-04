@@ -33,6 +33,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 
     
     [self getAllEventsFromServer];

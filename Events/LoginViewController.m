@@ -35,7 +35,7 @@
    
     self.navigationItem.title = @"Login";
     self.navigationController.navigationBar.topItem.title = @"";
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.txtPassword.delegate = self;
@@ -44,6 +44,7 @@
       
     _buttonBorder.layer.borderWidth = 1.0f;
     [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 }
 
 

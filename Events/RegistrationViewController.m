@@ -36,7 +36,7 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"Register";
     self.navigationController.navigationBar.topItem.title = @"";
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     [self bottomBorder];
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
@@ -50,7 +50,7 @@
     [txtUsername addTarget:txtEmail action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
     [txtEmail addTarget:txtPassword action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
     [txtPassword addTarget:txtConfirmPassword action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
-
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     
 }
 

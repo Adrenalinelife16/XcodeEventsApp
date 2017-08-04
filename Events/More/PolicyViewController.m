@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.topItem.title = @"";
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     
     policyTextView.text = NSLocalizedString(@"CONTENT_PRIVACY", "CONTENT_PRIVACY");
     

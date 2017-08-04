@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.topItem.title = @"";
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     
     txtVWContent.text = NSLocalizedString(@"CONTENT_TERMSCONDITIONS", @"CONTENT_TERMSCONDITIONS");
     
