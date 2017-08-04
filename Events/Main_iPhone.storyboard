@@ -321,11 +321,13 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="1037"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
+                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70Z-9c-S00" userLabel="Content View">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70Z-9c-S00" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ne0-V7-A9h">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
@@ -502,25 +504,12 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="70Z-9c-S00" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="top" id="Bnw-gM-9Qf"/>
-                                    <constraint firstItem="70Z-9c-S00" firstAttribute="leading" secondItem="fga-UX-TPd" secondAttribute="leading" id="aNk-7D-zyr"/>
-                                    <constraint firstAttribute="trailing" secondItem="70Z-9c-S00" secondAttribute="trailing" id="dgd-8m-C8v"/>
-                                    <constraint firstAttribute="bottom" secondItem="70Z-9c-S00" secondAttribute="bottom" id="hEc-i1-xKA"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="ne0-V7-A9h" id="h6z-YU-Tod"/>
                                 </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="S0L-MW-wcJ" secondAttribute="bottom" id="cb5-eZ-c8t"/>
-                            <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="iyp-kW-jdG"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="pBx-oz-5Nl"/>
-                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="vzz-7v-5Wa"/>
-                            <constraint firstItem="70Z-9c-S00" firstAttribute="width" secondItem="xKb-jB-jd7" secondAttribute="width" id="xnB-a1-4zG"/>
-                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="iov-Wm-ifM"/>
