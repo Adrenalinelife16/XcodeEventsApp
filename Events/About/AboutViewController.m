@@ -55,6 +55,7 @@
     self.navigationController.navigationBar.translucent = YES;
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 
     
 	// Do any additional setup after loading the view.

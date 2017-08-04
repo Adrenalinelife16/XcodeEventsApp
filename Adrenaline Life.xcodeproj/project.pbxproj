@@ -80,6 +80,9 @@
 		72E417561F043A3600E6F81A /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E417551F043A3600E6F81A /* CalendarViewController.m */; };
 		72E4175C1F046C4A00E6F81A /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */; };
 		72ED09881F01405500F60832 /* AttendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ED09871F01405500F60832 /* AttendingViewController.m */; };
+		72F761661F34D39600FCA906 /* a_riding.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761651F34D39600FCA906 /* a_riding.png */; };
+		72F761681F34D50D00FCA906 /* a_football.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761671F34D50D00FCA906 /* a_football.png */; };
+		72F7616A1F34D5A700FCA906 /* a_frisbee.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761691F34D5A700FCA906 /* a_frisbee.png */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
 		7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916556719044E6900F4D9D3 /* MyEventTickets.m */; };
@@ -424,6 +427,9 @@
 		72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
 		72ED09861F01405500F60832 /* AttendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendingViewController.h; sourceTree = "<group>"; };
 		72ED09871F01405500F60832 /* AttendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendingViewController.m; sourceTree = "<group>"; };
+		72F761651F34D39600FCA906 /* a_riding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a_riding.png; path = ../../../../../a_riding.png; sourceTree = "<group>"; };
+		72F761671F34D50D00FCA906 /* a_football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a_football.png; path = ../../../../../a_football.png; sourceTree = "<group>"; };
+		72F761691F34D5A700FCA906 /* a_frisbee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a_frisbee.png; path = ../../../../../../../../var/folders/1w/_hxr6r7972922z2439263y100000gn/T/com.apple.iChat/Messages/Transfers/a_frisbee.png; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
 		790AE0B318F9862500FBE2F2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
@@ -1297,6 +1303,8 @@
 				E2D37A941EEF934C00395B03 /* actionbar_bg_6.png */,
 				E2D37A951EEF934C00395B03 /* actionbar_bg_5.png */,
 				E2D37A841EEF7A5000395B03 /* ic_nav4.png */,
+				72F761651F34D39600FCA906 /* a_riding.png */,
+				72F761671F34D50D00FCA906 /* a_football.png */,
 				E2D37A851EEF7A5000395B03 /* ic_nav2.png */,
 				E2D37A861EEF7A5000395B03 /* ic_nav4_sel.png */,
 				E2D37A871EEF7A5000395B03 /* ic_nav2_sel.png */,
@@ -1304,6 +1312,7 @@
 				E2D37A891EEF7A5000395B03 /* discover_.png */,
 				E2D37A8A1EEF7A5000395B03 /* events_.png */,
 				E2D37A8B1EEF7A5000395B03 /* events_sel.png */,
+				72F761691F34D5A700FCA906 /* a_frisbee.png */,
 				E2D37A801EEF798400395B03 /* ic_nav3.png */,
 				E2D37A811EEF798400395B03 /* ic_nav3_sel.png */,
 				E2D37A7E1EEF72F300395B03 /* actionbar_bg_4.png */,
@@ -1656,6 +1665,7 @@
 				7112221518BCB83500E77A4A /* Direction@2x.png in Resources */,
 				E279ADAE1E654CAC00D3B192 /* Basketball.png in Resources */,
 				79383A621906135A00A1DBBC /* share2.png in Resources */,
+				72F761681F34D50D00FCA906 /* a_football.png in Resources */,
 				BB303E2818B879AA00B6EBC9 /* Reload@2x.png in Resources */,
 				711221EA18BC94F900E77A4A /* GreenDot@2x.png in Resources */,
 				7112220418BCA62300E77A4A /* sendto@2x.png in Resources */,
@@ -1793,6 +1803,7 @@
 				E2A54D421E4DC03B00091538 /* BetaPageBG.png in Resources */,
 				7920A7B919220B39001808B6 /* instagram_logo@2x.png in Resources */,
 				E22D5E601ECAF01700DC7C4E /* aFishing.png in Resources */,
+				72F7616A1F34D5A700FCA906 /* a_frisbee.png in Resources */,
 				7122DB4718BB7D8600C044E8 /* Segmented_middle.png in Resources */,
 				7122DB2818BB4BDB00C044E8 /* feedviewCell6@2x.png in Resources */,
 				BB303E0F18B86B3400B6EBC9 /* Thumbs.db in Resources */,
@@ -1816,6 +1827,7 @@
 				7112220318BCA62300E77A4A /* sendto.png in Resources */,
 				7122DB2D18BB4BDB00C044E8 /* feedviewCell4.png in Resources */,
 				E2252E871E4D16D900B0CD69 /* createEvent-btn.png in Resources */,
+				72F761661F34D39600FCA906 /* a_riding.png in Resources */,
 				BB303E0118B86B3400B6EBC9 /* Livello2.png in Resources */,
 				E2A54D441E4DC03B00091538 /* DiscoverBtn.png in Resources */,
 				7972E979195355B100F25E4D /* icon-feed-twitter.png in Resources */,

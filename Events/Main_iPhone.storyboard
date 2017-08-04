@@ -410,7 +410,7 @@
                                         <color key="backgroundColor" red="0.98836962900000003" green="1" blue="0.98639517430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="yes" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8sw-DH-W16">
                                         <rect key="frame" x="32" y="364" width="257" height="30"/>
@@ -605,7 +605,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvA-5v-Zbk" userLabel="tablegames">
                                         <rect key="frame" x="8" y="62" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="aTableGames.png"/>
+                                        <state key="normal" image="a_football.png"/>
                                         <connections>
                                             <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ClF-IV-0up"/>
                                         </connections>
@@ -645,7 +645,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6d-Qv-Wgj" userLabel="more">
                                         <rect key="frame" x="165" y="416" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="aMoreCategories.png"/>
+                                        <state key="normal" image="a_riding.png"/>
                                         <connections>
                                             <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="uyK-Rk-0Gi"/>
                                         </connections>
@@ -1034,11 +1034,11 @@
                             <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="249" id="ky5-CE-e2c" customClass="MyFavoriteCustomCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgramCustomCell" rowHeight="249" id="ky5-CE-e2c" customClass="MyFavoriteCustomCell">
                                 <rect key="frame" x="0.0" y="71" width="320" height="249"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ky5-CE-e2c" id="Xk3-xK-uxZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="249"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sfO-v4-Av0">
@@ -2350,11 +2350,11 @@
         <image name="aFrisbee.png" width="640" height="480"/>
         <image name="aGolf.png" width="640" height="480"/>
         <image name="aKickball.png" width="640" height="480"/>
-        <image name="aMoreCategories.png" width="640" height="480"/>
         <image name="aSoccer.png" width="640" height="480"/>
-        <image name="aTableGames.png" width="640" height="480"/>
         <image name="aTennis.png" width="640" height="480"/>
         <image name="aYoga.png" width="640" height="480"/>
+        <image name="a_football.png" width="640" height="480"/>
+        <image name="a_riding.png" width="640" height="480"/>
         <image name="actionbar_bg_white.png" width="640" height="80"/>
         <image name="arrow.png" width="11" height="14"/>
         <image name="discover_.png" width="47" height="46"/>
@@ -2383,13 +2383,13 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Pt4-qg-fXb"/>
-        <segue reference="6n8-q3-lxy"/>
-        <segue reference="GQZ-yq-JN7"/>
-        <segue reference="C9L-jn-ty6"/>
-        <segue reference="ymL-KN-Yv3"/>
         <segue reference="CLK-cx-blz"/>
         <segue reference="4M8-vo-jHA"/>
+        <segue reference="4JL-TO-diO"/>
+        <segue reference="C9L-jn-ty6"/>
+        <segue reference="U3F-sb-sE9"/>
+        <segue reference="AVa-mX-VeI"/>
         <segue reference="VY0-QZ-cgt"/>
+        <segue reference="Yzg-yO-FJ6"/>
     </inferredMetricsTieBreakers>
 </document>

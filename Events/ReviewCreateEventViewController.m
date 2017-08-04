@@ -9,6 +9,7 @@
 #import "ReviewCreateEventViewController.h"
 #import "CreateEventViewController.h"
 #import "ProgramViewController.h"
+#import "MoreViewController.h"
 
 @interface ReviewCreateEventViewController ()
 
@@ -30,6 +31,8 @@
     [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
     // Do any additional setup after loading the view.
     
+    
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 
     
 }
@@ -139,12 +142,14 @@
          
          // show alert for create event
          
-         UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event has been successfully completed!" delegate:self cancelButtonTitle:nil otherButtonTitles:nil , nil];
+         UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event has been successfully completed!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil , nil];
          [av show];
+    //     [self performSelector:@selector(dismiss:) withObject:av afterDelay:2.0];
          
          // delay go back to main events
          
-         [self performSelector:@selector(backToMain) withObject:nil afterDelay:2.0 ];
+ 
+     //   [self performSelector:@selector(backToMain) withObject:nil afterDelay:2.0 ];
          
         
          if ([response isKindOfClass:[NSDictionary class]]) {
@@ -183,15 +188,29 @@
 
 -(void)backToMain {
     
-    NSLog(@"trying to go back");
-    [self performSegueWithIdentifier:@"ShowMainMenu" sender:self];    
     
+    MoreViewController *viewController = [[MoreViewController alloc] init];
+    [self presentViewController:viewController animated:YES completion:nil];
   //  ProgramViewController *viewController = [[ProgramViewController alloc] init];
   //  [self.navigationController pushViewController:viewController animated:YES];
+    
+}
 
+-(void)dismiss:(UIAlertView*)alert
+{
+    [alert dismissWithClickedButtonIndex:0 animated:YES];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *string = [alertView buttonTitleAtIndex:buttonIndex];
     
-    
-    
+    if ([string isEqualToString:@"Ok"]) {
+        
+        
+        [self performSegueWithIdentifier:@"ShowMainMenu" sender:self];
+        
+    }
 }
 
 

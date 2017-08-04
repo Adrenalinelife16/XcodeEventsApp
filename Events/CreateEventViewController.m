@@ -23,6 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     
     // new view push
     

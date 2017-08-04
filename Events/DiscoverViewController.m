@@ -23,7 +23,7 @@
     
     _butZero.accessibilityLabel=@"Soccer";
     _butOne.accessibilityLabel=@"Kickball";
-    _butTwo.accessibilityLabel=@"Table Games";
+    _butTwo.accessibilityLabel=@"Football";
     _butThree.accessibilityLabel=@"Basketball";
     _butFour.accessibilityLabel=@"Yoga";
     _butFive.accessibilityLabel=@"Frisbee";

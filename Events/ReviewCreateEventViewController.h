@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CreateEventViewController.h"
 
-@interface ReviewCreateEventViewController : UIViewController
+@interface ReviewCreateEventViewController : UIViewController <UIAlertViewDelegate>
 {
     UIDatePicker *datePicker;
     

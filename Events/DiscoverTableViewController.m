@@ -119,7 +119,7 @@
         
     } else {
         
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Events Found" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil , nil];
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Events Found" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil , nil];
         [av show];
             
     }
