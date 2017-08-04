@@ -519,6 +519,7 @@
                             <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="iyp-kW-jdG"/>
                             <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="pBx-oz-5Nl"/>
                             <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="vzz-7v-5Wa"/>
+                            <constraint firstItem="70Z-9c-S00" firstAttribute="width" secondItem="xKb-jB-jd7" secondAttribute="width" id="xnB-a1-4zG"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
