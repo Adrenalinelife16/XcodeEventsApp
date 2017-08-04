@@ -102,14 +102,12 @@
 
 - (IBAction)sendReview:(id)sender {
     
-    [self performSegueWithIdentifier:@"createEventReview" sender:sender];
-    
-/*
+
     if ([self IsValid]) {
         
         [self performSegueWithIdentifier:@"createEventReview" sender:sender];
     }
-*/
+
     
 }
 
