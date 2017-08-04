@@ -8,6 +8,7 @@
 
 #import "ReviewCreateEventViewController.h"
 #import "CreateEventViewController.h"
+#import "ProgramViewController.h"
 
 @interface ReviewCreateEventViewController ()
 
@@ -123,27 +124,32 @@
      strEndDate = [endDateFormat stringFromDate:endDate];
      
 
+     // Get User ID
      
-     // Text field info
      NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
      
-    
-
+     // Text field info
      
      NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:self.strEventName,@"event_name", self.strStartDate,@"start_date",self.strEndDate,@"end_date",self.strStartTime,@"start_time",self.strEndTime,@"end_time", self.strLocationName,@"location_name",self.strAddress,@"location_address",self.strCity,@"location_city",self.strState,@"location_state",self.strZipCode,@"location_zip",self.userDetailView,@"event_info",stringImage,@"image",strCategory,@"category", strUserID,@"user", nil];
      
      [Utility GetDataForMethod:NSLocalizedString(@"CREATE_EVENT_METHOD", @"CREATE_EVENT_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
          
+         // show alert for create event
          
+         UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event has been successfully completed!" delegate:self cancelButtonTitle:nil otherButtonTitles:nil , nil];
+         [av show];
+         
+         // delay go back to main events
+         
+         [self performSelector:@selector(backToMain) withObject:nil afterDelay:3.0 ];
+         
+        
          if ([response isKindOfClass:[NSDictionary class]]) {
              if ([[response objectForKey:@"message"] isEqualToString:@"Event has been successfully completed"]) {
                  [Utility alertNotice:APPNAME withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
                  
                  
-             }
-             
-             
-             else{
+             } else {
                  
                  
              }
@@ -154,10 +160,8 @@
              
              if ([[[response objectAtIndex:0] objectForKey:@"message"] isEqualToString:@"Event has been successfully completed"]) {
                  [Utility alertNotice:APPNAME withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-                 
-                 
-             }
-             else{
+        
+             } else {
                  
                  
              }
@@ -174,4 +178,18 @@
     
  }
 
- @end
+-(void)backToMain {
+    
+    
+    [self performSegueWithIdentifier:@"ShowMainMenu" sender:self];    
+    
+  //  ProgramViewController *viewController = [[ProgramViewController alloc] init];
+  //  [self.navigationController pushViewController:viewController animated:YES];
+    [self.navigationController popViewControllerAnimated:NO];
+    
+    
+    
+}
+
+
+@end

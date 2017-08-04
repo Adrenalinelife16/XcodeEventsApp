@@ -100,16 +100,17 @@
 - (IBAction)sendReview:(id)sender {
     
     [self performSegueWithIdentifier:@"createEventReview" sender:sender];
-
-    /*
+    
+/*
     if ([self IsValid]) {
         
         [self performSegueWithIdentifier:@"createEventReview" sender:sender];
     }
-     */
+*/
     
 }
 
+/*
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
     if (textField == self.locationName) {
@@ -121,10 +122,9 @@
         [UIView commitAnimations];
         
     }
-    
+ 
 }
-
-/*
+ 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     CGPoint scrollPoint = CGPointMake(-250, locationName.frame.origin.y);
     [_scrlVWCE setContentOffset:scrollPoint animated:YES];
