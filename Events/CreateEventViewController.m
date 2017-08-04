@@ -34,6 +34,8 @@
     self.detailView.layer.borderColor = [[UIColor blackColor] CGColor];
     _buttonBorder.layer.borderWidth = 1.0f;
     [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    _buttonBorderTwo.layer.borderWidth = 1.0f;
+    [_buttonBorderTwo.layer setBorderColor:[[UIColor blackColor] CGColor]];
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];

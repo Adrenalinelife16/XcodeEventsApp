@@ -82,6 +82,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
+                        <outlet property="buttonBorder" destination="FpZ-6J-cDg" id="ibA-lg-Pwa"/>
                         <outlet property="txtPassword" destination="O35-QF-AZ1" id="UV2-jb-cyK"/>
                         <outlet property="txtUsername" destination="wC5-W8-nMQ" id="aJe-eT-xIk"/>
                     </connections>
@@ -526,7 +527,8 @@
                     <size key="freeformSize" width="320" height="1150"/>
                     <connections>
                         <outlet property="address" destination="rpD-sW-GAv" id="fec-lk-PqS"/>
-                        <outlet property="buttonBorder" destination="GQ8-WB-i8I" id="Vda-GK-DCm"/>
+                        <outlet property="buttonBorder" destination="VQw-yU-nto" id="sFT-Da-K93"/>
+                        <outlet property="buttonBorderTwo" destination="GQ8-WB-i8I" id="EtN-op-TUQ"/>
                         <outlet property="city" destination="8sw-DH-W16" id="kNm-Ia-f49"/>
                         <outlet property="detailView" destination="PxJ-Ag-XbP" id="cGS-jR-ddi"/>
                         <outlet property="endDate" destination="VrP-la-v0A" id="srQ-2V-3WC"/>
@@ -1860,6 +1862,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
+                        <outlet property="buttonBorder" destination="maw-QU-YQc" id="HQ7-Km-sqs"/>
                         <outlet property="txtConfirmPassword" destination="YgW-8Z-02v" id="ARS-O3-yJX"/>
                         <outlet property="txtEmail" destination="WCC-dq-buU" id="cyj-OO-UTP"/>
                         <outlet property="txtFirstName" destination="xIY-5F-sXV" id="pg5-tu-nw9"/>
@@ -2298,6 +2301,9 @@
                                     <constraint firstAttribute="height" constant="955" id="bka-Ak-MjM"/>
                                     <constraint firstAttribute="width" constant="320" id="xYp-7i-WQ5"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="raa-mk-ymy" id="gcV-29-aEe"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2313,6 +2319,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1068"/>
                     <connections>
+                        <outlet property="buttonBorder" destination="Mh6-lZ-oj3" id="Iw6-6i-jPf"/>
                         <outlet property="detailView" destination="toe-n2-bbn" id="RIa-9g-zOK"/>
                         <outlet property="imageView" destination="wJJ-l6-SJ7" id="rWG-0F-jv1"/>
                         <outlet property="labelAddress" destination="UxK-V4-DfB" id="OFm-0h-2e2"/>
@@ -2381,8 +2388,8 @@
         <segue reference="GQZ-yq-JN7"/>
         <segue reference="C9L-jn-ty6"/>
         <segue reference="ymL-KN-Yv3"/>
-        <segue reference="okc-1f-ZH5"/>
-        <segue reference="c3b-7q-UHr"/>
+        <segue reference="CLK-cx-blz"/>
+        <segue reference="4M8-vo-jHA"/>
         <segue reference="VY0-QZ-cgt"/>
     </inferredMetricsTieBreakers>
 </document>

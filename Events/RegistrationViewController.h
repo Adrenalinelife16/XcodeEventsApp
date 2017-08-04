@@ -33,6 +33,8 @@
 @property (strong, nonatomic) NSArray *countryArray;
 @property (strong, nonatomic) NSString *countryName, *countryCode;
 
+@property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
+
 //-(void)dissmissLoginRegister;
 
 -(IBAction)btnRegisterPressed:(id)sender;

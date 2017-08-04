@@ -25,6 +25,9 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *txtUsername;
 @property (strong, nonatomic) IBOutlet UITextField *txtPassword;
+
+@property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
+
 @property (nonatomic,strong) NSString *getDetails;
 
 -(IBAction)btnLoginPressed:(id)sender;

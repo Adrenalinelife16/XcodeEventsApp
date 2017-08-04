@@ -42,6 +42,9 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.txtConfirmPassword.delegate = self;
     
+    _buttonBorder.layer.borderWidth = 1.0f;
+    [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    
     [txtFirstName addTarget:txtLastName action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
     [txtLastName addTarget:txtUsername action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
     [txtUsername addTarget:txtEmail action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];

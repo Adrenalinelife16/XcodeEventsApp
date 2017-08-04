@@ -42,7 +42,8 @@
     
     [txtUsername addTarget:txtPassword action:@selector(becomeFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
       
-    
+    _buttonBorder.layer.borderWidth = 1.0f;
+    [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
 }
 
 

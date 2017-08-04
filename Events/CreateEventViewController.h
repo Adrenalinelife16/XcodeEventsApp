@@ -32,6 +32,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *startTime;
 @property (strong, nonatomic) IBOutlet UITextField *endTime;
 @property (strong, nonatomic) IBOutlet UIButton *buttonBorder;
+@property (strong, nonatomic) IBOutlet UIButton *buttonBorderTwo;
 @property (nonatomic, retain) NSString *titleText;
 
 

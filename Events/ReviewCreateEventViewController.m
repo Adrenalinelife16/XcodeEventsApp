@@ -25,6 +25,9 @@
     [super viewDidLoad];
     self.detailView.layer.borderWidth = 1.0f;
     self.detailView.layer.borderColor = [[UIColor blackColor] CGColor];
+    
+    _buttonBorder.layer.borderWidth = 1.0f;
+    [_buttonBorder.layer setBorderColor:[[UIColor blackColor] CGColor]];
     // Do any additional setup after loading the view.
     
 
@@ -141,7 +144,7 @@
          
          // delay go back to main events
          
-         [self performSelector:@selector(backToMain) withObject:nil afterDelay:3.0 ];
+         [self performSelector:@selector(backToMain) withObject:nil afterDelay:2.0 ];
          
         
          if ([response isKindOfClass:[NSDictionary class]]) {
@@ -180,12 +183,12 @@
 
 -(void)backToMain {
     
-    
+    NSLog(@"trying to go back");
     [self performSegueWithIdentifier:@"ShowMainMenu" sender:self];    
     
   //  ProgramViewController *viewController = [[ProgramViewController alloc] init];
   //  [self.navigationController pushViewController:viewController animated:YES];
-    [self.navigationController popViewControllerAnimated:NO];
+
     
     
     
