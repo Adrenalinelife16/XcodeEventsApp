@@ -25,6 +25,16 @@
 @property (nonatomic, retain) IBOutlet UIButton *butSeven;
 @property (nonatomic, retain) IBOutlet UIButton *butEight;
 @property (nonatomic, retain) IBOutlet UIButton *butNine;
+@property (nonatomic, retain) IBOutlet UIButton *butTen;
+@property (nonatomic, retain) IBOutlet UIButton *butEleven;
+@property (nonatomic, retain) IBOutlet UIButton *butTwelve;
+@property (nonatomic, retain) IBOutlet UIButton *butThirteen;
+@property (nonatomic, retain) IBOutlet UIButton *butFourteen;
+@property (nonatomic, retain) IBOutlet UIButton *butFifteen;
+@property (nonatomic, retain) IBOutlet UIButton *butSixteen;
+@property (nonatomic, retain) IBOutlet UIButton *butSeventeen;
+@property (nonatomic, retain) IBOutlet UIButton *butEighteen;
+@property (nonatomic, retain) IBOutlet UIButton *butNineteen;
 
 
 
@@ -38,6 +48,16 @@
 -(IBAction)buttonSeven:(id)sender;
 -(IBAction)buttonEight:(id)sender;
 -(IBAction)buttonNine:(id)sender;
+-(IBAction)buttonTen:(id)sender;
+-(IBAction)buttonEleven:(id)sender;
+-(IBAction)buttonTwelve:(id)sender;
+-(IBAction)buttonThirteen:(id)sender;
+-(IBAction)buttonFourteen:(id)sender;
+-(IBAction)buttonFifteen:(id)sender;
+-(IBAction)buttonSixteen:(id)sender;
+-(IBAction)buttonSeventeen:(id)sender;
+-(IBAction)buttonEighteen:(id)sender;
+-(IBAction)buttonNineteen:(id)sender;
 
 
 @end

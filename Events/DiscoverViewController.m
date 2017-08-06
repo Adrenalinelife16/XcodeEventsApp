@@ -26,11 +26,21 @@
     _butTwo.accessibilityLabel=@"Football";
     _butThree.accessibilityLabel=@"Basketball";
     _butFour.accessibilityLabel=@"Yoga";
-    _butFive.accessibilityLabel=@"Frisbee";
+    _butFive.accessibilityLabel=@"Fitness";
     _butSix.accessibilityLabel=@"Golf";
     _butSeven.accessibilityLabel=@"Fishing";
     _butEight.accessibilityLabel=@"Tennis";
     _butNine.accessibilityLabel=@"Riding";
+    _butTen.accessibilityLabel=@"Baseball/Softball";
+    _butEleven.accessibilityLabel=@"Billiards";
+    _butTwelve.accessibilityLabel=@"Running/Hiking";
+    _butThirteen.accessibilityLabel=@"Camping";
+    _butFourteen.accessibilityLabel=@"Water Games";
+    _butFifteen.accessibilityLabel=@"Climbing";
+    _butSixteen.accessibilityLabel=@"Disc Games";
+    _butSeventeen.accessibilityLabel=@"Bowling";  
+    _butEighteen.accessibilityLabel=@"Table Games";
+    _butNineteen.accessibilityLabel=@"Lacrosse";
     
     
 }
@@ -138,6 +148,96 @@
 }
 
 -(IBAction)buttonNine:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonTen:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonEleven:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonTwelve:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonThirteen:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonFourteen:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonFifteen:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonSixteen:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonSeventeen:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonEighteen:(id)sender {
+    
+    
+    UIButton *btn= (UIButton *)sender;
+    [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    
+}
+
+-(IBAction)buttonNineteen:(id)sender {
     
     
     UIButton *btn= (UIButton *)sender;
