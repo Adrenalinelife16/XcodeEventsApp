@@ -47,7 +47,7 @@
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-    [self.scrlVW setContentSize:CGSizeMake(100, 650)]; //Change height here when adding more categories to discover page
+    [self.scrlVW setContentSize:CGSizeMake(100, 1835)]; //Change height here when adding more categories to discover page
 }
 
 
