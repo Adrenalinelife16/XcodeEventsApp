@@ -293,8 +293,11 @@
     
     calView = calendarView;
     
+  //  targetHeight = 360;
+    
     CGRect rect=self.tblMainTable.frame;
-    rect.origin.y= 360; //360
+ //   rect.origin.y=360;
+    rect.origin.y= targetHeight+95; //360
     rect.size.height= 165; // 165
     self.tblMainTable.frame=rect;
     [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)]; // 320
@@ -551,9 +554,9 @@
                 eventObj.eventDescription       =   [dict objectForKey:@"event_content"];
                 
                 //12.15pm 4 June '14
-                eventObj.eventStartDateTime     =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_start_date"],[dict objectForKey:@"event_start_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
+                eventObj.eventStartDateTime     =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_start_date"],[dict objectForKey:@"event_start_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"EEEE, MMM d yyyy h:mm a"];
                 
-                eventObj.eventEndDateTime       =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_end_date"],[dict objectForKey:@"event_end_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"E, MMM d yyyy h:mm a"];
+                eventObj.eventEndDateTime       =   [Utility getFormatedDateString:[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"event_end_date"],[dict objectForKey:@"event_end_time"]] dateFormatString:@"yyyy-MM-dd HH:mm:ss" dateFormatterString:@"EEEE, MMM d yyyy h:mm a"];
                 
                 eventObj.eventLocationName      =   [dict objectForKey:@"location_name"];
                 eventObj.eventLocationAddress   =   [dict objectForKey:@"location_address"];
