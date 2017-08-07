@@ -293,12 +293,10 @@
     
     calView = calendarView;
     
-  //  targetHeight = 360;
     
     CGRect rect=self.tblMainTable.frame;
- //   rect.origin.y=360;
     rect.origin.y= targetHeight+95; //360
-    rect.size.height= 165; // 165
+    rect.size.height= 198; // 165
     self.tblMainTable.frame=rect;
     [self.calendarView setContentSize:CGSizeMake(320, targetHeight+rect.size.height)]; // 320
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
