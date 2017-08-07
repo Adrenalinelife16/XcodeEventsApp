@@ -254,9 +254,12 @@
                     <navigationItem key="navigationItem" title="Events" id="UiF-4Q-GbU">
                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="Uyq-1I-AcT">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jMw-jC-ERA">
-                                <rect key="frame" x="16" y="7" width="29" height="22"/>
+                                <rect key="frame" x="16" y="11" width="29" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-Menu-26.png"/>
+                                <connections>
+                                    <action selector="popoverMenu:" destination="XMy-k7-mqo" eventType="touchUpInside" id="MF5-a9-5rY"/>
+                                </connections>
                             </button>
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -682,6 +685,15 @@
                                             <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="6EA-HJ-rwd"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-cV-1Pe" userLabel="baseball/ softball">
+                                        <rect key="frame" x="8" y="534" width="149" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="a_baseball.png"/>
+                                        <connections>
+                                            <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="3iP-jZ-S7D"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-NX-ZZ2" userLabel="running/ hiking">
                                         <rect key="frame" x="8" y="652" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -696,15 +708,6 @@
                                         <state key="normal" image="a_billiards.png"/>
                                         <connections>
                                             <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="qmD-Kr-dNv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SL-JV-upC" userLabel="camping">
-                                        <rect key="frame" x="165" y="652" width="147" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Camping"/>
-                                        <connections>
-                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="zpT-c5-l5f"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUy-jl-gSz" userLabel="table games">
@@ -731,13 +734,12 @@
                                             <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="SaS-SM-mOy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-cV-1Pe" userLabel="baseball/ softball">
-                                        <rect key="frame" x="8" y="534" width="149" height="110"/>
+                                    <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SL-JV-upC" userLabel="camping">
+                                        <rect key="frame" x="165" y="652" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" image="a_baseball.png"/>
+                                        <state key="normal" image="a_camping.png"/>
                                         <connections>
-                                            <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="3iP-jZ-S7D"/>
+                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="zpT-c5-l5f"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2456,6 +2458,7 @@
         <image name="a_baseball.png" width="640" height="480"/>
         <image name="a_billiards.png" width="640" height="480"/>
         <image name="a_bowling.png" width="640" height="480"/>
+        <image name="a_camping.png" width="640" height="480"/>
         <image name="a_climbing.png" width="640" height="480"/>
         <image name="a_fitness.png" width="640" height="480"/>
         <image name="a_football.png" width="640" height="480"/>

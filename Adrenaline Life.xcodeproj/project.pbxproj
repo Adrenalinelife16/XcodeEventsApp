@@ -96,6 +96,7 @@
 		72F761801F37C9F200FCA906 /* a_frisbee.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F7617F1F37C9F200FCA906 /* a_frisbee.png */; };
 		72F761821F37D26A00FCA906 /* icons8-Menu-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761811F37D26A00FCA906 /* icons8-Menu-26.png */; };
 		72F761841F37D34700FCA906 /* icons8-Menu-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761831F37D34700FCA906 /* icons8-Menu-64.png */; };
+		72F761861F388CED00FCA906 /* a_camping.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761851F388CED00FCA906 /* a_camping.png */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
 		7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916556719044E6900F4D9D3 /* MyEventTickets.m */; };
@@ -456,6 +457,7 @@
 		72F7617F1F37C9F200FCA906 /* a_frisbee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a_frisbee.png; path = ../../../../../../../../var/folders/1w/_hxr6r7972922z2439263y100000gn/T/com.apple.iChat/Messages/Transfers/a_frisbee.png; sourceTree = "<group>"; };
 		72F761811F37D26A00FCA906 /* icons8-Menu-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Menu-26.png"; path = "../../../../../../Downloads/icons8-Menu-26.png"; sourceTree = "<group>"; };
 		72F761831F37D34700FCA906 /* icons8-Menu-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Menu-64.png"; path = "../../../../../../Downloads/icons8-Menu-64.png"; sourceTree = "<group>"; };
+		72F761851F388CED00FCA906 /* a_camping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a_camping.png; path = ../../../../../../../../var/folders/1w/_hxr6r7972922z2439263y100000gn/T/com.apple.iChat/Messages/Transfers/a_camping.png; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
 		790AE0B318F9862500FBE2F2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
@@ -1329,6 +1331,7 @@
 				72F761831F37D34700FCA906 /* icons8-Menu-64.png */,
 				72F761751F37C8D300FCA906 /* a_climbing.png */,
 				72F761791F37C90600FCA906 /* a_bowling.png */,
+				72F761851F388CED00FCA906 /* a_camping.png */,
 				72F7617D1F37C92B00FCA906 /* a_tablegames.png */,
 				72F7617B1F37C91A00FCA906 /* a_lacrosse.png */,
 				E202AE751EF3B648001B39FD /* actionbar_bg_black.png */,
@@ -1882,6 +1885,7 @@
 				BB303E0118B86B3400B6EBC9 /* Livello2.png in Resources */,
 				E2A54D441E4DC03B00091538 /* DiscoverBtn.png in Resources */,
 				7972E979195355B100F25E4D /* icon-feed-twitter.png in Resources */,
+				72F761861F388CED00FCA906 /* a_camping.png in Resources */,
 				72F7617A1F37C90600FCA906 /* a_bowling.png in Resources */,
 				79348D0B18F99D56006E56A5 /* login-btn@2x.png in Resources */,
 				BB62B12318B8B529000DBDBC /* Segmented@2x.png in Resources */,
