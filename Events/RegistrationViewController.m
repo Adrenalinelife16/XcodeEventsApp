@@ -122,7 +122,7 @@
                 
             else if ([[response objectForKey:@"message"] isEqualToString:@"Sorry, that email address is already used!"]) {
                     [Utility alertNotice:APPNAME withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-                    
+                
                     
                 }
                 else{
@@ -133,12 +133,10 @@
                     
                     [self.tabBarController setSelectedIndex:0];
                     [self.navigationController popViewControllerAnimated:NO];
-                
-                    
+                                    
                 }
 
-                
- 
+            
             [DSBezelActivityView removeViewAnimated:YES];
             
         }

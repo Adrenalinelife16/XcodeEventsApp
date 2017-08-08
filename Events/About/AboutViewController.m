@@ -16,6 +16,7 @@
 #import "FavouriteEvents.h"
 #import "AppDelegate.h"
 
+
 #import "ProgramDescriptionViewController.h"
 
 @interface AboutViewController ()
@@ -26,6 +27,15 @@
 @end
 
 @implementation AboutViewController
+{
+
+    UIBarButtonItem *shareButton;
+    
+    
+}
+
+
+
 @synthesize eventLocationMapView;
 @synthesize eventObj;
 @synthesize tblView;
@@ -96,31 +106,67 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+ - (void)share:(id)sender {
+     
+     
+     NSURL *urlString = [NSURL URLWithString:eventObj.eventImageURL];
+     
+     NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation([UIImage imageWithData: [NSData dataWithContentsOfURL:urlString]])];
+     UIImage *image = [UIImage imageWithData:imageData];
+     UIImage *name = [UIImage imageWithData:imageData];
+     
+     NSString *eventName = [NSString stringWithFormat:@"%@", eventObj.eventName];
+     NSString *eventDescription = [NSString stringWithFormat:@"- Find more local events and activites like this one by downloading the Adrenaline Life App Now!"];
+     NSString *urlDownload = [NSString stringWithFormat:@"www.onelink.to/life"];
+     
+     NSArray *sharedObjects = @[name,eventName,eventDescription,urlDownload];
+     
+     UIActivityViewController * avc = [[UIActivityViewController alloc] initWithActivityItems:sharedObjects applicationActivities:nil];
+     
+     [self presentViewController:avc animated:YES completion:nil];
+     
+}
+
+
+
 #pragma mark - Check login for MyFavorite and MyTickets
 -(void)checkLogin
 {
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"]) {
         
+        
+     
+        
+        shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share:)];
+    
+        
+        
         UIImage* image1 = [UIImage imageNamed:@"share.png"];
         CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
-        UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
-        [shareButton setImage:image1 forState:UIControlStateNormal];
-        [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
-        [shareButton addTarget:self action:@selector(clickedShare:)
+        UIButton *favButton = [[UIButton alloc] initWithFrame:frameimg1];
+        [favButton setImage:image1 forState:UIControlStateNormal];
+        [favButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
+        [favButton addTarget:self action:@selector(clickedShare:)
               forControlEvents:UIControlEventTouchUpInside];
-        [shareButton setShowsTouchWhenHighlighted:YES];
+        [favButton setShowsTouchWhenHighlighted:YES];
         
 
-        UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:shareButton];
+        UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:favButton];
         
-        self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,nil];
+         self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,shareButton, nil];
         
 
+    } else {
+        
+        
+    shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share:)];
+    self.navigationItem.rightBarButtonItem = shareButton;
     }
-    else
-        NSLog(@"Hide Favorite Heart");
-
+    
+    
 }
 
 -(BOOL)checkLoginBool
@@ -147,24 +193,26 @@
                 NSString *strFromInt = [NSString stringWithFormat:@"%@", eventObj.eventID];
                 NSString *strFromDict = [NSString stringWithFormat:@"%@", response];
                 
+                shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share:)];
+                
                 UIImage* image1 = [UIImage imageNamed:@"share.png"];
                 CGRect frameimg1 = CGRectMake(0, 0, image1.size.width, image1.size.height);
-                UIButton *shareButton = [[UIButton alloc] initWithFrame:frameimg1];
-                [shareButton setImage:image1 forState:UIControlStateNormal];
-                [shareButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
-                [shareButton addTarget:self action:@selector(clickedShare:)
+                UIButton *favButton = [[UIButton alloc] initWithFrame:frameimg1];
+                [favButton setImage:image1 forState:UIControlStateNormal];
+                [favButton setImage:[UIImage imageNamed:@"share2.png"] forState:UIControlStateSelected];
+                [favButton addTarget:self action:@selector(clickedShare:)
                       forControlEvents:UIControlEventTouchUpInside];
-                [shareButton setShowsTouchWhenHighlighted:YES];
+                [favButton setShowsTouchWhenHighlighted:YES];
                 
                 
-                UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:shareButton];
+                UIBarButtonItem *shareButtonBar =[[UIBarButtonItem alloc] initWithCustomView:favButton];
                 
-                self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,nil];
+                self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:shareButtonBar,shareButton, nil];
                 
                 
                 if ([strFromDict containsString:strFromInt]){
                     
-                    shareButton.selected = YES;
+                    favButton.selected = YES;
            
                 }
             }

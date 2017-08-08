@@ -126,6 +126,7 @@
     self.searchController.searchBar.barTintColor = [UIColor grayColor];
 
     self.searchController.hidesNavigationBarDuringPresentation = NO;
+   
 
 
     
