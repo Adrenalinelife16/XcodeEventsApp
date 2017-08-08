@@ -110,50 +110,25 @@
         NSString *noCaps = [self.txtUsername.text lowercaseString];
         
         
-        NSString *string1 = @"Sorry, that username already exists!";
-        NSString *string2 = @"Sorry, that email address is already used!";
-
-        
-        
         NSDictionary *dictOfParameters  =   [[NSDictionary alloc] initWithObjectsAndKeys:FirstLast,@"name", self.txtUsername.text,@"user_login",noCaps,@"login_name", self.txtEmail.text,@"user_email",self.txtPassword.text,@"pwd", nil];
         
         [Utility GetDataForMethod:NSLocalizedString(@"REGISTER_METHOD", @"REGISTER_METHOD") parameters:dictOfParameters key:@"" withCompletion:^(id response){
             
-            if ([response isKindOfClass:[NSDictionary class]]) {
-                if ([[response objectForKey:@"message"] isEqualToString:@"Sorry, that username already exists!"]) {
+            if ([[response objectForKey:@"message"] isEqualToString:@"Sorry, that username already exists!"]) {
+                    [Utility alertNotice:APPNAME withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
+                    }
+                
+    
+                
+            else if ([[response objectForKey:@"message"] isEqualToString:@"Sorry, that email address is already used!"]) {
                     [Utility alertNotice:APPNAME withMSG:[response objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
                     
-    
                     
                 }
-                
-                
                 else{
                     [Utility setNSUserDefaultValueForString:[response objectForKey:@"user_id"] strKey:KUSERID];
+                    
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:[response objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                    [av setTag:99];
-                    [av show];
-                    
-                    [self.tabBarController setSelectedIndex:0];
-                    [self.navigationController popViewControllerAnimated:NO];
-                    
-                    
-                }
-    
-            }
-        
-            else if ([response isKindOfClass:[NSArray class]]) {
-                
-                if ([[[response objectAtIndex:0] objectForKey:@"message"] isEqualToString:@"Sorry, that email address is already used!"]) {
-                    [Utility alertNotice:APPNAME withMSG:[[response objectAtIndex:0] objectForKey:@"message"] cancleButtonTitle:@"OK" otherButtonTitle:nil];
-                    
-                    NSLog(@"email already exist");
-                    
-                }
-                else{
-                    [Utility setNSUserDefaultValueForString:[[response objectAtIndex:0] objectForKey:@"user_id"] strKey:KUSERID];
-                    
-                    UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:[[response objectAtIndex:0] objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [av show];
                     
                     [self.tabBarController setSelectedIndex:0];
@@ -163,7 +138,7 @@
                 }
 
                 
-            }
+ 
             [DSBezelActivityView removeViewAnimated:YES];
             
         }
@@ -173,7 +148,7 @@
         }];
          
          
-         }
+    }
 }
          
 
