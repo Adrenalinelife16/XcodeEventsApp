@@ -91,7 +91,7 @@
     self.definesPresentationContext = YES;  // know where you want UISearchController to be displayed
     
     [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:COMMON_COLOR_RED];
-    
+
     
     UITabBarController *tabBarController = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController ;
     
