@@ -68,6 +68,29 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
+    
+    
+    UITabBarController *tabBarController = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController ;
+    
+    [tabBarController setDelegate:self];
+    
+}
+
+-(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    [self.tableView setContentOffset:CGPointZero animated:YES];
+}
+
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    self.navigationItem.title = @"Events";
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.searchController.searchBar.barTintColor = [UIColor grayColor];
+
+    // Start
+    
     _resultsTableController = [[SearchResultsTableViewController alloc] init];
     _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
     self.searchController.searchResultsUpdater = self;
@@ -93,41 +116,12 @@
     [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:COMMON_COLOR_RED];
 
     
-    UITabBarController *tabBarController = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController ;
     
-    [tabBarController setDelegate:self];
     
-}
-
--(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    [self.tableView setContentOffset:CGPointZero animated:YES];
-}
-
-
-
-
-- (void)willPresentSearchController:(UISearchController *)searchController {
-    // do something before the search controller is presented
-    self.navigationController.navigationBar.translucent = YES;
-}
-
--(void)willDismissSearchController:(UISearchController *)searchController
-{
-    self.navigationController.navigationBar.translucent = NO;
-}
-
-
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:YES];
-    self.navigationItem.title = @"Events";
-    [self.navigationController.navigationBar setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    self.searchController.searchBar.barTintColor = [UIColor grayColor];
-
-    self.searchController.hidesNavigationBarDuringPresentation = NO;
+    // End
    
 
+    self.searchController.hidesNavigationBarDuringPresentation = NO;
 
     
     [self checkLogin];
@@ -156,6 +150,15 @@
     
 }
 
+- (void)willPresentSearchController:(UISearchController *)searchController {
+    // do something before the search controller is presented
+    self.navigationController.navigationBar.translucent = YES;
+}
+
+-(void)willDismissSearchController:(UISearchController *)searchController
+{
+    self.navigationController.navigationBar.translucent = NO;
+}
 
 
 #pragma mark - UISearchBarDelegate
