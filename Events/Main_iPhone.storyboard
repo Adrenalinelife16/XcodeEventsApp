@@ -122,7 +122,7 @@
         <scene sceneID="Zm0-gr-3hJ">
             <objects>
                 <tableViewController storyboardIdentifier="ProgramController" title="ProgramViewController" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XMy-k7-mqo" userLabel="ProgramViewController" customClass="ProgramViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="ProgramController" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="206" sectionHeaderHeight="22" sectionFooterHeight="22" id="6eF-vP-BpW">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="ProgramController" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="206" sectionHeaderHeight="22" sectionFooterHeight="22" id="6eF-vP-BpW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -2424,12 +2424,12 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Yzg-yO-FJ6"/>
-        <segue reference="c3b-7q-UHr"/>
-        <segue reference="okc-1f-ZH5"/>
-        <segue reference="6n8-q3-lxy"/>
         <segue reference="U3F-sb-sE9"/>
         <segue reference="C9L-jn-ty6"/>
+        <segue reference="6n8-q3-lxy"/>
         <segue reference="GQZ-yq-JN7"/>
+        <segue reference="okc-1f-ZH5"/>
+        <segue reference="c3b-7q-UHr"/>
+        <segue reference="Yzg-yO-FJ6"/>
     </inferredMetricsTieBreakers>
 </document>

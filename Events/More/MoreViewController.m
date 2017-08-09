@@ -170,6 +170,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [av show];
             [self dismissModalStack];
+            [self.tableView reloadData];
             [self.tabBarController setSelectedIndex:0];
 
             
@@ -204,23 +205,5 @@
     [vc dismissViewControllerAnimated:YES completion:NULL];
 }
 
-#pragma mark - Navigation
-/*
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    
-    if ([segue.identifier isEqualToString:@"loginRegister"]) {
-        
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        LoginViewController *destViewController = [segue destinationViewController];
-        destViewController.getDetails = [moreArray objectAtIndex:indexPath.row];
-        
-    }
 
-    
-}
-
-*/
 @end
