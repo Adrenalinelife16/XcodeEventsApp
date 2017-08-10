@@ -9,6 +9,11 @@
 #import "MoreViewController.h"
 #import "LoginViewController.h"
 #import "MoreCustomCell.h"
+#import "AboutViewController.h"
+#import "FavoritesTableViewController.h"
+#import "TabBarCenterIcon.h"
+#import "ProgramViewController.h"
+
 
 
 @interface MoreViewController ()
@@ -163,14 +168,16 @@
     UIAlertAction *logout = [UIAlertAction actionWithTitle:@"Logout" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action)
         {
             [self resetDefaults];
+            [self dismissModalStack];
+            
+            [self.tableView reloadData];
             
             NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
-            
+
             NSLog(@"User ID after logout is %@", strUserID);
+            
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
             [av show];
-            [self dismissModalStack];
-            [self.tableView reloadData];
             
 
             
@@ -194,11 +201,9 @@
     if ([string isEqualToString:@"Ok"]) {
         
         [self.tabBarController setSelectedIndex:0];
-        [self.navigationController popViewControllerAnimated:NO];
+      
         
-        
-
-           }
+    }
     
 }
 
