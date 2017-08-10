@@ -17,6 +17,7 @@
 #import "FeedViewController.h"
 #import "FeedCustomCell.h"
 #import "SearchResultsTableViewController.h"
+#import "SWRevealViewController.h"
 
 
 @interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate>
@@ -73,6 +74,14 @@
     UITabBarController *tabBarController = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController ;
     
     [tabBarController setDelegate:self];
+    
+    SWRevealViewController *revealViewController = self.revealViewController;
+    if ( revealViewController )
+    {
+        [self.sidebarButton setTarget: self.revealViewController];
+        [self.sidebarButton setAction: @selector( revealToggle: )];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
     
     
 }

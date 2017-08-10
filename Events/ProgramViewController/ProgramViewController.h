@@ -11,6 +11,8 @@
 @interface ProgramViewController : UITableViewController
 
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+
 -(IBAction)createEvent:(id)sender;
 -(IBAction)popoverMenu:(id)sender;
 
