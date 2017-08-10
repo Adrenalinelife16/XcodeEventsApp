@@ -167,11 +167,11 @@
             NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
             
             NSLog(@"User ID after logout is %@", strUserID);
-            UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
             [av show];
             [self dismissModalStack];
             [self.tableView reloadData];
-            [self.tabBarController setSelectedIndex:0];
+            
 
             
             
@@ -185,6 +185,21 @@
     [alert addAction:cancel];
     
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *string = [alertView buttonTitleAtIndex:buttonIndex];
+    
+    if ([string isEqualToString:@"Ok"]) {
+        
+        [self.tabBarController setSelectedIndex:0];
+        [self.navigationController popViewControllerAnimated:NO];
+        
+        
+
+           }
+    
 }
 
 

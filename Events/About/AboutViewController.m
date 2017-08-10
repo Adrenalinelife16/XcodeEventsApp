@@ -27,6 +27,7 @@
 @end
 
 @implementation AboutViewController
+
 {
 
     UIBarButtonItem *shareButton;
@@ -98,11 +99,22 @@
      *  get location using locationmanager singleton class
      */
     [LocationManager sharedInstance];
+    
+      
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     
-    
+    if ((descriptionTextHeight = true)) {
+        
+        NSLog(@"button pushed");
+        
+    } else {
+        
+        NSLog(@"button NOT pushed");
+        [self.navigationController popToRootViewControllerAnimated:YES];
+        
+    }
    
     
 }
@@ -121,20 +133,37 @@
      
      NSURL *urlString = [NSURL URLWithString:eventObj.eventImageURL];
      
-     NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation([UIImage imageWithData: [NSData dataWithContentsOfURL:urlString]])];
-     UIImage *image = [UIImage imageWithData:imageData];
-     UIImage *name = [UIImage imageWithData:imageData];
      
-     NSString *eventName = [NSString stringWithFormat:@"%@", eventObj.eventName];
-     NSString *eventDescription = [NSString stringWithFormat:@"- Find more local events and activites like this one by downloading the Adrenaline Life App Now!"];
-     NSString *urlDownload = [NSString stringWithFormat:@"www.onelink.to/life"];
+     if ([eventObj.eventImageURL length]) {
+         
+         
+         NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation([UIImage imageWithData: [NSData dataWithContentsOfURL:urlString]])];
+         UIImage *image = [UIImage imageWithData:imageData];
+         UIImage *name = [UIImage imageWithData:imageData];
+         NSString *eventName = [NSString stringWithFormat:@"%@", eventObj.eventName];
+         NSString *eventDescription = [NSString stringWithFormat:@"- Find more local events and activites like this one by downloading the Adrenaline Life App Now!"];
+         NSString *urlDownload = [NSString stringWithFormat:@"www.onelink.to/life"];
+         
+         NSArray *sharedObjects = @[name,eventName,eventDescription,urlDownload];
+         
+         UIActivityViewController * avc = [[UIActivityViewController alloc] initWithActivityItems:sharedObjects applicationActivities:nil];
+         
+         [self presentViewController:avc animated:YES completion:nil];
+
+     } else {
+         
+         UIImage *name = [UIImage imageNamed:@"no_image.png"];
+         NSString *eventName = [NSString stringWithFormat:@"%@", eventObj.eventName];
+         NSString *eventDescription = [NSString stringWithFormat:@"- Find more local events and activites like this one by downloading the Adrenaline Life App Now!"];
+         NSString *urlDownload = [NSString stringWithFormat:@"www.onelink.to/life"];
+         
+         NSArray *sharedObjects = @[name,eventName,eventDescription,urlDownload];
+         
+         UIActivityViewController * avc = [[UIActivityViewController alloc] initWithActivityItems:sharedObjects applicationActivities:nil];
+         
+         [self presentViewController:avc animated:YES completion:nil];
      
-     NSArray *sharedObjects = @[name,eventName,eventDescription,urlDownload];
-     
-     UIActivityViewController * avc = [[UIActivityViewController alloc] initWithActivityItems:sharedObjects applicationActivities:nil];
-     
-     [self presentViewController:avc animated:YES completion:nil];
-     
+     }
 }
 
 

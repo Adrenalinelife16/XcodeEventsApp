@@ -1246,12 +1246,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actionbar_bg_6solid.png" translatesAutoresizingMaskIntoConstraints="NO" id="DNr-Eh-rGe">
+                                <rect key="frame" x="0.0" y="313" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F0C-ID-Dpb">
                                 <rect key="frame" x="0.0" y="65" width="320" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7vo-Zb-OAf">
-                                <rect key="frame" x="0.0" y="280" width="320" height="179"/>
+                                <rect key="frame" x="0.0" y="271" width="320" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -1390,7 +1394,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="btnDescription" destination="gQG-fV-d9E" id="wWQ-m0-2eK"/>
                                             <outlet property="imgVWCellSeperator" destination="C4V-cH-IlL" id="Fwl-JJ-OUo"/>
                                         </connections>
                                     </tableViewCell>
@@ -1619,6 +1622,7 @@
                         <segue destination="T4o-Af-Ooy" kind="push" identifier="aboutUs" id="JfJ-9J-PcO"/>
                         <segue destination="EYQ-sL-8zz" kind="push" identifier="helpCenter" id="okc-1f-ZH5"/>
                         <segue destination="1D8-Gt-16Y" kind="push" identifier="registerVC" id="Tr9-s1-lRx"/>
+                        <segue destination="XMy-k7-mqo" kind="push" identifier="logoutVC" id="RPQ-X5-0np"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpL-EI-hBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2396,6 +2400,7 @@
         <image name="a_running.png" width="640" height="480"/>
         <image name="a_tablegames.png" width="640" height="480"/>
         <image name="a_watergames.png" width="640" height="480"/>
+        <image name="actionbar_bg_6solid.png" width="640" height="180"/>
         <image name="actionbar_bg_white.png" width="640" height="80"/>
         <image name="arrow.png" width="11" height="14"/>
         <image name="discover_.png" width="47" height="46"/>
@@ -2424,12 +2429,13 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="ymL-KN-Yv3"/>
+        <segue reference="okc-1f-ZH5"/>
+        <segue reference="c3b-7q-UHr"/>
+        <segue reference="RPQ-X5-0np"/>
+        <segue reference="GQZ-yq-JN7"/>
         <segue reference="U3F-sb-sE9"/>
         <segue reference="C9L-jn-ty6"/>
         <segue reference="6n8-q3-lxy"/>
-        <segue reference="GQZ-yq-JN7"/>
-        <segue reference="okc-1f-ZH5"/>
-        <segue reference="c3b-7q-UHr"/>
-        <segue reference="Yzg-yO-FJ6"/>
     </inferredMetricsTieBreakers>
 </document>

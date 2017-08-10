@@ -157,10 +157,8 @@
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Login Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [av setTag:99];
                     [av show];
-                    // Perform Segue Here to Main Program View
+                
                     
-                    [self.tabBarController setSelectedIndex:0];
-                    [self.navigationController popViewControllerAnimated:NO];
                     
                 }
                 
@@ -176,6 +174,18 @@
     return YES;
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *string = [alertView buttonTitleAtIndex:buttonIndex];
+    
+    if ([string isEqualToString:@"OK"]) {
+        
+        [self.tabBarController setSelectedIndex:0];
+        [self.navigationController popViewControllerAnimated:NO];
+        
+    }
+    
+}
 
 
 #pragma mark - login button tap
@@ -225,7 +235,7 @@
     return YES;
 }
 
-
+/*
 #pragma mark - Alert View Delegates
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
@@ -235,4 +245,5 @@
         }
     }
 }
+*/
 @end

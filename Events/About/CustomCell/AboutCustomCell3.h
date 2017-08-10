@@ -14,6 +14,7 @@
 
 @property (nonatomic, retain) IBOutlet UIButton *btnDescription;
 
+
 @property (nonatomic, retain) IBOutlet UIImageView *imgVWCellSeperator;
 
 @end
