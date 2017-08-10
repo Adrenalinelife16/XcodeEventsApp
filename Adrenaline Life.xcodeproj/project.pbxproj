@@ -95,6 +95,8 @@
 		72F761841F37D34700FCA906 /* icons8-Menu-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761831F37D34700FCA906 /* icons8-Menu-64.png */; };
 		72F761861F388CED00FCA906 /* a_camping.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761851F388CED00FCA906 /* a_camping.png */; };
 		72F761941F3C8B0600FCA906 /* a_frisbee.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761931F3C8B0600FCA906 /* a_frisbee.png */; };
+		72F761A41F3CE5ED00FCA906 /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F761A11F3CE5ED00FCA906 /* SidebarTableViewController.m */; };
+		72F761A51F3CE5ED00FCA906 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F761A31F3CE5ED00FCA906 /* SWRevealViewController.m */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
 		7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916556719044E6900F4D9D3 /* MyEventTickets.m */; };
@@ -451,6 +453,10 @@
 		72F761831F37D34700FCA906 /* icons8-Menu-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Menu-64.png"; path = "../../../../../../Downloads/icons8-Menu-64.png"; sourceTree = "<group>"; };
 		72F761851F388CED00FCA906 /* a_camping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a_camping.png; path = ../../../../../../../../var/folders/1w/_hxr6r7972922z2439263y100000gn/T/com.apple.iChat/Messages/Transfers/a_camping.png; sourceTree = "<group>"; };
 		72F761931F3C8B0600FCA906 /* a_frisbee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a_frisbee.png; path = ../../../../../../../../var/folders/1w/_hxr6r7972922z2439263y100000gn/T/com.apple.iChat/Messages/Transfers/a_frisbee.png; sourceTree = "<group>"; };
+		72F761A01F3CE5ED00FCA906 /* SidebarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SidebarTableViewController.h; path = ../../../../SidebarTableViewController.h; sourceTree = "<group>"; };
+		72F761A11F3CE5ED00FCA906 /* SidebarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SidebarTableViewController.m; path = ../../../../SidebarTableViewController.m; sourceTree = "<group>"; };
+		72F761A21F3CE5ED00FCA906 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../../SWRevealViewController.h; sourceTree = "<group>"; };
+		72F761A31F3CE5ED00FCA906 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../../../SWRevealViewController.m; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
 		790AE0B318F9862500FBE2F2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
@@ -959,6 +965,17 @@
 			name = "Attending Controller";
 			sourceTree = "<group>";
 		};
+		72F7619F1F3CE55F00FCA906 /* Slide Out Menu */ = {
+			isa = PBXGroup;
+			children = (
+				72F761A01F3CE5ED00FCA906 /* SidebarTableViewController.h */,
+				72F761A11F3CE5ED00FCA906 /* SidebarTableViewController.m */,
+				72F761A21F3CE5ED00FCA906 /* SWRevealViewController.h */,
+				72F761A31F3CE5ED00FCA906 /* SWRevealViewController.m */,
+			);
+			name = "Slide Out Menu";
+			sourceTree = "<group>";
+		};
 		791E3DE418F3208D00220BDE /* HTML string convertion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1267,6 +1284,7 @@
 				72ED09811F001BE800F60832 /* Favorites Controller */,
 				72ED09821F001C1B00F60832 /* Attending Controller */,
 				BB303E3D18B88D3600B6EBC9 /* FeedViewController */,
+				72F7619F1F3CE55F00FCA906 /* Slide Out Menu */,
 				BB303E3118B8801C00B6EBC9 /* ProgramViewController */,
 				BB303E2D18B87FB400B6EBC9 /* TabBarController */,
 				BB303DA818B863E300B6EBC9 /* AppDelegate.h */,
@@ -1914,6 +1932,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F761A41F3CE5ED00FCA906 /* SidebarTableViewController.m in Sources */,
 				7122DC1518BDE6D900DC9925 /* VRGCalendarView.m in Sources */,
 				E279AD9E1E653D6500D3B192 /* DiscoverViewController.m in Sources */,
 				BB303E3018B87FCE00B6EBC9 /* TabBarViewController.m in Sources */,
@@ -1999,6 +2018,7 @@
 				790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */,
 				7112222F18BCC69300E77A4A /* AboutCustomCell3.m in Sources */,
 				798D9E2218F15F2000A69513 /* UIImage+GIF.m in Sources */,
+				72F761A51F3CE5ED00FCA906 /* SWRevealViewController.m in Sources */,
 				E29A6BE41E6AA2400041F782 /* TermsViewController.m in Sources */,
 				7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */,
 				798D9E0418F15EF800A69513 /* SDWebImageDownloader.m in Sources */,
