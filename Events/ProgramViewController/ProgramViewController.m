@@ -17,7 +17,7 @@
 #import "FeedViewController.h"
 #import "FeedCustomCell.h"
 #import "SearchResultsTableViewController.h"
-#import "SWRevealViewController.h"
+#import "PopUpViewController.h"
 
 
 @interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate>
@@ -57,11 +57,13 @@
 }
 
 
+
+
 #pragma mark - View Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
+    
     
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -75,13 +77,6 @@
     
     [tabBarController setDelegate:self];
     
-    SWRevealViewController *revealViewController = self.revealViewController;
-    if ( revealViewController )
-    {
-        [self.sidebarButton setTarget: self.revealViewController];
-        [self.sidebarButton setAction: @selector( revealToggle: )];
-        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-    }
     
     
 }
@@ -190,12 +185,14 @@
 
 #pragma mark - Popover Menu
 
--(IBAction)popoverMenu:(id)sender {
+-(IBAction)popUpView:(id)sender {
     
+        
     
-    
-    
+
 }
+
+
 
 #pragma mark - Create Event
 
