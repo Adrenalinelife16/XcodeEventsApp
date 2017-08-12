@@ -335,17 +335,6 @@
                         <sections/>
                     </tableView>
                     <navigationItem key="navigationItem" title="Events" id="UiF-4Q-GbU">
-                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="Uyq-1I-AcT">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jMw-jC-ERA">
-                                <rect key="frame" x="16" y="11" width="29" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="icons8-Menu-26.png"/>
-                                <connections>
-                                    <action selector="popUpView:" destination="XMy-k7-mqo" eventType="touchUpInside" id="AGH-6Q-hbn"/>
-                                </connections>
-                            </button>
-                            <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ec-V9-YvN">
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -1767,7 +1756,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Help Center" id="8an-5w-L1E"/>
+                    <navigationItem key="navigationItem" title="Contact Us" id="8an-5w-L1E"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="667"/>
                     <connections>
@@ -2500,7 +2489,6 @@
         <image name="ic_nav3_sel.png" width="47" height="46"/>
         <image name="ic_nav4.png" width="47" height="46"/>
         <image name="ic_nav4_sel.png" width="47" height="46"/>
-        <image name="icons8-Menu-26.png" width="26" height="26"/>
         <image name="nearby.png" width="16" height="20"/>
         <image name="no_image.png" width="540" height="360"/>
         <image name="secondpic.png" width="104" height="95"/>

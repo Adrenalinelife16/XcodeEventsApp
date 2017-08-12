@@ -196,8 +196,19 @@
     [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         
         arrayFavEvent = response;
-        [self filterFavEventsArray];
         
+        NSString *checkZero = [NSString stringWithFormat:@"0"];
+        
+        if ([response isEqualToString:@"0"]) {
+            
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Favorite Events" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [av show];
+            
+        } else {
+            
+            [self filterFavEventsArray];
+        }
+
         
     }WithFailure:^(NSString *error){
 //        [DSBezelActivityView removeViewAnimated:YES];
@@ -227,6 +238,8 @@
             
             /**Loop through each individual fav id**/
             for (NSUInteger f = 0, count = [stringId count]; f < count; f++){
+                
+                
                 
                 //Pull single event id out of stringId
                 NSString *singleId = stringId[f];

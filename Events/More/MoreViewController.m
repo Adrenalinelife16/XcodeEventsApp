@@ -39,7 +39,7 @@
      self.navigationItem.title = @"More";
     
     
-    moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", @"Help Center", nil];
+    moreArray = [[NSMutableArray alloc] initWithObjects:@"Policy Agreement", @"Terms & Conditions", @"Contact Us", nil];
     [self checkLogin];
 
     

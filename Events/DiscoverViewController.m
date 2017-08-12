@@ -31,15 +31,15 @@
     _butSeven.accessibilityLabel=@"Fishing";
     _butEight.accessibilityLabel=@"Tennis";
     _butNine.accessibilityLabel=@"Riding";
-    _butTen.accessibilityLabel=@"Baseball/Softball";
+    _butTen.accessibilityLabel=@"Baseball";
     _butEleven.accessibilityLabel=@"Billiards";
-    _butTwelve.accessibilityLabel=@"Running/Hiking";
+    _butTwelve.accessibilityLabel=@"Running";
     _butThirteen.accessibilityLabel=@"Camping";
-    _butFourteen.accessibilityLabel=@"Water Games";
+    _butFourteen.accessibilityLabel=@"Water";
     _butFifteen.accessibilityLabel=@"Climbing";
-    _butSixteen.accessibilityLabel=@"Disc Games";
+    _butSixteen.accessibilityLabel=@"Disc";
     _butSeventeen.accessibilityLabel=@"Bowling";  
-    _butEighteen.accessibilityLabel=@"Table Games";
+    _butEighteen.accessibilityLabel=@"Table";
     _butNineteen.accessibilityLabel=@"Lacrosse";
     
     

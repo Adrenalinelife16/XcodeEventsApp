@@ -142,7 +142,7 @@
          UIImage *image = [UIImage imageWithData:imageData];
          UIImage *name = [UIImage imageWithData:imageData];
          NSString *eventName = [NSString stringWithFormat:@"%@", eventObj.eventName];
-         NSString *eventDescription = [NSString stringWithFormat:@"- Find more local events and activites like this one by downloading the Adrenaline Life App Now!"];
+         NSString *eventDescription = [NSString stringWithFormat:@"- Find more local events and activities like this one by downloading the Adrenaline Life app now! #FindYourLife"];
          NSString *urlDownload = [NSString stringWithFormat:@"www.onelink.to/life"];
          
          NSArray *sharedObjects = @[name,eventName,eventDescription,urlDownload];
@@ -155,7 +155,7 @@
          
          UIImage *name = [UIImage imageNamed:@"no_image.png"];
          NSString *eventName = [NSString stringWithFormat:@"%@", eventObj.eventName];
-         NSString *eventDescription = [NSString stringWithFormat:@"- Find more local events and activites like this one by downloading the Adrenaline Life App Now!"];
+         NSString *eventDescription = [NSString stringWithFormat:@"- Find more local events and activities like this one by downloading the Adrenaline Life app now! #FindYourLife"];
          NSString *urlDownload = [NSString stringWithFormat:@"www.onelink.to/life"];
          
          NSArray *sharedObjects = @[name,eventName,eventDescription,urlDownload];
