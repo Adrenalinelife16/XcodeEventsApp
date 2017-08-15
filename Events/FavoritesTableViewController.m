@@ -71,13 +71,19 @@
 - (IBAction)Refresh:(UIRefreshControl *)sender
 {
     // Reload the data.
-    [self checkLogin];
+    if ([self checkLoginBOOL]) {
+        // Reload the table data with the new data
+        [self.tblFavTable reloadData];
+        
+        // Restore the view to normal
+        [sender endRefreshing];
+        
+    } else {
+        
+        NSLog(@"User is not logged in");
+    }
     
-    // Reload the table data with the new data
-    [self.tblFavTable reloadData];
     
-    // Restore the view to normal
-    [sender endRefreshing];
 }
 
 
@@ -98,6 +104,26 @@
     }
 
 }
+
+-(BOOL)checkLoginBOOL
+{
+    NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
+    if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
+        
+        NSLog(@"Username ID = %@", strUserID);
+    
+    else
+    {
+
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Please login to favorite an event" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [av show];
+        
+        NSLog(@"User is logged out!");
+        
+    }
+    return YES;
+}
+
 
 
 #pragma mark - Button Clicked Function
@@ -196,19 +222,19 @@
     [Utility GetDataForMethod:NSLocalizedString(@"USER_HAS_FAV_EVENT", @"USER_HAS_FAV_EVENT") parameters:dictOfParameters key:@"" withCompletion:^(id response){
         
         arrayFavEvent = response;
-        
-        NSString *checkZero = [NSString stringWithFormat:@"0"];
-        
-        if ([response isEqualToString:@"0"]) {
+
+    
+        if ([[response objectAtIndex:0] containsObject:@"0"]) {
             
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Favorite Events" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
             [av show];
             
         } else {
             
-            [self filterFavEventsArray];
+             [self filterFavEventsArray];
+            
         }
-
+     
         
     }WithFailure:^(NSString *error){
 //        [DSBezelActivityView removeViewAnimated:YES];
@@ -238,7 +264,6 @@
             
             /**Loop through each individual fav id**/
             for (NSUInteger f = 0, count = [stringId count]; f < count; f++){
-                
                 
                 
                 //Pull single event id out of stringId

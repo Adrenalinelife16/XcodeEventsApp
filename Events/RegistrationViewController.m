@@ -131,10 +131,7 @@
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:[response objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [av show];
                     
-                    [self.tabBarController setSelectedIndex:0];
-                    [self.navigationController popViewControllerAnimated:NO];
-                                    
-                }
+                    }
 
             
             [DSBezelActivityView removeViewAnimated:YES];
@@ -148,7 +145,19 @@
          
     }
 }
-         
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *string = [alertView buttonTitleAtIndex:buttonIndex];
+    
+    if ([string isEqualToString:@"OK"]) {
+        
+        [self.tabBarController setSelectedIndex:0];
+        [self.navigationController popViewControllerAnimated:NO];
+        
+    }
+    
+}
 
 
 #pragma mark - Text Field Delegates
@@ -304,16 +313,6 @@
     NSString *filtered;
     filtered = [[phoneNumber componentsSeparatedByCharactersInSet:charcter] componentsJoinedByString:@""];
     return [phoneNumber isEqualToString:filtered];
-}
-
-#pragma mark - Alert View Delegates
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (alertView.tag == 99) {
-        if (delegate) {
-            [delegate dismissRegistrationView];
-        }
-    }
 }
 
 
