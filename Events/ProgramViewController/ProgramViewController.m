@@ -187,7 +187,7 @@
 
 -(IBAction)popUpView:(id)sender {
     
-        
+    NSLog(@"Filter button pushed");
     
 
 }

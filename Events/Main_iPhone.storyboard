@@ -334,7 +334,14 @@
                         </prototypes>
                         <sections/>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Vl9-TZ-MlU"/>
                     <navigationItem key="navigationItem" title="Events" id="UiF-4Q-GbU">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="kbn-93-blG">
+                            <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="popUpView:" destination="XMy-k7-mqo" id="A6q-4K-1om"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ec-V9-YvN">
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
