@@ -44,6 +44,7 @@
     NSMutableArray *arrayEventList;
     NSMutableArray *sortedArrayEventList;
     NSDate *eventDate;
+    UIView *otherView;
     
 }
 
@@ -188,12 +189,16 @@
 
 -(IBAction)popUpView:(id)sender {
     
+    
     PopUpViewController *popUp = [self.storyboard instantiateViewControllerWithIdentifier:@"popupView"];
-    [popUp setModalPresentationStyle:UIModalPresentationFullScreen];
-    [self presentViewController:popUp animated:YES completion:NULL];
-    
+    [popUp setModalPresentationStyle:UIModalPresentationCustom];
+    [self presentViewController:popUp animated:YES completion:^{
+              
+        popUp.view.superview.frame = CGRectMake(0,0,320,200);
+        popUp.view.superview.center = self.view.center;
+    }];
 
-    
+   
 
 }
 

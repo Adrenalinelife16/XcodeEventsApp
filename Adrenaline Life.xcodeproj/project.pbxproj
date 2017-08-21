@@ -96,6 +96,8 @@
 		72F761BB1F4748D500FCA906 /* a_billiards.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761BA1F4748D500FCA906 /* a_billiards.png */; };
 		72F761BD1F4748E900FCA906 /* a_watergames.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761BC1F4748E900FCA906 /* a_watergames.png */; };
 		72F761BF1F4748F700FCA906 /* a_baseball.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761BE1F4748F600FCA906 /* a_baseball.png */; };
+		72F761C71F4B3E8200FCA906 /* icons8-Sorting Options-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761C61F4B3E8200FCA906 /* icons8-Sorting Options-25.png */; };
+		72F761C91F4B3F1300FCA906 /* icons8-Sorting Options-25 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 72F761C81F4B3F1300FCA906 /* icons8-Sorting Options-25 (1).png */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
 		7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916556719044E6900F4D9D3 /* MyEventTickets.m */; };
@@ -454,6 +456,8 @@
 		72F761BA1F4748D500FCA906 /* a_billiards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a_billiards.png; path = ../../../../../../../../var/folders/1w/_hxr6r7972922z2439263y100000gn/T/com.apple.iChat/Messages/Transfers/a_billiards.png; sourceTree = "<group>"; };
 		72F761BC1F4748E900FCA906 /* a_watergames.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a_watergames.png; path = ../../../../../../../../var/folders/1w/_hxr6r7972922z2439263y100000gn/T/com.apple.iChat/Messages/Transfers/a_watergames.png; sourceTree = "<group>"; };
 		72F761BE1F4748F600FCA906 /* a_baseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a_baseball.png; path = ../../../../../../../../var/folders/1w/_hxr6r7972922z2439263y100000gn/T/com.apple.iChat/Messages/Transfers/a_baseball.png; sourceTree = "<group>"; };
+		72F761C61F4B3E8200FCA906 /* icons8-Sorting Options-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Sorting Options-25.png"; path = "../../../../../../Downloads/icons8-Sorting Options-25.png"; sourceTree = "<group>"; };
+		72F761C81F4B3F1300FCA906 /* icons8-Sorting Options-25 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Sorting Options-25 (1).png"; path = "../../../../../../Downloads/icons8-Sorting Options-25 (1).png"; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
 		790AE0B318F9862500FBE2F2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
@@ -1336,6 +1340,8 @@
 				E202AE781EF3BCCA001B39FD /* actionbar_bg_grey1.png */,
 				72F761831F37D34700FCA906 /* icons8-Menu-64.png */,
 				72F761AA1F47482D00FCA906 /* a_running.png */,
+				72F761C81F4B3F1300FCA906 /* icons8-Sorting Options-25 (1).png */,
+				72F761C61F4B3E8200FCA906 /* icons8-Sorting Options-25.png */,
 				72F761AC1F47483E00FCA906 /* a_fitness.png */,
 				72F761B01F47488B00FCA906 /* a_frisbee.png */,
 				72F761B41F4748B100FCA906 /* a_camping.png */,
@@ -1698,6 +1704,7 @@
 				E2D37A971EEF934C00395B03 /* actionbar_bg_5.png in Resources */,
 				BB303E2518B879AA00B6EBC9 /* pic.png in Resources */,
 				7250A03D1ECA7AC300E1E9AE /* TableCell.xib in Resources */,
+				72F761C71F4B3E8200FCA906 /* icons8-Sorting Options-25.png in Resources */,
 				E279ADA91E654CAC00D3B192 /* Fishing.png in Resources */,
 				E279ADAC1E654CAC00D3B192 /* TableGames.png in Resources */,
 				7982242718F7299A009FA42E /* input.png in Resources */,
@@ -1874,6 +1881,7 @@
 				7112221818BCC14B00E77A4A /* arrow.png in Resources */,
 				72F761AB1F47482D00FCA906 /* a_running.png in Resources */,
 				72F761BD1F4748E900FCA906 /* a_watergames.png in Resources */,
+				72F761C91F4B3F1300FCA906 /* icons8-Sorting Options-25 (1).png in Resources */,
 				7972E97A195355B100F25E4D /* icon-feed-twitter@2x.png in Resources */,
 				72F761B91F4748CA00FCA906 /* a_lacrosse.png in Resources */,
 				E2D37A8D1EEF7A5000395B03 /* ic_nav2.png in Resources */,

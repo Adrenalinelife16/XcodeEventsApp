@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5lh-gn-ywd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1144" y="-3138"/>
+            <point key="canvasLocation" x="-1616" y="-3072"/>
         </scene>
         <!--ProgramViewController-->
         <scene sceneID="Zm0-gr-3hJ">
@@ -292,7 +292,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="Vl9-TZ-MlU"/>
                     <navigationItem key="navigationItem" title="Events" id="UiF-4Q-GbU">
-                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="kbn-93-blG">
+                        <barButtonItem key="leftBarButtonItem" image="icons8-Sorting Options-25.png" id="kbn-93-blG">
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="popUpView:" destination="XMy-k7-mqo" id="nsg-JC-HW3"/>
@@ -2453,6 +2453,7 @@
         <image name="ic_nav3_sel.png" width="47" height="46"/>
         <image name="ic_nav4.png" width="47" height="46"/>
         <image name="ic_nav4_sel.png" width="47" height="46"/>
+        <image name="icons8-Sorting Options-25.png" width="25" height="25"/>
         <image name="nearby.png" width="16" height="20"/>
         <image name="no_image.png" width="540" height="360"/>
         <image name="secondpic.png" width="104" height="95"/>
