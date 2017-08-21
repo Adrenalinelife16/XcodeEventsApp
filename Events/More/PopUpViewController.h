@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PopUpViewController : UINavigationController
+@interface PopUpViewController : UIViewController
+
 
 -(IBAction)dismissPopup:(id)sender;
 

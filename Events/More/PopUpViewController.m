@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.definesPresentationContext = YES;
+    self.view.backgroundColor = [UIColor clearColor];
     // Do any additional setup after loading the view.
 }
 

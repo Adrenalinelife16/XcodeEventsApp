@@ -30,6 +30,7 @@
 @property (nonatomic, strong) UISearchController *searchController;
 @property (strong, nonatomic) NSArray *results;
 
+@property (strong, nonatomic) IBOutlet UITableView *tblMainTbl;
 
 
 @property BOOL searchControllerWasActive;
@@ -187,7 +188,11 @@
 
 -(IBAction)popUpView:(id)sender {
     
-    NSLog(@"Filter button pushed");
+    PopUpViewController *popUp = [self.storyboard instantiateViewControllerWithIdentifier:@"popupView"];
+    [popUp setModalPresentationStyle:UIModalPresentationFullScreen];
+    [self presentViewController:popUp animated:YES completion:NULL];
+    
+
     
 
 }
