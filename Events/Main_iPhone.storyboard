@@ -292,10 +292,10 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="Vl9-TZ-MlU"/>
                     <navigationItem key="navigationItem" title="Events" id="UiF-4Q-GbU">
-                        <barButtonItem key="leftBarButtonItem" image="icons8-Sorting Options-25.png" id="kbn-93-blG">
+                        <barButtonItem key="leftBarButtonItem" image="Filter" id="7dK-4v-tE2">
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="popUpView:" destination="XMy-k7-mqo" id="nsg-JC-HW3"/>
+                                <action selector="popUpView:" destination="XMy-k7-mqo" id="xd1-lO-KTv"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ec-V9-YvN">
@@ -620,7 +620,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utK-J8-91L" userLabel="Yoga">
                                         <rect key="frame" x="8" y="180" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="aYoga.png"/>
+                                        <state key="normal" image="Yoga"/>
                                         <connections>
                                             <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="K9h-7s-1xM"/>
                                         </connections>
@@ -628,7 +628,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-Um-XlC" userLabel="golf">
                                         <rect key="frame" x="8" y="298" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="aGolf.png"/>
+                                        <state key="normal" image="Golf"/>
                                         <connections>
                                             <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="lvF-u8-qo7"/>
                                         </connections>
@@ -636,7 +636,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOi-qs-eEv" userLabel="Fitness">
                                         <rect key="frame" x="165" y="180" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_fitness.png"/>
+                                        <state key="normal" image="Fitness"/>
                                         <connections>
                                             <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="174-mu-M68"/>
                                         </connections>
@@ -644,7 +644,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrk-hL-Fyp" userLabel="soccer">
                                         <rect key="frame" x="8" y="-56" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="aSoccer.png"/>
+                                        <state key="normal" image="Soccer"/>
                                         <connections>
                                             <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ATN-Yk-faF"/>
                                         </connections>
@@ -652,7 +652,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvA-5v-Zbk" userLabel="football">
                                         <rect key="frame" x="8" y="62" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_football.png"/>
+                                        <state key="normal" image="Football"/>
                                         <connections>
                                             <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ClF-IV-0up"/>
                                         </connections>
@@ -660,7 +660,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJx-au-XtY" userLabel="kickball">
                                         <rect key="frame" x="165" y="-56" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="aKickball.png"/>
+                                        <state key="normal" image="Kickball"/>
                                         <connections>
                                             <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="MQb-97-S2x"/>
                                         </connections>
@@ -668,7 +668,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar1-ol-i0Q" userLabel="basketball">
                                         <rect key="frame" x="165" y="62" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="aBasketball.png"/>
+                                        <state key="normal" image="Basketball"/>
                                         <connections>
                                             <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="x58-lQ-OEq"/>
                                         </connections>
@@ -676,7 +676,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-qv-LCM" userLabel="tennis">
                                         <rect key="frame" x="8" y="416" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="aTennis.png"/>
+                                        <state key="normal" image="Tennis"/>
                                         <connections>
                                             <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="UeV-I8-Y50"/>
                                         </connections>
@@ -684,7 +684,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qb-TL-xvM" userLabel="fishing">
                                         <rect key="frame" x="165" y="298" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="aFishing.png"/>
+                                        <state key="normal" image="Fishing"/>
                                         <connections>
                                             <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="LwS-e7-TmG"/>
                                         </connections>
@@ -692,7 +692,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6d-Qv-Wgj" userLabel="riding">
                                         <rect key="frame" x="165" y="416" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_riding.png"/>
+                                        <state key="normal" image="Riding"/>
                                         <connections>
                                             <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="uyK-Rk-0Gi"/>
                                         </connections>
@@ -700,7 +700,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjd-PI-yXI" userLabel="water games">
                                         <rect key="frame" x="8" y="770" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_watergames.png"/>
+                                        <state key="normal" image="Water Games"/>
                                         <connections>
                                             <action selector="buttonFour:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="KfJ-pV-g6n"/>
                                         </connections>
@@ -708,7 +708,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtL-Jb-8Hw" userLabel="disc games">
                                         <rect key="frame" x="8" y="888" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_frisbee.png"/>
+                                        <state key="normal" image="Frisbee"/>
                                         <connections>
                                             <action selector="buttonSix:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="CUJ-p6-E1s"/>
                                         </connections>
@@ -716,7 +716,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-lq-tye" userLabel="climbing">
                                         <rect key="frame" x="165" y="770" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_climbing.png"/>
+                                        <state key="normal" image="Climbing"/>
                                         <connections>
                                             <action selector="buttonFive:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="6EA-HJ-rwd"/>
                                         </connections>
@@ -725,7 +725,7 @@
                                         <rect key="frame" x="8" y="534" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" image="a_baseball.png"/>
+                                        <state key="normal" image="Baseball"/>
                                         <connections>
                                             <action selector="buttonZero:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="3iP-jZ-S7D"/>
                                         </connections>
@@ -733,7 +733,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-NX-ZZ2" userLabel="running/ hiking">
                                         <rect key="frame" x="8" y="652" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_running.png"/>
+                                        <state key="normal" image="Running"/>
                                         <connections>
                                             <action selector="buttonTwo:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="bEj-4m-n6u"/>
                                         </connections>
@@ -741,7 +741,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4co-Ha-nSO" userLabel="billards">
                                         <rect key="frame" x="165" y="534" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_billiards.png"/>
+                                        <state key="normal" image="Billards"/>
                                         <connections>
                                             <action selector="buttonOne:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="qmD-Kr-dNv"/>
                                         </connections>
@@ -749,7 +749,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUy-jl-gSz" userLabel="table games">
                                         <rect key="frame" x="8" y="1006" width="149" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_tablegames.png"/>
+                                        <state key="normal" image="Table Games"/>
                                         <connections>
                                             <action selector="buttonEight:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="Pl1-9y-IgA"/>
                                         </connections>
@@ -757,7 +757,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-z2-Gt8" userLabel="bowling">
                                         <rect key="frame" x="165" y="888" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_bowling.png"/>
+                                        <state key="normal" image="Bowling"/>
                                         <connections>
                                             <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ivP-YB-kWw"/>
                                         </connections>
@@ -765,7 +765,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-yE-wQX" userLabel="lacrosse">
                                         <rect key="frame" x="165" y="1006" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_lacrosse.png"/>
+                                        <state key="normal" image="Lacrosse"/>
                                         <connections>
                                             <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="SaS-SM-mOy"/>
                                         </connections>
@@ -773,7 +773,7 @@
                                     <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SL-JV-upC" userLabel="camping">
                                         <rect key="frame" x="165" y="652" width="147" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="a_camping.png"/>
+                                        <state key="normal" image="Camping"/>
                                         <connections>
                                             <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="zpT-c5-l5f"/>
                                         </connections>
@@ -1951,7 +1951,7 @@
         <scene sceneID="ceR-vN-lrW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mml-vq-zwo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="events_sel.png" selectedImage="events_.png" id="TWS-hq-3Im"/>
+                    <tabBarItem key="tabBarItem" title="" image="Events" selectedImage="Events Selected" id="TWS-hq-3Im"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vdo-nW-dZc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1970,7 +1970,7 @@
         <scene sceneID="MHz-ui-Bco">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wat-zQ-9t5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_nav2_sel.png" selectedImage="ic_nav2.png" id="O87-YX-pra"/>
+                    <tabBarItem key="tabBarItem" title="" image="Social Life" selectedImage="Social Life Selected" id="O87-YX-pra"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2NW-qe-2Ra">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -2413,47 +2413,47 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Baseball" width="320" height="240"/>
+        <image name="Basketball" width="320" height="240"/>
+        <image name="Billards" width="320" height="240"/>
+        <image name="Bowling" width="320" height="240"/>
+        <image name="Camping" width="320" height="240"/>
+        <image name="Climbing" width="320" height="240"/>
+        <image name="Events" width="25" height="25"/>
+        <image name="Events Selected" width="25" height="25"/>
         <image name="FINALHIGHRESFULLLOGO.png" width="1184" height="369"/>
+        <image name="Filter" width="25" height="25"/>
+        <image name="Fishing" width="320" height="240"/>
+        <image name="Fitness" width="320" height="240"/>
+        <image name="Football" width="320" height="240"/>
+        <image name="Frisbee" width="320" height="240"/>
+        <image name="Golf" width="320" height="240"/>
         <image name="HighResIconRed.png" width="1527" height="1707"/>
+        <image name="Kickball" width="320" height="240"/>
+        <image name="Lacrosse" width="320" height="240"/>
+        <image name="Riding" width="320" height="240"/>
+        <image name="Running" width="320" height="240"/>
+        <image name="Soccer" width="320" height="240"/>
+        <image name="Social Life" width="25" height="25"/>
+        <image name="Social Life Selected" width="25" height="25"/>
+        <image name="Table Games" width="320" height="240"/>
+        <image name="Tennis" width="320" height="240"/>
         <image name="Twitter.png" width="26" height="22"/>
-        <image name="aBasketball.png" width="640" height="480"/>
-        <image name="aFishing.png" width="640" height="480"/>
-        <image name="aGolf.png" width="640" height="480"/>
-        <image name="aKickball.png" width="640" height="480"/>
-        <image name="aSoccer.png" width="640" height="480"/>
-        <image name="aTennis.png" width="640" height="480"/>
-        <image name="aYoga.png" width="640" height="480"/>
-        <image name="a_baseball.png" width="640" height="480"/>
-        <image name="a_billiards.png" width="640" height="480"/>
-        <image name="a_bowling.png" width="640" height="480"/>
-        <image name="a_camping.png" width="640" height="480"/>
-        <image name="a_climbing.png" width="640" height="480"/>
-        <image name="a_fitness.png" width="640" height="480"/>
-        <image name="a_football.png" width="640" height="480"/>
-        <image name="a_frisbee.png" width="640" height="480"/>
-        <image name="a_lacrosse.png" width="640" height="480"/>
-        <image name="a_riding.png" width="640" height="480"/>
-        <image name="a_running.png" width="640" height="480"/>
-        <image name="a_tablegames.png" width="640" height="480"/>
-        <image name="a_watergames.png" width="640" height="480"/>
+        <image name="Water Games" width="320" height="240"/>
+        <image name="Yoga" width="320" height="240"/>
         <image name="actionbar_bg_6solid.png" width="640" height="180"/>
         <image name="actionbar_bg_white.png" width="640" height="80"/>
         <image name="arrow.png" width="11" height="14"/>
         <image name="discover_.png" width="47" height="46"/>
         <image name="discover_sel.png" width="47" height="46"/>
         <image name="event-feed-mask.png" width="92" height="92"/>
-        <image name="events_.png" width="47" height="46"/>
-        <image name="events_sel.png" width="47" height="46"/>
         <image name="feedviewCell1.png" width="95" height="94"/>
         <image name="feedviewCell2.png" width="96" height="95"/>
         <image name="feedviewCell3.png" width="95" height="95"/>
-        <image name="ic_nav2.png" width="47" height="46"/>
-        <image name="ic_nav2_sel.png" width="47" height="46"/>
         <image name="ic_nav3.png" width="47" height="46"/>
         <image name="ic_nav3_sel.png" width="47" height="46"/>
         <image name="ic_nav4.png" width="47" height="46"/>
         <image name="ic_nav4_sel.png" width="47" height="46"/>
-        <image name="icons8-Sorting Options-25.png" width="25" height="25"/>
         <image name="nearby.png" width="16" height="20"/>
         <image name="no_image.png" width="540" height="360"/>
         <image name="secondpic.png" width="104" height="95"/>
@@ -2465,7 +2465,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="RPQ-X5-0np"/>
+        <segue reference="ZrE-a6-aH7"/>
         <segue reference="c3b-7q-UHr"/>
         <segue reference="okc-1f-ZH5"/>
         <segue reference="Yzg-yO-FJ6"/>

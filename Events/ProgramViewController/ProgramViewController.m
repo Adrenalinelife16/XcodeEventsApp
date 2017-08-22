@@ -192,11 +192,12 @@
     
     PopUpViewController *popUp = [self.storyboard instantiateViewControllerWithIdentifier:@"popupView"];
     [popUp setModalPresentationStyle:UIModalPresentationCustom];
-    [self presentViewController:popUp animated:YES completion:^{
+    popUp.view.superview.frame = CGRectMake(0,0,320,200);
+    popUp.view.superview.center = self.view.center;
+    [self presentViewController:popUp animated:YES completion:nil];
               
-        popUp.view.superview.frame = CGRectMake(0,0,320,200);
-        popUp.view.superview.center = self.view.center;
-    }];
+    
+   
 
    
 
