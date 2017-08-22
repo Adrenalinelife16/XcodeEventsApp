@@ -784,7 +784,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="discover_sel.png" selectedImage="discover_sel.png" id="Emj-od-rTF"/>
+                    <tabBarItem key="tabBarItem" title="" image="Discover" selectedImage="Discover Selected" id="Emj-od-rTF"/>
                     <navigationItem key="navigationItem" id="a40-XR-67K"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1647,7 +1647,7 @@
                             <outlet property="delegate" destination="XD6-ka-Wa6" id="qo5-fA-ZVz"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="ic_nav4_sel.png" selectedImage="ic_nav4.png" id="Jz4-Is-M6B"/>
+                    <tabBarItem key="tabBarItem" title="" image="More" selectedImage="More Selected" id="Jz4-Is-M6B"/>
                     <navigationItem key="navigationItem" id="ntU-5v-DPG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1669,7 +1669,7 @@
         <scene sceneID="FmA-aa-wp5">
             <objects>
                 <navigationController definesPresentationContext="YES" id="w6F-4W-hwU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="discover_sel.png" selectedImage="discover_.png" id="TIV-OW-V25"/>
+                    <tabBarItem key="tabBarItem" title="" image="Discover" selectedImage="Discover Selected" id="TIV-OW-V25"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5gO-R5-nLV">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2419,6 +2419,8 @@
         <image name="Bowling" width="320" height="240"/>
         <image name="Camping" width="320" height="240"/>
         <image name="Climbing" width="320" height="240"/>
+        <image name="Discover" width="25" height="25"/>
+        <image name="Discover Selected" width="25" height="25"/>
         <image name="Events" width="25" height="25"/>
         <image name="Events Selected" width="25" height="25"/>
         <image name="FINALHIGHRESFULLLOGO.png" width="1184" height="369"/>
@@ -2431,6 +2433,8 @@
         <image name="HighResIconRed.png" width="1527" height="1707"/>
         <image name="Kickball" width="320" height="240"/>
         <image name="Lacrosse" width="320" height="240"/>
+        <image name="More" width="25" height="25"/>
+        <image name="More Selected" width="25" height="25"/>
         <image name="Riding" width="320" height="240"/>
         <image name="Running" width="320" height="240"/>
         <image name="Soccer" width="320" height="240"/>
@@ -2444,16 +2448,12 @@
         <image name="actionbar_bg_6solid.png" width="640" height="180"/>
         <image name="actionbar_bg_white.png" width="640" height="80"/>
         <image name="arrow.png" width="11" height="14"/>
-        <image name="discover_.png" width="47" height="46"/>
-        <image name="discover_sel.png" width="47" height="46"/>
         <image name="event-feed-mask.png" width="92" height="92"/>
         <image name="feedviewCell1.png" width="95" height="94"/>
         <image name="feedviewCell2.png" width="96" height="95"/>
         <image name="feedviewCell3.png" width="95" height="95"/>
         <image name="ic_nav3.png" width="47" height="46"/>
         <image name="ic_nav3_sel.png" width="47" height="46"/>
-        <image name="ic_nav4.png" width="47" height="46"/>
-        <image name="ic_nav4_sel.png" width="47" height="46"/>
         <image name="nearby.png" width="16" height="20"/>
         <image name="no_image.png" width="540" height="360"/>
         <image name="secondpic.png" width="104" height="95"/>
@@ -2465,10 +2465,10 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ZrE-a6-aH7"/>
+        <segue reference="RPQ-X5-0np"/>
         <segue reference="c3b-7q-UHr"/>
+        <segue reference="ymL-KN-Yv3"/>
         <segue reference="okc-1f-ZH5"/>
-        <segue reference="Yzg-yO-FJ6"/>
         <segue reference="C9L-jn-ty6"/>
         <segue reference="U3F-sb-sE9"/>
         <segue reference="6n8-q3-lxy"/>
