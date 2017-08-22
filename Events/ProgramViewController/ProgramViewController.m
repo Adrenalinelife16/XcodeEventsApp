@@ -189,20 +189,29 @@
 
 -(IBAction)popUpView:(id)sender {
     
-    
+    [self disableInteraction];
     PopUpViewController *popUp = [self.storyboard instantiateViewControllerWithIdentifier:@"popupView"];
     [popUp setModalPresentationStyle:UIModalPresentationCustom];
-    popUp.view.superview.frame = CGRectMake(0,0,320,200);
-    popUp.view.superview.center = self.view.center;
-    [self presentViewController:popUp animated:YES completion:nil];
+    [self presentViewController:popUp animated:YES completion:^{
               
-    
-   
-
-   
+        popUp.view.superview.frame = CGRectMake(0,0,320,200);
+        popUp.view.superview.center = self.view.center;
+    }];
 
 }
 
+
+-(void)disableInteraction {
+    
+    
+   
+    
+    
+    
+    
+
+    
+}
 
 
 #pragma mark - Create Event

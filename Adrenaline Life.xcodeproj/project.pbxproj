@@ -1528,6 +1528,9 @@
 		BB303D8E18B863E300B6EBC9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					100,
+				);
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Adrenaline Life";
 				TargetAttributes = {

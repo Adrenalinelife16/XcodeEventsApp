@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icons8-Cave Filled-50 (1).png",
+      "filename" : "icons8-Cave Filled-40.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icons8-Cave Filled-50 (1)-1.png",
+      "filename" : "icons8-Cave Filled-41.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icons8-Cave Filled-50 (1)-2.png",
+      "filename" : "icons8-Cave Filled-42.png",
       "scale" : "3x"
     }
   ],

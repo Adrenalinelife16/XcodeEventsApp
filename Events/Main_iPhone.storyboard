@@ -1989,7 +1989,7 @@
         <scene sceneID="u2T-EW-rju">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dlv-Lj-Hfo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_nav3_sel.png" selectedImage="ic_nav3.png" id="oVN-HQ-A1h"/>
+                    <tabBarItem key="tabBarItem" title="" image="Calendar" selectedImage="Calendar Selected" id="oVN-HQ-A1h"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dOz-Be-Idu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wyX-3r-IYA">
@@ -2417,6 +2417,8 @@
         <image name="Basketball" width="320" height="240"/>
         <image name="Billards" width="320" height="240"/>
         <image name="Bowling" width="320" height="240"/>
+        <image name="Calendar" width="25" height="25"/>
+        <image name="Calendar Selected" width="25" height="25"/>
         <image name="Camping" width="320" height="240"/>
         <image name="Climbing" width="320" height="240"/>
         <image name="Discover" width="25" height="25"/>
@@ -2452,8 +2454,6 @@
         <image name="feedviewCell1.png" width="95" height="94"/>
         <image name="feedviewCell2.png" width="96" height="95"/>
         <image name="feedviewCell3.png" width="95" height="95"/>
-        <image name="ic_nav3.png" width="47" height="46"/>
-        <image name="ic_nav3_sel.png" width="47" height="46"/>
         <image name="nearby.png" width="16" height="20"/>
         <image name="no_image.png" width="540" height="360"/>
         <image name="secondpic.png" width="104" height="95"/>
@@ -2466,12 +2466,12 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="RPQ-X5-0np"/>
+        <segue reference="Pt4-qg-fXb"/>
+        <segue reference="C9L-jn-ty6"/>
+        <segue reference="6n8-q3-lxy"/>
+        <segue reference="GQZ-yq-JN7"/>
         <segue reference="c3b-7q-UHr"/>
         <segue reference="ymL-KN-Yv3"/>
         <segue reference="okc-1f-ZH5"/>
-        <segue reference="C9L-jn-ty6"/>
-        <segue reference="U3F-sb-sE9"/>
-        <segue reference="6n8-q3-lxy"/>
-        <segue reference="GQZ-yq-JN7"/>
     </inferredMetricsTieBreakers>
 </document>

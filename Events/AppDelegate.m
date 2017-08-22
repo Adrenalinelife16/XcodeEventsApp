@@ -26,7 +26,7 @@
  //   [[UITabBar appearance] setTintColor:[UIColor blackColor]];
   
     
-//    [[UITabBar appearance] setUnselectedItemTintColor:[UIColor blackColor]];
+    [[UITabBar appearance] setUnselectedItemTintColor:[UIColor blackColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
     
     
