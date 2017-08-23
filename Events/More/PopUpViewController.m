@@ -32,7 +32,7 @@
     
     [self.tblPopUp reloadData];
     tblPopUp.allowsMultipleSelection = YES;
-    
+    tblPopUp.userInteractionEnabled = YES;
     
 }
 
@@ -90,8 +90,14 @@
 
 -(IBAction)dismissPopup:(id)sender {
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+   
+    [[[[self.tabBarController tabBar]items]objectAtIndex:0]setEnabled:TRUE];
+    [[[[self.tabBarController tabBar]items]objectAtIndex:1]setEnabled:TRUE];
+    [[[[self.tabBarController tabBar]items]objectAtIndex:2]setEnabled:TRUE];
+    [[[[self.tabBarController tabBar]items]objectAtIndex:3]setEnabled:TRUE];
+    [[[[self.tabBarController tabBar]items]objectAtIndex:4]setEnabled:TRUE];
     
+     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

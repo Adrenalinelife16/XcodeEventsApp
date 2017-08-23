@@ -208,6 +208,12 @@
 -(void)disableInteraction {
     
     [self.navigationController.view addSubview:_myViewFromNib];
+    [[[[self.tabBarController tabBar]items]objectAtIndex:0]setEnabled:FALSE];
+    [[[[self.tabBarController tabBar]items]objectAtIndex:1]setEnabled:FALSE];
+    [[[[self.tabBarController tabBar]items]objectAtIndex:2]setEnabled:FALSE];
+    [[[[self.tabBarController tabBar]items]objectAtIndex:3]setEnabled:FALSE];
+    [[[[self.tabBarController tabBar]items]objectAtIndex:4]setEnabled:FALSE];
+
 }
 
 
