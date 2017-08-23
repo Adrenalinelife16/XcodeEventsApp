@@ -44,8 +44,8 @@
     
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
+-(void)viewWillAppear:(BOOL)animated {
+    
     [super viewWillAppear:animated];
     self.navigationItem.title = @"Find Your Life";
     [self.navigationController.navigationBar setTitleTextAttributes:

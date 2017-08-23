@@ -20,6 +20,7 @@
 #import "PopUpViewController.h"
 
 
+
 @interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate>
 
 
@@ -31,6 +32,8 @@
 @property (strong, nonatomic) NSArray *results;
 
 @property (strong, nonatomic) IBOutlet UITableView *tblMainTbl;
+@property (nonatomic, retain) IBOutlet UIView *myViewFromNib;
+
 
 
 @property BOOL searchControllerWasActive;
@@ -44,7 +47,8 @@
     NSMutableArray *arrayEventList;
     NSMutableArray *sortedArrayEventList;
     NSDate *eventDate;
-    UIView *otherView;
+    UIView *dimView;
+ 
     
 }
 
@@ -72,7 +76,6 @@
     NSDate *currentDate =   [NSDate date];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
-    
     
     
     UITabBarController *tabBarController = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController ;
@@ -192,25 +195,19 @@
     [self disableInteraction];
     PopUpViewController *popUp = [self.storyboard instantiateViewControllerWithIdentifier:@"popupView"];
     [popUp setModalPresentationStyle:UIModalPresentationCustom];
+   
     [self presentViewController:popUp animated:YES completion:^{
               
         popUp.view.superview.frame = CGRectMake(0,0,320,200);
         popUp.view.superview.center = self.view.center;
     }];
-
+    
 }
 
 
 -(void)disableInteraction {
     
-    
-   
-    
-    
-    
-    
-
-    
+    [self.navigationController.view addSubview:_myViewFromNib];
 }
 
 

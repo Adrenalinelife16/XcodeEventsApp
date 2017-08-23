@@ -81,6 +81,7 @@
 		72E4175C1F046C4A00E6F81A /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */; };
 		72ED09881F01405500F60832 /* AttendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ED09871F01405500F60832 /* AttendingViewController.m */; };
 		72F761A91F3E286300FCA906 /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F761A81F3E286300FCA906 /* PopUpViewController.m */; };
+		72F761CD1F4C87B800FCA906 /* DisableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F761CC1F4C87B800FCA906 /* DisableView.xib */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
 		7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916556719044E6900F4D9D3 /* MyEventTickets.m */; };
@@ -401,6 +402,7 @@
 		72ED09871F01405500F60832 /* AttendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendingViewController.m; sourceTree = "<group>"; };
 		72F761A71F3E286300FCA906 /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpViewController.h; sourceTree = "<group>"; };
 		72F761A81F3E286300FCA906 /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
+		72F761CC1F4C87B800FCA906 /* DisableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisableView.xib; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
 		790AE0B318F9862500FBE2F2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
@@ -1211,6 +1213,7 @@
 				7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */,
 				721BEE451EB17CB500C2DB6F /* Main_iPad.storyboard */,
 				7250A03C1ECA7AC300E1E9AE /* TableCell.xib */,
+				72F761CC1F4C87B800FCA906 /* DisableView.xib */,
 				BB303DB118B863E300B6EBC9 /* ViewController.h */,
 				BB303DB218B863E300B6EBC9 /* ViewController.m */,
 				BB303DB418B863E300B6EBC9 /* Images.xcassets */,
@@ -1635,6 +1638,7 @@
 				7122DB2918BB4BDB00C044E8 /* feedviewCell6.png in Resources */,
 				E279ADAA1E654CAC00D3B192 /* Golf.png in Resources */,
 				7972E97C195355B100F25E4D /* white-cell@2x.png in Resources */,
+				72F761CD1F4C87B800FCA906 /* DisableView.xib in Resources */,
 				7225BD201E4AA78200A35D30 /* Notes in Resources */,
 				E22DC9F81EFB812200A98DA7 /* actionbar_bg_white.png in Resources */,
 				BB303E0418B86B3400B6EBC9 /* Livello3@2x.png in Resources */,

@@ -9,8 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface PopUpViewController : UIViewController
+{
+    NSMutableArray *daysOfWeek;
+}
 
+
+
+
+@property (strong, nonatomic) IBOutlet UITableView *tblPopUp;
 
 -(IBAction)dismissPopup:(id)sender;
+
+
 
 @end
