@@ -67,7 +67,7 @@
     
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneTouched:)];
     
-    [[UIBarButtonItem appearance] setTintColor:COMMON_COLOR_RED];
+    doneButton.tintColor = [UIColor whiteColor];
     
     [toolBar setItems:[NSArray arrayWithObjects:doneButton, nil]];
     self.filterDay.inputAccessoryView = toolBar;
@@ -118,60 +118,6 @@
     }
 }
 
-/*
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    
-    return [daysOfWeek count];
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *simpleTableIdentifier = @"DaysofWeek";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
-    
-    
-    cell.textLabel.text = [daysOfWeek objectAtIndex:indexPath.row];
-    
-    return cell;
-    
-    
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath   *)indexPath
-{
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
-    
-    
-    
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    selectedCellText = cell.textLabel.text;
-    
-    
-}
-
-
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
-}
-*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -183,22 +129,20 @@
          [self performSegueWithIdentifier:@"filterDays" sender:sender];
     
 }
-/*
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+
 {
+     NSString *filteredDay = [_filterDay text];
+    
+    
     
     if ([[segue identifier] isEqualToString:@"filterDays"]) {
         ProgramViewController *destinationView = [segue destinationViewController];
-        NSIndexPath *selectedIndexPath = [self.tblPopup indexPathForSelectedRow];
-        UITableViewCell *cell = [self.tblPopup cellForRowAtIndexPath:selectedIndexPath];
-        destinationView.filterText = cell.textLabel.text;
-      //  [destinationView filterProgramArray];
-
+        destinationView.filterText = filteredDay;
+        
     }
 }
-*/
-
-
 
 @end
