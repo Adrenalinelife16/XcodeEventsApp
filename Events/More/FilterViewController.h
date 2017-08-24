@@ -10,13 +10,9 @@
 
 @interface FilterViewController : UIViewController
 {
-    NSMutableArray *daysOfWeek;
     NSMutableArray *storeDaysWeek;
+
 }
-
-@property (nonatomic, copy) NSString* selectedCellText;
-
-@property (strong, nonatomic) IBOutlet UITableView *tblPopup;
 
 
 -(IBAction)dismissFilter:(id)sender;
