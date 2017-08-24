@@ -121,7 +121,7 @@
         <!--Filter View Controller-->
         <scene sceneID="KaO-x6-2kX">
             <objects>
-                <viewController storyboardIdentifier="popupView" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rNA-cb-a8K" customClass="FilterViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="popupView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rNA-cb-a8K" customClass="FilterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jO0-LY-YnK"/>
                         <viewControllerLayoutGuide type="bottom" id="cp8-U5-WsI"/>

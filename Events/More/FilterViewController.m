@@ -31,6 +31,8 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     
+    [self.tabBarController.tabBar setHidden:YES];
+    
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
     [self.navigationItem setTitle:@"Filter"];

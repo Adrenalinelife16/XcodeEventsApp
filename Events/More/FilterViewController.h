@@ -20,6 +20,6 @@
 
 
 -(IBAction)dismissFilter:(id)sender;
--(void)filterProgramArray;
+
 
 @end

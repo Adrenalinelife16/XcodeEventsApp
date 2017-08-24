@@ -94,6 +94,8 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     
+      [self.tabBarController.tabBar setHidden:NO];
+    
     
     [super viewWillAppear:YES];
     self.navigationItem.title = @"Events";
