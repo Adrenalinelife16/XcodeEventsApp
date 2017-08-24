@@ -18,6 +18,9 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *filterDay;
 
+@property (weak, nonatomic) IBOutlet UISlider *sldDistance;
+@property (weak, nonatomic) IBOutlet UILabel *distancelbl;
+
 
 
 @end
@@ -31,6 +34,9 @@
 - (void)viewDidLoad {
 
      [super viewDidLoad];
+     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    
+
     
     self.pickerView = [[UIPickerView alloc]init];
     
@@ -126,14 +132,22 @@
     
 }
 
+- (IBAction)sliderValueChanged:(id)sender {
+    
+    
+    
+    self.distancelbl.text = [NSString stringWithFormat:@"%.0f", self.sldDistance.value];
+    
+    
+    
+    
+}
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 
 {
      NSString *filteredDay = [_filterDay text];
-    
-    
     
     if ([[segue identifier] isEqualToString:@"filterDays"]) {
         ProgramViewController *destinationView = [segue destinationViewController];
