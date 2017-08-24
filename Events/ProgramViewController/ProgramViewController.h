@@ -13,15 +13,10 @@
 
 @interface ProgramViewController : UITableViewController
 
-
-
-
+@property (nonatomic, retain) NSString *filterText;
 
 -(IBAction)createEvent:(id)sender;
 
--(IBAction)popUpView:(id)sender;
-
-
-
+-(void)filterProgramArray;
 
 @end

@@ -1,27 +1,28 @@
 //
-//  PopUpViewController.m
+//  FilterViewController.m
 //  Adrenaline Life
 //
 //  Created by Michael Cather on 8/11/17.
 //  Copyright © 2017 Adrenaline Life. All rights reserved.
 //
 
-#import "PopUpViewController.h"
+#import "FilterViewController.h"
+#import "ProgramViewController.h"
 
 
-@interface PopUpViewController () <UITableViewDelegate,UITableViewDataSource>
+@interface FilterViewController () <UITableViewDelegate,UITableViewDataSource>
 
 
 @end
 
-@implementation PopUpViewController
-@synthesize tblPopUp;
+@implementation FilterViewController
+@synthesize selectedCellText;
+@synthesize tblPopup;
 
 
 - (void)viewDidLoad {
 
      [super viewDidLoad];
-    
     
     
     daysOfWeek = [[NSMutableArray alloc] initWithObjects:@"Sunday", @"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday", nil];
@@ -30,9 +31,12 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     
-    [self.tblPopUp reloadData];
-    tblPopUp.allowsMultipleSelection = YES;
-    tblPopUp.userInteractionEnabled = YES;
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    [self.navigationItem setTitle:@"Filter"];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
     
 }
 
@@ -74,6 +78,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath   *)indexPath
 {
     [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+    
+    
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    selectedCellText = cell.textLabel.text;
+    
+    
 }
 
 
@@ -88,17 +99,26 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)dismissPopup:(id)sender {
+-(IBAction)dismissFilter:(id)sender {
     
-   
-    [[[[self.tabBarController tabBar]items]objectAtIndex:0]setEnabled:TRUE];
-    [[[[self.tabBarController tabBar]items]objectAtIndex:1]setEnabled:TRUE];
-    [[[[self.tabBarController tabBar]items]objectAtIndex:2]setEnabled:TRUE];
-    [[[[self.tabBarController tabBar]items]objectAtIndex:3]setEnabled:TRUE];
-    [[[[self.tabBarController tabBar]items]objectAtIndex:4]setEnabled:TRUE];
-    
-     [self dismissViewControllerAnimated:YES completion:nil];
+         [self performSegueWithIdentifier:@"filterDays" sender:sender];
     
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([[segue identifier] isEqualToString:@"filterDays"]) {
+        ProgramViewController *destinationView = [segue destinationViewController];
+        NSIndexPath *selectedIndexPath = [self.tblPopup indexPathForSelectedRow];
+        UITableViewCell *cell = [self.tblPopup cellForRowAtIndexPath:selectedIndexPath];
+        destinationView.filterText = cell.textLabel.text;
+      //  [destinationView filterProgramArray];
+
+    }
+}
+
+
+
 
 @end

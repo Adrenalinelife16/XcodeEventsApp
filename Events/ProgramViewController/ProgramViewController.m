@@ -17,7 +17,7 @@
 #import "FeedViewController.h"
 #import "FeedCustomCell.h"
 #import "SearchResultsTableViewController.h"
-#import "PopUpViewController.h"
+#import "FilterViewController.h"
 
 
 
@@ -35,23 +35,24 @@
 @property (nonatomic, retain) IBOutlet UIView *myViewFromNib;
 
 
-
 @property BOOL searchControllerWasActive;
 @property BOOL searchControllerSearchFieldWasFirstResponder;
 
 @end
 
 @implementation ProgramViewController
+
 {
     
     NSMutableArray *arrayEventList;
     NSMutableArray *sortedArrayEventList;
+    NSArray *filteredEvents;
     NSDate *eventDate;
     UIView *dimView;
  
     
 }
-
+@synthesize filterText;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -91,8 +92,9 @@
 }
 
 
--(void)viewWillAppear:(BOOL)animated
-{
+-(void)viewWillAppear:(BOOL)animated {
+    
+    
     [super viewWillAppear:YES];
     self.navigationItem.title = @"Events";
     [self.navigationController.navigationBar setTitleTextAttributes:
@@ -127,8 +129,7 @@
     
     
     // End
-   
-
+    
     self.searchController.hidesNavigationBarDuringPresentation = NO;
 
     
@@ -140,8 +141,16 @@
 
     [Utility afterDelay:0.01 withCompletion:^{
    //     [DSBezelActivityView newActivityViewForView:self.view.window];
-        [self getEventListFromServer];
+  //  [self getEventListFromServer];
     }];
+    
+    
+    if ([filterText length] == 0) {
+        [self getEventListFromServer];
+    } else {
+        [self filterProgramArray];
+    }
+    
     
     
     
@@ -175,7 +184,7 @@
     [searchBar resignFirstResponder];
 }
 
-
+/*
 - (IBAction)Refresh:(UIRefreshControl *)sender
 {
     // Reload the data.
@@ -187,35 +196,24 @@
     // Restore the view to normal
     [sender endRefreshing];
 }
-
-#pragma mark - Popover Menu
-
--(IBAction)popUpView:(id)sender {
+*/
+-(void)filterProgramArray {
     
-    [self disableInteraction];
-    PopUpViewController *popUp = [self.storyboard instantiateViewControllerWithIdentifier:@"popupView"];
-    [popUp setModalPresentationStyle:UIModalPresentationCustom];
-   
-    [self presentViewController:popUp animated:YES completion:^{
-              
-        popUp.view.superview.frame = CGRectMake(0,0,320,200);
-        popUp.view.superview.center = self.view.center;
-    }];
+    
+    NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"eventStartDateTime CONTAINS[cd] %@", filterText];
+    NSArray *beginWithB = [gArrayEvents filteredArrayUsingPredicate:bPredicate];
+    
+    
+    filteredEvents = beginWithB;
+    
+    NSMutableArray *array = [[NSMutableArray alloc]initWithArray:filteredEvents];
+    
+    arrayEventList = array;
+    
+    [self.tblMainTbl reloadData];
+    
     
 }
-
-
--(void)disableInteraction {
-    
-    [self.navigationController.view addSubview:_myViewFromNib];
-    [[[[self.tabBarController tabBar]items]objectAtIndex:0]setEnabled:FALSE];
-    [[[[self.tabBarController tabBar]items]objectAtIndex:1]setEnabled:FALSE];
-    [[[[self.tabBarController tabBar]items]objectAtIndex:2]setEnabled:FALSE];
-    [[[[self.tabBarController tabBar]items]objectAtIndex:3]setEnabled:FALSE];
-    [[[[self.tabBarController tabBar]items]objectAtIndex:4]setEnabled:FALSE];
-
-}
-
 
 #pragma mark - Create Event
 
@@ -391,7 +389,7 @@
     }
     
     
-    EventList *obj = [arrayEventList objectAtIndex:indexPath.row];
+    EventList *obj = [arrayEventList objectAtIndex:indexPath.row];  // arrayEventList
 
     cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
     cell.lblEventName.text  =   obj.eventName;

@@ -80,7 +80,7 @@
 		72E417561F043A3600E6F81A /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E417551F043A3600E6F81A /* CalendarViewController.m */; };
 		72E4175C1F046C4A00E6F81A /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */; };
 		72ED09881F01405500F60832 /* AttendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ED09871F01405500F60832 /* AttendingViewController.m */; };
-		72F761A91F3E286300FCA906 /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F761A81F3E286300FCA906 /* PopUpViewController.m */; };
+		72F761A91F3E286300FCA906 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F761A81F3E286300FCA906 /* FilterViewController.m */; };
 		72F761CD1F4C87B800FCA906 /* DisableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F761CC1F4C87B800FCA906 /* DisableView.xib */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
@@ -400,8 +400,8 @@
 		72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
 		72ED09861F01405500F60832 /* AttendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendingViewController.h; sourceTree = "<group>"; };
 		72ED09871F01405500F60832 /* AttendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendingViewController.m; sourceTree = "<group>"; };
-		72F761A71F3E286300FCA906 /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpViewController.h; sourceTree = "<group>"; };
-		72F761A81F3E286300FCA906 /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
+		72F761A71F3E286300FCA906 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		72F761A81F3E286300FCA906 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		72F761CC1F4C87B800FCA906 /* DisableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisableView.xib; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
@@ -887,13 +887,13 @@
 			name = "Attending Controller";
 			sourceTree = "<group>";
 		};
-		72F761A61F3E284200FCA906 /* Pop Up View */ = {
+		72F761A61F3E284200FCA906 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
-				72F761A71F3E286300FCA906 /* PopUpViewController.h */,
-				72F761A81F3E286300FCA906 /* PopUpViewController.m */,
+				72F761A71F3E286300FCA906 /* FilterViewController.h */,
+				72F761A81F3E286300FCA906 /* FilterViewController.m */,
 			);
-			name = "Pop Up View";
+			name = Filter;
 			path = More;
 			sourceTree = "<group>";
 		};
@@ -1205,7 +1205,7 @@
 				72ED09811F001BE800F60832 /* Favorites Controller */,
 				72ED09821F001C1B00F60832 /* Attending Controller */,
 				BB303E3D18B88D3600B6EBC9 /* FeedViewController */,
-				72F761A61F3E284200FCA906 /* Pop Up View */,
+				72F761A61F3E284200FCA906 /* Filter */,
 				BB303E3118B8801C00B6EBC9 /* ProgramViewController */,
 				BB303E2D18B87FB400B6EBC9 /* TabBarController */,
 				BB303DA818B863E300B6EBC9 /* AppDelegate.h */,
@@ -1828,7 +1828,7 @@
 				7122DB1418BB1F7300C044E8 /* SecondFeedCustomCell.m in Sources */,
 				7987137C18F0748800727E1A /* MyAnnotation.m in Sources */,
 				BB303DAA18B863E300B6EBC9 /* AppDelegate.m in Sources */,
-				72F761A91F3E286300FCA906 /* PopUpViewController.m in Sources */,
+				72F761A91F3E286300FCA906 /* FilterViewController.m in Sources */,
 				722DAF191EB815FF00F4D808 /* SearchResultsTableViewController.m in Sources */,
 				72AF697D1E7843990033DB1F /* TabBarCenterIcon.m in Sources */,
 				798D9DFF18F15EE900A69513 /* SDWebImageCompat.m in Sources */,
