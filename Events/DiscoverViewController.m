@@ -52,7 +52,10 @@
     self.navigationItem.title = @"Discover";
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationController.navigationBar.translucent = YES;
+
 }
+
 
 - (void)viewDidLayoutSubviews
 {

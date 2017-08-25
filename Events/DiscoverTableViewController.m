@@ -35,6 +35,8 @@
     [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 
+
+
     
     [self getAllEventsFromServer];
     
@@ -45,7 +47,11 @@
     self.navigationItem.title = discoverText;
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationController.navigationBar.translucent = NO;
+
+
 }
+
 
 
 - (void)didReceiveMemoryWarning {

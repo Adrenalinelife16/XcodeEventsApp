@@ -36,6 +36,8 @@
      [super viewDidLoad];
      self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     
+  //  self.navigationController.navigationBar.translucent = NO;
+    
 
     
     self.pickerView = [[UIPickerView alloc]init];
@@ -56,6 +58,8 @@
 -(void)viewWillAppear:(BOOL)animated {
     
     [self.tabBarController.tabBar setHidden:YES];
+    self.navigationController.navigationBar.translucent = YES;
+    
     
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
@@ -69,11 +73,16 @@
     UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(doneTouched:)];
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
+    
   
     doneBtn.tintColor = [UIColor whiteColor];
 
     self.filterDay.inputAccessoryView = toolBar;
     
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 - (void)doneTouched:(UIBarButtonItem *)sender {
