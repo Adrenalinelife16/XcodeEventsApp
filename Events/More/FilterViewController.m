@@ -35,9 +35,6 @@
 
      [super viewDidLoad];
      self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    
-  //  self.navigationController.navigationBar.translucent = NO;
-    
 
     
     self.pickerView = [[UIPickerView alloc]init];
@@ -146,9 +143,7 @@
     
     
     self.distancelbl.text = [NSString stringWithFormat:@"%.0f", self.sldDistance.value];
-    
-    
-    
+     
     
 }
 

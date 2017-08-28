@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 
 
 
-@interface ProgramViewController : UITableViewController
+@interface ProgramViewController : UITableViewController <CLLocationManagerDelegate>
 
 @property (nonatomic, retain) NSString *filterText;
 

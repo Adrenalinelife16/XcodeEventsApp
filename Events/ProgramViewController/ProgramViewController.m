@@ -21,7 +21,7 @@
 
 
 
-@interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate>
+@interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate,CLLocationManagerDelegate>
 
 
 @property (nonatomic, strong) SearchResultsTableViewController *resultsTableController;
@@ -49,6 +49,7 @@
     NSArray *filteredEvents;
     NSDate *eventDate;
     UIView *dimView;
+    CLLocationManager *locationManager;
  
     
 }
@@ -71,6 +72,8 @@
 {
     [super viewDidLoad];
     
+    self.navigationItem.titleView = self.searchController.searchBar;
+    
     
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -83,37 +86,36 @@
     
     [tabBarController setDelegate:self];
     
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+        [self->locationManager requestWhenInUseAuthorization];
+    
+    [locationManager startUpdatingLocation];
     
     
-}
-
--(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    [self.tableView setContentOffset:CGPointZero animated:YES];
-}
-
-
--(void)viewWillAppear:(BOOL)animated {
-    
-      [self.tabBarController.tabBar setHidden:NO];
-  
-    
-    
-    [super viewWillAppear:YES];
-    self.navigationItem.title = @"Events";
-    [self.navigationController.navigationBar setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    self.searchController.searchBar.barTintColor = [UIColor grayColor];
-
     // Start
     
     _resultsTableController = [[SearchResultsTableViewController alloc] init];
     _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
+    
+    
     self.searchController.searchResultsUpdater = self;
     [self.searchController.searchBar sizeToFit];
-    [self.searchController.searchBar setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6solid.png"]];
+
     
     
-    self.tableView.tableHeaderView = self.searchController.searchBar;
+//    [self.searchController.searchBar setBackgroundImage:[UIImage imageNamed:@""]];
+
+    
+    
+    self.navigationItem.titleView = self.searchController.searchBar;
+    
+    
+    
     
     // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
     self.resultsTableController.tableView.delegate = self;
@@ -132,6 +134,35 @@
     
     
     // End
+
+    
+    
+    
+    
+}
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *location = [locations lastObject];
+    NSLog(@"lat%f - lon%f", location.coordinate.latitude, location.coordinate.longitude);
+}
+
+
+-(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    [self.tableView setContentOffset:CGPointZero animated:YES];
+}
+
+
+-(void)viewWillAppear:(BOOL)animated {
+    
+    
+      [self.tabBarController.tabBar setHidden:NO];
+  
+    
+    
+    [super viewWillAppear:YES];
+
+    self.searchController.searchBar.barTintColor = [UIColor grayColor];
+
     
     self.searchController.hidesNavigationBarDuringPresentation = NO;
 
@@ -169,10 +200,11 @@
     }
     
 }
+/*
 
 - (void)willPresentSearchController:(UISearchController *)searchController {
     // do something before the search controller is presented
-    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 -(void)willDismissSearchController:(UISearchController *)searchController
@@ -181,13 +213,15 @@
 }
 
 
+*/
+
 #pragma mark - UISearchBarDelegate
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [searchBar resignFirstResponder];
 }
 
-/*
+
 - (IBAction)Refresh:(UIRefreshControl *)sender
 {
     // Reload the data.
@@ -199,7 +233,7 @@
     // Restore the view to normal
     [sender endRefreshing];
 }
-*/
+
 -(void)filterProgramArray {
     
     
@@ -218,10 +252,12 @@
     
 }
 
+
 #pragma mark - Create Event
 
 -(IBAction)createEvent:(id)sender {
-  
+    
+    
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
         

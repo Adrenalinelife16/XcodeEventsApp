@@ -91,6 +91,8 @@
     [self checkLogin];
     [self checkUserFavorite];
     
+    self.eventLocationMapView.showsUserLocation=YES;
+    
 
     
     descriptionTextHeight = [Utility getTextSize:self.eventObj.eventDescription textWidth:300 fontSize:14.0f lineBreakMode:NSLineBreakByWordWrapping].height;

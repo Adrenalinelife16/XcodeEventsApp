@@ -130,6 +130,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="kUo-Ox-4fQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Filter by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSN-4v-Snl">
                                 <rect key="frame" x="32" y="89" width="124" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -145,10 +149,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="kUo-Ox-4fQ">
-                                <rect key="frame" x="0.0" y="64" width="320" height="603"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance in Miles:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDO-pU-Pxm">
+                                <rect key="frame" x="32" y="201" width="141" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqn-o8-oe1">
+                                <rect key="frame" x="170" y="201" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="buF-qZ-1Uv">
+                                <rect key="frame" x="30" y="230" width="261" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="rNA-cb-a8K" eventType="valueChanged" id="AIj-HB-reE"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -168,7 +190,9 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="distancelbl" destination="wqn-o8-oe1" id="feM-9O-Ufe"/>
                         <outlet property="filterDay" destination="uTI-Gk-hbR" id="bia-35-8XQ"/>
+                        <outlet property="sldDistance" destination="buF-qZ-1Uv" id="3eX-Uf-Z5f"/>
                         <segue destination="XMy-k7-mqo" kind="push" identifier="filterDays" id="y99-Lt-F1b"/>
                     </connections>
                 </viewController>
@@ -262,14 +286,16 @@
                         <sections/>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="Vl9-TZ-MlU"/>
-                    <navigationItem key="navigationItem" title="Events" id="UiF-4Q-GbU">
+                    <navigationItem key="navigationItem" id="UiF-4Q-GbU">
                         <barButtonItem key="leftBarButtonItem" image="Filter" id="7dK-4v-tE2">
+                            <inset key="imageInsets" minX="-10" minY="-1" maxX="-27" maxY="0.0"/>
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="rNA-cb-a8K" kind="push" id="Lw4-4v-ZW3"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ec-V9-YvN">
+                            <inset key="imageInsets" minX="-10" minY="0.0" maxX="7" maxY="0.0"/>
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="createEvent:" destination="XMy-k7-mqo" id="zkF-3D-eJ2"/>
@@ -293,7 +319,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afA-Kn-raX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1615" y="-2159.5"/>
+            <point key="canvasLocation" x="-1616" y="-2162"/>
         </scene>
         <!--Category Table View Controller-->
         <scene sceneID="QF4-Ku-B6I">
@@ -2436,11 +2462,11 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="okc-1f-ZH5"/>
-        <segue reference="Pt4-qg-fXb"/>
-        <segue reference="C9L-jn-ty6"/>
-        <segue reference="6n8-q3-lxy"/>
         <segue reference="5BI-DP-Akc"/>
+        <segue reference="Pt4-qg-fXb"/>
+        <segue reference="6n8-q3-lxy"/>
+        <segue reference="C9L-jn-ty6"/>
+        <segue reference="okc-1f-ZH5"/>
         <segue reference="c3b-7q-UHr"/>
         <segue reference="y99-Lt-F1b"/>
         <segue reference="Yzg-yO-FJ6"/>
