@@ -101,11 +101,12 @@
     
     _resultsTableController = [[SearchResultsTableViewController alloc] init];
     _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
-    
+    _searchController.searchBar.placeholder = @"Search Events";
+   
     
     self.searchController.searchResultsUpdater = self;
     [self.searchController.searchBar sizeToFit];
-
+    
     
     
 //    [self.searchController.searchBar setBackgroundImage:[UIImage imageNamed:@""]];
@@ -134,10 +135,6 @@
     
     
     // End
-
-    
-    
-    
     
 }
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -186,8 +183,6 @@
     }
     
     
-    
-    
     // restore the searchController's active state
     if (self.searchControllerWasActive) {
         self.searchController.active = self.searchControllerWasActive;
@@ -200,7 +195,7 @@
     }
     
 }
-/*
+
 
 - (void)willPresentSearchController:(UISearchController *)searchController {
     // do something before the search controller is presented
@@ -213,11 +208,11 @@
 }
 
 
-*/
-
 #pragma mark - UISearchBarDelegate
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    
+
     [searchBar resignFirstResponder];
 }
 
@@ -252,6 +247,28 @@
     
 }
 
+
+-(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    
+    self.navigationItem.leftBarButtonItem = nil;
+    self.navigationItem.rightBarButtonItem = nil;
+
+   
+    
+}
+
+
+-(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+    
+    
+    [self.navigationItem.leftBarButtonItem setTintColor:COMMON_COLOR_RED];
+    [self.navigationItem.leftBarButtonItem setEnabled:YES];
+    [self.navigationItem.rightBarButtonItem setTintColor:COMMON_COLOR_RED];
+    [self.navigationItem.rightBarButtonItem setEnabled:YES];
+    
+    
+    
+}
 
 #pragma mark - Create Event
 
