@@ -19,7 +19,7 @@
 
 #import "ProgramDescriptionViewController.h"
 
-@interface AboutViewController ()
+@interface AboutViewController () <CLLocationManagerDelegate>
 {
     float descriptionTextHeight;
 }
@@ -31,6 +31,7 @@
 {
 
     UIBarButtonItem *shareButton;
+    CLLocationManager *locationManager;
     
     
 }
@@ -68,10 +69,16 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 
+   
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     
-	// Do any additional setup after loading the view.
-   // [self initializeNavigationBar];
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+        [self->locationManager requestWhenInUseAuthorization];
     
+    [locationManager startUpdatingLocation];
     
     }
 - (IBAction)addressClicked:(id)sender {
@@ -104,6 +111,14 @@
     [LocationManager sharedInstance];
     
       
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *location = [locations lastObject];
+    NSLog(@"lat%f - lon%f", location.coordinate.latitude, location.coordinate.longitude);
+    [locationManager stopUpdatingLocation];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
