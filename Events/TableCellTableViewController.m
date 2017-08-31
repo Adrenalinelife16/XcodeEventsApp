@@ -26,7 +26,7 @@ NSString *const kTableCellNibName = @"TableCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerNib:[UINib nibWithNibName:kTableCellNibName bundle:nil] forCellReuseIdentifier:kCellIdentifier];
-
+    
 }
 
 - (void)configureCell:(ProgramCustomCell *)cell forProduct:(EventList *)obj {
@@ -43,6 +43,7 @@ NSString *const kTableCellNibName = @"TableCell";
     }
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
+
     
 }
 

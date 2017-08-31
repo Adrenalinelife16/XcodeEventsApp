@@ -112,6 +112,7 @@
     
     
     self.navigationItem.titleView = self.searchController.searchBar;
+    self.searchController.hidesNavigationBarDuringPresentation = NO;
 
     
     // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
@@ -154,16 +155,11 @@
     [self.tabBarController.tabBar setHidden:NO];
 
     self.searchController.searchBar.barTintColor = [UIColor grayColor];
-
     
-    self.searchController.hidesNavigationBarDuringPresentation = NO;
+    self.navigationController.navigationBar.translucent = NO;
     
-    
+    [self.searchController.searchBar sizeToFit];
    
-    
-
-    
-    self.navigationItem.titleView = self.searchController.searchBar;
 
     
     [self checkLogin];
@@ -254,8 +250,8 @@
     
     [self.navigationItem setRightBarButtonItem:nil];
     [self.navigationItem setLeftBarButtonItem:nil];
+
    
-    
 }
 
 
