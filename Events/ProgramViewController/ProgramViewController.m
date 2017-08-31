@@ -34,6 +34,9 @@
 @property (strong, nonatomic) IBOutlet UITableView *tblMainTbl;
 @property (nonatomic, retain) IBOutlet UIView *myViewFromNib;
 
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *myFilterButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *myAddButton;
+
 
 @property BOOL searchControllerWasActive;
 @property BOOL searchControllerSearchFieldWasFirstResponder;
@@ -108,15 +111,8 @@
     [self.searchController.searchBar sizeToFit];
     
     
-    
-//    [self.searchController.searchBar setBackgroundImage:[UIImage imageNamed:@""]];
-
-    
-    
     self.navigationItem.titleView = self.searchController.searchBar;
-    
-    
-    
+
     
     // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
     self.resultsTableController.tableView.delegate = self;
@@ -152,16 +148,22 @@
 -(void)viewWillAppear:(BOOL)animated {
     
     
-      [self.tabBarController.tabBar setHidden:NO];
-  
-    
-    
     [super viewWillAppear:YES];
+    
+    
+    [self.tabBarController.tabBar setHidden:NO];
 
     self.searchController.searchBar.barTintColor = [UIColor grayColor];
 
     
     self.searchController.hidesNavigationBarDuringPresentation = NO;
+    
+    
+   
+    
+
+    
+    self.navigationItem.titleView = self.searchController.searchBar;
 
     
     [self checkLogin];
@@ -250,22 +252,18 @@
 
 -(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
     
-    self.navigationItem.leftBarButtonItem = nil;
-    self.navigationItem.rightBarButtonItem = nil;
-
+    [self.navigationItem setRightBarButtonItem:nil];
+    [self.navigationItem setLeftBarButtonItem:nil];
    
     
 }
 
 
 -(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+ 
     
-    
-    [self.navigationItem.leftBarButtonItem setTintColor:COMMON_COLOR_RED];
-    [self.navigationItem.leftBarButtonItem setEnabled:YES];
-    [self.navigationItem.rightBarButtonItem setTintColor:COMMON_COLOR_RED];
-    [self.navigationItem.rightBarButtonItem setEnabled:YES];
-    
+    [self.navigationItem setRightBarButtonItem:_myAddButton];
+    [self.navigationItem setLeftBarButtonItem:_myFilterButton];
     
     
 }

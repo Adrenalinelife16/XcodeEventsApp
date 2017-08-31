@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -312,6 +312,8 @@
                         </connections>
                     </refreshControl>
                     <connections>
+                        <outlet property="myAddButton" destination="3ec-V9-YvN" id="vn3-9p-tGU"/>
+                        <outlet property="myFilterButton" destination="7dK-4v-tE2" id="aqM-7t-0xn"/>
                         <outlet property="tblMainTbl" destination="6eF-vP-BpW" id="rT2-Bn-cui"/>
                         <segue destination="Jo0-vK-BNb" kind="push" identifier="CEcategory" id="Bt6-Gi-eBC"/>
                         <segue destination="ofP-CN-yoG" kind="push" identifier="loginView" id="Yzg-yO-FJ6"/>
@@ -2462,10 +2464,10 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5BI-DP-Akc"/>
         <segue reference="Pt4-qg-fXb"/>
         <segue reference="6n8-q3-lxy"/>
         <segue reference="C9L-jn-ty6"/>
+        <segue reference="5BI-DP-Akc"/>
         <segue reference="okc-1f-ZH5"/>
         <segue reference="c3b-7q-UHr"/>
         <segue reference="y99-Lt-F1b"/>
