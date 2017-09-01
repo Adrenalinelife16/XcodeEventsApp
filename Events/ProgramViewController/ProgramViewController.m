@@ -100,8 +100,7 @@
         [self->locationManager requestWhenInUseAuthorization];
     
     [locationManager startUpdatingLocation];
-    
-    
+
     
     // Start
     
@@ -218,6 +217,8 @@
     
 
     [searchBar resignFirstResponder];
+    [self.navigationItem setRightBarButtonItem:nil];
+    [self.navigationItem setLeftBarButtonItem:nil];
 }
 
 
@@ -277,6 +278,15 @@
     
     
 }
+
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    
+    [self.navigationItem setRightBarButtonItem:_myAddButton];
+    [self.navigationItem setLeftBarButtonItem:_myFilterButton];
+    
+}
+
+
 
 #pragma mark - Create Event
 
