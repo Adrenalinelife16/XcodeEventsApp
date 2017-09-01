@@ -131,6 +131,15 @@
     [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:COMMON_COLOR_RED];
     
     
+    for (UIView *subview in [[_searchController.searchBar.subviews lastObject] subviews]) {
+        if ([subview isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
+            [subview removeFromSuperview];
+            break;
+        }
+    }
+
+    
+    
     // End
     
 }
@@ -151,27 +160,20 @@
     
     
     [super viewWillAppear:YES];
-    
-    
-    [self.tabBarController.tabBar setHidden:NO];
 
-    self.searchController.searchBar.barTintColor = [UIColor grayColor];
-    
+    [self.tabBarController.tabBar setHidden:NO];
     self.navigationController.navigationBar.translucent = NO;
     
-    [self.searchController.searchBar sizeToFit];
-   
-
     
     [self checkLogin];
+    
+    
     
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
 
     [Utility afterDelay:0.01 withCompletion:^{
-   //     [DSBezelActivityView newActivityViewForView:self.view.window];
-  //  [self getEventListFromServer];
     }];
     
     
@@ -182,7 +184,7 @@
     }
     
     
-    // restore the searchController's active state
+   /*
     if (self.searchControllerWasActive) {
         self.searchController.active = self.searchControllerWasActive;
         _searchControllerWasActive = NO;
@@ -192,7 +194,7 @@
             _searchControllerSearchFieldWasFirstResponder = NO;
         }
     }
-    
+    */
 }
 
 
