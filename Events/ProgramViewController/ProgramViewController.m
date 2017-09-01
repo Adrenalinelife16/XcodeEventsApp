@@ -80,6 +80,8 @@
     self.navigationItem.titleView = self.searchController.searchBar;
     
     
+    
+    
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     NSDate *currentDate =   [NSDate date];
@@ -140,6 +142,11 @@
         }
     }
 
+    
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    }
     
     
     // End
@@ -207,7 +214,7 @@
 
 -(void)willDismissSearchController:(UISearchController *)searchController
 {
-    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.translucent = YES;
 }
 
 
