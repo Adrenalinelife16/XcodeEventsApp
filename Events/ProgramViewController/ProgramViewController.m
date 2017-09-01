@@ -57,6 +57,7 @@
     
 }
 @synthesize filterText;
+@synthesize sliderDistance;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -98,6 +99,7 @@
         [self->locationManager requestWhenInUseAuthorization];
     
     [locationManager startUpdatingLocation];
+    
     
     
     // Start
@@ -232,9 +234,11 @@
 
 -(void)filterProgramArray {
     
+        
     
     NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"eventStartDateTime CONTAINS[cd] %@", filterText];
     NSArray *beginWithB = [gArrayEvents filteredArrayUsingPredicate:bPredicate];
+    
     
     
     filteredEvents = beginWithB;
@@ -465,27 +469,12 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [locationManager stopUpdatingLocation];
     
+    NSLog(@"Slider distance value %@",sliderDistance);
+    
     
     return cell;
     
 }
-
-/*
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    
-    if ([segue.identifier isEqualToString:@"AboutView2"]) {
-        
-        NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
-        AboutViewController *aboutVwController = [segue destinationViewController];
-        EventList *obj  =   [self->arrayEventList objectAtIndex:selectedRowIndex.row];
-        aboutVwController.eventObj  =   obj;
-    }
-    
-}
-
-*/
-
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

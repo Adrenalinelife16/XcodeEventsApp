@@ -152,10 +152,12 @@
 
 {
      NSString *filteredDay = [_filterDay text];
+     NSString *sliderDistanceMiles = [NSString stringWithFormat:@"%.0f", self.sldDistance.value];
     
     if ([[segue identifier] isEqualToString:@"filterDays"]) {
         ProgramViewController *destinationView = [segue destinationViewController];
         destinationView.filterText = filteredDay;
+        destinationView.sliderDistance = sliderDistanceMiles;
         
     }
 }

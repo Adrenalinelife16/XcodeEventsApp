@@ -15,6 +15,7 @@
 @interface ProgramViewController : UITableViewController <CLLocationManagerDelegate>
 
 @property (nonatomic, retain) NSString *filterText;
+@property (nonatomic, retain) NSString *sliderDistance;
 
 -(IBAction)createEvent:(id)sender;
 
