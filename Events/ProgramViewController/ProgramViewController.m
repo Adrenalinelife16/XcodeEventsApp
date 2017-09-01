@@ -21,6 +21,7 @@
 
 
 
+
 @interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate,CLLocationManagerDelegate>
 
 
@@ -57,7 +58,7 @@
     
 }
 @synthesize filterText;
-@synthesize sliderDistance;
+@synthesize sliderDistance, eventObjDistance;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -234,7 +235,14 @@
 
 -(void)filterProgramArray {
     
-        
+    
+    
+    CLLocation *userLocation    =   [[CLLocation alloc] initWithLatitude:[[Utility getNSUserDefaultValue:KUSERLATITUDE] floatValue] longitude:[[Utility getNSUserDefaultValue:KUSERLONGITUDE] floatValue]];
+    CLLocation *eventLocation   =   [[CLLocation alloc] initWithLatitude:[self.eventObjDistance.eventLocationLatitude floatValue] longitude:[self.eventObjDistance.eventLocationLongitude floatValue]];
+    
+     CLLocationDistance distance =   [userLocation distanceFromLocation:eventLocation] * 0.000621371;
+    
+    
     
     NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"eventStartDateTime CONTAINS[cd] %@", filterText];
     NSArray *beginWithB = [gArrayEvents filteredArrayUsingPredicate:bPredicate];

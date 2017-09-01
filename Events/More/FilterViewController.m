@@ -141,8 +141,11 @@
 - (IBAction)sliderValueChanged:(id)sender {
     
     
+    [_sldDistance setValue:((int)((_sldDistance.value + 2.5) / 5) * 5) animated:NO];
+    
     
     self.distancelbl.text = [NSString stringWithFormat:@"%.0f", self.sldDistance.value];
+
      
     
 }

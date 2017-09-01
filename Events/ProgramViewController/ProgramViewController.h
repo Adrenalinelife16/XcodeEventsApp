@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "EventList.h"
 
 
 
@@ -16,6 +17,7 @@
 
 @property (nonatomic, retain) NSString *filterText;
 @property (nonatomic, retain) NSString *sliderDistance;
+@property (strong, nonatomic) EventList *eventObjDistance;
 
 -(IBAction)createEvent:(id)sender;
 
