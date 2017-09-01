@@ -461,6 +461,7 @@
      
      
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    [locationManager stopUpdatingLocation];
     
     
     return cell;
