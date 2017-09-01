@@ -243,7 +243,6 @@
      CLLocationDistance distance =   [userLocation distanceFromLocation:eventLocation] * 0.000621371;
     
     
-    
     NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"eventStartDateTime CONTAINS[cd] %@", filterText];
     NSArray *beginWithB = [gArrayEvents filteredArrayUsingPredicate:bPredicate];
     
@@ -476,8 +475,6 @@
      
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [locationManager stopUpdatingLocation];
-    
-    NSLog(@"Slider distance value %@",sliderDistance);
     
     
     return cell;
