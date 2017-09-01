@@ -80,7 +80,12 @@
     
     [locationManager startUpdatingLocation];
     
+    
     }
+
+
+
+
 - (IBAction)addressClicked:(id)sender {
     
     [self openAppleMaps];
@@ -113,11 +118,12 @@
       
 }
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     CLLocation *location = [locations lastObject];
     NSLog(@"lat%f - lon%f", location.coordinate.latitude, location.coordinate.longitude);
     [locationManager stopUpdatingLocation];
+    
+    
     
 }
 
@@ -559,14 +565,19 @@
         
         NSDictionary *attrs = @{ NSFontAttributeName:testButtonString, NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle) };
         
-
         
 
         cell.lblEventName.text      =   self.eventObj.eventName;
         
+        // Distance in Miles
+        
         CLLocation *userLocation    =   [[CLLocation alloc] initWithLatitude:[[Utility getNSUserDefaultValue:KUSERLATITUDE] floatValue] longitude:[[Utility getNSUserDefaultValue:KUSERLONGITUDE] floatValue]];
         CLLocation *eventLocation   =   [[CLLocation alloc] initWithLatitude:[self.eventObj.eventLocationLatitude floatValue] longitude:[self.eventObj.eventLocationLongitude floatValue]];
-        CLLocationDistance distance =   [userLocation distanceFromLocation:eventLocation];
+        CLLocationDistance distance =   [userLocation distanceFromLocation:eventLocation] * 0.000621371;
+        
+        
+        cell.distanceAway.text = [NSString stringWithFormat:@"%.0f", distance];
+
         
     
         cell.selectionStyle = UITableViewCellSelectionStyleNone;

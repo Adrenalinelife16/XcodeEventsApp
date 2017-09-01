@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblEventName;
 @property (strong, nonatomic) IBOutlet UILabel *addressOne;
 @property (strong, nonatomic) IBOutlet UILabel *addressTwo;
+@property (strong, nonatomic) IBOutlet UILabel *distanceAway;
 
 
 
