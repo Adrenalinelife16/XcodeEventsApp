@@ -19,6 +19,9 @@
 @property (nonatomic, retain) NSString *sliderDistance;
 @property (strong, nonatomic) EventList *eventObjDistance;
 
+@property (strong, nonatomic) IBOutlet UIView *searchBarView;
+
+
 -(IBAction)createEvent:(id)sender;
 
 -(void)filterProgramArray;

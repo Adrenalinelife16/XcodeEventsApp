@@ -8,9 +8,13 @@
 
 #import "FilterViewController.h"
 #import "ProgramViewController.h"
+#import "SearchResultsTableViewController.h"
 
 
 @interface FilterViewController () <UIPickerViewDelegate, UIPickerViewDataSource>
+
+
+
 
 @property (nonatomic, strong) UIPickerView *pickerView;
 @property (nonatomic, strong) NSArray *pickerNames;
@@ -44,15 +48,18 @@
     
    
     
-        self.filterDay.inputView = self.pickerView;
+    self.filterDay.inputView = self.pickerView;
     
     self.pickerNames = @[ @"Sunday",@"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday"];
     
     [self.view addSubview:self.filterDay];
     
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:YES];
     
     [self.tabBarController.tabBar setHidden:YES];
     self.navigationController.navigationBar.translucent = YES;
@@ -132,6 +139,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
 -(IBAction)dismissFilter:(id)sender {
     
          [self performSegueWithIdentifier:@"filterDays" sender:sender];
@@ -147,7 +156,6 @@
     self.distancelbl.text = [NSString stringWithFormat:@"%.0f", self.sldDistance.value];
 
      
-    
 }
 
 

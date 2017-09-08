@@ -262,6 +262,7 @@
                         <sections/>
                     </tableView>
                     <navigationItem key="navigationItem" id="UiF-4Q-GbU">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="Filter" id="7dK-4v-tE2">
                             <inset key="imageInsets" minX="-10" minY="-1" maxX="-27" maxY="0.0"/>
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>

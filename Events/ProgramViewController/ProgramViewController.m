@@ -32,8 +32,11 @@
 @property (nonatomic, strong) UISearchController *searchController;
 @property (strong, nonatomic) NSArray *results;
 
+
 @property (strong, nonatomic) IBOutlet UITableView *tblMainTbl;
 @property (nonatomic, retain) IBOutlet UIView *myViewFromNib;
+
+
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *myFilterButton;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *myAddButton;
@@ -59,6 +62,7 @@
 }
 @synthesize filterText;
 @synthesize sliderDistance, eventObjDistance;
+@synthesize searchBarView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -77,16 +81,12 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.titleView = self.searchController.searchBar;
-    
-    
-    
-    
     NSDateFormatter *dateFormatter  =   [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     NSDate *currentDate =   [NSDate date];
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
+    
     
     
     UITabBarController *tabBarController = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController ;
@@ -109,14 +109,15 @@
     _resultsTableController = [[SearchResultsTableViewController alloc] init];
     _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
     _searchController.searchBar.placeholder = @"Search Events";
+    
+    self.navigationItem.titleView = self.searchController.searchBar;
+    self.searchController.hidesNavigationBarDuringPresentation = NO;
    
     
     self.searchController.searchResultsUpdater = self;
     [self.searchController.searchBar sizeToFit];
-    
-    
-    self.navigationItem.titleView = self.searchController.searchBar;
-    self.searchController.hidesNavigationBarDuringPresentation = NO;
+    self.searchController.searchBar.frame = CGRectMake(0, 64, self.searchController.searchBar.frame.size.width, 44.0);
+    self.extendedLayoutIncludesOpaqueBars = YES;
 
     
     // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
@@ -134,6 +135,7 @@
     
     [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:COMMON_COLOR_RED];
     
+
     
     for (UIView *subview in [[_searchController.searchBar.subviews lastObject] subviews]) {
         if ([subview isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
@@ -148,7 +150,7 @@
     
     }
     
-    
+
     // End
     
 }
@@ -165,13 +167,22 @@
 }
 
 
+
 -(void)viewWillAppear:(BOOL)animated {
     
     
     [super viewWillAppear:YES];
+    
+    
+    self.searchController.searchBar.frame = CGRectMake(0, 64, self.searchController.searchBar.frame.size.width, 44.0);
+    
+    
+    [self.searchController setActive:YES];
+    self.extendedLayoutIncludesOpaqueBars = YES;
+
 
     [self.tabBarController.tabBar setHidden:NO];
-    self.navigationController.navigationBar.translucent = NO;
+
     
     
     [self checkLogin];
@@ -192,20 +203,12 @@
         [self filterProgramArray];
     }
     
-    
-   /*
-    if (self.searchControllerWasActive) {
-        self.searchController.active = self.searchControllerWasActive;
-        _searchControllerWasActive = NO;
-        
-        if (self.searchControllerSearchFieldWasFirstResponder) {
-            [self.searchController.searchBar becomeFirstResponder];
-            _searchControllerSearchFieldWasFirstResponder = NO;
-        }
-    }
-    */
 }
 
+- (void)viewDidLayoutSubviews {
+    
+    [self.searchController.searchBar sizeToFit];
+}
 
 - (void)willPresentSearchController:(UISearchController *)searchController {
     // do something before the search controller is presented
@@ -245,11 +248,6 @@
     
     
     
-    CLLocation *userLocation    =   [[CLLocation alloc] initWithLatitude:[[Utility getNSUserDefaultValue:KUSERLATITUDE] floatValue] longitude:[[Utility getNSUserDefaultValue:KUSERLONGITUDE] floatValue]];
-    CLLocation *eventLocation   =   [[CLLocation alloc] initWithLatitude:[self.eventObjDistance.eventLocationLatitude floatValue] longitude:[self.eventObjDistance.eventLocationLongitude floatValue]];
-    
-     CLLocationDistance distance =   [userLocation distanceFromLocation:eventLocation] * 0.000621371;
-    
     
     NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"eventStartDateTime CONTAINS[cd] %@", filterText];
     NSArray *beginWithB = [gArrayEvents filteredArrayUsingPredicate:bPredicate];
@@ -261,8 +259,10 @@
     NSMutableArray *array = [[NSMutableArray alloc]initWithArray:filteredEvents];
     
     arrayEventList = array;
+
     
     [self.tblMainTbl reloadData];
+    
     
     
 }
@@ -523,6 +523,12 @@
     AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
     detailViewController.eventObj = obj;
     [self.navigationController pushViewController:detailViewController animated:YES];
+    
+    [self.navigationItem setRightBarButtonItem:_myAddButton];
+    [self.navigationItem setLeftBarButtonItem:_myFilterButton];
+    self.searchControllerWasActive = NO;
+    
+    
 }
 
 
