@@ -111,19 +111,19 @@
     _searchController.searchBar.placeholder = @"Search Events";
     
     self.navigationItem.titleView = self.searchController.searchBar;
+ //   self.tableView.tableHeaderView = self.searchController.searchBar;
     self.searchController.hidesNavigationBarDuringPresentation = NO;
    
     
     self.searchController.searchResultsUpdater = self;
     [self.searchController.searchBar sizeToFit];
-    self.searchController.searchBar.frame = CGRectMake(0, 64, self.searchController.searchBar.frame.size.width, 44.0);
-    self.extendedLayoutIncludesOpaqueBars = YES;
-
+    self.definesPresentationContext = YES;
+    
     
     // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
     self.resultsTableController.tableView.delegate = self;
     self.searchController.delegate = self;
-    self.searchController.dimsBackgroundDuringPresentation = NO; // default is YES
+    self.searchController.dimsBackgroundDuringPresentation = YES; // default is YES
     self.searchController.searchBar.delegate = self; // so we can monitor text changes + others
     
     
@@ -171,28 +171,19 @@
 -(void)viewWillAppear:(BOOL)animated {
     
     
-    [super viewWillAppear:YES];
+    [super viewWillAppear:(BOOL)animated];
     
-    
-    self.searchController.searchBar.frame = CGRectMake(0, 64, self.searchController.searchBar.frame.size.width, 44.0);
-    
-    
-    [self.searchController setActive:YES];
-    self.extendedLayoutIncludesOpaqueBars = YES;
-
-
     [self.tabBarController.tabBar setHidden:NO];
 
     
-    
     [self checkLogin];
-    
     
     
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
 
+     
     [Utility afterDelay:0.01 withCompletion:^{
     }];
     
@@ -204,12 +195,12 @@
     }
     
 }
-
+/*
 - (void)viewDidLayoutSubviews {
     
     [self.searchController.searchBar sizeToFit];
 }
-
+*/
 - (void)willPresentSearchController:(UISearchController *)searchController {
     // do something before the search controller is presented
     self.navigationController.navigationBar.translucent = NO;
@@ -232,6 +223,7 @@
 }
 
 
+
 - (IBAction)Refresh:(UIRefreshControl *)sender
 {
     // Reload the data.
@@ -244,10 +236,10 @@
     [sender endRefreshing];
 }
 
+
 -(void)filterProgramArray {
     
-    
-    
+
     
     NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"eventStartDateTime CONTAINS[cd] %@", filterText];
     NSArray *beginWithB = [gArrayEvents filteredArrayUsingPredicate:bPredicate];
@@ -262,8 +254,7 @@
 
     
     [self.tblMainTbl reloadData];
-    
-    
+
     
 }
 

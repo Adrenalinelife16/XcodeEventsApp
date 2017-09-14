@@ -86,7 +86,10 @@
 }
 - (void)viewWillDisappear:(BOOL)animated {
     
+    
     self.navigationController.navigationBar.translucent = NO;
+
+    
 }
 
 - (void)doneTouched:(UIBarButtonItem *)sender {
