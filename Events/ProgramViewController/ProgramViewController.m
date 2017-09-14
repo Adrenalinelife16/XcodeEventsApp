@@ -231,7 +231,7 @@
     }];
     
     
-    if ([filterText length] == 0 ) {
+    if ([filterText isEqualToString:@"All Events"] || [filterText length] == 0 ) {
         
         [self getEventListFromServer];
         
