@@ -24,6 +24,8 @@
 
 -(IBAction)createEvent:(id)sender;
 
+-(IBAction)filterDay:(id)sender;
+
 -(void)filterProgramArray;
 
 @end

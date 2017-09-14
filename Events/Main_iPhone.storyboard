@@ -169,7 +169,6 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="filterDay" destination="uTI-Gk-hbR" id="bia-35-8XQ"/>
-                        <segue destination="XMy-k7-mqo" kind="push" identifier="filterDays" id="y99-Lt-F1b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5lh-gn-ywd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,7 +266,7 @@
                             <inset key="imageInsets" minX="-10" minY="-1" maxX="-27" maxY="0.0"/>
                             <color key="tintColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="rNA-cb-a8K" kind="push" id="Lw4-4v-ZW3"/>
+                                <action selector="filterDay:" destination="XMy-k7-mqo" id="AOW-tk-rkN"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ec-V9-YvN">
@@ -290,7 +289,7 @@
                     </refreshControl>
                     <connections>
                         <outlet property="myAddButton" destination="3ec-V9-YvN" id="vn3-9p-tGU"/>
-                        <outlet property="myFilterButton" destination="7dK-4v-tE2" id="aqM-7t-0xn"/>
+                        <outlet property="myFilterButton" destination="7dK-4v-tE2" id="u18-sk-YCV"/>
                         <outlet property="tblMainTbl" destination="6eF-vP-BpW" id="rT2-Bn-cui"/>
                         <segue destination="Jo0-vK-BNb" kind="push" identifier="CEcategory" id="Bt6-Gi-eBC"/>
                         <segue destination="ofP-CN-yoG" kind="push" identifier="loginView" id="Yzg-yO-FJ6"/>
@@ -305,15 +304,15 @@
             <objects>
                 <tableViewController id="Jo0-vK-BNb" customClass="CategoryTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6AN-eq-lqA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="550"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Category" id="Lel-J1-g6z">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -342,11 +341,11 @@
                         <viewControllerLayoutGuide type="bottom" id="IU5-pQ-Ahv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1150"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="1037"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fga-UX-TPd">
-                                <rect key="frame" x="0.0" y="20" width="320" height="1130"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ne0-V7-A9h">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
@@ -2189,11 +2188,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Ysu-pV-gE4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MUU-3I-Yys">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1068"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="955"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-7k-7nq">
-                                <rect key="frame" x="0.0" y="20" width="320" height="1048"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="955"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZRk-q4-cHA">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="955"/>
@@ -2444,13 +2443,12 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="y99-Lt-F1b"/>
+        <segue reference="c3b-7q-UHr"/>
+        <segue reference="okc-1f-ZH5"/>
         <segue reference="Yzg-yO-FJ6"/>
         <segue reference="Pt4-qg-fXb"/>
+        <segue reference="C9L-jn-ty6"/>
         <segue reference="GQZ-yq-JN7"/>
         <segue reference="6n8-q3-lxy"/>
-        <segue reference="C9L-jn-ty6"/>
-        <segue reference="okc-1f-ZH5"/>
-        <segue reference="c3b-7q-UHr"/>
     </inferredMetricsTieBreakers>
 </document>

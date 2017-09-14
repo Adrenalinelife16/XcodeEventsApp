@@ -22,7 +22,7 @@
 
 
 
-@interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate,CLLocationManagerDelegate>
+@interface ProgramViewController () <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate,CLLocationManagerDelegate,UIPickerViewDelegate, UIPickerViewDataSource>
 
 
 @property (nonatomic, strong) SearchResultsTableViewController *resultsTableController;
@@ -36,7 +36,12 @@
 @property (strong, nonatomic) IBOutlet UITableView *tblMainTbl;
 @property (nonatomic, retain) IBOutlet UIView *myViewFromNib;
 
+@property (nonatomic, strong) UIPickerView *pickerView;
+@property (nonatomic, strong) NSArray *pickerNames;
+@property (nonatomic, strong) UITextField *pickerViewTextField;
 
+
+// Add and remove during search
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *myFilterButton;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *myAddButton;
@@ -104,20 +109,16 @@
     [locationManager startUpdatingLocation];
 
     
-    // Start
+    // Start Search Bar
     
     _resultsTableController = [[SearchResultsTableViewController alloc] init];
     _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
     _searchController.searchBar.placeholder = @"Search Events";
     
-    self.navigationItem.titleView = self.searchController.searchBar;
- //   self.tableView.tableHeaderView = self.searchController.searchBar;
-    self.searchController.hidesNavigationBarDuringPresentation = NO;
-   
     
     self.searchController.searchResultsUpdater = self;
     [self.searchController.searchBar sizeToFit];
-    self.definesPresentationContext = YES;
+    self.searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0);
     
     
     // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
@@ -132,6 +133,9 @@
     // hierarchy until it finds the root view controller or one that defines a presentation context.
     //
     self.definesPresentationContext = YES;  // know where you want UISearchController to be displayed
+    
+    self.searchController.hidesNavigationBarDuringPresentation = NO;
+
     
     [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTintColor:COMMON_COLOR_RED];
     
@@ -152,6 +156,40 @@
     
 
     // End
+    
+    // Start Picker View
+    
+    // set the frame to zero
+    self.pickerViewTextField = [[UITextField alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:self.pickerViewTextField];
+    
+    UIPickerView *pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    pickerView.showsSelectionIndicator = YES;
+    pickerView.dataSource = self;
+    pickerView.delegate = self;
+    
+    // set change the inputView (default is keyboard) to UIPickerView
+    self.pickerViewTextField.inputView = pickerView;
+    
+    // add a toolbar with Cancel & Done button
+    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    toolBar.barStyle = UIBarStyleBlackOpaque;
+    
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneTouched:)];
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelTouched:)];
+    
+    // the middle button is to make the Done button align to right
+    [toolBar setItems:[NSArray arrayWithObjects:cancelButton, [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil], doneButton, nil]];
+    self.pickerViewTextField.inputAccessoryView = toolBar;
+    
+    doneButton.tintColor = [UIColor whiteColor];
+    cancelButton.tintColor = [UIColor whiteColor];
+    
+    self.pickerNames = @[ @"Sunday",@"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday"];
+    
+    [pickerView selectRow:0 inComponent:0 animated:YES];
+    
+
     
 }
 
@@ -174,7 +212,12 @@
     [super viewWillAppear:(BOOL)animated];
     
     [self.tabBarController.tabBar setHidden:NO];
+    
+    self.navigationItem.titleView = self.searchController.searchBar;
+    //   self.tableView.tableHeaderView = self.searchController.searchBar;
 
+
+    self.definesPresentationContext = YES;
     
     [self checkLogin];
     
@@ -195,12 +238,8 @@
     }
     
 }
-/*
-- (void)viewDidLayoutSubviews {
-    
-    [self.searchController.searchBar sizeToFit];
-}
-*/
+
+
 - (void)willPresentSearchController:(UISearchController *)searchController {
     // do something before the search controller is presented
     self.navigationController.navigationBar.translucent = NO;
@@ -284,6 +323,55 @@
     
 }
 
+
+-(IBAction)filterDay:(id)sender {
+    
+    
+    [self.pickerViewTextField becomeFirstResponder];
+
+
+}
+
+- (void)cancelTouched:(UIBarButtonItem *)sender {
+    // hide the picker view
+    [self.pickerViewTextField resignFirstResponder];
+}
+
+- (void)doneTouched:(UIBarButtonItem *)sender {
+    // hide the picker view
+    [self.pickerViewTextField resignFirstResponder];
+    [self filterProgramArray];
+}
+
+
+#pragma mark - UIPickerViewDataSource
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [_pickerNames count];
+}
+#pragma mark - UIPickerViewDelegate
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    NSString *item = [_pickerNames objectAtIndex:row];
+    
+    return item;
+}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    if (pickerView == self.pickerView) {
+        self.filterText = self.pickerNames[row];
+    }
+    
+
+}
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component
+{
+    return (40.0);
+}
 
 
 #pragma mark - Create Event
