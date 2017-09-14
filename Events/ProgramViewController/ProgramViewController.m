@@ -185,8 +185,9 @@
     doneButton.tintColor = [UIColor whiteColor];
     cancelButton.tintColor = [UIColor whiteColor];
     
-    self.pickerNames = @[ @"Sunday",@"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday"];
+    self.pickerNames = @[ @"Sunday",@"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday",@"All Events"];
     
+    [pickerView reloadAllComponents];
     [pickerView selectRow:0 inComponent:0 animated:YES];
     
 
@@ -231,12 +232,15 @@
     }];
     
     
-    if ([filterText length] == 0) {
+    if ([filterText isEqualToString:@"All Events"] || [filterText length] == 0 ) {
+        
         [self getEventListFromServer];
+        
     } else {
+        
         [self filterProgramArray];
     }
-    
+
 }
 
 
@@ -340,7 +344,16 @@
 - (void)doneTouched:(UIBarButtonItem *)sender {
     // hide the picker view
     [self.pickerViewTextField resignFirstResponder];
-    [self filterProgramArray];
+    
+    if ([filterText isEqualToString:@"All Events"]) {
+        
+        [self getEventListFromServer];
+        
+    } else {
+        
+        [self filterProgramArray];
+    }
+    
 }
 
 
@@ -364,7 +377,7 @@
 {
         self.filterText = self.pickerNames[row];
     }
-    
+
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component
 {
     return (40.0);
