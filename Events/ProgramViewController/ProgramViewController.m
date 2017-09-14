@@ -185,11 +185,10 @@
     doneButton.tintColor = [UIColor whiteColor];
     cancelButton.tintColor = [UIColor whiteColor];
     
-    self.pickerNames = @[ @"Sunday",@"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday",@"All Events"];
+    self.pickerNames =
+    @[@"All Events", @"Sunday",@"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday"];
     
-    [pickerView reloadAllComponents];
-    [pickerView selectRow:0 inComponent:0 animated:YES];
-    
+
 
     
 }
@@ -232,7 +231,7 @@
     }];
     
     
-    if ([filterText isEqualToString:@"All Events"] || [filterText length] == 0 ) {
+    if ([filterText length] == 0 ) {
         
         [self getEventListFromServer];
         
@@ -240,6 +239,8 @@
         
         [self filterProgramArray];
     }
+    
+    [self pickerView:self.pickerView didSelectRow:0 inComponent:0];
 
 }
 
