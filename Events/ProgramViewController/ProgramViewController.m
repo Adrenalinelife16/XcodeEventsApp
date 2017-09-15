@@ -154,6 +154,10 @@
     
     }
     
+    
+    self.navigationController.navigationBar.translucent = NO;
+    self.searchController.searchBar.translucent = NO;
+
 
     // End
     
@@ -215,6 +219,7 @@
     
     self.navigationItem.titleView = self.searchController.searchBar;
     //   self.tableView.tableHeaderView = self.searchController.searchBar;
+  
 
 
     self.definesPresentationContext = YES;
@@ -248,11 +253,13 @@
 - (void)willPresentSearchController:(UISearchController *)searchController {
     // do something before the search controller is presented
     self.navigationController.navigationBar.translucent = NO;
+    self.searchController.searchBar.translucent = NO;
 }
 
 -(void)willDismissSearchController:(UISearchController *)searchController
 {
-    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.navigationBar.translucent = NO;
+    self.searchController.searchBar.translucent = NO;
 }
 
 
@@ -317,6 +324,7 @@
     
     [self.navigationItem setRightBarButtonItem:_myAddButton];
     [self.navigationItem setLeftBarButtonItem:_myFilterButton];
+    
     
     
 }
