@@ -11,8 +11,9 @@
 /**
  *  application service url
  */
-//"APPLICATION_URL"           =   "http://www.adrenalinelife.org";
-"APPLICATION_URL"           =   "http://173.254.64.67";   // testing from Blue Host
+//"APPLICATION_URL"           =   "http://www.adrenalinelife.org";  // DNS Name
+//"APPLICATION_URL"           =   "http://173.254.64.67";           // testing from Blue Host
+"APPLICATION_URL"           =   "http://35.193.156.81/";            // testing for Google Host
 //   "http://adrenalinelife.org/"
 
 // Color Code: #ed1c24
