@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ProgramViewController.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 
 @implementation AppDelegate 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -36,6 +39,9 @@
 
     [MMdbsupport MMinitializeDb];
     [MMdbsupport MMOpenDataBase];
+    
+    [Fabric with:@[[Crashlytics class]]];
+
 
 
     return YES;

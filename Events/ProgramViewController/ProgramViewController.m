@@ -18,6 +18,7 @@
 #import "FeedCustomCell.h"
 #import "SearchResultsTableViewController.h"
 #import "FilterViewController.h"
+#import "ASIHTTPRequest.h"
 
 
 
@@ -569,12 +570,6 @@
     
     
     EventList *obj = [arrayEventList objectAtIndex:indexPath.row];  // arrayEventList
-
-    cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
-    cell.lblEventName.text  =   obj.eventName;
-    cell.lblEventDesc.text  =   [obj.eventDescription stringByConvertingHTMLToPlainText];
-    cell.lblEventDesc.text  =   [Utility TrimString:cell.lblEventDesc.text];
-    
     
     if ([obj.eventImageURL length]) {
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
@@ -585,6 +580,14 @@
     }
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
+
+    cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
+    cell.lblEventName.text  =   obj.eventName;
+    cell.lblEventDesc.text  =   [obj.eventDescription stringByConvertingHTMLToPlainText];
+    cell.lblEventDesc.text  =   [Utility TrimString:cell.lblEventDesc.text];
+    
+    
+    
     
      
      
@@ -593,15 +596,6 @@
     
     
     return cell;
-    
-}
-
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
-    
-    
-    
     
 }
 

@@ -66,6 +66,8 @@
 		7250A03D1ECA7AC300E1E9AE /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7250A03C1ECA7AC300E1E9AE /* TableCell.xib */; };
 		7250A0401ECA7F7100E1E9AE /* TableCellTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7250A03F1ECA7F7100E1E9AE /* TableCellTableViewController.m */; };
 		7274EC5E1F01C5500019B9AB /* MyFavoriteCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7274EC5D1F01C5500019B9AB /* MyFavoriteCustomCell.m */; };
+		72784AE61F74750A0089037C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72784AE41F74750A0089037C /* Fabric.framework */; };
+		72784AE71F74750A0089037C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72784AE51F74750A0089037C /* Crashlytics.framework */; };
 		7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */; };
 		7293CFB01E0D9C5500E310C0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAC1E0D9C5500E310C0 /* Bolts.framework */; };
 		7293CFB11E0D9C5500E310C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */; };
@@ -376,6 +378,8 @@
 		725535CA1E1416260070D5B5 /* Events.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Events.entitlements; sourceTree = "<group>"; };
 		7274EC5C1F01C5500019B9AB /* MyFavoriteCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavoriteCustomCell.h; sourceTree = "<group>"; };
 		7274EC5D1F01C5500019B9AB /* MyFavoriteCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavoriteCustomCell.m; sourceTree = "<group>"; };
+		72784AE41F74750A0089037C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		72784AE51F74750A0089037C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		7293CFAA1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adrenaline Full Logo Transparent.png"; sourceTree = "<group>"; };
 		7293CFAC1E0D9C5500E310C0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -686,8 +690,10 @@
 				798D9E2818F15F8300A69513 /* ImageIO.framework in Frameworks */,
 				7293CFB31E0D9C5500E310C0 /* FBSDKShareKit.framework in Frameworks */,
 				7293CFB11E0D9C5500E310C0 /* FBSDKCoreKit.framework in Frameworks */,
+				72784AE71F74750A0089037C /* Crashlytics.framework in Frameworks */,
 				79691D0A18F00DD400ABD52D /* libz.dylib in Frameworks */,
 				7293CFB01E0D9C5500E310C0 /* Bolts.framework in Frameworks */,
+				72784AE61F74750A0089037C /* Fabric.framework in Frameworks */,
 				7122DC1918BDFB8100DC9925 /* CoreLocation.framework in Frameworks */,
 				BB303D9C18B863E300B6EBC9 /* CoreGraphics.framework in Frameworks */,
 				BB303D9E18B863E300B6EBC9 /* UIKit.framework in Frameworks */,
@@ -1165,6 +1171,8 @@
 		BB303D9818B863E300B6EBC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72784AE41F74750A0089037C /* Fabric.framework */,
+				72784AE51F74750A0089037C /* Crashlytics.framework */,
 				7293CFAC1E0D9C5500E310C0 /* Bolts.framework */,
 				7293CFAD1E0D9C5500E310C0 /* FBSDKCoreKit.framework */,
 				7293CFAE1E0D9C5500E310C0 /* FBSDKLoginKit.framework */,
@@ -1772,7 +1780,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#if [ ${CONFIGURATION} == \"Release\" ]; then\nAPPLEDOC_PATH=`which appledoc`\nif [ $APPLEDOC_PATH ]; then\n$APPLEDOC_PATH \\\n--project-name ${PRODUCT_NAME} \\\n--project-company \"Your Name\" \\\n--company-id \"com.yourcompany\" \\\n--output ${PRODUCT_NAME}Docs \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n${PROJECT_DIR}/${PRODUCT_NAME}\nfi;\n#fi;";
+			shellScript = "#if [ ${CONFIGURATION} == \"Release\" ]; then\nAPPLEDOC_PATH=`which appledoc`\nif [ $APPLEDOC_PATH ]; then\n$APPLEDOC_PATH \\\n--project-name ${PRODUCT_NAME} \\\n--project-company \"Your Name\" \\\n--company-id \"com.yourcompany\" \\\n--output ${PRODUCT_NAME}Docs \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n${PROJECT_DIR}/${PRODUCT_NAME}\nfi;\n./Fabric.framework/run ab8578ab515502f5bd32f29e20d4b050052d7e8c e5b762c21a25327c3d7e94112ecc357b58e3c61abb401e000d0613bd0b39a6cc\n#fi;";
 		};
 /* End PBXShellScriptBuildPhase section */
 
