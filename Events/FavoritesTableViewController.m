@@ -185,23 +185,25 @@
     
     EventList *obj = [arrayFavouriteProgram objectAtIndex:indexPath.row];
     
-    cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
-    cell.lblEventName.text  =   obj.eventName;
-    cell.lblEventDesc.text  =   [obj.eventDescription stringByConvertingHTMLToPlainText];
-    cell.lblEventDesc.text  =   [Utility TrimString:cell.lblEventDesc.text];
-    
-    
     if ([obj.eventImageURL length]) {
         
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
     } else {
         
         cell.imgEventImage.image = [UIImage imageNamed:@"no_image.png"];
-    
+        
         
     }
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
+    
+
+    
+    cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
+    cell.lblEventName.text  =   obj.eventName;
+    cell.lblEventDesc.text  =   [obj.eventDescription stringByConvertingHTMLToPlainText];
+    cell.lblEventDesc.text  =   [Utility TrimString:cell.lblEventDesc.text];
+    
     
     
     
