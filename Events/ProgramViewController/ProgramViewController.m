@@ -19,6 +19,8 @@
 #import "SearchResultsTableViewController.h"
 #import "FilterViewController.h"
 #import "ASIHTTPRequest.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 
 
@@ -58,7 +60,7 @@
 {
     
     NSMutableArray *arrayEventList;
-    NSMutableArray *sortedArrayEventList;
+ //   NSMutableArray *sortedArrayEventList;
     NSArray *filteredEvents;
     NSDate *eventDate;
     UIView *dimView;
@@ -193,10 +195,13 @@
     self.pickerNames =
     @[@"All Events", @"Sunday",@"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday"];
     
-
+    [Answers logSearchWithQuery:@"User Search"
+               customAttributes:@{}];
 
     
 }
+
+
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
@@ -397,7 +402,8 @@
 #pragma mark - Create Event
 
 -(IBAction)createEvent:(id)sender {
-    
+
+
     
     NSString *strUserID     =   [NSString stringWithFormat:@"%@",[Utility getNSUserDefaultValue:KUSERID]];
     if ([strUserID length]>0 && ![strUserID isKindOfClass:[NSNull class]] && ![strUserID isEqualToString:@"(null)"])
@@ -470,17 +476,18 @@
             
             
             
-            NSSortDescriptor *descriptor=[[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
+            NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"event_start_date"  ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
             NSArray *sortedArrayEventList = [response sortedArrayUsingDescriptors:@[descriptor]];
             
             
-            
+    
             for (NSDictionary *dict in sortedArrayEventList) {
+                
                 EventList *eventObj = [[EventList alloc] init];
                 eventObj.eventID                =   [NSNumber numberWithInt:[[dict objectForKey:@"event_id"] intValue]];
                 eventObj.eventName              =   [dict objectForKey:@"event_name"];
                 eventObj.eventImageURL          =   [dict objectForKey:@"event_image_url"];
-         //       NSLog(@"Data%@",sortedArrayEventList);
+
                 eventObj.eventDescription       =   [dict objectForKey:@"event_content"];
                 
                 //12.15pm 4 June '14

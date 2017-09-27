@@ -39,6 +39,7 @@
 
     [MMdbsupport MMinitializeDb];
     [MMdbsupport MMOpenDataBase];
+
     
     [Fabric with:@[[Crashlytics class]]];
 

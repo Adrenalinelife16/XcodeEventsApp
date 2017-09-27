@@ -119,6 +119,7 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    
     CLLocation *location = [locations lastObject];
     NSLog(@"lat%f - lon%f", location.coordinate.latitude, location.coordinate.longitude);
     [locationManager stopUpdatingLocation];
@@ -576,8 +577,17 @@
         CLLocationDistance distance =   [userLocation distanceFromLocation:eventLocation] * 0.000621371;
         
         
-        cell.distanceAway.text = [NSString stringWithFormat:@"%.0f", distance];
-
+        
+        if ([CLLocationManager locationServicesEnabled] &&
+            [CLLocationManager authorizationStatus] != kCLAuthorizationStatusDenied) {
+            
+            cell.distanceAway.text = [NSString stringWithFormat:@"%.0f", distance];
+            
+        } else {
+            
+            cell.distanceAway.text = @"NULL";
+        }
+        
         
     
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
