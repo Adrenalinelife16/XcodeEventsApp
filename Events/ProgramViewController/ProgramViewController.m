@@ -194,9 +194,6 @@
     
     self.pickerNames =
     @[@"All Events", @"Sunday",@"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday"];
-    
-    [Answers logSearchWithQuery:@"User Search"
-               customAttributes:@{}];
 
     
 }
@@ -277,6 +274,10 @@
     [searchBar resignFirstResponder];
     [self.navigationItem setRightBarButtonItem:nil];
     [self.navigationItem setLeftBarButtonItem:nil];
+    
+    [Answers logSearchWithQuery:@"User Search"
+               customAttributes:@{@"Search" : searchBar.text }];
+    
 }
 
 
