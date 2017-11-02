@@ -610,6 +610,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    EventList *eventType = [[EventList alloc] init];
     
     if ([self.searchController isActive]) {
         
@@ -618,14 +619,33 @@
         AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
         detailViewController.eventObj = obj;
         
+        [Answers logContentViewWithName:@"User Clicked on Event"
+                            contentType:@"Event"
+                              contentId:@"Events"
+                       customAttributes:@{}];
+
+        
         
     } else {
         
         EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
         AboutViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"aboutView"];
         detailViewController.eventObj = obj;
+        
+        [Answers logContentViewWithName:@"User Clicked on Event"
+                            contentType:@"Event"
+                              contentId:@"Events"
+                       customAttributes:@{}];
 
+        
+        
         }
+    
+    [Answers logContentViewWithName:@"User Clicked on Event"
+                        contentType:@"Event"
+                          contentId:@"Events"
+                   customAttributes:@{}];
+
     
     NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
     EventList *obj = (tableView == self.tableView) ? self->arrayEventList[indexPath.row]: self.resultsTableController.searchResults[indexPath.row];
