@@ -22,6 +22,7 @@
 @property (strong, nonatomic) IBOutlet UIView *searchBarView;
 
 
+
 -(IBAction)createEvent:(id)sender;
 
 -(IBAction)filterDay:(id)sender;

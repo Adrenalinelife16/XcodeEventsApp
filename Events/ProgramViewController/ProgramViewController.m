@@ -563,7 +563,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 250; //162: ProgramCustomCell
+    return 200; //162: ProgramCustomCell
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -588,6 +588,10 @@
     }
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
+    cell.imgTransparent.alpha = 0.8;
+    cell.imgEventImage.layer.cornerRadius = 10;
+    cell.imgTransparent.layer.cornerRadius = 10;
+    
 
     cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
     cell.lblEventName.text  =   obj.eventName;
