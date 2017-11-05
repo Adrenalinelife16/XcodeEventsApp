@@ -39,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Find Your Life";
-    
+    self.navigationController.navigationBar.translucent = NO;
     
     
 }
@@ -191,11 +191,15 @@
     } else {
         
         cell.imgEventImage.image = [UIImage imageNamed:@"no_image.png"];
+        cell.imgEventImage.layer.cornerRadius = 10;
+
         
         
     }
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
+    cell.imgEventImage.layer.cornerRadius = 10;
+
     
 
     

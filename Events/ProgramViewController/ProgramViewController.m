@@ -282,8 +282,11 @@
 
 
 
-- (IBAction)Refresh:(UIRefreshControl *)sender
-{
+- (IBAction)Refresh:(UIRefreshControl *)sender {
+    
+
+   
+    
     // Reload the data.
     [self getEventListFromServer];
     
@@ -584,6 +587,8 @@
     } else {
         
         cell.imgEventImage.image = [UIImage imageNamed:@"no_image.png"];
+        cell.imgEventImage.layer.cornerRadius = 10;
+
         
     }
     
