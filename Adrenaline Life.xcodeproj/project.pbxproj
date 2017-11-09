@@ -76,6 +76,8 @@
 		729A42571F108CFC00ED1C93 /* DiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729A42561F108CFC00ED1C93 /* DiscoverTableViewController.m */; };
 		72AF697A1E783EFD0033DB1F /* TabBarHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF69791E783EFD0033DB1F /* TabBarHeight.m */; };
 		72AF697D1E7843990033DB1F /* TabBarCenterIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */; };
+		72CEF8D61FB4A95900E8EDEB /* shadow_dark_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 72CEF8D41FB4A95900E8EDEB /* shadow_dark_small.png */; };
+		72CEF8D71FB4A95900E8EDEB /* shadow_medium_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 72CEF8D51FB4A95900E8EDEB /* shadow_medium_large.png */; };
 		72D31C8E1EC51E4C0078D3AC /* PolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D31C8D1EC51E4C0078D3AC /* PolicyViewController.m */; };
 		72DCD05B1E5D2BF700792EEA /* MoreCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */; };
 		72DCD06D1E706C0200792EEA /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */; };
@@ -391,6 +393,8 @@
 		72AF69791E783EFD0033DB1F /* TabBarHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarHeight.m; sourceTree = "<group>"; };
 		72AF697B1E7843990033DB1F /* TabBarCenterIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarCenterIcon.h; sourceTree = "<group>"; };
 		72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarCenterIcon.m; sourceTree = "<group>"; };
+		72CEF8D41FB4A95900E8EDEB /* shadow_dark_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadow_dark_small.png; path = ../../../../../shadow_dark_small.png; sourceTree = "<group>"; };
+		72CEF8D51FB4A95900E8EDEB /* shadow_medium_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadow_medium_large.png; path = ../../../../../shadow_medium_large.png; sourceTree = "<group>"; };
 		72D31C8C1EC51E4C0078D3AC /* PolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyViewController.h; sourceTree = "<group>"; };
 		72D31C8D1EC51E4C0078D3AC /* PolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyViewController.m; sourceTree = "<group>"; };
 		72DCD0591E5D2BF700792EEA /* MoreCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCustomCell.h; sourceTree = "<group>"; };
@@ -1307,6 +1311,8 @@
 				BB303DD818B86B3400B6EBC9 /* Feed.png */,
 				BB303DD918B86B3400B6EBC9 /* Feed@2x.png */,
 				BB303DDA18B86B3400B6EBC9 /* Feedred.png */,
+				72CEF8D41FB4A95900E8EDEB /* shadow_dark_small.png */,
+				72CEF8D51FB4A95900E8EDEB /* shadow_medium_large.png */,
 				BB303DDB18B86B3400B6EBC9 /* Feedred@2x.png */,
 				7122DB1B18BB459C00C044E8 /* feedviewCell1.png */,
 				7122DB1A18BB459C00C044E8 /* feedviewCell1@2x.png */,
@@ -1599,6 +1605,7 @@
 				E279ADAC1E654CAC00D3B192 /* TableGames.png in Resources */,
 				7982242718F7299A009FA42E /* input.png in Resources */,
 				E279ADAF1E654CAC00D3B192 /* Soccer.png in Resources */,
+				72CEF8D71FB4A95900E8EDEB /* shadow_medium_large.png in Resources */,
 				7122DB2B18BB4BDB00C044E8 /* feedviewCell5.png in Resources */,
 				BB303DFE18B86B3400B6EBC9 /* Listred@2x.png in Resources */,
 				7122DB2C18BB4BDB00C044E8 /* feedviewCell4@2x.png in Resources */,
@@ -1754,6 +1761,7 @@
 				7982242C18F72A57009FA42E /* register-btn@2x.png in Resources */,
 				7122DB2118BB459C00C044E8 /* feedviewCell1.png in Resources */,
 				E202AE761EF3B648001B39FD /* actionbar_bg_black.png in Resources */,
+				72CEF8D61FB4A95900E8EDEB /* shadow_dark_small.png in Resources */,
 				7122DB1D18BB459C00C044E8 /* feedviewCell3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

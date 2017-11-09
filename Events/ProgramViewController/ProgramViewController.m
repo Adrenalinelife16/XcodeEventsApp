@@ -593,9 +593,9 @@
     }
     
     cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
-    cell.imgTransparent.alpha = 0.8;
+    cell.largeBack.layer.cornerRadius = 10;
     cell.imgEventImage.layer.cornerRadius = 10;
-    cell.imgTransparent.layer.cornerRadius = 10;
+    
     
 
     cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];

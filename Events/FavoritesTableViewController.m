@@ -168,7 +168,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 250; //162: ProgramCustomCell
+    return 200; //162: ProgramCustomCell
 }
 
 

@@ -15,6 +15,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblEventDesc;
 @property (strong, nonatomic) IBOutlet UIImageView *imgEventImage;
 
-@property (strong, nonatomic) IBOutlet UIImageView *imgTransparent;
+@property (strong, nonatomic) IBOutlet UIImageView *largeBack;
 
 @end
