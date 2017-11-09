@@ -588,6 +588,7 @@
         
         cell.imgEventImage.image = [UIImage imageNamed:@"no_image.png"];
         cell.imgEventImage.layer.cornerRadius = 10;
+         cell.largeBack.layer.cornerRadius = 10;
 
         
     }

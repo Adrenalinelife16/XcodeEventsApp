@@ -96,7 +96,7 @@
         if ([obj.eventImageURL length]) {
             
             [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
-            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFit;
+            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
         } else {
             
             

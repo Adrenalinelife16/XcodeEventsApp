@@ -130,6 +130,11 @@
     
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 83;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -154,11 +159,18 @@
         if ([obj.eventImageURL length]) {
             
             [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
-            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFit;
+            cell.imgIcon.layer.cornerRadius = 10;
+
+            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
+      //      cell.largeBack.layer.cornerRadius = 10;
+            
+            
         } else {
             
 
-            cell.imgIcon.image = [UIImage imageNamed:@"no_image.png"];          
+            cell.imgIcon.image = [UIImage imageNamed:@"no_image.png"];
+      //      cell.largeBack.layer.cornerRadius = 10;
+            cell.imgIcon.layer.cornerRadius = 10;
             
         }
         
