@@ -76,6 +76,8 @@
 		729A42571F108CFC00ED1C93 /* DiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729A42561F108CFC00ED1C93 /* DiscoverTableViewController.m */; };
 		72AF697A1E783EFD0033DB1F /* TabBarHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF69791E783EFD0033DB1F /* TabBarHeight.m */; };
 		72AF697D1E7843990033DB1F /* TabBarCenterIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */; };
+		72B3B2611FBF5EDF004E0F93 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B3B2601FBF5EDF004E0F93 /* NotificationService.m */; };
+		72B3B2651FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72B3B25D1FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		72CEF8D61FB4A95900E8EDEB /* shadow_dark_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 72CEF8D41FB4A95900E8EDEB /* shadow_dark_small.png */; };
 		72CEF8D71FB4A95900E8EDEB /* shadow_medium_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 72CEF8D51FB4A95900E8EDEB /* shadow_medium_large.png */; };
 		72D31C8E1EC51E4C0078D3AC /* PolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D31C8D1EC51E4C0078D3AC /* PolicyViewController.m */; };
@@ -289,6 +291,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		72B3B2631FBF5EDF004E0F93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB303D8E18B863E300B6EBC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72B3B25C1FBF5EDF004E0F93;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 		BB303DBF18B863E300B6EBC9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB303D8E18B863E300B6EBC9 /* Project object */;
@@ -297,6 +306,20 @@
 			remoteInfo = Events;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72B3B2691FBF5EDF004E0F93 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				72B3B2651FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		711221D218BC62DD00E77A4A /* NSDate+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+convenience.h"; sourceTree = "<group>"; };
@@ -393,6 +416,10 @@
 		72AF69791E783EFD0033DB1F /* TabBarHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarHeight.m; sourceTree = "<group>"; };
 		72AF697B1E7843990033DB1F /* TabBarCenterIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarCenterIcon.h; sourceTree = "<group>"; };
 		72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarCenterIcon.m; sourceTree = "<group>"; };
+		72B3B25D1FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B3B25F1FBF5EDF004E0F93 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		72B3B2601FBF5EDF004E0F93 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		72B3B2621FBF5EDF004E0F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72CEF8D41FB4A95900E8EDEB /* shadow_dark_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadow_dark_small.png; path = ../../../../../shadow_dark_small.png; sourceTree = "<group>"; };
 		72CEF8D51FB4A95900E8EDEB /* shadow_medium_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadow_medium_large.png; path = ../../../../../shadow_medium_large.png; sourceTree = "<group>"; };
 		72D31C8C1EC51E4C0078D3AC /* PolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyViewController.h; sourceTree = "<group>"; };
@@ -684,6 +711,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		72B3B25A1FBF5EDF004E0F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB303D9318B863E300B6EBC9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -846,6 +880,16 @@
 				72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */,
 			);
 			name = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		72B3B25E1FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				72B3B25F1FBF5EDF004E0F93 /* NotificationService.h */,
+				72B3B2601FBF5EDF004E0F93 /* NotificationService.m */,
+				72B3B2621FBF5EDF004E0F93 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		72C6E34A1E552FFE00B25C5F /* Search */ = {
@@ -1158,6 +1202,7 @@
 				79A5E24619C9064E009D4018 /* Localizable.strings */,
 				BB303D9F18B863E300B6EBC9 /* Events */,
 				BB303DC118B863E300B6EBC9 /* EventsTests */,
+				72B3B25E1FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension */,
 				BB303D9818B863E300B6EBC9 /* Frameworks */,
 				BB303D9718B863E300B6EBC9 /* Products */,
 			);
@@ -1168,6 +1213,7 @@
 			children = (
 				BB303D9618B863E300B6EBC9 /* Adrenaline Life.app */,
 				BB303DBA18B863E300B6EBC9 /* Adrenaline LifeTests.xctest */,
+				72B3B25D1FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1503,6 +1549,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		72B3B25C1FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72B3B2681FBF5EDF004E0F93 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				72B3B2591FBF5EDF004E0F93 /* Sources */,
+				72B3B25A1FBF5EDF004E0F93 /* Frameworks */,
+				72B3B25B1FBF5EDF004E0F93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 72B3B25D1FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BB303D9518B863E300B6EBC9 /* Adrenaline Life */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB303DCB18B863E300B6EBC9 /* Build configuration list for PBXNativeTarget "Adrenaline Life" */;
@@ -1511,10 +1574,12 @@
 				BB303D9318B863E300B6EBC9 /* Frameworks */,
 				BB303D9418B863E300B6EBC9 /* Resources */,
 				79684ED419790B180027C799 /* ShellScript */,
+				72B3B2691FBF5EDF004E0F93 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				72B3B2641FBF5EDF004E0F93 /* PBXTargetDependency */,
 			);
 			name = "Adrenaline Life";
 			productName = Events;
@@ -1551,10 +1616,18 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Adrenaline Life";
 				TargetAttributes = {
+					72B3B25C1FBF5EDF004E0F93 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = X3THT57J9K;
+						ProvisioningStyle = Automatic;
+					};
 					BB303D9518B863E300B6EBC9 = {
 						DevelopmentTeam = X3THT57J9K;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 0;
 							};
@@ -1586,11 +1659,19 @@
 			targets = (
 				BB303D9518B863E300B6EBC9 /* Adrenaline Life */,
 				BB303DB918B863E300B6EBC9 /* Adrenaline LifeTests */,
+				72B3B25C1FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		72B3B25B1FBF5EDF004E0F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB303D9418B863E300B6EBC9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1793,6 +1874,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		72B3B2591FBF5EDF004E0F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B3B2611FBF5EDF004E0F93 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB303D9218B863E300B6EBC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1903,6 +1992,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		72B3B2641FBF5EDF004E0F93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72B3B25C1FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 72B3B2631FBF5EDF004E0F93 /* PBXContainerItemProxy */;
+		};
 		BB303DC018B863E300B6EBC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BB303D9518B863E300B6EBC9 /* Adrenaline Life */;
@@ -1938,6 +2032,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		72B3B2661FBF5EDF004E0F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: George Hartley (MN5U5RDRGQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X3THT57J9K;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		72B3B2671FBF5EDF004E0F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: George Hartley (MN5U5RDRGQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X3THT57J9K;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		BB303DC918B863E300B6EBC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2117,6 +2254,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		72B3B2681FBF5EDF004E0F93 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B3B2661FBF5EDF004E0F93 /* Debug */,
+				72B3B2671FBF5EDF004E0F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BB303D9118B863E300B6EBC9 /* Build configuration list for PBXProject "Adrenaline Life" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
