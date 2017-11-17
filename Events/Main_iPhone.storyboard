@@ -735,7 +735,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20242354273796082" green="0.2147795557975769" blue="0.21521890163421631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1474,6 +1474,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.36862745099999999" green="0.3803921569" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscoverCalCell" rowHeight="83" id="AzF-n8-jVC" customClass="EventCalCell">
                                 <rect key="frame" x="0.0" y="28" width="320" height="83"/>
@@ -1501,7 +1502,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.36862745099999999" green="0.3803921569" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.3803921569" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="imgIcon" destination="IZA-9e-nNR" id="AGu-e0-v8F"/>
                                     <outlet property="lblDateTime" destination="wEb-VU-mEt" id="vqH-lO-ycq"/>
@@ -2376,12 +2379,12 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="c3b-7q-UHr"/>
-        <segue reference="okc-1f-ZH5"/>
-        <segue reference="Yzg-yO-FJ6"/>
         <segue reference="C9L-jn-ty6"/>
         <segue reference="U3F-sb-sE9"/>
-        <segue reference="GQZ-yq-JN7"/>
         <segue reference="6n8-q3-lxy"/>
+        <segue reference="Yzg-yO-FJ6"/>
+        <segue reference="c3b-7q-UHr"/>
+        <segue reference="okc-1f-ZH5"/>
+        <segue reference="5BI-DP-Akc"/>
     </inferredMetricsTieBreakers>
 </document>
