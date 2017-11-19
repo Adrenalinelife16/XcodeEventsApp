@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08EF052BDA0C581BBB08CDFD /* libPods-Adrenaline Life.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0390274DFC242D62FD0F70A1 /* libPods-Adrenaline Life.a */; };
+		4EED485B1EDCCAF07892D638 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 882D574E19F62CD6BC635ADD /* libPods-OneSignalNotificationServiceExtension.a */; };
 		711221DC18BC62DD00E77A4A /* NSDate+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 711221D318BC62DD00E77A4A /* NSDate+convenience.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		711221DD18BC62DD00E77A4A /* NSMutableArray+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 711221D518BC62DD00E77A4A /* NSMutableArray+convenience.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		711221DE18BC62DD00E77A4A /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 711221D718BC62DD00E77A4A /* UIColor+expanded.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -322,6 +324,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0390274DFC242D62FD0F70A1 /* libPods-Adrenaline Life.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Adrenaline Life.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D209834CE8630357B8F55B /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		2BF8985DDEA1396B26D6E17A /* Pods-Adrenaline Life.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adrenaline Life.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Adrenaline Life/Pods-Adrenaline Life.debug.xcconfig"; sourceTree = "<group>"; };
+		35D45064AD3C4E47AB273056 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		508C161D60E9E75B5F5C8CF2 /* Pods-Adrenaline Life.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adrenaline Life.release.xcconfig"; path = "Pods/Target Support Files/Pods-Adrenaline Life/Pods-Adrenaline Life.release.xcconfig"; sourceTree = "<group>"; };
 		711221D218BC62DD00E77A4A /* NSDate+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+convenience.h"; sourceTree = "<group>"; };
 		711221D318BC62DD00E77A4A /* NSDate+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+convenience.m"; sourceTree = "<group>"; };
 		711221D418BC62DD00E77A4A /* NSMutableArray+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+convenience.h"; sourceTree = "<group>"; };
@@ -580,6 +587,7 @@
 		79E815601953481800E58344 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		79E815611953481800E58344 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		79E815621953481800E58344 /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon120.png; sourceTree = "<group>"; };
+		882D574E19F62CD6BC635ADD /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB303D9618B863E300B6EBC9 /* Adrenaline Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adrenaline Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB303D9918B863E300B6EBC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB303D9B18B863E300B6EBC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -715,6 +723,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EED485B1EDCCAF07892D638 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,6 +745,7 @@
 				BB303D9C18B863E300B6EBC9 /* CoreGraphics.framework in Frameworks */,
 				BB303D9E18B863E300B6EBC9 /* UIKit.framework in Frameworks */,
 				BB303D9A18B863E300B6EBC9 /* Foundation.framework in Frameworks */,
+				08EF052BDA0C581BBB08CDFD /* libPods-Adrenaline Life.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1205,6 +1215,7 @@
 				72B3B25E1FBF5EDF004E0F93 /* OneSignalNotificationServiceExtension */,
 				BB303D9818B863E300B6EBC9 /* Frameworks */,
 				BB303D9718B863E300B6EBC9 /* Products */,
+				F66F4EB58E29B881DC57A35E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1236,6 +1247,8 @@
 				BB303D9B18B863E300B6EBC9 /* CoreGraphics.framework */,
 				BB303D9D18B863E300B6EBC9 /* UIKit.framework */,
 				BB303DBB18B863E300B6EBC9 /* XCTest.framework */,
+				0390274DFC242D62FD0F70A1 /* libPods-Adrenaline Life.a */,
+				882D574E19F62CD6BC635ADD /* libPods-OneSignalNotificationServiceExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1546,6 +1559,17 @@
 			name = "Create Event";
 			sourceTree = "<group>";
 		};
+		F66F4EB58E29B881DC57A35E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BF8985DDEA1396B26D6E17A /* Pods-Adrenaline Life.debug.xcconfig */,
+				508C161D60E9E75B5F5C8CF2 /* Pods-Adrenaline Life.release.xcconfig */,
+				35D45064AD3C4E47AB273056 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				07D209834CE8630357B8F55B /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1553,9 +1577,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72B3B2681FBF5EDF004E0F93 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
 			buildPhases = (
+				D6488ACB1FECC6671EB2025E /* [CP] Check Pods Manifest.lock */,
 				72B3B2591FBF5EDF004E0F93 /* Sources */,
 				72B3B25A1FBF5EDF004E0F93 /* Frameworks */,
 				72B3B25B1FBF5EDF004E0F93 /* Resources */,
+				301ED8377D783A21EFDA873A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1570,11 +1596,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB303DCB18B863E300B6EBC9 /* Build configuration list for PBXNativeTarget "Adrenaline Life" */;
 			buildPhases = (
+				E243FD145390CF8E64C99619 /* [CP] Check Pods Manifest.lock */,
 				BB303D9218B863E300B6EBC9 /* Sources */,
 				BB303D9318B863E300B6EBC9 /* Frameworks */,
 				BB303D9418B863E300B6EBC9 /* Resources */,
 				79684ED419790B180027C799 /* ShellScript */,
 				72B3B2691FBF5EDF004E0F93 /* Embed App Extensions */,
+				82AA3F014978420A3E2E35B2 /* [CP] Embed Pods Frameworks */,
+				965C5E8186C1CF581A96113E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1858,6 +1887,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		301ED8377D783A21EFDA873A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		79684ED419790B180027C799 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1870,6 +1914,72 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#if [ ${CONFIGURATION} == \"Release\" ]; then\nAPPLEDOC_PATH=`which appledoc`\nif [ $APPLEDOC_PATH ]; then\n$APPLEDOC_PATH \\\n--project-name ${PRODUCT_NAME} \\\n--project-company \"Your Name\" \\\n--company-id \"com.yourcompany\" \\\n--output ${PRODUCT_NAME}Docs \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n${PROJECT_DIR}/${PRODUCT_NAME}\nfi;\n./Fabric.framework/run ab8578ab515502f5bd32f29e20d4b050052d7e8c e5b762c21a25327c3d7e94112ecc357b58e3c61abb401e000d0613bd0b39a6cc\n#fi;";
+		};
+		82AA3F014978420A3E2E35B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adrenaline Life/Pods-Adrenaline Life-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		965C5E8186C1CF581A96113E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adrenaline Life/Pods-Adrenaline Life-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6488ACB1FECC6671EB2025E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E243FD145390CF8E64C99619 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adrenaline Life-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2034,6 +2144,7 @@
 /* Begin XCBuildConfiguration section */
 		72B3B2661FBF5EDF004E0F93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D45064AD3C4E47AB273056 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2055,6 +2166,7 @@
 		};
 		72B3B2671FBF5EDF004E0F93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D209834CE8630357B8F55B /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2160,6 +2272,7 @@
 		};
 		BB303DCC18B863E300B6EBC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BF8985DDEA1396B26D6E17A /* Pods-Adrenaline Life.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Events/Events.entitlements;
@@ -2186,6 +2299,7 @@
 		};
 		BB303DCD18B863E300B6EBC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508C161D60E9E75B5F5C8CF2 /* Pods-Adrenaline Life.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Events/Events.entitlements;
