@@ -19,7 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6.png"] forBarMetrics:UIBarMetricsDefault];
+    // need a larger image: actionbar_bg_6.png to fit the full navigation bar
+    
+    // uncomment below and then comment back to see difference
+    
+  //  [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"actionbar_bg_6.png"] forBarMetrics:UIBarMetricsDefault];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
   
