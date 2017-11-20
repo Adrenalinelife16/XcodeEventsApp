@@ -119,9 +119,11 @@
     
     
     self.searchController.searchResultsUpdater = self;
-    [self.searchController.searchBar sizeToFit];
-    self.searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0);
     
+    [self.searchController.searchBar sizeToFit];
+   
+    self.searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0);
+
     
     // We want ourselves to be the delegate for this filtered table so didSelectRowAtIndexPath is called for both tables.
     self.resultsTableController.tableView.delegate = self;
@@ -217,11 +219,10 @@
     
     [super viewWillAppear:(BOOL)animated];
     
+  
     [self.tabBarController.tabBar setHidden:NO];
     
-    self.navigationItem.titleView = self.searchController.searchBar;
-    //   self.tableView.tableHeaderView = self.searchController.searchBar;
-  
+    self.navigationItem.titleView = _searchController.searchBar;
 
 
     self.definesPresentationContext = YES;
@@ -269,7 +270,6 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     
-
     [searchBar resignFirstResponder];
     [self.navigationItem setRightBarButtonItem:nil];
     [self.navigationItem setLeftBarButtonItem:nil];
@@ -282,9 +282,6 @@
 
 
 - (IBAction)Refresh:(UIRefreshControl *)sender {
-    
-
-   
     
     // Reload the data.
     [self getEventListFromServer];
@@ -587,7 +584,7 @@
         
         cell.imgEventImage.image = [UIImage imageNamed:@"no_image.png"];
         cell.imgEventImage.layer.cornerRadius = 10;
-         cell.largeBack.layer.cornerRadius = 10;
+        cell.largeBack.layer.cornerRadius = 10;
 
         
     }
