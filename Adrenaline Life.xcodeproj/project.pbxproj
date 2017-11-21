@@ -76,8 +76,6 @@
 		729A42571F108CFC00ED1C93 /* DiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729A42561F108CFC00ED1C93 /* DiscoverTableViewController.m */; };
 		72AF697A1E783EFD0033DB1F /* TabBarHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF69791E783EFD0033DB1F /* TabBarHeight.m */; };
 		72AF697D1E7843990033DB1F /* TabBarCenterIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF697C1E7843990033DB1F /* TabBarCenterIcon.m */; };
-		72CEF8D61FB4A95900E8EDEB /* shadow_dark_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 72CEF8D41FB4A95900E8EDEB /* shadow_dark_small.png */; };
-		72CEF8D71FB4A95900E8EDEB /* shadow_medium_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 72CEF8D51FB4A95900E8EDEB /* shadow_medium_large.png */; };
 		72D31C8E1EC51E4C0078D3AC /* PolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D31C8D1EC51E4C0078D3AC /* PolicyViewController.m */; };
 		72DCD05B1E5D2BF700792EEA /* MoreCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD05A1E5D2BF700792EEA /* MoreCustomCell.m */; };
 		72DCD06D1E706C0200792EEA /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DCD06C1E706C0200792EEA /* CategoryTableViewController.m */; };
@@ -286,6 +284,7 @@
 		E2D37A971EEF934C00395B03 /* actionbar_bg_5.png in Resources */ = {isa = PBXBuildFile; fileRef = E2D37A951EEF934C00395B03 /* actionbar_bg_5.png */; };
 		E2E57C921E50CB14007C9646 /* NEBackGroundPages2.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */; };
 		E2E57C941E50CF08007C9646 /* NEPrototypeCellLayout.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */; };
+		E2EB815E1FC3EC45004CD6D7 /* actionbar_bg_6_80.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EB815D1FC3EC45004CD6D7 /* actionbar_bg_6_80.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -694,6 +693,7 @@
 		E2D37A951EEF934C00395B03 /* actionbar_bg_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_5.png; sourceTree = "<group>"; };
 		E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NEBackGroundPages2.png; sourceTree = "<group>"; };
 		E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NEPrototypeCellLayout.png; sourceTree = "<group>"; };
+		E2EB815D1FC3EC45004CD6D7 /* actionbar_bg_6_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = actionbar_bg_6_80.png; path = Images/actionbar_bg_6_80.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1242,6 +1242,7 @@
 				BB303DB118B863E300B6EBC9 /* ViewController.h */,
 				BB303DB218B863E300B6EBC9 /* ViewController.m */,
 				BB303DB418B863E300B6EBC9 /* Images.xcassets */,
+				E2EB815D1FC3EC45004CD6D7 /* actionbar_bg_6_80.png */,
 				BB303DA018B863E300B6EBC9 /* Supporting Files */,
 			);
 			path = Events;
@@ -1622,7 +1623,6 @@
 				E279ADAC1E654CAC00D3B192 /* TableGames.png in Resources */,
 				7982242718F7299A009FA42E /* input.png in Resources */,
 				E279ADAF1E654CAC00D3B192 /* Soccer.png in Resources */,
-				72CEF8D71FB4A95900E8EDEB /* shadow_medium_large.png in Resources */,
 				7122DB2B18BB4BDB00C044E8 /* feedviewCell5.png in Resources */,
 				BB303DFE18B86B3400B6EBC9 /* Listred@2x.png in Resources */,
 				7122DB2C18BB4BDB00C044E8 /* feedviewCell4@2x.png in Resources */,
@@ -1708,6 +1708,7 @@
 				BB303E0618B86B3400B6EBC9 /* MyProgram@2x.png in Resources */,
 				79504C44191F7E0C00EF3103 /* Milan-Fashion-Week-logo@2x.png in Resources */,
 				BB303E1F18B879AA00B6EBC9 /* image1.png in Resources */,
+				E2EB815E1FC3EC45004CD6D7 /* actionbar_bg_6_80.png in Resources */,
 				7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */,
 				7972E978195355B100F25E4D /* icon-feed-instagram@2x.png in Resources */,
 				E2D37A821EEF798400395B03 /* ic_nav3.png in Resources */,
@@ -1778,7 +1779,6 @@
 				7982242C18F72A57009FA42E /* register-btn@2x.png in Resources */,
 				7122DB2118BB459C00C044E8 /* feedviewCell1.png in Resources */,
 				E202AE761EF3B648001B39FD /* actionbar_bg_black.png in Resources */,
-				72CEF8D61FB4A95900E8EDEB /* shadow_dark_small.png in Resources */,
 				7122DB1D18BB459C00C044E8 /* feedviewCell3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
