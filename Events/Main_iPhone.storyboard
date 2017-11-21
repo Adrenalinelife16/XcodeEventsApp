@@ -1093,7 +1093,7 @@
                         <color key="sectionIndexBackgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <view key="tableHeaderView" clipsSubviews="YES" contentMode="scaleToFill" id="2IL-SV-7pg">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-a4-NlA">
                                     <rect key="frame" x="8" y="6" width="106" height="31"/>
@@ -1138,7 +1138,7 @@
                                     <subviews>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sfO-v4-Av0">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="tg3-6p-tks">
                                                     <rect key="frame" x="8" y="0.0" width="304" height="192"/>
@@ -2055,7 +2055,7 @@
                                                     <rect key="frame" x="8" y="0.0" width="304" height="75"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Small Background" translatesAutoresizingMaskIntoConstraints="NO" id="z6q-xB-mi1">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Large Background" translatesAutoresizingMaskIntoConstraints="NO" id="z6q-xB-mi1">
                                                     <rect key="frame" x="8" y="0.0" width="304" height="75"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -2347,7 +2347,6 @@
         <image name="More Selected" width="25" height="25"/>
         <image name="Riding" width="320" height="240"/>
         <image name="Running" width="320" height="240"/>
-        <image name="Small Background" width="240" height="155"/>
         <image name="Soccer" width="320" height="240"/>
         <image name="Social Life" width="25" height="25"/>
         <image name="Social Life Selected" width="25" height="25"/>
@@ -2370,9 +2369,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="U3F-sb-sE9"/>
-        <segue reference="6n8-q3-lxy"/>
+        <segue reference="AVa-mX-VeI"/>
         <segue reference="okc-1f-ZH5"/>
-        <segue reference="GQZ-yq-JN7"/>
+        <segue reference="4JL-TO-diO"/>
         <segue reference="C9L-jn-ty6"/>
         <segue reference="c3b-7q-UHr"/>
         <segue reference="Yzg-yO-FJ6"/>

@@ -69,6 +69,10 @@
     NSString *strCurrentDate    =   [dateFormatter stringFromDate:currentDate];
     eventDate   =   [dateFormatter dateFromString:strCurrentDate];
     
+    [self createCalendarView];
+    [self clickedMyCalender:nil];
+    [self getAllEventsFromServer];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -79,11 +83,7 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.hidesBackButton = YES;
-    
-    [self createCalendarView];
-    [self clickedMyCalender:nil];
-    [self getAllEventsFromServer];
-    
+
     [_btnMyCalender setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     
    
