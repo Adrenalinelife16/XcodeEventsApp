@@ -79,6 +79,7 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.hidesBackButton = YES;
+    
     [self createCalendarView];
     [self clickedMyCalender:nil];
     [self getAllEventsFromServer];
@@ -130,11 +131,6 @@
     
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 83;
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -162,14 +158,12 @@
             cell.imgIcon.layer.cornerRadius = 10;
 
             cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
-      //      cell.largeBack.layer.cornerRadius = 10;
             
             
         } else {
             
 
             cell.imgIcon.image = [UIImage imageNamed:@"no_image.png"];
-      //      cell.largeBack.layer.cornerRadius = 10;
             cell.imgIcon.layer.cornerRadius = 10;
             
         }
@@ -178,8 +172,6 @@
     
     return cell;
 }
-
-
 
 
 #pragma mark - Button Clicked Function
