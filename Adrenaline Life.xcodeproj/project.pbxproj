@@ -284,7 +284,6 @@
 		E2D37A971EEF934C00395B03 /* actionbar_bg_5.png in Resources */ = {isa = PBXBuildFile; fileRef = E2D37A951EEF934C00395B03 /* actionbar_bg_5.png */; };
 		E2E57C921E50CB14007C9646 /* NEBackGroundPages2.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */; };
 		E2E57C941E50CF08007C9646 /* NEPrototypeCellLayout.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */; };
-		E2EB815E1FC3EC45004CD6D7 /* actionbar_bg_6_80.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EB815D1FC3EC45004CD6D7 /* actionbar_bg_6_80.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -693,7 +692,6 @@
 		E2D37A951EEF934C00395B03 /* actionbar_bg_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_5.png; sourceTree = "<group>"; };
 		E2E57C911E50CB14007C9646 /* NEBackGroundPages2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NEBackGroundPages2.png; sourceTree = "<group>"; };
 		E2E57C931E50CF08007C9646 /* NEPrototypeCellLayout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NEPrototypeCellLayout.png; sourceTree = "<group>"; };
-		E2EB815D1FC3EC45004CD6D7 /* actionbar_bg_6_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = actionbar_bg_6_80.png; path = Images/actionbar_bg_6_80.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1242,7 +1240,6 @@
 				BB303DB118B863E300B6EBC9 /* ViewController.h */,
 				BB303DB218B863E300B6EBC9 /* ViewController.m */,
 				BB303DB418B863E300B6EBC9 /* Images.xcassets */,
-				E2EB815D1FC3EC45004CD6D7 /* actionbar_bg_6_80.png */,
 				BB303DA018B863E300B6EBC9 /* Supporting Files */,
 			);
 			path = Events;
@@ -1708,7 +1705,6 @@
 				BB303E0618B86B3400B6EBC9 /* MyProgram@2x.png in Resources */,
 				79504C44191F7E0C00EF3103 /* Milan-Fashion-Week-logo@2x.png in Resources */,
 				BB303E1F18B879AA00B6EBC9 /* image1.png in Resources */,
-				E2EB815E1FC3EC45004CD6D7 /* actionbar_bg_6_80.png in Resources */,
 				7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */,
 				7972E978195355B100F25E4D /* icon-feed-instagram@2x.png in Resources */,
 				E2D37A821EEF798400395B03 /* ic_nav3.png in Resources */,
