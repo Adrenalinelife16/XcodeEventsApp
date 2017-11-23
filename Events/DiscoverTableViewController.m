@@ -65,7 +65,6 @@
     // Return the number of sections.
     return 1;
 }
-
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 130; //162: ProgramCustomCell
@@ -101,12 +100,13 @@
         if ([obj.eventImageURL length]) {
             
             [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
-            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
+            cell.imgIcon.layer.cornerRadius = 10;
+            //cell.largeBack.layer.cornerRadius = 10;
+            
+            // -- IT WAS THIS LINE OF CODE THAT WAS FUCKING EVERYTHING UP!!!!!!! YOUR FAULT!!!!
+            //cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
         } else {
-            
-            
             cell.imgIcon.image = [UIImage imageNamed:@"no_image.png"];
-            
         }
         
     }

@@ -127,7 +127,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 130; //162: ProgramCustomCell
+    return 110; //162: ProgramCustomCell
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -160,9 +160,10 @@
         if ([obj.eventImageURL length]) {
             
             [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
-            cell.imgIcon.layer.cornerRadius = 10;
+            cell.imgIcon.layer.cornerRadius = 20;
 
-            cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
+            // -- IT WAS THIS LINE OF CODE THAT WAS FUCKING EVERYTHING UP!!!!!!! YOUR FAULT!!!! 
+            //cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
             
             
         } else {

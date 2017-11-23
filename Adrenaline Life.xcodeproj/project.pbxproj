@@ -82,7 +82,6 @@
 		72E417561F043A3600E6F81A /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E417551F043A3600E6F81A /* CalendarViewController.m */; };
 		72E4175C1F046C4A00E6F81A /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */; };
 		72ED09881F01405500F60832 /* AttendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ED09871F01405500F60832 /* AttendingViewController.m */; };
-		72EFC1121FC5300C0041CEB4 /* actionbar_bg_6_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 72EFC1111FC530040041CEB4 /* actionbar_bg_6_80.png */; };
 		72F761A91F3E286300FCA906 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F761A81F3E286300FCA906 /* FilterViewController.m */; };
 		72F761CD1F4C87B800FCA906 /* DisableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F761CC1F4C87B800FCA906 /* DisableView.xib */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
@@ -252,6 +251,7 @@
 		E22DC9F81EFB812200A98DA7 /* actionbar_bg_white.png in Resources */ = {isa = PBXBuildFile; fileRef = E22DC9F61EFB812200A98DA7 /* actionbar_bg_white.png */; };
 		E22DC9F91EFB812200A98DA7 /* actionbar_bg_6solid.png in Resources */ = {isa = PBXBuildFile; fileRef = E22DC9F71EFB812200A98DA7 /* actionbar_bg_6solid.png */; };
 		E22DC9FB1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = E22DC9FA1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png */; };
+		E265C5CA1FC6464900AA086C /* actionbar_bg_6_80.png in Resources */ = {isa = PBXBuildFile; fileRef = E265C5C91FC6464900AA086C /* actionbar_bg_6_80.png */; };
 		E279AD9E1E653D6500D3B192 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E279AD9D1E653D6500D3B192 /* DiscoverViewController.m */; };
 		E279ADA91E654CAC00D3B192 /* Fishing.png in Resources */ = {isa = PBXBuildFile; fileRef = E279AD9F1E654CAC00D3B192 /* Fishing.png */; };
 		E279ADAA1E654CAC00D3B192 /* Golf.png in Resources */ = {isa = PBXBuildFile; fileRef = E279ADA01E654CAC00D3B192 /* Golf.png */; };
@@ -420,7 +420,6 @@
 		72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
 		72ED09861F01405500F60832 /* AttendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendingViewController.h; sourceTree = "<group>"; };
 		72ED09871F01405500F60832 /* AttendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendingViewController.m; sourceTree = "<group>"; };
-		72EFC1111FC530040041CEB4 /* actionbar_bg_6_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = actionbar_bg_6_80.png; path = ../../../../../actionbar_bg_6_80.png; sourceTree = "<group>"; };
 		72F761A71F3E286300FCA906 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		72F761A81F3E286300FCA906 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		72F761CC1F4C87B800FCA906 /* DisableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisableView.xib; sourceTree = "<group>"; };
@@ -654,6 +653,7 @@
 		E22DC9F61EFB812200A98DA7 /* actionbar_bg_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_white.png; sourceTree = "<group>"; };
 		E22DC9F71EFB812200A98DA7 /* actionbar_bg_6solid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_6solid.png; sourceTree = "<group>"; };
 		E22DC9FA1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FINALHIGHRESFULLLOGO.png; sourceTree = "<group>"; };
+		E265C5C91FC6464900AA086C /* actionbar_bg_6_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_6_80.png; sourceTree = "<group>"; };
 		E279AD9C1E653D6500D3B192 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		E279AD9D1E653D6500D3B192 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		E279AD9F1E654CAC00D3B192 /* Fishing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fishing.png; sourceTree = "<group>"; };
@@ -1280,9 +1280,9 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E265C5C91FC6464900AA086C /* actionbar_bg_6_80.png */,
 				E22DC9FA1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png */,
 				E22DC9F61EFB812200A98DA7 /* actionbar_bg_white.png */,
-				72EFC1111FC530040041CEB4 /* actionbar_bg_6_80.png */,
 				E22DC9F71EFB812200A98DA7 /* actionbar_bg_6solid.png */,
 				E202AE771EF3BCCA001B39FD /* actionbar_bg_grey6.png */,
 				E202AE781EF3BCCA001B39FD /* actionbar_bg_grey1.png */,
@@ -1708,7 +1708,7 @@
 				BB303E0618B86B3400B6EBC9 /* MyProgram@2x.png in Resources */,
 				79504C44191F7E0C00EF3103 /* Milan-Fashion-Week-logo@2x.png in Resources */,
 				BB303E1F18B879AA00B6EBC9 /* image1.png in Resources */,
-				72EFC1121FC5300C0041CEB4 /* actionbar_bg_6_80.png in Resources */,
+				E265C5CA1FC6464900AA086C /* actionbar_bg_6_80.png in Resources */,
 				7293CFAB1E0AF2B700E310C0 /* Adrenaline Full Logo Transparent.png in Resources */,
 				7972E978195355B100F25E4D /* icon-feed-instagram@2x.png in Resources */,
 				E2D37A821EEF798400395B03 /* ic_nav3.png in Resources */,
