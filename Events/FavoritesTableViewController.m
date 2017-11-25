@@ -188,6 +188,10 @@
     if ([obj.eventImageURL length]) {
         
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
+        cell.imgEventImage.clipsToBounds = YES;
+        cell.imgEventImage.layer.cornerRadius = 10;
+        
+        
     } else {
         
         cell.imgEventImage.image = [UIImage imageNamed:@"no_image.png"];

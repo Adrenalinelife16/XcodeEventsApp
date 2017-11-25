@@ -201,6 +201,7 @@
 
 
 
+
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     CLLocation *location = [locations lastObject];
@@ -578,21 +579,29 @@
     
     EventList *obj = [arrayEventList objectAtIndex:indexPath.row];  // arrayEventList
     
+
+    
+    
+  //  cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
+    
+    
     if ([obj.eventImageURL length]) {
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
+        
+        cell.imgEventImage.layer.masksToBounds = YES;
+        cell.imgEventImage.clipsToBounds = YES;
+        cell.imgEventImage.layer.opaque = NO;
+        cell.largeBack.layer.cornerRadius = 10.0f;
+        cell.imgEventImage.layer.cornerRadius = 10.0f;
+
     } else {
         
         cell.imgEventImage.image = [UIImage imageNamed:@"no_image.png"];
-        cell.imgEventImage.layer.cornerRadius = 10;
-        cell.largeBack.layer.cornerRadius = 10;
+       
 
         
     }
-    
-    cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
-    cell.largeBack.layer.cornerRadius = 10;
-    cell.imgEventImage.layer.cornerRadius = 10;
-    
+
     
 
     cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
@@ -600,10 +609,6 @@
     cell.lblEventDesc.text  =   [obj.eventDescription stringByConvertingHTMLToPlainText];
     cell.lblEventDesc.text  =   [Utility TrimString:cell.lblEventDesc.text];
     
-    
-    
-    
-     
      
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [locationManager stopUpdatingLocation];

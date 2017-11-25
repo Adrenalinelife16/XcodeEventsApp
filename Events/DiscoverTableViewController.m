@@ -100,6 +100,7 @@
         if ([obj.eventImageURL length]) {
             
             [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
+            cell.imgIcon.clipsToBounds = YES;
             cell.imgIcon.layer.cornerRadius = 10;
             //cell.largeBack.layer.cornerRadius = 10;
             

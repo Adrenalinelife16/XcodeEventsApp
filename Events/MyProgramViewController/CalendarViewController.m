@@ -160,7 +160,9 @@
         if ([obj.eventImageURL length]) {
             
             [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
-            cell.imgIcon.layer.cornerRadius = 20;
+            cell.imgIcon.clipsToBounds = YES;
+            cell.imgIcon.layer.cornerRadius = 10;
+            
 
             // -- IT WAS THIS LINE OF CODE THAT WAS FUCKING EVERYTHING UP!!!!!!! YOUR FAULT!!!! 
             //cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
