@@ -597,9 +597,13 @@
     } else {
         
         cell.imgEventImage.image = [UIImage imageNamed:@"no_image.png"];
+        cell.imgEventImage.layer.masksToBounds = YES;
+        cell.imgEventImage.clipsToBounds = YES;
+        cell.imgEventImage.layer.opaque = NO;
+        cell.largeBack.layer.cornerRadius = 10.0f;
+        cell.imgEventImage.layer.cornerRadius = 10.0f;
        
 
-        
     }
 
     

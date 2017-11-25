@@ -102,12 +102,15 @@
             [cell.imgIcon setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
             cell.imgIcon.clipsToBounds = YES;
             cell.imgIcon.layer.cornerRadius = 10;
-            //cell.largeBack.layer.cornerRadius = 10;
+            cell.discoverLarge.layer.cornerRadius = 10;
             
             // -- IT WAS THIS LINE OF CODE THAT WAS FUCKING EVERYTHING UP!!!!!!! YOUR FAULT!!!!
             //cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
         } else {
             cell.imgIcon.image = [UIImage imageNamed:@"no_image.png"];
+            cell.imgIcon.clipsToBounds = YES;
+            cell.imgIcon.layer.cornerRadius = 10;
+            cell.discoverLarge.layer.cornerRadius = 10;
         }
         
     }

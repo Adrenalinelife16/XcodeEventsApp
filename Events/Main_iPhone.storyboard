@@ -1509,14 +1509,14 @@
                                                     </accessibility>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date and Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEb-VU-mEt">
-                                                    <rect key="frame" x="15" y="95" width="219" height="21"/>
+                                                    <rect key="frame" x="15" y="95" width="284" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orM-vp-kqw">
-                                                    <rect key="frame" x="15" y="73" width="219" height="21"/>
+                                                    <rect key="frame" x="15" y="73" width="284" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1531,6 +1531,7 @@
                                 <color key="backgroundColor" red="0.36862745099999999" green="0.3803921569" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
+                                    <outlet property="discoverLarge" destination="WsI-LQ-E9E" id="VUA-Px-Pki"/>
                                     <outlet property="imgIcon" destination="QFN-Ex-4y6" id="hKi-fD-KIA"/>
                                     <outlet property="lblDateTime" destination="wEb-VU-mEt" id="vqH-lO-ycq"/>
                                     <outlet property="lblEventName" destination="orM-vp-kqw" id="3v3-S2-rPn"/>
@@ -2113,6 +2114,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.36862745099999999" green="0.3803921569" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
+                                            <outlet property="discoverLarge" destination="z6q-xB-mi1" id="75G-A3-qDl"/>
                                             <outlet property="imgIcon" destination="nHp-xq-Ubb" id="vHD-KH-LFF"/>
                                             <outlet property="lblDateTime" destination="5Xi-OI-WT1" id="PkH-k0-BDq"/>
                                             <outlet property="lblEventName" destination="bla-0b-Z4X" id="uIe-hW-LnL"/>

@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblAddressTwo;
 @property (strong, nonatomic) IBOutlet UILabel *lblEventName;
 @property (strong, nonatomic) IBOutlet UIImageView *imgIcon;
+@property (strong, nonatomic) IBOutlet UIImageView *discoverLarge;
 @property (nonatomic, retain) IBOutlet UIButton *btnRow;
 
 @end
