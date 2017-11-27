@@ -176,10 +176,10 @@
     
     
     static NSString *CellIdentifier = @"ProgramCustomCell";
-    ProgramCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    MyFavoriteCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     if(!cell)
     {
-        cell = [[ProgramCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell = [[MyFavoriteCustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
     
@@ -188,25 +188,26 @@
     if ([obj.eventImageURL length]) {
         
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];
+        cell.imgEventImage.layer.masksToBounds = YES;
         cell.imgEventImage.clipsToBounds = YES;
-        cell.imgEventImage.layer.cornerRadius = 10;
+        cell.imgEventImage.layer.opaque = NO;
+        cell.largeBack.layer.cornerRadius = 10.0f;
+        cell.imgEventImage.layer.cornerRadius = 10.0f;
         
         
     } else {
         
         cell.imgEventImage.image = [UIImage imageNamed:@"no_image.png"];
-        cell.imgEventImage.layer.cornerRadius = 10;
-        cell.largeBack.layer.cornerRadius = 10;
+        cell.imgEventImage.layer.masksToBounds = YES;
+        cell.imgEventImage.clipsToBounds = YES;
+        cell.imgEventImage.layer.opaque = NO;
+        cell.largeBack.layer.cornerRadius = 10.0f;
+        cell.imgEventImage.layer.cornerRadius = 10.0f;
 
         
         
     }
     
-    cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
-    cell.imgEventImage.layer.cornerRadius = 10;
-
-    
-
     
     cell.lblDateTime.text   =   [Utility compareDates:obj.eventStartDateTime date:[NSDate date]];
     cell.lblEventName.text  =   obj.eventName;

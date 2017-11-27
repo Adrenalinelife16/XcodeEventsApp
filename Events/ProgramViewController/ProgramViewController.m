@@ -579,11 +579,6 @@
     
     EventList *obj = [arrayEventList objectAtIndex:indexPath.row];  // arrayEventList
     
-
-    
-    
-  //  cell.imgEventImage.contentMode = UIViewContentModeScaleAspectFill;
-    
     
     if ([obj.eventImageURL length]) {
         [cell.imgEventImage setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",obj.eventImageURL]] placeholderImage:nil];

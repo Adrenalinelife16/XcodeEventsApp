@@ -1153,6 +1153,13 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Large Background" translatesAutoresizingMaskIntoConstraints="NO" id="fxA-Ax-I5t">
+                                                    <rect key="frame" x="8" y="0.0" width="304" height="192"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                    </accessibility>
+                                                </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAIN EVENT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiY-qm-4Im">
                                                     <rect key="frame" x="15" y="152" width="281" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1165,7 +1172,7 @@
                                                     <rect key="frame" x="15" y="164" width="285" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1178,6 +1185,7 @@
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="imgEventImage" destination="tg3-6p-tks" id="ukK-f4-U2G"/>
+                                    <outlet property="largeBack" destination="fxA-Ax-I5t" id="hUX-b5-aaB"/>
                                     <outlet property="lblDateTime" destination="Pmo-PW-clD" id="9aN-kQ-jyJ"/>
                                     <outlet property="lblEventName" destination="OiY-qm-4Im" id="E6n-ZH-UNy"/>
                                     <segue destination="GJ5-Ez-Ag6" kind="push" identifier="eventDetailsSegue" id="4JL-TO-diO"/>
@@ -2424,9 +2432,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="U3F-sb-sE9"/>
-        <segue reference="6n8-q3-lxy"/>
+        <segue reference="AVa-mX-VeI"/>
         <segue reference="okc-1f-ZH5"/>
-        <segue reference="GQZ-yq-JN7"/>
+        <segue reference="4JL-TO-diO"/>
         <segue reference="C9L-jn-ty6"/>
         <segue reference="c3b-7q-UHr"/>
         <segue reference="Yzg-yO-FJ6"/>
