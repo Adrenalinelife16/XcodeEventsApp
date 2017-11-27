@@ -2081,13 +2081,13 @@
                                                     <rect key="frame" x="0.0" y="5" width="320" height="112"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="nHp-xq-Ubb">
+                                                        <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="nHp-xq-Ubb">
                                                             <rect key="frame" x="8" y="0.0" width="304" height="104"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Large Background" translatesAutoresizingMaskIntoConstraints="NO" id="z6q-xB-mi1">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Large Background" translatesAutoresizingMaskIntoConstraints="NO" id="gP2-6j-wIR">
                                                             <rect key="frame" x="8" y="0.0" width="304" height="104"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
                                                             <accessibility key="accessibilityConfiguration">
                                                                 <accessibilityTraits key="traits" notEnabled="YES"/>
                                                             </accessibility>
@@ -2114,7 +2114,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.36862745099999999" green="0.3803921569" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="discoverLarge" destination="z6q-xB-mi1" id="75G-A3-qDl"/>
+                                            <outlet property="discoverLarge" destination="gP2-6j-wIR" id="vxe-c8-dzm"/>
                                             <outlet property="imgIcon" destination="nHp-xq-Ubb" id="vHD-KH-LFF"/>
                                             <outlet property="lblDateTime" destination="5Xi-OI-WT1" id="PkH-k0-BDq"/>
                                             <outlet property="lblEventName" destination="bla-0b-Z4X" id="uIe-hW-LnL"/>

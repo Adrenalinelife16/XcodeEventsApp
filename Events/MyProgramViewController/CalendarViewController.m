@@ -163,11 +163,7 @@
             cell.imgIcon.clipsToBounds = YES;
             cell.imgIcon.layer.cornerRadius = 10;
             cell.discoverLarge.layer.cornerRadius = 10;
-            
-
-            // -- IT WAS THIS LINE OF CODE THAT WAS FUCKING EVERYTHING UP!!!!!!! YOUR FAULT!!!! 
-            //cell.imgIcon.contentMode = UIViewContentModeScaleAspectFill;
-            
+        
             
         } else {
             
