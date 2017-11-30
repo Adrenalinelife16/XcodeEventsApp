@@ -9,6 +9,8 @@
 #import "DiscoverViewController.h"
 #import "FeedDetailViewController.h"
 #import "DiscoverTableViewController.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface DiscoverViewController ()
 
@@ -75,6 +77,10 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
+    [Answers logCustomEventWithName:@"Discover Category"
+               customAttributes:@{@"Category" : @"Soccer"}];
+    
+    
     
 }
 
@@ -83,6 +89,9 @@
     
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Kickball"}];
     
     
 }
@@ -93,7 +102,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
-    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Football"}];
 }
 
 -(IBAction)buttonThree:(id)sender {
@@ -102,6 +112,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Basketball"}];
     
 }
 
@@ -111,6 +123,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Yoga"}];
     
 }
 
@@ -120,6 +134,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Fitness"}];
     
 }
 
@@ -129,6 +145,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Golf"}];
     
 }
 
@@ -138,7 +156,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
-    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Fishing"}];
 }
 
 -(IBAction)buttonEight:(id)sender {
@@ -147,6 +166,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Tennis"}];
     
 }
 
@@ -156,7 +177,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
-    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Riding"}];
 }
 
 -(IBAction)buttonTen:(id)sender {
@@ -165,7 +187,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
-    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Baseball"}];
 }
 
 -(IBAction)buttonEleven:(id)sender {
@@ -174,7 +197,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
-    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Billiards"}];
 }
 
 -(IBAction)buttonTwelve:(id)sender {
@@ -183,7 +207,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
-    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Running"}];
 }
 
 -(IBAction)buttonThirteen:(id)sender {
@@ -192,6 +217,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Camping"}];
     
 }
 
@@ -200,6 +227,9 @@
     
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Water"}];
     
     
 }
@@ -210,6 +240,9 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Climbing"}];
+    
     
 }
 
@@ -219,7 +252,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
-    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Disc"}];
 }
 
 -(IBAction)buttonSeventeen:(id)sender {
@@ -227,6 +261,9 @@
     
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
+    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Bowling"}];
     
     
 }
@@ -237,7 +274,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
-    
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Table"}];
 }
 
 -(IBAction)buttonNineteen:(id)sender {
@@ -246,6 +284,8 @@
     UIButton *btn= (UIButton *)sender;
     [self performSegueWithIdentifier:@"discoverEvent" sender:sender];
     
+    [Answers logCustomEventWithName:@"Discover Category"
+                   customAttributes:@{@"Category" : @"Lacrosse"}];
     
 }
 
