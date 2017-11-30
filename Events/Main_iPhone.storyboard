@@ -2425,7 +2425,6 @@
         <image name="white-cell.png" width="306" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="C9L-jn-ty6"/>
         <segue reference="wc1-kp-ItY"/>
         <segue reference="okc-1f-ZH5"/>
         <segue reference="GQZ-yq-JN7"/>

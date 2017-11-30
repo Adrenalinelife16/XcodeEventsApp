@@ -39,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Find Your Life";
-    self.navigationController.navigationBar.translucent = NO;
+ 
     
     
 }
