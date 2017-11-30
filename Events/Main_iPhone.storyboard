@@ -1111,7 +1111,7 @@
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
-                                        <segue destination="ymv-lc-u6U" kind="push" animates="NO" id="U3F-sb-sE9"/>
+                                        <segue destination="ymv-lc-u6U" kind="push" animates="NO" id="wc1-kp-ItY"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vW-6T-Ud5">
@@ -1122,7 +1122,7 @@
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
-                                        <segue destination="uN1-jK-Wuq" kind="push" animates="NO" id="AVa-mX-VeI"/>
+                                        <action selector="clickedMyAttending:" destination="BPn-5N-zfJ" eventType="touchUpInside" id="TBD-Oa-Kle"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yca-km-Xu4">
@@ -1217,7 +1217,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5Q-vu-gIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="-1350.5"/>
+            <point key="canvasLocation" x="94" y="-1350"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="0v6-xa-O5w">
@@ -1979,9 +1979,6 @@
                                         <state key="normal" title="Calendar">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="ymv-lc-u6U" kind="push" animates="NO" id="vfq-B5-cTA"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jp-Xb-i2i">
                                         <rect key="frame" x="209" y="10" width="106" height="27"/>
@@ -1998,9 +1995,6 @@
                                         <state key="normal" title="Favorites">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="BPn-5N-zfJ" kind="push" animates="NO" id="Eci-Y5-EQn"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2055,7 +2049,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="uN1-jK-Wuq" kind="push" animates="NO" id="6n8-q3-lxy"/>
+                                            <action selector="clickedMyAttending:" destination="ymv-lc-u6U" eventType="touchUpInside" id="bHW-Q9-KWe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fec-lO-v4N">
@@ -2431,11 +2425,10 @@
         <image name="white-cell.png" width="306" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U3F-sb-sE9"/>
-        <segue reference="AVa-mX-VeI"/>
-        <segue reference="okc-1f-ZH5"/>
-        <segue reference="4JL-TO-diO"/>
         <segue reference="C9L-jn-ty6"/>
+        <segue reference="wc1-kp-ItY"/>
+        <segue reference="okc-1f-ZH5"/>
+        <segue reference="GQZ-yq-JN7"/>
         <segue reference="c3b-7q-UHr"/>
         <segue reference="Yzg-yO-FJ6"/>
     </inferredMetricsTieBreakers>
