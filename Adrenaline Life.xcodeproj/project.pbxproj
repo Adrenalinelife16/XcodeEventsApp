@@ -2051,7 +2051,7 @@
 				GCC_PREFIX_HEADER = "Events/Adrenaline Life-Prefix.pch";
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = "Events/Adrenaline Life-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2078,7 +2078,7 @@
 				GCC_PREFIX_HEADER = "Events/Adrenaline Life-Prefix.pch";
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = "Events/Adrenaline Life-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
