@@ -417,6 +417,10 @@
             [DSBezelActivityView removeViewAnimated:YES];
             if ([data isKindOfClass:[NSDictionary class]]) {
                 if (self.lblTotalCost.hidden) {
+                    
+                    
+                    
+                    
                     UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"" message:[data objectForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
                     av.tag = 1001;
                     [av show];
@@ -672,6 +676,13 @@
     
     UIAlertAction *logout = [UIAlertAction actionWithTitle:@"Open in Maps" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action)
             {
+                
+                UIApplication *application = [UIApplication sharedApplication];
+                NSString *URL = [NSString stringWithFormat:@"http://maps.apple.com/?daddr=%@,%@",self.eventObj.eventLocationLatitude, self.eventObj.eventLocationLongitude];
+          //      NSURL *URL = [NSURL URLWithString:@"https://twitter.com/search?q=fashon%20week&src=typd"];
+                [application openURL:URL options:@{} completionHandler:nil];
+                
+                
                 
                 NSString* directionsURL = [NSString stringWithFormat:@"http://maps.apple.com/?daddr=%@,%@",self.eventObj.eventLocationLatitude, self.eventObj.eventLocationLongitude];
             [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURL]];

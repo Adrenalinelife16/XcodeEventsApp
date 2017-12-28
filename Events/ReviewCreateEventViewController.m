@@ -142,8 +142,14 @@
          
          // show alert for create event
          
-         UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Event has been successfully completed!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil , nil];
-         [av show];
+         UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"Event has been successfully completed!" preferredStyle:UIAlertControllerStyleAlert];
+         
+         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                               handler:^(UIAlertAction * action) {}];
+         
+         [alert addAction:defaultAction];
+         [self presentViewController:alert animated:YES completion:nil];
+         
     //     [self performSelector:@selector(dismiss:) withObject:av afterDelay:2.0];
          
          // delay go back to main events

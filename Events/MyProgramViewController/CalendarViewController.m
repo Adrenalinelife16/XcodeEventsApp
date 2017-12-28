@@ -185,8 +185,13 @@
 #pragma mark - Button Clicked Function
 - (IBAction)clickedMyAttending:(id)sender {
     
-    UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Attending event coming soon!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    [av show];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"Attending event coming soon!"                       preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
     
     // test
     

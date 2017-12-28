@@ -46,12 +46,17 @@ NSMutableArray *gArrayEvents;
 	
 	if ((internetStatus != ReachableViaWiFi) && (internetStatus != ReachableViaWWAN)){
 		/// Create an alert if connection doesn't work
-		UIAlertView *myAlert = [[UIAlertView alloc]
-								initWithTitle:@"Network connection unavailable"   message:@"You require an internet connection via WiFi or cellular network to use this application."
-								delegate:self
-								cancelButtonTitle:@"Close"
-								otherButtonTitles:nil];
-		[myAlert show];
+        
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Network connection unavailable"
+                                                                       message:@"You require an internet connection via WiFi or cellular network to use this application."                       preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+   //     [self presentViewController:alert animated:YES completion:nil];
+        // note: why cant i use a utlity alert example line 93
+        
 		isOk = NO;
 	} 
     return isOk;

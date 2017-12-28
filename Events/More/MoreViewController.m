@@ -176,13 +176,23 @@
 
             NSLog(@"User ID after logout is %@", strUserID);
             
-            UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Logout Successful" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-            [av show];
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"Logout Successful" preferredStyle:UIAlertControllerStyleAlert];
             
-
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action)
+            {
+                
+                    [self.tabBarController setSelectedIndex:0];
+        
+            }];
             
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
+    
             
         }];
+    
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action)
         {
             [self.tableView reloadData];
@@ -192,18 +202,6 @@
     [alert addAction:cancel];
     
     [self presentViewController:alert animated:YES completion:nil];
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    NSString *string = [alertView buttonTitleAtIndex:buttonIndex];
-    
-    if ([string isEqualToString:@"Ok"]) {
-        
-        [self.tabBarController setSelectedIndex:0];
-      
-        
-    }
     
 }
 

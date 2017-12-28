@@ -413,21 +413,23 @@
     
     else
     {
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"User must login to create an event!" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login", nil];
-        [av show];
-    }
-
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    NSString *string = [alertView buttonTitleAtIndex:buttonIndex];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"User must login to create an event" preferredStyle:UIAlertControllerStyleAlert];
     
-    if ([string isEqualToString:@"Login"]) {
         
-        [self performSegueWithIdentifier:@"loginView" sender:self];
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        UIAlertAction* loginAction = [UIAlertAction actionWithTitle:@"Login" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action)
+        {
+            [self performSegueWithIdentifier:@"loginView" sender:self];
+        }];
+        
+        [alert addAction:defaultAction];
+        [alert addAction:loginAction];
+        [self presentViewController:alert animated:YES completion:nil];
         
     }
+
 }
 
 

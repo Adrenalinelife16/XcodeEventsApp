@@ -84,7 +84,10 @@
 
 -(IBAction)forgotPasswordPressed:(id)sender
 {
-  [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.adrenalinelife.org/resetpass/"]];
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    NSURL *URL = [NSURL URLWithString:@"http://www.adrenalinelife.org/resetpass/"];
+    [application openURL:URL options:@{} completionHandler:nil];
 
 }
 
@@ -116,8 +119,13 @@
     
     if ([checkEmail containsString:@"@"]) {
         
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Sorry, please use your Username" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil , nil];
-        [av show];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"Sorry, please use your Username"                       preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
         
         
     } else {
@@ -142,8 +150,13 @@
                 else{
                     [Utility setNSUserDefaultValueForString:[[response objectAtIndex:0] objectForKey:@"user_id"] strKey:KUSERID];
                     
-                    UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Login Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                    [av show];
+                    UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"Login Successful"                       preferredStyle:UIAlertControllerStyleAlert];
+                    
+                    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                          handler:^(UIAlertAction * action) {}];
+                    
+                    [alert addAction:defaultAction];
+                    [self presentViewController:alert animated:YES completion:nil];
                     
                     
                 }
@@ -154,11 +167,14 @@
                 }
                 else{
                     [Utility setNSUserDefaultValueForString:[response objectForKey:@"user_id"] strKey:KUSERID];
-                    UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Login Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                    [av setTag:99];
-                    [av show];
-                
                     
+                    UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"Login Successful"                       preferredStyle:UIAlertControllerStyleAlert];
+                    
+                    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                          handler:^(UIAlertAction * action) {}];
+                    
+                    [alert addAction:defaultAction];
+                    [self presentViewController:alert animated:YES completion:nil];
                     
                 }
                 

@@ -349,6 +349,7 @@ enum actionSheetButtonIndex {
         urlString = [url absoluteString];
     }
     UIActionSheet *actionSheet = [[UIActionSheet alloc] init];
+//    UIAlertController *actionsheet = [UIAlertController alloc];
     actionSheet.title = urlString;
     actionSheet.delegate = self;
     [actionSheet addButtonWithTitle:NSLocalizedString(@"Open in Safari", nil)];
@@ -518,12 +519,24 @@ enum actionSheetButtonIndex {
         return;
     }
     // Show error alert
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"Could not load page"                       preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:nil style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
+    /*
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Could not load page", nil)
                                                     message:error.localizedDescription
                                                    delegate:self
                                           cancelButtonTitle:nil
                                           otherButtonTitles:NSLocalizedString(@"OK", nil), nil];
-	[alert show];
+     */
 }
 
 -(BOOL)shouldAutorotate{

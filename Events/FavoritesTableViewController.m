@@ -57,9 +57,6 @@
     
     [_btnMyFavourites setTitleColor:COMMON_COLOR_RED forState:UIControlStateNormal];
     
-
-    
-    
 }
 
 
@@ -98,8 +95,14 @@
     else {
         
         NSLog(@"User is logged out!");
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Please login to favorite an event" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [av show];
+        
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"Please login to favorite an event"                       preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
         
     }
 
@@ -114,9 +117,13 @@
     
     else
     {
-
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Please login to favorite an event" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [av show];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"Please login to favorite an event"                       preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
         
         NSLog(@"User is logged out!");
         
@@ -129,8 +136,13 @@
 #pragma mark - Button Clicked Function
 - (IBAction)clickedMyAttending:(id)sender {
     
-    UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"Attending event coming soon!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    [av show];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"Attending event coming soon!"                       preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
     
     
 }
@@ -239,8 +251,13 @@
     
         if ([[response objectAtIndex:0] containsObject:@"0"]) {
             
-            UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Favorite Events" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [av show];
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"No Favorite Events"                       preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {}];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
             
         } else {
             
@@ -303,8 +320,13 @@
             
         } else {
             
-            UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Favorite Events" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [av show];
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"No Favorite Events"                       preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {}];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
             
         }
     }     

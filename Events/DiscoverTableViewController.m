@@ -134,9 +134,15 @@
         
     } else {
         
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:APPNAME message:@"No Events Found" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil , nil];
-        [av show];
-       
+        
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:APPNAME message:@"No Events Found"                       preferredStyle:UIAlertControllerStyleAlert];
+                                 
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+            handler:^(UIAlertAction * action) {}];
+                                 
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
             
     }
         
