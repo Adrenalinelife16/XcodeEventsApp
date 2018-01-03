@@ -39,19 +39,19 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "2x - 120px.png",
+      "filename" : "120x120.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "3x - 180px.png",
+      "filename" : "180x180-1.png",
       "scale" : "3x"
     },
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "1x - 1024px.png",
+      "filename" : "180x180.png",
       "scale" : "1x"
     }
   ],
