@@ -82,7 +82,6 @@
 		72E417561F043A3600E6F81A /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E417551F043A3600E6F81A /* CalendarViewController.m */; };
 		72E4175C1F046C4A00E6F81A /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4175B1F046C4A00E6F81A /* FavoritesTableViewController.m */; };
 		72ED09881F01405500F60832 /* AttendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ED09871F01405500F60832 /* AttendingViewController.m */; };
-		72EFC1141FC804310041CEB4 /* actionbar_bg_6_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 72EFC1131FC804300041CEB4 /* actionbar_bg_6_80.png */; };
 		72F761A91F3E286300FCA906 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F761A81F3E286300FCA906 /* FilterViewController.m */; };
 		72FD1ED91FFC76A900CDB24A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FD1ED81FFC76A900CDB24A /* Launch Screen.storyboard */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
@@ -241,6 +240,7 @@
 		BB62B12318B8B529000DBDBC /* Segmented@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB62B11D18B8B529000DBDBC /* Segmented@2x.png */; };
 		BB857F4518B8928700B366D8 /* secondpic.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4318B8928700B366D8 /* secondpic.png */; };
 		BB857F4618B8928700B366D8 /* secondpic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4418B8928700B366D8 /* secondpic@2x.png */; };
+		D3402FCA1FFC91A900E04D75 /* xSplash.png in Resources */ = {isa = PBXBuildFile; fileRef = D3402FC91FFC91A900E04D75 /* xSplash.png */; };
 		E202AE761EF3B648001B39FD /* actionbar_bg_black.png in Resources */ = {isa = PBXBuildFile; fileRef = E202AE751EF3B648001B39FD /* actionbar_bg_black.png */; };
 		E202AE791EF3BCCA001B39FD /* actionbar_bg_grey6.png in Resources */ = {isa = PBXBuildFile; fileRef = E202AE771EF3BCCA001B39FD /* actionbar_bg_grey6.png */; };
 		E202AE7A1EF3BCCA001B39FD /* actionbar_bg_grey1.png in Resources */ = {isa = PBXBuildFile; fileRef = E202AE781EF3BCCA001B39FD /* actionbar_bg_grey1.png */; };
@@ -643,6 +643,7 @@
 		BB62B11D18B8B529000DBDBC /* Segmented@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Segmented@2x.png"; sourceTree = "<group>"; };
 		BB857F4318B8928700B366D8 /* secondpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondpic.png; sourceTree = "<group>"; };
 		BB857F4418B8928700B366D8 /* secondpic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondpic@2x.png"; sourceTree = "<group>"; };
+		D3402FC91FFC91A900E04D75 /* xSplash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xSplash.png; sourceTree = "<group>"; };
 		E202AE751EF3B648001B39FD /* actionbar_bg_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_black.png; sourceTree = "<group>"; };
 		E202AE771EF3BCCA001B39FD /* actionbar_bg_grey6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_grey6.png; sourceTree = "<group>"; };
 		E202AE781EF3BCCA001B39FD /* actionbar_bg_grey1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_grey1.png; sourceTree = "<group>"; };
@@ -1280,6 +1281,7 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D3402FC91FFC91A900E04D75 /* xSplash.png */,
 				E22DC9FA1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png */,
 				72EFC1131FC804300041CEB4 /* actionbar_bg_6_80.png */,
 				E22DC9F61EFB812200A98DA7 /* actionbar_bg_white.png */,
@@ -1692,7 +1694,6 @@
 				7112221018BCB67600E77A4A /* registerBtn.png in Resources */,
 				711221F018BC9DFB00E77A4A /* placeIcon@2x.png in Resources */,
 				BB303E0818B86B3400B6EBC9 /* MyProgramred@2x.png in Resources */,
-				72EFC1141FC804310041CEB4 /* actionbar_bg_6_80.png in Resources */,
 				7122DB2A18BB4BDB00C044E8 /* feedviewCell5@2x.png in Resources */,
 				E2E57C941E50CF08007C9646 /* NEPrototypeCellLayout.png in Resources */,
 				BB303E0718B86B3400B6EBC9 /* MyProgramred.png in Resources */,
@@ -1718,6 +1719,7 @@
 				79504C3F191F7CE000EF3103 /* no_image.png in Resources */,
 				E2252E8E1E4DB57500B0CD69 /* FeaturePage.png in Resources */,
 				7982242B18F72A57009FA42E /* register-btn.png in Resources */,
+				D3402FCA1FFC91A900E04D75 /* xSplash.png in Resources */,
 				7955F91E18F8626A00870734 /* country code.xml in Resources */,
 				BB303DB518B863E300B6EBC9 /* Images.xcassets in Resources */,
 				BB303E2418B879AA00B6EBC9 /* nearby@2x.png in Resources */,
