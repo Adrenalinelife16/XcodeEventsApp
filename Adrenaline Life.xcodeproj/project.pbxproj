@@ -84,6 +84,7 @@
 		72ED09881F01405500F60832 /* AttendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ED09871F01405500F60832 /* AttendingViewController.m */; };
 		72EFC1141FC804310041CEB4 /* actionbar_bg_6_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 72EFC1131FC804300041CEB4 /* actionbar_bg_6_80.png */; };
 		72F761A91F3E286300FCA906 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F761A81F3E286300FCA906 /* FilterViewController.m */; };
+		72FD1ED91FFC76A900CDB24A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FD1ED81FFC76A900CDB24A /* Launch Screen.storyboard */; };
 		790013C618F5C04D00AF682C /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790013C518F5C04D00AF682C /* FeedDetailViewController.m */; };
 		790AE0B518F9862500FBE2F2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AE0B418F9862500FBE2F2 /* RegistrationViewController.m */; };
 		7916556819044E6900F4D9D3 /* MyEventTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916556719044E6900F4D9D3 /* MyEventTickets.m */; };
@@ -422,6 +423,7 @@
 		72EFC1131FC804300041CEB4 /* actionbar_bg_6_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = actionbar_bg_6_80.png; path = ../../../../../actionbar_bg_6_80.png; sourceTree = "<group>"; };
 		72F761A71F3E286300FCA906 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		72F761A81F3E286300FCA906 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		72FD1ED81FFC76A900CDB24A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		790013C418F5C04D00AF682C /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
 		790013C518F5C04D00AF682C /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
 		790AE0B318F9862500FBE2F2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
@@ -1233,6 +1235,7 @@
 				BB303E2D18B87FB400B6EBC9 /* TabBarController */,
 				BB303DA818B863E300B6EBC9 /* AppDelegate.h */,
 				BB303DA918B863E300B6EBC9 /* AppDelegate.m */,
+				72FD1ED81FFC76A900CDB24A /* Launch Screen.storyboard */,
 				7225BD1C1E4A482B00A35D30 /* Main_iPhone.storyboard */,
 				721BEE451EB17CB500C2DB6F /* Main_iPad.storyboard */,
 				7250A03C1ECA7AC300E1E9AE /* TableCell.xib */,
@@ -1627,6 +1630,7 @@
 				BB303E0C18B86B3400B6EBC9 /* Programred@2x.png in Resources */,
 				7112221518BCB83500E77A4A /* Direction@2x.png in Resources */,
 				79383A621906135A00A1DBBC /* share2.png in Resources */,
+				72FD1ED91FFC76A900CDB24A /* Launch Screen.storyboard in Resources */,
 				BB303E2818B879AA00B6EBC9 /* Reload@2x.png in Resources */,
 				711221EA18BC94F900E77A4A /* GreenDot@2x.png in Resources */,
 				7112220418BCA62300E77A4A /* sendto@2x.png in Resources */,
