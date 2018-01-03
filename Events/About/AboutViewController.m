@@ -677,12 +677,7 @@
     UIAlertAction *logout = [UIAlertAction actionWithTitle:@"Open in Maps" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action)
             {
                 
-                UIApplication *application = [UIApplication sharedApplication];
-                NSString *URL = [NSString stringWithFormat:@"http://maps.apple.com/?daddr=%@,%@",self.eventObj.eventLocationLatitude, self.eventObj.eventLocationLongitude];
-          //      NSURL *URL = [NSURL URLWithString:@"https://twitter.com/search?q=fashon%20week&src=typd"];
-                [application openURL:URL options:@{} completionHandler:nil];
-                
-                
+
                 
                 NSString* directionsURL = [NSString stringWithFormat:@"http://maps.apple.com/?daddr=%@,%@",self.eventObj.eventLocationLatitude, self.eventObj.eventLocationLongitude];
             [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURL]];

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment version="4112" identifier="iOS"/>
+        <deployment version="4352" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,10 +21,6 @@
         <scene sceneID="p0g-Ji-e7I">
             <objects>
                 <viewController storyboardIdentifier="loginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofP-CN-yoG" customClass="LoginViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VJz-8M-Hdd"/>
-                        <viewControllerLayoutGuide type="bottom" id="H4k-QD-m1h"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VxO-xc-TFe" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +74,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="a7T-9A-2AT"/>
                         <connections>
                             <action selector="backgroundTouched:" destination="ofP-CN-yoG" eventType="touchDown" id="MOR-Dz-WUJ"/>
                         </connections>
@@ -124,63 +123,6 @@
             </objects>
             <point key="canvasLocation" x="-2971" y="-1350"/>
         </scene>
-        <!--Filter View Controller-->
-        <scene sceneID="KaO-x6-2kX">
-            <objects>
-                <viewController storyboardIdentifier="popupView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rNA-cb-a8K" customClass="FilterViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jO0-LY-YnK"/>
-                        <viewControllerLayoutGuide type="bottom" id="cp8-U5-WsI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9dF-M6-Lrh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="kUo-Ox-4fQ">
-                                <rect key="frame" x="0.0" y="64" width="320" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Filter by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSN-4v-Snl">
-                                <rect key="frame" x="32" y="89" width="124" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Day of the week" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uTI-Gk-hbR">
-                                <rect key="frame" x="32" y="118" width="257" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Pam-nb-aGi">
-                        <barButtonItem key="rightBarButtonItem" title="Submit" id="pk9-MV-fLP">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="dismissFilter:" destination="rNA-cb-a8K" id="mHN-Kj-ByK"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="667"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="view.backgroundColor">
-                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <outlet property="filterDay" destination="uTI-Gk-hbR" id="bia-35-8XQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5lh-gn-ywd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1616" y="-3072.5"/>
-        </scene>
         <!--ProgramViewController-->
         <scene sceneID="Zm0-gr-3hJ">
             <objects>
@@ -199,39 +141,56 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nw5-1X-2tB">
+                                        <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nw5-1X-2tB">
                                             <rect key="frame" x="0.0" y="8" width="320" height="192"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="ILR-go-4Tt">
+                                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="ILR-go-4Tt">
                                                     <rect key="frame" x="8" y="0.0" width="304" height="192"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Large Background" translatesAutoresizingMaskIntoConstraints="NO" id="wyO-lO-bRi">
-                                                    <rect key="frame" x="7.9095935791110605" y="0.0" width="304" height="192"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Large Background" translatesAutoresizingMaskIntoConstraints="NO" id="wyO-lO-bRi">
+                                                    <rect key="frame" x="8" y="0.0" width="304" height="192"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" notEnabled="YES"/>
                                                     </accessibility>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tue, Mar 20 2017 12:00 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAs-yS-Ks3">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue, Mar 20 2017 12:00 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAs-yS-Ks3">
                                                     <rect key="frame" x="16" y="171" width="285" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="C3T-be-KaG"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAIN EVENT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1K-qr-2kS">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN EVENT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1K-qr-2kS">
                                                     <rect key="frame" x="16" y="156" width="285" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="saX-CZ-e2W"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.36988568309999997" green="0.380758822" blue="0.39516592029999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="U1K-qr-2kS" firstAttribute="leading" secondItem="MAs-yS-Ks3" secondAttribute="leading" id="1wf-gF-ooa"/>
+                                                <constraint firstItem="ILR-go-4Tt" firstAttribute="leading" secondItem="wyO-lO-bRi" secondAttribute="leading" id="8iU-qw-lkG"/>
+                                                <constraint firstItem="U1K-qr-2kS" firstAttribute="trailing" secondItem="MAs-yS-Ks3" secondAttribute="trailing" id="B3z-pF-Q57"/>
+                                                <constraint firstItem="ILR-go-4Tt" firstAttribute="trailing" secondItem="nw5-1X-2tB" secondAttribute="trailingMargin" id="CF9-jR-RUm"/>
+                                                <constraint firstItem="wyO-lO-bRi" firstAttribute="leading" secondItem="nw5-1X-2tB" secondAttribute="leadingMargin" id="CU6-KG-B17"/>
+                                                <constraint firstAttribute="trailing" secondItem="U1K-qr-2kS" secondAttribute="trailing" constant="19" id="Ml5-Bl-QOe"/>
+                                                <constraint firstItem="wyO-lO-bRi" firstAttribute="top" secondItem="nw5-1X-2tB" secondAttribute="top" id="RnO-Sb-Al5"/>
+                                                <constraint firstAttribute="bottom" secondItem="MAs-yS-Ks3" secondAttribute="bottom" constant="1" id="Rvf-SG-sr2"/>
+                                                <constraint firstAttribute="bottom" secondItem="ILR-go-4Tt" secondAttribute="bottom" id="Zcf-fL-PM2"/>
+                                                <constraint firstItem="U1K-qr-2kS" firstAttribute="leading" secondItem="nw5-1X-2tB" secondAttribute="leading" constant="16" id="bC1-YJ-yHH"/>
+                                                <constraint firstItem="wyO-lO-bRi" firstAttribute="bottom" secondItem="ILR-go-4Tt" secondAttribute="bottom" id="bXe-Px-EHS"/>
+                                                <constraint firstItem="ILR-go-4Tt" firstAttribute="top" secondItem="wyO-lO-bRi" secondAttribute="top" id="dWK-aU-q1q"/>
+                                                <constraint firstAttribute="bottom" secondItem="U1K-qr-2kS" secondAttribute="bottom" constant="16" id="ewN-ZN-1kN"/>
+                                                <constraint firstItem="ILR-go-4Tt" firstAttribute="trailing" secondItem="wyO-lO-bRi" secondAttribute="trailing" id="rvi-mn-hDk"/>
+                                            </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                     <integer key="value" value="10"/>
@@ -241,6 +200,12 @@
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="0.36862745099999999" green="0.3803921569" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="nw5-1X-2tB" firstAttribute="top" secondItem="8wL-aY-Eur" secondAttribute="topMargin" constant="-3" id="ikF-ne-rYv"/>
+                                        <constraint firstItem="nw5-1X-2tB" firstAttribute="leading" secondItem="8wL-aY-Eur" secondAttribute="leading" id="xM4-qk-EFc"/>
+                                        <constraint firstAttribute="trailing" secondItem="nw5-1X-2tB" secondAttribute="trailing" id="xUG-OI-YfC"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="nw5-1X-2tB" secondAttribute="bottom" constant="9" id="yh0-Ni-GTG"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.36988568309999997" green="0.380758822" blue="0.39516592029999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -328,10 +293,6 @@
         <scene sceneID="of1-2C-MFB">
             <objects>
                 <viewController id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="S0L-MW-wcJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="IU5-pQ-Ahv"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -529,11 +490,12 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IU5-pQ-Ahv" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="FPN-kO-ZKo"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="MXS-aK-Saz"/>
-                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="UmH-ep-WEO"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="S0L-MW-wcJ" secondAttribute="bottom" id="h5Q-H8-pYH"/>
+                            <constraint firstItem="eSA-Wd-GkJ" firstAttribute="bottom" secondItem="fga-UX-TPd" secondAttribute="bottom" id="FPN-kO-ZKo"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="eSA-Wd-GkJ" secondAttribute="leading" id="MXS-aK-Saz"/>
+                            <constraint firstItem="eSA-Wd-GkJ" firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="UmH-ep-WEO"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="eSA-Wd-GkJ" secondAttribute="top" id="h5Q-H8-pYH"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="eSA-Wd-GkJ"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="iov-Wm-ifM"/>
@@ -572,10 +534,6 @@
         <scene sceneID="feH-eW-g6n">
             <objects>
                 <viewController id="w1Z-bF-ar5" customClass="DiscoverViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZRw-uI-7Bk"/>
-                        <viewControllerLayoutGuide type="bottom" id="Xrv-Yh-taX"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jFF-pG-qCN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1450"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -750,6 +708,7 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="aWW-6Z-SKD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Discover" selectedImage="Discover Selected" id="Emj-od-rTF"/>
                     <navigationItem key="navigationItem" id="a40-XR-67K"/>
@@ -1013,10 +972,6 @@
         <scene sceneID="2Q9-0M-8Uf">
             <objects>
                 <viewController storyboardIdentifier="feedDetails" id="kYa-5B-zJd" customClass="FeedDetailViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2kV-XU-bSo"/>
-                        <viewControllerLayoutGuide type="bottom" id="ABU-sg-9yv"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ptt-tX-ARC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1031,6 +986,7 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="DRH-Lt-VXE"/>
                     </view>
                     <navigationItem key="navigationItem" id="xEg-PB-P4I"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1047,10 +1003,6 @@
         <scene sceneID="8It-6Z-hs9">
             <objects>
                 <viewController id="Esk-Y6-vmr" customClass="TermsViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sgj-eD-k9a"/>
-                        <viewControllerLayoutGuide type="bottom" id="87x-rl-99W"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c4h-sN-FcG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1079,6 +1031,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="iKN-im-4eG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Terms &amp; Conditions" id="wNe-0G-OeE"/>
                     <connections>
@@ -1223,10 +1176,6 @@
         <scene sceneID="0v6-xa-O5w">
             <objects>
                 <viewController storyboardIdentifier="aboutView" automaticallyAdjustsScrollViewInsets="NO" id="GJ5-Ez-Ag6" customClass="AboutViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xpr-kL-qsm"/>
-                        <viewControllerLayoutGuide type="bottom" id="J1w-7S-GEa"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PNQ-T2-Nf5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1396,6 +1345,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                        <viewLayoutGuide key="safeArea" id="Lui-3l-L7i"/>
                     </view>
                     <navigationItem key="navigationItem" id="3YV-Jk-Ohf"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1413,10 +1363,6 @@
         <scene sceneID="21W-JZ-5lT">
             <objects>
                 <viewController id="yVU-lJ-K5Q" customClass="ProgramDescriptionViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GtT-9J-q3I"/>
-                        <viewControllerLayoutGuide type="bottom" id="Lvu-tJ-y0r"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QzG-OX-15u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1434,16 +1380,17 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="mkr-sh-u2G" secondAttribute="trailing" id="2eW-mE-mum"/>
-                            <constraint firstItem="YS9-jV-dl6" firstAttribute="leading" secondItem="QzG-OX-15u" secondAttribute="leading" id="3NY-x6-yo8"/>
-                            <constraint firstItem="Lvu-tJ-y0r" firstAttribute="top" secondItem="YS9-jV-dl6" secondAttribute="bottom" id="6Ci-u1-hHp"/>
-                            <constraint firstItem="mkr-sh-u2G" firstAttribute="top" secondItem="GtT-9J-q3I" secondAttribute="bottom" id="JaY-pQ-F6o"/>
-                            <constraint firstAttribute="trailing" secondItem="YS9-jV-dl6" secondAttribute="trailing" id="SfC-C5-oN2"/>
-                            <constraint firstItem="Lvu-tJ-y0r" firstAttribute="top" secondItem="mkr-sh-u2G" secondAttribute="bottom" id="qcY-DI-XYV"/>
-                            <constraint firstItem="YS9-jV-dl6" firstAttribute="top" secondItem="GtT-9J-q3I" secondAttribute="bottom" id="wah-ZF-Q7f"/>
-                            <constraint firstItem="mkr-sh-u2G" firstAttribute="leading" secondItem="QzG-OX-15u" secondAttribute="leading" id="wdG-D8-kYh"/>
+                            <constraint firstItem="sjJ-ND-agh" firstAttribute="trailing" secondItem="mkr-sh-u2G" secondAttribute="trailing" id="2eW-mE-mum"/>
+                            <constraint firstItem="YS9-jV-dl6" firstAttribute="leading" secondItem="sjJ-ND-agh" secondAttribute="leading" id="3NY-x6-yo8"/>
+                            <constraint firstItem="sjJ-ND-agh" firstAttribute="bottom" secondItem="YS9-jV-dl6" secondAttribute="bottom" id="6Ci-u1-hHp"/>
+                            <constraint firstItem="mkr-sh-u2G" firstAttribute="top" secondItem="sjJ-ND-agh" secondAttribute="top" id="JaY-pQ-F6o"/>
+                            <constraint firstItem="sjJ-ND-agh" firstAttribute="trailing" secondItem="YS9-jV-dl6" secondAttribute="trailing" id="SfC-C5-oN2"/>
+                            <constraint firstItem="sjJ-ND-agh" firstAttribute="bottom" secondItem="mkr-sh-u2G" secondAttribute="bottom" id="qcY-DI-XYV"/>
+                            <constraint firstItem="YS9-jV-dl6" firstAttribute="top" secondItem="sjJ-ND-agh" secondAttribute="top" id="wah-ZF-Q7f"/>
+                            <constraint firstItem="mkr-sh-u2G" firstAttribute="leading" secondItem="sjJ-ND-agh" secondAttribute="leading" id="wdG-D8-kYh"/>
                         </constraints>
                         <inset key="insetFor6xAndEarlier" minX="0.0" minY="-20" maxX="0.0" maxY="20"/>
+                        <viewLayoutGuide key="safeArea" id="sjJ-ND-agh"/>
                     </view>
                     <navigationItem key="navigationItem" id="qix-CE-HbP"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -1462,10 +1409,6 @@
         <scene sceneID="WdJ-TP-gcR">
             <objects>
                 <viewController storyboardIdentifier="Events" id="kOC-bS-aI0" customClass="MapViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="haa-7c-Gis"/>
-                        <viewControllerLayoutGuide type="bottom" id="yP2-Qm-Jdq"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Events" id="P3Q-B4-jzb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1476,6 +1419,7 @@
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="z86-Lr-pYZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Maps" id="O4U-jh-TTB"/>
                 </viewController>
@@ -1640,10 +1584,6 @@
         <scene sceneID="E16-uO-jp2">
             <objects>
                 <viewController storyboardIdentifier="aboutViewNew" id="T4o-Af-Ooy" userLabel="Abou View Controllers - About" customClass="AboutUsViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5vX-Rt-XL8"/>
-                        <viewControllerLayoutGuide type="bottom" id="EGM-Bm-u55"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ygh-UW-D4E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1673,6 +1613,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="QGz-Pp-BzY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contact Us" id="8an-5w-L1E"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1690,10 +1631,6 @@
         <scene sceneID="Ehu-Ka-v0l">
             <objects>
                 <viewController id="EYQ-sL-8zz" customClass="PolicyViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gXC-d1-Zgb"/>
-                        <viewControllerLayoutGuide type="bottom" id="EGu-VW-VHv"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dqD-x8-QHM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1722,6 +1659,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="hs4-Ol-dqf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Policy Agreement" id="07e-hK-bpT"/>
                     <connections>
@@ -1737,10 +1675,6 @@
         <scene sceneID="NId-DM-5Mk">
             <objects>
                 <viewController storyboardIdentifier="registerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1D8-Gt-16Y" customClass="RegistrationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AJN-wi-36O"/>
-                        <viewControllerLayoutGuide type="bottom" id="v4w-0r-aQi"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lAo-2D-rSI" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1880,6 +1814,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="LEn-2f-XiJ"/>
                         <connections>
                             <action selector="backgroundTouched:" destination="1D8-Gt-16Y" eventType="touchDown" id="XTS-DR-AOM"/>
                         </connections>
@@ -1960,10 +1895,6 @@
         <scene sceneID="lcY-T4-2sD">
             <objects>
                 <viewController storyboardIdentifier="attendingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uN1-jK-Wuq" customClass="AttendingViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BIO-G9-pbg"/>
-                        <viewControllerLayoutGuide type="bottom" id="Z5a-DR-bBX"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IAm-9V-4bq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2001,6 +1932,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.22352941176470587" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="jdP-3Q-bfn"/>
                     </view>
                     <navigationItem key="navigationItem" id="6bj-0R-t3h"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -2017,10 +1949,6 @@
         <scene sceneID="pEM-CF-E2n">
             <objects>
                 <viewController storyboardIdentifier="calendarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ymv-lc-u6U" customClass="CalendarViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JGV-Tg-KPm"/>
-                        <viewControllerLayoutGuide type="bottom" id="oqv-7h-cbb"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="62d-d4-v1i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2131,6 +2059,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7d2-aN-YqO"/>
                     </view>
                     <navigationItem key="navigationItem" id="VHd-Px-vfr"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -2151,10 +2080,6 @@
         <scene sceneID="gvU-24-shB">
             <objects>
                 <viewController id="raa-mk-ymy" customClass="ReviewCreateEventViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="N12-6o-j75"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ysu-pV-gE4"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MUU-3I-Yys">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="955"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2326,11 +2251,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="bGe-7k-7nq" secondAttribute="trailing" id="722-Kp-XnC"/>
-                            <constraint firstItem="Ysu-pV-gE4" firstAttribute="top" secondItem="bGe-7k-7nq" secondAttribute="bottom" id="loT-d4-edn"/>
-                            <constraint firstItem="bGe-7k-7nq" firstAttribute="leading" secondItem="MUU-3I-Yys" secondAttribute="leading" id="tWI-0s-Ig4"/>
-                            <constraint firstItem="bGe-7k-7nq" firstAttribute="top" secondItem="N12-6o-j75" secondAttribute="bottom" id="zBe-ZR-W2P"/>
+                            <constraint firstItem="iM7-ox-NW1" firstAttribute="trailing" secondItem="bGe-7k-7nq" secondAttribute="trailing" id="722-Kp-XnC"/>
+                            <constraint firstItem="iM7-ox-NW1" firstAttribute="bottom" secondItem="bGe-7k-7nq" secondAttribute="bottom" id="loT-d4-edn"/>
+                            <constraint firstItem="bGe-7k-7nq" firstAttribute="leading" secondItem="iM7-ox-NW1" secondAttribute="leading" id="tWI-0s-Ig4"/>
+                            <constraint firstItem="bGe-7k-7nq" firstAttribute="top" secondItem="iM7-ox-NW1" secondAttribute="top" id="zBe-ZR-W2P"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="iM7-ox-NW1"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="gLd-G6-W9m"/>
