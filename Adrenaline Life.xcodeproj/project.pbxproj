@@ -240,7 +240,6 @@
 		BB62B12318B8B529000DBDBC /* Segmented@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB62B11D18B8B529000DBDBC /* Segmented@2x.png */; };
 		BB857F4518B8928700B366D8 /* secondpic.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4318B8928700B366D8 /* secondpic.png */; };
 		BB857F4618B8928700B366D8 /* secondpic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB857F4418B8928700B366D8 /* secondpic@2x.png */; };
-		D3402FCA1FFC91A900E04D75 /* xSplash.png in Resources */ = {isa = PBXBuildFile; fileRef = D3402FC91FFC91A900E04D75 /* xSplash.png */; };
 		E202AE761EF3B648001B39FD /* actionbar_bg_black.png in Resources */ = {isa = PBXBuildFile; fileRef = E202AE751EF3B648001B39FD /* actionbar_bg_black.png */; };
 		E202AE791EF3BCCA001B39FD /* actionbar_bg_grey6.png in Resources */ = {isa = PBXBuildFile; fileRef = E202AE771EF3BCCA001B39FD /* actionbar_bg_grey6.png */; };
 		E202AE7A1EF3BCCA001B39FD /* actionbar_bg_grey1.png in Resources */ = {isa = PBXBuildFile; fileRef = E202AE781EF3BCCA001B39FD /* actionbar_bg_grey1.png */; };
@@ -643,7 +642,6 @@
 		BB62B11D18B8B529000DBDBC /* Segmented@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Segmented@2x.png"; sourceTree = "<group>"; };
 		BB857F4318B8928700B366D8 /* secondpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondpic.png; sourceTree = "<group>"; };
 		BB857F4418B8928700B366D8 /* secondpic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondpic@2x.png"; sourceTree = "<group>"; };
-		D3402FC91FFC91A900E04D75 /* xSplash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xSplash.png; sourceTree = "<group>"; };
 		E202AE751EF3B648001B39FD /* actionbar_bg_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_black.png; sourceTree = "<group>"; };
 		E202AE771EF3BCCA001B39FD /* actionbar_bg_grey6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_grey6.png; sourceTree = "<group>"; };
 		E202AE781EF3BCCA001B39FD /* actionbar_bg_grey1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionbar_bg_grey1.png; sourceTree = "<group>"; };
@@ -1281,7 +1279,6 @@
 		BB303DD118B86B3400B6EBC9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D3402FC91FFC91A900E04D75 /* xSplash.png */,
 				E22DC9FA1EFB982B00A98DA7 /* FINALHIGHRESFULLLOGO.png */,
 				72EFC1131FC804300041CEB4 /* actionbar_bg_6_80.png */,
 				E22DC9F61EFB812200A98DA7 /* actionbar_bg_white.png */,
@@ -1719,7 +1716,6 @@
 				79504C3F191F7CE000EF3103 /* no_image.png in Resources */,
 				E2252E8E1E4DB57500B0CD69 /* FeaturePage.png in Resources */,
 				7982242B18F72A57009FA42E /* register-btn.png in Resources */,
-				D3402FCA1FFC91A900E04D75 /* xSplash.png in Resources */,
 				7955F91E18F8626A00870734 /* country code.xml in Resources */,
 				BB303DB518B863E300B6EBC9 /* Images.xcassets in Resources */,
 				BB303E2418B879AA00B6EBC9 /* nearby@2x.png in Resources */,
@@ -2043,7 +2039,6 @@
 		BB303DCC18B863E300B6EBC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: George Hartley (MN5U5RDRGQ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X3THT57J9K;
@@ -2060,7 +2055,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2068,7 +2063,6 @@
 		BB303DCD18B863E300B6EBC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: George Hartley (MN5U5RDRGQ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X3THT57J9K;
@@ -2084,7 +2078,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.Adrenalinelife.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -15,35 +15,30 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="663"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xSplash.png" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-x9-um0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="873"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImg" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-x9-um0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="663"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Copyright © 2018 Adrenaline Life. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
-                                <rect key="frame" x="55" y="616" width="264" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
-                            <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
+                            <constraint firstItem="tR0-nv-iJD" firstAttribute="trailing" secondItem="XlU-x9-um0" secondAttribute="trailing" id="aGX-A6-A2G"/>
+                            <constraint firstItem="XlU-x9-um0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fxC-1z-lTN"/>
+                            <constraint firstItem="XlU-x9-um0" firstAttribute="leading" secondItem="tR0-nv-iJD" secondAttribute="leading" id="tqh-Xb-mi5"/>
+                            <constraint firstItem="XlU-x9-um0" firstAttribute="bottom" secondItem="tR0-nv-iJD" secondAttribute="bottom" id="vAy-8A-5qV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <viewLayoutGuide key="safeArea" id="tR0-nv-iJD"/>
                     </view>
+                    <size key="freeformSize" width="320" height="663"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="51.200000000000003" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
-        <image name="xSplash.png" width="1125" height="2436"/>
+        <image name="LaunchImg" width="472" height="1024"/>
     </resources>
 </document>
