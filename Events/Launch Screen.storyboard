@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="4096" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,31 +13,25 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ip-7t-qpC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xvk-d2-Ekt"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="663"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImg" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-x9-um0">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="663"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-x9-um0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="663"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="tR0-nv-iJD" firstAttribute="trailing" secondItem="XlU-x9-um0" secondAttribute="trailing" id="aGX-A6-A2G"/>
-                            <constraint firstItem="XlU-x9-um0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fxC-1z-lTN"/>
-                            <constraint firstItem="XlU-x9-um0" firstAttribute="leading" secondItem="tR0-nv-iJD" secondAttribute="leading" id="tqh-Xb-mi5"/>
-                            <constraint firstItem="XlU-x9-um0" firstAttribute="bottom" secondItem="tR0-nv-iJD" secondAttribute="bottom" id="vAy-8A-5qV"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="tR0-nv-iJD"/>
                     </view>
-                    <size key="freeformSize" width="320" height="663"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51.200000000000003" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.399999999999999" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="LaunchImg" width="472" height="1024"/>
-    </resources>
 </document>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="DxO-cP-19h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment version="4352" identifier="iOS"/>
+        <deployment version="4096" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,6 +21,10 @@
         <scene sceneID="p0g-Ji-e7I">
             <objects>
                 <viewController storyboardIdentifier="loginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofP-CN-yoG" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mix-qb-kuk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Krc-7X-1lY"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VxO-xc-TFe" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +78,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="a7T-9A-2AT"/>
                         <connections>
                             <action selector="backgroundTouched:" destination="ofP-CN-yoG" eventType="touchDown" id="MOR-Dz-WUJ"/>
                         </connections>
@@ -294,6 +297,10 @@
         <scene sceneID="of1-2C-MFB">
             <objects>
                 <viewController id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gNi-eO-mGh"/>
+                        <viewControllerLayoutGuide type="bottom" id="odq-tD-zeX"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -491,12 +498,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eSA-Wd-GkJ" firstAttribute="bottom" secondItem="fga-UX-TPd" secondAttribute="bottom" id="FPN-kO-ZKo"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="eSA-Wd-GkJ" secondAttribute="leading" id="MXS-aK-Saz"/>
-                            <constraint firstItem="eSA-Wd-GkJ" firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="UmH-ep-WEO"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="eSA-Wd-GkJ" secondAttribute="top" id="h5Q-H8-pYH"/>
+                            <constraint firstItem="odq-tD-zeX" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="FPN-kO-ZKo"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="MXS-aK-Saz"/>
+                            <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="UmH-ep-WEO"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="gNi-eO-mGh" secondAttribute="bottom" id="h5Q-H8-pYH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="eSA-Wd-GkJ"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="iov-Wm-ifM"/>
@@ -535,12 +541,16 @@
         <scene sceneID="feH-eW-g6n">
             <objects>
                 <viewController id="w1Z-bF-ar5" customClass="DiscoverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ALU-r6-ihI"/>
+                        <viewControllerLayoutGuide type="bottom" id="h7p-wT-4el"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jFF-pG-qCN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1450"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqW-PU-Ibi">
-                                <rect key="frame" x="0.0" y="61" width="320" height="1260"/>
+                                <rect key="frame" x="0.0" y="61" width="320" height="1309"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utK-J8-91L" userLabel="Yoga">
                                         <rect key="frame" x="8" y="244" width="149" height="110"/>
@@ -798,9 +808,8 @@
                             <constraint firstItem="vqW-PU-Ibi" firstAttribute="leading" secondItem="jFF-pG-qCN" secondAttribute="leading" id="PmN-gc-tkV"/>
                             <constraint firstAttribute="trailing" secondItem="vqW-PU-Ibi" secondAttribute="trailing" id="gGP-VI-iqD"/>
                             <constraint firstItem="vqW-PU-Ibi" firstAttribute="top" secondItem="jFF-pG-qCN" secondAttribute="topMargin" constant="-3" id="h68-Cq-50L"/>
-                            <constraint firstItem="aWW-6Z-SKD" firstAttribute="bottom" secondItem="vqW-PU-Ibi" secondAttribute="bottom" constant="80" id="qX9-G9-xTJ"/>
+                            <constraint firstAttribute="bottom" secondItem="vqW-PU-Ibi" secondAttribute="bottom" constant="80" id="qX9-G9-xTJ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aWW-6Z-SKD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Discover" selectedImage="Discover Selected" id="Emj-od-rTF"/>
                     <navigationItem key="navigationItem" id="a40-XR-67K"/>
@@ -1064,6 +1073,10 @@
         <scene sceneID="2Q9-0M-8Uf">
             <objects>
                 <viewController storyboardIdentifier="feedDetails" id="kYa-5B-zJd" customClass="FeedDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z3K-Tf-uJX"/>
+                        <viewControllerLayoutGuide type="bottom" id="EdI-a4-JR7"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ptt-tX-ARC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1078,7 +1091,6 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="DRH-Lt-VXE"/>
                     </view>
                     <navigationItem key="navigationItem" id="xEg-PB-P4I"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1095,6 +1107,10 @@
         <scene sceneID="8It-6Z-hs9">
             <objects>
                 <viewController id="Esk-Y6-vmr" customClass="TermsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i4J-jb-0qZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="gQO-Wu-ugd"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c4h-sN-FcG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1123,7 +1139,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="iKN-im-4eG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Terms &amp; Conditions" id="wNe-0G-OeE"/>
                     <connections>
@@ -1268,6 +1283,10 @@
         <scene sceneID="0v6-xa-O5w">
             <objects>
                 <viewController storyboardIdentifier="aboutView" automaticallyAdjustsScrollViewInsets="NO" id="GJ5-Ez-Ag6" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xh1-42-VI4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tew-EF-KxP"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PNQ-T2-Nf5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1437,7 +1456,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
-                        <viewLayoutGuide key="safeArea" id="Lui-3l-L7i"/>
                     </view>
                     <navigationItem key="navigationItem" id="3YV-Jk-Ohf"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1455,6 +1473,10 @@
         <scene sceneID="21W-JZ-5lT">
             <objects>
                 <viewController id="yVU-lJ-K5Q" customClass="ProgramDescriptionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JXL-Z1-qmi"/>
+                        <viewControllerLayoutGuide type="bottom" id="JlH-PY-1Ni"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QzG-OX-15u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1472,17 +1494,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sjJ-ND-agh" firstAttribute="trailing" secondItem="mkr-sh-u2G" secondAttribute="trailing" id="2eW-mE-mum"/>
-                            <constraint firstItem="YS9-jV-dl6" firstAttribute="leading" secondItem="sjJ-ND-agh" secondAttribute="leading" id="3NY-x6-yo8"/>
-                            <constraint firstItem="sjJ-ND-agh" firstAttribute="bottom" secondItem="YS9-jV-dl6" secondAttribute="bottom" id="6Ci-u1-hHp"/>
-                            <constraint firstItem="mkr-sh-u2G" firstAttribute="top" secondItem="sjJ-ND-agh" secondAttribute="top" id="JaY-pQ-F6o"/>
-                            <constraint firstItem="sjJ-ND-agh" firstAttribute="trailing" secondItem="YS9-jV-dl6" secondAttribute="trailing" id="SfC-C5-oN2"/>
-                            <constraint firstItem="sjJ-ND-agh" firstAttribute="bottom" secondItem="mkr-sh-u2G" secondAttribute="bottom" id="qcY-DI-XYV"/>
-                            <constraint firstItem="YS9-jV-dl6" firstAttribute="top" secondItem="sjJ-ND-agh" secondAttribute="top" id="wah-ZF-Q7f"/>
-                            <constraint firstItem="mkr-sh-u2G" firstAttribute="leading" secondItem="sjJ-ND-agh" secondAttribute="leading" id="wdG-D8-kYh"/>
+                            <constraint firstAttribute="trailing" secondItem="mkr-sh-u2G" secondAttribute="trailing" id="2eW-mE-mum"/>
+                            <constraint firstItem="YS9-jV-dl6" firstAttribute="leading" secondItem="QzG-OX-15u" secondAttribute="leading" id="3NY-x6-yo8"/>
+                            <constraint firstItem="JlH-PY-1Ni" firstAttribute="top" secondItem="YS9-jV-dl6" secondAttribute="bottom" id="6Ci-u1-hHp"/>
+                            <constraint firstItem="mkr-sh-u2G" firstAttribute="top" secondItem="JXL-Z1-qmi" secondAttribute="bottom" id="JaY-pQ-F6o"/>
+                            <constraint firstAttribute="trailing" secondItem="YS9-jV-dl6" secondAttribute="trailing" id="SfC-C5-oN2"/>
+                            <constraint firstItem="JlH-PY-1Ni" firstAttribute="top" secondItem="mkr-sh-u2G" secondAttribute="bottom" id="qcY-DI-XYV"/>
+                            <constraint firstItem="YS9-jV-dl6" firstAttribute="top" secondItem="JXL-Z1-qmi" secondAttribute="bottom" id="wah-ZF-Q7f"/>
+                            <constraint firstItem="mkr-sh-u2G" firstAttribute="leading" secondItem="QzG-OX-15u" secondAttribute="leading" id="wdG-D8-kYh"/>
                         </constraints>
                         <inset key="insetFor6xAndEarlier" minX="0.0" minY="-20" maxX="0.0" maxY="20"/>
-                        <viewLayoutGuide key="safeArea" id="sjJ-ND-agh"/>
                     </view>
                     <navigationItem key="navigationItem" id="qix-CE-HbP"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -1501,6 +1522,10 @@
         <scene sceneID="WdJ-TP-gcR">
             <objects>
                 <viewController storyboardIdentifier="Events" id="kOC-bS-aI0" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UQz-zs-miV"/>
+                        <viewControllerLayoutGuide type="bottom" id="bKs-tM-MVM"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Events" id="P3Q-B4-jzb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1511,7 +1536,6 @@
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="z86-Lr-pYZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Maps" id="O4U-jh-TTB"/>
                 </viewController>
@@ -1677,6 +1701,10 @@
         <scene sceneID="E16-uO-jp2">
             <objects>
                 <viewController storyboardIdentifier="aboutViewNew" id="T4o-Af-Ooy" userLabel="Abou View Controllers - About" customClass="AboutUsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aZp-5e-ws5"/>
+                        <viewControllerLayoutGuide type="bottom" id="jGp-3R-rgy"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ygh-UW-D4E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1706,7 +1734,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="QGz-Pp-BzY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contact Us" id="8an-5w-L1E"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1724,6 +1751,10 @@
         <scene sceneID="Ehu-Ka-v0l">
             <objects>
                 <viewController id="EYQ-sL-8zz" customClass="PolicyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wLW-ea-xj7"/>
+                        <viewControllerLayoutGuide type="bottom" id="15Q-yq-uRP"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dqD-x8-QHM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1752,7 +1783,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="hs4-Ol-dqf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Policy Agreement" id="07e-hK-bpT"/>
                     <connections>
@@ -1768,6 +1798,10 @@
         <scene sceneID="NId-DM-5Mk">
             <objects>
                 <viewController storyboardIdentifier="registerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1D8-Gt-16Y" customClass="RegistrationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iHX-97-qJP"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZXP-Ke-sd7"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lAo-2D-rSI" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1907,7 +1941,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="LEn-2f-XiJ"/>
                         <connections>
                             <action selector="backgroundTouched:" destination="1D8-Gt-16Y" eventType="touchDown" id="XTS-DR-AOM"/>
                         </connections>
@@ -1988,6 +2021,10 @@
         <scene sceneID="lcY-T4-2sD">
             <objects>
                 <viewController storyboardIdentifier="attendingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uN1-jK-Wuq" customClass="AttendingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aZf-6k-odS"/>
+                        <viewControllerLayoutGuide type="bottom" id="0yr-OB-vpt"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IAm-9V-4bq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2025,7 +2062,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.22352941176470587" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="jdP-3Q-bfn"/>
                     </view>
                     <navigationItem key="navigationItem" id="6bj-0R-t3h"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -2042,6 +2078,10 @@
         <scene sceneID="pEM-CF-E2n">
             <objects>
                 <viewController storyboardIdentifier="calendarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ymv-lc-u6U" customClass="CalendarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uic-v1-Hns"/>
+                        <viewControllerLayoutGuide type="bottom" id="yds-dE-wOw"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="62d-d4-v1i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2152,7 +2192,6 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="7d2-aN-YqO"/>
                     </view>
                     <navigationItem key="navigationItem" id="VHd-Px-vfr"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -2173,6 +2212,10 @@
         <scene sceneID="gvU-24-shB">
             <objects>
                 <viewController id="raa-mk-ymy" customClass="ReviewCreateEventViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fdc-zJ-cg3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vns-lb-M7U"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MUU-3I-Yys">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="955"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2344,12 +2387,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iM7-ox-NW1" firstAttribute="trailing" secondItem="bGe-7k-7nq" secondAttribute="trailing" id="722-Kp-XnC"/>
-                            <constraint firstItem="iM7-ox-NW1" firstAttribute="bottom" secondItem="bGe-7k-7nq" secondAttribute="bottom" id="loT-d4-edn"/>
-                            <constraint firstItem="bGe-7k-7nq" firstAttribute="leading" secondItem="iM7-ox-NW1" secondAttribute="leading" id="tWI-0s-Ig4"/>
-                            <constraint firstItem="bGe-7k-7nq" firstAttribute="top" secondItem="iM7-ox-NW1" secondAttribute="top" id="zBe-ZR-W2P"/>
+                            <constraint firstAttribute="trailing" secondItem="bGe-7k-7nq" secondAttribute="trailing" id="722-Kp-XnC"/>
+                            <constraint firstItem="Vns-lb-M7U" firstAttribute="top" secondItem="bGe-7k-7nq" secondAttribute="bottom" id="loT-d4-edn"/>
+                            <constraint firstItem="bGe-7k-7nq" firstAttribute="leading" secondItem="MUU-3I-Yys" secondAttribute="leading" id="tWI-0s-Ig4"/>
+                            <constraint firstItem="bGe-7k-7nq" firstAttribute="top" secondItem="Fdc-zJ-cg3" secondAttribute="bottom" id="zBe-ZR-W2P"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="iM7-ox-NW1"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="gLd-G6-W9m"/>
