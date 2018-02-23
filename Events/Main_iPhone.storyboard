@@ -22,8 +22,8 @@
             <objects>
                 <viewController storyboardIdentifier="loginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofP-CN-yoG" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mix-qb-kuk"/>
-                        <viewControllerLayoutGuide type="bottom" id="Krc-7X-1lY"/>
+                        <viewControllerLayoutGuide type="top" id="LmN-YT-GAx"/>
+                        <viewControllerLayoutGuide type="bottom" id="NrU-0x-EUy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VxO-xc-TFe" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -105,6 +105,7 @@
                 <tabBarController storyboardIdentifier="TabBarController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DxO-cP-19h" customClass="TabBarCenterIcon" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tTe-dz-p6d"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="320" height="667"/>
                     <tabBar key="tabBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" id="cie-gf-Xpg" customClass="TabBarHeight">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -131,7 +132,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="ProgramController" title="ProgramViewController" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XMy-k7-mqo" userLabel="ProgramViewController" customClass="ProgramViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ProgramController" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6eF-vP-BpW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="663"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.36862745099999999" green="0.3803921569" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.36862745098039218" green="0.38039215686274508" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -239,7 +240,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="663"/>
+                    <size key="freeformSize" width="320" height="667"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Q9r-jJ-DmW">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -265,15 +266,15 @@
             <objects>
                 <tableViewController id="Jo0-vK-BNb" customClass="CategoryTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6AN-eq-lqA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Category" id="Lel-J1-g6z">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lel-J1-g6z" id="iZS-I6-pmo">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -298,8 +299,8 @@
             <objects>
                 <viewController id="MgQ-Su-gZO" customClass="CreateEventViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gNi-eO-mGh"/>
-                        <viewControllerLayoutGuide type="bottom" id="odq-tD-zeX"/>
+                        <viewControllerLayoutGuide type="top" id="4QB-HH-Y3J"/>
+                        <viewControllerLayoutGuide type="bottom" id="rfU-qY-3Uc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xKb-jB-jd7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1037"/>
@@ -498,10 +499,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="odq-tD-zeX" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="FPN-kO-ZKo"/>
+                            <constraint firstItem="rfU-qY-3Uc" firstAttribute="top" secondItem="fga-UX-TPd" secondAttribute="bottom" id="FPN-kO-ZKo"/>
                             <constraint firstItem="fga-UX-TPd" firstAttribute="leading" secondItem="xKb-jB-jd7" secondAttribute="leading" id="MXS-aK-Saz"/>
                             <constraint firstAttribute="trailing" secondItem="fga-UX-TPd" secondAttribute="trailing" id="UmH-ep-WEO"/>
-                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="gNi-eO-mGh" secondAttribute="bottom" id="h5Q-H8-pYH"/>
+                            <constraint firstItem="fga-UX-TPd" firstAttribute="top" secondItem="4QB-HH-Y3J" secondAttribute="bottom" id="h5Q-H8-pYH"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -542,8 +543,8 @@
             <objects>
                 <viewController id="w1Z-bF-ar5" customClass="DiscoverViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ALU-r6-ihI"/>
-                        <viewControllerLayoutGuide type="bottom" id="h7p-wT-4el"/>
+                        <viewControllerLayoutGuide type="top" id="Mw7-kK-Z6X"/>
+                        <viewControllerLayoutGuide type="bottom" id="I4l-AB-KMl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jFF-pG-qCN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1450"/>
@@ -703,13 +704,6 @@
                                             <action selector="buttonSeven:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="ivP-YB-kWw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SL-JV-upC" userLabel="camping">
-                                        <rect key="frame" x="165" y="716" width="147" height="110"/>
-                                        <state key="normal" image="Camping"/>
-                                        <connections>
-                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="zpT-c5-l5f"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUy-jl-gSz" userLabel="table games">
                                         <rect key="frame" x="8" y="1070" width="149" height="110"/>
                                         <constraints>
@@ -727,6 +721,13 @@
                                             <action selector="buttonNine:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="SaS-SM-mOy"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SL-JV-upC" userLabel="camping">
+                                        <rect key="frame" x="165" y="716" width="147" height="110"/>
+                                        <state key="normal" image="Camping"/>
+                                        <connections>
+                                            <action selector="buttonThree:" destination="w1Z-bF-ar5" eventType="touchUpInside" id="zpT-c5-l5f"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -740,7 +741,7 @@
                                     <constraint firstItem="tvA-5v-Zbk" firstAttribute="leading" secondItem="utK-J8-91L" secondAttribute="leading" id="9MG-1B-huG"/>
                                     <constraint firstItem="4co-Ha-nSO" firstAttribute="leading" secondItem="4SL-JV-upC" secondAttribute="leading" id="9k5-xx-wYP"/>
                                     <constraint firstItem="tvA-5v-Zbk" firstAttribute="top" secondItem="hrk-hL-Fyp" secondAttribute="bottom" constant="8" symbolic="YES" id="A4H-oV-Qjs"/>
-                                    <constraint firstItem="ELi-NX-ZZ2" firstAttribute="top" secondItem="4SL-JV-upC" secondAttribute="top" id="AE1-Mx-rNv"/>
+                                    <constraint firstItem="ELi-NX-ZZ2" firstAttribute="top" secondItem="4SL-JV-upC" secondAttribute="top" constant="-3" id="AE1-Mx-rNv"/>
                                     <constraint firstItem="Kyu-qv-LCM" firstAttribute="top" secondItem="a4D-Um-XlC" secondAttribute="bottom" constant="8" symbolic="YES" id="AVl-V9-j5x"/>
                                     <constraint firstItem="7qb-TL-xvM" firstAttribute="trailing" secondItem="l6d-Qv-Wgj" secondAttribute="trailing" id="ArA-Qz-p3z"/>
                                     <constraint firstItem="utK-J8-91L" firstAttribute="leading" secondItem="a4D-Um-XlC" secondAttribute="leading" id="CeK-bR-jD5"/>
@@ -749,11 +750,11 @@
                                     <constraint firstItem="BOi-qs-eEv" firstAttribute="leading" secondItem="utK-J8-91L" secondAttribute="trailing" constant="8" symbolic="YES" id="HOG-Vg-CHV"/>
                                     <constraint firstItem="Ar1-ol-i0Q" firstAttribute="leading" secondItem="tvA-5v-Zbk" secondAttribute="trailing" constant="8" symbolic="YES" id="I8W-vI-Zbj"/>
                                     <constraint firstItem="4SL-JV-upC" firstAttribute="trailing" secondItem="aL8-lq-tye" secondAttribute="trailing" id="MaQ-gz-Vp9"/>
-                                    <constraint firstItem="4SL-JV-upC" firstAttribute="top" secondItem="4co-Ha-nSO" secondAttribute="bottom" constant="8" symbolic="YES" id="Mo6-iB-EH6"/>
+                                    <constraint firstItem="4SL-JV-upC" firstAttribute="top" secondItem="4co-Ha-nSO" secondAttribute="bottom" constant="11" id="Mo6-iB-EH6"/>
                                     <constraint firstItem="dtL-Jb-8Hw" firstAttribute="top" secondItem="Yjd-PI-yXI" secondAttribute="bottom" constant="8" symbolic="YES" id="NJB-BF-KIN"/>
                                     <constraint firstItem="Uue-cV-1Pe" firstAttribute="leading" secondItem="ELi-NX-ZZ2" secondAttribute="leading" id="OEo-Vg-bho"/>
-                                    <constraint firstAttribute="bottom" secondItem="yUy-jl-gSz" secondAttribute="bottom" constant="77" id="OsL-cO-5Gq"/>
-                                    <constraint firstItem="aL8-lq-tye" firstAttribute="top" secondItem="4SL-JV-upC" secondAttribute="bottom" constant="8" symbolic="YES" id="PRA-31-yoz"/>
+                                    <constraint firstAttribute="bottom" secondItem="yUy-jl-gSz" secondAttribute="bottom" constant="126" id="OsL-cO-5Gq"/>
+                                    <constraint firstItem="aL8-lq-tye" firstAttribute="top" secondItem="4SL-JV-upC" secondAttribute="bottom" constant="5" id="PRA-31-yoz"/>
                                     <constraint firstItem="hrk-hL-Fyp" firstAttribute="leading" secondItem="tvA-5v-Zbk" secondAttribute="leading" id="PV8-aW-Xsb"/>
                                     <constraint firstItem="4co-Ha-nSO" firstAttribute="trailing" secondItem="4SL-JV-upC" secondAttribute="trailing" id="Paw-AS-eCw"/>
                                     <constraint firstItem="l6d-Qv-Wgj" firstAttribute="top" secondItem="7qb-TL-xvM" secondAttribute="bottom" constant="8" symbolic="YES" id="Pwp-RR-xia"/>
@@ -1074,8 +1075,8 @@
             <objects>
                 <viewController storyboardIdentifier="feedDetails" id="kYa-5B-zJd" customClass="FeedDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Z3K-Tf-uJX"/>
-                        <viewControllerLayoutGuide type="bottom" id="EdI-a4-JR7"/>
+                        <viewControllerLayoutGuide type="top" id="D4k-YM-WNq"/>
+                        <viewControllerLayoutGuide type="bottom" id="g48-yS-PGF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ptt-tX-ARC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -1108,11 +1109,11 @@
             <objects>
                 <viewController id="Esk-Y6-vmr" customClass="TermsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="i4J-jb-0qZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="gQO-Wu-ugd"/>
+                        <viewControllerLayoutGuide type="top" id="Omj-DI-ILu"/>
+                        <viewControllerLayoutGuide type="bottom" id="PIc-pJ-w1B"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c4h-sN-FcG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" fixedFrame="YES" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="GWS-Ao-cGO">
@@ -1141,6 +1142,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Terms &amp; Conditions" id="wNe-0G-OeE"/>
+                    <size key="freeformSize" width="320" height="667"/>
                     <connections>
                         <outlet property="scrlVW" destination="LEv-Nj-TN3" id="rCy-d8-XSa"/>
                         <outlet property="txtVWContent" destination="LEv-Nj-TN3" id="ffS-oy-CA2"/>
@@ -1284,8 +1286,8 @@
             <objects>
                 <viewController storyboardIdentifier="aboutView" automaticallyAdjustsScrollViewInsets="NO" id="GJ5-Ez-Ag6" customClass="AboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Xh1-42-VI4"/>
-                        <viewControllerLayoutGuide type="bottom" id="Tew-EF-KxP"/>
+                        <viewControllerLayoutGuide type="top" id="Can-AG-rYk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ht2-ta-Zmz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PNQ-T2-Nf5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -1474,18 +1476,18 @@
             <objects>
                 <viewController id="yVU-lJ-K5Q" customClass="ProgramDescriptionViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JXL-Z1-qmi"/>
-                        <viewControllerLayoutGuide type="bottom" id="JlH-PY-1Ni"/>
+                        <viewControllerLayoutGuide type="top" id="SIF-2m-C7I"/>
+                        <viewControllerLayoutGuide type="bottom" id="gLn-hx-zrG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QzG-OX-15u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="mkr-sh-u2G">
-                                <rect key="frame" x="0.0" y="64" width="320" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="647"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" text="Hello lorem ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="YS9-jV-dl6">
-                                <rect key="frame" x="0.0" y="64" width="320" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="647"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1496,11 +1498,11 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="mkr-sh-u2G" secondAttribute="trailing" id="2eW-mE-mum"/>
                             <constraint firstItem="YS9-jV-dl6" firstAttribute="leading" secondItem="QzG-OX-15u" secondAttribute="leading" id="3NY-x6-yo8"/>
-                            <constraint firstItem="JlH-PY-1Ni" firstAttribute="top" secondItem="YS9-jV-dl6" secondAttribute="bottom" id="6Ci-u1-hHp"/>
-                            <constraint firstItem="mkr-sh-u2G" firstAttribute="top" secondItem="JXL-Z1-qmi" secondAttribute="bottom" id="JaY-pQ-F6o"/>
+                            <constraint firstItem="gLn-hx-zrG" firstAttribute="top" secondItem="YS9-jV-dl6" secondAttribute="bottom" id="6Ci-u1-hHp"/>
+                            <constraint firstItem="mkr-sh-u2G" firstAttribute="top" secondItem="SIF-2m-C7I" secondAttribute="bottom" id="JaY-pQ-F6o"/>
                             <constraint firstAttribute="trailing" secondItem="YS9-jV-dl6" secondAttribute="trailing" id="SfC-C5-oN2"/>
-                            <constraint firstItem="JlH-PY-1Ni" firstAttribute="top" secondItem="mkr-sh-u2G" secondAttribute="bottom" id="qcY-DI-XYV"/>
-                            <constraint firstItem="YS9-jV-dl6" firstAttribute="top" secondItem="JXL-Z1-qmi" secondAttribute="bottom" id="wah-ZF-Q7f"/>
+                            <constraint firstItem="gLn-hx-zrG" firstAttribute="top" secondItem="mkr-sh-u2G" secondAttribute="bottom" id="qcY-DI-XYV"/>
+                            <constraint firstItem="YS9-jV-dl6" firstAttribute="top" secondItem="SIF-2m-C7I" secondAttribute="bottom" id="wah-ZF-Q7f"/>
                             <constraint firstItem="mkr-sh-u2G" firstAttribute="leading" secondItem="QzG-OX-15u" secondAttribute="leading" id="wdG-D8-kYh"/>
                         </constraints>
                         <inset key="insetFor6xAndEarlier" minX="0.0" minY="-20" maxX="0.0" maxY="20"/>
@@ -1523,8 +1525,8 @@
             <objects>
                 <viewController storyboardIdentifier="Events" id="kOC-bS-aI0" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UQz-zs-miV"/>
-                        <viewControllerLayoutGuide type="bottom" id="bKs-tM-MVM"/>
+                        <viewControllerLayoutGuide type="top" id="WaW-p6-FYx"/>
+                        <viewControllerLayoutGuide type="bottom" id="BxY-z8-XNs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Events" id="P3Q-B4-jzb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -1702,8 +1704,8 @@
             <objects>
                 <viewController storyboardIdentifier="aboutViewNew" id="T4o-Af-Ooy" userLabel="Abou View Controllers - About" customClass="AboutUsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aZp-5e-ws5"/>
-                        <viewControllerLayoutGuide type="bottom" id="jGp-3R-rgy"/>
+                        <viewControllerLayoutGuide type="top" id="htB-eC-fgM"/>
+                        <viewControllerLayoutGuide type="bottom" id="yvs-Sv-uwW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ygh-UW-D4E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -1745,18 +1747,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fef-xs-pG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="353"/>
+            <point key="canvasLocation" x="140" y="329"/>
         </scene>
         <!--Policy Agreement-->
         <scene sceneID="Ehu-Ka-v0l">
             <objects>
                 <viewController id="EYQ-sL-8zz" customClass="PolicyViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wLW-ea-xj7"/>
-                        <viewControllerLayoutGuide type="bottom" id="15Q-yq-uRP"/>
+                        <viewControllerLayoutGuide type="top" id="18W-U7-fV1"/>
+                        <viewControllerLayoutGuide type="bottom" id="lWg-XN-UNK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dqD-x8-QHM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" fixedFrame="YES" image="actionbar_bg_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="5wt-Ro-HoR">
@@ -1785,6 +1787,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Policy Agreement" id="07e-hK-bpT"/>
+                    <size key="freeformSize" width="320" height="667"/>
                     <connections>
                         <outlet property="policyTextView" destination="eRb-dL-vgi" id="oaM-QF-fq1"/>
                         <outlet property="scrollView" destination="eRb-dL-vgi" id="k4U-Zv-Bn5"/>
@@ -1799,8 +1802,8 @@
             <objects>
                 <viewController storyboardIdentifier="registerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1D8-Gt-16Y" customClass="RegistrationViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="iHX-97-qJP"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZXP-Ke-sd7"/>
+                        <viewControllerLayoutGuide type="top" id="nEK-X7-zNi"/>
+                        <viewControllerLayoutGuide type="bottom" id="lv5-rO-KXm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lAo-2D-rSI" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -2022,8 +2025,8 @@
             <objects>
                 <viewController storyboardIdentifier="attendingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uN1-jK-Wuq" customClass="AttendingViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aZf-6k-odS"/>
-                        <viewControllerLayoutGuide type="bottom" id="0yr-OB-vpt"/>
+                        <viewControllerLayoutGuide type="top" id="LUO-MO-Tkd"/>
+                        <viewControllerLayoutGuide type="bottom" id="BM1-NQ-XXG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IAm-9V-4bq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -2079,8 +2082,8 @@
             <objects>
                 <viewController storyboardIdentifier="calendarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ymv-lc-u6U" customClass="CalendarViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Uic-v1-Hns"/>
-                        <viewControllerLayoutGuide type="bottom" id="yds-dE-wOw"/>
+                        <viewControllerLayoutGuide type="top" id="Z8P-tB-dA1"/>
+                        <viewControllerLayoutGuide type="bottom" id="fd2-a3-Kq5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="62d-d4-v1i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
@@ -2213,8 +2216,8 @@
             <objects>
                 <viewController id="raa-mk-ymy" customClass="ReviewCreateEventViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fdc-zJ-cg3"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vns-lb-M7U"/>
+                        <viewControllerLayoutGuide type="top" id="3Lv-t0-AGk"/>
+                        <viewControllerLayoutGuide type="bottom" id="2FD-G0-f3g"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MUU-3I-Yys">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="955"/>
@@ -2388,9 +2391,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="bGe-7k-7nq" secondAttribute="trailing" id="722-Kp-XnC"/>
-                            <constraint firstItem="Vns-lb-M7U" firstAttribute="top" secondItem="bGe-7k-7nq" secondAttribute="bottom" id="loT-d4-edn"/>
+                            <constraint firstItem="2FD-G0-f3g" firstAttribute="top" secondItem="bGe-7k-7nq" secondAttribute="bottom" id="loT-d4-edn"/>
                             <constraint firstItem="bGe-7k-7nq" firstAttribute="leading" secondItem="MUU-3I-Yys" secondAttribute="leading" id="tWI-0s-Ig4"/>
-                            <constraint firstItem="bGe-7k-7nq" firstAttribute="top" secondItem="Fdc-zJ-cg3" secondAttribute="bottom" id="zBe-ZR-W2P"/>
+                            <constraint firstItem="bGe-7k-7nq" firstAttribute="top" secondItem="3Lv-t0-AGk" secondAttribute="bottom" id="zBe-ZR-W2P"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -2470,7 +2473,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="wc1-kp-ItY"/>
         <segue reference="okc-1f-ZH5"/>
-        <segue reference="5BI-DP-Akc"/>
+        <segue reference="GQZ-yq-JN7"/>
         <segue reference="c3b-7q-UHr"/>
         <segue reference="Yzg-yO-FJ6"/>
     </inferredMetricsTieBreakers>
