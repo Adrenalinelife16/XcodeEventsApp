@@ -29,15 +29,13 @@
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.navigationBar setTintColor:COMMON_COLOR_RED];
     // Do any additional setup after loading the view.
-    
-    if (IS_IPHONE_5) {
-        self.scrlVW.frame = CGRectMake(self.scrlVW.frame.origin.x, self.scrlVW.frame.origin.y, self.scrlVW.frame.size.width, self.scrlVW.frame.size.height+88);
+     txtVWContent.text = NSLocalizedString(@"CONTENT_ABOUTVIEW", @"CONTENT_ABOUTVIEW");
+     
     }
     
-    txtVWContent.text = NSLocalizedString(@"CONTENT_ABOUTVIEW", @"CONTENT_ABOUTVIEW");
+
     
-    [self.scrlVW setContentSize:CGSizeMake(self.scrlVW.frame.size.width, 400)];
-}
+ //   [self.scrlVW setContentSize:CGSizeMake(self.scrlVW.frame.size.width, 400)];
 
 - (void)didReceiveMemoryWarning
 {
