@@ -180,7 +180,7 @@
     self.pickerViewTextField.inputView = pickerView;
     
     // add a toolbar with Cancel & Done button
-    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)]; 
     toolBar.barStyle = UIBarStyleBlackOpaque;
     
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneTouched:)];
